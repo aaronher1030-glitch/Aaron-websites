@@ -40,6 +40,12 @@
     padding-inline: 12px;
   }
 
+  /* The nav is a scroll container here, so an outset ring would be clipped on
+     all four sides. Draw the focus ring inside the tab instead. */
+  .site-nav a:focus-visible {
+    outline-offset: -3px;
+  }
+
   .nav-more {
     display: inline-flex;
     align-items: center;
