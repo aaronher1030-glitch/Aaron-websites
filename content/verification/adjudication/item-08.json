@@ -1,0 +1,22 @@
+{
+  "id": "ch1-3-lab-39",
+  "paper": "ch1-3-lab",
+  "source": "supplied-paper",
+  "sourceKey": "A",
+  "blind": "B",
+  "blindWork": "mol C = 3.52/44.01 = 0.07998; mol H = 2(1.44/18.015) = 0.15987. C:H = 0.07998:0.15987 = 1:2.00, so CH2.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-B"
+  ],
+  "stem": "A sample of pure hydrocarbon is burned in a combustion train. The mass of the $\\text{CO}_{2}$ absorber increases by $3.52\\text{~g}$ and the mass of the $\\text{H}_{2}\\text{O}$ absorber increases by $1.44\\text{~g}$. What is the empirical formula of the hydrocarbon?",
+  "choices": [
+    "$\\text{CH}$",
+    "$\\text{CH}_{2}$",
+    "$\\text{CH}_{3}$",
+    "$\\text{C}_{2}\\text{H}_{5}$"
+  ],
+  "sourceExplanation": "Mass $\\text{C} = 3.52 \\times (12.011/44.01) = 0.960\\text{~g}$ ($0.0800\\text{~mol}$).\n\nMass $\\text{H} = 1.44 \\times (2.016/18.02) = 0.161\\text{~g}$ ($0.160\\text{~mol}$).\n\nRatio $\\text{H/C} = 2 \\Longrightarrow \\text{CH}_{2}$. Correct Choice: B."
+}

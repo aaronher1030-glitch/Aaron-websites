@@ -1,0 +1,22 @@
+{
+  "id": "ch1-3-lab-34",
+  "paper": "ch1-3-lab",
+  "source": "supplied-paper",
+  "sourceKey": "B",
+  "blind": "A",
+  "blindWork": "mol C = 0.8005/12.011 = 0.06665; mol H = 0.1343/1.008 = 0.1332; mol O = 1.065/16.00 = 0.06657. Dividing by 0.06657 gives C:H:O = 1.00:2.00:1.00, so CH2O.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-A"
+  ],
+  "stem": "What is the empirical formula of the organic compound analyzed in Question 33?",
+  "choices": [
+    "$\\text{CH}_{2}\\text{O}$",
+    "$\\text{C}_{2}\\text{H}_{4}\\text{O}_{3}$",
+    "$\\text{CH}_{2}\\text{O}_{2}$",
+    "$\\text{C}_{3}\\text{H}_{6}\\text{O}_{2}$"
+  ],
+  "sourceExplanation": "Moles $\\text{C} = 0.800/12.011 = 0.0666$. Moles $\\text{H} = 0.134/1.008 = 0.133$. Moles $\\text{O} = 1.066/16.00 = 0.0666$.\n\nRatio $\\text{C:H:O} = 1:2:1 \\Longrightarrow \\text{CH}_{2}\\text{O}$. Correct Choice: A."
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-practice-041",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n(Al) = 10.0/26.98 = 0.371 mol; n(Cl2) = 35.0/70.90 = 0.494 mol. Cl2 needed for all Al = 0.371(3/2) = 0.556 mol > 0.494, so Cl2 limits. n(AlCl3) = 0.494(2/3) = 0.329 mol; m = 0.329 x 133.34 = 43.9 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Moles: n(Al) = 10.0 g / 26.98 g/mol = 0.371 mol and n(Cl<sub>2</sub>) = 35.0 g / 70.90 g/mol = 0.494 mol. Making 2 mol AlCl<sub>3</sub> from the available Al would need 0.556 mol Cl<sub>2</sub>, more than is present, so Cl<sub>2</sub> is limiting. Then n(AlCl<sub>3</sub>) = 0.494 x (2/3) = 0.329 mol, giving 0.329 mol x 133.34 g/mol = 43.9 g."
+  },
+  {
+    "id": "proto-practice-042",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n(Al) = 0.371 mol, n(Cl2) = 0.494 mol. Required Cl2 for all Al = 0.556 mol, so Cl2 is limiting. Al used = 0.494(2/3) = 0.329 mol = 8.88 g; Al left = 10.0 - 8.88 = 1.12 g, i.e. 1.11 g.",
+    "ambiguous": false,
+    "cleanExplanation": "The aluminum would need 0.371 x 1.5 = 0.556 mol Cl<sub>2</sub>, but only 0.494 mol Cl<sub>2</sub> is available, so chlorine is limiting. Aluminum consumed = 0.494 x (2/3) = 0.329 mol, which is 0.329 x 26.98 = 8.89 g. Remaining Al = 10.0 - 8.89 = 1.11 g."
+  },
+  {
+    "id": "proto-practice-043",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(TiCl4) = 3.54e7/189.7 = 1.866e5 mol; n(Mg) = 1.13e7/24.31 = 4.65e5 mol. Mg needed = 2 x 1.866e5 = 3.73e5 mol, so TiCl4 limits. Theoretical Ti = 1.866e5 mol x 47.87 = 8.93e6 g; yield = 7.81e6/8.93e6 = 87.4%.",
+    "ambiguous": false,
+    "cleanExplanation": "n(TiCl<sub>4</sub>) = 3.54 x 10<sup>7</sup> g / 189.7 g/mol = 1.87 x 10<sup>5</sup> mol, which needs 3.73 x 10<sup>5</sup> mol Mg; 1.13 x 10<sup>7</sup> g Mg supplies 4.65 x 10<sup>5</sup> mol, so TiCl<sub>4</sub> is limiting. Theoretical Ti = 1.87 x 10<sup>5</sup> mol x 47.87 g/mol = 8.93 x 10<sup>6</sup> g. Percent yield = 7.81 x 10<sup>6</sup> / 8.93 x 10<sup>6</sup> x 100% = 87.4%."
+  },
+  {
+    "id": "proto-practice-044",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Carbon balance gives c = 4, hydrogen gives d = 5. Oxygen then requires 2b = 2(4) + 5 = 13, so b = 6.5; doubling to clear the fraction gives 2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O, so b = 13.",
+    "ambiguous": false,
+    "cleanExplanation": "With 4 carbons and 10 hydrogens, c = 4 and d = 5. Oxygen balance: 2b = 2(4) + 5 = 13, so b = 6.5 as a fractional coefficient. Multiplying everything by 2 gives 2C<sub>4</sub>H<sub>10</sub> + 13O<sub>2</sub> -> 8CO<sub>2</sub> + 10H<sub>2</sub>O, so the whole-number value of b is 13."
+  },
+  {
+    "id": "proto-practice-045",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Pure CaC2 = 100.0 x 0.850 = 85.0 g, n = 85.0/64.10 = 1.326 mol. Acetylene is 1:1, so n(C2H2) = 1.326 mol and m = 1.326 x 26.04 = 34.5 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Only 85.0% of the sample is CaC<sub>2</sub>: 100.0 g x 0.850 = 85.0 g, which is 85.0 g / 64.10 g/mol = 1.33 mol. The reaction is 1:1 in CaC<sub>2</sub> and C<sub>2</sub>H<sub>2</sub> with excess water, so 1.33 mol x 26.04 g/mol = 34.5 g of acetylene."
+  },
+  {
+    "id": "proto-practice-046",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(N2) = 28.0/28.02 = 0.999 mol; n(H2) = 9.00/2.016 = 4.46 mol. H2 needed = 3.00 mol < 4.46, so N2 limits. Theoretical NH3 = 2(0.999) = 2.00 mol = 34.0 g; yield = 25.5/34.0 = 75.0%.",
+    "ambiguous": false,
+    "cleanExplanation": "n(N<sub>2</sub>) = 28.0 / 28.02 = 1.00 mol and n(H<sub>2</sub>) = 9.00 / 2.016 = 4.46 mol; 1.00 mol N<sub>2</sub> needs only 3.00 mol H<sub>2</sub>, so N<sub>2</sub> is limiting. Theoretical NH<sub>3</sub> = 2.00 mol x 17.03 g/mol = 34.0 g, and the percent yield is 25.5 / 34.0 x 100% = 75.0%."
+  },
+  {
+    "id": "proto-practice-047",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(S8) = 1000 g/256.5 g/mol = 3.90 mol, containing 8 x 3.90 = 31.2 mol S atoms. Each S becomes one H2SO4, so m = 31.2 x 98.08 = 3.06 x 10^3 g = 3.06 kg.",
+    "ambiguous": false,
+    "cleanExplanation": "1.00 kg of S<sub>8</sub> is 1000 g / 256.5 g/mol = 3.90 mol, which contains 8 x 3.90 = 31.2 mol of S atoms. Every sulfur atom ends up in one H<sub>2</sub>SO<sub>4</sub> with quantitative yield, so 31.2 mol x 98.08 g/mol = 3.06 x 10<sup>3</sup> g = 3.06 kg."
+  },
+  {
+    "id": "proto-practice-048",
+    "answer": "C",
+    "confidence": "high",
+    "work": "2.00 mol H2 consumes 1.00 mol O2, giving 2.00 mol H2O(g) and leaving 2.00 - 1.00 = 1.00 mol O2. Total gas = 2.00 + 1.00 = 3.00 mol.",
+    "ambiguous": false,
+    "cleanExplanation": "The 2.00 mol H<sub>2</sub> reacts with 1.00 mol O<sub>2</sub> to form 2.00 mol H<sub>2</sub>O(g), leaving 1.00 mol of unreacted O<sub>2</sub>. Since water is present as a gas, the total gas after reaction is 2.00 + 1.00 = 3.00 mol."
+  },
+  {
+    "id": "proto-practice-049",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Moles of M per mole of nitride = 0.500/0.167 = 3.0, so each formula unit MxNy contains 3 metal atoms, i.e. x = 3 (M3N2).",
+    "ambiguous": false,
+    "cleanExplanation": "The ratio of metal consumed to nitride formed is 0.500 mol / 0.167 mol = 3.0. This means three metal atoms appear in each formula unit of the nitride, so x = 3 (as in M<sub>3</sub>N<sub>2</sub>)."
+  },
+  {
+    "id": "proto-practice-050",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(salicylic acid) = 2.00/138.12 = 0.01448 mol; n(anhydride) = 2.00/102.09 = 0.01959 mol. Acid is limiting; theoretical aspirin = 0.01448 x 180.16 = 2.61 g; at 85.0%: 2.61 x 0.850 = 2.22 g.",
+    "ambiguous": false,
+    "cleanExplanation": "n(salicylic acid) = 2.00 / 138.12 = 0.0145 mol and n(acetic anhydride) = 2.00 / 102.09 = 0.0196 mol; the 1:1 reaction makes salicylic acid limiting. Theoretical aspirin = 0.0145 mol x 180.16 g/mol = 2.61 g, and with 85.0% yield, 2.61 x 0.850 = 2.22 g is collected."
+  },
+  {
+    "id": "proto-textbook-001",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Chemistry bridges the physical sciences (physics, mathematics) and the life/earth sciences (biology, geology, medicine), which is why it is called the central science. The other options restrict chemistry falsely.",
+    "ambiguous": false,
+    "cleanExplanation": "Chemistry is called the central science because its principles connect physics and mathematics with biology, geology and medicine. It is not limited to laboratory work, is not the oldest science, and certainly does not study only living things."
+  },
+  {
+    "id": "proto-textbook-002",
+    "answer": "A",
+    "confidence": "high",
+    "work": "The Haber process combines atmospheric N2 with H2 over an iron catalyst to make NH3, the feedstock for nitrogen fertilizers. The other options are unrelated industrial processes.",
+    "ambiguous": false,
+    "cleanExplanation": "The Haber process fixes nitrogen from the air by reacting N<sub>2</sub> with H<sub>2</sub> over an iron catalyst to produce ammonia, which is the basis of nitrogen fertilizers. Nuclear fission, fermentation and distillation of seawater do not convert atmospheric nitrogen into fertilizer."
+  },
+  {
+    "id": "proto-textbook-003",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Chemistry is defined as the study of matter, its properties, and the changes it undergoes. It does relate to environmental issues, does make predictions, and studies natural as well as synthetic materials.",
+    "ambiguous": false,
+    "cleanExplanation": "Chemistry is the study of matter, its properties and the changes it undergoes. It is closely tied to environmental issues, is strongly predictive, and covers both natural and man-made substances."
+  },
+  {
+    "id": "proto-textbook-004",
+    "answer": "A",
+    "confidence": "high",
+    "work": "CFCs release chlorine radicals in the stratosphere that catalytically destroy ozone, so they were banned under the Montreal Protocol. They are not radioactive, are not an acid-rain source, and are not explosive.",
+    "ambiguous": false,
+    "cleanExplanation": "CFCs rise to the stratosphere, where ultraviolet light breaks them apart and the released chlorine atoms catalytically destroy ozone molecules. This depletion of the ozone layer, which shields Earth from UV radiation, is why they were phased out."
+  },
+  {
+    "id": "proto-textbook-005",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Green chemistry aims to design processes and products that reduce or eliminate hazardous substances and waste. It does not ban reactions, ignore cost for speed, or require only natural products.",
+    "ambiguous": false,
+    "cleanExplanation": "A central goal of green chemistry is designing chemical processes and products that reduce or eliminate hazardous waste and the use and generation of dangerous substances. It does not mean avoiding reactions, maximizing speed regardless of cost, or using only natural products."
+  },
+  {
+    "id": "proto-textbook-006",
+    "answer": "C",
+    "confidence": "high",
+    "work": "The macroscopic domain covers properties and changes observable and measurable directly on bulk samples, as opposed to the microscopic (atomic/molecular) and symbolic levels.",
+    "ambiguous": false,
+    "cleanExplanation": "The macroscopic level refers to what can be observed and measured directly, such as mass, color, temperature and volume of a bulk sample. Atoms, molecules and nuclei belong to the microscopic (particulate) level."
+  },
+  {
+    "id": "proto-textbook-007",
+    "answer": "D",
+    "confidence": "high",
+    "work": "A solution turning blue is a directly observable property of the bulk sample. Atom rearrangement, electron transitions and bond breaking are particulate-level events.",
+    "ambiguous": false,
+    "cleanExplanation": "A solution turning blue is something you can see and measure directly on the bulk sample, so it is a macroscopic observation. Atoms rearranging, electrons moving between orbitals and bonds breaking all describe the microscopic, particulate level."
+  },
+  {
+    "id": "proto-textbook-008",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Explaining a bulk property (ice floating, i.e. lower density) by how water molecules are arranged and hydrogen bonded is a particulate-level explanation.",
+    "ambiguous": false,
+    "cleanExplanation": "Explaining why ice floats requires describing how H<sub>2</sub>O molecules pack into an open hydrogen-bonded lattice that is less dense than liquid water. That is an explanation at the microscopic (particle) level, used to account for a macroscopic observation."
+  },
+  {
+    "id": "proto-textbook-009",
+    "answer": "D",
+    "confidence": "high",
+    "work": "The statement that mass is neither created nor destroyed in a chemical reaction is the law of conservation of mass. The other laws concern fixed mass ratios and gas volume ratios.",
+    "ambiguous": false,
+    "cleanExplanation": "The law of conservation of mass states that mass is neither created nor destroyed in a chemical reaction, so the total mass of reactants equals that of products. The laws of definite and multiple proportions and of combining volumes describe fixed mass or volume ratios instead."
+  },
+  {
+    "id": "proto-textbook-010",
+    "answer": "C",
+    "confidence": "high",
+    "work": "A substance is a form of matter with a fixed, definite composition and distinct properties (an element or a compound), unlike a mixture. Being a solid or being natural is irrelevant.",
+    "ambiguous": false,
+    "cleanExplanation": "A substance is matter with a fixed composition and distinct properties, such as an element or a compound. Mixtures have variable composition, and a substance need not be a solid or a natural material."
+  }
+]

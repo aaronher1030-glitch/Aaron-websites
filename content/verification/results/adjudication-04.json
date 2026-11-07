@@ -1,0 +1,11 @@
+{
+  "id": "ch1-3-theory-43",
+  "answer": "A",
+  "confidence": "high",
+  "work": "n(TiCl4) = 3.54e7 g / 189.7 g/mol = 1.866e5 mol and n(Mg) = 1.13e7 g / 24.31 g/mol = 4.648e5 mol. Mg needed is 2 x 1.866e5 = 3.73e5 mol, which is less than the 4.648e5 mol available, so TiCl4 (not Mg) is limiting. Theoretical Ti = 1.866e5 mol x 47.87 g/mol = 8.93e6 g. Percent yield = (7.81e6 / 8.93e6) x 100 = 87.4%, which is choice A.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "The stoichiometry gives TiCl4 as limiting (Mg is in excess by about 0.92e5 mol), so the theoretical Ti mass is 8.93e6 g and the yield is 87.4%, exactly choice A. The blind solver's answer A is correct; the stored sourceKey value C (89.3%) is inconsistent with the source's own explanation, which also computes 87.4% and states 'Correct Choice: A'.",
+  "cleanExplanation": "Convert masses to moles: n(TiCl4) = 3.54e7/189.7 = 1.866e5 mol and n(Mg) = 1.13e7/24.31 = 4.648e5 mol. Since 1.866e5 mol TiCl4 needs only 3.73e5 mol Mg of the 4.648e5 mol available, TiCl4 is limiting and the theoretical amount of Ti is 1.866e5 mol. The theoretical mass of Ti is 1.866e5 x 47.87 = 8.93e6 g. Percentage yield = (7.81e6/8.93e6) x 100 = 87.4%."
+}

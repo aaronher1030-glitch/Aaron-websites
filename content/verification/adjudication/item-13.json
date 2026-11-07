@@ -1,0 +1,21 @@
+{
+  "id": "ch4-7-theory-06",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "B",
+  "blind": "B",
+  "blindWork": "n(H+) = 15.0 mL x 0.500 M = 7.50 mmol; n(OH-) = 2 x 35.0 mL x 0.200 M = 14.0 mmol. Excess OH- = 14.0 - 7.50 = 6.50 mmol in 50.0 mL total, giving [OH-] = 0.130 M, which corresponds most closely to the listed 0.140 M.",
+  "blindConfidence": "low",
+  "ambiguous": true,
+  "flags": [
+    "key-commentary"
+  ],
+  "stem": "Concentration / Molarity: If $15.0\\text{~mL}$ of $0.500\\text{~M}\\text{~HNO}_{3}$ is mixed with $35.0\\text{~mL}$ of $0.200\\text{~M}\\text{~Ba(OH)}_{2}$, what is the resulting $\\left\\lbrack \\text{OH}^{-} \\right\\rbrack$ in the final solution?",
+  "choices": [
+    "$0.000\\text{~M}$",
+    "$0.140\\text{~M}$",
+    "$0.210\\text{~M}$",
+    "$0.280\\text{~M}$"
+  ],
+  "sourceExplanation": "$n\\left( \\text{H}^{+} \\right) = 0.015 \\times 0.500 = 0.0075\\text{~mol}$. $n\\left( \\text{OH}^{-} \\right) = 0.035 \\times 0.200 \\times 2 = 0.014\\text{~mol}$. Excess $\\text{OH}^{-} = 0.014 - 0.0075 = 0.0065\\text{~mol}$. Total volume $= 50.0\\text{~mL} = 0.050\\text{~L}$. $\\left\\lbrack \\text{OH}^{-} \\right\\rbrack = 0.0065/0.050 = 0.130\\text{~M}$ (approx B / C check calculations)."
+}

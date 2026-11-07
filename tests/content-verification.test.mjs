@@ -53,7 +53,7 @@ function blindRow(id, answer, extra = {}) {
   return { id, answer, confidence: "high", work: "reasoning", ambiguous: false, ...extra };
 }
 
-function makeSandbox({ candidates, blind = [], adjudication = null, promptAnswers = null }) {
+function makeSandbox({ candidates, blind = [], adjudication = null, promptAnswers = null, exclusions = null }) {
   const root = mkdtempSync(join(tmpdir(), "chembank-verify-"));
   sandboxes.push(root);
 
@@ -81,6 +81,12 @@ function makeSandbox({ candidates, blind = [], adjudication = null, promptAnswer
     writeFileSync(
       join(verification, "adjudication/batch-01.json"),
       `${JSON.stringify(promptAnswers, null, 2)}\n`,
+    );
+  }
+  if (exclusions) {
+    writeFileSync(
+      join(verification, "exclusions.json"),
+      `${JSON.stringify(exclusions, null, 2)}\n`,
     );
   }
   return root;
@@ -360,6 +366,49 @@ describe("make-adjudication routing", () => {
       claimedKeyConflicts: 2,
       files: { "batch-01.json": 5 },
     });
+  });
+});
+
+describe("excluded items", () => {
+  // Both items would publish: the source key is A and the blind solver agrees.
+  // Only the pinned exclusion may stop one of them.
+  const candidates = [makeCandidate("excluded-agrees"), makeCandidate("normal-agrees")];
+  const blind = [
+    blindRow("excluded-agrees", "A", { cleanExplanation: "Solution." }),
+    blindRow("normal-agrees", "A", { cleanExplanation: "Solution." }),
+  ];
+  const exclusions = [
+    {
+      id: "excluded-agrees",
+      reason: "no exact correct choice",
+      evidence: "Computed 0.858 g; choices 1.168 / 0.832 / 0.868 / 1.432 g (source key A).",
+    },
+  ];
+  const root = makeSandbox({ candidates, blind, exclusions });
+  const result = run(root, "apply-verification.mjs", ["--allow-partial"]);
+
+  test("an excluded item is flagged even when blind and source agree", () => {
+    expect(result.status, result.stderr).toBe(0);
+
+    const ledger = readJson(root, "content/verification/ledger.json");
+    const published = readJson(root, "content/verification/published.json");
+    const audit = readJson(root, "content/audit.json");
+    const row = ledger.find((entry) => entry.id === "excluded-agrees");
+
+    expect(row.status).toBe("flagged");
+    expect(row.answer).toBeNull();
+    expect(row.published).toBe(false);
+    expect(row.excluded).toBe(true);
+    expect(row.exclusionReason).toBe("no exact correct choice");
+    expect(row.issue).toBe("excluded from publication: no exact correct choice");
+
+    expect(published.some((item) => item.id === "excluded-agrees")).toBe(false);
+    // The control item proves the fixture really was publishable.
+    expect(published.some((item) => item.id === "normal-agrees")).toBe(true);
+
+    expect(audit.exclusions).toBe(1);
+    expect(audit.exclusionsApplied).toBe(1);
+    expect(audit.excludedIds).toContain("excluded-agrees");
   });
 });
 

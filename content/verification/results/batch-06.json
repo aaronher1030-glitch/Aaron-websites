@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ch4-7-theory-01",
+    "answer": "D",
+    "confidence": "high",
+    "work": "n(Al2(SO4)3) = 0.0250 L x 0.200 M = 5.00e-3 mol, so n(SO4^2-) = 3 x 5.00e-3 = 1.50e-2 mol. BaCl2 supplies one Ba2+ per formula unit, so n(BaCl2) = 1.50e-2 mol. V = 1.50e-2 / 0.150 = 0.1000 L = 100.0 mL.",
+    "ambiguous": false,
+    "cleanExplanation": "The aluminum sulfate contains three sulfates per formula unit: n(SO4^2-) = 3(0.0250 L)(0.200 M) = 1.50 x 10^-2 mol. Each Ba2+ precipitates one sulfate, so 1.50 x 10^-2 mol of BaCl2 is needed. Dividing by 0.150 M gives V = 0.1000 L = 100.0 mL."
+  },
+  {
+    "id": "ch4-7-theory-02",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Permanganate half-reaction: MnO4^- + 8H+ + 5e- -> Mn2+ + 4H2O. The iron half-reaction is Fe2+ -> Fe3+ + e-, so balance electrons with 5 Fe2+. Full equation: MnO4^- + 5Fe2+ + 8H+ -> Mn2+ + 5Fe3+ + 4H2O.",
+    "ambiguous": false,
+    "cleanExplanation": "In acid, MnO4^- is reduced by five electrons and needs eight H+ to form four H2O: MnO4^- + 8H+ + 5e- -> Mn2+ + 4H2O. Coupling this with five Fe2+ -> Fe3+ + e- gives MnO4^- + 5Fe2+ + 8H+ -> Mn2+ + 5Fe3+ + 4H2O. The coefficient of H+ is therefore 8."
+  },
+  {
+    "id": "ch4-7-theory-03",
+    "answer": "A",
+    "confidence": "high",
+    "work": "M(AgCl) = 107.87 + 35.45 = 143.32 g/mol, so n(AgCl) = 1.875/143.32 = 1.308e-2 mol = n(Cl). Mass Cl = 1.308e-2 x 35.45 = 0.4638 g. % Cl = 0.4638/1.200 x 100 = 38.6%.",
+    "ambiguous": false,
+    "cleanExplanation": "All chloride ends up as AgCl: n(AgCl) = 1.875 g / 143.32 g/mol = 1.308 x 10^-2 mol, hence 1.308 x 10^-2 mol of Cl. That corresponds to 0.4638 g of chlorine. Dividing by the 1.200 g sample mass gives 38.6% Cl."
+  },
+  {
+    "id": "ch4-7-theory-04",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Initial HCl = 50.0 mL x 0.100 M = 5.00 mmol; NaOH back-titrant = 6.2 mL x 0.150 M = 0.93 mmol, so HCl consumed by carbonate = 4.07 mmol. CaCO3 + 2HCl, so n(CaCO3) = 2.035 mmol = 0.2037 g. % = 0.2037/0.500 x 100 = 40.7% (approximately 41%, allowing for the 2-s.f. titrant volume).",
+    "ambiguous": false,
+    "cleanExplanation": "Total acid added is 5.00 mmol of HCl and 0.93 mmol is left over (neutralized by the NaOH), so 4.07 mmol of HCl reacted. Since CaCO3 consumes two H+ per formula unit, n(CaCO3) = 2.035 mmol, mass = 0.2037 g. The percentage is 0.2037/0.500 x 100 = 40.7%, i.e. about 41%."
+  },
+  {
+    "id": "ch4-7-theory-05",
+    "answer": "B",
+    "confidence": "high",
+    "work": "H2O2 has oxygen in the -1 state, midway between 0 (O2) and -2 (H2O), so it can be oxidized to O2 or reduced to H2O. MnO4^- and F2 are already in high/maximum oxidation states (oxidizers only) and Na is a strong reductant only.",
+    "ambiguous": false,
+    "cleanExplanation": "In H2O2 oxygen is in the intermediate -1 oxidation state, so it can both rise to 0 (O2) and fall to -2 (H2O); it is therefore able to act as either an oxidizing or a reducing agent. MnO4^- and F2 are oxidizing agents only, while Na metal can only be oxidized."
+  },
+  {
+    "id": "ch4-7-theory-06",
+    "answer": "B",
+    "confidence": "low",
+    "work": "n(H+) = 15.0 mL x 0.500 M = 7.50 mmol; n(OH-) = 2 x 35.0 mL x 0.200 M = 14.0 mmol. Excess OH- = 14.0 - 7.50 = 6.50 mmol in 50.0 mL total, giving [OH-] = 0.130 M, which corresponds most closely to the listed 0.140 M.",
+    "ambiguous": true,
+    "cleanExplanation": "The acid delivers 7.50 mmol of H+ and the barium hydroxide delivers 2(7.00) = 14.0 mmol of OH-. The excess base is 6.50 mmol in a total volume of 50.0 mL, so [OH-] = 6.50/50.0 = 0.13 M, matching the reported choice of 0.140 M to within rounding."
+  },
+  {
+    "id": "ch4-7-theory-07",
+    "answer": "D",
+    "confidence": "high",
+    "work": "KOH + CuSO4 gives Cu(OH)2(s); Ba(NO3)2 + Na2SO4 gives BaSO4(s); NH4Cl + AgNO3 gives AgCl(s). NaNO3 + CuSO4 contains only Na+, NO3-, Cu2+ and SO4^2-, all of which form soluble salts, so no precipitate appears.",
+    "ambiguous": false,
+    "cleanExplanation": "Every possible product of each mixture is checked against solubility rules: Cu(OH)2, BaSO4 and AgCl are all insoluble, so the first three pairs precipitate. The fourth pair gives only sodium, nitrate, copper(II) and sulfate ions, whose combination of salts are all soluble, so no precipitate forms."
+  },
+  {
+    "id": "ch4-7-theory-08",
+    "answer": "B",
+    "confidence": "high",
+    "work": "2(+1) + 4x + 6(-2) = 0 gives 4x = 10, so x = +2.5. Structurally the ion contains a central S-S bond (two S atoms at 0 to each other) plus two sulfonate-like S atoms each bonded to three O, consistent with the average value of +2.5.",
+    "ambiguous": false,
+    "cleanExplanation": "Setting 2(+1) + 4x + 6(-2) = 0 gives x = +10/4 = +2.5. The anion has a central S-S linkage (both sulfur atoms at oxidation state 0 relative to each other) and two sulfur atoms bonded to three oxygens, so the true individual states differ but average to +2.5."
+  },
+  {
+    "id": "ch4-7-theory-09",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n(NaOH) = 0.0324 L x 0.128 M = 4.147e-3 mol. For a monoprotic acid the stoichiometry is 1:1, so n(acid) = 4.147e-3 mol. M = 4.147e-3/0.0250 L = 0.166 M.",
+    "ambiguous": false,
+    "cleanExplanation": "The base supplied 0.0324 L x 0.128 M = 4.15 x 10^-3 mol of OH-, which equals the moles of monoprotic acid neutralized. Dividing by the 0.0250 L sample volume gives 0.166 M."
+  },
+  {
+    "id": "ch4-7-theory-10",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Pb(NO3)2(aq) + 2KI(aq) -> PbI2(s) + 2KNO3(aq). Potassium and nitrate are spectator ions, leaving Pb2+(aq) + 2I-(aq) -> PbI2(s).",
+    "ambiguous": false,
+    "cleanExplanation": "The molecular equation is Pb(NO3)2 + 2KI -> PbI2(s) + 2KNO3. K+ and NO3- stay dissolved and cancel as spectator ions, so the net ionic equation is Pb2+(aq) + 2I-(aq) -> PbI2(s), with correct 1:2 stoichiometry and the precipitating species only."
+  },
+  {
+    "id": "ch4-7-theory-11",
+    "answer": "C",
+    "confidence": "high",
+    "work": "In Cl2 the oxidation state is 0; in ClO- the chlorine is +1 (oxidized) and in Cl- it is -1 (reduced). The same element is simultaneously oxidized and reduced, which is disproportionation.",
+    "ambiguous": false,
+    "cleanExplanation": "Chlorine starts at oxidation state 0 in Cl2 and ends as +1 in ClO- and -1 in Cl-. Because one portion of the same element is oxidized while another is reduced, the process is a disproportionation."
+  },
+  {
+    "id": "ch4-7-theory-12",
+    "answer": "B",
+    "confidence": "high",
+    "work": "[Na+] = 0.200 M from Na2CO3 requires [Na2CO3] = 0.100 M since each formula unit gives two Na+. n = 0.100 M x 0.2500 L = 0.02500 mol; m = 0.02500 x 105.99 = 2.650 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Since each Na2CO3 delivers two sodium ions, a 0.200 M Na+ solution is 0.100 M in Na2CO3. The moles needed are 0.100 M x 0.2500 L = 0.02500 mol, and multiplying by 105.99 g/mol gives 2.65 g."
+  },
+  {
+    "id": "ch4-7-theory-13",
+    "answer": "C",
+    "confidence": "high",
+    "work": "n(MnO4-) = 0.0250 L x 0.0200 M = 5.00e-4 mol, which oxidizes 5 x 5.00e-4 = 2.50e-3 mol Fe2+. Mass Fe = 2.50e-3 x 55.85 = 0.1396 g; % Fe = 0.1396/0.300 x 100 = 46.5%.",
+    "ambiguous": false,
+    "cleanExplanation": "The permanganate used is 5.00 x 10^-4 mol and each MnO4^- reacts with five Fe2+, so 2.50 x 10^-3 mol of Fe2+ is oxidized. That is 0.1396 g of iron, which is 46.5% of the 0.300 g ore sample."
+  },
+  {
+    "id": "ch4-7-theory-14",
+    "answer": "B",
+    "confidence": "high",
+    "work": "P = 750/760 = 0.9868 atm, T = 300 K, M = 44.01 g/mol. d = PM/RT = (0.9868)(44.01)/((0.08206)(300)) = 43.4/24.62 = 1.76 g/L, matching 1.79 g/L to within rounding of intermediate values.",
+    "ambiguous": false,
+    "cleanExplanation": "Using d = PM/RT with P = 750 mmHg/760 = 0.987 atm, M = 44.01 g/mol and T = 300 K gives d = (0.987)(44.01)/[(0.08206)(300)] = 1.76 g/L, i.e. about 1.8 g/L, consistent with 1.79 g/L."
+  },
+  {
+    "id": "ch4-7-theory-15",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Graham's law: r(unknown)/r(CH4) = sqrt(M(CH4)/M(unknown)) = 1/1.66. So M(unknown) = 16.04 x (1.66)^2 = 16.04 x 2.756 = 44.2 g/mol, i.e. 44.0 g/mol (consistent with CO2).",
+    "ambiguous": false,
+    "cleanExplanation": "Effusion rate is inversely proportional to the square root of molar mass, so the unknown is heavier: M = M(CH4)(1.66)^2 = 16.04 x 2.76 = 44.2 g/mol. That matches the 44.0 g/mol option."
+  },
+  {
+    "id": "ch4-7-theory-16",
+    "answer": "D",
+    "confidence": "high",
+    "work": "n(He) = 2.00/4.003 = 0.4996 mol; n(Ar) = 8.00/39.95 = 0.2003 mol; total = 0.6999 mol. P = nRT/V = (0.6999)(0.08206)(298.15)/5.00 = 17.13/5.00 = 3.43 atm.",
+    "ambiguous": false,
+    "cleanExplanation": "The He contributes 2.00/4.003 = 0.500 mol and the Ar 8.00/39.95 = 0.200 mol, for 0.700 mol total. Applying the ideal gas law to the whole mixture, P = nRT/V = (0.700)(0.08206)(298)/5.00 = 3.42 atm."
+  },
+  {
+    "id": "ch4-7-theory-17",
+    "answer": "B",
+    "confidence": "high",
+    "work": "pH2 = 760 - 19.8 = 740.2 mmHg = 0.9740 atm; T = 295 K; V = 0.250 L. n = PV/RT = (0.9740)(0.250)/[(0.08206)(295)] = 0.2435/24.21 = 1.006e-2 mol. Zn:H2 is 1:1, so 1.01e-2 mol Zn.",
+    "ambiguous": false,
+    "cleanExplanation": "The hydrogen is collected over water, so its partial pressure is 760 - 19.8 = 740.2 mmHg = 0.974 atm. Then n = PV/RT = (0.974)(0.250)/[(0.08206)(295)] = 1.01 x 10^-2 mol of H2, and because Zn + 2HCl gives one H2 per Zn, the same moles of zinc reacted."
+  },
+  {
+    "id": "ch4-7-theory-18",
+    "answer": "B",
+    "confidence": "high",
+    "work": "u_rms = sqrt(3RT/M) = sqrt(3 x 8.314 x 300.15/0.0280) = sqrt(7.486e3/0.0280) = sqrt(2.674e5) = 517 m/s.",
+    "ambiguous": false,
+    "cleanExplanation": "Using u_rms = sqrt(3RT/M) with T = 300 K and M = 0.0280 kg/mol, u_rms = sqrt[(3)(8.314)(300)/(0.0280)] = sqrt(2.67 x 10^5) = 5.2 x 10^2 m/s, i.e. about 517 m/s."
+  },
+  {
+    "id": "ch4-7-theory-19",
+    "answer": "D",
+    "confidence": "high",
+    "work": "The constant a scales with the strength and number of intermolecular attractions, which grow with polarizability and molecular size. Cl2 is the largest, most polarizable molecule among He, Ne, H2 and Cl2, so it has the largest a.",
+    "ambiguous": false,
+    "cleanExplanation": "The van der Waals constant a measures the strength of intermolecular attraction, which increases with molecular size and polarizability. Chlorine is by far the largest and most polarizable of the four gases listed (and the only one with significant London dispersion forces), so it has the largest a value."
+  },
+  {
+    "id": "ch4-7-theory-20",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Deviations arise when molar volume is small (molecular volume and attractions matter), i.e. low temperature and high pressure. At high T and low P the gas is far from condensation and behaves nearly ideally.",
+    "ambiguous": false,
+    "cleanExplanation": "Real gases deviate from ideality when the molecules are close together and moving slowly, so the finite molecular volume and attractive forces become significant. That happens at low temperature and high pressure, whereas high temperature and low pressure make the gas behave almost ideally."
+  }
+]

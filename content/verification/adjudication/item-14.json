@@ -1,0 +1,22 @@
+{
+  "id": "ch4-7-theory-12",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "C",
+  "blind": "B",
+  "blindWork": "[Na+] = 0.200 M from Na2CO3 requires [Na2CO3] = 0.100 M since each formula unit gives two Na+. n = 0.100 M x 0.2500 L = 0.02500 mol; m = 0.02500 x 105.99 = 2.650 g.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-B"
+  ],
+  "stem": "Solution Preparation: How many grams of $\\text{Na}_{2}\\text{CO}_{3}$ ($105.99\\text{~g/mol}$) are required to prepare $250.0\\text{~mL}$ of a solution with a sodium ion concentration of $0.200\\text{~M}$?",
+  "choices": [
+    "$1.32\\text{~g}$",
+    "$2.65\\text{~g}$",
+    "$5.30\\text{~g}$",
+    "$10.60\\text{~g}$"
+  ],
+  "sourceExplanation": "$\\left\\lbrack \\text{Na}^{+} \\right\\rbrack = 0.200\\text{~M}$, so $\\left\\lbrack \\text{Na}_{2}\\text{CO}_{3} \\right\\rbrack = 0.100\\text{~M}$. Moles needed $= 0.100 \\times 0.250 = 0.025\\text{~mol}$. Mass $= 0.025 \\times 105.99 = 2.65\\text{~g}$? Wait, $2 \\times \\text{Na}^{+}$ per mole of $\\text{Na}_{2}\\text{CO}_{3}$, so $\\left\\lbrack \\text{Na}_{2}\\text{CO}_{3} \\right\\rbrack = 0.100\\text{~M}$. Moles $= 0.025$, mass $= 2.65\\text{~g}$. (B)"
+}

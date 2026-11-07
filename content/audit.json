@@ -1,0 +1,31 @@
+{
+  "total": 434,
+  "candidates": 434,
+  "published": 430,
+  "verified": 430,
+  "flagged": 4,
+  "corrections": 24,
+  "deduped": 0,
+  "batches": 22,
+  "missingBlind": 0,
+  "adjudicated": 26,
+  "claimedKeyConflicts": 18,
+  "claimedKeyConflictsPublished": 17,
+  "adjudicatorDisagreements": 0,
+  "exclusions": 4,
+  "exclusionsApplied": 4,
+  "excludedIds": [
+    "ch1-3-theory-40",
+    "ch1-3-lab-49",
+    "ch4-7-theory-06",
+    "ch4-7-theory-23"
+  ],
+  "publishedByPaper": {
+    "ch1-3-theory": 49,
+    "ch1-3-lab": 49,
+    "ch4-7-theory": 48,
+    "ch4-7-lab": 50,
+    "mixed-practice": 130,
+    "(no paper)": 104
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ch4-7-theory-01",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "B",
+  "blind": "D",
+  "blindWork": "n(Al2(SO4)3) = 0.0250 L x 0.200 M = 5.00e-3 mol, so n(SO4^2-) = 3 x 5.00e-3 = 1.50e-2 mol. BaCl2 supplies one Ba2+ per formula unit, so n(BaCl2) = 1.50e-2 mol. V = 1.50e-2 / 0.150 = 0.1000 L = 100.0 mL.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-D"
+  ],
+  "stem": "Precipitation / Stoichiometry: What volume of $0.150\\text{~M}\\text{~BaCl}_{2}$ is required to completely precipitate all the sulfate ions from $25.0\\text{~mL}$ of $0.200\\text{~M}\\text{~Al}_{2}\\left( \\text{SO}_{4} \\right)_{3}$ solution?",
+  "choices": [
+    "$33.3\\text{~mL}$",
+    "$50.0\\text{~mL}$",
+    "$66.7\\text{~mL}$",
+    "$100.0\\text{~mL}$"
+  ],
+  "sourceExplanation": "Stoichiometric ratio: $3\\text{~Ba}^{2 +} \\sim 2\\text{~Al}_{3}\\left( \\text{SO}_{4} \\right)_{3}$. Moles of $\\text{SO}_{4}^{2 -} = 2 \\times (0.0250 \\times 0.200) = 0.010\\text{~mol}$. Required $\\text{Ba}^{2 +} = 0.010\\text{~mol}$, volume $= 0.010/0.150 = 0.0667\\text{~L} = 66.7\\text{~mL}$? Wait, check: $n\\left( \\text{Al}_{2}\\left( \\text{SO}_{4} \\right)_{3} \\right) = 0.025 \\times 0.200 = 0.005\\text{~mol}$. Each mole contains $3$ moles of $\\text{SO}_{4}^{2 -}$, so $0.015\\text{~moles~of~}\\text{SO}_{4}^{2 -}$. $\\text{Ba}^{2 +} + \\text{SO}_{4}^{2 -} \\rightarrow \\text{BaSO}_{4}$. So $0.015\\text{~moles~of~}\\text{BaCl}_{2}$ needed. $V = 0.015/0.150 = 0.100\\text{~L} = 100.0\\text{~mL}$. (Correct option: D)"
+}

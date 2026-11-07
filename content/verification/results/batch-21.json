@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-textbook-071",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Condensation is gas -> liquid, in which intermolecular attractions form and potential energy is released as heat. Evaporation, melting and sublimation all require energy input, so they absorb heat from the surroundings.",
+    "ambiguous": false,
+    "cleanExplanation": "Condensation is the change from gas to liquid. As particles come together and attractions form, energy is released to the surroundings, so the surroundings warm up. Melting, evaporating and subliming all take in heat instead."
+  },
+  {
+    "id": "proto-textbook-072",
+    "answer": "B",
+    "confidence": "high",
+    "work": "A physical property can be observed without changing the substance's identity. Boiling point is such a property; reactivity with acid, rusting tendency and flammability are all chemical properties describing reactions.",
+    "ambiguous": false,
+    "cleanExplanation": "Boiling point is observed without changing the substance into anything new, so it is a physical property. Reactivity with acid, rusting and flammability all describe how a substance reacts, so they are chemical properties."
+  },
+  {
+    "id": "proto-textbook-073",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Gas evolution plus formation of a new solid from two clear solutions indicates new substances are produced (often a precipitate and a gas). Dissolving sugar, melting ice and crushing are only changes of state or size.",
+    "ambiguous": false,
+    "cleanExplanation": "Bubbles plus a new solid appearing when two clear solutions are mixed means new substances have formed, which is a chemical change. Dissolving sugar, melting ice and crushing a solid only change state or particle size, so they are physical changes."
+  },
+  {
+    "id": "proto-textbook-074",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Intensive properties do not depend on the amount of sample. Density is a ratio of mass to volume, so it is unchanged by sample size, whereas mass, volume and heat absorbed are all extensive.",
+    "ambiguous": false,
+    "cleanExplanation": "An intensive property does not depend on how much substance is present. Density is mass divided by volume, so doubling the sample leaves density the same. Mass, volume and heat absorbed all scale with amount and are extensive."
+  },
+  {
+    "id": "proto-textbook-075",
+    "answer": "B",
+    "confidence": "high",
+    "work": "m = d x V = 0.789 g/mL x 250.0 mL = 197.25 g, which rounds to 197 g (three significant figures, set by 0.789). The distractors come from dividing instead of multiplying.",
+    "ambiguous": false,
+    "cleanExplanation": "Mass = density x volume = 0.789 g/mL x 250.0 mL = 197.25 g. Since the density has three significant figures, the mass is 197 g."
+  },
+  {
+    "id": "proto-textbook-076",
+    "answer": "A",
+    "confidence": "high",
+    "work": "1 km = 1000 m, so 0.0045 km x 1000 m/km = 4.5 m. Moving the decimal three places right gives 4.5.",
+    "ambiguous": false,
+    "cleanExplanation": "There are 1000 m in 1 km, so multiply by 1000: 0.0045 x 1000 = 4.5 m."
+  },
+  {
+    "id": "proto-textbook-077",
+    "answer": "C",
+    "confidence": "high",
+    "work": "F = 1.8(100) + 32 = 180 + 32 = 212. The value 180 °F is the size of the degree interval alone, ignoring the +32 offset.",
+    "ambiguous": false,
+    "cleanExplanation": "Substitute into the formula: F = 1.8 x 100 + 32 = 180 + 32 = 212 °F, which is the boiling point of water."
+  },
+  {
+    "id": "proto-textbook-078",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Leading zeros after the decimal are placeholders and are not significant. The digits 5, 0 and 2 are all significant, including the trapped zero, giving 3 significant figures.",
+    "ambiguous": false,
+    "cleanExplanation": "In 0.0502 the first two zeros are leading placeholders and do not count. The digits 5, 0 and 2 all count (the zero is trapped between significant digits), so there are 3 significant figures."
+  },
+  {
+    "id": "proto-textbook-079",
+    "answer": "D",
+    "confidence": "high",
+    "work": "The sum is 12.11 + 18.0 + 1.013 = 31.123. In addition the result is limited by the term with the fewest decimal places, 18.0 (tenths), so it must be rounded to 31.1.",
+    "ambiguous": false,
+    "cleanExplanation": "Adding gives 31.123, but 18.0 is only known to one decimal place. Rounding to the tenths place gives 31.1."
+  },
+  {
+    "id": "proto-textbook-080",
+    "answer": "C",
+    "confidence": "high",
+    "work": "6.02 x 10^5 means 6.02 x 100 000 = 602 000. Writing 602 000 with the implied significant figures corresponds to this coefficient and exponent.",
+    "ambiguous": false,
+    "cleanExplanation": "The exponent 5 means move the decimal point five places to the right: 6.02 becomes 602 000."
+  },
+  {
+    "id": "proto-textbook-081",
+    "answer": "B",
+    "confidence": "high",
+    "work": "1 L = 1000 cm^3, so 2.5 L x 1000 cm^3/L = 2500 cm^3 = 2.5 x 10^3 cm^3.",
+    "ambiguous": false,
+    "cleanExplanation": "Since 1 L = 1000 cm^3, multiply by 1000: 2.5 L = 2500 cm^3 = 2.5 x 10^3 cm^3."
+  },
+  {
+    "id": "proto-textbook-082",
+    "answer": "C",
+    "confidence": "high",
+    "work": "1 m^3 = 1000 L, so 15.0 m^3 x 1000 L/m^3 = 1.50 x 10^4 L. Note the factor is 10^3, not 10 cubed again mishandled as 10^6.",
+    "ambiguous": false,
+    "cleanExplanation": "One cubic metre holds 1000 L, so 15.0 m^3 x 1000 L/m^3 = 15 000 L = 1.50 x 10^4 L."
+  },
+  {
+    "id": "proto-textbook-083",
+    "answer": "B",
+    "confidence": "high",
+    "work": "V = 5.00 x 4.00 x 2.00 = 40.0 cm^3. m = 19.3 g/cm^3 x 40.0 cm^3 = 772 g = 0.772 kg after dividing by 1000.",
+    "ambiguous": false,
+    "cleanExplanation": "Volume = 5.00 x 4.00 x 2.00 = 40.0 cm^3. Mass = 19.3 x 40.0 = 772 g, and dividing by 1000 gives 0.772 kg."
+  },
+  {
+    "id": "proto-textbook-084",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Dalton published his atomic theory in 1808, proposing that elements consist of indivisible atoms of fixed mass. Rutherford, Thomson and Bohr made later discoveries about atomic structure (1897-1913).",
+    "ambiguous": false,
+    "cleanExplanation": "John Dalton proposed the modern atomic theory in 1808, stating that elements are made of atoms of definite mass that combine in fixed ratios. Thomson, Rutherford and Bohr came later."
+  },
+  {
+    "id": "proto-textbook-085",
+    "answer": "D",
+    "confidence": "high",
+    "work": "A fixed composition by mass in a given compound is the law of definite (constant) proportions. The law of multiple proportions concerns ratios between different compounds of the same elements.",
+    "ambiguous": false,
+    "cleanExplanation": "Water always having the same 1 : 8 hydrogen-to-oxygen mass ratio shows each compound has a fixed composition by mass. This is the law of definite proportions."
+  },
+  {
+    "id": "proto-textbook-086",
+    "answer": "B",
+    "confidence": "high",
+    "work": "For 12.0 g C: CO contains 16.0 g O and CO2 contains 32.0 g O. The ratio CO2 : CO = 32.0 : 16.0 = 2 : 1.",
+    "ambiguous": false,
+    "cleanExplanation": "In CO, 12 g of carbon combines with 16 g of oxygen; in CO2, the same 12 g of carbon combines with 32 g of oxygen. The oxygen masses are therefore in the ratio 32 : 16 = 2 : 1."
+  },
+  {
+    "id": "proto-textbook-087",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Protons and neutrons make up the nucleus, so electrons occupy the region outside it. Alpha particles are helium nuclei, not a component of the atom.",
+    "ambiguous": false,
+    "cleanExplanation": "The nucleus contains protons and neutrons. Electrons occupy the space outside the nucleus, so the electron is the particle found there."
+  },
+  {
+    "id": "proto-textbook-088",
+    "answer": "A",
+    "confidence": "high",
+    "work": "The proton rest mass is 1.673 x 10^-27 kg and the electron rest mass is 9.109 x 10^-31 kg. Dividing gives about 1836, conventionally rounded to 1840.",
+    "ambiguous": false,
+    "cleanExplanation": "A proton has a mass of about 1.67 x 10^-27 kg and an electron about 9.11 x 10^-31 kg. Their ratio is roughly 1840, so a proton is about 1840 times heavier."
+  },
+  {
+    "id": "proto-textbook-089",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Most alpha particles passed straight through, but a few were strongly repelled at large angles. Such large-angle deflection requires a concentrated positive charge and mass, i.e. the small dense nucleus.",
+    "ambiguous": false,
+    "cleanExplanation": "Alpha particles are positively charged, so strong large-angle repulsion means they approached a concentrated positive charge. This showed the atom has a tiny, dense, positively charged nucleus."
+  },
+  {
+    "id": "proto-textbook-090",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Neutrons = mass number - atomic number = 238 - 92 = 146.",
+    "ambiguous": false,
+    "cleanExplanation": "The mass number 238 counts protons plus neutrons, and Z = 92 is the proton count. Neutrons = 238 - 92 = 146."
+  }
+]

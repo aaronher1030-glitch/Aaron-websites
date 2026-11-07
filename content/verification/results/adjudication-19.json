@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-31",
+  "answer": "C",
+  "confidence": "high",
+  "work": "Using the IUPAC convention DeltaU = q + w, heat entering the system is positive (q = +250 J) and expansion work done by the system on the surroundings is negative (w = -450 J). Therefore DeltaU = 250 - 450 = -200 J. The system gains 250 J by heating but loses 450 J as work, so the net internal energy falls by 200 J, matching choice C.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "The correct value is -200 J, which is choice C (third choice). The sourceKey is listed as B, but the source's own explanation computes -200 J and labels it (C), so the key letter is a transcription error while the printed explanation is correct. The blind solver's answer C and its DeltaU = q + w computation both agree with the physics.",
+  "cleanExplanation": "Heat absorbed by the system is positive, so q = +250 J; expansion work done by the system on the surroundings is negative, so w = -450 J. The first law gives DeltaU = q + w = +250 J + (-450 J) = -200 J. The system takes in 250 J of heat but does 450 J of work, so its internal energy drops by 200 J."
+}

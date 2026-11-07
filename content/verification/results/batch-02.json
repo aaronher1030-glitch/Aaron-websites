@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ch1-3-theory-21",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Sulfate is SO4^2-, so three sulfates carry -6; two Fe must give +6, i.e. Fe^3+ (iron(III)). The roman numeral reflects the metal charge, not the number of ions, and the dot-nine waters give the suffix nonahydrate.",
+    "ambiguous": false,
+    "cleanExplanation": "Each sulfate ion has a 2- charge, so Fe2(SO4)3 requires Fe to be 3+ (total 6+ balancing 6-). The cation is therefore named iron(III) sulfate, and the nine waters of crystallization give the suffix nonahydrate: iron(III) sulfate nonahydrate."
+  },
+  {
+    "id": "ch1-3-theory-22",
+    "answer": "D",
+    "confidence": "high",
+    "work": "The perchlorate ion is ClO4^-, and an acid formed from an -ate ion takes the -ic acid name, so perchloric acid is HClO4. HClO is hypochlorous, HClO2 chlorous, HClO3 chloric.",
+    "ambiguous": false,
+    "cleanExplanation": "Perchloric acid is the acid of the perchlorate ion, ClO4^-. Adding one H+ gives HClO4; the \"per...-ic\" prefix/suffix pair (perchlorate/perchloric) is consistent with the four oxygens."
+  },
+  {
+    "id": "ch1-3-theory-23",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Binary covalent compounds use prefixes for both elements: P4 = tetraphosphorus, O10 = decoxide (the \"a\" of deca is dropped before \"oxide\"). Phosphoric anhydride is a common/trivial name, not the systematic one.",
+    "ambiguous": false,
+    "cleanExplanation": "For a binary molecular compound the prefixes state the atom count of each element: P4 is tetraphosphorus and O10 is decoxide (\"deca\" loses its final \"a\" before \"oxide\"). The systematic name is tetraphosphorus decoxide."
+  },
+  {
+    "id": "ch1-3-theory-24",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Ba^2+ needs two -1 bicarbonate ions to be neutral, so barium bicarbonate must be Ba(HCO3)2. Al2S3 (2x3+ / 3x2-), Ca3(PO4)2 (3x2+ / 2x3-) and K2Cr2O7 (2x1+ / 2-) are all charge-balanced.",
+    "ambiguous": false,
+    "cleanExplanation": "Formulas must be electrically neutral. Al2S3, Ca3(PO4)2 and K2Cr2O7 all balance exactly, but BaHCO3 pairs a 2+ barium with a single 1- hydrogen carbonate, giving a net +1 charge; the correct formula is Ba(HCO3)2."
+  },
+  {
+    "id": "ch1-3-theory-25",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Prefixes give subscripts directly: di = 2 nitrogen, penta = 5 oxygen, so N2O5. N2O3 is dinitrogen trioxide, NO2 nitrogen dioxide.",
+    "ambiguous": false,
+    "cleanExplanation": "In the name dinitrogen pentoxide, \"di-\" means two N atoms and \"penta-\" means five O atoms, so the formula is N2O5."
+  },
+  {
+    "id": "ch1-3-theory-26",
+    "answer": "A",
+    "confidence": "high",
+    "work": "BrO3^- is the bromate ion (bromite is BrO2^-, perbromate is BrO4^-). Three bromates give -6, so Cr is +3, named chromium(III).",
+    "ambiguous": false,
+    "cleanExplanation": "The anion BrO3^- is bromate, and three of them contribute 6- overall, so chromium must be 3+ to balance the charge. The name is therefore chromium(III) bromate."
+  },
+  {
+    "id": "ch1-3-theory-27",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Acids of -ite ions end in -ous: sulfite (SO3^2-) gives sulfurous acid, H2SO3. HNO3 is nitric, H3PO4 phosphoric and HClO4 perchloric (all -ic).",
+    "ambiguous": false,
+    "cleanExplanation": "An oxoacid whose anion ends in -ite is named with the -ous suffix. Sulfite, SO3^2-, pairs with H2SO3 (sulfurous acid); HNO3, H3PO4 and HClO4 are all -ic acids (nitric, phosphoric, perchloric)."
+  },
+  {
+    "id": "ch1-3-theory-28",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Alkanes follow CnH2n+2: for n = 3, H = 2(3)+2 = 8, so C3H8. C2H6 is ethane, C4H10 butane, C3H6 propene.",
+    "ambiguous": false,
+    "cleanExplanation": "Propane is the three-carbon alkane, and alkanes obey CnH2n+2. With n = 3 the hydrogen count is 2(3)+2 = 8, giving C3H8."
+  },
+  {
+    "id": "ch1-3-theory-29",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Dichromate is Cr2O7^2-, so two NH4^+ are required: (NH4)2Cr2O7. (NH4)2CrO4 is ammonium chromate and NH4Cr2O7 is charge-unbalanced.",
+    "ambiguous": false,
+    "cleanExplanation": "The dichromate ion is Cr2O7^2- and ammonium is NH4^+. Two ammonium ions balance one dichromate ion, so the formula is (NH4)2Cr2O7."
+  },
+  {
+    "id": "ch1-3-theory-30",
+    "answer": "B",
+    "confidence": "high",
+    "work": "CH3CH2OH has two carbons and an -OH group on the terminal carbon, i.e. a two-carbon alcohol: ethanol. Methanol is CH3OH and dimethyl ether is CH3OCH3.",
+    "ambiguous": false,
+    "cleanExplanation": "The structure CH3CH2OH contains a two-carbon chain with a hydroxyl group (-OH) on one carbon, which is the definition of an alcohol. With two carbons the parent name is ethane, so the compound is ethanol."
+  },
+  {
+    "id": "ch1-3-theory-31",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Each formula unit contains 4 (sulfate) + 5 (water) = 9 oxygen atoms. n(O) = 0.250 x 9 = 2.25 mol, and 2.25 x 6.022e23 = 1.35e24 atoms.",
+    "ambiguous": false,
+    "cleanExplanation": "One formula unit of CuSO4.5H2O holds 4 O atoms from sulfate plus 5 from the water, a total of 9. Then 0.250 mol x 9 = 2.25 mol O, and 2.25 x 6.022e23 = 1.35e24 oxygen atoms."
+  },
+  {
+    "id": "ch1-3-theory-32",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Moles per 100 g: C 40.00/12.011 = 3.330, H 6.71/1.008 = 6.66, O 53.29/16.00 = 3.331, giving CH2O (M = 30.03). The multiplier is 180/30.03 = 6, so C6H12O6.",
+    "ambiguous": false,
+    "cleanExplanation": "Dividing each percentage by the atomic mass gives C:H:O = 3.33 : 6.66 : 3.33, which simplifies to CH2O (formula mass 30.03 g/mol). The molar mass 180 g/mol is six times larger, so multiply by 6 to obtain C6H12O6."
+  },
+  {
+    "id": "ch1-3-theory-33",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n(C) = 4.71/44.01 = 0.1070 mol (1.285 g C); n(H) = 2 x 1.93/18.015 = 0.2143 mol (0.216 g H). These account for 1.50 g, so no oxygen; H:C = 0.2143/0.1070 = 2.00, giving CH2.",
+    "ambiguous": false,
+    "cleanExplanation": "The CO2 gives 4.71/44.01 = 0.107 mol C and the water gives 2 x 1.93/18.02 = 0.214 mol H. Together they weigh 1.285 + 0.216 = 1.50 g, all of the sample, so the fuel is a pure hydrocarbon; the H:C ratio of 2.00 gives CH2."
+  },
+  {
+    "id": "ch1-3-theory-34",
+    "answer": "B",
+    "confidence": "high",
+    "work": "NH4NO3 contains 2 N atoms, so N mass = 28.014 g per 80.04 g. 28.014/80.04 x 100 = 35.0%.",
+    "ambiguous": false,
+    "cleanExplanation": "Ammonium nitrate has two nitrogen atoms (one in NH4+ and one in NO3-), for 2 x 14.01 = 28.02 g/mol of nitrogen. Dividing by the molar mass 80.04 g/mol and multiplying by 100% gives 35.0% N."
+  },
+  {
+    "id": "ch1-3-theory-35",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(Fe2O3) = 500.0/159.7 = 3.131 mol, each containing 2 Fe, so 6.262 mol Fe. Mass = 6.262 x 55.845 = 349.7 g (mass fraction Fe = 111.69/159.7 = 0.6994).",
+    "ambiguous": false,
+    "cleanExplanation": "Iron(III) oxide is 69.94% iron by mass (2 x 55.845 = 111.69 of 159.7 g/mol). Applying this to 500.0 g gives 0.6994 x 500.0 = 349.7 g of iron."
+  },
+  {
+    "id": "ch1-3-theory-36",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Water lost = 5.75 - 3.23 = 2.52 g, i.e. 0.1398 mol H2O. Anhydrous ZnSO4 = 3.23/161.47 = 0.02000 mol. x = 0.1398/0.02000 = 6.99, so x = 7.",
+    "ambiguous": false,
+    "cleanExplanation": "Heating removes 5.75 - 3.23 = 2.52 g of water, which is 2.52/18.02 = 0.140 mol. The residue is 3.23/161.47 = 0.0200 mol ZnSO4. The ratio is 0.140/0.0200 = 7.0, so the hydrate is ZnSO4.7H2O."
+  },
+  {
+    "id": "ch1-3-theory-37",
+    "answer": "B",
+    "confidence": "high",
+    "work": "In a magnetic sector, the Lorentz force on a moving ion is qvB and the centripetal requirement is mv^2/r, so r = mv/(qB): the radius depends on mass-to-charge ratio m/z. All Xe+ ions carry the same charge, so isotopes separate by mass.",
+    "ambiguous": false,
+    "cleanExplanation": "An ion entering a magnetic field travels in a circular path of radius r = mv/(qB). Since the accelerating conditions and charge are fixed, the path radius is determined by the ion's mass-to-charge ratio m/z, which is why isotopes of xenon are separated."
+  },
+  {
+    "id": "ch1-3-theory-38",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n(Na3PO4) = 3.01e23 / 6.022e23 = 0.500 mol. Each formula unit provides 3 Na+, so n(Na+) = 3 x 0.500 = 1.50 mol.",
+    "ambiguous": false,
+    "cleanExplanation": "3.01e23 formula units divided by 6.022e23 per mole is 0.500 mol of Na3PO4. Since each formula unit contains three sodium ions, the amount of Na+ is 3 x 0.500 = 1.50 mol."
+  },
+  {
+    "id": "ch1-3-theory-39",
+    "answer": "B",
+    "confidence": "high",
+    "work": "In 100 g: n(N) = 30.45/14.007 = 2.174, n(O) = 69.55/15.999 = 4.347. Ratio N:O = 1 : 2.00, so the empirical formula is NO2.",
+    "ambiguous": false,
+    "cleanExplanation": "For 100 g of oxide there are 30.45/14.01 = 2.17 mol N and 69.55/16.00 = 4.35 mol O. The ratio 2.17:4.35 simplifies to 1:2, giving the empirical formula NO2."
+  },
+  {
+    "id": "ch1-3-theory-40",
+    "answer": "C",
+    "confidence": "medium",
+    "work": "Let x = mass NaCl (g), so KCl = 2.000 - x. Total chloride = x/58.44 + (2.000 - x)/74.55 = 0.0300, giving 16.11x = 13.82 and x = 0.858 g. The closest choice is 0.868 g (0.868 g checks to 0.03004 mol Cl at the stated masses).",
+    "ambiguous": false,
+    "cleanExplanation": "Let x be the mass of NaCl; then the KCl mass is 2.000 - x. Since each salt supplies one chloride ion, x/58.44 + (2.000 - x)/74.55 = 0.0300 mol. Solving gives x = 0.86 g, so about 0.868 g of NaCl is present (with 1.132 g KCl)."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-02",
+  "answer": "B",
+  "confidence": "high",
+  "work": "The reduction half-reaction is MnO4^- + 8H+ + 5e^- -> Mn2+ + 4H2O, and the oxidation half-reaction is Fe2+ -> Fe3+ + e^-. Multiplying the iron couple by 5 gives MnO4^- + 5Fe2+ + 8H+ -> Mn2+ + 5Fe3+ + 4H2O. Atom and charge checks both pass (O: 4 = 4; H: 8 = 8; charge: -1 + 10 + 8 = +17 = +2 + 15). The H+ coefficient is therefore 8, which is choice B.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "Balancing the two half-reactions and matching the five transferred electrons requires 8 H+ to supply the four oxygens of permanganate as four waters, so 8 is the only correct coefficient and appears as choice B. The source's keyed letter C (16) contradicts even its own explanation, which concludes the coefficient is 8 and labels it (B), so the key is internally inconsistent and wrong; the blind solver's B is correct.",
+  "cleanExplanation": "Split the reaction into half-reactions. Reduction: MnO4^- + 8H+ + 5e^- -> Mn2+ + 4H2O. Oxidation: Fe2+ -> Fe3+ + e^-. To equalize electrons, multiply the iron couple by 5, giving MnO4^- + 5Fe2+ + 8H+ -> Mn2+ + 5Fe3+ + 4H2O. The coefficient on H+ is 8, confirmed by checking charge: -1 + 10 + 8 = +17 on the left and +2 + 15 = +17 on the right."
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-mixed-061",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Carbon in CO2 is bonded to only two atoms (two C=O double bonds) with no lone pairs on carbon, so it has two electron domains. Two domains require sp hybridization with 180 degree O=C=O geometry.",
+    "ambiguous": false,
+    "cleanExplanation": "In CO<sub>2</sub> the central carbon has two electron domains (two double bonds to oxygen) and no lone pairs. Two domains correspond to <b>sp</b> hybridization, giving the linear 180 degree O=C=O shape."
+  },
+  {
+    "id": "proto-mixed-062",
+    "answer": "B",
+    "confidence": "high",
+    "work": "In NO3- nitrogen has four bonds (one double, two single) and no lone pairs. Formal charge = 5 - (0 + 4) = +1. The -1 overall charge sits on the singly bonded oxygens, each of which has FC = 6 - (6 + 1) = -1.",
+    "ambiguous": false,
+    "cleanExplanation": "Formal charge = (valence electrons) - (lone-pair electrons) - (bonds). For N in NO<sub>3</sub><sup>-</sup>: 5 - 0 - 4 = <b>+1</b>. The negative charge is carried by two singly bonded oxygen atoms, each with formal charge -1."
+  },
+  {
+    "id": "proto-mixed-063",
+    "answer": "A",
+    "confidence": "high",
+    "work": "NH4+ has four identical bonding pairs and no lone pair on N, so it is perfectly tetrahedral with H-N-H angles of exactly 109.5 degrees. BF3 is 120 degrees, CO2 is 180 degrees, and H2O is 104.5 degrees (compressed below the tetrahedral value by two lone pairs).",
+    "ambiguous": false,
+    "cleanExplanation": "NH<sub>4</sub><sup>+</sup> has four bonding pairs around nitrogen and no lone pairs, so it is a perfect tetrahedron with bond angles of exactly <b>109.5 degrees</b>. By contrast BF<sub>3</sub> is 120 degrees, CO<sub>2</sub> is 180 degrees, and H<sub>2</sub>O is 104.5 degrees."
+  },
+  {
+    "id": "proto-mixed-064",
+    "answer": "D",
+    "confidence": "high",
+    "work": "London dispersion forces grow with the number of polarizable electrons, i.e. with molecular size and surface area. Because all four are nonpolar alkanes, the largest molecule, C8H18, has the most electrons and greatest polarizability, so it has the strongest dispersion forces.",
+    "ambiguous": false,
+    "cleanExplanation": "All four substances are nonpolar alkanes, so only London dispersion forces act. Dispersion strength increases with the number of electrons and with molecular surface area, so the largest molecule, C<sub>8</sub>H<sub>18</sub>, has the <b>strongest</b> dispersion forces (and the highest boiling point)."
+  },
+  {
+    "id": "proto-mixed-065",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Moles needed = 0.600 mol/L x 0.500 L = 0.300 mol. Volume of 12.0 M stock = 0.300 mol / 12.0 mol/L = 0.0250 L = 25.0 mL. Equivalently M1V1 = M2V2 gives V1 = (0.600)(500)/12.0 = 25.0 mL.",
+    "ambiguous": false,
+    "cleanExplanation": "Use the dilution relation M<sub>1</sub>V<sub>1</sub> = M<sub>2</sub>V<sub>2</sub>. V<sub>1</sub> = (0.600 M)(500 mL)/(12.0 M) = <b>25.0 mL</b> of concentrated HCl, diluted to 500 mL with water."
+  },
+  {
+    "id": "proto-mixed-066",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Freezing-point depression is proportional to the total particle concentration i x m. At 0.10 m: glucose i = 1, acetic acid i slightly greater than 1 (weak acid), NaCl i = 2, CaCl2 i = 3, so CaCl2 gives the largest depression and therefore the lowest freezing point.",
+    "ambiguous": false,
+    "cleanExplanation": "Freezing-point depression follows ΔT<sub>f</sub> = i K<sub>f</sub> m. At equal molality, the largest van't Hoff factor wins: glucose gives 0.10 m particles, acetic acid slightly more than 0.10 m (partial ionization), NaCl gives 0.20 m, and CaCl<sub>2</sub> gives 0.30 m. Thus the <b>CaCl<sub>2</sub></b> solution has the largest depression and the lowest freezing point."
+  },
+  {
+    "id": "proto-mixed-067",
+    "answer": "A",
+    "confidence": "high",
+    "work": "ΔH°rxn = ΣΔHf°(products) - ΣΔHf°(reactants) = [-393.5 + 2(-285.8)] - [-74.8] = (-393.5 - 571.6) + 74.8 = -890.3 kJ.",
+    "ambiguous": false,
+    "cleanExplanation": "ΔH°<sub>rxn</sub> = ΣΔH<sub>f</sub>°(products) - ΣΔH<sub>f</sub>°(reactants). Here: [-393.5 + 2(-285.8)] - [-74.8 + 0] = -965.1 + 74.8 = <b>-890.3 kJ</b> per mole of CH<sub>4</sub> burned."
+  },
+  {
+    "id": "proto-mixed-068",
+    "answer": "A",
+    "confidence": "high",
+    "work": "q = m c ΔT = (105.0 g)(4.18 J/g·°C)(4.0 °C) = 1756 J = 1.756 kJ absorbed by the solution, so the process is endothermic. Moles = 5.00 g / 80.04 g/mol = 0.06247 mol, giving ΔH = +1.756/0.06247 = +28.1 kJ/mol.",
+    "ambiguous": false,
+    "cleanExplanation": "The solution gains q = mcΔT = (105.0)(4.18)(4.0) = 1760 J = 1.76 kJ, which comes from the dissolving salt, so dissolution is endothermic. With 5.00 g / 80.04 g/mol = 0.0625 mol, ΔH = +1.76 kJ / 0.0625 mol = <b>+28.1 kJ/mol</b>."
+  },
+  {
+    "id": "proto-mixed-069",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Doubling [A] doubles the rate, so the order in A is 1. Doubling [B] multiplies the rate by 4 = 2^2, so the order in B is 2. Therefore rate = k[A][B]^2, overall third order.",
+    "ambiguous": false,
+    "cleanExplanation": "A first-order dependence on A (doubling [A] doubles rate) and a second-order dependence on B (doubling [B] quadruples rate) give the rate law <b>rate = k[A][B]<sup>2</sup></b>, an overall third-order reaction."
+  },
+  {
+    "id": "proto-mixed-070",
+    "answer": "B",
+    "confidence": "high",
+    "work": "75% consumed means 25% remains, so [A]/[A]0 = 0.25. For first order, t = ln(1/0.25)/k = ln 4 / 0.0231 min^-1 = 1.386/0.0231 = 60.0 min. This equals two half-lives, each of 30.0 min.",
+    "ambiguous": false,
+    "cleanExplanation": "For a first-order reaction t = ln([A]<sub>0</sub>/[A])/k. When 75% has reacted, 25% remains, so t = ln(1/0.25)/0.0231 = ln 4/0.0231 = 1.386/0.0231 = <b>60.0 min</b>, which is exactly two half-lives of 30.0 min."
+  },
+  {
+    "id": "proto-mixed-071",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Entropy decreases when the number of moles of gas falls. N2(g) + 3H2(g) -> 2NH3(g) converts 4 mol of gas into 2 mol of gas, so ΔS is negative; melting, evaporation, and dissolution all increase disorder.",
+    "ambiguous": false,
+    "cleanExplanation": "A negative ΔS means the system becomes more ordered. In N<sub>2</sub>(g) + 3H<sub>2</sub>(g) → 2NH<sub>3</sub>(g) four moles of gas become two, sharply decreasing translational freedom and giving <b>ΔS &lt; 0</b>. Melting, evaporation, and dissolution all increase entropy."
+  },
+  {
+    "id": "proto-mixed-072",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Kc = [HI]^2/([H2][I2]) = 50.0, so [HI]^2 = 50.0 x (0.020)(0.020) = 0.0200 and [HI] = sqrt(0.0200) = 0.141 M.",
+    "ambiguous": false,
+    "cleanExplanation": "K<sub>c</sub> = [HI]<sup>2</sup>/([H<sub>2</sub>][I<sub>2</sub>]) = 50.0, so [HI]<sup>2</sup> = 50.0 × 0.020 × 0.020 = 0.0200. Taking the square root gives [HI] = <b>0.141 M</b>."
+  },
+  {
+    "id": "proto-mixed-073",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Removing a product lowers Q below K, so the system responds by forming more product, shifting right. Increasing volume or decreasing pressure favors the side with more gas moles (the left), and a catalyst changes no equilibrium position.",
+    "ambiguous": false,
+    "cleanExplanation": "Removing NH<sub>3</sub> as it forms decreases Q, so the reaction shifts toward products (right) to restore K. Increasing volume or decreasing pressure would shift left toward the 4 mol of gas, and a catalyst only speeds up both directions equally without changing the position of equilibrium."
+  },
+  {
+    "id": "proto-mixed-074",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Q = I t = (2.00 A)(965 s) = 1930 C. Electrons = 1930/96485 = 0.0200 mol, and Na+ + e- -> Na gives 0.0200 mol Na. Mass = 0.0200 x 22.99 = 0.460 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Charge passed Q = It = (2.00)(965) = 1930 C, which is 1930/96 485 = 0.0200 mol of electrons. Since Na<sup>+</sup> + e<sup>-</sup> → Na, 0.0200 mol of Na forms, mass = 0.0200 × 22.99 = <b>0.460 g</b>."
+  },
+  {
+    "id": "proto-mixed-075",
+    "answer": "B",
+    "confidence": "high",
+    "work": "For a weak acid, [H+] = sqrt(Ka·C) = sqrt(1.8e-5 x 0.100) = sqrt(1.8e-6) = 1.34e-3 M. pH = -log(1.34e-3) = 2.87.",
+    "ambiguous": false,
+    "cleanExplanation": "For a weak acid, [H<sup>+</sup>] ≈ (K<sub>a</sub>C)<sup>1/2</sup> = (1.8 × 10<sup>-5</sup> × 0.100)<sup>1/2</sup> = 1.34 × 10<sup>-3</sup> M (valid because the ionization is under 5%). pH = -log(1.34 × 10<sup>-3</sup>) = <b>2.87</b>."
+  },
+  {
+    "id": "proto-mixed-076",
+    "answer": "B",
+    "confidence": "high",
+    "work": "NaOH is a strong base, so [OH-] = 0.020 M. pOH = -log(0.020) = 1.70, and pH = 14.00 - 1.70 = 12.30.",
+    "ambiguous": false,
+    "cleanExplanation": "NaOH dissociates completely, giving [OH<sup>-</sup>] = 0.020 M. Then pOH = -log(0.020) = 1.70, so pH = 14.00 - 1.70 = <b>12.30</b>."
+  },
+  {
+    "id": "proto-mixed-077",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Beer-Lambert law: A = εcl, so c = A/(εl) = 0.300/[(1.50e3 L/mol·cm)(1.00 cm)] = 2.00e-4 mol/L. The very high molar absorptivity gives a dilute concentration.",
+    "ambiguous": false,
+    "cleanExplanation": "From A = εcl, c = A/(εl) = 0.300/(1.50 × 10<sup>3</sup> × 1.00) = <b>2.00 × 10<sup>-4</sup> M</b>."
+  },
+  {
+    "id": "proto-mixed-078",
+    "answer": "B",
+    "confidence": "high",
+    "work": "An aldehyde has a carbonyl carbon bonded to at least one hydrogen (-CHO). CH3CH2CHO (propanal) fits; CH3COCH3 is a ketone, CH3COOH a carboxylic acid, and CH3OCH3 an ether.",
+    "ambiguous": false,
+    "cleanExplanation": "An aldehyde contains the -CHO group, a carbonyl carbon bearing a hydrogen. Only <b>CH<sub>3</sub>CH<sub>2</sub>CHO</b> (propanal) has this group; CH<sub>3</sub>COCH<sub>3</sub> is a ketone, CH<sub>3</sub>COOH a carboxylic acid, and CH<sub>3</sub>OCH<sub>3</sub> an ether."
+  },
+  {
+    "id": "proto-mixed-079",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Acidified dichromate is a strong oxidant. A primary alcohol is first oxidized to an aldehyde, but with excess oxidant and heating the aldehyde is oxidized further by hydration to the carboxylic acid, so the final product is the acid.",
+    "ambiguous": false,
+    "cleanExplanation": "Hot acidified K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> is a strong oxidizing agent. A primary alcohol is oxidized through the aldehyde stage, and with excess oxidant the aldehyde is oxidized further, so the isolated product is a <b>carboxylic acid</b> (distilling off the aldehyde as it forms would be needed to stop at the aldehyde)."
+  },
+  {
+    "id": "proto-mixed-080",
+    "answer": "C",
+    "confidence": "high",
+    "work": "The sulfate counter-ion is SO4^2-, so the complex cation must be [Cu(NH3)4]^2+. Ammonia ligands are neutral, so the copper oxidation state is +2.",
+    "ambiguous": false,
+    "cleanExplanation": "The compound contains the sulfate ion SO<sub>4</sub><sup>2-</sup>, so the complex cation [Cu(NH<sub>3</sub>)<sub>4</sub>]<sup>2+</sup> must carry a 2+ charge. Ammonia is a neutral ligand, so copper has oxidation state <b>+2</b>."
+  }
+]

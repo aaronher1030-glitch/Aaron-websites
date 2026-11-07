@@ -10,6 +10,8 @@
  *    solver answer falls through to the source explanation;
  *  - reads adjudicator answers from results/adjudication-NN.json only — the
  *    adjudication/ directory holds prompts, never answers;
+ *  - honours verification/exclusions.json: an excluded candidate is always
+ *    flagged and never published, even when blind and adjudication agree;
  *  - writes a ledger (with candidate flags), an audit summary, and a *staged*
  *    published bank (content/verification/published.json). validate.mjs is the
  *    only script that writes src/data/questions.json, and only after re-checking
@@ -34,10 +36,12 @@ const RESULTS_DIR = "content/verification/results";
 const ADJ_DIR = "content/verification/adjudication";
 const BATCHES_DIR = "content/verification/batches";
 const MANIFEST = "content/verification/manifest.json";
+const EXCLUSIONS = "content/verification/exclusions.json";
 const STAGED_BANK = "content/verification/published.json";
 const LEDGER = "content/verification/ledger.json";
 const AUDIT = "content/audit.json";
 const MIN_BATCHES = 22;
+const EXCLUSION_ISSUE = "excluded from publication: no exact correct choice";
 const ALLOW_PARTIAL = process.argv.includes("--allow-partial");
 
 function readJson(file) {
@@ -80,8 +84,36 @@ function loadRows(files, { skipAdjudication = false } = {}) {
   return rows;
 }
 
-function verifyBatchManifest() {
-  if (!existsSync(MANIFEST)) {
+/**
+ * Items the controller ruled unpublishable because no choice equals the
+ * computed answer. The file is optional so sandbox tests that do not model
+ * exclusions still run; when present it must be an array of {id, reason,
+ * evidence} rows and every id must be a real candidate.
+ */
+function loadExclusions(candidateIds) {
+  if (!existsSync(EXCLUSIONS)) return [];
+  let parsed;
+  try {
+    parsed = readJson(EXCLUSIONS);
+  } catch (error) {
+    fail(`${EXCLUSIONS} is not valid JSON (${error.message})`);
+  }
+  if (!Array.isArray(parsed)) fail(`${EXCLUSIONS} must contain a JSON array`);
+  const seen = new Set();
+  for (const row of parsed) {
+    if (!row || typeof row.id !== "string" || row.id.trim() === "") {
+      fail(`${EXCLUSIONS} contains a row without a string id`);
+    }
+    if (!candidateIds.has(row.id)) {
+      fail(`exclusion ${row.id} is not a candidate; nothing was written`);
+    }
+    if (seen.has(row.id)) fail(`exclusion ${row.id} is listed more than once`);
+    seen.add(row.id);
+  }
+  return parsed;
+}
+
+function verifyBatchManifest() {  if (!existsSync(MANIFEST)) {
     console.warn("apply-verification: no batch manifest found; skipping checksum checks");
     return;
   }
@@ -172,6 +204,8 @@ function main() {
   }
 
   const candidateIds = new Set(candidates.map((item) => item.id));
+  const exclusions = loadExclusions(candidateIds);
+  const excludedById = new Map(exclusions.map((row) => [row.id, row]));
   const extraBlind = [...blindById.keys()].filter((id) => !candidateIds.has(id));
   if (extraBlind.length > 0) {
     console.warn(
@@ -251,6 +285,18 @@ function main() {
       issue = `source key ${sourceKey} disagrees with blind ${blind.answer} and no (valid) adjudication`;
     }
 
+    // Controller ruling: an item with no exact correct choice is excluded from
+    // publication even when blind and adjudication both agree. The exclusion is
+    // applied after normal routing so the ledger still records what each stage
+    // said, but the item can never enter the published bank.
+    const exclusion = excludedById.get(candidate.id);
+    if (exclusion) {
+      status = "flagged";
+      answerLetter = null;
+      answerSource = "";
+      issue = EXCLUSION_ISSUE;
+    }
+
     // I1: strip every candidate source first, then take the first non-empty one.
     // Stripping after the choice (the old behaviour) could empty the selected
     // text and skip the fallback entirely.
@@ -326,6 +372,7 @@ function main() {
         ? { blindAmbiguousRaw: blind.ambiguous }
         : {}),
       ...(adjudicatedDisagreesWithBoth ? { adjudicatorDisagreesWithBoth: true } : {}),
+      ...(exclusion ? { excluded: true, exclusionReason: exclusion.reason } : {}),
       ...(issue ? { issue } : {}),
     });
   }
@@ -354,6 +401,9 @@ function main() {
       (row) => row.published && claimedKeyFlags(row.flags).length > 0,
     ).length,
     adjudicatorDisagreements: ledger.filter((row) => row.adjudicatorDisagreesWithBoth).length,
+    exclusions: exclusions.length,
+    exclusionsApplied: ledger.filter((row) => row.excluded === true).length,
+    excludedIds: exclusions.map((row) => row.id),
     publishedByPaper: published.reduce((counts, item) => {
       const key = item.paper ?? "(no paper)";
       counts[key] = (counts[key] ?? 0) + 1;
@@ -370,7 +420,8 @@ function main() {
       `${audit.flagged} flagged, ${audit.corrections} correction(s), ` +
       `${audit.missingBlind} missing blind, ${audit.adjudicated} adjudicated, ` +
       `${audit.claimedKeyConflicts} claimed-key conflict(s), ` +
-      `${audit.adjudicatorDisagreements} adjudicator disagreement(s)`,
+      `${audit.adjudicatorDisagreements} adjudicator disagreement(s), ` +
+      `${audit.exclusionsApplied} exclusion(s)`,
   );
   console.log(`apply-verification: staged ${STAGED_BANK}; run content:validate to publish`);
 }

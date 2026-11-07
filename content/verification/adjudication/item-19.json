@@ -1,0 +1,21 @@
+{
+  "id": "ch4-7-theory-31",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "B",
+  "blind": "C",
+  "blindWork": "ΔU = q + w with q = +250 J (heat absorbed) and w = -450 J (work done by the system). ΔU = 250 - 450 = -200 J.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "claimed-C"
+  ],
+  "stem": "First Law of Thermodynamics: A system absorbs $250\\text{~J}$ of heat from its surroundings and does $450\\text{~J}$ of expansion work on the surroundings. What is the change in internal energy ($\\Delta U$) of the system?",
+  "choices": [
+    "$+ 700\\text{~J}$",
+    "$+ 200\\text{~J}$",
+    "$- 200\\text{~J}$",
+    "$- 700\\text{~J}$"
+  ],
+  "sourceExplanation": "$\\Delta U = q + w = + 250\\text{~J} + \\left( - 450\\text{~J} \\right) = - 200\\text{~J}$. (C)"
+}

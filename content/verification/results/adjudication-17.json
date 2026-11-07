@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-17",
+  "answer": "B",
+  "confidence": "high",
+  "work": "The hydrogen is collected over water, so its partial pressure is 760 - 19.8 = 740.2 mmHg = 740.2/760 = 0.974 atm. With V = 0.250 L and T = 22 C = 295 K, n = PV/RT = (0.974)(0.250)/[(0.08206)(295)] = 0.2435/24.21 = 1.01e-2 mol of H2. The equation Zn + 2HCl -> ZnCl2 + H2 gives a 1:1 Zn:H2 ratio, so 1.01e-2 mol of Zn was consumed.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "Subtracting the water vapor pressure and applying the ideal gas law gives 1.01e-2 mol of H2, and the 1:1 stoichiometry makes the moles of Zn the same, matching choice B. Choice A (9.82e-3) has no supporting derivation, and the source's own explanation actually computes 1.01e-2 mol, so the keyed letter A contradicts the source's worked arithmetic; the blind answer B is correct.",
+  "cleanExplanation": "The gas collected is a mixture of H2 and water vapor, so P(H2) = 760 - 19.8 = 740.2 mmHg = 0.974 atm. Using the ideal gas law with V = 0.250 L and T = 295 K: n(H2) = PV/RT = (0.974)(0.250)/[(0.08206)(295)] = 1.01 x 10^-2 mol. Because Zn + 2HCl -> ZnCl2 + H2 consumes one mole of Zn per mole of H2, the amount of Zn is also 1.01 x 10^-2 mol."
+}

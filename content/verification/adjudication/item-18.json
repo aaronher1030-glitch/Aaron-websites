@@ -1,0 +1,21 @@
+{
+  "id": "ch4-7-theory-23",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "D",
+  "blind": "B",
+  "blindWork": "C4H10 + 13/2 O2 -> 4 CO2 + 5 H2O. n(butane) = 5.60 g / 58.12 g/mol = 0.0964 mol, so n(O2) = 0.626 mol and V = 0.626 × 22.4 L = 14.0 L. The listed value 13.4 L is the only choice near this result (the others are ~12-150% away).",
+  "blindConfidence": "low",
+  "ambiguous": true,
+  "flags": [
+    "key-commentary"
+  ],
+  "stem": "Stoichiometry & Combustion: What volume of oxygen gas at STP is required to completely combust $5.60\\text{~g}$ of butane ($\\text{C}_{4}\\text{H}_{10}$)?",
+  "choices": [
+    "$11.2\\text{~L}$",
+    "$13.4\\text{~L}$",
+    "$22.4\\text{~L}$",
+    "$35.8\\text{~L}$"
+  ],
+  "sourceExplanation": "$\\text{C}_{4}\\text{H}_{10} + 6.5\\text{~O}_{2} \\rightarrow 4\\text{CO}_{2} + 5\\text{H}_{2}\\text{O}$. $n\\left( \\text{butane} \\right) = 5.60/58.12 = 0.0963\\text{~mol}$. $n\\left( \\text{O}_{2} \\right) = 0.626\\text{~mol}$. $V = 0.626 \\times 22.4 = 14.0\\text{~L}$? Wait, $6.5 \\times 22.4 = 145.6$, $0.0963 \\times 145.6 = 14.0\\text{~L}$ or if $V_{m} = 22.71$, let's verify."
+}

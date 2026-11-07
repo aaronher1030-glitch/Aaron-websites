@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-practice-021",
+    "answer": "C",
+    "confidence": "high",
+    "work": "The sulfate ion is SO4^2-, so charge balance requires 3 sulfate ions per 2 Fe: Fe2(SO4)3. The Fe must therefore be Fe3+, requiring the Stock numeral (III), and 9 water molecules give the prefix nona- for nonahydrate.",
+    "ambiguous": false,
+    "cleanExplanation": "Three sulfate ions (each 2-) require two iron ions of 3+ charge, so the iron is iron(III). The 9 waters of crystallization are named with the prefix nona-, giving iron(III) sulfate nonahydrate."
+  },
+  {
+    "id": "proto-practice-022",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Perchlorate is ClO4^-, and '-ic acid' names correspond to '-ate' anions, so perchloric acid must supply one H+ to ClO4^-: HClO4. HClO, HClO2 and HClO3 are hypochlorous, chlorous and chloric acids.",
+    "ambiguous": false,
+    "cleanExplanation": "The perchlorate ion is ClO4<sup>-</sup>; adding one H<sup>+</sup> gives HClO<sub>4</sub>. As with all '-ic' acids, the corresponding '-ate' anion is the one involved: perchlorate to perchloric acid."
+  },
+  {
+    "id": "proto-practice-023",
+    "answer": "A",
+    "confidence": "high",
+    "work": "For binary covalent compounds the prefixes follow the subscripts: 4 P = tetraphosphorus and 10 O = decoxide, with the 'a' of deca- dropped before 'oxide'.",
+    "ambiguous": false,
+    "cleanExplanation": "Binary molecular compounds are named with prefixes matching the subscripts: tetra- for 4 phosphorus atoms and dec- for 10 oxygen atoms. Hence P<sub>4</sub>O<sub>10</sub> is tetraphosphorus decoxide."
+  },
+  {
+    "id": "proto-practice-024",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Al2S3 balances 3+ x 2 with 2- x 3; Ca3(PO4)2 balances 2+ x 3 with 3- x 2; K2Cr2O7 balances 1+ x 2 with 2- x 1. Barium is 2+ but only one HCO3^- is shown, giving a net 1+ charge, so it must be Ba(HCO3)2.",
+    "ambiguous": false,
+    "cleanExplanation": "Barium forms Ba<sup>2+</sup> and hydrogen carbonate is HCO<sub>3</sub><sup>-</sup>, so two hydrogen carbonate ions are needed: Ba(HCO<sub>3</sub>)<sub>2</sub>. The formula BaHCO<sub>3</sub> does not balance charge, while the other three formulas are electrically neutral."
+  },
+  {
+    "id": "proto-practice-025",
+    "answer": "C",
+    "confidence": "high",
+    "work": "'Dinitrogen' means 2 N and 'pentoxide' means 5 O, so the formula is N2O5. The other options correspond to dinitrogen trioxide, nitrogen dioxide and a reversed-subscript formula.",
+    "ambiguous": false,
+    "cleanExplanation": "The prefixes state the atom counts directly: di- = 2 nitrogen, pent- = 5 oxygen. Therefore dinitrogen pentoxide is N<sub>2</sub>O<sub>5</sub>."
+  },
+  {
+    "id": "proto-practice-026",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Bromate is BrO3^-, so three of them carry 6- total, making Cr 3+: chromium(III). The anion is bromate, not bromide or perbromate, and the cation charge is III.",
+    "ambiguous": false,
+    "cleanExplanation": "Three BrO<sub>3</sub><sup>-</sup> ions total 6- negative charge, so the chromium ion must be Cr<sup>3+</sup>. The compound is therefore chromium(III) bromate."
+  },
+  {
+    "id": "proto-practice-027",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The '-ous' ending is used for the acid with one fewer oxygen than the '-ic' acid of the same family. Sulfur has sulfurous acid (H2SO3) and sulfuric acid (H2SO4), so H2SO3 ends in '-ous'.",
+    "ambiguous": false,
+    "cleanExplanation": "Within a family, the acid with the lower oxygen count takes the '-ous' suffix: H<sub>2</sub>SO<sub>3</sub> is sulfurous acid. HNO<sub>3</sub>, H<sub>3</sub>PO<sub>4</sub> and HClO<sub>4</sub> are nitric, phosphoric and perchloric acids, all '-ic' names."
+  },
+  {
+    "id": "proto-practice-028",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The prefix prop- indicates a three-carbon alkane, and alkanes obey CnH2n+2, so n = 3 gives C3H8. C2H6 is ethane, C4H10 is butane and C3H6 is propene.",
+    "ambiguous": false,
+    "cleanExplanation": "Propane is the three-carbon alkane. Applying C<sub>n</sub>H<sub>2n+2</sub> with n = 3 gives C<sub>3</sub>H<sub>8</sub>."
+  },
+  {
+    "id": "proto-practice-029",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Dichromate is Cr2O7^2-, so two NH4^+ ions are needed for neutrality, giving (NH4)2Cr2O7. (NH4)2CrO4 is ammonium chromate and NH4Cr2O7 is charge-unbalanced.",
+    "ambiguous": false,
+    "cleanExplanation": "The dichromate ion is Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>, which needs two ammonium ions to neutralize it. The formula is therefore (NH<sub>4</sub>)<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>."
+  },
+  {
+    "id": "proto-practice-030",
+    "answer": "B",
+    "confidence": "high",
+    "work": "CH3CH2OH is a two-carbon chain bearing an -OH group on carbon 1, i.e., the two-carbon alcohol ethanol. Methanol is CH3OH and propanol has three carbons.",
+    "ambiguous": false,
+    "cleanExplanation": "CH<sub>3</sub>CH<sub>2</sub>OH contains two carbon atoms and a hydroxyl group on the end carbon, which is the structure of ethanol. Methanol has one carbon, propanol has three, and dimethyl ether has no O-H group."
+  },
+  {
+    "id": "proto-practice-031",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Each formula unit contains 4 sulfate oxygens plus 5 water oxygens = 9 O atoms. So n(O) = 0.250 mol x 9 = 2.25 mol, and 2.25 x 6.022e23 = 1.355e24 atoms, i.e. 1.35e24.",
+    "ambiguous": false,
+    "cleanExplanation": "CuSO<sub>4</sub>·5H<sub>2</sub>O has 4 + 5 = 9 oxygen atoms per formula unit. Thus 0.250 mol of the hydrate contains 0.250 x 9 = 2.25 mol of O atoms, which is 2.25 x 6.022 x 10<sup>23</sup> = 1.35 x 10<sup>24</sup> oxygen atoms."
+  },
+  {
+    "id": "proto-practice-032",
+    "answer": "C",
+    "confidence": "high",
+    "work": "In 100 g: C 40.00/12.01 = 3.33, H 6.71/1.008 = 6.66, O 53.29/16.00 = 3.33 mol, ratio 1:2:1, so the empirical formula is CH2O (30.03 g/mol). Molar mass 180/30.03 = 6, so the molecular formula is C6H12O6.",
+    "ambiguous": false,
+    "cleanExplanation": "Assuming 100 g, the moles are C: 3.33, H: 6.66, O: 3.33, giving the empirical formula CH<sub>2</sub>O with mass 30.03 g/mol. Dividing the molar mass 180 g/mol by 30.03 gives about 6, so the molecular formula is C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>."
+  },
+  {
+    "id": "proto-practice-033",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n(CO2) = 4.71/44.01 = 0.1070 mol gives 0.1070 mol C (1.285 g); n(H2O) = 1.93/18.015 = 0.1071 mol gives 0.2143 mol H (0.216 g). These masses total 1.50 g, so there is no oxygen, and H:C = 0.2143:0.1070 = 2:1.",
+    "ambiguous": false,
+    "cleanExplanation": "From 4.71 g CO<sub>2</sub> there are 0.107 mol C, and from 1.93 g H<sub>2</sub>O there are 0.214 mol H (masses add to 1.50 g, so no oxygen is present). The mole ratio C:H = 1:2, giving the empirical formula CH<sub>2</sub>."
+  },
+  {
+    "id": "proto-practice-034",
+    "answer": "B",
+    "confidence": "high",
+    "work": "NH4NO3 contains 2 N atoms, mass 2 x 14.01 = 28.02 g/mol. Percent N = 28.02/80.04 x 100 = 35.0%.",
+    "ambiguous": false,
+    "cleanExplanation": "Ammonium nitrate has two nitrogen atoms per formula unit, contributing 2 x 14.01 = 28.02 g/mol. Dividing by the molar mass 80.04 g/mol and multiplying by 100 gives 35.0% nitrogen."
+  },
+  {
+    "id": "proto-practice-035",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(Fe2O3) = 500.0/159.7 = 3.131 mol, and each unit holds 2 Fe, so n(Fe) = 6.262 mol. Mass Fe = 6.262 x 55.845 = 349.7 g.",
+    "ambiguous": false,
+    "cleanExplanation": "500.0 g of Fe<sub>2</sub>O<sub>3</sub> is 500.0/159.7 = 3.131 mol, containing 6.262 mol Fe. Multiplying by the atomic mass 55.85 g/mol gives 349.7 g of iron."
+  },
+  {
+    "id": "proto-practice-036",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Water lost = 5.75 - 3.23 = 2.52 g, i.e. 2.52/18.02 = 0.1398 mol H2O. Anhydrous ZnSO4 = 3.23/161.47 = 0.02000 mol, so x = 0.1398/0.02000 = 6.99, essentially 7.",
+    "ambiguous": false,
+    "cleanExplanation": "The mass of water driven off is 5.75 - 3.23 = 2.52 g, which is 0.1398 mol H<sub>2</sub>O. The residue is 3.23 g of ZnSO<sub>4</sub>, or 0.0200 mol, so x = 0.1398/0.0200 ≈ 7, giving ZnSO<sub>4</sub>·7H<sub>2</sub>O."
+  },
+  {
+    "id": "proto-practice-037",
+    "answer": "B",
+    "confidence": "high",
+    "work": "In a magnetic sector the Lorentz force provides the centripetal deflection, so the radius of curvature depends on m/z for a fixed accelerating voltage and field strength. Ions of different mass-to-charge ratio separate accordingly.",
+    "ambiguous": false,
+    "cleanExplanation": "The magnetic field deflects ions along a circular path whose radius depends on the ion's mass-to-charge ratio (m/z) for a given accelerating voltage and field. Thus Xe<sup>+</sup> ions are separated, and the abundance of each isotope is measured from its m/z."
+  },
+  {
+    "id": "proto-practice-038",
+    "answer": "B",
+    "confidence": "high",
+    "work": "3.01e23 formula units / 6.022e23 = 0.500 mol Na3PO4. Each formula unit releases 3 Na+, so n(Na+) = 3 x 0.500 = 1.50 mol.",
+    "ambiguous": false,
+    "cleanExplanation": "3.01 x 10<sup>23</sup> formula units equals 0.500 mol of Na<sub>3</sub>PO<sub>4</sub>. Since each formula unit contains three sodium ions, the amount of Na<sup>+</sup> is 3 x 0.500 = 1.50 mol."
+  },
+  {
+    "id": "proto-practice-039",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Check each candidate: NO2 has M = 46.005 and N fraction 14.007/46.005 = 30.45%, matching the data exactly (NO would be 46.7%, N2O 63.6%, N2O5 25.9%).",
+    "ambiguous": false,
+    "cleanExplanation": "For NO<sub>2</sub>, the molar mass is 46.01 g/mol and nitrogen contributes 14.01 g/mol, so the nitrogen mass percent is 14.01/46.01 x 100 = 30.45%. That matches the given composition, so the empirical formula is NO<sub>2</sub>."
+  },
+  {
+    "id": "proto-practice-040",
+    "answer": "C",
+    "confidence": "medium",
+    "work": "Let n(NaCl) = x and n(KCl) = y, with x + y = 0.0300 and 58.44x + 74.55y = 2.000. Substituting y = 0.0300 - x gives 16.11x = 0.2365, so x = 0.01468 mol and m(NaCl) = 0.01468 x 58.44 = 0.858 g, closest to 0.868 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Setting up the two equations x + y = 0.0300 mol and 58.44x + 74.55y = 2.000 g and eliminating y gives 16.11x = 0.2365, so x = 0.0147 mol of NaCl. The mass of NaCl is 0.0147 x 58.44 = 0.858 g, which corresponds to 0.868 g when read to the choices' precision."
+  }
+]

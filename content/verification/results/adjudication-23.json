@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-lab-10",
+  "answer": "B",
+  "confidence": "high",
+  "work": "Moles of HCl required = 0.5000 L x 0.200 mol/L = 0.1000 mol, which is 0.1000 x 36.46 = 3.646 g of pure HCl. The stock is 37.0% HCl by mass, so the mass of stock needed is 3.646/0.370 = 9.85 g. Dividing by the density, V = 9.85 g / 1.19 g/mL = 8.28 mL.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "The dilution target requires 0.1000 mol HCl, i.e. 3.646 g; at 37.0% by mass that is 9.85 g of stock, which occupies 8.28 mL at 1.19 g/mL. Equivalently the stock is (1.19 x 1000 x 0.370)/36.46 = 12.08 M, and V1 = (0.200 x 500.0)/12.08 = 8.28 mL, matching choice B. Choice A (4.14 mL) is half the correct volume, apparently from treating the 37% factor twice or halving the aliquot. The blind solver is correct; the source's keyed letter A contradicts its own explanation, which arrives at 8.28 mL.",
+  "cleanExplanation": "First find the moles of HCl the final solution needs: 0.5000 L x 0.200 mol/L = 0.1000 mol, or 0.1000 x 36.46 = 3.646 g HCl. Since the stock is only 37.0% HCl by mass, the mass of stock required is 3.646 g / 0.370 = 9.85 g, and its volume is 9.85 g / 1.19 g/mL = 8.28 mL. Equivalently, the stock is 12.1 M, so V = (0.200 M x 500.0 mL)/12.1 M = 8.28 mL."
+}

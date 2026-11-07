@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-01",
+  "answer": "D",
+  "confidence": "high",
+  "work": "n(Al2(SO4)3) = 0.0250 L x 0.200 mol/L = 5.00 x 10^-3 mol. Each formula unit releases three sulfate ions, so n(SO4^2-) = 3 x 5.00 x 10^-3 = 1.50 x 10^-2 mol. BaSO4 precipitates 1:1 and BaCl2 supplies one Ba2+ per formula unit, so n(BaCl2) = 1.50 x 10^-2 mol. V = 1.50 x 10^-2 mol / 0.150 mol/L = 0.100 L = 100.0 mL.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "The sulfate-to-barium ratio is 1:1 and the aluminum sulfate delivers three sulfates per formula unit, giving 15.0 mmol of sulfate and therefore 15.0 mmol of BaCl2, which occupies 100.0 mL of 0.150 M solution, i.e. choice D. The source's keyed letter B is inconsistent with its own written explanation, which computes 100.0 mL and even states the correct option is D; 50.0 mL would correspond to forgetting the sulfate stoichiometry factor in the wrong direction. The blind solver's value and reasoning match, so the blind answer is the correct one.",
+  "cleanExplanation": "Moles of aluminum sulfate = 0.0250 L x 0.200 mol/L = 0.00500 mol. Since each Al2(SO4)3 unit contains three sulfate ions, moles of SO4^2- = 3 x 0.00500 = 0.0150 mol. Barium sulfate precipitates in a 1:1 ratio with Ba2+, and each BaCl2 gives one Ba2+, so 0.0150 mol of BaCl2 is needed. Volume = 0.0150 mol / 0.150 mol/L = 0.100 L = 100.0 mL."
+}

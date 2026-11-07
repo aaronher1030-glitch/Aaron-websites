@@ -153,6 +153,34 @@ rows, adjudications, `claimedKeyConflicts` (candidates carrying a `claimed-*`
 flag), `claimedKeyConflictsPublished`, `adjudicatorDisagreements`, and
 `publishedByPaper`.
 
+## Exclusions
+
+`verification/exclusions.json` is the auditable record of items that cannot be
+published because **no choice equals the computed answer**:
+
+```json
+[
+  {
+    "id": "ch1-3-theory-23",
+    "reason": "no exact correct choice",
+    "evidence": "Computed 14.0 L; choices 11.2 / 13.4 / 22.4 / 35.8 L (source key D)."
+  }
+]
+```
+
+`apply` forces every excluded id to `flagged` with answer `null` after normal
+routing, so it never enters `published.json` even when the blind solver and the
+adjudicator agree with the source key. Its ledger row carries
+`excluded: true` and `exclusionReason`; `audit.json` records `exclusions`,
+`exclusionsApplied`, and `excludedIds`. `validate` fails if any excluded id
+reaches the staged bank or if the audit counts disagree with the file.
+
+Keying such an item to the nearest choice would publish a wrong answer: the
+test-taker who computes the stated value correctly would be marked wrong, and
+the nearest-match rationale would not survive scrutiny in a printed key. An
+explicit exclusion keeps the answer defensible; the paper is 1–2 items shorter
+and `validate` allows 45–50 items per supplied paper.
+
 ## Validate rules
 
 `validate.mjs` hard-fails and leaves `src/data/questions.json` untouched when:
@@ -172,7 +200,10 @@ flag), `claimedKeyConflictsPublished`, `adjudicatorDisagreements`, and
   "await" and "waiting" are allowed. The remaining phrases are unchanged.
 - a field has an odd number of unescaped `$` or an unbalanced `\ce{…}`;
 - source, paper, domain, difficulty, chapter, or topic is outside the registry;
-- a supplied paper does not have exactly 50 published items;
+- a supplied paper has fewer than 45 or more than 50 published items;
+- `exclusions.json` is missing/malformed, an excluded id appears in the staged
+  bank, or `audit.exclusions` / `audit.exclusionsApplied` disagree with its
+  length;
 - `audit.published` does not equal the bank length.
 
 "General chemistry" topics are allowed but reported as a warning. On success the
@@ -185,5 +216,6 @@ bank is written via a temp file and rename.
   safe failure, not a publishable state.
 - `tests/content-verification.test.mjs` exercises `apply`/`adjudicate` against
   throwaway fixtures in the OS temp directory; it never reads the live results.
-- `tests/content-bank.test.ts` currently describes the Task 2 seed bank and is
-  updated by the controller after the verified bank is published.
+- `tests/content-bank.test.ts` describes the published bank (at least 350
+  items, 45–50 per supplied paper, exclusion audit) and reads
+  `src/data/questions.json` and `content/audit.json` directly.

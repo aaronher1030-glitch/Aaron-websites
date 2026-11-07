@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-23",
+  "answer": "B",
+  "confidence": "medium",
+  "work": "M(C4H10) = 58.12 g/mol, so n(butane) = 5.60/58.12 = 0.0963 mol. The balanced equation C4H10 + 6.5 O2 -> 4 CO2 + 5 H2O gives n(O2) = 6.5 x 0.0963 = 0.626 mol. At STP (22.4 L/mol) V(O2) = 0.626 x 22.4 = 14.0 L (14.2 L if Vm = 22.71 L/mol). No choice equals 14.0 L; 13.4 L is the only near value, about 4-5% low, far closer than 11.2 L or 35.8 L, which differ by roughly 2x and 2.6x.",
+  "ambiguous": true,
+  "status": "flagged",
+  "resolution": "blind",
+  "rationale": "The correct value is 14.0 L, which is not among 11.2, 13.4, 22.4 or 35.8 L, so the item cannot be answered exactly; the closest and only plausible option is B (13.4 L), the letter the blind solver chose. The source key D (35.8 L) is unsupported: its own written explanation computes 0.626 mol and 14.0 L, then trails off, so the keyed answer contradicts the source's own arithmetic (35.8 L would correspond to roughly 1.6 mol O2). The defect is in the choice set, so this is flagged rather than verified, with B recorded as the best available letter.",
+  "cleanExplanation": "Molar mass of butane is 58.12 g/mol, so 5.60 g is 0.0963 mol. Combustion is C4H10 + 13/2 O2 -> 4 CO2 + 5 H2O, so oxygen needed is 6.5 x 0.0963 = 0.626 mol. At STP the molar volume is 22.4 L/mol, giving V(O2) = 0.626 x 22.4 = 14.0 L (about 14.2 L if 22.71 L/mol is used). Of the listed values, 13.4 L is the only one consistent with this result."
+}

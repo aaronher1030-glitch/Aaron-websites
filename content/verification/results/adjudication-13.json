@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-06",
+  "answer": "B",
+  "confidence": "medium",
+  "work": "HNO3 supplies n(H+) = 0.0150 L x 0.500 M = 7.50 mmol. Ba(OH)2 supplies n(OH-) = 2 x 0.0350 L x 0.200 M = 14.0 mmol. HNO3 is limiting in the neutralisation, leaving 14.0 - 7.50 = 6.50 mmol OH- in a total volume of 15.0 + 35.0 = 50.0 mL, so [OH-] = 6.50 mmol / 50.0 mL = 0.130 M. This value does not appear among the choices; the nearest listed value is 0.140 M.",
+  "ambiguous": true,
+  "status": "flagged",
+  "resolution": "source",
+  "rationale": "The stoichiometrically correct result is [OH-] = 0.130 M, so no listed choice is exact and the item is flagged. Choice B (0.140 M) is the closest listed value and is the one both the source key and the blind solver selected, so the adjudicated letter is B while the mismatch is recorded. The 0.140 M figure corresponds to discarding the 2:1 hydroxide stoichiometry or to rounding the 6.50 mmol excess up to 7.0 mmol, and the source explanation itself concedes the key is only approximate ('approx B / C check calculations').",
+  "cleanExplanation": "HNO3 delivers 0.0150 L x 0.500 mol/L = 7.50 mmol of H+, while Ba(OH)2 delivers 2 x 0.0350 L x 0.200 mol/L = 14.0 mmol of OH-. Neutralisation consumes 7.50 mmol of the hydroxide, leaving 6.50 mmol of OH- in a combined volume of 50.0 mL. Therefore [OH-] = 6.50 mmol / 50.0 mL = 0.130 mol/L, and 0.140 M is the closest of the offered answers."
+}

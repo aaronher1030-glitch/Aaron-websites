@@ -1,0 +1,22 @@
+{
+  "id": "ch4-7-lab-10",
+  "paper": "ch4-7-lab",
+  "source": "supplied-paper",
+  "sourceKey": "A",
+  "blind": "B",
+  "blindWork": "Needed HCl = 0.5000 L x 0.200 M = 0.100 mol = 3.646 g. Stock assay = 1.19 g/mL x 0.370 = 0.440 g HCl/mL, so V = 3.646/0.440 = 8.28 mL.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-B"
+  ],
+  "stem": "Solution Preparation from Concentrated Stock: Concentrated hydrochloric acid is labeled as $37.0\\%$ $\\text{HCl}$ by mass with a density of $1.19\\text{~g/mL}$. How many milliliters of this stock solution are needed to prepare $500.0\\text{~mL}$ of $0.200\\text{~M~HCl}$? ($\\text{MW~of~HCl} = 36.46\\text{~g/mol}$)",
+  "choices": [
+    "$4.14\\text{~mL}$",
+    "$8.28\\text{~mL}$",
+    "$12.4\\text{~mL}$",
+    "$16.6\\text{~mL}$"
+  ],
+  "sourceExplanation": "Molarity of stock $\\text{HCl} = (1.19 \\times 1000 \\times 0.370)/36.46 = 12.08\\text{~M}$. $V_{1} = (0.200 \\times 500.0)/12.08 = 8.28\\text{~mL}$. (Correct option: B)"
+}

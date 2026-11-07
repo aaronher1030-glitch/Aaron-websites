@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-lab-23",
+  "answer": "B",
+  "confidence": "high",
+  "work": "The gas is dry and collected over no water, so no vapour correction is needed: n(O2) = PV/RT = (0.97368 atm)(0.0685 L)/[(0.08206 L atm/mol K)(295.15 K)] = 2.754e-3 mol. From 2KClO3 -> 2KCl + 3O2, n(KClO3) = (2/3)(2.754e-3) = 1.836e-3 mol, so mass = 1.836e-3 x 122.55 = 0.2250 g. Percentage = (0.2250 g / 0.400 g) x 100 = 56.2-56.3%, matching choice B. KCl in the mixture is inert and does not contribute O2, so no further correction is required.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "Independent calculation gives 56.25%, which rounds to 56.3% = choice B. The listed key C (67.1%) is unsupported: it would require about 2.19e-3 mol of KClO3 (0.268 g), which is more than the measured O2 can account for on the 2:3 stoichiometry. The source's own explanation arrives at 0.00276 mol O2, 0.00184 mol KClO3, 0.2255 g and 56.3%, so the key label contradicts the source text; the blind answer B is correct.",
+  "cleanExplanation": "Convert the dry gas to moles with the ideal gas law: n(O2) = PV/RT = (740/760 atm)(0.0685 L)/[(0.08206)(295.15)] = 2.754e-3 mol. The decomposition 2KClO3 -> 2KCl + 3O2 consumes 2/3 mol KClO3 per mol of O2, so n(KClO3) = (2/3)(2.754e-3) = 1.836e-3 mol, which is 1.836e-3 x 122.55 = 0.2250 g. Dividing by the 0.400 g sample mass gives (0.2250/0.400) x 100 = 56.3% KClO3, with the unreactive KCl making up the remainder."
+}

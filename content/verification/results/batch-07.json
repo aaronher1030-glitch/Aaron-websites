@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ch4-7-theory-21",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Ne moles are fixed: P1V1 = (2.0 atm)(1.00 L) = 2.0 L atm. After opening, total volume = 3.00 L, so P(Ne) = 2.0/3.00 = 0.67 atm. Neon's amount and T are unchanged, so this is its final partial pressure.",
+    "ambiguous": false,
+    "cleanExplanation": "The amount of neon is fixed, so P1V1 = P2V2 for that gas alone. P(Ne) = (2.0 atm)(1.00 L)/(3.00 L) = 0.67 atm. Argon simply adds its own partial pressure, (1.0 atm)(2.00 L)/3.00 L = 0.67 atm, giving P_total = 1.33 atm."
+  },
+  {
+    "id": "ch4-7-theory-22",
+    "answer": "C",
+    "confidence": "high",
+    "work": "From P = nRT/V, P ∝ T/V. Doubling T multiplies P by 2; halving V multiplies P by 2 again. Net factor = 2 × 2 = 4, so the pressure is quadrupled.",
+    "ambiguous": false,
+    "cleanExplanation": "P = nRT/V. Pressure is directly proportional to T and inversely proportional to V, so doubling T doubles P while halving V doubles it again. The pressure becomes 2 × 2 = 4 times its original value."
+  },
+  {
+    "id": "ch4-7-theory-23",
+    "answer": "B",
+    "confidence": "low",
+    "work": "C4H10 + 13/2 O2 -> 4 CO2 + 5 H2O. n(butane) = 5.60 g / 58.12 g/mol = 0.0964 mol, so n(O2) = 0.626 mol and V = 0.626 × 22.4 L = 14.0 L. The listed value 13.4 L is the only choice near this result (the others are ~12-150% away).",
+    "ambiguous": true,
+    "cleanExplanation": "Balancing gives C4H10 + 13/2 O2 -> 4 CO2 + 5 H2O. Moles of butane = 5.60 g / 58.12 g/mol = 0.0964 mol, which needs 0.0964 × 6.5 = 0.626 mol O2. At STP that oxygen occupies 0.626 mol × 22.4 L/mol ≈ 14 L, closest to the 13.4 L choice."
+  },
+  {
+    "id": "ch4-7-theory-24",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Effusion time is inversely proportional to rms speed, so t ∝ sqrt(M). t(O2) = 12.0 s × sqrt(32.00/4.003) = 12.0 × 2.83 = 33.9 s. He is lighter and escapes faster, so O2 must take longer.",
+    "ambiguous": false,
+    "cleanExplanation": "Graham's law gives t1/t2 = sqrt(M1/M2) for equal volumes. Here t(O2) = 12.0 s × sqrt(32.0/4.0) = 12.0 × 2.83 = 33.9 s. Oxygen is eight times heavier per mole, so it effuses sqrt(8) ≈ 2.83 times more slowly."
+  },
+  {
+    "id": "ch4-7-theory-25",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Partial pressure equals mole fraction times total pressure: P(O2) = 0.400 × 750 mmHg = 300 mmHg. The 450 mmHg value belongs to N2 (0.600 × 750).",
+    "ambiguous": false,
+    "cleanExplanation": "P(O2) = χ(O2) × P_total = 0.400 × 750 mmHg = 300 mmHg. The nitrogen fraction (0.600) accounts for the remaining 450 mmHg, and the two partial pressures sum to 750 mmHg."
+  },
+  {
+    "id": "ch4-7-theory-26",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Average translational kinetic energy depends only on T: KE_avg = (3/2)kT (or (3/2)RT per mole). Since both samples are at 25 °C and contain 1 mol, their average kinetic energies are identical. He atoms move faster because M is smaller.",
+    "ambiguous": false,
+    "cleanExplanation": "Average kinetic energy of a gas depends only on temperature, KE_avg = (3/2)RT, so 1 mol of He and 1 mol of Xe at 25 °C have the same average kinetic energy. Because KE ∝ Mv², the lighter helium atoms must move faster, not slower."
+  },
+  {
+    "id": "ch4-7-theory-27",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Target: 2C(graphite) + H2 -> C2H2. Take 2×(1) + (2) - (1/2)×(3): ΔH = 2(-393.5) + (-285.8) - (1/2)(-2598.8) = -787.0 - 285.8 + 1299.4 = +226.6 kJ. Formation of acetylene from elements is endothermic.",
+    "ambiguous": false,
+    "cleanExplanation": "Combine the given equations: 2 × [C + O2 -> CO2] + [H2 + 1/2 O2 -> H2O] - 1/2 × [2 C2H2 + 5 O2 -> 4 CO2 + 2 H2O]. This yields 2C(graphite) + H2 -> C2H2 with ΔH = 2(-393.5) + (-285.8) + 1299.4 = +226.6 kJ per mole of C2H2."
+  },
+  {
+    "id": "ch4-7-theory-28",
+    "answer": "B",
+    "confidence": "high",
+    "work": "ΔH° = ΣΔHf(products) - ΣΔHf(reactants) = [-393.5 + 2(-285.8)] - [-74.8] = -965.1 + 74.8 = -890.3 kJ/mol. O2 has ΔHf° = 0.",
+    "ambiguous": false,
+    "cleanExplanation": "Using ΔH° = ΣΔHf°(products) - ΣΔHf°(reactants): [-393.5 + 2(-285.8)] - [-74.8 + 0] = -965.1 + 74.8 = -890.3 kJ per mole of CH4. The negative sign shows the combustion is exothermic."
+  },
+  {
+    "id": "ch4-7-theory-29",
+    "answer": "B",
+    "confidence": "high",
+    "work": "m = 100 mL × 1.00 g/mL = 100 g; q = mcΔT = 100 × 4.18 × 6.6 = 2760 J. Moles HCl = 0.0500 L × 1.00 M = 0.0500 mol. ΔH = -2.76 kJ / 0.0500 mol = -55.2 kJ/mol.",
+    "ambiguous": false,
+    "cleanExplanation": "Heat released = (100 g)(4.18 J/g·°C)(6.6 °C) = 2760 J ≈ 2.76 kJ. HCl limits: 0.0500 L × 1.00 M = 0.0500 mol. Enthalpy of neutralization = -2.76 kJ / 0.0500 mol = -55.2 kJ/mol."
+  },
+  {
+    "id": "ch4-7-theory-30",
+    "answer": "B",
+    "confidence": "high",
+    "work": "q_cal = CΔT = 3.50 kJ/°C × 4.22 °C = 14.77 kJ released by the sample. Per gram: 14.77 kJ / 1.50 g = 9.85 kJ/g, negative because heat is evolved.",
+    "ambiguous": false,
+    "cleanExplanation": "The calorimeter absorbs 3.50 kJ/°C × 4.22 °C = 14.77 kJ, so the glucose released that much heat. Dividing by the sample mass gives 14.77 kJ / 1.50 g = 9.85 kJ/g, written as -9.85 kJ/g for an exothermic process."
+  },
+  {
+    "id": "ch4-7-theory-31",
+    "answer": "C",
+    "confidence": "high",
+    "work": "ΔU = q + w with q = +250 J (heat absorbed) and w = -450 J (work done by the system). ΔU = 250 - 450 = -200 J.",
+    "ambiguous": false,
+    "cleanExplanation": "Using the convention ΔU = q + w: heat absorbed means q = +250 J, and work done by the system means w = -450 J. Therefore ΔU = 250 - 450 = -200 J."
+  },
+  {
+    "id": "ch4-7-theory-32",
+    "answer": "B",
+    "confidence": "high",
+    "work": "w = -nRT ln(V2/V1) = -(2.0)(8.314)(300) ln(20.0/5.0) = -(4988)(1.386) = -6915 J ≈ -6.92 kJ. Negative because the gas expands (does work on the surroundings).",
+    "ambiguous": false,
+    "cleanExplanation": "For isothermal reversible expansion, w = -nRT ln(V2/V1) = -(2.0 mol)(8.314 J/mol·K)(300 K) ln(4.00). That equals -(4988)(1.386) = -6.92 × 10^3 J, i.e., -6.92 kJ of work done by the gas."
+  },
+  {
+    "id": "ch4-7-theory-33",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Bonds broken: 4(C-H) + Cl-Cl = 4(413) + 242 = 1894 kJ. Bonds formed: 3(C-H) + C-Cl + H-Cl = 1239 + 328 + 431 = 1998 kJ. ΔH = 1894 - 1998 = -104 kJ/mol.",
+    "ambiguous": false,
+    "cleanExplanation": "ΔH ≈ Σ(bonds broken) - Σ(bonds formed). Broken: 4 × 413 + 242 = 1894 kJ. Formed: 3 × 413 + 328 + 431 = 1998 kJ. ΔH = 1894 - 1998 = -104 kJ/mol, an exothermic substitution."
+  },
+  {
+    "id": "ch4-7-theory-34",
+    "answer": "A",
+    "confidence": "high",
+    "work": "ΔH_soln = ΔH_lattice + ΔH_hydration (hydration of both ions combined). So ΔH_hyd = +4.0 - 788 = -784 kJ/mol. Hydration releases energy, so the value must be negative.",
+    "ambiguous": false,
+    "cleanExplanation": "Dissolution = breaking the lattice (+788 kJ/mol) plus hydrating the ions. Since ΔH_soln = +4.0 kJ/mol, the total hydration enthalpy must be 4.0 - 788 = -784 kJ/mol. The large ion-dipole attractions release roughly as much energy as the lattice costs."
+  },
+  {
+    "id": "ch4-7-theory-35",
+    "answer": "C",
+    "confidence": "high",
+    "work": "State functions depend only on the current state (H, U, S, T, P, V). Heat q depends on the path taken between states, so it is a path function (as is work w).",
+    "ambiguous": false,
+    "cleanExplanation": "Enthalpy, internal energy, and entropy are state functions: their changes depend only on initial and final states. Heat (q) is a path function because the amount of heat transferred depends on how the change is carried out."
+  },
+  {
+    "id": "ch4-7-theory-36",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n(SO2) = 1.00 × 10^6 g / 64.07 g/mol = 1.561 × 10^4 mol. The equation releases 198 kJ per 2 mol SO2, i.e., 99.0 kJ/mol. Heat = 1.561×10^4 × 99.0 = 1.55 × 10^6 kJ.",
+    "ambiguous": false,
+    "cleanExplanation": "1.00 × 10^6 g SO2 ÷ 64.07 g/mol = 1.56 × 10^4 mol SO2. The thermochemical equation gives 198 kJ per 2 mol SO2 (99.0 kJ per mol), so heat released = 1.56 × 10^4 × 99.0 ≈ 1.55 × 10^6 kJ."
+  },
+  {
+    "id": "ch4-7-theory-37",
+    "answer": "C",
+    "confidence": "high",
+    "work": "ΔHf° = 0 only for an element in its standard state. Graphite is the standard state of carbon. Br2 is a liquid and I2 a solid at 25 °C, and H2O is a compound.",
+    "ambiguous": false,
+    "cleanExplanation": "By definition ΔHf° = 0 for an element in its most stable form at 1 atm and 25 °C. That is graphite for carbon; bromine is liquid and iodine is solid under these conditions, and water is a compound, not an element."
+  },
+  {
+    "id": "ch4-7-theory-38",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Fuel value = |ΔH_comb| / M = 2800 kJ/mol ÷ 180.16 g/mol = 15.5 kJ/g. The magnitude drops out of the per-gram value.",
+    "ambiguous": false,
+    "cleanExplanation": "Fuel value is the heat released per gram: 2800 kJ/mol ÷ 180.16 g/mol = 15.5 kJ/g. The negative sign of ΔH_comb only indicates heat is released, so the fuel value is reported as a positive 15.5 kJ/g."
+  },
+  {
+    "id": "ch4-7-theory-39",
+    "answer": "A",
+    "confidence": "high",
+    "work": "E = hc/λ = (6.626×10^-34)(3.00×10^8)/(4.00×10^-7) = 4.97×10^-19 J = 3.10 eV. KE_max = 3.10 - 2.40 = 0.70 eV.",
+    "ambiguous": false,
+    "cleanExplanation": "Photon energy = hc/λ = (6.626 × 10^-34 J·s)(3.00 × 10^8 m/s)/(4.00 × 10^-7 m) = 4.97 × 10^-19 J, which is 4.97 × 10^-19/1.602 × 10^-19 = 3.10 eV. Subtracting the work function gives KE_max = 3.10 - 2.40 = 0.70 eV."
+  },
+  {
+    "id": "ch4-7-theory-40",
+    "answer": "A",
+    "confidence": "high",
+    "work": "λ = h/(mv) = 6.626×10^-34 / (9.109×10^-31 × 2.00×10^6) = 6.626×10^-34 / 1.822×10^-24 = 3.64×10^-10 m. This is about 0.36 nm, comparable to atomic spacing.",
+    "ambiguous": false,
+    "cleanExplanation": "p = mv = (9.109 × 10^-31 kg)(2.00 × 10^6 m/s) = 1.82 × 10^-24 kg·m/s. Then λ = h/p = 6.626 × 10^-34 J·s / 1.82 × 10^-24 kg·m/s = 3.64 × 10^-10 m (0.364 nm)."
+  }
+]

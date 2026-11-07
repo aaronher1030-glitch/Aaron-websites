@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-mixed-021",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Melting ice, evaporating ethanol and dissolving salt are all physical changes that only alter state or dispersion, with no new substance formed. Rusting converts Fe into hydrated iron oxides, a new substance with different composition, so it is a chemical change.",
+    "ambiguous": false,
+    "cleanExplanation": "A chemical change produces a new substance with a different composition. Ice melting, ethanol evaporating and salt dissolving are physical changes that only change state or dispersion. Iron rusting forms hydrated iron(III) oxide, a new compound, so it is the chemical change."
+  },
+  {
+    "id": "proto-mixed-022",
+    "answer": "B",
+    "confidence": "high",
+    "work": "d = m/V = 54.0 g / 20.0 cm^3 = 2.70 g/cm^3. Both data have 3 significant figures, so the result keeps 3.",
+    "ambiguous": false,
+    "cleanExplanation": "Density is mass divided by volume: d = 54.0 g / 20.0 cm<sup>3</sup> = 2.70 g/cm<sup>3</sup>. Both values have three significant figures, so the answer is reported as 2.70 g/cm<sup>3</sup>."
+  },
+  {
+    "id": "proto-mixed-023",
+    "answer": "A",
+    "confidence": "high",
+    "work": "A neutral Fe atom has Z = 26 electrons. The 3+ charge means three electrons have been lost, giving 26 - 3 = 23 electrons.",
+    "ambiguous": false,
+    "cleanExplanation": "Iron (Z = 26) has 26 electrons. Forming Fe<sup>3+</sup> removes three electrons, so the ion has 26 - 3 = 23 electrons. The nucleus still contains 26 protons, giving a net charge of +3."
+  },
+  {
+    "id": "proto-mixed-024",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Moles: C = 40.0/12.01 = 3.33; H = 6.7/1.008 = 6.65; O = 53.3/16.00 = 3.33. Dividing by 3.33 gives C:H:O = 1:2:1, so the empirical formula is CH2O.",
+    "ambiguous": false,
+    "cleanExplanation": "Divide each percentage by the atomic mass: C = 40.0/12.01 = 3.33 mol, H = 6.7/1.008 = 6.65 mol, O = 53.3/16.00 = 3.33 mol. Dividing by the smallest (3.33) gives 1 : 2 : 1, so the empirical formula is CH<sub>2</sub>O."
+  },
+  {
+    "id": "proto-mixed-025",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n = V/Vm = 5.60 L / 22.4 L/mol = 0.250 mol. M = m/n = 11.0 g / 0.250 mol = 44.0 g/mol, consistent with CO2.",
+    "ambiguous": false,
+    "cleanExplanation": "At STP the gas occupies 22.4 L per mole, so n = 5.60/22.4 = 0.250 mol. Molar mass is mass divided by moles: 11.0 g / 0.250 mol = 44.0 g/mol."
+  },
+  {
+    "id": "proto-mixed-026",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Solid CO2 has a triple point above 1 atm, so at room pressure it passes directly from solid to gas without melting. That solid-to-gas transition is sublimation.",
+    "ambiguous": false,
+    "cleanExplanation": "At ordinary pressure dry ice goes straight from the solid to the gas phase, because its triple-point pressure is above 1 atm so liquid CO<sub>2</sub> cannot exist. A solid-to-gas change is called sublimation, which is why dry ice appears to vanish without wetting the surface."
+  },
+  {
+    "id": "proto-mixed-027",
+    "answer": "C",
+    "confidence": "high",
+    "work": "The allowed range is l = 0 to n-1 and m_l = -l to +l. For n = 2 the maximum l is 1, so (2, 2, 1) is forbidden; the other three sets satisfy all rules.",
+    "ambiguous": false,
+    "cleanExplanation": "Quantum numbers require l ≤ n - 1 and -l ≤ m<sub>l</sub> ≤ +l. For n = 2, l can only be 0 or 1, so the set (2, 2, 1) is not allowed. The sets (2, 1, 0), (3, 2, −2) and (4, 0, 0) all satisfy the rules."
+  },
+  {
+    "id": "proto-mixed-028",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Be loses a 2s electron that penetrates to the nucleus and is tightly held. B's highest electron is a 2p electron, which is higher in energy and more shielded by the 2s pair, so it is easier to remove despite the larger Z.",
+    "ambiguous": false,
+    "cleanExplanation": "Beryllium's electron is removed from a filled 2s orbital that penetrates close to the nucleus and is held strongly. In boron the electron comes from a 2p orbital, which lies higher in energy and is shielded from the nucleus by the 2s electrons, so it is removed more easily. This shielding effect outweighs boron's larger nuclear charge."
+  },
+  {
+    "id": "proto-mixed-029",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Lattice energy scales as (z+ z-)/(r+ + r-). MgO combines 2+ and 2- ions with small radii, giving a much larger product of charges and smaller internuclear distance than the 1+/1- alkali halides, so its lattice energy is by far the largest.",
+    "ambiguous": false,
+    "cleanExplanation": "Lattice energy grows with the charges of the ions and shrinks as they get larger. MgO is made of small 2+ and 2− ions, so its charge product (4) is four times that of a 1+/1− salt and its ions are smaller. It therefore has the largest lattice energy of the four."
+  },
+  {
+    "id": "proto-mixed-030",
+    "answer": "C",
+    "confidence": "high",
+    "work": "S in SF4 has 6 valence electrons and forms 4 bonds, leaving one lone pair, i.e. 5 electron domains (AX4E). The parent geometry is trigonal bipyramidal with the lone pair equatorial, giving a seesaw shape.",
+    "ambiguous": false,
+    "cleanExplanation": "Sulfur in SF<sub>4</sub> has four bonding pairs and one lone pair, so there are five electron domains and a trigonal bipyramidal parent arrangement. Placing the lone pair in an equatorial site minimizes repulsion, leaving four F atoms in a seesaw shape."
+  },
+  {
+    "id": "proto-mixed-031",
+    "answer": "D",
+    "confidence": "high",
+    "work": "All four are small molecules, but only H2O forms two hydrogen bonds per molecule through O–H. This extensive hydrogen bonding raises its boiling point (100 °C) far above CH4, H2S and HCl.",
+    "ambiguous": false,
+    "cleanExplanation": "Water molecules hydrogen-bond to one another through their H atoms and oxygen lone pairs, and each molecule can donate and accept several of these interactions. Breaking this network requires much more energy, so H<sub>2</sub>O boils near 100 °C, well above CH<sub>4</sub>, H<sub>2</sub>S and HCl, which have only weak or dipole–dipole forces."
+  },
+  {
+    "id": "proto-mixed-032",
+    "answer": "A",
+    "confidence": "high",
+    "work": "molality = 0.50 mol / 1.0 kg = 0.50 m, and glucose is a non-electrolyte (i = 1). ΔTf = Kf·m = 1.86 × 0.50 = 0.93 °C, so Tf = 0 − 0.93 = −0.93 °C.",
+    "ambiguous": false,
+    "cleanExplanation": "Glucose dissolves without dissociating, so the molality is 0.50 mol/1.0 kg = 0.50 m and i = 1. Freezing-point depression ΔT<sub>f</sub> = iK<sub>f</sub>m = 1.86 × 0.50 = 0.93 °C. The freezing point is lowered from 0 °C to −0.93 °C."
+  },
+  {
+    "id": "proto-mixed-033",
+    "answer": "B",
+    "confidence": "high",
+    "work": "q = m·c·ΔT = 200 g × 4.18 J/g·°C × (30.0 − 20.0) °C = 8360 J = 8.36 kJ.",
+    "ambiguous": false,
+    "cleanExplanation": "Use q = mcΔT with ΔT = 30.0 − 20.0 = 10.0 °C: q = 200 g × 4.18 J/g·°C × 10.0 °C = 8360 J. Converting gives 8.36 kJ of heat, which is positive because heat is absorbed."
+  },
+  {
+    "id": "proto-mixed-034",
+    "answer": "C",
+    "confidence": "high",
+    "work": "ln(k2/k1) = (Ea/R)(1/T1 − 1/T2). ln 2 = 0.6931 and 1/300 − 1/310 = 1.075 × 10^-4 K^-1. Ea = 8.314 × 0.6931 / (1.075 × 10^-4) = 5.36 × 10^4 J/mol ≈ 54 kJ/mol.",
+    "ambiguous": false,
+    "cleanExplanation": "From the Arrhenius equation, ln(k<sub>2</sub>/k<sub>1</sub>) = (E<sub>a</sub>/R)(1/T<sub>1</sub> − 1/T<sub>2</sub>). With k<sub>2</sub>/k<sub>1</sub> = 2, ln 2 = 0.693 and (1/300 − 1/310) = 1.08 × 10<sup>−4</sup> K<sup>−1</sup>. Solving, E<sub>a</sub> = 0.693 × 8.314 / 1.08 × 10<sup>−4</sup> ≈ 5.4 × 10<sup>4</sup> J/mol ≈ 54 kJ/mol."
+  },
+  {
+    "id": "proto-mixed-035",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Spontaneity requires ΔG = ΔH − TΔS < 0, so T > ΔH/ΔS = 40 000 J/mol ÷ 100 J/mol·K = 400 K. Above 400 K the entropy term outweighs the positive enthalpy.",
+    "ambiguous": false,
+    "cleanExplanation": "Use ΔG = ΔH − TΔS and set ΔG < 0: T > ΔH/ΔS. Converting ΔH to joules gives 40 000 J/mol, so T > 40 000/100 = 400 K. Above 400 K the favourable entropy change dominates the unfavourable enthalpy and the reaction becomes spontaneous."
+  },
+  {
+    "id": "proto-mixed-036",
+    "answer": "C",
+    "confidence": "high",
+    "work": "ΔG° = −RT ln K, so ln K = 11 400/(8.314 × 298) = 11 400/2477 = 4.60. K = e^4.60 ≈ 1.0 × 10^2.",
+    "ambiguous": false,
+    "cleanExplanation": "From ΔG° = −RT ln K, ln K = −ΔG°/(RT) = 11 400 J/mol / (8.314 × 298) = 4.60. Then K = e<sup>4.60</sup> ≈ 1 × 10<sup>2</sup>, so products are strongly favoured at equilibrium."
+  },
+  {
+    "id": "proto-mixed-037",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Reaction quotient Q = [B]/[A] = 3.0/0.50 = 6.0, which exceeds Kc = 4.0. Since Q > Kc, the reaction consumes products and shifts to the left. Kc itself is unchanged.",
+    "ambiguous": false,
+    "cleanExplanation": "Compare the reaction quotient with K<sub>c</sub>: Q = [B]/[A] = 3.0/0.50 = 6.0. Because Q (6.0) is greater than K<sub>c</sub> (4.0), there are too many products, so the system shifts left towards A until Q falls back to 4.0."
+  },
+  {
+    "id": "proto-mixed-038",
+    "answer": "B",
+    "confidence": "high",
+    "work": "For AgCl(s) ⇌ Ag+ + Cl−, Ksp = s^2. So s = √(1.8 × 10^-10) = 1.34 × 10^-5 ≈ 1.3 × 10^-5 M.",
+    "ambiguous": false,
+    "cleanExplanation": "Let s be the molar solubility. Then [Ag<sup>+</sup>] = [Cl<sup>−</sup>] = s and K<sub>sp</sub> = s<sup>2</sup>. Taking the square root, s = √(1.8 × 10<sup>−10</sup>) = 1.3 × 10<sup>−5</sup> M."
+  },
+  {
+    "id": "proto-mixed-039",
+    "answer": "B",
+    "confidence": "high",
+    "work": "E°cell = E°cathode − E°anode = E°(Cu2+/Cu) − E°(Zn2+/Zn) = 0.34 − (−0.76) = +1.10 V. Zinc is oxidized at the anode and copper(II) reduced at the cathode.",
+    "ambiguous": false,
+    "cleanExplanation": "Copper(II) is reduced at the cathode (+0.34 V) and zinc is oxidized at the anode (−0.76 V as a reduction potential). Then E°<sub>cell</sub> = E°<sub>cathode</sub> − E°<sub>anode</sub> = 0.34 − (−0.76) = +1.10 V, a spontaneous cell."
+  },
+  {
+    "id": "proto-mixed-040",
+    "answer": "C",
+    "confidence": "high",
+    "work": "n = 2 and Q = [Zn2+]/[Cu2+] = 0.010. E = E° − (0.0592/2) log Q = 1.10 − 0.0296 × (−2) = 1.10 + 0.059 = 1.16 V.",
+    "ambiguous": false,
+    "cleanExplanation": "The Nernst equation gives E = E° − (0.0592/n) log Q with n = 2 and Q = [Zn<sup>2+</sup>]/[Cu<sup>2+</sup>] = 0.010. Substituting: E = 1.10 − (0.0592/2) × log(0.010) = 1.10 − 0.0296 × (−2) = 1.10 + 0.059 = 1.16 V. Lowering [Zn<sup>2+</sup>] removes product, so the cell potential rises above E°."
+  }
+]

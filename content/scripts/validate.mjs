@@ -8,7 +8,10 @@
  *  - leftover key commentary in explanations;
  *  - malformed math (odd unescaped `$`, unbalanced \ce{...});
  *  - unknown source/paper/domain/difficulty/topic values;
- *  - a supplied paper without exactly 50 published items;
+ *  - a supplied paper with fewer than 45 or more than 50 published items;
+ *  - a malformed or missing verification/exclusions.json, an excluded id that
+ *    slipped into the published bank, or an audit that disagrees with the
+ *    exclusion file;
  *  - audit.published disagreeing with the bank length.
  *
  * The write is atomic: temp file, then rename.
@@ -23,6 +26,7 @@ import { atomicWrite } from "./lib.mjs";
 
 const STAGED_BANK = "content/verification/published.json";
 const AUDIT = "content/audit.json";
+const EXCLUSIONS = "content/verification/exclusions.json";
 const TARGET = "src/data/questions.json";
 
 const DOMAINS = ["General", "Physical", "Analytical", "Organic", "Laboratory"];
@@ -39,7 +43,8 @@ const TOPIC_NAMES = new Set(TOPIC_META.map((topic) => topic.name));
  */
 const META_COMMENTARY = /\bwait\b|correct option|correct choice|key fix|re-verify|should be/i;
 const MIN_ITEMS = 350;
-const PAPER_SIZE = 50;
+const MIN_PAPER_SIZE = 45;
+const MAX_PAPER_SIZE = 50;
 
 function readJson(file) {
   return JSON.parse(readFileSync(file, "utf8"));
@@ -96,9 +101,43 @@ function main() {
     console.error(`validate: ${AUDIT} is missing. Run content:apply first; ${TARGET} was not touched.`);
     process.exit(1);
   }
+  if (!existsSync(EXCLUSIONS)) {
+    console.error(
+      `validate: ${EXCLUSIONS} is missing. It is the auditable record of items that ` +
+        `cannot be published; ${TARGET} was not touched.`,
+    );
+    process.exit(1);
+  }
 
   const bank = readJson(STAGED_BANK);
   const audit = readJson(AUDIT);
+  const exclusions = readJson(EXCLUSIONS);
+  if (!Array.isArray(exclusions)) {
+    console.error(`validate: ${EXCLUSIONS} must contain a JSON array; ${TARGET} was not touched.`);
+    process.exit(1);
+  }
+  const exclusionIds = new Set();
+  const exclusionErrors = [];
+  exclusions.forEach((row, index) => {
+    const label = typeof row?.id === "string" && row.id ? row.id : `exclusion[${index}]`;
+    if (!row || typeof row !== "object") {
+      exclusionErrors.push(`${label}: not an object`);
+      return;
+    }
+    if (typeof row.id !== "string" || !/^[a-z0-9-]+$/.test(row.id)) {
+      exclusionErrors.push(`${label}: id must be kebab-case`);
+      return;
+    }
+    if (exclusionIds.has(row.id)) exclusionErrors.push(`${label}: duplicate exclusion id`);
+    exclusionIds.add(row.id);
+    if (typeof row.reason !== "string" || row.reason.trim() === "") {
+      exclusionErrors.push(`${label}: missing or empty reason`);
+    }
+    if (typeof row.evidence !== "string" || row.evidence.trim() === "") {
+      exclusionErrors.push(`${label}: missing or empty evidence`);
+    }
+  });
+  errors.push(...exclusionErrors);
   if (!Array.isArray(bank)) {
     console.error(`validate: ${STAGED_BANK} must contain a JSON array; ${TARGET} was not touched.`);
     process.exit(1);
@@ -203,9 +242,25 @@ function main() {
 
   for (const paper of SUPPLIED_PAPERS) {
     const count = paperCounts[paper] ?? 0;
-    if (count !== PAPER_SIZE) {
-      errors.push(`paper ${paper} has ${count} published items; exactly ${PAPER_SIZE} are required`);
+    if (count < MIN_PAPER_SIZE || count > MAX_PAPER_SIZE) {
+      errors.push(
+        `paper ${paper} has ${count} published items; between ${MIN_PAPER_SIZE} and ${MAX_PAPER_SIZE} are required`,
+      );
     }
+  }
+
+  for (const id of exclusionIds) {
+    if (ids.has(id)) errors.push(`excluded id ${id} appears in the published bank`);
+  }
+  if (typeof audit.exclusions !== "number" || audit.exclusions !== exclusions.length) {
+    errors.push(
+      `audit.exclusions (${audit.exclusions}) does not equal the exclusion file length (${exclusions.length})`,
+    );
+  }
+  if (typeof audit.exclusionsApplied !== "number" || audit.exclusionsApplied !== exclusions.length) {
+    errors.push(
+      `audit.exclusionsApplied (${audit.exclusionsApplied}) does not equal the exclusion file length (${exclusions.length})`,
+    );
   }
 
   if (typeof audit.published !== "number" || audit.published !== bank.length) {

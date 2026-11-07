@@ -1,0 +1,22 @@
+{
+  "id": "ch1-3-theory-40",
+  "paper": "ch1-3-theory",
+  "source": "supplied-paper",
+  "sourceKey": "A",
+  "blind": "C",
+  "blindWork": "Let x = mass NaCl (g), so KCl = 2.000 - x. Total chloride = x/58.44 + (2.000 - x)/74.55 = 0.0300, giving 16.11x = 13.82 and x = 0.858 g. The closest choice is 0.868 g (0.868 g checks to 0.03004 mol Cl at the stated masses).",
+  "blindConfidence": "medium",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-C"
+  ],
+  "stem": "A mixture of $\\text{NaCl}$ ($M = 58.44\\text{~g/mol}$) and $\\text{KCl}$ ($M = 74.55\\text{~g/mol}$) weighing $2.000\\text{~g}$ contains $0.0300\\text{~mol}$ of total chloride ions. Calculate the mass of $\\text{NaCl}$ in the mixture.",
+  "choices": [
+    "$1.168\\text{~g}$",
+    "$0.832\\text{~g}$",
+    "$0.868\\text{~g}$",
+    "$1.432\\text{~g}$"
+  ],
+  "sourceExplanation": "Let $x = \\text{moles~NaCl}$, $y = \\text{moles~KCl}$.\n\n$x + y = 0.0300$\n\n$58.44x + 74.55(0.0300 - x) = 2.000 \\Longrightarrow 16.11x = 0.2365 \\Longrightarrow x = 0.01468\\text{~mol}$.\n\nMass $\\text{NaCl} = 0.01468 \\times 58.44 = 0.858\\text{~g}$. (Recalculating: $74.55 \\times 0.0300 = 2.2365$. $2.2365 - 2.000 = 0.2365$. $x = 0.2365/16.11 = 0.01468\\text{~mol}$. Mass $= 0.858\\text{~g}$). Correct Choice: C ($0.868\\text{~g}$ rounded to 3 sig figs depending on molar masses)."
+}

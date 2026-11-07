@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-40",
+  "answer": "A",
+  "confidence": "high",
+  "work": "The de Broglie relation is lambda = h/(mv). The momentum is p = mv = (9.109e-31 kg)(2.00e6 m/s) = 1.8218e-24 kg m/s. Dividing h = 6.626e-34 J s by this momentum gives lambda = 6.626e-34 / 1.8218e-24 = 3.64e-10 m. This is about 0.36 nm, the expected scale for a fast electron.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "Substituting the stated mass and speed into lambda = h/(mv) gives 3.64e-10 m, which matches choice A exactly. The source key of B (3.64e-13 m) is a factor of 1000 too small and its own written arithmetic does not follow from the numbers quoted; the blind solver computed the correct value and is right.",
+  "cleanExplanation": "Use the de Broglie relation lambda = h/(mv). The electron's momentum is mv = (9.109e-31 kg)(2.00e6 m/s) = 1.822e-24 kg m/s, so lambda = 6.626e-34 J s / 1.822e-24 kg m/s = 3.64e-10 m. That wavelength (about 0.36 nm) is on the order of atomic spacings, consistent with electron diffraction."
+}

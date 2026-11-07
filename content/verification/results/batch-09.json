@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ch4-7-lab-11",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Wet filter paper holds a large amount of water that flashes to steam on heating. A tightly closed crucible would trap this steam, causing pressure build-up and ejection (spattering) of the precipitate. Leaving the lid slightly ajar vents the steam while still limiting air access.",
+    "ambiguous": false,
+    "cleanExplanation": "Water trapped in the wet filter paper turns rapidly to steam as the crucible is heated. If the cover were sealed shut, the trapped steam would raise the internal pressure and could blow the precipitate out of the crucible. Leaving the cover slightly ajar lets the steam escape and keeps the pressure equal to the surroundings, so the solid stays in the crucible and oxidation by air is still minimized."
+  },
+  {
+    "id": "ch4-7-lab-12",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Total NaOH = 50.00 mL x 0.1000 M = 5.000 mmol. Excess NaOH titrated = 21.40 mL x 0.1000 M = 2.140 mmol, so NaOH consumed by the salt = 5.000 - 2.140 = 2.860 mmol. Since 2 NaOH per (NH4)2SO4, n(salt) = 1.430 mmol, mass = 1.430e-3 x 132.14 = 0.1890 g, purity = 0.1890/0.2000 = 94.5%.",
+    "ambiguous": false,
+    "cleanExplanation": "The NaOH added is 50.00 mL x 0.1000 M = 5.000 mmol. The HCl back-titration shows 21.40 mL x 0.1000 M = 2.140 mmol of NaOH was left over, so 2.860 mmol of NaOH reacted with the ammonium sulfate. The reaction uses 2 mol NaOH per mol (NH4)2SO4, giving 1.430 mmol of salt, which is 1.430e-3 x 132.14 g/mol = 0.1890 g. Dividing by the 0.2000 g sample gives a purity of 94.5%."
+  },
+  {
+    "id": "ch4-7-lab-13",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Mass of water lost = 2.497 - 1.596 = 0.901 g, i.e. 0.901/18.02 = 0.0500 mol H2O. Moles of anhydrous salt = 1.596/159.6 = 0.01000 mol. Thus x = 0.0500/0.0100 = 5.0, consistent with CuSO4.5H2O.",
+    "ambiguous": false,
+    "cleanExplanation": "The heating drives off 2.497 g - 1.596 g = 0.901 g of water, which is 0.901 g / 18.02 g/mol = 0.0500 mol H2O. The anhydrous residue is 1.596 g / 159.6 g/mol = 0.01000 mol CuSO4. Therefore x = 0.0500/0.0100 = 5, so the hydrate is CuSO4.5H2O."
+  },
+  {
+    "id": "ch4-7-lab-14",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Gas collected over water is saturated with water vapor, so the total pressure equals the barometric pressure. P(O2) = P_total - P(H2O) = 754.0 - 21.1 = 732.9 mmHg.",
+    "ambiguous": false,
+    "cleanExplanation": "When a gas is collected over water, the pressure inside the tube is the sum of the dry gas pressure and the vapor pressure of water. Because the water levels are equal, this total equals the barometric pressure. Hence P(O2) = 754.0 mmHg - 21.1 mmHg = 732.9 mmHg."
+  },
+  {
+    "id": "ch4-7-lab-15",
+    "answer": "C",
+    "confidence": "high",
+    "work": "The mercury level is 45 mm lower in the arm open to the atmosphere, meaning the gas pushes the mercury down on that side, so the gas pressure exceeds atmospheric pressure. P_gas = 755 + 45 = 800 mmHg.",
+    "ambiguous": false,
+    "cleanExplanation": "The liquid in the open arm stands lower, so the confined gas supports an extra 45 mm of mercury above atmospheric pressure. The absolute pressure in the bulb is therefore P_atm + h = 755 mmHg + 45 mmHg = 800 mmHg."
+  },
+  {
+    "id": "ch4-7-lab-16",
+    "answer": "B",
+    "confidence": "medium",
+    "work": "n = PV/RT = (0.985 atm x 0.2500 L)/(0.08206 x 372.15 K) = 0.24625/30.539 = 8.063e-3 mol. M = 0.684 g / 8.063e-3 mol = 84.8 g/mol, matching the 84.2 g/mol choice most closely (about 0.8% agreement).",
+    "ambiguous": false,
+    "cleanExplanation": "Use the ideal gas law with T = 99.0 + 273.15 = 372.15 K: n = PV/RT = (0.985 atm)(0.2500 L)/[(0.08206 L atm/mol K)(372.15 K)] = 8.06e-3 mol. The vapor mass is 0.684 g, so M = 0.684 g / 8.06e-3 mol = 84.8 g/mol, which corresponds to the 84.2 g/mol option."
+  },
+  {
+    "id": "ch4-7-lab-17",
+    "answer": "A",
+    "confidence": "high",
+    "work": "In the Victor Meyer method, V is the volume of air displaced by the vapor from a known mass m, and M = mRT/PV. Incomplete vaporization displaces less air than the full sample would, so V is too small and the computed M is too high.",
+    "ambiguous": false,
+    "cleanExplanation": "The molar mass is found from a known sample mass and the volume of air the vapor displaces, M = mRT/PV. If some liquid never vaporizes, the displaced volume is smaller than it should be for that mass. Dividing the mass by too small a volume gives a molar mass that is higher than the true value."
+  },
+  {
+    "id": "ch4-7-lab-18",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The head of water is 6.8 cm = 68 mm H2O, equal to 68/13.6 = 5.0 mm Hg. Water standing higher inside the tube means the trapped gas pressure is lower than the barometric pressure, so 5.0 mmHg is subtracted: P_gas = P_bar - 5.0 mmHg.",
+    "ambiguous": false,
+    "cleanExplanation": "A 6.8 cm (68 mm) column of water corresponds to 68 mm H2O / 13.6 = 5.0 mmHg. Because the liquid level is higher inside the tube, the gas inside is at a lower pressure than the atmosphere by exactly this head. The dry-gas calculation therefore uses P_bar - 5.0 mmHg."
+  },
+  {
+    "id": "ch4-7-lab-19",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Graham's law: t_unknown/t_Ar = sqrt(M_unknown/M_Ar). Ratio = 64.1/48.2 = 1.330; squared = 1.769. M = 1.769 x 39.95 = 70.7 g/mol, near the 70.6 g/mol choice.",
+    "ambiguous": false,
+    "cleanExplanation": "For equal volumes effusing under the same conditions, the times are proportional to the square roots of the molar masses: t_x/t_Ar = sqrt(M_x/M_Ar). Thus M_x = M_Ar (64.1/48.2)^2 = 39.95 x 1.769 = 70.7 g/mol, i.e. about 70.6 g/mol."
+  },
+  {
+    "id": "ch4-7-lab-20",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Calcium carbide made from coke/lime commonly contains calcium phosphide and sulfide, which give PH3 and H2S with water. Both are foul, toxic impurities that are removed by complexation/precipitation with CuSO4 solution; the wash bottle is a purification trap, not a drying or sealing device.",
+    "ambiguous": false,
+    "cleanExplanation": "Commercial calcium carbide contains phosphide and sulfide impurities, so the acetylene produced carries phosphine (PH3) and hydrogen sulfide (H2S), both toxic and foul-smelling. Acidified copper(II) sulfate solution traps these by forming copper phosphide and copper sulfide while leaving acetylene essentially unchanged. The wash bottle therefore purifies the gas rather than drying it or acting as a flame arrestor."
+  },
+  {
+    "id": "ch4-7-lab-21",
+    "answer": "C",
+    "confidence": "high",
+    "work": "To move the plunger the gas must overcome both the external atmosphere and the 15.0 Torr of plunger friction, so the gas inside is at a higher pressure than the atmosphere. P_gas = 750.0 + 15.0 = 765.0 Torr.",
+    "ambiguous": false,
+    "cleanExplanation": "The gas can only expand if its pressure exceeds the opposing pressure, which is the atmospheric pressure plus the extra 15.0 Torr needed to overcome plunger friction. Therefore the gas inside the syringe is at 750.0 + 15.0 = 765.0 Torr. Ignoring this offset would bias the calculated moles low."
+  },
+  {
+    "id": "ch4-7-lab-22",
+    "answer": "A",
+    "confidence": "high",
+    "work": "In a Joule-Thomson (isenthalpic) expansion the gas does internal work pulling molecules apart against their attractive forces, converting kinetic energy into potential energy and lowering the temperature. This is described by the van der Waals a constant; the b constant (finite molecular volume) gives the opposite heating tendency.",
+    "ambiguous": false,
+    "cleanExplanation": "During a free expansion the molecules must be pulled apart against their attractive intermolecular forces, which costs energy taken from molecular kinetic energy, so the gas cools. The strength of those attractions is measured by the van der Waals a constant. Repulsive volume effects (the b constant) act in the opposite sense and tend to warm the gas, and no heat flows in from the surroundings in an ideal throttling process."
+  },
+  {
+    "id": "ch4-7-lab-23",
+    "answer": "B",
+    "confidence": "high",
+    "work": "P = 740.0/760 = 0.9737 atm, V = 0.0685 L, T = 295.15 K: n(O2) = PV/RT = (0.9737 x 0.0685)/(0.08206 x 295.15) = 0.06670/24.22 = 2.753e-3 mol. n(KClO3) = (2/3)n(O2) = 1.836e-3 mol, mass = 0.2250 g, % = 0.2250/0.400 = 56.2%.",
+    "ambiguous": false,
+    "cleanExplanation": "The collected oxygen is n = PV/RT = [(740.0/760) atm](0.0685 L)/[(0.08206)(295.15 K)] = 2.75e-3 mol. From 2 KClO3 -> 2 KCl + 3 O2, the KClO3 decomposed is (2/3)(2.75e-3) = 1.84e-3 mol, or 1.84e-3 x 122.55 = 0.225 g. That is 0.225 g / 0.400 g = 56.3% KClO3, with the balance being KCl."
+  },
+  {
+    "id": "ch4-7-lab-24",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Anhydrous CaCl2 forms addition compounds with ammonia (CaCl2.8NH3), so it both retains the gas and contaminates it. CaO, KOH and soda lime are all basic and only remove water from ammonia without reacting appreciably with it.",
+    "ambiguous": false,
+    "cleanExplanation": "Ammonia is a Lewis base that coordinates to calcium ions, so anhydrous calcium chloride takes up NH3 to form CaCl2.8NH3 and cannot be used to dry it. Quicklime, solid KOH and soda lime are all basic and merely absorb water, so they are suitable drying agents for ammonia."
+  },
+  {
+    "id": "ch4-7-lab-25",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Both mercury and the glass scale expand on warming, so a warm barometer reads high and the reading must be divided by (1 + beta*deltaT): h_0 = 762.4/(1 + 1.82e-4 x 28) = 762.4/1.00510 = 758.5 mm. (Using only the mercury term without the scale correction would give a similar rounded value of 758.6 mm.)",
+    "ambiguous": false,
+    "cleanExplanation": "Mercury expands as it warms, so at 28 degrees C the column is longer than it would be at 0 degrees C for the same pressure. Dividing the reading by the expansion factor 1 + beta*deltaT = 1 + (1.82e-4)(28) = 1.00510 gives h_0 = 762.4/1.00510 = 758.5 mm Hg. The true pressure is therefore reported as about 758.5 mm, noticeably below the raw reading."
+  },
+  {
+    "id": "ch4-7-lab-26",
+    "answer": "B",
+    "confidence": "high",
+    "work": "A tracer must reach the leak quickly and be recognizable against the background. Helium is the smallest practical atom (fast effusion), is present only at about 5 ppm in air, is inert and has a high ionization cross-section relative to its mass, giving a large, unambiguous MSLD signal.",
+    "ambiguous": false,
+    "cleanExplanation": "Helium's tiny atoms effuse quickly and pass readily through pinhole leaks, so a leak is detected almost immediately. Air contains only a few ppm of helium, so the mass-spectrometer signal at m/z 4 is essentially free of background and unambiguous. Helium is also inert and not condensable at room temperature, so it does not contaminate or clog the vacuum system."
+  },
+  {
+    "id": "ch4-7-lab-27",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Heat lost by hot water = 50.0 x 4.184 x (60.0 - 38.5) = 50.0 x 4.184 x 21.5 = 4498 J. Heat gained by cold water = 50.0 x 4.184 x (38.5 - 20.0) = 3870 J. Difference = 628 J absorbed by the cup, so C_cal = 628/18.5 = 33.9 J/degC.",
+    "ambiguous": false,
+    "cleanExplanation": "The hot water releases q = 50.0 g x 4.184 J/(g degC) x 21.5 degC = 4498 J while the cold water absorbs 50.0 g x 4.184 x 18.5 degC = 3870 J. The 628 J difference was taken up by the calorimeter over the same 18.5 degC rise. Hence C_cal = 628 J / 18.5 degC = 33.9 J/degC."
+  },
+  {
+    "id": "ch4-7-lab-28",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Total heat absorbed = (100.0 + 8.00) g x 4.18 x (22.0 - 16.5) + 25.0 x 5.5 = 108 x 4.18 x 5.5 + 137.5 = 2483 + 138 = 2621 J = 2.621 kJ. Moles = 8.00/80.04 = 0.09995 mol, so Delta H = +2.621/0.09995 = +26.2 kJ/mol (endothermic, temperature falls).",
+    "ambiguous": false,
+    "cleanExplanation": "The solution cools, so dissolving is endothermic. Heat absorbed by the solution is 108.0 g x 4.18 J/(g degC) x 5.5 degC = 2483 J, and the calorimeter absorbs 25.0 J/degC x 5.5 degC = 138 J, for a total of 2621 J = 2.621 kJ. With 8.00 g / 80.04 g/mol = 0.09995 mol, Delta H_soln = +2.621 kJ / 0.09995 mol = +26.2 kJ/mol."
+  },
+  {
+    "id": "ch4-7-lab-29",
+    "answer": "A",
+    "confidence": "high",
+    "work": "q_released = 1.152 g x 32.27 kJ/g = 37.18 kJ, which all goes into the calorimeter: C_cal = q/DeltaT = 37.18 kJ / 3.125 degC = 11.90 kJ/degC.",
+    "ambiguous": false,
+    "cleanExplanation": "Burning 1.152 g of benzoic acid releases 1.152 g x 32.27 kJ/g = 37.18 kJ. Because the bomb is adiabatic, this heat raises the calorimeter by 3.125 degC, so C_cal = q/DeltaT = 37.18 kJ / 3.125 degC = 11.90 kJ/degC."
+  },
+  {
+    "id": "ch4-7-lab-30",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n(H2SO4) = 0.0500 L x 1.00 M = 0.0500 mol, giving 0.100 mol H+; n(NaOH) = 0.1000 L x 1.00 M = 0.100 mol OH-. These are exactly equivalent, forming 0.100 mol H2O. Delta H = -q/n = -5.71 kJ/0.100 mol = -57.1 kJ/mol H2O.",
+    "ambiguous": false,
+    "cleanExplanation": "The acid supplies 0.0500 mol H2SO4, i.e. 0.100 mol of H+, and the base supplies 0.100 mol of OH-, so they react completely to form 0.100 mol of water. The heat released is 5.71 kJ, so the enthalpy change is -5.71 kJ / 0.100 mol = -57.1 kJ per mole of water formed, matching the familiar strong acid-strong base value."
+  }
+]

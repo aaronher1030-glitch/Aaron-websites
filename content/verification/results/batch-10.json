@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ch4-7-lab-31",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Without stirring, heat released by the reaction stays localized and the bulk solution never reaches true thermal equilibrium before heat leaks to the surroundings. The thermometer therefore records a lower peak than the adiabatic value, so ΔT_max is systematically underestimated. Option A is wrong because a hot spot is transient and not representative of the bulk.",
+    "ambiguous": false,
+    "cleanExplanation": "Inadequate stirring means the heat of reaction is not distributed uniformly, so the bulk solution equilibrates slowly while heat is continuously lost through the calorimeter walls. The recorded maximum temperature rise is therefore smaller than the true adiabatic rise, and ΔT_max (and the calculated enthalpy) is underestimated."
+  },
+  {
+    "id": "ch4-7-lab-32",
+    "answer": "B",
+    "confidence": "high",
+    "work": "q_water = 200.0 g × 4.184 J/(g·°C) × 16.5 °C = 1.381 × 10^4 J = 13.81 kJ. Moles ethanol = 0.550 g / 46.07 g/mol = 1.194 × 10^-2 mol. ΔH = -13.81 kJ / 1.194 × 10^-2 mol = -1.16 × 10^3 kJ/mol, matching -1150 kJ/mol.",
+    "ambiguous": false,
+    "cleanExplanation": "Heat absorbed by the water is q = mcΔT = (200.0 g)(4.184 J/g·°C)(36.5 - 20.0 °C) = 1.38 × 10^4 J = 13.8 kJ. The ethanol burned is 0.550 g / 46.07 g/mol = 0.01194 mol. Dividing gives ΔH_comb ≈ -13.8 kJ / 0.01194 mol ≈ -1.15 × 10^3 kJ/mol; the value is smaller in magnitude than the literature value because of heat loss to the surroundings."
+  },
+  {
+    "id": "ch4-7-lab-33",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Reaction 3 (NaOH(aq) + HCl(aq)) equals Reaction 2 (solid NaOH + HCl) minus Reaction 1 (dissolution of solid NaOH). Therefore ΔH3 = ΔH2 - ΔH1, which rearranges to ΔH2 = ΔH1 + ΔH3. This correctly links dissolving solid NaOH and then neutralizing.",
+    "ambiguous": false,
+    "cleanExplanation": "Adding the dissolution step (Reaction 1) to the neutralization of aqueous NaOH (Reaction 3) reproduces Reaction 2, in which solid NaOH is neutralized directly. By Hess's law the enthalpies add: ΔH2 = ΔH1 + ΔH3. Equivalently ΔH3 = ΔH2 - ΔH1."
+  },
+  {
+    "id": "ch4-7-lab-34",
+    "answer": "A",
+    "confidence": "high",
+    "work": "In the graphical (Newton's law of cooling) treatment, the post-reaction cooling curve is extrapolated linearly back to the time of mixing; the vertical distance from the pre-reaction baseline to that extrapolated point gives the corrected adiabatic ΔT. The other options involve arbitrary multipliers or irrelevant room-temperature differences.",
+    "ambiguous": false,
+    "cleanExplanation": "Temperature is logged before, during, and after the reaction. The cooling portion after the peak is extrapolated back to the moment of mixing, and the corrected rise is the difference between that extrapolated temperature and the initial baseline temperature. This compensates for heat lost to the surroundings during the run and gives ΔT_true."
+  },
+  {
+    "id": "ch4-7-lab-35",
+    "answer": "B",
+    "confidence": "high",
+    "work": "In power-compensated DSC the two pans are held at the same temperature; an endothermic process in the sample absorbs heat, so extra electrical power must be delivered to the sample side. The differential power signal (sample minus reference) peaks endothermically upward in this convention.",
+    "ambiguous": false,
+    "cleanExplanation": "Power-compensated DSC keeps sample and reference at identical temperature while heating at a constant rate. An endothermic transition withdraws heat from the sample, so the instrument must supply more power to the sample pan than to the reference pan to keep them isothermal; this extra power is recorded as the endotherm."
+  },
+  {
+    "id": "ch4-7-lab-36",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Heat lost by warm water = 150.0 × 4.184 × (25.0 - 10.2) = 9.29 × 10^3 J. Heat used to warm the melted ice = 25.0 × 4.184 × 10.2 = 1.07 × 10^3 J. Heat of fusion = 9.29 - 1.07 = 8.22 kJ for 25.0/18.02 = 1.387 mol, giving 5.93 kJ/mol ≈ 6.0 kJ/mol.",
+    "ambiguous": false,
+    "cleanExplanation": "The cooling water releases (150.0 g)(4.184 J/g·°C)(14.8 °C) = 9.29 kJ. Of this, (25.0 g)(4.184)(10.2 °C) = 1.07 kJ goes into warming the melted ice from 0 to 10.2 °C, leaving 8.22 kJ for melting 25.0 g = 1.387 mol of ice. Thus ΔH_fus ≈ 8.22 kJ / 1.387 mol ≈ 5.9-6.0 kJ/mol, below the literature 6.01 kJ/mol because of heat loss."
+  },
+  {
+    "id": "ch4-7-lab-37",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Water equivalent W = C_cal / c_water = 83.68 J/°C ÷ 4.184 J/(g·°C) = 20.0 g. This means the calorimeter absorbs as much heat as 20.0 g of water per degree.",
+    "ambiguous": false,
+    "cleanExplanation": "The water equivalent is the heat capacity of the calorimeter divided by the specific heat of water: W = 83.68 J/°C ÷ 4.184 J/(g·°C) = 20.0 g. So the calorimeter hardware behaves like an extra 20.0 g of water in the heat balance."
+  },
+  {
+    "id": "ch4-7-lab-38",
+    "answer": "B",
+    "confidence": "high",
+    "work": "In a thermometric titration the reaction is exothermic (acid-base neutralization), so temperature rises until the limiting reactant is consumed and then levels off or falls as excess titrant dilutes/cools the mixture. The stoichiometric endpoint is the extrapolated intersection of the rising and post-endpoint segments, i.e., the maximum/sharp break in slope.",
+    "ambiguous": false,
+    "cleanExplanation": "Neutralization releases heat, so the temperature climbs while acid remains and then flattens or declines once the acid is consumed and excess titrant is added. The endpoint is therefore read at the maximum temperature (the intersection of the extrapolated pre- and post-endpoint lines), not at a minimum and not at room temperature."
+  },
+  {
+    "id": "ch4-7-lab-39",
+    "answer": "C",
+    "confidence": "high",
+    "work": "A = -log(T) with T = 0.250. log(0.250) = -0.6021, so A = 0.602. Option B is the common error of using %T/100 directly as absorbance.",
+    "ambiguous": false,
+    "cleanExplanation": "Percent transmittance is first converted to a fraction: T = 25.0%/100 = 0.250. Then A = -log T = -log(0.250) = 0.602. Absorbance is logarithmic, so it is not simply 0.250."
+  },
+  {
+    "id": "ch4-7-lab-40",
+    "answer": "A",
+    "confidence": "high",
+    "work": "From A = εbc, ε = A/(bc) = 0.680/((4.00 × 10^-4 M)(1.00 cm)) = 1.70 × 10^3 L/(mol·cm). Units and magnitude check: the value times concentration reproduces 0.680.",
+    "ambiguous": false,
+    "cleanExplanation": "Rearranging Beer-Lambert's law gives ε = A/(bC). Substituting A = 0.680, b = 1.00 cm, and C = 4.00 × 10^-4 M: ε = 0.680 / 4.00 × 10^-4 = 1.70 × 10^3 L/(mol·cm)."
+  },
+  {
+    "id": "ch4-7-lab-41",
+    "answer": "C",
+    "confidence": "high",
+    "work": "C_diluted = A/4500 = 0.360/4500 = 8.00 × 10^-5 M. Dilution factor = 50.0/5.00 = 10, so C_original = 10 × 8.00 × 10^-5 = 8.00 × 10^-4 M. Option A forgets the dilution factor.",
+    "ambiguous": false,
+    "cleanExplanation": "The diluted solution has C = A/εb = 0.360/4500 = 8.00 × 10^-5 M. Since 5.00 mL was diluted to 50.0 mL (a tenfold dilution), the original concentration is 10 × 8.00 × 10^-5 = 8.00 × 10^-4 M."
+  },
+  {
+    "id": "ch4-7-lab-42",
+    "answer": "C",
+    "confidence": "high",
+    "work": "A brick-red (orange-red) flame is characteristic of calcium, whose emission is dominated by CaOH band emission around 620 nm. Strontium gives a crimson/scarlet flame, lithium carmine red, and sodium intense yellow. The absence of a violet potassium-like mask through cobalt glass is consistent with calcium.",
+    "ambiguous": false,
+    "cleanExplanation": "Calcium salts produce the persistent brick-red (orange-red) flame in qualitative analysis, while strontium is crimson, lithium carmine-red, and sodium yellow. Since no violet emission needs to be unmasked through cobalt glass, the cation is Ca2+."
+  },
+  {
+    "id": "ch4-7-lab-43",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Sodium's 589 nm doublet is extremely bright and contaminates almost every flame test. Cobalt blue glass transmits in the blue-violet and blocks the yellow-orange region, removing the sodium glare so the pale lilac/violet potassium emission can be seen.",
+    "ambiguous": false,
+    "cleanExplanation": "Trace sodium contamination gives an intense yellow flame that swamps the faint potassium violet. Cobalt blue glass absorbs the yellow sodium light while transmitting blue-violet, so the weak lilac potassium flame becomes visible."
+  },
+  {
+    "id": "ch4-7-lab-44",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The Balmer series ends at n = 2, and H-alpha (the longest-wavelength Balmer line, 656.3 nm) corresponds to n = 3 → 2. Check with Rydberg: 1/λ = R(1/4 - 1/9) = 1.097 × 10^7 × 0.1389 = 1.523 × 10^6 m^-1, λ = 656 nm.",
+    "ambiguous": false,
+    "cleanExplanation": "The 656.3 nm red line is the first member of the Balmer series, in which electrons fall to n = 2. The transition is n = 3 → n = 2: Rydberg's equation gives 1/λ = R_H(1/2² - 1/3²) = 1.524 × 10^6 m⁻¹, so λ = 656 nm."
+  },
+  {
+    "id": "ch4-7-lab-45",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Ordinary borosilicate and soda-lime glasses and plastics absorb strongly below about 340-350 nm. Fused silica (quartz) is transparent down to about 190-200 nm, so it is required for UV absorbance work.",
+    "ambiguous": false,
+    "cleanExplanation": "Glass and plastic cuvettes absorb UV radiation below roughly 350 nm, which would corrupt the measurement. Quartz (fused silica) transmits down to about 190 nm and is therefore the material of choice for absorbance measurements in the 200-350 nm region."
+  },
+  {
+    "id": "ch4-7-lab-46",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The blank must reproduce every contribution to absorbance except the analyte: solvent, ethanol, buffer, and all reagents (e.g., ligand/color developer) in identical proportions, omitting only the metal ion. This sets A = 0 by cancelling background absorption and cuvette/solvent effects.",
+    "ambiguous": false,
+    "cleanExplanation": "The blank is used to zero the instrument against everything that absorbs or scatters light other than the analyte. It should contain the same solvent mixture (water, ethanol, buffer, all other reagents) with only the metal ion/analyte left out, so that any residual absorbance is due solely to the complex."
+  },
+  {
+    "id": "ch4-7-lab-47",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Energy conservation for photoemission: hν = E_b + E_k, so E_b = hν - E_k = 1253.6 - 1100.0 = 153.6 eV. Option D incorrectly adds the two energies.",
+    "ambiguous": false,
+    "cleanExplanation": "In PES the photon energy is split between overcoming the binding energy and giving the ejected electron kinetic energy: hν = E_b + E_k. Therefore E_b = 1253.6 eV - 1100.0 eV = 153.6 eV, a plausible core-level binding energy."
+  },
+  {
+    "id": "ch4-7-lab-48",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Chemical deviations arise when the absorbing species' concentration is not proportional to the total analyte concentration, e.g., association, dissociation, or pH-dependent equilibria shifting the fraction of the colored form. Beam divergence, dirty/fingerprinted cuvettes, and path length are instrumental/physical effects, not chemical ones.",
+    "ambiguous": false,
+    "cleanExplanation": "Beer's law assumes the absorbance is proportional to the concentration of the absorbing species. At high concentration, association/dissociation or acid-base equilibria change the fraction of molecules in the absorbing form, so absorbance vs. total concentration becomes non-linear; this is a chemical deviation. The other choices are instrumental or physical (stray light, cell imperfections, path length)."
+  },
+  {
+    "id": "ch4-7-lab-49",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The 589.0/589.6 nm doublet is the Na D-line pair, far from the Hg lines at 404.7, 435.8, and 546.1 nm. Copper's strongest visible lines are near 510-580 nm (green/yellow) and helium's near 587.6 nm but not as a sodium D doublet; the classic doublet identifies sodium.",
+    "ambiguous": false,
+    "cleanExplanation": "The mercury calibration lines (404.7, 435.8, 546.1 nm) confirm the wavelength scale, and the unknown's bright doublet at 589.0 nm matches the sodium D lines (589.0 and 589.6 nm). Sodium's intense yellow emission is the standard example of this doublet."
+  },
+  {
+    "id": "ch4-7-lab-50",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Stokes shift means part of the excitation energy is lost as vibrational/thermal relaxation before emission, so E_emitted < E_excited. Since E = hc/λ, lower energy means longer wavelength: green (~520 nm) emission from 337 nm excitation.",
+    "ambiguous": false,
+    "cleanExplanation": "After absorption, the excited molecule loses some vibrational energy as heat before it fluoresces. The emitted photon therefore has less energy (E = hc/λ) and a longer wavelength than the excitation photon - the Stokes shift - which is why 337 nm UV excitation produces green fluorescence."
+  }
+]

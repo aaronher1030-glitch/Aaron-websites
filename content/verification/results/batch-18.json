@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-textbook-011",
+    "answer": "C",
+    "confidence": "high",
+    "work": "A hypothesis is a tentative, testable explanation proposed to account for observations. Theories and laws are already well established, and an observation is the data itself, so only hypothesis fits the description.",
+    "ambiguous": false,
+    "cleanExplanation": "A hypothesis is a tentative explanation that can be tested by experiment. If the experiments support it repeatedly it may grow into a theory; a law merely states a pattern without explaining it."
+  },
+  {
+    "id": "proto-textbook-012",
+    "answer": "D",
+    "confidence": "high",
+    "work": "A scientific law summarizes a consistent, repeated pattern (often mathematically) but does not explain the underlying cause. A theory provides the explanation, and a hypothesis is only a tentative proposal, so law is correct.",
+    "ambiguous": false,
+    "cleanExplanation": "A law is a concise statement of a pattern observed consistently in many experiments, such as the law of conservation of mass. It says what happens, not why."
+  },
+  {
+    "id": "proto-textbook-013",
+    "answer": "A",
+    "confidence": "high",
+    "work": "A theory is a well-tested explanation supported by a large body of evidence that accounts for a wide range of observations. A law describes rather than explains, a guess is untested, and a hypothesis is a preliminary proposal.",
+    "ambiguous": false,
+    "cleanExplanation": "A theory is a broad, well-tested explanation for a wide range of observations, for example atomic theory or kinetic molecular theory. It is supported by much evidence and can still be refined as new data appear."
+  },
+  {
+    "id": "proto-textbook-014",
+    "answer": "A",
+    "confidence": "high",
+    "work": "The variable the experimenter deliberately sets or changes is the independent variable; the response that is measured is the dependent variable. Control group and constant refer to comparison and fixed conditions, not the changed quantity.",
+    "ambiguous": false,
+    "cleanExplanation": "The independent variable is the one the experimenter purposely changes, while the dependent variable is what is measured in response. All other conditions are kept constant so that any change in the dependent variable can be attributed to the independent variable."
+  },
+  {
+    "id": "proto-textbook-015",
+    "answer": "C",
+    "confidence": "high",
+    "work": "In the scientific method, a hypothesis failing experimental test must be modified or discarded and retested. Ignoring results or altering data is misconduct, and a single failed hypothesis does not become a law, so revising or rejecting it is the only valid response.",
+    "ambiguous": false,
+    "cleanExplanation": "When experimental results contradict a hypothesis, the hypothesis must be revised or rejected, and a new testable prediction made. Data are never altered to fit expectations; contradictory results are what drive scientific progress."
+  },
+  {
+    "id": "proto-textbook-016",
+    "answer": "C",
+    "confidence": "high",
+    "work": "A pure substance has a fixed composition and cannot be separated by physical means into different substances. Brass is an alloy, seawater is a salt solution, and air is a mixture of gases, whereas distilled water is only H<sub>2</sub>O.",
+    "ambiguous": false,
+    "cleanExplanation": "Distilled water contains only water molecules, so it is a pure substance (a compound). Brass, seawater and air are all mixtures of two or more substances in variable proportions."
+  },
+  {
+    "id": "proto-textbook-017",
+    "answer": "D",
+    "confidence": "high",
+    "work": "A heterogeneous mixture has visibly distinct regions with non-uniform composition. Granite shows separate crystals of quartz, feldspar and mica; brass, dissolved sugar and filtered air are all uniform (homogeneous).",
+    "ambiguous": false,
+    "cleanExplanation": "Granite is heterogeneous because its different mineral grains can be seen as separate, non-uniform regions. Brass, sugar solution and filtered air are homogeneous mixtures with uniform composition throughout."
+  },
+  {
+    "id": "proto-textbook-018",
+    "answer": "B",
+    "confidence": "high",
+    "work": "A compound consists of two or more different elements chemically combined in fixed proportions. CO<sub>2</sub> contains carbon and oxygen; He, diamond (C) and O<sub>3</sub> are each made of only one element.",
+    "ambiguous": false,
+    "cleanExplanation": "Carbon dioxide is a compound because it contains two different elements, carbon and oxygen, chemically bonded in a fixed 1:2 ratio. Helium, diamond and ozone each contain only one element and are elemental substances."
+  },
+  {
+    "id": "proto-textbook-019",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Dissolved sugar particles pass through filter paper, so filtration and decanting cannot separate them; sugar is not magnetic. Evaporating the water leaves solid sugar behind, so evaporation is the appropriate method.",
+    "ambiguous": false,
+    "cleanExplanation": "Because sugar is dissolved, it passes through a filter with the water. Evaporating the water leaves the sugar as a solid residue, which separates the solute from the solvent."
+  },
+  {
+    "id": "proto-textbook-020",
+    "answer": "D",
+    "confidence": "high",
+    "work": "A liquid has closely packed but mobile particles, giving it a definite volume while it takes the shape of its container. Solids have definite shape and volume, and gases have neither, so liquid is correct.",
+    "ambiguous": false,
+    "cleanExplanation": "A liquid has a definite volume because its particles are close together, but no definite shape because the particles can slide past one another and flow to fill the container's lower part."
+  },
+  {
+    "id": "proto-textbook-021",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Gas particles are separated by large distances relative to particle size and move rapidly in random motion, which makes gases compressible and allows them to fill any container. Fixed positions, incompressibility and fixed volume describe solids or liquids.",
+    "ambiguous": false,
+    "cleanExplanation": "In a gas the particles are far apart and move freely and randomly, so a gas expands to fill its container and can be compressed into a smaller volume."
+  },
+  {
+    "id": "proto-textbook-022",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Deposition is the direct gas-to-solid transition (the reverse of sublimation). Condensation is gas to liquid, freezing is liquid to solid, and sublimation is solid to gas.",
+    "ambiguous": false,
+    "cleanExplanation": "The direct change from gas to solid is called deposition, for example frost forming on a cold window from water vapour. Its reverse, solid to gas, is sublimation."
+  },
+  {
+    "id": "proto-textbook-023",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Melting converts an ordered solid into a less ordered liquid, requiring energy to overcome intermolecular attractions, so it is endothermic. Freezing, condensation and deposition all release energy as order increases.",
+    "ambiguous": false,
+    "cleanExplanation": "Melting absorbs heat because energy must be supplied to weaken the attractions holding particles in the solid lattice. Freezing, condensation and deposition are the reverse processes and release heat."
+  },
+  {
+    "id": "proto-textbook-024",
+    "answer": "A",
+    "confidence": "high",
+    "work": "In a solid the particles are already packed closely together, almost touching, leaving essentially no empty space into which they could be pushed. Particle size and speed do not limit compression, and attractions are strong, not absent.",
+    "ambiguous": false,
+    "cleanExplanation": "Solids resist compression because their particles are already packed closely together in contact, leaving very little empty space. Squeezing would require forcing particles into each other, which the strong repulsions prevent."
+  },
+  {
+    "id": "proto-textbook-025",
+    "answer": "C",
+    "confidence": "high",
+    "work": "A chemical property describes how a substance changes into a different substance, such as flammability (ability to burn). Melting point, colour and density are measured without changing composition, so they are physical properties.",
+    "ambiguous": false,
+    "cleanExplanation": "Flammability is a chemical property because it describes a substance's ability to undergo a chemical reaction, burning to form new substances. Melting point, colour and density describe the substance unchanged and are physical properties."
+  },
+  {
+    "id": "proto-textbook-026",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Boiling water changes liquid H<sub>2</sub>O to water vapour of the same composition, so no new substance forms and the change is physical. Rusting, burning and baking all produce new substances.",
+    "ambiguous": false,
+    "cleanExplanation": "Boiling water is a physical change because water vapour is still H<sub>2</sub>O; only the state changes. Rusting iron, burning wood and baking bread form new substances and are chemical changes."
+  },
+  {
+    "id": "proto-textbook-027",
+    "answer": "B",
+    "confidence": "high",
+    "work": "An extensive property depends on the amount of sample present; mass doubles when the amount of substance doubles. Density, boiling point and temperature are intensive, independent of quantity.",
+    "ambiguous": false,
+    "cleanExplanation": "Mass is an extensive property because it depends on how much of the substance is present. Density, boiling point and temperature are intensive properties, the same for any size of sample under the same conditions."
+  },
+  {
+    "id": "proto-textbook-028",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The SI base unit for mass is the kilogram (kg), one of the seven base units. The gram is a derived subdivision (10<sup>-3</sup> kg), the pound is an imperial unit, and the newton is the SI unit of force.",
+    "ambiguous": false,
+    "cleanExplanation": "The kilogram is the SI base unit of mass. The gram equals one-thousandth of a kilogram, the pound is a non-SI unit, and the newton measures force, not mass."
+  },
+  {
+    "id": "proto-textbook-029",
+    "answer": "B",
+    "confidence": "high",
+    "work": "5.0 × 10<sup>3</sup> mg = 5000 mg. Since 1 g = 1000 mg, dividing by 1000 gives 5.0 g, and two significant figures are retained. Multiplying instead of dividing would give the erroneous larger value.",
+    "ambiguous": false,
+    "cleanExplanation": "Convert using 1 g = 1000 mg: 5.0 × 10<sup>3</sup> mg ÷ 1000 mg/g = 5.0 g. The answer keeps two significant figures, matching the given value."
+  },
+  {
+    "id": "proto-textbook-030",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Kelvin temperature is obtained by adding 273.15 to the Celsius value: 25 + 273.15 = 298.15 K, which rounds to 298 K. Subtracting instead of adding would give a physically meaningless negative kelvin value.",
+    "ambiguous": false,
+    "cleanExplanation": "Using the relation T(K) = T(°C) + 273.15: 25 + 273.15 = 298.15 K, which rounds to 298 K. Kelvin values are never negative."
+  }
+]

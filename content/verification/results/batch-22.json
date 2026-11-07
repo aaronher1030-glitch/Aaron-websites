@@ -1,0 +1,114 @@
+[
+  {
+    "id": "proto-textbook-091",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Isotopes share the same atomic number (protons) but differ in neutrons. Both <sup>12</sup>C and <sup>14</sup>C have Z = 6; the other pairs differ in proton count and are therefore different elements.",
+    "ambiguous": false,
+    "cleanExplanation": "Isotopes of an element have identical atomic number (same number of protons) but different mass numbers because of differing neutron counts. <sup>12</sup>C and <sup>14</sup>C both contain 6 protons, so they are isotopes of carbon; <sup>14</sup>N (Z = 7), <sup>40</sup>Ca (Z = 20), and <sup>4</sup>He (Z = 2) belong to different elements."
+  },
+  {
+    "id": "proto-textbook-092",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Average mass = 0.6915(62.93) + (1 − 0.6915)(64.93) = 43.516 + 0.3085(64.93) = 43.516 + 20.031 = 63.547, which rounds to 63.55 amu.",
+    "ambiguous": false,
+    "cleanExplanation": "The average atomic mass is the abundance-weighted mean: 0.6915 × 62.93 amu = 43.52 amu for <sup>63</sup>Cu, and 0.3085 × 64.93 amu = 20.03 amu for <sup>65</sup>Cu. Adding gives 63.55 amu, which lies between the two isotopic masses, closer to the more abundant isotope."
+  },
+  {
+    "id": "proto-textbook-093",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Noble gases occupy Group 18. Argon is Group 18 (1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>), whereas chlorine is a halogen (Group 17) and potassium and calcium are Group 1 and Group 2 metals.",
+    "ambiguous": false,
+    "cleanExplanation": "Noble gases are the Group 18 elements with full valence shells: helium, neon, argon, krypton, xenon, and radon. Argon is therefore the noble gas here, while chlorine is a reactive halogen and potassium and calcium are reactive metals."
+  },
+  {
+    "id": "proto-textbook-094",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Metals have low ionization energies and low electronegativities, so they lose valence electrons to form cations; delocalized valence electrons give them high electrical and thermal conductivity. Options A, C, and D describe nonmetals.",
+    "ambiguous": false,
+    "cleanExplanation": "Metals hold their valence electrons loosely, so they tend to lose electrons and form positive ions, and their mobile delocalized electrons make them good conductors of electricity. Nonmetals tend to gain electrons, and metals are typically solids with low, not high, ionization energies."
+  },
+  {
+    "id": "proto-textbook-095",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Period 2 runs from Li (Z = 3) to Ne (Z = 10), giving 10 − 3 + 1 = 8 elements: Li, Be, B, C, N, O, F, Ne.",
+    "ambiguous": false,
+    "cleanExplanation": "Period 2 begins with lithium and ends with neon, filling the 2s and 2p subshells (2 + 6 = 8 electrons). Counting from Li to Ne gives eight elements, so a second-period row of the periodic table has 8 members."
+  },
+  {
+    "id": "proto-textbook-096",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Sulfur is in Group 16 with 6 valence electrons and needs 2 more to reach an octet, so it gains two electrons, giving S<sup>2−</sup>.",
+    "ambiguous": false,
+    "cleanExplanation": "A Group 16 atom such as sulfur has six valence electrons and needs two more to complete its octet. It therefore gains two electrons, and the extra electrons give the sulfide ion a charge of 2−, written S<sup>2−</sup>."
+  },
+  {
+    "id": "proto-textbook-097",
+    "answer": "C",
+    "confidence": "high",
+    "work": "A polyatomic cation is a multi-atom ion with a positive charge. NH<sub>4</sub><sup>+</sup> has five atoms and +1 charge; SO<sub>4</sub><sup>2−</sup> and NO<sub>3</sub><sup>−</sup> are polyatomic anions and Cl<sup>−</sup> is a monatomic anion.",
+    "ambiguous": false,
+    "cleanExplanation": "A polyatomic ion contains more than one atom, and a cation carries a positive charge. The ammonium ion, NH<sub>4</sub><sup>+</sup>, is built from one nitrogen and four hydrogens and bears a +1 charge, making it the only polyatomic cation listed; sulfate and nitrate are polyatomic anions and chloride is a single-atom anion."
+  },
+  {
+    "id": "proto-textbook-098",
+    "answer": "B",
+    "confidence": "high",
+    "work": "A neutral chlorine atom has 17 electrons (Z = 17). The 1− charge means one extra electron, so Cl<sup>−</sup> has 17 + 1 = 18 electrons, matching the argon configuration.",
+    "ambiguous": false,
+    "cleanExplanation": "Chlorine has atomic number 17, so a neutral atom has 17 protons and 17 electrons. Gaining one electron to form the chloride ion gives 18 electrons, the same count as the noble gas argon and completing chlorine's third-shell octet."
+  },
+  {
+    "id": "proto-textbook-099",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Divide the subscripts by their greatest common divisor, 6: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> → C<sub>1</sub>H<sub>2</sub>O<sub>1</sub> = CH<sub>2</sub>O.",
+    "ambiguous": false,
+    "cleanExplanation": "The empirical formula is the simplest whole-number ratio of atoms. Dividing each subscript in C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> by 6 gives the ratio 1 : 2 : 1, so the empirical formula is CH<sub>2</sub>O (formula mass 30, one-sixth of glucose's 180)."
+  },
+  {
+    "id": "proto-textbook-100",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Charge balance requires 3 Mg<sup>2+</sup> (+6) and 2 PO<sub>4</sub><sup>3−</sup> (−6). Using the cross-over method, Mg<sup>2+</sup> takes the phosphate's 3 as its subscript and PO<sub>4</sub><sup>3−</sup> takes magnesium's 2, giving Mg<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>.",
+    "ambiguous": false,
+    "cleanExplanation": "In an ionic compound the total positive and negative charges must cancel. The lowest common multiple of 2 and 3 is 6, so three Mg<sup>2+</sup> ions (+6) balance two PO<sub>4</sub><sup>3−</sup> ions (−6), giving the formula Mg<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>. The subscript 2 outside the parentheses applies to the whole phosphate group."
+  },
+  {
+    "id": "proto-textbook-101",
+    "answer": "C",
+    "confidence": "high",
+    "work": "A structural formula shows which atoms are bonded to which (connectivity, often with bond lines). Empirical and molecular formulas give only atom ratios or counts, and a formula unit describes the simplest ratio in an ionic lattice.",
+    "ambiguous": false,
+    "cleanExplanation": "A structural formula explicitly shows how the atoms are joined, using lines or drawn bonds to indicate connectivity and often the geometry of the molecule. Empirical and molecular formulas only state the kinds and numbers of atoms, telling nothing about which atom is bonded to which."
+  },
+  {
+    "id": "proto-textbook-102",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Sodium is Na<sup>+</sup>; the sulfite ion is SO<sub>3</sub><sup>2−</sup>. Two Na<sup>+</sup> balance one SO<sub>3</sub><sup>2−</sup>, so the formula is Na<sub>2</sub>SO<sub>3</sub>. (Na<sub>2</sub>SO<sub>4</sub> is sodium sulfate and Na<sub>2</sub>S is sodium sulfide.)",
+    "ambiguous": false,
+    "cleanExplanation": "Sulfite is the polyatomic ion SO<sub>3</sub><sup>2−</sup>, distinct from sulfate, SO<sub>4</sub><sup>2−</sup>. Each sodium ion is Na<sup>+</sup>, so two sodium ions are needed to balance one sulfite ion, giving Na<sub>2</sub>SO<sub>3</sub>."
+  },
+  {
+    "id": "proto-textbook-103",
+    "answer": "A",
+    "confidence": "high",
+    "work": "CO is a binary covalent compound of carbon and oxygen. Naming with prefixes, one carbon (mono, omitted for the first element) and one oxygen gives carbon monoxide; CO<sub>2</sub> would be carbon dioxide.",
+    "ambiguous": false,
+    "cleanExplanation": "For binary covalent compounds the first element keeps its name and the second takes the -ide suffix, with Greek prefixes showing the number of atoms. CO has one carbon and one oxygen, so it is carbon monoxide; carbon dioxide would be CO<sub>2</sub>."
+  },
+  {
+    "id": "proto-textbook-104",
+    "answer": "D",
+    "confidence": "high",
+    "work": "HBr(aq), a binary acid of hydrogen with a non-oxygen anion, takes the hydro-...-ic acid pattern: hydrobromic acid. Bromic and bromous acid refer to oxyacids of bromine (HBrO<sub>3</sub>, HBrO<sub>2</sub>).",
+    "ambiguous": false,
+    "cleanExplanation": "When a binary compound of hydrogen with a halogen is dissolved in water, the acid is named with the prefix hydro-, the root of the second element, and the ending -ic acid. Thus HBr(aq) is hydrobromic acid; bromic and bromous acids are oxyacids containing oxygen (HBrO<sub>3</sub> and HBrO<sub>2</sub>)."
+  }
+]

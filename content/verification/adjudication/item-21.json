@@ -1,0 +1,19 @@
+{
+  "id": "ch4-7-theory-40",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "B",
+  "blind": "A",
+  "blindWork": "λ = h/(mv) = 6.626×10^-34 / (9.109×10^-31 × 2.00×10^6) = 6.626×10^-34 / 1.822×10^-24 = 3.64×10^-10 m. This is about 0.36 nm, comparable to atomic spacing.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [],
+  "stem": "De Broglie Wavelength: What is the de Broglie wavelength of an electron ($mass = 9.109 \\times 10^{- 31}\\text{~kg}$) traveling at a speed of $2.00 \\times 10^{6}\\text{~m/s}$?",
+  "choices": [
+    "$3.64 \\times 10^{- 10}\\text{~m}$",
+    "$3.64 \\times 10^{- 13}\\text{~m}$",
+    "$6.63 \\times 10^{- 34}\\text{~m}$",
+    "$1.82 \\times 10^{- 11}\\text{~m}$"
+  ],
+  "sourceExplanation": "$\\lambda = h/(mv) = \\left( 6.626 \\times 10^{- 34} \\right)/\\left( 9.109 \\times 10^{- 31} \\times 2.00 \\times 10^{6} \\right) = 3.64 \\times 10^{- 13}\\text{~m}$. (B)"
+}

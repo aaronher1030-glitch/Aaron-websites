@@ -1,0 +1,11 @@
+{
+  "id": "ch1-3-theory-50",
+  "answer": "A",
+  "confidence": "high",
+  "work": "Moles of salicylic acid = 2.00/138.12 = 0.01448 mol; moles of acetic anhydride = 2.00/102.09 = 0.01959 mol. The reaction is 1:1, so salicylic acid is limiting. Theoretical aspirin = 0.01448 x 180.16 = 2.61 g, and at 85.0% yield the collected mass is 2.61 x 0.850 = 2.22 g.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "The correct value is 2.22 g, choice A. Choice B (2.61 g) is the unadjusted theoretical mass, choice C (3.07 g) divides the theoretical mass by 0.850 instead of multiplying, and choice D (1.89 g) applies the 85% yield a second time to 2.22 g. The source's keyed letter D contradicts its own explanation, which correctly derives 2.22 g and names choice A, so the blind answer is right and the keyed letter is wrong.",
+  "cleanExplanation": "Convert both reactants to moles: 2.00 g salicylic acid / 138.12 g/mol = 0.01448 mol, and 2.00 g acetic anhydride / 102.09 g/mol = 0.01959 mol. Because the reaction is 1:1, salicylic acid is the limiting reagent and sets the maximum aspirin formed: 0.01448 mol x 180.16 g/mol = 2.61 g. Applying the 85.0% yield gives 2.61 g x 0.850 = 2.22 g of aspirin collected."
+}

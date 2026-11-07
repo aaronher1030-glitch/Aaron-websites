@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ch1-3-theory-40",
+    "reason": "no exact correct choice",
+    "evidence": "Computed 0.858 g NaCl; choices 1.168 / 0.832 / 0.868 / 1.432 g (source key A). The nearest choice, 0.868 g, is not equal to 0.858 g."
+  },
+  {
+    "id": "ch1-3-lab-49",
+    "reason": "no exact correct choice",
+    "evidence": "Computed yield 99.9% (about 100%); choices 98.0 / 101.4 / 95.5 / 92.1% (source key B). No choice equals the computed yield."
+  },
+  {
+    "id": "ch4-7-theory-06",
+    "reason": "no exact correct choice",
+    "evidence": "Computed 0.130 M; choices 0.000 / 0.140 / 0.210 / 0.280 M (source key B). No choice equals 0.130 M."
+  },
+  {
+    "id": "ch4-7-theory-23",
+    "reason": "no exact correct choice",
+    "evidence": "Computed 14.0 L; choices 11.2 / 13.4 / 22.4 / 35.8 L (source key D). No choice equals 14.0 L."
+  }
+]

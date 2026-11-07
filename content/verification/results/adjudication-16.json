@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-16",
+  "answer": "D",
+  "confidence": "high",
+  "work": "n(He) = 2.00 g / 4.003 g/mol = 0.500 mol and n(Ar) = 8.00 g / 39.95 g/mol = 0.200 mol, giving n(total) = 0.700 mol. Dalton's law plus the ideal gas law gives P(total) = nRT/V = (0.700 mol)(0.08206 L atm/mol K)(298.15 K) / 5.00 L = 17.1 / 5.00 = 3.42 atm. The partial pressures alone are 2.44 atm (He) and 0.98 atm (Ar), which sum to the same total.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "The physically correct total pressure is 3.42 atm, which is choice D; 2.44 atm (C) and 0.98 atm (A) are the individual partial pressures and 1.43 atm (B) is an unsupported distractor. The blind solver's D is correct, while the source's keyed letter B contradicts its own worked derivation, which explicitly ends at 3.42 atm and labels (D).",
+  "cleanExplanation": "Convert each mass to moles: 2.00 g He / 4.003 g/mol = 0.500 mol and 8.00 g Ar / 39.95 g/mol = 0.200 mol, so the mixture contains 0.700 mol of gas. Total pressure comes from the ideal gas law applied to the whole mixture: P = nRT/V = (0.700)(0.08206)(298.15)/5.00 = 3.42 atm. Equivalently, the partial pressures are 2.44 atm for He and 0.98 atm for Ar, which sum to 3.42 atm as Dalton's law requires."
+}
