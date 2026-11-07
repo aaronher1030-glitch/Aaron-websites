@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { SiteLayout } from "./components/SiteLayout";
+import Home from "./pages/Home";
 
 function Placeholder({ name }: { name: string }) {
   return (
@@ -19,7 +20,7 @@ export default function App() {
   return (
     <Routes>
       <Route element={<SiteLayout />}>
-        <Route index element={<Placeholder name="ChemBank" />} />
+        <Route index element={<Home />} />
         <Route path="bank" element={<Placeholder name="Question bank" />} />
         <Route path="q/:id" element={<Placeholder name="Question" />} />
         <Route path="practice" element={<Placeholder name="Practice" />} />

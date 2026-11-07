@@ -57,3 +57,855 @@
     margin-top: 28px;
   }
 }
+
+/* ---------------------------------------------------------------
+   Home: a lab notebook cover sheet.
+
+   Warm paper, a serif headline, mono metadata, cobalt and copper
+   accents, hard offset shadows, and thin rules. Layout uses only
+   tokens, and every colour resolves through the theme variables.
+   --------------------------------------------------------------- */
+
+.home {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+/* The bench scrolls: draw the scrollbar in the notebook's own ink. */
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--copper) var(--paper-deep);
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--paper-deep);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--copper) 62%, var(--paper-deep));
+  border: 2px solid var(--paper-deep);
+  border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--copper);
+}
+
+.sample-card .math-block {
+  scrollbar-width: thin;
+  scrollbar-color: var(--copper) var(--surface-2);
+}
+
+/* Hero: argument on the left, a playable bench card on the right. */
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-xl);
+  align-items: start;
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--rule);
+}
+
+.home-hero-copy {
+  display: grid;
+  gap: var(--space-md);
+  align-content: start;
+  min-width: 0;
+}
+
+.home-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.home-eyebrow::before {
+  content: "";
+  flex: none;
+  width: 30px;
+  height: var(--rule-width);
+  background: currentColor;
+}
+
+.home-hero h1 {
+  max-width: 14ch;
+  font-size: clamp(2.9rem, 6.2vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.022em;
+}
+
+.home-hero-accent {
+  color: var(--copper);
+  font-style: italic;
+}
+
+.home-lede {
+  max-width: 48ch;
+  color: var(--muted);
+  font-size: clamp(1.02rem, 1.5vw, 1.18rem);
+  line-height: 1.6;
+}
+
+.home-trust {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 0;
+  margin: 0;
+  padding: 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  line-height: 1.7;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.home-trust li {
+  padding-inline: 10px;
+}
+
+.home-trust li:first-child {
+  padding-left: 0;
+}
+
+.home-trust li + li {
+  border-left: 1px solid var(--rule);
+}
+
+/* Buttons: primary cobalt, secondary ruled paper. Both lift on hover
+   with a transform, so nothing reflows. */
+
+.home-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  align-items: center;
+  margin-top: var(--space-xs);
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 46px;
+  padding: 11px 18px;
+  border: var(--rule-width) solid transparent;
+  border-radius: 10px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 120ms var(--ease), box-shadow 120ms var(--ease),
+    background-color 120ms var(--ease), border-color 120ms var(--ease),
+    color 120ms var(--ease);
+}
+
+.home-button:focus-visible {
+  outline: 2.5px solid var(--copper);
+  outline-offset: 3px;
+}
+
+.home-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.home-button-primary {
+  background: var(--cobalt);
+  color: var(--paper);
+  border-color: var(--cobalt);
+  box-shadow: var(--shadow-hard);
+}
+
+.home-button-primary:hover {
+  background: var(--cobalt);
+  color: var(--paper);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 color-mix(in srgb, var(--ink) 26%, transparent);
+}
+
+.home-button-primary:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 color-mix(in srgb, var(--ink) 26%, transparent);
+}
+
+.home-button-secondary {
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--rule);
+  box-shadow: var(--shadow);
+}
+
+.home-button-secondary:hover {
+  color: var(--copper);
+  border-color: var(--copper);
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-hard);
+}
+
+.home-button-secondary:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 color-mix(in srgb, var(--ink) 22%, transparent);
+}
+
+/* Sample card: a ruled index card with a copper file tab. */
+
+.home-hero-sample {
+  min-width: 0;
+}
+
+.sample-card {
+  position: relative;
+  margin-top: 24px;
+  padding: calc(var(--space-lg) + 4px) var(--space-md) var(--space-md);
+  background: var(--surface);
+  border: var(--rule-width) solid var(--rule);
+  border-top: 5px solid var(--copper);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow-wrap: break-word;
+}
+
+.sample-card-label {
+  position: absolute;
+  top: calc(-1 * 5px);
+  left: 18px;
+  padding: 4px 10px 3px;
+  transform: translateY(-100%) rotate(-1deg);
+  transform-origin: bottom left;
+  background: var(--copper);
+  color: var(--paper);
+  border-radius: 5px 5px 0 0;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.sample-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin-bottom: var(--space-sm);
+}
+
+.sample-topic {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.sample-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sample-stem {
+  margin-bottom: var(--space-md);
+  font-size: 1.02rem;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+/* The home sample is answer-only: no elimination controls. */
+
+.sample-card .choice {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.sample-card .choice-strike {
+  display: none;
+}
+
+.sample-check {
+  width: 100%;
+  margin-top: var(--space-md);
+}
+
+.sample-result {
+  margin-top: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--surface-2);
+  border: var(--rule-width) solid var(--rule);
+  border-left: 5px solid var(--rule);
+  border-radius: 0 10px 10px 0;
+  box-shadow: var(--shadow);
+}
+
+.sample-result[data-verdict="correct"] {
+  border-left-color: var(--acid);
+}
+
+.sample-result[data-verdict="wrong"] {
+  border-left-color: var(--hazard);
+}
+
+.sample-result:focus {
+  outline: 2.5px solid var(--cobalt);
+  outline-offset: 3px;
+}
+
+.sample-verdict {
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+  line-height: 1.2;
+}
+
+.sample-result[data-verdict="correct"] .sample-verdict {
+  color: var(--acid);
+}
+
+.sample-result[data-verdict="wrong"] .sample-verdict {
+  color: var(--hazard);
+}
+
+.sample-answer {
+  margin-top: 4px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.sample-answer strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.sample-explanation-label {
+  margin-top: var(--space-sm);
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.sample-explanation {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  line-height: 1.62;
+}
+
+.sample-another {
+  margin-top: var(--space-sm);
+}
+
+/* Start here: three ruled action cards. */
+
+.home-start-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-md);
+}
+
+.home-start-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 6px;
+  padding: var(--space-md);
+  background: var(--surface);
+  border: var(--rule-width) solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 140ms var(--ease), box-shadow 140ms var(--ease),
+    border-color 140ms var(--ease);
+}
+
+.home-start-card:hover {
+  color: var(--ink);
+  border-color: var(--copper);
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-hard);
+}
+
+.home-start-card:focus-visible {
+  outline: 2.5px solid var(--cobalt);
+  outline-offset: 3px;
+}
+
+.home-start-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 4px;
+  background: color-mix(in srgb, var(--cobalt) 8%, var(--surface-2));
+  color: var(--cobalt);
+  border: 1px solid color-mix(in srgb, var(--cobalt) 28%, var(--rule));
+  border-radius: 10px;
+}
+
+.home-start-card h3 {
+  font-size: 1.4rem;
+  line-height: 1.08;
+}
+
+.home-start-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.home-start-go {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Coverage: domain and chapter ledgers, then paper cards. */
+
+.home-coverage-panels {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-md);
+}
+
+.home-coverage-panel {
+  min-width: 0;
+  padding: var(--space-md);
+  background: var(--surface);
+  border: var(--rule-width) solid var(--rule);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.home-coverage-panel h3 {
+  margin-bottom: var(--space-sm);
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.home-coverage-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-coverage-row {
+  display: grid;
+  grid-template-columns: minmax(88px, 130px) minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.home-coverage-label {
+  min-width: 0;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.home-coverage-label .badge {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.home-coverage-meter {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 4ch;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.home-coverage-count {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.home-coverage-note {
+  margin-top: var(--space-sm);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  line-height: 1.55;
+}
+
+.home-papers {
+  margin-top: var(--space-lg);
+}
+
+.home-papers-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 16px;
+  margin-bottom: var(--space-sm);
+}
+
+.home-papers-head h3 {
+  font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+}
+
+.home-papers-note {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-papers-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-md);
+}
+
+.home-paper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  min-width: 0;
+  padding: var(--space-md);
+  background: var(--surface);
+  border: var(--rule-width) solid var(--rule);
+  border-top: 3px solid var(--cobalt);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.home-paper[data-kind="lab"] {
+  border-top-color: var(--copper);
+}
+
+.home-paper-icon {
+  color: var(--cobalt);
+}
+
+.home-paper[data-kind="lab"] .home-paper-icon {
+  color: var(--copper);
+}
+
+.home-paper h3 {
+  font-size: 1.28rem;
+  line-height: 1.1;
+}
+
+.home-paper-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.home-paper-count {
+  color: var(--ink);
+  font-size: 1.35rem;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.home-paper-copy {
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+.home-paper-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  min-height: 44px;
+  margin-top: auto;
+  color: var(--cobalt);
+  border-bottom: 2px solid color-mix(in srgb, var(--cobalt) 35%, transparent);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.home-paper-link:hover {
+  color: var(--copper);
+  border-bottom-color: var(--copper);
+}
+
+.home-paper-link:focus-visible {
+  outline: 2.5px solid var(--cobalt);
+  outline-offset: 3px;
+}
+
+.home-note {
+  margin-top: var(--space-md);
+  padding: 12px 16px;
+  background: var(--surface-2);
+  border: var(--rule-width) solid var(--rule);
+  border-left: 4px solid var(--copper);
+  border-radius: 0 8px 8px 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.01em;
+  line-height: 1.7;
+}
+
+.home-note a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 44px;
+  color: var(--ink);
+  text-decoration-color: var(--copper);
+  text-underline-offset: 4px;
+}
+
+.home-note a:hover {
+  color: var(--copper);
+}
+
+/* How it works: four numbered bench steps divided by thin rules. */
+
+.home-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-step {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  min-width: 0;
+  padding: 0 var(--space-md);
+  border-left: 1px solid var(--rule);
+}
+
+.home-step:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.home-step:last-child {
+  padding-right: 0;
+}
+
+.home-step-index {
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+}
+
+.home-step h3 {
+  font-size: 1.35rem;
+}
+
+.home-step p {
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.52;
+}
+
+/* Honesty strip: a stamped footer note, not a legal wall. */
+
+.home-honesty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm) var(--space-lg);
+  margin-top: var(--space-xl);
+  padding: var(--space-md);
+  background: var(--paper-deep);
+  border-top: var(--rule-strong) solid var(--ink);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.home-honesty p {
+  max-width: 78ch;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  line-height: 1.7;
+}
+
+.home-honesty a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-decoration-color: var(--copper);
+  text-underline-offset: 4px;
+}
+
+.home-honesty a:hover {
+  color: var(--copper);
+}
+
+/* Responsive bench widths: 390, 1024, and 1440 are the checked sizes. */
+
+@media (min-width: 760px) {
+  .home-start-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 860px) {
+  .home-coverage-panels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 980px) {
+  .home-hero {
+    grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+    gap: clamp(2.5rem, 5vw, 4.75rem);
+  }
+
+  .home-papers-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1440px) {
+  .home-papers-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .home-ctas {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-trust {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 0;
+    row-gap: 4px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .home-trust li {
+    padding-inline: 8px;
+  }
+
+  .home-trust li:nth-child(odd) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .home-trust li:nth-child(even) {
+    border-left: 1px solid var(--rule);
+  }
+
+  .sample-card {
+    padding-inline: var(--space-sm);
+  }
+
+  .home-coverage-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+
+  .home-coverage-count {
+    text-align: left;
+  }
+
+  .home-steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-step {
+    padding: var(--space-md) 0;
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .home-step:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .home-step:last-child {
+    padding-bottom: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-button,
+  .home-start-card {
+    transition: none;
+  }
+}
