@@ -34,8 +34,9 @@ function oneOf(value: string | null, allowed: readonly string[]): string {
   return value && allowed.includes(value) ? value : "";
 }
 
-/* The URL is the source of truth; unknown values fall back to "all" so a
-   hand-typed or stale link never strands the selects on a blank option. */
+/* Sanitize incoming URL values (deep links, back/forward) so a hand-typed or
+   stale link never strands the selects on a blank option; unknown values fall
+   back to "all". */
 function readFilters(params: URLSearchParams): FilterState {
   const status = params.get("status");
   return {
@@ -58,23 +59,26 @@ export default function Bank() {
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
-  const filters = readFilters(searchParams);
-  const [query, setQuery] = useState(filters.q);
+  /* Local state is the live authority. The router commits search params inside
+     a transition, so deriving writes from the committed URL races fast typing
+     and select changes: a write can spread a stale q (or miss a pending select)
+     and supersede the newer value. Handlers update this state urgently and
+     mirror it to the URL; only genuine external URL changes (back/forward, deep
+     links, reset) sync back. Echoes of our own writes are matched by their full
+     serialized params so an external change is never swallowed. */
+  const [filters, setFilters] = useState<FilterState>(() => readFilters(searchParams));
   const pendingWrites = useRef<Set<string>>(new Set());
 
-  /* The router commits search params asynchronously and the heavy card render
-     can lag behind fast typing, so pulling every URL change back into the field
-     restores stale intermediate values and drops keystrokes. Ignore the echoes
-     of writes we initiated; only genuine external changes (back/forward, reset,
-     deep links) sync back into the input. */
   useEffect(() => {
-    if (pendingWrites.current.has(filters.q)) {
-      pendingWrites.current.delete(filters.q);
+    const committed = searchParams.toString();
+    if (pendingWrites.current.has(committed)) {
+      pendingWrites.current.delete(committed);
       return;
     }
     pendingWrites.current.clear();
-    setQuery(filters.q);
-  }, [filters.q]);
+    setFilters(readFilters(searchParams));
+    setVisibleCount(PAGE_SIZE);
+  }, [searchParams]);
 
   const { items, total } = filterQuestions(QUESTIONS, filters, store);
   const stashed = new Set(store.stashed);
@@ -92,6 +96,8 @@ export default function Bank() {
   ].filter(Boolean).length;
 
   function writeFilters(next: FilterState) {
+    setFilters(next);
+    setVisibleCount(PAGE_SIZE);
     const params = new URLSearchParams();
     if (next.q) params.set("q", next.q);
     if (next.domain) params.set("domain", next.domain);
@@ -100,15 +106,24 @@ export default function Bank() {
     if (next.difficulty) params.set("difficulty", next.difficulty);
     if (next.source) params.set("source", next.source);
     if (next.status !== "all") params.set("status", next.status);
+    const serialized = params.toString();
+    // Only track an echo when the URL will actually change; a no-op write
+    // leaves no commit to suppress and must not strand a stale pending entry.
+    if (serialized !== searchParams.toString()) pendingWrites.current.add(serialized);
     // Replace so a keystroke in search does not pile up history entries.
     setSearchParams(params, { replace: true });
-    setVisibleCount(PAGE_SIZE);
   }
 
   function reset() {
-    setSearchParams(new URLSearchParams(), { replace: true });
-    setVisibleCount(PAGE_SIZE);
-    setQuery("");
+    writeFilters({
+      q: "",
+      domain: "",
+      chapter: "",
+      topic: "",
+      difficulty: "",
+      source: "",
+      status: "all",
+    });
   }
 
   return (
@@ -130,13 +145,8 @@ export default function Bank() {
           type="search"
           aria-label="Search questions"
           placeholder="Search stems, topics, and explanations…"
-          value={query}
-          onChange={(event) => {
-            const value = event.target.value;
-            setQuery(value);
-            pendingWrites.current.add(value);
-            writeFilters({ ...filters, q: value });
-          }}
+          value={filters.q}
+          onChange={(event) => writeFilters({ ...filters, q: event.target.value })}
         />
       </div>
 

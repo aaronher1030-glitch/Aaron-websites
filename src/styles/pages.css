@@ -1441,6 +1441,17 @@ html::-webkit-scrollbar-thumb:hover {
   line-height: 1.65;
 }
 
+/* The question sheet is answer-only: no elimination controls, so collapse the
+   choice grid to one column and hide the dead strike buttons (as on Home). */
+
+.question-sheet .choice {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.question-sheet .choice-strike {
+  display: none;
+}
+
 .question-actions {
   display: flex;
   flex-wrap: wrap;

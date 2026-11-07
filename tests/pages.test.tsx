@@ -1,4 +1,5 @@
-import { render, screen, within } from "@testing-library/react";
+import { readFileSync } from "node:fs";
+import { act, fireEvent, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter, useLocation } from "react-router-dom";
 import App from "../src/App";
@@ -489,6 +490,62 @@ test("unknown filter values in the URL fall back to all", () => {
   ).toBeInTheDocument();
 });
 
+/* The router commits search params inside a transition, so a write fired
+   before the previous keystroke's commit lands must not spread the stale
+   committed URL. Fire both interactions inside the lagging window, then
+   flush: the field, the URL, and the results have to agree. */
+test("changing a select during a lagging search commit keeps the typed query", async () => {
+  renderAt("/bank");
+
+  const search = screen.getByRole("searchbox", { name: /search questions/i });
+  const domain = screen.getByRole("combobox", { name: "Domain" });
+  act(() => {
+    fireEvent.change(search, { target: { value: "gas" } });
+    fireEvent.change(domain, { target: { value: "Physical" } });
+  });
+  await act(async () => {});
+
+  const expected = QUESTIONS.filter(
+    (q) =>
+      q.domain === "Physical" &&
+      `${q.stem} ${q.topic} ${q.explanation}`.toLowerCase().includes("gas"),
+  ).length;
+  expect(search).toHaveValue("gas");
+  expect(domain).toHaveValue("Physical");
+  expect(screen.getByTestId("location-search").textContent).toBe(
+    "?q=gas&domain=Physical",
+  );
+  expect(
+    screen.getByText(`Showing ${expected} of ${QUESTION_COUNT}`),
+  ).toBeInTheDocument();
+});
+
+test("typing immediately after a select change keeps the selected domain", async () => {
+  renderAt("/bank");
+
+  const search = screen.getByRole("searchbox", { name: /search questions/i });
+  const domain = screen.getByRole("combobox", { name: "Domain" });
+  act(() => {
+    fireEvent.change(domain, { target: { value: "Physical" } });
+    fireEvent.change(search, { target: { value: "gas" } });
+  });
+  await act(async () => {});
+
+  const expected = QUESTIONS.filter(
+    (q) =>
+      q.domain === "Physical" &&
+      `${q.stem} ${q.topic} ${q.explanation}`.toLowerCase().includes("gas"),
+  ).length;
+  expect(search).toHaveValue("gas");
+  expect(domain).toHaveValue("Physical");
+  expect(screen.getByTestId("location-search").textContent).toBe(
+    "?q=gas&domain=Physical",
+  );
+  expect(
+    screen.getByText(`Showing ${expected} of ${QUESTION_COUNT}`),
+  ).toBeInTheDocument();
+});
+
 /* ---------------------------------------------------------------
    QuestionPage
    --------------------------------------------------------------- */
@@ -512,6 +569,22 @@ test("the question page resolves its id and shows metadata", () => {
   );
   expect(screen.getAllByRole("radio")).toHaveLength(4);
   expect(screen.getByRole("button", { name: /^check$/i })).toBeDisabled();
+});
+
+test("the question page renders no dead Eliminate controls", () => {
+  /* jsdom does not load stylesheets, so inject the real page CSS to observe
+     the scoped rule that hides the answer-only sheet's strike buttons. */
+  const style = document.createElement("style");
+  style.textContent = readFileSync("src/styles/pages.css", "utf8");
+  document.head.appendChild(style);
+  try {
+    renderAt(`/q/${QUESTIONS[0].id}`);
+
+    expect(screen.getAllByRole("radio")).toHaveLength(4);
+    expect(screen.queryByRole("button", { name: /Eliminate/ })).toBeNull();
+  } finally {
+    style.remove();
+  }
 });
 
 test("check records exactly one single-mode attempt and focuses the verdict", async () => {
