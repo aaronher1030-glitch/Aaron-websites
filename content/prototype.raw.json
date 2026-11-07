@@ -1,0 +1,3746 @@
+[
+  {
+    "id": "proto-mixed-001",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Atomic structure",
+    "difficulty": "Foundation",
+    "stem": "How many neutrons are in a <sup>35</sup>Cl<sup>−</sup> ion?",
+    "choices": [
+      "17",
+      "18",
+      "19",
+      "35"
+    ],
+    "answer": 1,
+    "explanation": "Z = 17, so neutrons = 35 − 17 = 18. The extra electron does not change the nucleus."
+  },
+  {
+    "id": "proto-mixed-002",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Periodic trends",
+    "difficulty": "Foundation",
+    "stem": "Which element has the largest atomic radius?",
+    "choices": [
+      "Na",
+      "Mg",
+      "Al",
+      "Cl"
+    ],
+    "answer": 0,
+    "explanation": "Radius shrinks across a period as nuclear charge rises, so Na, at the far left, is largest."
+  },
+  {
+    "id": "proto-mixed-003",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Bonding",
+    "difficulty": "Foundation",
+    "stem": "Which molecule is polar?",
+    "choices": [
+      "CO<sub>2</sub>",
+      "BF<sub>3</sub>",
+      "NH<sub>3</sub>",
+      "CH<sub>4</sub>"
+    ],
+    "answer": 2,
+    "explanation": "NH<sub>3</sub> is trigonal pyramidal with a lone pair, so its bond dipoles do not cancel. The others are symmetric."
+  },
+  {
+    "id": "proto-mixed-004",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Gas laws",
+    "difficulty": "Foundation",
+    "stem": "A gas at 1.0 atm occupies 2.0 L. At constant temperature it is compressed to 0.50 L. What is the new pressure?",
+    "choices": [
+      "0.25 atm",
+      "2.0 atm",
+      "4.0 atm",
+      "8.0 atm"
+    ],
+    "answer": 2,
+    "explanation": "Boyle’s law: P<sub>2</sub> = P<sub>1</sub>V<sub>1</sub>/V<sub>2</sub> = (1.0)(2.0)/0.50 = 4.0 atm."
+  },
+  {
+    "id": "proto-mixed-005",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "How many moles of oxygen atoms are in 0.50 mol of Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>?",
+    "choices": [
+      "2.0",
+      "3.0",
+      "6.0",
+      "12"
+    ],
+    "answer": 2,
+    "explanation": "Each formula unit has 3 × 4 = 12 O atoms, so 0.50 × 12 = 6.0 mol."
+  },
+  {
+    "id": "proto-mixed-006",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "In 2H<sub>2</sub> + O<sub>2</sub> → 2H<sub>2</sub>O, 3.0 g H<sub>2</sub> reacts with 32 g O<sub>2</sub>. What mass of water forms? (H = 1.0, O = 16)",
+    "choices": [
+      "18 g",
+      "27 g",
+      "36 g",
+      "35 g"
+    ],
+    "answer": 1,
+    "explanation": "H<sub>2</sub> is 1.5 mol; 1.0 mol O<sub>2</sub> would need 2.0 mol H<sub>2</sub>, so H<sub>2</sub> limits. 1.5 mol × 18 g/mol = 27 g."
+  },
+  {
+    "id": "proto-mixed-007",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Redox",
+    "difficulty": "Foundation",
+    "stem": "What is the oxidation number of Cr in K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>?",
+    "choices": [
+      "+3",
+      "+6",
+      "+7",
+      "+12"
+    ],
+    "answer": 1,
+    "explanation": "2(+1) + 2x + 7(−2) = 0, so x = +6."
+  },
+  {
+    "id": "proto-mixed-008",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Thermochemistry",
+    "difficulty": "Standard",
+    "stem": "Given C + O<sub>2</sub> → CO<sub>2</sub>, ΔH = −394 kJ, and CO + ½O<sub>2</sub> → CO<sub>2</sub>, ΔH = −283 kJ, find ΔH for C + ½O<sub>2</sub> → CO.",
+    "choices": [
+      "−677 kJ",
+      "−111 kJ",
+      "+111 kJ",
+      "−283 kJ"
+    ],
+    "answer": 1,
+    "explanation": "Subtract the second equation from the first: −394 − (−283) = −111 kJ."
+  },
+  {
+    "id": "proto-mixed-009",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Equilibrium",
+    "difficulty": "Standard",
+    "stem": "N<sub>2</sub> + 3H<sub>2</sub> ⇌ 2NH<sub>3</sub> is exothermic. What happens to K when the temperature rises?",
+    "choices": [
+      "K increases",
+      "K decreases",
+      "K is unchanged",
+      "K becomes zero"
+    ],
+    "answer": 1,
+    "explanation": "Heat acts like a product, so a higher temperature favors reactants and lowers K. Only temperature changes K."
+  },
+  {
+    "id": "proto-mixed-010",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Kinetics",
+    "difficulty": "Standard",
+    "stem": "A first-order reaction has a half-life of 20 min. What fraction of the reactant remains after 60 min?",
+    "choices": [
+      "1/2",
+      "1/4",
+      "1/6",
+      "1/8"
+    ],
+    "answer": 3,
+    "explanation": "60 min is three half-lives, so (1/2)<sup>3</sup> = 1/8."
+  },
+  {
+    "id": "proto-mixed-011",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "Titration",
+    "difficulty": "Standard",
+    "stem": "What volume of 0.125 M NaOH neutralizes 25.0 mL of 0.100 M HCl?",
+    "choices": [
+      "10.0 mL",
+      "20.0 mL",
+      "25.0 mL",
+      "31.3 mL"
+    ],
+    "answer": 1,
+    "explanation": "mol HCl = 0.0250 × 0.100 = 2.50 × 10<sup>−3</sup>. V = 2.50 × 10<sup>−3</sup> ÷ 0.125 = 0.0200 L = 20.0 mL."
+  },
+  {
+    "id": "proto-mixed-012",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "pH and acids/bases",
+    "difficulty": "Standard",
+    "stem": "What is the pH of 0.0010 M Ba(OH)<sub>2</sub> at 25 °C?",
+    "choices": [
+      "10.70",
+      "11.00",
+      "11.30",
+      "12.00"
+    ],
+    "answer": 2,
+    "explanation": "[OH<sup>−</sup>] = 2 × 0.0010 = 2.0 × 10<sup>−3</sup> M, so pOH = 2.70 and pH = 14 − 2.70 = 11.30."
+  },
+  {
+    "id": "proto-mixed-013",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "Chromatography",
+    "difficulty": "Foundation",
+    "stem": "A spot travels 3.0 cm while the solvent front travels 6.0 cm. What is its R<sub>f</sub>?",
+    "choices": [
+      "0.50",
+      "2.0",
+      "3.0",
+      "0.30"
+    ],
+    "answer": 0,
+    "explanation": "R<sub>f</sub> = spot distance ÷ solvent front distance = 3.0 ÷ 6.0 = 0.50."
+  },
+  {
+    "id": "proto-mixed-014",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "pH and acids/bases",
+    "difficulty": "Olympiad",
+    "stem": "A buffer is 0.10 M CH<sub>3</sub>COOH and 0.20 M CH<sub>3</sub>COONa (pK<sub>a</sub> = 4.76). What is its pH?",
+    "choices": [
+      "4.46",
+      "4.76",
+      "5.06",
+      "5.36"
+    ],
+    "answer": 2,
+    "explanation": "Henderson–Hasselbalch: pH = 4.76 + log(0.20/0.10) = 4.76 + 0.30 = 5.06."
+  },
+  {
+    "id": "proto-mixed-015",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Functional groups",
+    "difficulty": "Foundation",
+    "stem": "The functional group in CH<sub>3</sub>COCH<sub>3</sub> is a…",
+    "choices": [
+      "aldehyde",
+      "ketone",
+      "ester",
+      "carboxylic acid"
+    ],
+    "answer": 1,
+    "explanation": "A carbonyl bonded to two carbon atoms is a ketone (propanone)."
+  },
+  {
+    "id": "proto-mixed-016",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Isomerism",
+    "difficulty": "Standard",
+    "stem": "How many structural isomers does C<sub>5</sub>H<sub>12</sub> have?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 1,
+    "explanation": "Pentane, 2-methylbutane and 2,2-dimethylpropane."
+  },
+  {
+    "id": "proto-mixed-017",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Reaction types",
+    "difficulty": "Standard",
+    "stem": "CH<sub>2</sub>=CH<sub>2</sub> + Br<sub>2</sub> → CH<sub>2</sub>BrCH<sub>2</sub>Br is which type of reaction?",
+    "choices": [
+      "Substitution",
+      "Elimination",
+      "Addition",
+      "Condensation"
+    ],
+    "answer": 2,
+    "explanation": "Br<sub>2</sub> adds across the C=C double bond, so this is an addition reaction."
+  },
+  {
+    "id": "proto-mixed-018",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Biomolecules",
+    "difficulty": "Standard",
+    "stem": "A peptide bond forms between…",
+    "choices": [
+      "two carboxyl groups, releasing CO<sub>2</sub>",
+      "the carboxyl group of one amino acid and the amino group of another, releasing water",
+      "two amino groups, releasing NH<sub>3</sub>",
+      "the R groups of two amino acids"
+    ],
+    "answer": 1,
+    "explanation": "It is a condensation reaction: −COOH + H<sub>2</sub>N− → −CO−NH− + H<sub>2</sub>O."
+  },
+  {
+    "id": "proto-mixed-019",
+    "source": "mixed",
+    "domain": "Laboratory",
+    "topic": "Significant figures",
+    "difficulty": "Foundation",
+    "stem": "How many significant figures are in 0.003040?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Leading zeros do not count; the trailing zero after the decimal does. The digits 3, 0, 4, 0 give 4."
+  },
+  {
+    "id": "proto-mixed-020",
+    "source": "mixed",
+    "domain": "Laboratory",
+    "topic": "Statistics",
+    "difficulty": "Foundation",
+    "stem": "The mean of 10.2, 10.4, 10.1 and 10.3 is…",
+    "choices": [
+      "10.20",
+      "10.25",
+      "10.30",
+      "10.15"
+    ],
+    "answer": 1,
+    "explanation": "The sum is 41.0, and 41.0 ÷ 4 = 10.25."
+  },
+  {
+    "id": "proto-mixed-021",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Matter and its properties",
+    "difficulty": "Foundation",
+    "stem": "Which change is a chemical change?",
+    "choices": [
+      "Ice melting",
+      "Iron rusting",
+      "Ethanol evaporating",
+      "Salt dissolving in water"
+    ],
+    "answer": 1,
+    "explanation": "Rusting forms a new substance (iron oxide). The others change only the state or the mixing."
+  },
+  {
+    "id": "proto-mixed-022",
+    "source": "mixed",
+    "domain": "Laboratory",
+    "topic": "Measurements",
+    "difficulty": "Foundation",
+    "stem": "A metal block has mass 54.0 g and volume 20.0 cm<sup>3</sup>. What is its density?",
+    "choices": [
+      "0.370 g/cm<sup>3</sup>",
+      "2.70 g/cm<sup>3</sup>",
+      "34.0 g/cm<sup>3</sup>",
+      "1080 g/cm<sup>3</sup>"
+    ],
+    "answer": 1,
+    "explanation": "Density = mass ÷ volume = 54.0 ÷ 20.0 = 2.70 g/cm<sup>3</sup>."
+  },
+  {
+    "id": "proto-mixed-023",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Foundation",
+    "stem": "How many electrons are in a Fe<sup>3+</sup> ion? (Fe: Z = 26)",
+    "choices": [
+      "23",
+      "26",
+      "29",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "A neutral Fe atom has 26 electrons; a 3+ ion has lost 3, leaving 23."
+  },
+  {
+    "id": "proto-mixed-024",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "A compound is 40.0% C, 6.7% H and 53.3% O by mass. What is its empirical formula?",
+    "choices": [
+      "CHO",
+      "CH<sub>2</sub>O",
+      "C<sub>2</sub>H<sub>4</sub>O",
+      "CH<sub>4</sub>O"
+    ],
+    "answer": 1,
+    "explanation": "Per 100 g: C 3.33 mol, H 6.65 mol, O 3.33 mol. The ratio is 1 : 2 : 1."
+  },
+  {
+    "id": "proto-mixed-025",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Gases",
+    "difficulty": "Standard",
+    "stem": "At 273 K and 1.00 atm, 5.60 L of a gas has a mass of 11.0 g. What is its molar mass? (molar volume = 22.4 L/mol)",
+    "choices": [
+      "22.0 g/mol",
+      "44.0 g/mol",
+      "28.0 g/mol",
+      "88.0 g/mol"
+    ],
+    "answer": 1,
+    "explanation": "n = 5.60 ÷ 22.4 = 0.250 mol, so M = 11.0 ÷ 0.250 = 44.0 g/mol."
+  },
+  {
+    "id": "proto-mixed-026",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Liquids and solids",
+    "difficulty": "Foundation",
+    "stem": "Which phase change occurs when dry ice (solid CO<sub>2</sub>) is left at room pressure?",
+    "choices": [
+      "Melting",
+      "Sublimation",
+      "Deposition",
+      "Condensation"
+    ],
+    "answer": 1,
+    "explanation": "At 1 atm, CO<sub>2</sub> has no liquid phase, so the solid goes directly to gas: sublimation."
+  },
+  {
+    "id": "proto-mixed-027",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Electronic structure of atoms",
+    "difficulty": "Standard",
+    "stem": "Which set of quantum numbers (n, l, m<sub>l</sub>) is NOT allowed?",
+    "choices": [
+      "(2, 1, 0)",
+      "(3, 2, −2)",
+      "(2, 2, 1)",
+      "(4, 0, 0)"
+    ],
+    "answer": 2,
+    "explanation": "l can only run from 0 to n − 1, so l = 2 is impossible when n = 2."
+  },
+  {
+    "id": "proto-mixed-028",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Electronic structure and periodicity",
+    "difficulty": "Standard",
+    "stem": "Boron’s first ionization energy is lower than beryllium’s mainly because…",
+    "choices": [
+      "B has a larger nuclear charge",
+      "the 2p electron removed from B is higher in energy and better shielded than the 2s electron removed from Be",
+      "B has a half-filled subshell",
+      "B has two more electron shells"
+    ],
+    "answer": 1,
+    "explanation": "The 2p electron sits slightly farther out and is shielded by the 2s electrons, so it is easier to remove."
+  },
+  {
+    "id": "proto-mixed-029",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Ionic bonds",
+    "difficulty": "Standard",
+    "stem": "Which compound has the largest lattice energy?",
+    "choices": [
+      "NaCl",
+      "KCl",
+      "MgO",
+      "CsI"
+    ],
+    "answer": 2,
+    "explanation": "Lattice energy grows with ion charge and falls with ion size. MgO has 2+/2− charges and small ions."
+  },
+  {
+    "id": "proto-mixed-030",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Covalent bonds",
+    "difficulty": "Standard",
+    "stem": "What is the molecular shape of SF<sub>4</sub>?",
+    "choices": [
+      "Tetrahedral",
+      "Square planar",
+      "Seesaw",
+      "Trigonal bipyramidal"
+    ],
+    "answer": 2,
+    "explanation": "Five electron domains (four bonds, one lone pair) give a trigonal bipyramidal arrangement with a seesaw shape."
+  },
+  {
+    "id": "proto-mixed-031",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Intermolecular forces",
+    "difficulty": "Foundation",
+    "stem": "Which compound has the highest boiling point?",
+    "choices": [
+      "CH<sub>4</sub>",
+      "H<sub>2</sub>S",
+      "HCl",
+      "H<sub>2</sub>O"
+    ],
+    "answer": 3,
+    "explanation": "H<sub>2</sub>O forms extensive hydrogen bonds, the strongest intermolecular force of the four."
+  },
+  {
+    "id": "proto-mixed-032",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Physical properties of solutions",
+    "difficulty": "Standard",
+    "stem": "What is the freezing point of a solution of 0.50 mol glucose in 1.0 kg water? (K<sub>f</sub> = 1.86 °C·kg/mol)",
+    "choices": [
+      "−0.93 °C",
+      "−1.86 °C",
+      "+0.93 °C",
+      "−0.50 °C"
+    ],
+    "answer": 0,
+    "explanation": "ΔT<sub>f</sub> = K<sub>f</sub>m = 1.86 × 0.50 = 0.93 °C. Glucose does not ionize, so the freezing point is −0.93 °C."
+  },
+  {
+    "id": "proto-mixed-033",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Thermochemistry",
+    "difficulty": "Standard",
+    "stem": "How much heat raises 200 g of water from 20.0 °C to 30.0 °C? (c = 4.18 J/g·°C)",
+    "choices": [
+      "836 J",
+      "8.36 kJ",
+      "83.6 kJ",
+      "418 J"
+    ],
+    "answer": 1,
+    "explanation": "q = mcΔT = 200 × 4.18 × 10.0 = 8360 J = 8.36 kJ."
+  },
+  {
+    "id": "proto-mixed-034",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Chemical kinetics",
+    "difficulty": "Olympiad",
+    "stem": "A rate constant doubles when the temperature rises from 300 K to 310 K. What is E<sub>a</sub>? (R = 8.314 J/mol·K)",
+    "choices": [
+      "13 kJ/mol",
+      "27 kJ/mol",
+      "54 kJ/mol",
+      "108 kJ/mol"
+    ],
+    "answer": 2,
+    "explanation": "ln 2 = (E<sub>a</sub>/R)(1/300 − 1/310), so E<sub>a</sub> = 0.693 × 8.314 ÷ 1.075 × 10<sup>−4</sup> ≈ 5.4 × 10<sup>4</sup> J/mol."
+  },
+  {
+    "id": "proto-mixed-035",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Chemical thermodynamics",
+    "difficulty": "Standard",
+    "stem": "A reaction has ΔH = +40 kJ/mol and ΔS = +100 J/mol·K. Above what temperature is it spontaneous?",
+    "choices": [
+      "100 K",
+      "298 K",
+      "400 K",
+      "4000 K"
+    ],
+    "answer": 2,
+    "explanation": "ΔG = ΔH − TΔS < 0 when T > 40 000 ÷ 100 = 400 K."
+  },
+  {
+    "id": "proto-mixed-036",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Chemical thermodynamics",
+    "difficulty": "Olympiad",
+    "stem": "At 298 K a reaction has ΔG° = −11.4 kJ/mol. What is K? (R = 8.314 J/mol·K)",
+    "choices": [
+      "1 × 10<sup>−2</sup>",
+      "4.6",
+      "1 × 10<sup>2</sup>",
+      "1 × 10<sup>5</sup>"
+    ],
+    "answer": 2,
+    "explanation": "ln K = −ΔG°/RT = 11 400 ÷ (8.314 × 298) = 4.60, so K ≈ 1 × 10<sup>2</sup>."
+  },
+  {
+    "id": "proto-mixed-037",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Chemical equilibrium",
+    "difficulty": "Standard",
+    "stem": "For A ⇌ B, K<sub>c</sub> = 4.0. If [A] = 0.50 M and [B] = 3.0 M, the system…",
+    "choices": [
+      "is at equilibrium",
+      "shifts to the right",
+      "shifts to the left",
+      "changes K<sub>c</sub>"
+    ],
+    "answer": 2,
+    "explanation": "Q = 3.0 ÷ 0.50 = 6.0, which is greater than K, so the reaction shifts left to lower Q."
+  },
+  {
+    "id": "proto-mixed-038",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "Acid-base and salt equilibria",
+    "difficulty": "Standard",
+    "stem": "The K<sub>sp</sub> of AgCl is 1.8 × 10<sup>−10</sup>. What is its molar solubility in pure water?",
+    "choices": [
+      "1.8 × 10<sup>−10</sup> M",
+      "1.3 × 10<sup>−5</sup> M",
+      "9.0 × 10<sup>−11</sup> M",
+      "3.6 × 10<sup>−5</sup> M"
+    ],
+    "answer": 1,
+    "explanation": "K<sub>sp</sub> = s<sup>2</sup>, so s = √(1.8 × 10<sup>−10</sup>) = 1.3 × 10<sup>−5</sup> M."
+  },
+  {
+    "id": "proto-mixed-039",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Electrochemistry",
+    "difficulty": "Standard",
+    "stem": "For Zn + Cu<sup>2+</sup> → Zn<sup>2+</sup> + Cu, E° (Cu<sup>2+</sup>/Cu) = +0.34 V and E° (Zn<sup>2+</sup>/Zn) = −0.76 V. What is E°<sub>cell</sub>?",
+    "choices": [
+      "+0.42 V",
+      "+1.10 V",
+      "−1.10 V",
+      "−0.42 V"
+    ],
+    "answer": 1,
+    "explanation": "E°<sub>cell</sub> = E°<sub>cathode</sub> − E°<sub>anode</sub> = 0.34 − (−0.76) = +1.10 V."
+  },
+  {
+    "id": "proto-mixed-040",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Electrochemistry",
+    "difficulty": "Olympiad",
+    "stem": "A cell has Zn²⁺ at 0.010 M and Cu<sup>2+</sup> at 1.0 M, with E°<sub>cell</sub> = 1.10 V at 25 °C. What is E<sub>cell</sub>?",
+    "choices": [
+      "1.04 V",
+      "1.10 V",
+      "1.16 V",
+      "1.22 V"
+    ],
+    "answer": 2,
+    "explanation": "Nernst: E = 1.10 − (0.0592/2) log(0.010/1.0) = 1.10 + 0.059 = 1.16 V."
+  },
+  {
+    "id": "proto-mixed-041",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Coordination chemistry",
+    "difficulty": "Standard",
+    "stem": "What is the coordination number of Co in [Co(en)<sub>2</sub>Cl<sub>2</sub>]<sup>+</sup>? (en = ethylenediamine, bidentate)",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Two bidentate en ligands give 4 donor atoms, plus 2 Cl, so 6."
+  },
+  {
+    "id": "proto-mixed-042",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Liquids and solids",
+    "difficulty": "Standard",
+    "stem": "How many atoms belong to one face-centred cubic unit cell?",
+    "choices": [
+      "1",
+      "2",
+      "4",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "8 corners × 1/8 + 6 faces × 1/2 = 4 atoms."
+  },
+  {
+    "id": "proto-mixed-043",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Organic compounds",
+    "difficulty": "Standard",
+    "stem": "What is the IUPAC name of CH<sub>3</sub>CH(CH<sub>3</sub>)CH<sub>2</sub>CH<sub>3</sub>?",
+    "choices": [
+      "2-methylbutane",
+      "3-methylbutane",
+      "isopentene",
+      "2-ethylpropane"
+    ],
+    "answer": 0,
+    "explanation": "The longest chain has 4 carbons (butane). Numbering from the end nearest the branch puts the methyl on C2."
+  },
+  {
+    "id": "proto-mixed-044",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Stereoisomerism",
+    "difficulty": "Standard",
+    "stem": "How many stereoisomers does 2,3-dibromopentane have?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "It has two different stereocentres (C2 and C3) and no internal symmetry, so 2<sup>2</sup> = 4."
+  },
+  {
+    "id": "proto-mixed-045",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Organic reactions",
+    "difficulty": "Standard",
+    "stem": "Which pair reacts in a [4+2] cycloaddition (Diels–Alder) to give a cyclohexene?",
+    "choices": [
+      "1,3-butadiene and ethene",
+      "ethene and ethyne",
+      "1,3-butadiene and Br<sub>2</sub>",
+      "benzene and HBr"
+    ],
+    "answer": 0,
+    "explanation": "A conjugated diene (4 π electrons) adds to an alkene (2 π electrons) to form a six-membered ring."
+  },
+  {
+    "id": "proto-mixed-046",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Spectroscopy",
+    "difficulty": "Standard",
+    "stem": "A compound has a strong IR band near 1715 cm<sup>−1</sup> and no broad band near 3300 cm<sup>−1</sup>. It is most likely…",
+    "choices": [
+      "an alcohol",
+      "a ketone",
+      "a carboxylic acid",
+      "an alkane"
+    ],
+    "answer": 1,
+    "explanation": "1715 cm<sup>−1</sup> is a C=O stretch. A carboxylic acid would also show a broad O–H band, so this is a ketone."
+  },
+  {
+    "id": "proto-mixed-047",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Spectroscopy",
+    "difficulty": "Standard",
+    "stem": "In the <sup>1</sup>H NMR spectrum of ethanol, the CH<sub>3</sub> signal appears as a…",
+    "choices": [
+      "singlet",
+      "doublet",
+      "triplet",
+      "quartet"
+    ],
+    "answer": 2,
+    "explanation": "The CH<sub>3</sub> protons are next to a CH<sub>2</sub> (2 protons), so n + 1 = 3 lines: a triplet."
+  },
+  {
+    "id": "proto-mixed-048",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "Spectrophotometry",
+    "difficulty": "Standard",
+    "stem": "A 2.0 × 10<sup>−4</sup> M solution in a 1.00 cm cell has an absorbance of 0.50. What is its molar absorptivity?",
+    "choices": [
+      "4.0 × 10<sup>−4</sup> L mol<sup>−1</sup> cm<sup>−1</sup>",
+      "2.5 × 10<sup>3</sup> L mol<sup>−1</sup> cm<sup>−1</sup>",
+      "1.0 × 10<sup>−4</sup> L mol<sup>−1</sup> cm<sup>−1</sup>",
+      "1.0 × 10<sup>3</sup> L mol<sup>−1</sup> cm<sup>−1</sup>"
+    ],
+    "answer": 1,
+    "explanation": "Beer–Lambert: ε = A ÷ (bc) = 0.50 ÷ (1.00 × 2.0 × 10<sup>−4</sup>) = 2.5 × 10<sup>3</sup>."
+  },
+  {
+    "id": "proto-mixed-049",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "Titrations",
+    "difficulty": "Standard",
+    "stem": "A 50.0 mL water sample needs 12.5 mL of 0.0100 M EDTA to reach the endpoint. EDTA binds metal ions 1:1. What is the total metal ion concentration?",
+    "choices": [
+      "2.50 × 10<sup>−3</sup> M",
+      "1.25 × 10<sup>−3</sup> M",
+      "4.00 × 10<sup>−2</sup> M",
+      "2.50 × 10<sup>−2</sup> M"
+    ],
+    "answer": 0,
+    "explanation": "mol EDTA = 0.0125 × 0.0100 = 1.25 × 10<sup>−4</sup>; divided by 0.0500 L gives 2.50 × 10<sup>−3</sup> M."
+  },
+  {
+    "id": "proto-mixed-050",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "Titrations",
+    "difficulty": "Standard",
+    "stem": "MnO<sub>4</sub><sup>−</sup> + 5Fe<sup>2+</sup> + 8H<sup>+</sup> → Mn<sup>2+</sup> + 5Fe<sup>3+</sup> + 4H<sub>2</sub>O. If 20.0 mL of 0.0200 M KMnO<sub>4</sub> titrates a Fe<sup>2+</sup> sample, how many moles of Fe<sup>2+</sup> were present?",
+    "choices": [
+      "4.00 × 10<sup>−4</sup>",
+      "8.00 × 10<sup>−4</sup>",
+      "2.00 × 10<sup>−3</sup>",
+      "1.00 × 10<sup>−2</sup>"
+    ],
+    "answer": 2,
+    "explanation": "mol MnO<sub>4</sub><sup>−</sup> = 4.00 × 10<sup>−4</sup>; the 1 : 5 ratio gives 2.00 × 10<sup>−3</sup> mol Fe<sup>2+</sup>."
+  },
+  {
+    "id": "proto-mixed-051",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Gases",
+    "difficulty": "Standard",
+    "stem": "What is the density of NH<sub>3</sub> gas at 27 °C and 1.00 atm? (R = 0.0821 L·atm/mol·K; M = 17.03 g/mol)",
+    "choices": [
+      "0.691 g/L",
+      "1.45 g/L",
+      "0.0587 g/L",
+      "17.0 g/L"
+    ],
+    "answer": 0,
+    "explanation": "d = PM ÷ RT = (1.00 × 17.03) ÷ (0.0821 × 300) = 0.691 g/L. Remember to convert 27 °C to 300 K."
+  },
+  {
+    "id": "proto-mixed-052",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Gases",
+    "difficulty": "Standard",
+    "stem": "A 10.0 L flask holds 2.00 mol He and 3.00 mol Ne at 300 K. What is the partial pressure of Ne? (R = 0.0821 L·atm/mol·K)",
+    "choices": [
+      "4.93 atm",
+      "7.39 atm",
+      "12.3 atm",
+      "2.46 atm"
+    ],
+    "answer": 1,
+    "explanation": "P<sub>total</sub> = nRT/V = (5.00)(0.0821)(300) ÷ 10.0 = 12.3 atm. Ne is 3/5 of the moles, so its partial pressure is 0.600 × 12.3 = 7.39 atm."
+  },
+  {
+    "id": "proto-mixed-053",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Gases",
+    "difficulty": "Standard",
+    "stem": "How many times faster does H<sub>2</sub> effuse than O<sub>2</sub> at the same temperature?",
+    "choices": [
+      "2 times",
+      "4 times",
+      "8 times",
+      "16 times"
+    ],
+    "answer": 1,
+    "explanation": "Graham’s law: rate ∝ 1/√M. The ratio is √(32.0 ÷ 2.02) ≈ √16 = 4."
+  },
+  {
+    "id": "proto-mixed-054",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Liquids and solids",
+    "difficulty": "Foundation",
+    "stem": "On a phase diagram, the point where solid, liquid and gas coexist in equilibrium is the…",
+    "choices": [
+      "critical point",
+      "triple point",
+      "normal boiling point",
+      "sublimation point"
+    ],
+    "answer": 1,
+    "explanation": "The triple point is the one temperature and pressure where all three phases coexist."
+  },
+  {
+    "id": "proto-mixed-055",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Liquids and solids",
+    "difficulty": "Standard",
+    "stem": "A metal crystallizes in a body-centred cubic lattice. How many atoms are in the unit cell, and what is the coordination number?",
+    "choices": [
+      "2 atoms, coordination number 8",
+      "4 atoms, coordination number 12",
+      "1 atom, coordination number 6",
+      "2 atoms, coordination number 12"
+    ],
+    "answer": 0,
+    "explanation": "Atoms per cell = 8 corners × 1/8 + 1 centre = 2. Each atom touches 8 neighbours. (Face-centred cubic would be 4 atoms and 12 neighbours.)"
+  },
+  {
+    "id": "proto-mixed-056",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Electronic structure of atoms",
+    "difficulty": "Standard",
+    "stem": "What is the ground-state electron configuration of Fe<sup>2+</sup>? (Fe: Z = 26)",
+    "choices": [
+      "[Ar] 3d<sup>6</sup>",
+      "[Ar] 4s<sup>2</sup>3d<sup>4</sup>",
+      "[Ar] 3d<sup>5</sup>",
+      "[Ar] 4s<sup>1</sup>3d<sup>5</sup>"
+    ],
+    "answer": 0,
+    "explanation": "Neutral Fe is [Ar] 4s<sup>2</sup>3d<sup>6</sup>. Transition metals lose their 4s electrons first, so Fe<sup>2+</sup> is [Ar] 3d<sup>6</sup>."
+  },
+  {
+    "id": "proto-mixed-057",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Electronic structure of atoms",
+    "difficulty": "Foundation",
+    "stem": "How many unpaired electrons does a ground-state nitrogen atom have?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "N is 1s<sup>2</sup>2s<sup>2</sup>2p<sup>3</sup>. By Hund’s rule the three 2p electrons occupy separate orbitals with parallel spins, giving 3 unpaired electrons."
+  },
+  {
+    "id": "proto-mixed-058",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Electronic structure of atoms",
+    "difficulty": "Standard",
+    "stem": "What is the energy of one photon of wavelength 500 nm? (h = 6.626 × 10<sup>−34</sup> J·s; c = 3.00 × 10<sup>8</sup> m/s)",
+    "choices": [
+      "3.98 × 10<sup>−19</sup> J",
+      "3.98 × 10<sup>−28</sup> J",
+      "1.99 × 10<sup>−19</sup> J",
+      "6.00 × 10<sup>14</sup> J"
+    ],
+    "answer": 0,
+    "explanation": "E = hc/λ = (6.626 × 10<sup>−34</sup>)(3.00 × 10<sup>8</sup>) ÷ (5.00 × 10<sup>−7</sup> m) = 3.98 × 10<sup>−19</sup> J. Convert nm to m first."
+  },
+  {
+    "id": "proto-mixed-059",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Electronic structure and periodicity",
+    "difficulty": "Standard",
+    "stem": "Which of these atoms has the most negative electron affinity?",
+    "choices": [
+      "F",
+      "Cl",
+      "Br",
+      "Ne"
+    ],
+    "answer": 1,
+    "explanation": "Cl releases the most energy on gaining an electron. F is slightly less negative because its small 2p subshell has strong electron–electron repulsion. Br is less negative than Cl, and Ne has no favourable electron affinity."
+  },
+  {
+    "id": "proto-mixed-060",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Ionic bonds",
+    "difficulty": "Foundation",
+    "stem": "Which compound has the highest melting point?",
+    "choices": [
+      "NaCl",
+      "MgO",
+      "KBr",
+      "CsI"
+    ],
+    "answer": 1,
+    "explanation": "MgO has 2+/2− ions that are small, so its lattice energy is the largest and it melts at about 2850 °C."
+  },
+  {
+    "id": "proto-mixed-061",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Covalent bonds",
+    "difficulty": "Standard",
+    "stem": "What is the hybridization of carbon in CO<sub>2</sub>?",
+    "choices": [
+      "sp",
+      "sp<sup>2</sup>",
+      "sp<sup>3</sup>",
+      "sp<sup>3</sup>d"
+    ],
+    "answer": 0,
+    "explanation": "Carbon has 2 electron domains (two double bonds), so the geometry is linear and the hybridization is sp."
+  },
+  {
+    "id": "proto-mixed-062",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Covalent bonds",
+    "difficulty": "Standard",
+    "stem": "What is the formal charge on nitrogen in the nitrate ion, NO<sub>3</sub><sup>−</sup>?",
+    "choices": [
+      "0",
+      "+1",
+      "−1",
+      "+2"
+    ],
+    "answer": 1,
+    "explanation": "Formal charge = valence electrons − nonbonding electrons − bonds = 5 − 0 − 4 = +1 (three N–O bonds, one of them double)."
+  },
+  {
+    "id": "proto-mixed-063",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Covalent bonds",
+    "difficulty": "Foundation",
+    "stem": "Which species has bond angles closest to 109.5°?",
+    "choices": [
+      "NH<sub>4</sub><sup>+</sup>",
+      "BF<sub>3</sub>",
+      "CO<sub>2</sub>",
+      "H<sub>2</sub>O"
+    ],
+    "answer": 0,
+    "explanation": "NH<sub>4</sub><sup>+</sup> is a perfect tetrahedron (109.5°). BF<sub>3</sub> is 120°, CO<sub>2</sub> is 180° and H<sub>2</sub>O is about 104.5°."
+  },
+  {
+    "id": "proto-mixed-064",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Intermolecular forces",
+    "difficulty": "Foundation",
+    "stem": "Which substance has the strongest London dispersion forces?",
+    "choices": [
+      "CH<sub>4</sub>",
+      "C<sub>2</sub>H<sub>6</sub>",
+      "C<sub>4</sub>H<sub>10</sub>",
+      "C<sub>8</sub>H<sub>18</sub>"
+    ],
+    "answer": 3,
+    "explanation": "Dispersion forces grow with the size and polarizability of the electron cloud. C<sub>8</sub>H<sub>18</sub> is the largest molecule."
+  },
+  {
+    "id": "proto-mixed-065",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Physical properties of solutions",
+    "difficulty": "Foundation",
+    "stem": "What volume of 12.0 M HCl is needed to make 500 mL of 0.600 M HCl?",
+    "choices": [
+      "25.0 mL",
+      "50.0 mL",
+      "10.0 mL",
+      "250 mL"
+    ],
+    "answer": 0,
+    "explanation": "M<sub>1</sub>V<sub>1</sub> = M<sub>2</sub>V<sub>2</sub>, so V<sub>1</sub> = (0.600 × 500) ÷ 12.0 = 25.0 mL."
+  },
+  {
+    "id": "proto-mixed-066",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Physical properties of solutions",
+    "difficulty": "Standard",
+    "stem": "Which 0.10 m aqueous solution has the lowest freezing point?",
+    "choices": [
+      "glucose",
+      "NaCl",
+      "CaCl<sub>2</sub>",
+      "CH<sub>3</sub>COOH"
+    ],
+    "answer": 2,
+    "explanation": "ΔT<sub>f</sub> = iK<sub>f</sub>m. CaCl<sub>2</sub> gives three ions (i ≈ 3), NaCl two, while glucose and the weak acid CH<sub>3</sub>COOH give about one. The largest i gives the lowest freezing point."
+  },
+  {
+    "id": "proto-mixed-067",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Thermochemistry",
+    "difficulty": "Standard",
+    "stem": "ΔH<sub>f</sub>° is −393.5 kJ/mol for CO<sub>2</sub>(g), −285.8 kJ/mol for H<sub>2</sub>O(l) and −74.8 kJ/mol for CH<sub>4</sub>(g). What is ΔH° for CH<sub>4</sub> + 2O<sub>2</sub> → CO<sub>2</sub> + 2H<sub>2</sub>O(l)?",
+    "choices": [
+      "−890.3 kJ",
+      "−1040 kJ",
+      "−679.0 kJ",
+      "+890.3 kJ"
+    ],
+    "answer": 0,
+    "explanation": "ΔH° = Σ ΔH<sub>f</sub>(products) − Σ ΔH<sub>f</sub>(reactants) = [−393.5 + 2(−285.8)] − [−74.8 + 0] = −965.1 + 74.8 = −890.3 kJ."
+  },
+  {
+    "id": "proto-mixed-068",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Thermochemistry",
+    "difficulty": "Standard",
+    "stem": "5.00 g of NH<sub>4</sub>NO<sub>3</sub> (M = 80.04 g/mol) dissolves in 100.0 g of water in a coffee-cup calorimeter, and the temperature falls from 25.0 °C to 21.0 °C. Taking c = 4.18 J/g·°C for the 105.0 g solution, what is ΔH of dissolution per mole?",
+    "choices": [
+      "+28.1 kJ/mol",
+      "−28.1 kJ/mol",
+      "+1.76 kJ/mol",
+      "+2.81 kJ/mol"
+    ],
+    "answer": 0,
+    "explanation": "Heat absorbed = 105.0 × 4.18 × 4.0 = 1756 J. Moles = 5.00 ÷ 80.04 = 0.06247. ΔH = 1.756 kJ ÷ 0.06247 = +28.1 kJ/mol. It is positive because the process takes in heat (the temperature drops)."
+  },
+  {
+    "id": "proto-mixed-069",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Chemical kinetics",
+    "difficulty": "Standard",
+    "stem": "For A + B → products, doubling [A] doubles the rate and doubling [B] quadruples it. What is the rate law?",
+    "choices": [
+      "rate = k[A][B]",
+      "rate = k[A][B]<sup>2</sup>",
+      "rate = k[A]<sup>2</sup>[B]",
+      "rate = k[A]<sup>2</sup>[B]<sup>2</sup>"
+    ],
+    "answer": 1,
+    "explanation": "2<sup>1</sup> = 2 means first order in A. 2<sup>2</sup> = 4 means second order in B. So rate = k[A][B]<sup>2</sup>."
+  },
+  {
+    "id": "proto-mixed-070",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Chemical kinetics",
+    "difficulty": "Standard",
+    "stem": "A first-order reaction has k = 0.0231 min<sup>−1</sup>. How long does it take for 75% of the reactant to be used up?",
+    "choices": [
+      "30.0 min",
+      "60.0 min",
+      "90.0 min",
+      "120 min"
+    ],
+    "answer": 1,
+    "explanation": "25% remains, so t = ln(1/0.25) ÷ k = 1.386 ÷ 0.0231 = 60.0 min. This is two half-lives of 30 min each."
+  },
+  {
+    "id": "proto-mixed-071",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Chemical thermodynamics",
+    "difficulty": "Standard",
+    "stem": "Which process has a negative ΔS?",
+    "choices": [
+      "Ice melting",
+      "Water evaporating",
+      "N<sub>2</sub>(g) + 3H<sub>2</sub>(g) → 2NH<sub>3</sub>(g)",
+      "Salt dissolving in water"
+    ],
+    "answer": 2,
+    "explanation": "The ammonia synthesis goes from 4 mol of gas to 2 mol, so disorder falls. Melting, evaporating and dissolving all increase entropy."
+  },
+  {
+    "id": "proto-mixed-072",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Chemical equilibrium",
+    "difficulty": "Standard",
+    "stem": "H<sub>2</sub> + I<sub>2</sub> ⇌ 2HI has K<sub>c</sub> = 50.0 at 700 K. At equilibrium [H<sub>2</sub>] = [I<sub>2</sub>] = 0.020 M. What is [HI]?",
+    "choices": [
+      "0.141 M",
+      "0.0200 M",
+      "0.400 M",
+      "1.00 M"
+    ],
+    "answer": 0,
+    "explanation": "[HI]<sup>2</sup> = K<sub>c</sub>[H<sub>2</sub>][I<sub>2</sub>] = 50.0 × 0.020 × 0.020 = 0.0200, so [HI] = 0.141 M."
+  },
+  {
+    "id": "proto-mixed-073",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Chemical equilibrium",
+    "difficulty": "Standard",
+    "stem": "For N<sub>2</sub>(g) + 3H<sub>2</sub>(g) ⇌ 2NH<sub>3</sub>(g), which change shifts the equilibrium to the right?",
+    "choices": [
+      "Increasing the volume of the container",
+      "Removing NH<sub>3</sub> as it forms",
+      "Adding a catalyst",
+      "Decreasing the pressure"
+    ],
+    "answer": 1,
+    "explanation": "Removing a product pulls the equilibrium toward products. A larger volume or lower pressure favours the side with more gas moles (the left), and a catalyst does not shift the equilibrium."
+  },
+  {
+    "id": "proto-mixed-074",
+    "source": "mixed",
+    "domain": "Physical",
+    "topic": "Electrochemistry",
+    "difficulty": "Standard",
+    "stem": "A current of 2.00 A passes through molten NaCl for 965 s. What mass of sodium is deposited? (F = 96 485 C/mol; M of Na = 22.99 g/mol)",
+    "choices": [
+      "0.460 g",
+      "0.230 g",
+      "0.920 g",
+      "4.60 g"
+    ],
+    "answer": 0,
+    "explanation": "Q = It = 2.00 × 965 = 1930 C, so mol e<sup>−</sup> = 1930 ÷ 96 485 = 0.0200. Na<sup>+</sup> + e<sup>−</sup> → Na is 1 : 1, so mass = 0.0200 × 22.99 = 0.460 g."
+  },
+  {
+    "id": "proto-mixed-075",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "Acid-base and salt equilibria",
+    "difficulty": "Standard",
+    "stem": "What is the pH of 0.100 M acetic acid? (K<sub>a</sub> = 1.8 × 10<sup>−5</sup>)",
+    "choices": [
+      "1.00",
+      "2.87",
+      "4.74",
+      "5.74"
+    ],
+    "answer": 1,
+    "explanation": "[H<sup>+</sup>] ≈ √(K<sub>a</sub>C) = √(1.8 × 10<sup>−5</sup> × 0.100) = 1.34 × 10<sup>−3</sup> M, so pH = 2.87."
+  },
+  {
+    "id": "proto-mixed-076",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "Acid-base and salt equilibria",
+    "difficulty": "Foundation",
+    "stem": "What is the pH of 0.020 M NaOH at 25 °C?",
+    "choices": [
+      "1.70",
+      "12.30",
+      "12.00",
+      "13.70"
+    ],
+    "answer": 1,
+    "explanation": "[OH<sup>−</sup>] = 0.020 M, so pOH = −log 0.020 = 1.70 and pH = 14 − 1.70 = 12.30."
+  },
+  {
+    "id": "proto-mixed-077",
+    "source": "mixed",
+    "domain": "Analytical",
+    "topic": "Spectrophotometry",
+    "difficulty": "Standard",
+    "stem": "A solution has absorbance 0.300 in a 1.00 cm cell and a molar absorptivity of 1.50 × 10<sup>3</sup> L mol<sup>−1</sup> cm<sup>−1</sup>. What is its concentration?",
+    "choices": [
+      "2.00 × 10<sup>−4</sup> M",
+      "5.00 × 10<sup>3</sup> M",
+      "4.50 × 10<sup>2</sup> M",
+      "2.00 × 10<sup>−3</sup> M"
+    ],
+    "answer": 0,
+    "explanation": "A = εbc, so c = A ÷ (εb) = 0.300 ÷ (1.50 × 10<sup>3</sup> × 1.00) = 2.00 × 10<sup>−4</sup> M."
+  },
+  {
+    "id": "proto-mixed-078",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Organic compounds",
+    "difficulty": "Foundation",
+    "stem": "Which compound is an aldehyde?",
+    "choices": [
+      "CH<sub>3</sub>COCH<sub>3</sub>",
+      "CH<sub>3</sub>CH<sub>2</sub>CHO",
+      "CH<sub>3</sub>COOH",
+      "CH<sub>3</sub>OCH<sub>3</sub>"
+    ],
+    "answer": 1,
+    "explanation": "An aldehyde has the –CHO group at the end of the chain: CH<sub>3</sub>CH<sub>2</sub>CHO is propanal. The others are a ketone, a carboxylic acid and an ether."
+  },
+  {
+    "id": "proto-mixed-079",
+    "source": "mixed",
+    "domain": "Organic",
+    "topic": "Organic reactions",
+    "difficulty": "Standard",
+    "stem": "Heating a primary alcohol with excess acidified K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> gives…",
+    "choices": [
+      "a ketone",
+      "an aldehyde only",
+      "a carboxylic acid",
+      "an ester"
+    ],
+    "answer": 2,
+    "explanation": "The alcohol is first oxidized to an aldehyde, and with excess oxidant it goes on to the carboxylic acid. Ketones come from secondary alcohols."
+  },
+  {
+    "id": "proto-mixed-080",
+    "source": "mixed",
+    "domain": "General",
+    "topic": "Coordination chemistry",
+    "difficulty": "Foundation",
+    "stem": "What is the oxidation state of copper in [Cu(NH<sub>3</sub>)<sub>4</sub>]SO<sub>4</sub>?",
+    "choices": [
+      "0",
+      "+1",
+      "+2",
+      "+4"
+    ],
+    "answer": 2,
+    "explanation": "Sulfate is 2−, so the complex ion is 2+. NH<sub>3</sub> is neutral, so copper must be +2."
+  },
+  {
+    "id": "proto-practice-001",
+    "source": "textbook",
+    "domain": "Laboratory",
+    "topic": "Measurements",
+    "difficulty": "Olympiad",
+    "stem": "A spherical gold nanoparticle has a radius of 2.50 nm. Gold has a density of 19.3 g/cm<sup>3</sup> and a molar mass of 197.0 g/mol. How many gold atoms are in one nanoparticle?",
+    "choices": [
+      "1.93 × 10<sup>3</sup>",
+      "3.86 × 10<sup>3</sup>",
+      "3.84 × 10<sup>4</sup>",
+      "1.92 × 10<sup>4</sup>"
+    ],
+    "answer": 1,
+    "explanation": "V = (4/3)π(2.50 × 10<sup>−7</sup> cm)<sup>3</sup> = 6.54 × 10<sup>−20</sup> cm<sup>3</sup>. Mass = 19.3 × V = 1.26 × 10<sup>−18</sup> g. Atoms = (1.26 × 10<sup>−18</sup> ÷ 197.0) × 6.022 × 10<sup>23</sup> ≈ 3.86 × 10<sup>3</sup>."
+  },
+  {
+    "id": "proto-practice-002",
+    "source": "textbook",
+    "domain": "Laboratory",
+    "topic": "Measurements",
+    "difficulty": "Standard",
+    "stem": "The speed of light is 3.00 × 10<sup>8</sup> m/s. Express this speed in furlongs per fortnight. (1 furlong = 201.168 m; 1 fortnight = 14 days)",
+    "choices": [
+      "1.80 × 10<sup>12</sup> furlongs/fortnight",
+      "1.80 × 10<sup>14</sup> furlongs/fortnight",
+      "9.01 × 10<sup>11</sup> furlongs/fortnight",
+      "1.80 × 10<sup>9</sup> furlongs/fortnight"
+    ],
+    "answer": 0,
+    "explanation": "3.00 × 10<sup>8</sup> m/s ÷ 201.168 m/furlong = 1.491 × 10<sup>6</sup> furlongs/s. A fortnight is 14 × 86 400 = 1.2096 × 10<sup>6</sup> s, so the speed is 1.80 × 10<sup>12</sup> furlongs/fortnight. (The source key listed 1.80 × 10<sup>14</sup>, which is off by a factor of 100.)"
+  },
+  {
+    "id": "proto-practice-003",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Matter and its properties",
+    "difficulty": "Foundation",
+    "stem": "Which of the following statements describes an intensive physical property?",
+    "choices": [
+      "The total heat capacity of a sample of water is 418.4 J/K.",
+      "A sample of copper has a volume of 12.5 mL.",
+      "The standard boiling point of ethanol is 78.37 °C.",
+      "The mass of a gold bar is 1.00 kg."
+    ],
+    "answer": 2,
+    "explanation": "Intensive properties do not depend on the amount of sample. The boiling point is the same for 1 mL or 1 L of ethanol, while heat capacity, volume and mass all scale with the amount."
+  },
+  {
+    "id": "proto-practice-004",
+    "source": "textbook",
+    "domain": "Laboratory",
+    "topic": "Measurements",
+    "difficulty": "Standard",
+    "stem": "Evaluate (14.285 − 0.0821) × 0.05200 ÷ (3.14159 + 0.002) and give the answer to the appropriate number of significant figures.",
+    "choices": [
+      "0.2351",
+      "0.235",
+      "0.23497",
+      "0.2350"
+    ],
+    "answer": 1,
+    "explanation": "Subtraction: 14.285 − 0.0821 = 14.203 (3 decimal places). Addition: 3.14159 + 0.002 = 3.144 (3 decimal places). Then 14.203 × 0.05200 ÷ 3.144 = 0.2349. Of the listed values, 0.235 is the closest; a strict four-significant-figure result would be 0.2349, which is not offered."
+  },
+  {
+    "id": "proto-practice-005",
+    "source": "textbook",
+    "domain": "Laboratory",
+    "topic": "Measurements",
+    "difficulty": "Standard",
+    "stem": "A cylindrical cork (density 0.240 g/cm<sup>3</sup>, length 10.0 cm, cross-sectional area 1.50 cm<sup>2</sup>) floats vertically in a fluid of density 1.20 g/cm<sup>3</sup>. How much of its length is below the surface?",
+    "choices": [
+      "2.00 cm",
+      "4.00 cm",
+      "6.00 cm",
+      "8.00 cm"
+    ],
+    "answer": 0,
+    "explanation": "A floating object displaces fluid equal to its own weight, so the submerged fraction is 0.240 ÷ 1.20 = 0.200. Submerged length = 0.200 × 10.0 cm = 2.00 cm. The cross-sectional area cancels out."
+  },
+  {
+    "id": "proto-practice-006",
+    "source": "textbook",
+    "domain": "Laboratory",
+    "topic": "Measurements",
+    "difficulty": "Standard",
+    "stem": "A container weighs 22.10 g empty, 45.50 g filled with water (0.998 g/mL at 20 °C) and 51.20 g filled with an unknown liquid at the same temperature. What is the density of the unknown liquid?",
+    "choices": [
+      "1.24 g/mL",
+      "1.20 g/mL",
+      "1.13 g/mL",
+      "0.806 g/mL"
+    ],
+    "answer": 0,
+    "explanation": "Water mass = 45.50 − 22.10 = 23.40 g, so the container volume is 23.40 ÷ 0.998 = 23.45 mL. Liquid mass = 51.20 − 22.10 = 29.10 g. Density = 29.10 ÷ 23.45 = 1.24 g/mL. (The source key listed 1.13 g/mL, which does not follow from the data.)"
+  },
+  {
+    "id": "proto-practice-007",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Matter and its properties",
+    "difficulty": "Foundation",
+    "stem": "Which of the following processes is a chemical change?",
+    "choices": [
+      "Sublimation of dry ice (CO<sub>2</sub>)",
+      "Dissolving sodium chloride in water",
+      "Tarnishing of silver cutlery in air",
+      "Fractional distillation of liquid air"
+    ],
+    "answer": 2,
+    "explanation": "Tarnishing converts silver into silver sulfide, a new substance. The other three change only the state or the mixing; the substances themselves stay the same."
+  },
+  {
+    "id": "proto-practice-008",
+    "source": "textbook",
+    "domain": "Laboratory",
+    "topic": "Measurements",
+    "difficulty": "Standard",
+    "stem": "A new temperature scale, °X, is related to Celsius by °X = 1.50(°C) + 20.0. What is absolute zero (−273.15 °C) on the °X scale?",
+    "choices": [
+      "−389.73 °X",
+      "−429.73 °X",
+      "−369.73 °X",
+      "−253.15 °X"
+    ],
+    "answer": 0,
+    "explanation": "°X = 1.50 × (−273.15) + 20.0 = −409.725 + 20.0 = −389.73 °X."
+  },
+  {
+    "id": "proto-practice-009",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Matter and its properties",
+    "difficulty": "Foundation",
+    "stem": "Homogeneous mixtures differ from pure substances because homogeneous mixtures:",
+    "choices": [
+      "can be separated into simpler substances by physical methods.",
+      "have a fixed composition regardless of preparation.",
+      "consist of only one type of atom.",
+      "cannot exist in the gas phase."
+    ],
+    "answer": 0,
+    "explanation": "A mixture can be split into its components by physical means such as distillation or filtration; a pure substance (element or compound) cannot. Fixed composition describes pure compounds, and air is a gaseous homogeneous mixture."
+  },
+  {
+    "id": "proto-practice-010",
+    "source": "textbook",
+    "domain": "Laboratory",
+    "topic": "Measurements",
+    "difficulty": "Standard",
+    "stem": "A sheet of platinum foil measures 2.50 cm × 4.00 cm and has a mass of 1.076 g. The density of platinum is 21.45 g/cm<sup>3</sup>. What is the thickness of the foil in micrometers (µm)?",
+    "choices": [
+      "50.2 µm",
+      "5.02 µm",
+      "501.6 µm",
+      "0.502 µm"
+    ],
+    "answer": 0,
+    "explanation": "V = 1.076 ÷ 21.45 = 0.05016 cm<sup>3</sup>. Area = 2.50 × 4.00 = 10.0 cm<sup>2</sup>, so thickness = 0.005016 cm. Since 1 cm = 10<sup>4</sup> µm, this is 50.2 µm."
+  },
+  {
+    "id": "proto-practice-011",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Standard",
+    "stem": "Millikan found the charge of the electron to be −1.602 × 10<sup>−19</sup> C, and Thomson measured e/m = −1.76 × 10<sup>8</sup> C/g. What is the mass of one electron?",
+    "choices": [
+      "9.10 × 10<sup>−28</sup> g",
+      "9.10 × 10<sup>−31</sup> g",
+      "1.67 × 10<sup>−24</sup> g",
+      "1.09 × 10<sup>−27</sup> g"
+    ],
+    "answer": 0,
+    "explanation": "m = e ÷ (e/m) = 1.602 × 10<sup>−19</sup> C ÷ 1.76 × 10<sup>8</sup> C/g = 9.10 × 10<sup>−28</sup> g. The 10<sup>−31</sup> option is the same mass expressed in kg."
+  },
+  {
+    "id": "proto-practice-012",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Standard",
+    "stem": "A uranium-238 atom (Z = 92) emits one alpha particle, then two beta (β<sup>−</sup>) particles. What is the resulting nuclide?",
+    "choices": [
+      "<sup>234</sup>Th (Z = 90)",
+      "<sup>234</sup>Pa (Z = 91)",
+      "<sup>234</sup>U (Z = 92)",
+      "<sup>230</sup>Th (Z = 90)"
+    ],
+    "answer": 2,
+    "explanation": "Alpha emission lowers the mass number by 4 and Z by 2, giving <sup>234</sup>Th (Z = 90). Each beta emission raises Z by 1 with no change in mass number: <sup>234</sup>Pa, then <sup>234</sup>U (Z = 92)."
+  },
+  {
+    "id": "proto-practice-013",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Standard",
+    "stem": "Chlorine has two stable isotopes: <sup>35</sup>Cl (34.9688 amu) and <sup>37</sup>Cl (36.9659 amu). The average atomic mass is 35.4527 amu. What is the percent abundance of <sup>37</sup>Cl?",
+    "choices": [
+      "24.23%",
+      "75.77%",
+      "35.45%",
+      "48.46%"
+    ],
+    "answer": 0,
+    "explanation": "Let x be the fraction of <sup>37</sup>Cl: 34.9688(1 − x) + 36.9659x = 35.4527. So 1.9971x = 0.4839 and x = 0.2423, or 24.23%."
+  },
+  {
+    "id": "proto-practice-014",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Foundation",
+    "stem": "How many protons, neutrons and electrons are in one <sup>59</sup>Ni<sup>3+</sup> ion? (Ni: Z = 28)",
+    "choices": [
+      "28 protons, 31 neutrons, 25 electrons",
+      "28 protons, 31 neutrons, 31 electrons",
+      "31 protons, 28 neutrons, 25 electrons",
+      "28 protons, 59 neutrons, 25 electrons"
+    ],
+    "answer": 0,
+    "explanation": "Protons = Z = 28. Neutrons = 59 − 28 = 31. A 3+ ion has lost three electrons: 28 − 3 = 25."
+  },
+  {
+    "id": "proto-practice-015",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Foundation",
+    "stem": "Rutherford’s gold foil experiment showed that:",
+    "choices": [
+      "electrons orbit the nucleus in fixed energy levels.",
+      "electrons are embedded in a uniform sphere of positive charge.",
+      "most of the mass and all of the positive charge of an atom are concentrated in a tiny, dense nucleus.",
+      "neutrons are present in equal numbers to protons in stable nuclei."
+    ],
+    "answer": 2,
+    "explanation": "Most alpha particles passed straight through, but a few were deflected sharply or bounced back. That means the positive charge and most of the mass sit in a very small nucleus. Fixed energy levels belong to Bohr’s model, and the uniform sphere is Thomson’s."
+  },
+  {
+    "id": "proto-practice-016",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Foundation",
+    "stem": "Which pair represents isotopes of the same element?",
+    "choices": [
+      "<sup>14</sup>C and <sup>14</sup>N",
+      "<sup>40</sup>Ar and <sup>40</sup>Ca",
+      "<sup>128</sup>Te and <sup>128</sup>Xe",
+      "<sup>204</sup>Pb and <sup>208</sup>Pb"
+    ],
+    "answer": 3,
+    "explanation": "Isotopes have the same atomic number but different mass numbers. Both Pb nuclides have Z = 82. The other pairs share a mass number but are different elements."
+  },
+  {
+    "id": "proto-practice-017",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Standard",
+    "stem": "An element X forms an oxide XO<sub>3</sub> that contains 48.00% oxygen by mass. Identify X.",
+    "choices": [
+      "Al",
+      "Fe",
+      "Cr",
+      "B"
+    ],
+    "answer": 2,
+    "explanation": "Oxygen in XO<sub>3</sub> has a mass of 3 × 16.00 = 48.00 g per mole, so 48.00% O means the molar mass is 100.0 g/mol and X = 52.0 g/mol, which is chromium (CrO<sub>3</sub>). The source printed 30.06% O, which matches no element in the choices, so it was corrected to 48.00%."
+  },
+  {
+    "id": "proto-practice-018",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Foundation",
+    "stem": "Which species is isoelectronic with the argon atom?",
+    "choices": [
+      "Na<sup>+</sup>",
+      "S<sup>2−</sup>",
+      "Br<sup>−</sup>",
+      "Fe<sup>2+</sup>"
+    ],
+    "answer": 1,
+    "explanation": "Argon has 18 electrons. S<sup>2−</sup> has 16 + 2 = 18. Na<sup>+</sup> has 10, Br<sup>−</sup> has 36 and Fe<sup>2+</sup> has 24."
+  },
+  {
+    "id": "proto-practice-019",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Standard",
+    "stem": "An unknown element M has three isotopes: M-24 (23.9850 amu, 78.99%), M-25 (24.9858 amu, 10.00%) and M-26 (25.9826 amu, 11.01%). What is its atomic weight, and what is the element?",
+    "choices": [
+      "24.31 amu, magnesium (Mg)",
+      "28.09 amu, silicon (Si)",
+      "26.98 amu, aluminum (Al)",
+      "23.00 amu, sodium (Na)"
+    ],
+    "answer": 0,
+    "explanation": "Weighted average = 23.9850(0.7899) + 24.9858(0.1000) + 25.9826(0.1101) = 18.946 + 2.499 + 2.861 = 24.31 amu, the atomic weight of magnesium."
+  },
+  {
+    "id": "proto-practice-020",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Foundation",
+    "stem": "How many electrons are in one nitrate ion (NO<sub>3</sub><sup>−</sup>)?",
+    "choices": [
+      "30",
+      "31",
+      "32",
+      "24"
+    ],
+    "answer": 2,
+    "explanation": "N has 7 electrons and each O has 8, so the three oxygens add 24, giving 31 for the neutral group. The 1− charge adds one more: 32."
+  },
+  {
+    "id": "proto-practice-021",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Standard",
+    "stem": "What is the correct name of Fe<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>·9H<sub>2</sub>O?",
+    "choices": [
+      "Iron(II) sulfate nonahydrate",
+      "Diiron trisulfate nonahydrate",
+      "Iron(III) sulfate nonahydrate",
+      "Iron trisulfate nonahydrate"
+    ],
+    "answer": 2,
+    "explanation": "Three sulfate ions (3 × 2−) balance two iron ions, so each iron is 3+, written Iron(III). The nine water molecules in the crystal take the prefix nona-, giving nonahydrate."
+  },
+  {
+    "id": "proto-practice-022",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Foundation",
+    "stem": "What is the formula of perchloric acid?",
+    "choices": [
+      "HClO",
+      "HClO<sub>2</sub>",
+      "HClO<sub>3</sub>",
+      "HClO<sub>4</sub>"
+    ],
+    "answer": 3,
+    "explanation": "The prefix “per-” with “-ic” marks the oxoacid with the most oxygen atoms. The series is hypochlorous HClO, chlorous HClO<sub>2</sub>, chloric HClO<sub>3</sub> and perchloric HClO<sub>4</sub>."
+  },
+  {
+    "id": "proto-practice-023",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Foundation",
+    "stem": "What is the systematic name of the covalent compound P<sub>4</sub>O<sub>10</sub>?",
+    "choices": [
+      "Tetraphosphorus decoxide",
+      "Phosphorus decoxide",
+      "Triphosphorus decoxide",
+      "Phosphoric anhydride"
+    ],
+    "answer": 0,
+    "explanation": "Covalent binary compounds use Greek prefixes: tetra- for 4 P and deca- for 10 O, with the final “a” dropped before oxide. Mono- is omitted only when the first element has a single atom, which is not the case here."
+  },
+  {
+    "id": "proto-practice-024",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Standard",
+    "stem": "Which formula is INCORRECT based on standard ionic charges?",
+    "choices": [
+      "Al<sub>2</sub>S<sub>3</sub>",
+      "Ca<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>",
+      "K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>",
+      "BaHCO<sub>3</sub>"
+    ],
+    "answer": 3,
+    "explanation": "Ba is 2+ and hydrogen carbonate is 1−, so two HCO<sub>3</sub><sup>−</sup> are needed: Ba(HCO<sub>3</sub>)<sub>2</sub>. The other three formulas are charge-balanced."
+  },
+  {
+    "id": "proto-practice-025",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Foundation",
+    "stem": "What is the formula of dinitrogen pentoxide?",
+    "choices": [
+      "N<sub>2</sub>O<sub>3</sub>",
+      "NO<sub>2</sub>",
+      "N<sub>2</sub>O<sub>5</sub>",
+      "N<sub>5</sub>O<sub>2</sub>"
+    ],
+    "answer": 2,
+    "explanation": "Di- means 2 nitrogen atoms and penta- means 5 oxygen atoms: N<sub>2</sub>O<sub>5</sub>."
+  },
+  {
+    "id": "proto-practice-026",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Standard",
+    "stem": "What is the name of Cr(BrO<sub>3</sub>)<sub>3</sub>?",
+    "choices": [
+      "Chromium(III) bromate",
+      "Chromium(III) bromide",
+      "Chromium(VI) bromate",
+      "Chromium(III) perbromate"
+    ],
+    "answer": 0,
+    "explanation": "BrO<sub>3</sub><sup>−</sup> is bromate (bromide is Br<sup>−</sup> and perbromate is BrO<sub>4</sub><sup>−</sup>). Three 1− ions mean chromium is 3+, so the name is chromium(III) bromate."
+  },
+  {
+    "id": "proto-practice-027",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Standard",
+    "stem": "Which oxoacid has a name ending in “-ous acid”?",
+    "choices": [
+      "HNO<sub>3</sub>",
+      "H<sub>2</sub>SO<sub>3</sub>",
+      "H<sub>3</sub>PO<sub>4</sub>",
+      "HClO<sub>4</sub>"
+    ],
+    "answer": 1,
+    "explanation": "“-ous” acids come from “-ite” anions. H<sub>2</sub>SO<sub>3</sub> comes from sulfite (SO<sub>3</sub><sup>2−</sup>), so it is sulfurous acid. The others are nitric, phosphoric and perchloric acid, from “-ate” anions."
+  },
+  {
+    "id": "proto-practice-028",
+    "source": "textbook",
+    "domain": "Organic",
+    "topic": "Organic compounds",
+    "difficulty": "Foundation",
+    "stem": "What is the formula of propane?",
+    "choices": [
+      "C<sub>2</sub>H<sub>6</sub>",
+      "C<sub>3</sub>H<sub>8</sub>",
+      "C<sub>4</sub>H<sub>10</sub>",
+      "C<sub>3</sub>H<sub>6</sub>"
+    ],
+    "answer": 1,
+    "explanation": "Propane is the 3-carbon alkane. Alkanes follow C<sub>n</sub>H<sub>2n+2</sub>, so n = 3 gives C<sub>3</sub>H<sub>8</sub>. C<sub>3</sub>H<sub>6</sub> is propene."
+  },
+  {
+    "id": "proto-practice-029",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Standard",
+    "stem": "What is the formula of ammonium dichromate?",
+    "choices": [
+      "(NH<sub>4</sub>)<sub>2</sub>CrO<sub>4</sub>",
+      "NH<sub>4</sub>Cr<sub>2</sub>O<sub>7</sub>",
+      "(NH<sub>4</sub>)<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>",
+      "(NH<sub>4</sub>)<sub>3</sub>CrO<sub>4</sub>"
+    ],
+    "answer": 2,
+    "explanation": "Ammonium is NH<sub>4</sub><sup>+</sup> and dichromate is Cr<sub>2</sub>O<sub>7</sub><sup>2−</sup>, so two ammonium ions balance the 2− charge. The first option is ammonium chromate."
+  },
+  {
+    "id": "proto-practice-030",
+    "source": "textbook",
+    "domain": "Organic",
+    "topic": "Organic compounds",
+    "difficulty": "Foundation",
+    "stem": "Name the organic compound with the formula CH<sub>3</sub>CH<sub>2</sub>OH.",
+    "choices": [
+      "Methanol",
+      "Ethanol",
+      "Dimethyl ether",
+      "Propanol"
+    ],
+    "answer": 1,
+    "explanation": "A two-carbon chain with an –OH group is ethanol. Methanol has one carbon and propanol has three. Dimethyl ether (CH<sub>3</sub>OCH<sub>3</sub>) is an isomer with no OH group."
+  },
+  {
+    "id": "proto-practice-031",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "How many oxygen atoms are in 0.250 mol of hydrated copper(II) sulfate, CuSO<sub>4</sub>·5H<sub>2</sub>O?",
+    "choices": [
+      "1.51 × 10<sup>23</sup>",
+      "6.02 × 10<sup>23</sup>",
+      "1.35 × 10<sup>24</sup>",
+      "2.71 × 10<sup>24</sup>"
+    ],
+    "answer": 2,
+    "explanation": "Each formula unit has 4 O from sulfate plus 5 O from water, so 9 O. Atoms = 0.250 × 9 × 6.022 × 10<sup>23</sup> = 1.35 × 10<sup>24</sup>."
+  },
+  {
+    "id": "proto-practice-032",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "A compound is 40.00% C, 6.71% H and 53.29% O by mass, with a molar mass of about 180 g/mol. What is its molecular formula?",
+    "choices": [
+      "CH<sub>2</sub>O",
+      "C<sub>2</sub>H<sub>4</sub>O<sub>2</sub>",
+      "C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>",
+      "C<sub>3</sub>H<sub>6</sub>O<sub>3</sub>"
+    ],
+    "answer": 2,
+    "explanation": "Per 100 g: C 3.33 mol, H 6.66 mol, O 3.33 mol, so the empirical formula is CH<sub>2</sub>O (30.03 g/mol). 180 ÷ 30.03 = 6, so the molecular formula is C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>."
+  },
+  {
+    "id": "proto-practice-033",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "Burning 1.50 g of a hydrocarbon gives 4.71 g of CO<sub>2</sub> and 1.93 g of H<sub>2</sub>O. What is its empirical formula?",
+    "choices": [
+      "CH",
+      "CH<sub>2</sub>",
+      "C<sub>2</sub>H<sub>5</sub>",
+      "CH<sub>3</sub>"
+    ],
+    "answer": 1,
+    "explanation": "mol C = 4.71 ÷ 44.01 = 0.1070. mol H = 2 × (1.93 ÷ 18.02) = 0.2142. The ratio H : C is 2.00, so the formula is CH<sub>2</sub>."
+  },
+  {
+    "id": "proto-practice-034",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Foundation",
+    "stem": "What is the mass percent of nitrogen in ammonium nitrate, NH<sub>4</sub>NO<sub>3</sub> (M = 80.04 g/mol)?",
+    "choices": [
+      "17.5%",
+      "35.0%",
+      "28.0%",
+      "42.0%"
+    ],
+    "answer": 1,
+    "explanation": "There are two N atoms per formula unit: 2 × 14.01 = 28.02 g. Then 28.02 ÷ 80.04 × 100 = 35.0%."
+  },
+  {
+    "id": "proto-practice-035",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "How many grams of iron can be extracted from 500.0 g of iron(III) oxide, Fe<sub>2</sub>O<sub>3</sub> (M = 159.7 g/mol)?",
+    "choices": [
+      "349.7 g",
+      "174.9 g",
+      "233.1 g",
+      "350.0 g"
+    ],
+    "answer": 0,
+    "explanation": "mol Fe<sub>2</sub>O<sub>3</sub> = 500.0 ÷ 159.7 = 3.131. Each gives 2 Fe, so 6.262 mol Fe × 55.85 g/mol = 349.7 g."
+  },
+  {
+    "id": "proto-practice-036",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "A 5.75 g sample of hydrated zinc sulfate, ZnSO<sub>4</sub>·xH<sub>2</sub>O, is heated until all the water is driven off. The anhydrous residue weighs 3.23 g. Find x. (M of ZnSO<sub>4</sub> = 161.47 g/mol; M of H<sub>2</sub>O = 18.02 g/mol)",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Water lost = 5.75 − 3.23 = 2.52 g = 0.1398 mol. ZnSO<sub>4</sub> = 3.23 ÷ 161.47 = 0.02000 mol. x = 0.1398 ÷ 0.02000 = 6.99, which is 7."
+  },
+  {
+    "id": "proto-practice-037",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atoms, molecules and ions",
+    "difficulty": "Foundation",
+    "stem": "In a mass spectrometer, xenon is ionized to Xe<sup>+</sup> ions. What determines how far these ions are deflected in the magnetic field?",
+    "choices": [
+      "Nuclear charge only",
+      "Mass-to-charge ratio (m/z)",
+      "Electron affinity of xenon",
+      "Total molecular volume"
+    ],
+    "answer": 1,
+    "explanation": "In a magnetic field the radius of an ion’s path depends on its m/z: lighter ions, or ions with more charge, bend more. This is how the isotopes of Xe are separated."
+  },
+  {
+    "id": "proto-practice-038",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Foundation",
+    "stem": "How many moles of sodium ions are in a sample containing 3.01 × 10<sup>23</sup> formula units of sodium phosphate, Na<sub>3</sub>PO<sub>4</sub>?",
+    "choices": [
+      "0.500 mol",
+      "1.50 mol",
+      "3.00 mol",
+      "1.00 mol"
+    ],
+    "answer": 1,
+    "explanation": "3.01 × 10<sup>23</sup> formula units is 0.500 mol of Na<sub>3</sub>PO<sub>4</sub>. Each has 3 Na<sup>+</sup>, so 0.500 × 3 = 1.50 mol."
+  },
+  {
+    "id": "proto-practice-039",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "An oxide of nitrogen contains 30.45% nitrogen by mass. What is its empirical formula?",
+    "choices": [
+      "NO",
+      "NO<sub>2</sub>",
+      "N<sub>2</sub>O",
+      "N<sub>2</sub>O<sub>5</sub>"
+    ],
+    "answer": 1,
+    "explanation": "Per 100 g: N = 30.45 ÷ 14.01 = 2.173 mol and O = 69.55 ÷ 16.00 = 4.347 mol. The ratio O : N is 2.00, so the formula is NO<sub>2</sub>."
+  },
+  {
+    "id": "proto-practice-040",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Olympiad",
+    "stem": "A 2.000 g mixture of NaCl (M = 58.44 g/mol) and KCl (M = 74.55 g/mol) contains 0.0300 mol of chloride ions in total. What is the mass of NaCl in the mixture?",
+    "choices": [
+      "1.168 g",
+      "0.832 g",
+      "0.868 g",
+      "1.432 g"
+    ],
+    "answer": 2,
+    "explanation": "Let x = mass of NaCl, so KCl = 2.000 − x. Chloride: x/58.44 + (2.000 − x)/74.55 = 0.0300. This gives x ≈ 0.858 g. The closest listed value, and the only one consistent with 0.0300 mol to three figures, is 0.868 g. (The source key listed 0.832 g, which gives 0.0299 mol.)"
+  },
+  {
+    "id": "proto-practice-041",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "Consider 2Al(s) + 3Cl<sub>2</sub>(g) → 2AlCl<sub>3</sub>(s). If 10.0 g of Al (M = 26.98 g/mol) reacts with 35.0 g of Cl<sub>2</sub> (M = 70.90 g/mol), what mass of AlCl<sub>3</sub> (M = 133.34 g/mol) forms?",
+    "choices": [
+      "49.4 g",
+      "43.9 g",
+      "29.3 g",
+      "22.0 g"
+    ],
+    "answer": 1,
+    "explanation": "mol Al = 0.3706 and mol Cl<sub>2</sub> = 0.4937. Al would need 1.5 × 0.3706 = 0.556 mol Cl<sub>2</sub>, so Cl<sub>2</sub> is limiting. AlCl<sub>3</sub> = 0.4937 × (2/3) = 0.3291 mol × 133.34 = 43.9 g. (The source key listed 29.3 g, which does not follow from the data; 49.4 g is what you would get if Al were limiting.)"
+  },
+  {
+    "id": "proto-practice-042",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "In the reaction 2Al(s) + 3Cl<sub>2</sub>(g) → 2AlCl<sub>3</sub>(s), 10.0 g of Al (M = 26.98 g/mol) reacts with 35.0 g of Cl<sub>2</sub> (M = 70.90 g/mol). Which reactant is limiting, and how much of the other remains?",
+    "choices": [
+      "Al is limiting; 1.11 g of Cl<sub>2</sub> remains.",
+      "Cl<sub>2</sub> is limiting; 1.11 g of Al remains.",
+      "Cl<sub>2</sub> is limiting; 5.56 g of Al remains.",
+      "Al is limiting; 8.32 g of Cl<sub>2</sub> remains."
+    ],
+    "answer": 1,
+    "explanation": "Cl<sub>2</sub> is limiting (0.4937 mol, against the 0.556 mol needed to consume all the Al). It reacts with (2/3) × 0.4937 = 0.3291 mol Al = 8.88 g, leaving 10.0 − 8.88 ≈ 1.1 g of Al."
+  },
+  {
+    "id": "proto-practice-043",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "TiCl<sub>4</sub>(g) + 2Mg(l) → Ti(s) + 2MgCl<sub>2</sub>(l). Reacting 3.54 × 10<sup>7</sup> g of TiCl<sub>4</sub> (M = 189.7 g/mol) with 1.13 × 10<sup>7</sup> g of Mg (M = 24.31 g/mol) gives 7.81 × 10<sup>6</sup> g of Ti (M = 47.87 g/mol). What is the percent yield of Ti?",
+    "choices": [
+      "87.4%",
+      "74.2%",
+      "89.3%",
+      "95.1%"
+    ],
+    "answer": 0,
+    "explanation": "mol TiCl<sub>4</sub> = 1.866 × 10<sup>5</sup>; mol Mg = 4.65 × 10<sup>5</sup>, which supports only 2.32 × 10<sup>5</sup> mol Ti, so TiCl<sub>4</sub> is limiting. Theoretical Ti = 1.866 × 10<sup>5</sup> × 47.87 = 8.93 × 10<sup>6</sup> g. Yield = 7.81 × 10<sup>6</sup> ÷ 8.93 × 10<sup>6</sup> = 87.4%."
+  },
+  {
+    "id": "proto-practice-044",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Foundation",
+    "stem": "Balance a C<sub>4</sub>H<sub>10</sub>(g) + b O<sub>2</sub>(g) → c CO<sub>2</sub>(g) + d H<sub>2</sub>O(g) with the lowest whole-number coefficients. What is b?",
+    "choices": [
+      "13",
+      "26",
+      "6.5",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "The balanced equation is 2C<sub>4</sub>H<sub>10</sub> + 13O<sub>2</sub> → 8CO<sub>2</sub> + 10H<sub>2</sub>O. Each C<sub>4</sub>H<sub>10</sub> needs 4 + 5/2 = 6.5 O<sub>2</sub>; doubling to clear the fraction gives a = 2 and b = 13."
+  },
+  {
+    "id": "proto-practice-045",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "CaC<sub>2</sub>(s) + 2H<sub>2</sub>O(l) → Ca(OH)<sub>2</sub>(s) + C<sub>2</sub>H<sub>2</sub>(g). How many grams of acetylene form from 100.0 g of CaC<sub>2</sub> that is 85.0% pure, with excess water? (M of CaC<sub>2</sub> = 64.10 g/mol; M of C<sub>2</sub>H<sub>2</sub> = 26.04 g/mol)",
+    "choices": [
+      "40.6 g",
+      "34.5 g",
+      "29.3 g",
+      "38.2 g"
+    ],
+    "answer": 1,
+    "explanation": "Pure CaC<sub>2</sub> = 0.850 × 100.0 = 85.0 g = 1.326 mol. The ratio is 1 : 1, so C<sub>2</sub>H<sub>2</sub> = 1.326 mol × 26.04 = 34.5 g. (40.6 g would ignore the purity.)"
+  },
+  {
+    "id": "proto-practice-046",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "N<sub>2</sub>(g) + 3H<sub>2</sub>(g) → 2NH<sub>3</sub>(g). A mixture of 28.0 g N<sub>2</sub> and 9.00 g H<sub>2</sub> produces 25.5 g of NH<sub>3</sub>. What is the percent yield? (M of N<sub>2</sub> = 28.02, H<sub>2</sub> = 2.016, NH<sub>3</sub> = 17.03 g/mol)",
+    "choices": [
+      "75.0%",
+      "85.0%",
+      "90.0%",
+      "60.0%"
+    ],
+    "answer": 0,
+    "explanation": "mol N<sub>2</sub> = 0.9993 and mol H<sub>2</sub> = 4.464 (only 3 × 0.9993 = 2.998 is needed), so N<sub>2</sub> is limiting. Theoretical NH<sub>3</sub> = 2 × 0.9993 = 1.999 mol = 34.04 g. Yield = 25.5 ÷ 34.04 = 74.9%, about 75.0%. (The source key listed 85.0%, which does not follow from the data.)"
+  },
+  {
+    "id": "proto-practice-047",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Olympiad",
+    "stem": "Sulfuric acid is made in three steps: S<sub>8</sub> + 8O<sub>2</sub> → 8SO<sub>2</sub>; 2SO<sub>2</sub> + O<sub>2</sub> → 2SO<sub>3</sub>; SO<sub>3</sub> + H<sub>2</sub>O → H<sub>2</sub>SO<sub>4</sub>. Starting from 1.00 kg of sulfur (S<sub>8</sub>, M = 256.5 g/mol), what is the maximum mass of H<sub>2</sub>SO<sub>4</sub> (M = 98.08 g/mol) with a quantitative yield in every step?",
+    "choices": [
+      "3.06 kg",
+      "1.53 kg",
+      "6.12 kg",
+      "0.38 kg"
+    ],
+    "answer": 0,
+    "explanation": "One S<sub>8</sub> gives 8 SO<sub>2</sub>, then 8 SO<sub>3</sub>, then 8 H<sub>2</sub>SO<sub>4</sub>. mol S<sub>8</sub> = 1000 ÷ 256.5 = 3.899, so H<sub>2</sub>SO<sub>4</sub> = 31.19 mol × 98.08 = 3059 g = 3.06 kg."
+  },
+  {
+    "id": "proto-practice-048",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "2.00 mol of H<sub>2</sub> and 2.00 mol of O<sub>2</sub> are ignited: 2H<sub>2</sub>(g) + O<sub>2</sub>(g) → 2H<sub>2</sub>O(g). How many total moles of gas are in the container after the reaction is complete?",
+    "choices": [
+      "1.00 mol",
+      "2.00 mol",
+      "3.00 mol",
+      "2.50 mol"
+    ],
+    "answer": 2,
+    "explanation": "H<sub>2</sub> is limiting: 2.00 mol H<sub>2</sub> uses 1.00 mol O<sub>2</sub> and makes 2.00 mol H<sub>2</sub>O(g). Remaining gas = 1.00 mol O<sub>2</sub> + 2.00 mol H<sub>2</sub>O = 3.00 mol. (The source key listed 2.50 mol, which does not follow.)"
+  },
+  {
+    "id": "proto-practice-049",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Standard",
+    "stem": "When 0.500 mol of a metal M reacts completely with excess nitrogen gas, 0.167 mol of a nitride M<sub>x</sub>N<sub>y</sub> forms. What is x?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "All 0.500 mol of M ends up in the product, so x = 0.500 ÷ 0.167 = 3, as in a nitride such as Mg<sub>3</sub>N<sub>2</sub>."
+  },
+  {
+    "id": "proto-practice-050",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Stoichiometry",
+    "difficulty": "Olympiad",
+    "stem": "Aspirin is made from salicylic acid (C<sub>7</sub>H<sub>6</sub>O<sub>3</sub>, M = 138.12 g/mol) and acetic anhydride (C<sub>4</sub>H<sub>6</sub>O<sub>3</sub>, M = 102.09 g/mol): C<sub>7</sub>H<sub>6</sub>O<sub>3</sub> + C<sub>4</sub>H<sub>6</sub>O<sub>3</sub> → C<sub>9</sub>H<sub>8</sub>O<sub>4</sub> + C<sub>2</sub>H<sub>4</sub>O<sub>2</sub> (aspirin, M = 180.16 g/mol). If 2.00 g of each reactant is used and the yield is 85.0%, what mass of aspirin is collected?",
+    "choices": [
+      "2.22 g",
+      "2.61 g",
+      "3.07 g",
+      "1.89 g"
+    ],
+    "answer": 0,
+    "explanation": "mol salicylic acid = 0.01448 and mol anhydride = 0.01959 (a 1 : 1 reaction), so salicylic acid is limiting. Theoretical aspirin = 0.01448 × 180.16 = 2.609 g. At 85.0%: 2.609 × 0.850 = 2.22 g."
+  },
+  {
+    "id": "proto-textbook-001",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemistry: A Science for the Twenty-First Century",
+    "difficulty": "Foundation",
+    "stem": "Chemistry is often called the central science because it…",
+    "choices": [
+      "links physics and mathematics with biology, geology and medicine",
+      "deals only with laboratory experiments",
+      "studies only living things",
+      "is the oldest science"
+    ],
+    "answer": 0,
+    "explanation": "Chemistry explains the matter and changes that underlie physics, biology, earth science and medicine."
+  },
+  {
+    "id": "proto-textbook-002",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemistry: A Science for the Twenty-First Century",
+    "difficulty": "Foundation",
+    "stem": "Which process is used to make fertilizer from nitrogen in the air?",
+    "choices": [
+      "The Haber process",
+      "Fractional distillation of seawater",
+      "Nuclear fission",
+      "Fermentation"
+    ],
+    "answer": 0,
+    "explanation": "The Haber process combines N<sub>2</sub> and H<sub>2</sub> to make ammonia, the basis of most fertilizers."
+  },
+  {
+    "id": "proto-textbook-003",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemistry: A Science for the Twenty-First Century",
+    "difficulty": "Foundation",
+    "stem": "Which statement about chemistry is correct?",
+    "choices": [
+      "It studies matter, its properties and the changes it undergoes.",
+      "It studies only man-made materials.",
+      "It has no link to environmental issues.",
+      "It cannot be used to make predictions."
+    ],
+    "answer": 0,
+    "explanation": "Chemistry covers all matter and its changes, natural or man-made, and it makes testable predictions."
+  },
+  {
+    "id": "proto-textbook-004",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemistry: A Science for the Twenty-First Century",
+    "difficulty": "Foundation",
+    "stem": "Chlorofluorocarbons (CFCs) were phased out mainly because they…",
+    "choices": [
+      "damage the ozone layer",
+      "cause acid rain",
+      "are radioactive",
+      "explode at room temperature"
+    ],
+    "answer": 0,
+    "explanation": "CFCs release chlorine atoms in the stratosphere, which destroy ozone."
+  },
+  {
+    "id": "proto-textbook-005",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemistry: A Science for the Twenty-First Century",
+    "difficulty": "Standard",
+    "stem": "Which is a goal of green chemistry?",
+    "choices": [
+      "Designing processes that reduce hazardous waste",
+      "Making reactions as fast as possible regardless of cost",
+      "Using only natural products",
+      "Avoiding all chemical reactions"
+    ],
+    "answer": 0,
+    "explanation": "Green chemistry aims to prevent waste and to use safer substances and processes."
+  },
+  {
+    "id": "proto-textbook-006",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Study of Chemistry",
+    "difficulty": "Foundation",
+    "stem": "In chemistry, the macroscopic level refers to…",
+    "choices": [
+      "what can be observed and measured directly",
+      "individual atoms and molecules",
+      "only the nucleus of an atom",
+      "only gases"
+    ],
+    "answer": 0,
+    "explanation": "Colour, mass, temperature and volume are macroscopic; atoms and molecules are the microscopic explanation."
+  },
+  {
+    "id": "proto-textbook-007",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Study of Chemistry",
+    "difficulty": "Foundation",
+    "stem": "Which is a macroscopic observation?",
+    "choices": [
+      "A solution turns blue.",
+      "Electrons move between orbitals.",
+      "A bond breaks in a molecule.",
+      "Atoms rearrange."
+    ],
+    "answer": 0,
+    "explanation": "A colour change can be seen directly. The other options describe particles."
+  },
+  {
+    "id": "proto-textbook-008",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Study of Chemistry",
+    "difficulty": "Foundation",
+    "stem": "Explaining why ice floats by describing how water molecules are arranged is an explanation at the…",
+    "choices": [
+      "microscopic (particle) level",
+      "macroscopic level only",
+      "nuclear level",
+      "statistical level"
+    ],
+    "answer": 0,
+    "explanation": "It uses molecules and their arrangement to explain an observed property."
+  },
+  {
+    "id": "proto-textbook-009",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Study of Chemistry",
+    "difficulty": "Foundation",
+    "stem": "“Mass is neither created nor destroyed in a chemical reaction” is the law of…",
+    "choices": [
+      "conservation of mass",
+      "definite proportions",
+      "multiple proportions",
+      "combining volumes"
+    ],
+    "answer": 0,
+    "explanation": "The total mass of the reactants equals the total mass of the products."
+  },
+  {
+    "id": "proto-textbook-010",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Study of Chemistry",
+    "difficulty": "Foundation",
+    "stem": "In chemistry, a substance is…",
+    "choices": [
+      "matter with a fixed composition and distinct properties",
+      "any material found in nature",
+      "a mixture of elements",
+      "only a solid"
+    ],
+    "answer": 0,
+    "explanation": "Elements and compounds are substances; mixtures are not, because their composition varies."
+  },
+  {
+    "id": "proto-textbook-011",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Scientific Method",
+    "difficulty": "Foundation",
+    "stem": "A tentative explanation that can be tested by experiment is a…",
+    "choices": [
+      "hypothesis",
+      "law",
+      "theory",
+      "observation"
+    ],
+    "answer": 0,
+    "explanation": "A hypothesis is testable and may be revised or rejected."
+  },
+  {
+    "id": "proto-textbook-012",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Scientific Method",
+    "difficulty": "Foundation",
+    "stem": "A concise statement of a consistent pattern in many observations, without explaining why, is a…",
+    "choices": [
+      "law",
+      "hypothesis",
+      "theory",
+      "model"
+    ],
+    "answer": 0,
+    "explanation": "A law describes what happens; a theory explains why."
+  },
+  {
+    "id": "proto-textbook-013",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Scientific Method",
+    "difficulty": "Foundation",
+    "stem": "A well-tested explanation that accounts for a wide range of observations is a…",
+    "choices": [
+      "theory",
+      "hypothesis",
+      "law",
+      "guess"
+    ],
+    "answer": 0,
+    "explanation": "Theories such as atomic theory are supported by large amounts of evidence."
+  },
+  {
+    "id": "proto-textbook-014",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Scientific Method",
+    "difficulty": "Standard",
+    "stem": "In a controlled experiment, the quantity the experimenter deliberately changes is the…",
+    "choices": [
+      "independent variable",
+      "dependent variable",
+      "constant",
+      "control group"
+    ],
+    "answer": 0,
+    "explanation": "The independent variable is changed, the dependent variable is measured, and everything else is held constant."
+  },
+  {
+    "id": "proto-textbook-015",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Scientific Method",
+    "difficulty": "Foundation",
+    "stem": "Experimental results contradict a hypothesis. The correct scientific response is to…",
+    "choices": [
+      "revise or reject the hypothesis",
+      "ignore the results",
+      "adjust the data to fit",
+      "call the hypothesis a law"
+    ],
+    "answer": 0,
+    "explanation": "Hypotheses must agree with the evidence; the data decide."
+  },
+  {
+    "id": "proto-textbook-016",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Classifications of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which is a pure substance?",
+    "choices": [
+      "Distilled water",
+      "Air",
+      "Seawater",
+      "Brass"
+    ],
+    "answer": 0,
+    "explanation": "Distilled water is a single compound, H<sub>2</sub>O. Air, seawater and brass are mixtures."
+  },
+  {
+    "id": "proto-textbook-017",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Classifications of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which is a heterogeneous mixture?",
+    "choices": [
+      "Granite",
+      "Sugar dissolved in water",
+      "Brass",
+      "Filtered air"
+    ],
+    "answer": 0,
+    "explanation": "Granite has visibly different regions. The others are uniform (homogeneous)."
+  },
+  {
+    "id": "proto-textbook-018",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Classifications of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which is a compound?",
+    "choices": [
+      "Carbon dioxide, CO<sub>2</sub>",
+      "Ozone, O<sub>3</sub>",
+      "Diamond, C",
+      "Helium, He"
+    ],
+    "answer": 0,
+    "explanation": "A compound contains two or more elements in a fixed ratio. The others are elements."
+  },
+  {
+    "id": "proto-textbook-019",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Classifications of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which method separates sugar from a sugar–water solution?",
+    "choices": [
+      "Evaporation",
+      "Filtration",
+      "Using a magnet",
+      "Decanting"
+    ],
+    "answer": 0,
+    "explanation": "Sugar is dissolved, so filtering does not work. Evaporating the water leaves the sugar behind."
+  },
+  {
+    "id": "proto-textbook-020",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Three States of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which state of matter has a definite volume but no definite shape?",
+    "choices": [
+      "Liquid",
+      "Solid",
+      "Gas",
+      "None of these"
+    ],
+    "answer": 0,
+    "explanation": "A liquid keeps its volume but takes the shape of its container."
+  },
+  {
+    "id": "proto-textbook-021",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Three States of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which statement about gases is correct?",
+    "choices": [
+      "The particles are far apart and move freely.",
+      "The particles are held in fixed positions.",
+      "They have a fixed volume.",
+      "They cannot be compressed."
+    ],
+    "answer": 0,
+    "explanation": "Gas particles have large spaces between them, so gases fill their container and compress easily."
+  },
+  {
+    "id": "proto-textbook-022",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Three States of Matter",
+    "difficulty": "Foundation",
+    "stem": "The change from gas directly to solid is called…",
+    "choices": [
+      "deposition",
+      "sublimation",
+      "condensation",
+      "freezing"
+    ],
+    "answer": 0,
+    "explanation": "Sublimation is solid to gas; deposition is the reverse."
+  },
+  {
+    "id": "proto-textbook-023",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Three States of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which phase change absorbs heat (is endothermic)?",
+    "choices": [
+      "Melting",
+      "Condensation",
+      "Freezing",
+      "Deposition"
+    ],
+    "answer": 0,
+    "explanation": "Melting needs energy to loosen the particles; the others release energy."
+  },
+  {
+    "id": "proto-textbook-024",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Three States of Matter",
+    "difficulty": "Standard",
+    "stem": "Solids are very hard to compress because…",
+    "choices": [
+      "their particles are already in contact",
+      "their particles move very fast",
+      "there are no attractions between particles",
+      "their particles are smaller"
+    ],
+    "answer": 0,
+    "explanation": "There is almost no empty space between the particles to squeeze out."
+  },
+  {
+    "id": "proto-textbook-025",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Physical and Chemical Properties of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which is a chemical property?",
+    "choices": [
+      "Flammability",
+      "Melting point",
+      "Density",
+      "Colour"
+    ],
+    "answer": 0,
+    "explanation": "Flammability describes how a substance reacts with oxygen. The others can be measured without changing the substance."
+  },
+  {
+    "id": "proto-textbook-026",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Physical and Chemical Properties of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which is a physical change?",
+    "choices": [
+      "Boiling water",
+      "Burning wood",
+      "Rusting iron",
+      "Baking bread"
+    ],
+    "answer": 0,
+    "explanation": "Boiling changes the state only; the molecules stay H<sub>2</sub>O."
+  },
+  {
+    "id": "proto-textbook-027",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Physical and Chemical Properties of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which is an extensive property?",
+    "choices": [
+      "Mass",
+      "Density",
+      "Temperature",
+      "Boiling point"
+    ],
+    "answer": 0,
+    "explanation": "Mass depends on the amount of sample; density, temperature and boiling point do not."
+  },
+  {
+    "id": "proto-textbook-028",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Measurement",
+    "difficulty": "Foundation",
+    "stem": "What is the SI base unit of mass?",
+    "choices": [
+      "kilogram",
+      "gram",
+      "pound",
+      "newton"
+    ],
+    "answer": 0,
+    "explanation": "The kilogram is the SI base unit; the gram is a fraction of it."
+  },
+  {
+    "id": "proto-textbook-029",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Measurement",
+    "difficulty": "Foundation",
+    "stem": "What is 5.0 × 10<sup>3</sup> mg in grams?",
+    "choices": [
+      "5.0 g",
+      "0.50 g",
+      "50 g",
+      "5.0 × 10<sup>6</sup> g"
+    ],
+    "answer": 0,
+    "explanation": "1 mg = 10<sup>−3</sup> g, so 5.0 × 10<sup>3</sup> mg = 5.0 g."
+  },
+  {
+    "id": "proto-textbook-030",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Measurement",
+    "difficulty": "Foundation",
+    "stem": "Convert 25 °C to kelvin.",
+    "choices": [
+      "298 K",
+      "248 K",
+      "25 K",
+      "−248 K"
+    ],
+    "answer": 0,
+    "explanation": "K = °C + 273.15 = 298 K."
+  },
+  {
+    "id": "proto-textbook-031",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Handling Numbers",
+    "difficulty": "Foundation",
+    "stem": "Express 0.000 045 6 in scientific notation.",
+    "choices": [
+      "4.56 × 10<sup>−5</sup>",
+      "4.56 × 10<sup>−4</sup>",
+      "45.6 × 10<sup>−6</sup>",
+      "4.56 × 10<sup>5</sup>"
+    ],
+    "answer": 0,
+    "explanation": "Move the decimal 5 places to the right to get 4.56, so the exponent is −5."
+  },
+  {
+    "id": "proto-textbook-032",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Handling Numbers",
+    "difficulty": "Standard",
+    "stem": "Calculate (3.20 × 10<sup>3</sup>)(2.0 × 10<sup>−2</sup>) with the correct significant figures.",
+    "choices": [
+      "64",
+      "64.0",
+      "6.4 × 10<sup>3</sup>",
+      "6.40 × 10<sup>1</sup>"
+    ],
+    "answer": 0,
+    "explanation": "The product is 64. The factor 2.0 has two significant figures, so the answer has two."
+  },
+  {
+    "id": "proto-textbook-033",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Handling Numbers",
+    "difficulty": "Standard",
+    "stem": "Round 2.7451 to three significant figures.",
+    "choices": [
+      "2.75",
+      "2.74",
+      "2.745",
+      "2.7"
+    ],
+    "answer": 0,
+    "explanation": "The digits after 2.74 are 51, which is more than half, so round up to 2.75."
+  },
+  {
+    "id": "proto-textbook-034",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Dimensional Analysis in Solving Problems",
+    "difficulty": "Foundation",
+    "stem": "Convert 72.0 km/h to m/s.",
+    "choices": [
+      "20.0 m/s",
+      "259 m/s",
+      "1.20 m/s",
+      "0.0200 m/s"
+    ],
+    "answer": 0,
+    "explanation": "72.0 km/h × (1000 m/km) × (1 h/3600 s) = 20.0 m/s."
+  },
+  {
+    "id": "proto-textbook-035",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Dimensional Analysis in Solving Problems",
+    "difficulty": "Standard",
+    "stem": "A car travels 150 km on 12.0 L of fuel. What is its consumption in L per 100 km?",
+    "choices": [
+      "8.00",
+      "12.5",
+      "1.25",
+      "0.0800"
+    ],
+    "answer": 0,
+    "explanation": "(12.0 L ÷ 150 km) × 100 km = 8.00 L per 100 km."
+  },
+  {
+    "id": "proto-textbook-036",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Dimensional Analysis in Solving Problems",
+    "difficulty": "Foundation",
+    "stem": "How many seconds are in 2.50 hours?",
+    "choices": [
+      "9.00 × 10<sup>3</sup> s",
+      "150 s",
+      "1.50 × 10<sup>4</sup> s",
+      "4.17 × 10<sup>−2</sup> s"
+    ],
+    "answer": 0,
+    "explanation": "2.50 h × 3600 s/h = 9.00 × 10<sup>3</sup> s."
+  },
+  {
+    "id": "proto-textbook-037",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Atomic Theory",
+    "difficulty": "Foundation",
+    "stem": "According to Dalton’s atomic theory, all atoms of a given element…",
+    "choices": [
+      "are identical in mass and properties",
+      "can be created in reactions",
+      "can change into other elements",
+      "are destroyed in reactions"
+    ],
+    "answer": 0,
+    "explanation": "Dalton proposed that atoms of the same element are alike and differ from atoms of other elements."
+  },
+  {
+    "id": "proto-textbook-038",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Atomic Theory",
+    "difficulty": "Foundation",
+    "stem": "Dalton’s idea that compounds contain atoms in fixed whole-number ratios explains the law of…",
+    "choices": [
+      "definite proportions",
+      "conservation of energy",
+      "combining volumes",
+      "gravitation"
+    ],
+    "answer": 0,
+    "explanation": "A compound always has the same elements in the same mass ratio."
+  },
+  {
+    "id": "proto-textbook-039",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Atomic Theory",
+    "difficulty": "Standard",
+    "stem": "Two compounds of carbon and oxygen contain 1.33 g and 2.67 g of oxygen per 1.00 g of carbon. This illustrates the law of…",
+    "choices": [
+      "multiple proportions",
+      "definite proportions",
+      "conservation of mass",
+      "combining volumes"
+    ],
+    "answer": 0,
+    "explanation": "The oxygen masses are in a simple ratio, 1 : 2. That is the law of multiple proportions."
+  },
+  {
+    "id": "proto-textbook-040",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Atomic Theory",
+    "difficulty": "Foundation",
+    "stem": "In a chemical reaction, atoms are…",
+    "choices": [
+      "rearranged but not created or destroyed",
+      "created from energy",
+      "destroyed to form new atoms",
+      "converted into other elements"
+    ],
+    "answer": 0,
+    "explanation": "Bonds break and form, but each atom survives, so mass is conserved."
+  },
+  {
+    "id": "proto-textbook-041",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Atomic Theory",
+    "difficulty": "Standard",
+    "stem": "Which part of Dalton’s theory was later shown to be incorrect?",
+    "choices": [
+      "Atoms are indivisible.",
+      "Compounds have fixed composition.",
+      "Atoms of different elements differ.",
+      "Atoms combine in whole-number ratios."
+    ],
+    "answer": 0,
+    "explanation": "Atoms contain protons, neutrons and electrons, so they can be divided."
+  },
+  {
+    "id": "proto-textbook-042",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Structure of the Atom",
+    "difficulty": "Foundation",
+    "stem": "Which subatomic particle has no charge and a mass close to that of a proton?",
+    "choices": [
+      "Neutron",
+      "Electron",
+      "Alpha particle",
+      "Positron"
+    ],
+    "answer": 0,
+    "explanation": "Neutrons are neutral with a mass of about 1 amu."
+  },
+  {
+    "id": "proto-textbook-043",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Structure of the Atom",
+    "difficulty": "Foundation",
+    "stem": "Most alpha particles passed straight through Rutherford’s gold foil. This showed that atoms are…",
+    "choices": [
+      "mostly empty space",
+      "solid spheres",
+      "full of electrons only",
+      "made of neutrons only"
+    ],
+    "answer": 0,
+    "explanation": "Only a tiny nucleus could deflect the particles, so most of the atom is empty space."
+  },
+  {
+    "id": "proto-textbook-044",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Structure of the Atom",
+    "difficulty": "Foundation",
+    "stem": "Thomson’s cathode-ray experiments showed that cathode rays are…",
+    "choices": [
+      "streams of electrons",
+      "streams of protons",
+      "X-rays",
+      "neutral atoms"
+    ],
+    "answer": 0,
+    "explanation": "The rays were deflected by electric and magnetic fields, so they are negatively charged particles: electrons."
+  },
+  {
+    "id": "proto-textbook-045",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atomic Number, Mass Number, and Isotopes",
+    "difficulty": "Foundation",
+    "stem": "The atomic number of an element is the number of…",
+    "choices": [
+      "protons in the nucleus",
+      "neutrons in the nucleus",
+      "protons plus neutrons",
+      "valence electrons"
+    ],
+    "answer": 0,
+    "explanation": "Z counts protons and defines the element."
+  },
+  {
+    "id": "proto-textbook-046",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Periodic Table",
+    "difficulty": "Foundation",
+    "stem": "Elements in the same group have similar chemical properties because they have the same number of…",
+    "choices": [
+      "valence electrons",
+      "neutrons",
+      "protons",
+      "electron shells"
+    ],
+    "answer": 0,
+    "explanation": "Valence electrons control bonding and reactions."
+  },
+  {
+    "id": "proto-textbook-047",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Periodic Table",
+    "difficulty": "Foundation",
+    "stem": "Which is an alkali metal?",
+    "choices": [
+      "Na",
+      "Ca",
+      "Cl",
+      "Ne"
+    ],
+    "answer": 0,
+    "explanation": "The alkali metals are Group 1: Li, Na, K, Rb, Cs and Fr."
+  },
+  {
+    "id": "proto-textbook-048",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Periodic Table",
+    "difficulty": "Foundation",
+    "stem": "Which group contains the halogens?",
+    "choices": [
+      "Group 17",
+      "Group 1",
+      "Group 16",
+      "Group 18"
+    ],
+    "answer": 0,
+    "explanation": "F, Cl, Br, I and At are in Group 17."
+  },
+  {
+    "id": "proto-textbook-049",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Periodic Table",
+    "difficulty": "Standard",
+    "stem": "Which element is a metalloid?",
+    "choices": [
+      "Si",
+      "Al",
+      "C",
+      "S"
+    ],
+    "answer": 0,
+    "explanation": "Silicon sits on the metal/nonmetal boundary. Al is a metal; C and S are nonmetals."
+  },
+  {
+    "id": "proto-textbook-050",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Periodic Table",
+    "difficulty": "Standard",
+    "stem": "Which pair of elements has the most similar chemical properties?",
+    "choices": [
+      "Cl and Br",
+      "Cl and Ar",
+      "Na and Mg",
+      "C and N"
+    ],
+    "answer": 0,
+    "explanation": "Cl and Br are in the same group (the halogens)."
+  },
+  {
+    "id": "proto-textbook-051",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Molecules and Ions",
+    "difficulty": "Foundation",
+    "stem": "Which is a diatomic molecule of an element?",
+    "choices": [
+      "N<sub>2</sub>",
+      "CO",
+      "H<sub>2</sub>O",
+      "NaCl"
+    ],
+    "answer": 0,
+    "explanation": "N<sub>2</sub> has two atoms of the same element. CO and H<sub>2</sub>O are compounds, and NaCl is ionic."
+  },
+  {
+    "id": "proto-textbook-052",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Molecules and Ions",
+    "difficulty": "Foundation",
+    "stem": "An atom that loses electrons forms a…",
+    "choices": [
+      "cation",
+      "anion",
+      "isotope",
+      "molecule"
+    ],
+    "answer": 0,
+    "explanation": "Losing negative electrons leaves a positive ion, a cation."
+  },
+  {
+    "id": "proto-textbook-053",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Molecules and Ions",
+    "difficulty": "Foundation",
+    "stem": "How many protons and electrons are in Mg<sup>2+</sup>? (Mg: Z = 12)",
+    "choices": [
+      "12 protons, 10 electrons",
+      "12 protons, 14 electrons",
+      "10 protons, 12 electrons",
+      "14 protons, 12 electrons"
+    ],
+    "answer": 0,
+    "explanation": "Protons stay at 12; a 2+ ion has lost two electrons, leaving 10."
+  },
+  {
+    "id": "proto-textbook-054",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemical Formulas",
+    "difficulty": "Foundation",
+    "stem": "What is the empirical formula of hydrogen peroxide, H<sub>2</sub>O<sub>2</sub>?",
+    "choices": [
+      "HO",
+      "H<sub>2</sub>O",
+      "H<sub>2</sub>O<sub>2</sub>",
+      "H<sub>4</sub>O<sub>4</sub>"
+    ],
+    "answer": 0,
+    "explanation": "Divide the subscripts by their common factor, 2."
+  },
+  {
+    "id": "proto-textbook-055",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemical Formulas",
+    "difficulty": "Foundation",
+    "stem": "How many atoms are in one formula unit of Ca(NO<sub>3</sub>)<sub>2</sub>?",
+    "choices": [
+      "9",
+      "7",
+      "8",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "1 Ca + 2 N + 6 O = 9 atoms. The subscript 2 multiplies everything inside the brackets."
+  },
+  {
+    "id": "proto-textbook-056",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Naming Compounds",
+    "difficulty": "Foundation",
+    "stem": "What is the name of FeCl<sub>2</sub>?",
+    "choices": [
+      "Iron(II) chloride",
+      "Iron(III) chloride",
+      "Iron dichloride",
+      "Iron chlorine"
+    ],
+    "answer": 0,
+    "explanation": "Two Cl<sup>−</sup> ions mean Fe is 2+, so the name is iron(II) chloride."
+  },
+  {
+    "id": "proto-textbook-057",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemistry: A Science for the Twenty-First Century",
+    "difficulty": "Foundation",
+    "stem": "Which is an everyday example of chemistry?",
+    "choices": [
+      "Cooking an egg",
+      "The moon orbiting Earth",
+      "A ball rolling downhill",
+      "Light bending in a lens"
+    ],
+    "answer": 0,
+    "explanation": "Cooking changes the proteins in the egg into new forms, a chemical change. The others are physics."
+  },
+  {
+    "id": "proto-textbook-058",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemistry: A Science for the Twenty-First Century",
+    "difficulty": "Foundation",
+    "stem": "Which achievement is mainly chemistry?",
+    "choices": [
+      "Making aspirin from simpler compounds",
+      "Measuring the speed of light",
+      "Mapping the stars",
+      "Measuring the strength of gravity"
+    ],
+    "answer": 0,
+    "explanation": "Making new substances from other substances is chemistry."
+  },
+  {
+    "id": "proto-textbook-059",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemistry: A Science for the Twenty-First Century",
+    "difficulty": "Standard",
+    "stem": "Why can chemistry help with problems such as climate change?",
+    "choices": [
+      "It explains how substances like CO<sub>2</sub> react, absorb energy and can be captured or converted",
+      "It can change the laws of physics",
+      "It can stop all reactions in the atmosphere",
+      "It deals only with solids"
+    ],
+    "answer": 0,
+    "explanation": "Knowing how gases and materials react lets chemists design cleaner fuels, catalysts and capture methods."
+  },
+  {
+    "id": "proto-textbook-060",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Study of Chemistry",
+    "difficulty": "Foundation",
+    "stem": "Water boiling is explained at the particle level by…",
+    "choices": [
+      "molecules gaining enough energy to separate from one another",
+      "oxygen atoms turning into hydrogen atoms",
+      "new elements forming",
+      "electrons leaving the nucleus"
+    ],
+    "answer": 0,
+    "explanation": "Boiling is a physical change: the H<sub>2</sub>O molecules stay intact but move apart."
+  },
+  {
+    "id": "proto-textbook-061",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Study of Chemistry",
+    "difficulty": "Foundation",
+    "stem": "Which of these is matter?",
+    "choices": [
+      "Air",
+      "Heat",
+      "Light",
+      "Sound"
+    ],
+    "answer": 0,
+    "explanation": "Matter has mass and takes up space. Air is made of gas particles; heat, light and sound are not matter."
+  },
+  {
+    "id": "proto-textbook-062",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Study of Chemistry",
+    "difficulty": "Standard",
+    "stem": "A sealed flask has the same mass before and after an iron nail rusts inside it. This is consistent with…",
+    "choices": [
+      "conservation of mass",
+      "a change in the number of atoms",
+      "mass turning into energy",
+      "multiple proportions"
+    ],
+    "answer": 0,
+    "explanation": "In a closed system atoms are only rearranged, so the total mass stays the same."
+  },
+  {
+    "id": "proto-textbook-063",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Scientific Method",
+    "difficulty": "Foundation",
+    "stem": "Which is a quantitative observation?",
+    "choices": [
+      "The solution has a mass of 25.3 g.",
+      "The solution is blue.",
+      "The solution smells sweet.",
+      "The solution looks cloudy."
+    ],
+    "answer": 0,
+    "explanation": "Quantitative observations are numerical measurements; the others are qualitative."
+  },
+  {
+    "id": "proto-textbook-064",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Scientific Method",
+    "difficulty": "Standard",
+    "stem": "To test a fertilizer, one group of plants gets it and another group does not, with identical soil, light and water. The group without fertilizer is the…",
+    "choices": [
+      "control",
+      "independent variable",
+      "dependent variable",
+      "hypothesis"
+    ],
+    "answer": 0,
+    "explanation": "The control is treated the same way except for the factor being tested."
+  },
+  {
+    "id": "proto-textbook-065",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Scientific Method",
+    "difficulty": "Standard",
+    "stem": "Why is it important to repeat an experiment?",
+    "choices": [
+      "It shows whether the result is reproducible",
+      "It makes the hypothesis true",
+      "It removes the need for data",
+      "It turns a hypothesis into a law"
+    ],
+    "answer": 0,
+    "explanation": "Reproducible results give confidence that the outcome is not due to chance or error."
+  },
+  {
+    "id": "proto-textbook-066",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Classifications of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which is a homogeneous mixture?",
+    "choices": [
+      "Salt dissolved in water",
+      "Oil and water",
+      "Sand and iron filings",
+      "A fruit salad"
+    ],
+    "answer": 0,
+    "explanation": "A solution is uniform throughout. The others have visibly separate parts."
+  },
+  {
+    "id": "proto-textbook-067",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Classifications of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which is an element?",
+    "choices": [
+      "Sulfur, S<sub>8</sub>",
+      "Table salt, NaCl",
+      "Water, H<sub>2</sub>O",
+      "Sugar, C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>"
+    ],
+    "answer": 0,
+    "explanation": "S<sub>8</sub> contains only sulfur atoms. The others are compounds."
+  },
+  {
+    "id": "proto-textbook-068",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Classifications of Matter",
+    "difficulty": "Standard",
+    "stem": "Which statement about elements and compounds is correct?",
+    "choices": [
+      "A compound can be broken down by chemical reactions; an element cannot.",
+      "An element can be separated by filtration.",
+      "A compound is always a mixture.",
+      "An element contains more than one kind of atom."
+    ],
+    "answer": 0,
+    "explanation": "Compounds have two or more elements chemically bonded and can be decomposed chemically; elements cannot be broken down by chemical means."
+  },
+  {
+    "id": "proto-textbook-069",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Three States of Matter",
+    "difficulty": "Foundation",
+    "stem": "In which state are the particles close together but able to slide past each other?",
+    "choices": [
+      "Liquid",
+      "Solid",
+      "Gas",
+      "None of these"
+    ],
+    "answer": 0,
+    "explanation": "Liquid particles touch but are not fixed in position."
+  },
+  {
+    "id": "proto-textbook-070",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Three States of Matter",
+    "difficulty": "Standard",
+    "stem": "Dry ice (solid CO<sub>2</sub>) turns directly into gas at atmospheric pressure. This change is called…",
+    "choices": [
+      "sublimation",
+      "melting",
+      "deposition",
+      "condensation"
+    ],
+    "answer": 0,
+    "explanation": "Solid to gas without a liquid stage is sublimation."
+  },
+  {
+    "id": "proto-textbook-071",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Three States of Matter",
+    "difficulty": "Standard",
+    "stem": "Which change releases heat to the surroundings?",
+    "choices": [
+      "Water vapor condensing",
+      "Ice melting",
+      "Liquid water evaporating",
+      "Dry ice subliming"
+    ],
+    "answer": 0,
+    "explanation": "Condensation releases energy as particles come together. The other three absorb energy."
+  },
+  {
+    "id": "proto-textbook-072",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Physical and Chemical Properties of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which is a physical property?",
+    "choices": [
+      "Boiling point",
+      "Flammability",
+      "Reactivity with acid",
+      "Tendency to rust"
+    ],
+    "answer": 0,
+    "explanation": "Boiling point can be measured without changing the substance. The others describe reactions."
+  },
+  {
+    "id": "proto-textbook-073",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Physical and Chemical Properties of Matter",
+    "difficulty": "Foundation",
+    "stem": "Which observation indicates a chemical change?",
+    "choices": [
+      "Gas bubbles form and a new solid appears when two clear solutions are mixed",
+      "A solid is crushed into powder",
+      "Ice melts",
+      "Sugar dissolves in water"
+    ],
+    "answer": 0,
+    "explanation": "New substances (a gas and a solid) have formed. The other changes are physical."
+  },
+  {
+    "id": "proto-textbook-074",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Physical and Chemical Properties of Matter",
+    "difficulty": "Standard",
+    "stem": "Which property is intensive?",
+    "choices": [
+      "Density",
+      "Mass",
+      "Volume",
+      "Heat absorbed"
+    ],
+    "answer": 0,
+    "explanation": "Density is the same for any amount of the substance."
+  },
+  {
+    "id": "proto-textbook-075",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Measurement",
+    "difficulty": "Standard",
+    "stem": "A liquid has a density of 0.789 g/mL. What is the mass of 250.0 mL?",
+    "choices": [
+      "197 g",
+      "317 g",
+      "0.00316 g",
+      "2.50 g"
+    ],
+    "answer": 0,
+    "explanation": "m = d × V = 0.789 g/mL × 250.0 mL = 197 g."
+  },
+  {
+    "id": "proto-textbook-076",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Measurement",
+    "difficulty": "Standard",
+    "stem": "What is 0.0045 km in metres?",
+    "choices": [
+      "4.5 m",
+      "0.45 m",
+      "45 m",
+      "4500 m"
+    ],
+    "answer": 0,
+    "explanation": "1 km = 1000 m, so 0.0045 km × 1000 = 4.5 m."
+  },
+  {
+    "id": "proto-textbook-077",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Measurement",
+    "difficulty": "Foundation",
+    "stem": "Using °F = 1.8 °C + 32, what is 100 °C in °F?",
+    "choices": [
+      "212 °F",
+      "132 °F",
+      "180 °F",
+      "68 °F"
+    ],
+    "answer": 0,
+    "explanation": "1.8 × 100 + 32 = 212 °F, the boiling point of water."
+  },
+  {
+    "id": "proto-textbook-078",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Handling Numbers",
+    "difficulty": "Foundation",
+    "stem": "How many significant figures are in 0.0502?",
+    "choices": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Leading zeros do not count; 5, 0 and 2 do."
+  },
+  {
+    "id": "proto-textbook-079",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Handling Numbers",
+    "difficulty": "Standard",
+    "stem": "What is 12.11 + 18.0 + 1.013 to the correct number of decimal places?",
+    "choices": [
+      "31.1",
+      "31.12",
+      "31.123",
+      "31"
+    ],
+    "answer": 0,
+    "explanation": "The sum is 31.123. The least precise value, 18.0, has one decimal place, so the answer is 31.1."
+  },
+  {
+    "id": "proto-textbook-080",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Handling Numbers",
+    "difficulty": "Standard",
+    "stem": "Write 6.02 × 10<sup>5</sup> in ordinary notation.",
+    "choices": [
+      "602 000",
+      "60 200",
+      "6 020 000",
+      "0.000 602"
+    ],
+    "answer": 0,
+    "explanation": "A positive exponent of 5 moves the decimal five places to the right."
+  },
+  {
+    "id": "proto-textbook-081",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Dimensional Analysis in Solving Problems",
+    "difficulty": "Standard",
+    "stem": "How many cm<sup>3</sup> are in 2.5 L?",
+    "choices": [
+      "2.5 × 10<sup>3</sup>",
+      "2.5 × 10<sup>−3</sup>",
+      "25",
+      "2.5 × 10<sup>6</sup>"
+    ],
+    "answer": 0,
+    "explanation": "1 L = 1000 cm<sup>3</sup>, so 2.5 L = 2500 cm<sup>3</sup>."
+  },
+  {
+    "id": "proto-textbook-082",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Dimensional Analysis in Solving Problems",
+    "difficulty": "Standard",
+    "stem": "Convert 15.0 m<sup>3</sup> to litres.",
+    "choices": [
+      "1.50 × 10<sup>4</sup> L",
+      "15.0 L",
+      "1.50 × 10<sup>2</sup> L",
+      "1.50 × 10<sup>6</sup> L"
+    ],
+    "answer": 0,
+    "explanation": "1 m<sup>3</sup> = 1000 L, so 15.0 m<sup>3</sup> = 1.50 × 10<sup>4</sup> L."
+  },
+  {
+    "id": "proto-textbook-083",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Dimensional Analysis in Solving Problems",
+    "difficulty": "Olympiad",
+    "stem": "Gold has a density of 19.3 g/cm<sup>3</sup>. What is the mass in kg of a 5.00 cm × 4.00 cm × 2.00 cm gold bar?",
+    "choices": [
+      "0.772 kg",
+      "7.72 kg",
+      "0.0772 kg",
+      "772 kg"
+    ],
+    "answer": 0,
+    "explanation": "V = 40.0 cm<sup>3</sup>, so m = 19.3 × 40.0 = 772 g = 0.772 kg."
+  },
+  {
+    "id": "proto-textbook-084",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Atomic Theory",
+    "difficulty": "Foundation",
+    "stem": "Who proposed the modern atomic theory in 1808?",
+    "choices": [
+      "John Dalton",
+      "J. J. Thomson",
+      "Ernest Rutherford",
+      "Niels Bohr"
+    ],
+    "answer": 0,
+    "explanation": "Dalton’s atomic theory explained the laws of chemical combination."
+  },
+  {
+    "id": "proto-textbook-085",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Atomic Theory",
+    "difficulty": "Standard",
+    "stem": "Water always has a hydrogen-to-oxygen mass ratio of about 1 : 8. Which law does this support?",
+    "choices": [
+      "Definite proportions",
+      "Multiple proportions",
+      "Conservation of energy",
+      "Avogadro’s law"
+    ],
+    "answer": 0,
+    "explanation": "A given compound always has the same elements in the same mass ratio."
+  },
+  {
+    "id": "proto-textbook-086",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Atomic Theory",
+    "difficulty": "Standard",
+    "stem": "Carbon forms CO and CO<sub>2</sub>. For the same mass of carbon, what is the ratio of oxygen masses in CO<sub>2</sub> to CO?",
+    "choices": [
+      "2 : 1",
+      "1 : 1",
+      "3 : 1",
+      "4 : 1"
+    ],
+    "answer": 0,
+    "explanation": "CO<sub>2</sub> has twice as many O atoms per C atom as CO. Small whole-number ratios illustrate multiple proportions."
+  },
+  {
+    "id": "proto-textbook-087",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Structure of the Atom",
+    "difficulty": "Foundation",
+    "stem": "Which particle is found outside the nucleus?",
+    "choices": [
+      "Electron",
+      "Proton",
+      "Neutron",
+      "Alpha particle"
+    ],
+    "answer": 0,
+    "explanation": "Electrons surround the nucleus; protons and neutrons are inside it."
+  },
+  {
+    "id": "proto-textbook-088",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Structure of the Atom",
+    "difficulty": "Standard",
+    "stem": "A proton is roughly how many times heavier than an electron?",
+    "choices": [
+      "1840",
+      "10",
+      "100 000",
+      "1"
+    ],
+    "answer": 0,
+    "explanation": "The proton mass (1.67 × 10<sup>−24</sup> g) is about 1840 times the electron mass."
+  },
+  {
+    "id": "proto-textbook-089",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Structure of the Atom",
+    "difficulty": "Standard",
+    "stem": "In Rutherford’s experiment a few alpha particles were deflected at large angles because they…",
+    "choices": [
+      "hit the small, dense, positively charged nucleus",
+      "hit electrons",
+      "were neutral",
+      "passed through thick foil"
+    ],
+    "answer": 0,
+    "explanation": "Large deflections need a concentrated positive charge to repel the positive alpha particles."
+  },
+  {
+    "id": "proto-textbook-090",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atomic Number, Mass Number, and Isotopes",
+    "difficulty": "Standard",
+    "stem": "How many neutrons are in <sup>238</sup>U? (Z = 92)",
+    "choices": [
+      "146",
+      "92",
+      "238",
+      "330"
+    ],
+    "answer": 0,
+    "explanation": "Neutrons = A − Z = 238 − 92 = 146."
+  },
+  {
+    "id": "proto-textbook-091",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atomic Number, Mass Number, and Isotopes",
+    "difficulty": "Standard",
+    "stem": "Which pair are isotopes of the same element?",
+    "choices": [
+      "<sup>12</sup>C and <sup>14</sup>C",
+      "<sup>14</sup>C and <sup>14</sup>N",
+      "<sup>40</sup>K and <sup>40</sup>Ca",
+      "<sup>1</sup>H and <sup>4</sup>He"
+    ],
+    "answer": 0,
+    "explanation": "Isotopes have the same atomic number (here 6) but different mass numbers."
+  },
+  {
+    "id": "proto-textbook-092",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Atomic Number, Mass Number, and Isotopes",
+    "difficulty": "Olympiad",
+    "stem": "Copper has two isotopes, <sup>63</sup>Cu (62.93 amu, 69.15%) and <sup>65</sup>Cu (64.93 amu). What is the average atomic mass?",
+    "choices": [
+      "63.55 amu",
+      "63.93 amu",
+      "62.93 amu",
+      "64.00 amu"
+    ],
+    "answer": 0,
+    "explanation": "<sup>65</sup>Cu is 30.85%. 62.93(0.6915) + 64.93(0.3085) = 43.52 + 20.03 = 63.55 amu."
+  },
+  {
+    "id": "proto-textbook-093",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Periodic Table",
+    "difficulty": "Foundation",
+    "stem": "Which of these is a noble gas?",
+    "choices": [
+      "Argon",
+      "Chlorine",
+      "Potassium",
+      "Calcium"
+    ],
+    "answer": 0,
+    "explanation": "Argon is in Group 18."
+  },
+  {
+    "id": "proto-textbook-094",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Periodic Table",
+    "difficulty": "Standard",
+    "stem": "Which statement is true of metals compared with nonmetals?",
+    "choices": [
+      "Metals tend to lose electrons and conduct electricity well.",
+      "Metals tend to gain electrons.",
+      "Metals are usually gases.",
+      "Metals have high ionization energies."
+    ],
+    "answer": 0,
+    "explanation": "Metals lose electrons to form cations and are good conductors."
+  },
+  {
+    "id": "proto-textbook-095",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "The Periodic Table",
+    "difficulty": "Standard",
+    "stem": "How many elements are in Period 2?",
+    "choices": [
+      "8",
+      "2",
+      "18",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Period 2 runs from Li (Z = 3) to Ne (Z = 10): eight elements."
+  },
+  {
+    "id": "proto-textbook-096",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Molecules and Ions",
+    "difficulty": "Standard",
+    "stem": "What is the charge on the sulfide ion formed from sulfur (Group 16)?",
+    "choices": [
+      "2−",
+      "1−",
+      "2+",
+      "6−"
+    ],
+    "answer": 0,
+    "explanation": "Group 16 atoms gain 2 electrons to reach a noble-gas configuration."
+  },
+  {
+    "id": "proto-textbook-097",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Molecules and Ions",
+    "difficulty": "Standard",
+    "stem": "Which is a polyatomic cation?",
+    "choices": [
+      "NH<sub>4</sub><sup>+</sup>",
+      "NO<sub>3</sub><sup>−</sup>",
+      "SO<sub>4</sub><sup>2−</sup>",
+      "Cl<sup>−</sup>"
+    ],
+    "answer": 0,
+    "explanation": "Ammonium is a group of atoms carrying a positive charge. The others are anions."
+  },
+  {
+    "id": "proto-textbook-098",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Molecules and Ions",
+    "difficulty": "Foundation",
+    "stem": "How many electrons are in the chloride ion, Cl<sup>−</sup>? (Cl: Z = 17)",
+    "choices": [
+      "18",
+      "17",
+      "16",
+      "19"
+    ],
+    "answer": 0,
+    "explanation": "Neutral Cl has 17 electrons; gaining one gives 18."
+  },
+  {
+    "id": "proto-textbook-099",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemical Formulas",
+    "difficulty": "Standard",
+    "stem": "What is the empirical formula of glucose, C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>?",
+    "choices": [
+      "CH<sub>2</sub>O",
+      "C<sub>2</sub>H<sub>4</sub>O<sub>2</sub>",
+      "C<sub>3</sub>H<sub>6</sub>O<sub>3</sub>",
+      "CHO"
+    ],
+    "answer": 0,
+    "explanation": "Divide every subscript by 6."
+  },
+  {
+    "id": "proto-textbook-100",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemical Formulas",
+    "difficulty": "Standard",
+    "stem": "What is the formula of the compound formed by Mg<sup>2+</sup> and PO<sub>4</sub><sup>3−</sup>?",
+    "choices": [
+      "Mg<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>",
+      "MgPO<sub>4</sub>",
+      "Mg<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub>",
+      "Mg<sub>3</sub>PO<sub>4</sub>"
+    ],
+    "answer": 0,
+    "explanation": "Three Mg<sup>2+</sup> (6+) balance two PO<sub>4</sub><sup>3−</sup> (6−)."
+  },
+  {
+    "id": "proto-textbook-101",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Chemical Formulas",
+    "difficulty": "Foundation",
+    "stem": "Which kind of formula shows how the atoms in a molecule are connected?",
+    "choices": [
+      "Structural formula",
+      "Empirical formula",
+      "Molecular formula",
+      "Formula unit"
+    ],
+    "answer": 0,
+    "explanation": "A structural formula draws the bonds between atoms."
+  },
+  {
+    "id": "proto-textbook-102",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Naming Compounds",
+    "difficulty": "Standard",
+    "stem": "What is the formula of sodium sulfite?",
+    "choices": [
+      "Na<sub>2</sub>SO<sub>3</sub>",
+      "Na<sub>2</sub>SO<sub>4</sub>",
+      "NaSO<sub>3</sub>",
+      "Na<sub>2</sub>S"
+    ],
+    "answer": 0,
+    "explanation": "Sulfite is SO<sub>3</sub><sup>2−</sup>; sulfate is SO<sub>4</sub><sup>2−</sup>. Two Na<sup>+</sup> balance one 2− ion."
+  },
+  {
+    "id": "proto-textbook-103",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Naming Compounds",
+    "difficulty": "Foundation",
+    "stem": "What is the name of CO?",
+    "choices": [
+      "Carbon monoxide",
+      "Carbon oxide",
+      "Carbon dioxide",
+      "Monocarbon oxide"
+    ],
+    "answer": 0,
+    "explanation": "The first element takes no mono- prefix; the second takes mono-, written “monoxide”."
+  },
+  {
+    "id": "proto-textbook-104",
+    "source": "textbook",
+    "domain": "General",
+    "topic": "Naming Compounds",
+    "difficulty": "Standard",
+    "stem": "What is the name of HBr dissolved in water?",
+    "choices": [
+      "Hydrobromic acid",
+      "Bromic acid",
+      "Hydrogen bromide acid",
+      "Bromous acid"
+    ],
+    "answer": 0,
+    "explanation": "Binary acids are named hydro-…-ic acid."
+  }
+]
