@@ -1,6 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import { SiteLayout } from "./components/SiteLayout";
+import Bank from "./pages/Bank";
 import Home from "./pages/Home";
+import QuestionPage from "./pages/QuestionPage";
+import { StoreProvider } from "./store";
 
 function Placeholder({ name }: { name: string }) {
   return (
@@ -18,26 +21,28 @@ function Placeholder({ name }: { name: string }) {
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<SiteLayout />}>
-        <Route index element={<Home />} />
-        <Route path="bank" element={<Placeholder name="Question bank" />} />
-        <Route path="q/:id" element={<Placeholder name="Question" />} />
-        <Route path="practice" element={<Placeholder name="Practice" />} />
-        <Route path="drill/:id" element={<Placeholder name="Drill" />} />
-        <Route path="drill/:id/results" element={<Placeholder name="Results" />} />
-        <Route path="progress" element={<Placeholder name="Progress" />} />
-        <Route path="review" element={<Placeholder name="Review" />} />
-        <Route path="notes" element={<Placeholder name="Notes" />} />
-        <Route path="notes/:slug" element={<Placeholder name="Note" />} />
-        <Route path="lab" element={<Placeholder name="Lab bench" />} />
-        <Route path="lab/:slug" element={<Placeholder name="Lab technique" />} />
-        <Route path="formulas" element={<Placeholder name="Formula sheet" />} />
-        <Route path="periodic-table" element={<Placeholder name="Periodic table" />} />
-        <Route path="guide" element={<Placeholder name="PNCO guide" />} />
-        <Route path="about" element={<Placeholder name="About" />} />
-        <Route path="*" element={<Placeholder name="Not found" />} />
-      </Route>
-    </Routes>
+    <StoreProvider>
+      <Routes>
+        <Route element={<SiteLayout />}>
+          <Route index element={<Home />} />
+          <Route path="bank" element={<Bank />} />
+          <Route path="q/:id" element={<QuestionPage />} />
+          <Route path="practice" element={<Placeholder name="Practice" />} />
+          <Route path="drill/:id" element={<Placeholder name="Drill" />} />
+          <Route path="drill/:id/results" element={<Placeholder name="Results" />} />
+          <Route path="progress" element={<Placeholder name="Progress" />} />
+          <Route path="review" element={<Placeholder name="Review" />} />
+          <Route path="notes" element={<Placeholder name="Notes" />} />
+          <Route path="notes/:slug" element={<Placeholder name="Note" />} />
+          <Route path="lab" element={<Placeholder name="Lab bench" />} />
+          <Route path="lab/:slug" element={<Placeholder name="Lab technique" />} />
+          <Route path="formulas" element={<Placeholder name="Formula sheet" />} />
+          <Route path="periodic-table" element={<Placeholder name="Periodic table" />} />
+          <Route path="guide" element={<Placeholder name="PNCO guide" />} />
+          <Route path="about" element={<Placeholder name="About" />} />
+          <Route path="*" element={<Placeholder name="Not found" />} />
+        </Route>
+      </Routes>
+    </StoreProvider>
   );
 }
