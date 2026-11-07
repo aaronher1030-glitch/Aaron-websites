@@ -1,0 +1,202 @@
+[
+  {
+    "id": "proto-practice-041",
+    "stem": "Consider 2Al(s) + 3Cl<sub>2</sub>(g) → 2AlCl<sub>3</sub>(s). If 10.0 g of Al (M = 26.98 g/mol) reacts with 35.0 g of Cl<sub>2</sub> (M = 70.90 g/mol), what mass of AlCl<sub>3</sub> (M = 133.34 g/mol) forms?",
+    "choices": [
+      "49.4 g",
+      "43.9 g",
+      "29.3 g",
+      "22.0 g"
+    ]
+  },
+  {
+    "id": "proto-practice-042",
+    "stem": "In the reaction 2Al(s) + 3Cl<sub>2</sub>(g) → 2AlCl<sub>3</sub>(s), 10.0 g of Al (M = 26.98 g/mol) reacts with 35.0 g of Cl<sub>2</sub> (M = 70.90 g/mol). Which reactant is limiting, and how much of the other remains?",
+    "choices": [
+      "Al is limiting; 1.11 g of Cl<sub>2</sub> remains.",
+      "Cl<sub>2</sub> is limiting; 1.11 g of Al remains.",
+      "Cl<sub>2</sub> is limiting; 5.56 g of Al remains.",
+      "Al is limiting; 8.32 g of Cl<sub>2</sub> remains."
+    ]
+  },
+  {
+    "id": "proto-practice-043",
+    "stem": "TiCl<sub>4</sub>(g) + 2Mg(l) → Ti(s) + 2MgCl<sub>2</sub>(l). Reacting 3.54 × 10<sup>7</sup> g of TiCl<sub>4</sub> (M = 189.7 g/mol) with 1.13 × 10<sup>7</sup> g of Mg (M = 24.31 g/mol) gives 7.81 × 10<sup>6</sup> g of Ti (M = 47.87 g/mol). What is the percent yield of Ti?",
+    "choices": [
+      "87.4%",
+      "74.2%",
+      "89.3%",
+      "95.1%"
+    ]
+  },
+  {
+    "id": "proto-practice-044",
+    "stem": "Balance a C<sub>4</sub>H<sub>10</sub>(g) + b O<sub>2</sub>(g) → c CO<sub>2</sub>(g) + d H<sub>2</sub>O(g) with the lowest whole-number coefficients. What is b?",
+    "choices": [
+      "13",
+      "26",
+      "6.5",
+      "10"
+    ]
+  },
+  {
+    "id": "proto-practice-045",
+    "stem": "CaC<sub>2</sub>(s) + 2H<sub>2</sub>O(l) → Ca(OH)<sub>2</sub>(s) + C<sub>2</sub>H<sub>2</sub>(g). How many grams of acetylene form from 100.0 g of CaC<sub>2</sub> that is 85.0% pure, with excess water? (M of CaC<sub>2</sub> = 64.10 g/mol; M of C<sub>2</sub>H<sub>2</sub> = 26.04 g/mol)",
+    "choices": [
+      "40.6 g",
+      "34.5 g",
+      "29.3 g",
+      "38.2 g"
+    ]
+  },
+  {
+    "id": "proto-practice-046",
+    "stem": "N<sub>2</sub>(g) + 3H<sub>2</sub>(g) → 2NH<sub>3</sub>(g). A mixture of 28.0 g N<sub>2</sub> and 9.00 g H<sub>2</sub> produces 25.5 g of NH<sub>3</sub>. What is the percent yield? (M of N<sub>2</sub> = 28.02, H<sub>2</sub> = 2.016, NH<sub>3</sub> = 17.03 g/mol)",
+    "choices": [
+      "75.0%",
+      "85.0%",
+      "90.0%",
+      "60.0%"
+    ]
+  },
+  {
+    "id": "proto-practice-047",
+    "stem": "Sulfuric acid is made in three steps: S<sub>8</sub> + 8O<sub>2</sub> → 8SO<sub>2</sub>; 2SO<sub>2</sub> + O<sub>2</sub> → 2SO<sub>3</sub>; SO<sub>3</sub> + H<sub>2</sub>O → H<sub>2</sub>SO<sub>4</sub>. Starting from 1.00 kg of sulfur (S<sub>8</sub>, M = 256.5 g/mol), what is the maximum mass of H<sub>2</sub>SO<sub>4</sub> (M = 98.08 g/mol) with a quantitative yield in every step?",
+    "choices": [
+      "3.06 kg",
+      "1.53 kg",
+      "6.12 kg",
+      "0.38 kg"
+    ]
+  },
+  {
+    "id": "proto-practice-048",
+    "stem": "2.00 mol of H<sub>2</sub> and 2.00 mol of O<sub>2</sub> are ignited: 2H<sub>2</sub>(g) + O<sub>2</sub>(g) → 2H<sub>2</sub>O(g). How many total moles of gas are in the container after the reaction is complete?",
+    "choices": [
+      "1.00 mol",
+      "2.00 mol",
+      "3.00 mol",
+      "2.50 mol"
+    ]
+  },
+  {
+    "id": "proto-practice-049",
+    "stem": "When 0.500 mol of a metal M reacts completely with excess nitrogen gas, 0.167 mol of a nitride M<sub>x</sub>N<sub>y</sub> forms. What is x?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "id": "proto-practice-050",
+    "stem": "Aspirin is made from salicylic acid (C<sub>7</sub>H<sub>6</sub>O<sub>3</sub>, M = 138.12 g/mol) and acetic anhydride (C<sub>4</sub>H<sub>6</sub>O<sub>3</sub>, M = 102.09 g/mol): C<sub>7</sub>H<sub>6</sub>O<sub>3</sub> + C<sub>4</sub>H<sub>6</sub>O<sub>3</sub> → C<sub>9</sub>H<sub>8</sub>O<sub>4</sub> + C<sub>2</sub>H<sub>4</sub>O<sub>2</sub> (aspirin, M = 180.16 g/mol). If 2.00 g of each reactant is used and the yield is 85.0%, what mass of aspirin is collected?",
+    "choices": [
+      "2.22 g",
+      "2.61 g",
+      "3.07 g",
+      "1.89 g"
+    ]
+  },
+  {
+    "id": "proto-textbook-001",
+    "stem": "Chemistry is often called the central science because it…",
+    "choices": [
+      "links physics and mathematics with biology, geology and medicine",
+      "deals only with laboratory experiments",
+      "is the oldest science",
+      "studies only living things"
+    ]
+  },
+  {
+    "id": "proto-textbook-002",
+    "stem": "Which process is used to make fertilizer from nitrogen in the air?",
+    "choices": [
+      "The Haber process",
+      "Nuclear fission",
+      "Fermentation",
+      "Fractional distillation of seawater"
+    ]
+  },
+  {
+    "id": "proto-textbook-003",
+    "stem": "Which statement about chemistry is correct?",
+    "choices": [
+      "It studies matter, its properties and the changes it undergoes.",
+      "It has no link to environmental issues.",
+      "It cannot be used to make predictions.",
+      "It studies only man-made materials."
+    ]
+  },
+  {
+    "id": "proto-textbook-004",
+    "stem": "Chlorofluorocarbons (CFCs) were phased out mainly because they…",
+    "choices": [
+      "damage the ozone layer",
+      "are radioactive",
+      "cause acid rain",
+      "explode at room temperature"
+    ]
+  },
+  {
+    "id": "proto-textbook-005",
+    "stem": "Which is a goal of green chemistry?",
+    "choices": [
+      "Avoiding all chemical reactions",
+      "Designing processes that reduce hazardous waste",
+      "Making reactions as fast as possible regardless of cost",
+      "Using only natural products"
+    ]
+  },
+  {
+    "id": "proto-textbook-006",
+    "stem": "In chemistry, the macroscopic level refers to…",
+    "choices": [
+      "individual atoms and molecules",
+      "only gases",
+      "what can be observed and measured directly",
+      "only the nucleus of an atom"
+    ]
+  },
+  {
+    "id": "proto-textbook-007",
+    "stem": "Which is a macroscopic observation?",
+    "choices": [
+      "Atoms rearrange.",
+      "Electrons move between orbitals.",
+      "A bond breaks in a molecule.",
+      "A solution turns blue."
+    ]
+  },
+  {
+    "id": "proto-textbook-008",
+    "stem": "Explaining why ice floats by describing how water molecules are arranged is an explanation at the…",
+    "choices": [
+      "microscopic (particle) level",
+      "statistical level",
+      "macroscopic level only",
+      "nuclear level"
+    ]
+  },
+  {
+    "id": "proto-textbook-009",
+    "stem": "“Mass is neither created nor destroyed in a chemical reaction” is the law of…",
+    "choices": [
+      "definite proportions",
+      "combining volumes",
+      "multiple proportions",
+      "conservation of mass"
+    ]
+  },
+  {
+    "id": "proto-textbook-010",
+    "stem": "In chemistry, a substance is…",
+    "choices": [
+      "only a solid",
+      "a mixture of elements",
+      "matter with a fixed composition and distinct properties",
+      "any material found in nature"
+    ]
+  }
+]

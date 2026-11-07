@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch4-7-lab-11",
+    "stem": "Precipitate Igniting Safety: When heating a wet filter paper containing a precipitate inside a porcelain crucible over a Bunsen burner, why must the crucible cover be left slightly ajar?",
+    "choices": [
+      "To allow carbon monoxide to enter and reduce the precipitate.",
+      "To permit steam escape and prevent sudden pressure buildup/spattering.",
+      "To prevent atmospheric oxygen from oxidizing the precipitate.",
+      "To maintain a constant temperature inside the crucible."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-12",
+    "stem": "Back-Titration Analysis: A $0.2000\\text{-g}$ sample of impure ammonium sulfate, $\\left( \\text{NH}_{4} \\right)_{2}\\text{SO}_{4}$, is boiled with $50.00\\text{~mL}$ of $0.1000\\text{~M~NaOH}$ to drive off all $\\text{NH}_{3}$ gas:\n\n$$\\left( \\text{NH}_{4} \\right)_{2}\\text{SO}_{4} + 2\\text{NaOH} \\rightarrow \\text{Na}_{2}\\text{SO}_{4} + 2\\text{NH}_{3}(g) + 2\\text{H}_{2}\\text{O}$$\n\nThe unreacted excess $\\text{NaOH}$ requires $21.40\\text{~mL}$ of $0.1000\\text{~M~HCl}$ for neutralization. Calculate the percentage purity of the ammonium sulfate sample. ($\\text{MW} = 132.14\\text{~g/mol}$)",
+    "choices": [
+      "$47.2\\%$",
+      "$64.8\\%$",
+      "$94.5\\%$",
+      "$98.1\\%$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-13",
+    "stem": "Water of Crystallization Determination: In a lab experiment, a student heats $2.497\\text{~g}$ of hydrated copper(II) sulfate ($\\text{CuSO}_{4} \\cdot x\\text{H}_{2}\\text{O}$) in a crucible until constant mass. The anhydrous $\\text{CuSO}_{4}$ remains as $1.596\\text{~g}$. What is the experimentally determined value of $x$? ($\\text{CuSO}_{4} = 159.6\\text{~g/mol}$, $\\text{H}_{2}\\text{O} = 18.02\\text{~g/mol}$)",
+    "choices": [
+      "2",
+      "3",
+      "5",
+      "7"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-14",
+    "stem": "Water Vapor Correction: A sample of oxygen gas is collected over water in a gas-measuring eudiometer tube at $23^{\\circ}\\text{C}$ and a barometric pressure of $754.0\\text{~mmHg}$. The atmospheric pressure matches the internal gas height. If the vapor pressure of water at $23^{\\circ}\\text{C}$ is $21.1\\text{~mmHg}$, what is the dry pressure of the oxygen gas?",
+    "choices": [
+      "$732.9\\text{~mmHg}$",
+      "$754.0\\text{~mmHg}$",
+      "$775.1\\text{~mmHg}$",
+      "$760.0\\text{~mmHg}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-15",
+    "stem": "Manometer Level Difference: An open-end liquid manometer filled with mercury ($\\rho = 13.6\\text{~g/cm}^{3}$) is connected to a gas bulb. The mercury level in the arm open to the atmosphere is $45\\text{~mm}$ lower than the arm connected to the gas bulb. If atmospheric pressure is $755\\text{~mmHg}$, what is the absolute gas pressure inside the bulb?",
+    "choices": [
+      "$710\\text{~mmHg}$",
+      "$755\\text{~mmHg}$",
+      "$800\\text{~mmHg}$",
+      "$845\\text{~mmHg}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-16",
+    "stem": "Dumas Method for Molar Mass: In a Dumas method experiment, a volatile liquid vaporizes at ${99.0}^{\\circ}\\text{C}$ in a $250.0\\text{-mL}$ flask at an atmospheric pressure of $0.985\\text{~atm}$. The mass of the condensed vapor inside the flask is $0.684\\text{~g}$. What is the molar mass of the compound?",
+    "choices": [
+      "$46.1\\text{~g/mol}$",
+      "$84.2\\text{~g/mol}$",
+      "$114.7\\text{~g/mol}$",
+      "$142.3\\text{~g/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-17",
+    "stem": "Victor Meyer Method Error: In the Victor Meyer apparatus for molar mass determination of volatile liquids, if a few drops of the sample fail to vaporize completely inside the heated inner tube, how does this affect the calculated molar mass?",
+    "choices": [
+      "The calculated molar mass will be higher than the true value.",
+      "The calculated molar mass will be lower than the true value.",
+      "The calculated molar mass will remain unaffected.",
+      "The gas volume displaced will be artificially increased."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-18",
+    "stem": "Eudiometer Height Adjustment: When measuring the volume of hydrogen gas collected over water in a eudiometer tube, the water level inside the tube is $6.8\\text{~cm}$ higher than the water level outside in the beaker. If $13.6\\text{~mm~H}_{2}\\text{O} = 1.00\\text{~mm~Hg}$, what correction must be applied to the barometric pressure to find the total gas pressure inside the tube?",
+    "choices": [
+      "Add $5.0\\text{~mmHg}$",
+      "Subtract $5.0\\text{~mmHg}$",
+      "Add $6.8\\text{~mmHg}$",
+      "Subtract $6.8\\text{~mmHg}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-19",
+    "stem": "Gas Effusion Apparatus Calibration: A student uses a Schloesing effusion apparatus to measure the effusion rate of an unknown gas relative to argon ($\\text{MW} = 39.95\\text{~g/mol}$). The argon gas takes $48.2\\text{~s}$ to effuse through a microscopic orifice, while the same volume of unknown gas takes $64.1\\text{~s}$ under identical temperature and pressure. What is the molar mass of the unknown gas?",
+    "choices": [
+      "$22.6\\text{~g/mol}$",
+      "$53.1\\text{~g/mol}$",
+      "$70.6\\text{~g/mol}$",
+      "$88.3\\text{~g/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-20",
+    "stem": "Gas Generation Safety: When producing acetylene ($\\text{C}_{2}\\text{H}_{2}$) gas in a lab setting by adding water to calcium carbide ($\\text{CaC}_{2}$), why is a gas washing bottle containing acidified copper(II) sulfate ($\\text{CuSO}_{4}$) solution placed in the gas collection line?",
+    "choices": [
+      "To absorb unreacted water vapor.",
+      "To remove phosphine ($\\text{PH}_{3}$) and hydrogen sulfide ($\\text{H}_{2}\\text{S}$) impurities.",
+      "To catalyze the combustion of acetylene.",
+      "To act as a liquid seal to prevent back-suction of oxygen."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-21",
+    "stem": "Gas Syringe Reading: A gas syringe is used to record gas evolution kinetics. At $25^{\\circ}\\text{C}$, the friction of the syringe plunger introduces a small resistive force corresponding to $+ 15.0\\text{~Torr}$ extra pressure inside the syringe. If the barometric pressure is $750.0\\text{~Torr}$, what is the true gas pressure driving the expansion?",
+    "choices": [
+      "$735.0\\text{~Torr}$",
+      "$750.0\\text{~Torr}$",
+      "$765.0\\text{~Torr}$",
+      "$780.0\\text{~Torr}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-22",
+    "stem": "Ideal vs Real Gas Lab Deviation: A laboratory gas cylinder filled with carbon dioxide ($\\text{CO}_{2}$) at high pressure ($50\\text{~atm}$) is opened slightly, releasing gas into a ambient plastic vessel. The temperature of the released gas near the nozzle drops noticeably. This cooling effect (Joule-Thomson expansion) occurs primarily because:",
+    "choices": [
+      "The gas does work overcoming attractive intermolecular forces (Van der Waals $a$ constant).",
+      "The molecular volume of the gas molecules expands rapidly (Van der Waals $b$ constant).",
+      "Kinetic energy is converted directly into potential energy of covalent bonds.",
+      "Air surrounding the nozzle absorbs heat from the expanding gas."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-23",
+    "stem": "Stoichiometry of Gas Generation: A student decomposes a $0.400\\text{-g}$ mixture of $\\text{KClO}_{3}$ and $\\text{KCl}$ in the presence of $\\text{MnO}_{2}$ catalyst by heating. The evolved $\\text{O}_{2}$ gas is collected, occupying $68.5\\text{~mL}$ at $22^{\\circ}\\text{C}$ and $740.0\\text{~mmHg}$ (dry). What is the percentage of $\\text{KClO}_{3}$ ($\\text{MW} = 122.55\\text{~g/mol}$) in the initial sample?",
+    "choices": [
+      "$42.5\\%$",
+      "$56.3\\%$",
+      "$67.1\\%$",
+      "$84.2\\%$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-24",
+    "stem": "Drying Agents for Gases: Which of the following drying agents is unsuitable for drying gaseous ammonia ($\\text{NH}_{3}$) in a laboratory purification train?",
+    "choices": [
+      "Quicklime ($\\text{CaO}$)",
+      "Solid potassium hydroxide ($\\text{KOH}$)",
+      "Anhydrous calcium chloride ($\\text{CaCl}_{2}$)",
+      "Soda lime ($\\text{NaOH} + \\text{CaO}$)"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-25",
+    "stem": "Barometer Temperature Correction: A mercury barometer reads $762.4\\text{~mm}$ at a room temperature of $28^{\\circ}\\text{C}$. Given that the thermal expansion coefficient of mercury is $\\beta = 1.82 \\times 10^{- 4}\\text{~K}^{- 1}$, what is the corrected barometric height at standard temperature ($0^{\\circ}\\text{C}$)?",
+    "choices": [
+      "$758.5\\text{~mm}$",
+      "$760.0\\text{~mm}$",
+      "$762.4\\text{~mm}$",
+      "$766.3\\text{~mm}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-26",
+    "stem": "Gas Leak Detection Technique: In high-vacuum laboratory systems containing helium gas, small pinhole leaks are localized using a mass spectrometer leak detector (MSLD). Why is helium chosen as the tracer gas?",
+    "choices": [
+      "Helium has a high polarizability making it easy to ionize.",
+      "Helium has a small atomic radius, low background atmospheric concentration, and fast effusion rate.",
+      "Helium reacts rapidly with air to produce visible optical fluorescence.",
+      "Helium condenses easily at ambient temperatures."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-27",
+    "stem": "Coffee-Cup Calorimeter Heat Capacity: To measure the heat capacity of a polystyrene coffee-cup calorimeter, $50.0\\text{~mL}$ of hot water at ${60.0}^{\\circ}\\text{C}$ is added to $50.0\\text{~mL}$ of cold water at ${20.0}^{\\circ}\\text{C}$ inside the cup. The final equilibrium temperature is ${38.5}^{\\circ}\\text{C}$. Taking the specific heat of water as $4.184\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$ and density as $1.00\\text{~g/mL}$, what is the heat capacity of the calorimeter ($C_{cal}$)?",
+    "choices": [
+      "$15.7\\text{~J/}^{\\circ}\\text{C}$",
+      "$33.9\\text{~J/}^{\\circ}\\text{C}$",
+      "$62.8\\text{~J/}^{\\circ}\\text{C}$",
+      "$104.6\\text{~J/}^{\\circ}\\text{C}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-28",
+    "stem": "Heat of Solution Measurement: In a coffee-cup calorimeter ($C_{cal} = 25.0\\text{~J/}^{\\circ}\\text{C}$), $8.00\\text{~g}$ of ammonium nitrate ($\\text{NH}_{4}\\text{NO}_{3}$, $\\text{MW} = 80.04\\text{~g/mol}$) is dissolved in $100.0\\text{~g}$ of distilled water, both initially at ${22.0}^{\\circ}\\text{C}$. The temperature drops to ${16.5}^{\\circ}\\text{C}$. Assuming the specific heat of the solution is $4.18\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$, calculate the molar enthalpy of solution ($\\Delta H_{soln}$) for $\\text{NH}_{4}\\text{NO}_{3}$.",
+    "choices": [
+      "$+ 26.2\\text{~kJ/mol}$",
+      "$- 26.2\\text{~kJ/mol}$",
+      "$+ 18.4\\text{~kJ/mol}$",
+      "$+ 31.5\\text{~kJ/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-29",
+    "stem": "Bomb Calorimeter Calibration: Benzoic acid ($\\text{C}_{7}\\text{H}_{6}\\text{O}_{2}$) is used as a standard for calibrating bomb calorimeters. Its heat of combustion is known to be $- 32.27\\text{~kJ/g}$. When $1.152\\text{~g}$ of benzoic acid is burned in excess oxygen in a bomb calorimeter, the temperature rises by ${3.125}^{\\circ}\\text{C}$. What is the heat capacity of the calorimeter assembly ($C_{cal}$)?",
+    "choices": [
+      "$11.90\\text{~kJ/}^{\\circ}\\text{C}$",
+      "$14.52\\text{~kJ/}^{\\circ}\\text{C}$",
+      "$8.65\\text{~kJ/}^{\\circ}\\text{C}$",
+      "$37.18\\text{~kJ/}^{\\circ}\\text{C}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-30",
+    "stem": "Enthalpy of Neutralization (Polyprotic Acid): When $50.0\\text{~mL}$ of $1.00\\text{~M}\\text{~H}_{2}\\text{SO}_{4}$ is reacted with $100.0\\text{~mL}$ of $1.00\\text{~M~NaOH}$ in a calorimeter, the heat released is $5.71\\text{~kJ}$. What is the molar enthalpy of neutralization expressed per mole of water formed?",
+    "choices": [
+      "$- 28.55\\text{~kJ/mol}$",
+      "$- 57.1\\text{~kJ/mol}$",
+      "$- 114.2\\text{~kJ/mol}$",
+      "$- 171.3\\text{~kJ/mol}$"
+    ]
+  }
+]

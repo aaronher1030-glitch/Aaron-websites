@@ -1,0 +1,202 @@
+[
+  {
+    "id": "proto-mixed-041",
+    "stem": "What is the coordination number of Co in [Co(en)<sub>2</sub>Cl<sub>2</sub>]<sup>+</sup>? (en = ethylenediamine, bidentate)",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "id": "proto-mixed-042",
+    "stem": "How many atoms belong to one face-centred cubic unit cell?",
+    "choices": [
+      "1",
+      "2",
+      "4",
+      "6"
+    ]
+  },
+  {
+    "id": "proto-mixed-043",
+    "stem": "What is the IUPAC name of CH<sub>3</sub>CH(CH<sub>3</sub>)CH<sub>2</sub>CH<sub>3</sub>?",
+    "choices": [
+      "2-methylbutane",
+      "3-methylbutane",
+      "isopentene",
+      "2-ethylpropane"
+    ]
+  },
+  {
+    "id": "proto-mixed-044",
+    "stem": "How many stereoisomers does 2,3-dibromopentane have?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ]
+  },
+  {
+    "id": "proto-mixed-045",
+    "stem": "Which pair reacts in a [4+2] cycloaddition (Diels–Alder) to give a cyclohexene?",
+    "choices": [
+      "1,3-butadiene and ethene",
+      "ethene and ethyne",
+      "1,3-butadiene and Br<sub>2</sub>",
+      "benzene and HBr"
+    ]
+  },
+  {
+    "id": "proto-mixed-046",
+    "stem": "A compound has a strong IR band near 1715 cm<sup>−1</sup> and no broad band near 3300 cm<sup>−1</sup>. It is most likely…",
+    "choices": [
+      "an alcohol",
+      "a ketone",
+      "a carboxylic acid",
+      "an alkane"
+    ]
+  },
+  {
+    "id": "proto-mixed-047",
+    "stem": "In the <sup>1</sup>H NMR spectrum of ethanol, the CH<sub>3</sub> signal appears as a…",
+    "choices": [
+      "singlet",
+      "doublet",
+      "triplet",
+      "quartet"
+    ]
+  },
+  {
+    "id": "proto-mixed-048",
+    "stem": "A 2.0 × 10<sup>−4</sup> M solution in a 1.00 cm cell has an absorbance of 0.50. What is its molar absorptivity?",
+    "choices": [
+      "4.0 × 10<sup>−4</sup> L mol<sup>−1</sup> cm<sup>−1</sup>",
+      "2.5 × 10<sup>3</sup> L mol<sup>−1</sup> cm<sup>−1</sup>",
+      "1.0 × 10<sup>−4</sup> L mol<sup>−1</sup> cm<sup>−1</sup>",
+      "1.0 × 10<sup>3</sup> L mol<sup>−1</sup> cm<sup>−1</sup>"
+    ]
+  },
+  {
+    "id": "proto-mixed-049",
+    "stem": "A 50.0 mL water sample needs 12.5 mL of 0.0100 M EDTA to reach the endpoint. EDTA binds metal ions 1:1. What is the total metal ion concentration?",
+    "choices": [
+      "2.50 × 10<sup>−3</sup> M",
+      "1.25 × 10<sup>−3</sup> M",
+      "4.00 × 10<sup>−2</sup> M",
+      "2.50 × 10<sup>−2</sup> M"
+    ]
+  },
+  {
+    "id": "proto-mixed-050",
+    "stem": "MnO<sub>4</sub><sup>−</sup> + 5Fe<sup>2+</sup> + 8H<sup>+</sup> → Mn<sup>2+</sup> + 5Fe<sup>3+</sup> + 4H<sub>2</sub>O. If 20.0 mL of 0.0200 M KMnO<sub>4</sub> titrates a Fe<sup>2+</sup> sample, how many moles of Fe<sup>2+</sup> were present?",
+    "choices": [
+      "4.00 × 10<sup>−4</sup>",
+      "8.00 × 10<sup>−4</sup>",
+      "2.00 × 10<sup>−3</sup>",
+      "1.00 × 10<sup>−2</sup>"
+    ]
+  },
+  {
+    "id": "proto-mixed-051",
+    "stem": "What is the density of NH<sub>3</sub> gas at 27 °C and 1.00 atm? (R = 0.0821 L·atm/mol·K; M = 17.03 g/mol)",
+    "choices": [
+      "0.691 g/L",
+      "1.45 g/L",
+      "0.0587 g/L",
+      "17.0 g/L"
+    ]
+  },
+  {
+    "id": "proto-mixed-052",
+    "stem": "A 10.0 L flask holds 2.00 mol He and 3.00 mol Ne at 300 K. What is the partial pressure of Ne? (R = 0.0821 L·atm/mol·K)",
+    "choices": [
+      "4.93 atm",
+      "7.39 atm",
+      "12.3 atm",
+      "2.46 atm"
+    ]
+  },
+  {
+    "id": "proto-mixed-053",
+    "stem": "How many times faster does H<sub>2</sub> effuse than O<sub>2</sub> at the same temperature?",
+    "choices": [
+      "2 times",
+      "4 times",
+      "8 times",
+      "16 times"
+    ]
+  },
+  {
+    "id": "proto-mixed-054",
+    "stem": "On a phase diagram, the point where solid, liquid and gas coexist in equilibrium is the…",
+    "choices": [
+      "critical point",
+      "triple point",
+      "normal boiling point",
+      "sublimation point"
+    ]
+  },
+  {
+    "id": "proto-mixed-055",
+    "stem": "A metal crystallizes in a body-centred cubic lattice. How many atoms are in the unit cell, and what is the coordination number?",
+    "choices": [
+      "2 atoms, coordination number 8",
+      "4 atoms, coordination number 12",
+      "1 atom, coordination number 6",
+      "2 atoms, coordination number 12"
+    ]
+  },
+  {
+    "id": "proto-mixed-056",
+    "stem": "What is the ground-state electron configuration of Fe<sup>2+</sup>? (Fe: Z = 26)",
+    "choices": [
+      "[Ar] 3d<sup>6</sup>",
+      "[Ar] 4s<sup>2</sup>3d<sup>4</sup>",
+      "[Ar] 3d<sup>5</sup>",
+      "[Ar] 4s<sup>1</sup>3d<sup>5</sup>"
+    ]
+  },
+  {
+    "id": "proto-mixed-057",
+    "stem": "How many unpaired electrons does a ground-state nitrogen atom have?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "id": "proto-mixed-058",
+    "stem": "What is the energy of one photon of wavelength 500 nm? (h = 6.626 × 10<sup>−34</sup> J·s; c = 3.00 × 10<sup>8</sup> m/s)",
+    "choices": [
+      "3.98 × 10<sup>−19</sup> J",
+      "3.98 × 10<sup>−28</sup> J",
+      "1.99 × 10<sup>−19</sup> J",
+      "6.00 × 10<sup>14</sup> J"
+    ]
+  },
+  {
+    "id": "proto-mixed-059",
+    "stem": "Which of these atoms has the most negative electron affinity?",
+    "choices": [
+      "F",
+      "Cl",
+      "Br",
+      "Ne"
+    ]
+  },
+  {
+    "id": "proto-mixed-060",
+    "stem": "Which compound has the highest melting point?",
+    "choices": [
+      "NaCl",
+      "MgO",
+      "KBr",
+      "CsI"
+    ]
+  }
+]

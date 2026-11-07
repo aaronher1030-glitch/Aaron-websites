@@ -17,6 +17,7 @@
     "content:merge": "node content/scripts/merge.mjs",
     "content:validate": "node content/scripts/validate.mjs",
     "content:batches": "node content/scripts/make-batches.mjs",
+    "content:adjudicate": "node content/scripts/make-adjudication.mjs",
     "content:apply": "node content/scripts/apply-verification.mjs",
     "seo": "node scripts/generate-seo.mjs",
     "deploy": "npm run build && npx --yes wrangler pages deploy dist --project-name chembank"

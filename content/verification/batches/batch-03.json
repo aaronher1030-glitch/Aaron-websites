@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch1-3-theory-41",
+    "stem": "Consider the reaction:\n\n$$2\\text{Al}(s) + 3\\text{Cl}_{2}(g) \\rightarrow 2\\text{AlCl}_{3}(s)$$\n\nIf $10.0\\text{~g}$ of $\\text{Al}$ ($M = 26.98\\text{~g/mol}$) reacts with $35.0\\text{~g}$ of $\\text{Cl}_{2}$ ($M = 70.90\\text{~g/mol}$), what mass of $\\text{AlCl}_{3}$ ($M = 133.34\\text{~g/mol}$) is formed?",
+    "choices": [
+      "$49.4\\text{~g}$",
+      "$43.9\\text{~g}$",
+      "$29.3\\text{~g}$",
+      "$22.0\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-42",
+    "stem": "In the reaction given in Question 41, which reactant is the limiting reagent, and how much excess reagent remains unreacted?",
+    "choices": [
+      "$\\text{Al}$ is limiting; $1.11\\text{~g}$ of $\\text{Cl}_{2}$ remains.",
+      "$\\text{Cl}_{2}$ is limiting; $1.11\\text{~g}$ of $\\text{Al}$ remains.",
+      "$\\text{Cl}_{2}$ is limiting; $5.56\\text{~g}$ of $\\text{Al}$ remains.",
+      "$\\text{Al}$ is limiting; $8.32\\text{~g}$ of $\\text{Cl}_{2}$ remains."
+    ]
+  },
+  {
+    "id": "ch1-3-theory-43",
+    "stem": "Titanium metal is produced by the reaction:\n\n$$\\text{TiCl}_{4}(g) + 2\\text{Mg}(l) \\rightarrow \\text{Ti}(s) + 2\\text{MgCl}_{2}(l)$$\n\nWhen $3.54 \\times 10^{7}\\text{~g}$ of $\\text{TiCl}_{4}$ ($M = 189.7\\text{~g/mol}$) reacts with $1.13 \\times 10^{7}\\text{~g}$ of $\\text{Mg}$ ($M = 24.31\\text{~g/mol}$), $7.81 \\times 10^{6}\\text{~g}$ of $\\text{Ti}$ ($M = 47.87\\text{~g/mol}$) is isolated. What is the percentage yield of $\\text{Ti}$?",
+    "choices": [
+      "$87.4\\%$",
+      "$74.2\\%$",
+      "$89.3\\%$",
+      "$95.1\\%$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-44",
+    "stem": "Balance the following combustion equation with lowest whole-number coefficients:\n\n$$a\\,\\text{C}_{4}\\text{H}_{10}(g) + b\\,\\text{O}_{2}(g) \\rightarrow c\\,\\text{CO}_{2}(g) + d\\,\\text{H}_{2}\\text{O}(g)$$\n\nWhat is the value of coefficient $b$?",
+    "choices": [
+      "13",
+      "26",
+      "6.5",
+      "10"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-45",
+    "stem": "Calcium carbide ($\\text{CaC}_{2}$) reacts with water to produce acetylene gas ($\\text{C}_{2}\\text{H}_{2}$):\n\n$$\\text{CaC}_{2}(s) + 2\\text{H}_{2}\\text{O}(l) \\rightarrow \\text{Ca(OH)}_{2}(s) + \\text{C}_{2}\\text{H}_{2}(g)$$\n\nHow many grams of acetylene are produced when $100.0\\text{~g}$ of $\\text{CaC}_{2}$ ($85.0\\%$ pure by mass) reacts with excess water? ($M_{\\text{CaC}_{2}} = 64.10\\text{~g/mol}$, $M_{\\text{C}_{2}\\text{H}_{2}} = 26.04\\text{~g/mol}$)",
+    "choices": [
+      "$40.6\\text{~g}$",
+      "$34.5\\text{~g}$",
+      "$29.3\\text{~g}$",
+      "$38.2\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-46",
+    "stem": "Ammonia is produced industrially via the Haber-Bosch process:\n\n$$\\text{N}_{2}(g) + 3\\text{H}_{2}(g) \\rightarrow 2\\text{NH}_{3}(g)$$\n\nIf a mixture of $28.0\\text{~g}$ of $\\text{N}_{2}$ and $9.00\\text{~g}$ of $\\text{H}_{2}$ produces $25.5\\text{~g}$ of $\\text{NH}_{3}$, what is the percent yield? ($M_{\\text{N}_{2}} = 28.02\\text{~g/mol}$, $M_{\\text{H}_{2}} = 2.016\\text{~g/mol}$, $M_{\\text{NH}_{3}} = 17.03\\text{~g/mol}$)",
+    "choices": [
+      "$75.0\\%$",
+      "$85.0\\%$",
+      "$90.0\\%$",
+      "$60.0\\%$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-47",
+    "stem": "Consider the multi-step synthesis of sulfuric acid:\n\n$$\\begin{aligned}\n\\text{S}_{8} + 8\\text{O}_{2} & \\rightarrow 8\\text{SO}_{2} \\\\\n2\\text{SO}_{2} + \\text{O}_{2} & \\rightarrow 2\\text{SO}_{3} \\\\\n\\text{SO}_{3} + \\text{H}_{2}\\text{O} & \\rightarrow \\text{H}_{2}\\text{SO}_{4}\n\\end{aligned}$$\n\nStarting with $1.00\\text{~kg}$ of sulfur ($\\text{S}_{8}$, $M = 256.5\\text{~g/mol}$), what is the maximum theoretical mass of $\\text{H}_{2}\\text{SO}_{4}$ ($M = 98.08\\text{~g/mol}$) that can be produced assuming quantitative yield in all steps?",
+    "choices": [
+      "$3.06\\text{~kg}$",
+      "$1.53\\text{~kg}$",
+      "$6.12\\text{~kg}$",
+      "$0.38\\text{~kg}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-48",
+    "stem": "A mixture of $2.00\\text{~mol}$ of $\\text{H}_{2}$ and $2.00\\text{~mol}$ of $\\text{O}_{2}$ is ignited to form water:\n\n$$2\\text{H}_{2}(g) + \\text{O}_{2}(g) \\rightarrow 2\\text{H}_{2}\\text{O}(g)$$\n\nHow many total moles of gas remain in the container after the reaction goes to completion?",
+    "choices": [
+      "$1.00\\text{~mol}$",
+      "$2.00\\text{~mol}$",
+      "$3.00\\text{~mol}$",
+      "$2.50\\text{~mol}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-49",
+    "stem": "When $0.500\\text{~mol}$ of a metal $\\text{M}$ reacts completely with excess nitrogen gas, $0.167\\text{~mol}$ of a nitride compound $\\text{M}_{x}\\text{N}_{y}$ is produced. What is the value of $x$?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-50",
+    "stem": "Aspirin ($\\text{C}_{9}\\text{H}_{8}\\text{O}_{4}$, $M = 180.16\\text{~g/mol}$) is synthesized by reacting salicylic acid ($\\text{C}_{7}\\text{H}_{6}\\text{O}_{3}$, $M = 138.12\\text{~g/mol}$) with acetic anhydride ($\\text{C}_{4}\\text{H}_{6}\\text{O}_{3}$, $M = 102.09\\text{~g/mol}$):\n\n$$\\text{C}_{7}\\text{H}_{6}\\text{O}_{3} + \\text{C}_{4}\\text{H}_{6}\\text{O}_{3} \\rightarrow \\text{C}_{9}\\text{H}_{8}\\text{O}_{4} + \\text{C}_{2}\\text{H}_{4}\\text{O}_{2}$$\n\nIf $2.00\\text{~g}$ of salicylic acid reacts with $2.00\\text{~g}$ of acetic anhydride with an $85.0\\%$ yield, what mass of aspirin is collected?",
+    "choices": [
+      "$2.22\\text{~g}$",
+      "$2.61\\text{~g}$",
+      "$3.07\\text{~g}$",
+      "$1.89\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-01",
+    "stem": "A student uses an analytical balance to measure the mass of a clean, dry porcelain crucible. The recorded masses from three trial weighing are $15.4321\\text{~g}$, $15.4323\\text{~g}$, and $15.4320\\text{~g}$. The true mass of the crucible is $15.4500\\text{~g}$. How would you describe the student's measurements?",
+    "choices": [
+      "Both precise and accurate",
+      "Precise but not accurate",
+      "Accurate but not precise",
+      "Neither precise nor accurate"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-02",
+    "stem": "When measuring liquid volume using a volumetric pipet, which technique is recommended to ensure correct volume delivery?",
+    "choices": [
+      "Blow out the small remaining drop at the tip using a rubber bulb.",
+      "Touch the tip of the pipet to the inner wall of the receiving vessel after drainage stops.",
+      "Rinse the inside of the pipet with distilled water right before drawing the liquid sample.",
+      "Read the liquid volume from the top of the convex meniscus for aqueous solutions."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-03",
+    "stem": "A student determines the density of an irregularly shaped solid by water displacement. If air bubbles remain trapped on the surface of the submerged solid, how will this systematic error affect the calculated density?",
+    "choices": [
+      "The calculated density will be higher than the true value.",
+      "The calculated density will be lower than the true value.",
+      "The calculated density will remain unaffected.",
+      "The density will be zero because the volume measurement is invalid."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-04",
+    "stem": "A picnometer (density bottle) has a mass of $25.000\\text{~g}$ empty. When filled with water at $20^{\\circ}\\text{C}$ ($d = 0.9982\\text{~g/cm}^{3}$), the total mass is $50.000\\text{~g}$. When filled with an unknown oil, the total mass is $46.250\\text{~g}$. What is the density of the oil?",
+    "choices": [
+      "$0.8483\\text{~g/cm}^{3}$",
+      "$0.8500\\text{~g/cm}^{3}$",
+      "$0.9250\\text{~g/cm}^{3}$",
+      "$0.8125\\text{~g/cm}^{3}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-05",
+    "stem": "Which piece of volumetric glassware delivers a variable volume of liquid with the highest precision in a gravimetric preparation?",
+    "choices": [
+      "Volumetric flask",
+      "Graduated cylinder",
+      "Buret",
+      "Beaker"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-06",
+    "stem": "A solid sample is weighed using a top-loading balance that reads to $\\pm 0.01\\text{~g}$. If the mass of a weighing boat is $1.25\\text{~g}$ and the mass of the boat plus sample is $4.78\\text{~g}$, what is the absolute uncertainty in the net mass of the sample?",
+    "choices": [
+      "$\\pm 0.005\\text{~g}$",
+      "$\\pm 0.01\\text{~g}$",
+      "$\\pm 0.02\\text{~g}$",
+      "$\\pm 0.014\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-07",
+    "stem": "A student calibrated a $10.00\\text{~mL}$ volumetric pipet by measuring the mass of distilled water delivered at $25^{\\circ}\\text{C}$ ($d_{\\text{water}} = 0.99707\\text{~g/mL}$). The average mass delivered across 4 trials was $9.9231\\text{~g}$. What is the true volume delivered by the pipet?",
+    "choices": [
+      "$9.9522\\text{~mL}$",
+      "$9.8940\\text{~mL}$",
+      "$10.000\\text{~mL}$",
+      "$9.9231\\text{~mL}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-08",
+    "stem": "During a density laboratory experiment, a student neglects to dry the outside of a solid metal cylinder after retrieving it from a water bath. How will this error affect the calculated volume and calculated density of the cylinder?",
+    "choices": [
+      "Calculated volume increases; calculated density decreases.",
+      "Calculated volume decreases; calculated density increases.",
+      "Calculated volume is unaffected; calculated density decreases.",
+      "Calculated volume increases; calculated density increases."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-09",
+    "stem": "Which safety device should be used immediately if a chemical splash enters a person's eyes in the laboratory?",
+    "choices": [
+      "Safety shower",
+      "Eyewash station",
+      "Fume hood",
+      "Fire blanket"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-10",
+    "stem": "A temperature sensor calibrated in Kelvin records $298.15\\text{~K}$. What is this temperature on the Fahrenheit ($_{}^{\\circ}\\text{F}$) scale?",
+    "choices": [
+      "${77.0}^{\\circ}\\text{F}$",
+      "${25.0}^{\\circ}\\text{F}$",
+      "${98.6}^{\\circ}\\text{F}$",
+      "${68.0}^{\\circ}\\text{F}$"
+    ]
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "proto-practice-001",
+    "stem": "A spherical gold nanoparticle has a radius of 2.50 nm. Gold has a density of 19.3 g/cm<sup>3</sup> and a molar mass of 197.0 g/mol. How many gold atoms are in one nanoparticle?",
+    "choices": [
+      "1.93 × 10<sup>3</sup>",
+      "3.86 × 10<sup>3</sup>",
+      "3.84 × 10<sup>4</sup>",
+      "1.92 × 10<sup>4</sup>"
+    ]
+  },
+  {
+    "id": "proto-practice-002",
+    "stem": "The speed of light is 3.00 × 10<sup>8</sup> m/s. Express this speed in furlongs per fortnight. (1 furlong = 201.168 m; 1 fortnight = 14 days)",
+    "choices": [
+      "1.80 × 10<sup>12</sup> furlongs/fortnight",
+      "1.80 × 10<sup>14</sup> furlongs/fortnight",
+      "9.01 × 10<sup>11</sup> furlongs/fortnight",
+      "1.80 × 10<sup>9</sup> furlongs/fortnight"
+    ]
+  },
+  {
+    "id": "proto-practice-003",
+    "stem": "Which of the following statements describes an intensive physical property?",
+    "choices": [
+      "The total heat capacity of a sample of water is 418.4 J/K.",
+      "A sample of copper has a volume of 12.5 mL.",
+      "The standard boiling point of ethanol is 78.37 °C.",
+      "The mass of a gold bar is 1.00 kg."
+    ]
+  },
+  {
+    "id": "proto-practice-004",
+    "stem": "Evaluate (14.285 − 0.0821) × 0.05200 ÷ (3.14159 + 0.002) and give the answer to the appropriate number of significant figures.",
+    "choices": [
+      "0.2351",
+      "0.235",
+      "0.23497",
+      "0.2350"
+    ]
+  },
+  {
+    "id": "proto-practice-005",
+    "stem": "A cylindrical cork (density 0.240 g/cm<sup>3</sup>, length 10.0 cm, cross-sectional area 1.50 cm<sup>2</sup>) floats vertically in a fluid of density 1.20 g/cm<sup>3</sup>. How much of its length is below the surface?",
+    "choices": [
+      "2.00 cm",
+      "4.00 cm",
+      "6.00 cm",
+      "8.00 cm"
+    ]
+  },
+  {
+    "id": "proto-practice-006",
+    "stem": "A container weighs 22.10 g empty, 45.50 g filled with water (0.998 g/mL at 20 °C) and 51.20 g filled with an unknown liquid at the same temperature. What is the density of the unknown liquid?",
+    "choices": [
+      "1.24 g/mL",
+      "1.20 g/mL",
+      "1.13 g/mL",
+      "0.806 g/mL"
+    ]
+  },
+  {
+    "id": "proto-practice-007",
+    "stem": "Which of the following processes is a chemical change?",
+    "choices": [
+      "Sublimation of dry ice (CO<sub>2</sub>)",
+      "Dissolving sodium chloride in water",
+      "Tarnishing of silver cutlery in air",
+      "Fractional distillation of liquid air"
+    ]
+  },
+  {
+    "id": "proto-practice-008",
+    "stem": "A new temperature scale, °X, is related to Celsius by °X = 1.50(°C) + 20.0. What is absolute zero (−273.15 °C) on the °X scale?",
+    "choices": [
+      "−389.73 °X",
+      "−429.73 °X",
+      "−369.73 °X",
+      "−253.15 °X"
+    ]
+  },
+  {
+    "id": "proto-practice-009",
+    "stem": "Homogeneous mixtures differ from pure substances because homogeneous mixtures:",
+    "choices": [
+      "can be separated into simpler substances by physical methods.",
+      "have a fixed composition regardless of preparation.",
+      "consist of only one type of atom.",
+      "cannot exist in the gas phase."
+    ]
+  },
+  {
+    "id": "proto-practice-010",
+    "stem": "A sheet of platinum foil measures 2.50 cm × 4.00 cm and has a mass of 1.076 g. The density of platinum is 21.45 g/cm<sup>3</sup>. What is the thickness of the foil in micrometers (µm)?",
+    "choices": [
+      "50.2 µm",
+      "5.02 µm",
+      "501.6 µm",
+      "0.502 µm"
+    ]
+  },
+  {
+    "id": "proto-practice-011",
+    "stem": "Millikan found the charge of the electron to be −1.602 × 10<sup>−19</sup> C, and Thomson measured e/m = −1.76 × 10<sup>8</sup> C/g. What is the mass of one electron?",
+    "choices": [
+      "9.10 × 10<sup>−28</sup> g",
+      "9.10 × 10<sup>−31</sup> g",
+      "1.67 × 10<sup>−24</sup> g",
+      "1.09 × 10<sup>−27</sup> g"
+    ]
+  },
+  {
+    "id": "proto-practice-012",
+    "stem": "A uranium-238 atom (Z = 92) emits one alpha particle, then two beta (β<sup>−</sup>) particles. What is the resulting nuclide?",
+    "choices": [
+      "<sup>234</sup>Th (Z = 90)",
+      "<sup>234</sup>Pa (Z = 91)",
+      "<sup>234</sup>U (Z = 92)",
+      "<sup>230</sup>Th (Z = 90)"
+    ]
+  },
+  {
+    "id": "proto-practice-013",
+    "stem": "Chlorine has two stable isotopes: <sup>35</sup>Cl (34.9688 amu) and <sup>37</sup>Cl (36.9659 amu). The average atomic mass is 35.4527 amu. What is the percent abundance of <sup>37</sup>Cl?",
+    "choices": [
+      "24.23%",
+      "75.77%",
+      "35.45%",
+      "48.46%"
+    ]
+  },
+  {
+    "id": "proto-practice-014",
+    "stem": "How many protons, neutrons and electrons are in one <sup>59</sup>Ni<sup>3+</sup> ion? (Ni: Z = 28)",
+    "choices": [
+      "28 protons, 31 neutrons, 25 electrons",
+      "28 protons, 31 neutrons, 31 electrons",
+      "31 protons, 28 neutrons, 25 electrons",
+      "28 protons, 59 neutrons, 25 electrons"
+    ]
+  },
+  {
+    "id": "proto-practice-015",
+    "stem": "Rutherford’s gold foil experiment showed that:",
+    "choices": [
+      "electrons orbit the nucleus in fixed energy levels.",
+      "electrons are embedded in a uniform sphere of positive charge.",
+      "most of the mass and all of the positive charge of an atom are concentrated in a tiny, dense nucleus.",
+      "neutrons are present in equal numbers to protons in stable nuclei."
+    ]
+  },
+  {
+    "id": "proto-practice-016",
+    "stem": "Which pair represents isotopes of the same element?",
+    "choices": [
+      "<sup>14</sup>C and <sup>14</sup>N",
+      "<sup>40</sup>Ar and <sup>40</sup>Ca",
+      "<sup>128</sup>Te and <sup>128</sup>Xe",
+      "<sup>204</sup>Pb and <sup>208</sup>Pb"
+    ]
+  },
+  {
+    "id": "proto-practice-017",
+    "stem": "An element X forms an oxide XO<sub>3</sub> that contains 48.00% oxygen by mass. Identify X.",
+    "choices": [
+      "Al",
+      "Fe",
+      "Cr",
+      "B"
+    ]
+  },
+  {
+    "id": "proto-practice-018",
+    "stem": "Which species is isoelectronic with the argon atom?",
+    "choices": [
+      "Na<sup>+</sup>",
+      "S<sup>2−</sup>",
+      "Br<sup>−</sup>",
+      "Fe<sup>2+</sup>"
+    ]
+  },
+  {
+    "id": "proto-practice-019",
+    "stem": "An unknown element M has three isotopes: M-24 (23.9850 amu, 78.99%), M-25 (24.9858 amu, 10.00%) and M-26 (25.9826 amu, 11.01%). What is its atomic weight, and what is the element?",
+    "choices": [
+      "24.31 amu, magnesium (Mg)",
+      "28.09 amu, silicon (Si)",
+      "26.98 amu, aluminum (Al)",
+      "23.00 amu, sodium (Na)"
+    ]
+  },
+  {
+    "id": "proto-practice-020",
+    "stem": "How many electrons are in one nitrate ion (NO<sub>3</sub><sup>−</sup>)?",
+    "choices": [
+      "30",
+      "31",
+      "32",
+      "24"
+    ]
+  }
+]

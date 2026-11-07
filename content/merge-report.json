@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-11-07T11:29:17.456Z",
+  "inputs": {
+    "docx": 200,
+    "prototype": 234
+  },
+  "merged": 434,
+  "candidates": 434,
+  "deduped": 0,
+  "dedupedIds": [],
+  "byPaper": {
+    "ch1-3-theory": 50,
+    "ch1-3-lab": 50,
+    "ch4-7-theory": 50,
+    "ch4-7-lab": 50,
+    "mixed-practice": 130,
+    "(no paper)": 104
+  },
+  "bySource": {
+    "supplied-paper": 200,
+    "mixed": 80,
+    "textbook": 154
+  },
+  "byDomain": {
+    "General": 231,
+    "Laboratory": 110,
+    "Analytical": 24,
+    "Physical": 56,
+    "Organic": 13
+  },
+  "byDifficulty": {
+    "Olympiad": 210,
+    "Foundation": 104,
+    "Standard": 120
+  },
+  "byChapter": {
+    "1": 82,
+    "2": 88,
+    "3": 62,
+    "4": 30,
+    "5": 31,
+    "6": 31,
+    "7": 39,
+    "none": 71
+  },
+  "protoTextbook": {
+    "count": 104,
+    "beforeAnswers": {
+      "0": 104
+    },
+    "afterAnswers": {
+      "0": 25,
+      "1": 25,
+      "2": 27,
+      "3": 27
+    },
+    "orderChanged": 101,
+    "sample": [
+      {
+        "id": "proto-textbook-001",
+        "fromAnswer": 0,
+        "toAnswer": 0,
+        "orderChanged": true
+      },
+      {
+        "id": "proto-textbook-002",
+        "fromAnswer": 0,
+        "toAnswer": 0,
+        "orderChanged": true
+      },
+      {
+        "id": "proto-textbook-003",
+        "fromAnswer": 0,
+        "toAnswer": 0,
+        "orderChanged": true
+      },
+      {
+        "id": "proto-textbook-004",
+        "fromAnswer": 0,
+        "toAnswer": 0,
+        "orderChanged": true
+      },
+      {
+        "id": "proto-textbook-005",
+        "fromAnswer": 0,
+        "toAnswer": 1,
+        "orderChanged": true
+      }
+    ]
+  },
+  "warnings": [
+    "Unmapped prototype topic \"Bonding\" (1 item) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"Chemistry: A Science for the Twenty-First Century\" (8 items) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"Coordination chemistry\" (2 items) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"Covalent bonds\" (4 items) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"Intermolecular forces\" (2 items) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"Ionic bonds\" (2 items) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"Liquids and solids\" (4 items) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"Physical properties of solutions\" (3 items) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"Reaction types\" (1 item) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"Statistics\" (1 item) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"The Scientific Method\" (8 items) → General chemistry; imported domain kept",
+    "Unmapped prototype topic \"The Study of Chemistry\" (8 items) → General chemistry; imported domain kept"
+  ]
+}

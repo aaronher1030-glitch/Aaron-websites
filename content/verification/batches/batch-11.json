@@ -1,0 +1,202 @@
+[
+  {
+    "id": "proto-mixed-001",
+    "stem": "How many neutrons are in a <sup>35</sup>Cl<sup>−</sup> ion?",
+    "choices": [
+      "17",
+      "18",
+      "19",
+      "35"
+    ]
+  },
+  {
+    "id": "proto-mixed-002",
+    "stem": "Which element has the largest atomic radius?",
+    "choices": [
+      "Na",
+      "Mg",
+      "Al",
+      "Cl"
+    ]
+  },
+  {
+    "id": "proto-mixed-003",
+    "stem": "Which molecule is polar?",
+    "choices": [
+      "CO<sub>2</sub>",
+      "BF<sub>3</sub>",
+      "NH<sub>3</sub>",
+      "CH<sub>4</sub>"
+    ]
+  },
+  {
+    "id": "proto-mixed-004",
+    "stem": "A gas at 1.0 atm occupies 2.0 L. At constant temperature it is compressed to 0.50 L. What is the new pressure?",
+    "choices": [
+      "0.25 atm",
+      "2.0 atm",
+      "4.0 atm",
+      "8.0 atm"
+    ]
+  },
+  {
+    "id": "proto-mixed-005",
+    "stem": "How many moles of oxygen atoms are in 0.50 mol of Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>?",
+    "choices": [
+      "2.0",
+      "3.0",
+      "6.0",
+      "12"
+    ]
+  },
+  {
+    "id": "proto-mixed-006",
+    "stem": "In 2H<sub>2</sub> + O<sub>2</sub> → 2H<sub>2</sub>O, 3.0 g H<sub>2</sub> reacts with 32 g O<sub>2</sub>. What mass of water forms? (H = 1.0, O = 16)",
+    "choices": [
+      "18 g",
+      "27 g",
+      "36 g",
+      "35 g"
+    ]
+  },
+  {
+    "id": "proto-mixed-007",
+    "stem": "What is the oxidation number of Cr in K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>?",
+    "choices": [
+      "+3",
+      "+6",
+      "+7",
+      "+12"
+    ]
+  },
+  {
+    "id": "proto-mixed-008",
+    "stem": "Given C + O<sub>2</sub> → CO<sub>2</sub>, ΔH = −394 kJ, and CO + ½O<sub>2</sub> → CO<sub>2</sub>, ΔH = −283 kJ, find ΔH for C + ½O<sub>2</sub> → CO.",
+    "choices": [
+      "−677 kJ",
+      "−111 kJ",
+      "+111 kJ",
+      "−283 kJ"
+    ]
+  },
+  {
+    "id": "proto-mixed-009",
+    "stem": "N<sub>2</sub> + 3H<sub>2</sub> ⇌ 2NH<sub>3</sub> is exothermic. What happens to K when the temperature rises?",
+    "choices": [
+      "K increases",
+      "K decreases",
+      "K is unchanged",
+      "K becomes zero"
+    ]
+  },
+  {
+    "id": "proto-mixed-010",
+    "stem": "A first-order reaction has a half-life of 20 min. What fraction of the reactant remains after 60 min?",
+    "choices": [
+      "1/2",
+      "1/4",
+      "1/6",
+      "1/8"
+    ]
+  },
+  {
+    "id": "proto-mixed-011",
+    "stem": "What volume of 0.125 M NaOH neutralizes 25.0 mL of 0.100 M HCl?",
+    "choices": [
+      "10.0 mL",
+      "20.0 mL",
+      "25.0 mL",
+      "31.3 mL"
+    ]
+  },
+  {
+    "id": "proto-mixed-012",
+    "stem": "What is the pH of 0.0010 M Ba(OH)<sub>2</sub> at 25 °C?",
+    "choices": [
+      "10.70",
+      "11.00",
+      "11.30",
+      "12.00"
+    ]
+  },
+  {
+    "id": "proto-mixed-013",
+    "stem": "A spot travels 3.0 cm while the solvent front travels 6.0 cm. What is its R<sub>f</sub>?",
+    "choices": [
+      "0.50",
+      "2.0",
+      "3.0",
+      "0.30"
+    ]
+  },
+  {
+    "id": "proto-mixed-014",
+    "stem": "A buffer is 0.10 M CH<sub>3</sub>COOH and 0.20 M CH<sub>3</sub>COONa (pK<sub>a</sub> = 4.76). What is its pH?",
+    "choices": [
+      "4.46",
+      "4.76",
+      "5.06",
+      "5.36"
+    ]
+  },
+  {
+    "id": "proto-mixed-015",
+    "stem": "The functional group in CH<sub>3</sub>COCH<sub>3</sub> is a…",
+    "choices": [
+      "aldehyde",
+      "ketone",
+      "ester",
+      "carboxylic acid"
+    ]
+  },
+  {
+    "id": "proto-mixed-016",
+    "stem": "How many structural isomers does C<sub>5</sub>H<sub>12</sub> have?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "id": "proto-mixed-017",
+    "stem": "CH<sub>2</sub>=CH<sub>2</sub> + Br<sub>2</sub> → CH<sub>2</sub>BrCH<sub>2</sub>Br is which type of reaction?",
+    "choices": [
+      "Substitution",
+      "Elimination",
+      "Addition",
+      "Condensation"
+    ]
+  },
+  {
+    "id": "proto-mixed-018",
+    "stem": "A peptide bond forms between…",
+    "choices": [
+      "two carboxyl groups, releasing CO<sub>2</sub>",
+      "the carboxyl group of one amino acid and the amino group of another, releasing water",
+      "two amino groups, releasing NH<sub>3</sub>",
+      "the R groups of two amino acids"
+    ]
+  },
+  {
+    "id": "proto-mixed-019",
+    "stem": "How many significant figures are in 0.003040?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "id": "proto-mixed-020",
+    "stem": "The mean of 10.2, 10.4, 10.1 and 10.3 is…",
+    "choices": [
+      "10.20",
+      "10.25",
+      "10.30",
+      "10.15"
+    ]
+  }
+]

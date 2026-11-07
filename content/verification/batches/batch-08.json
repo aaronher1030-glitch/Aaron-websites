@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch4-7-theory-41",
+    "stem": "Bohr Model of Hydrogen: Calculate the wavelength of the photon emitted when a hydrogen electron transitions from the $n = 4$ level to the $n = 2$ level (Balmer series). (Rydberg constant $R_{H} = 1.097 \\times 10^{7}\\text{~m}^{- 1}$)",
+    "choices": [
+      "$389\\text{~nm}$",
+      "$486\\text{~nm}$",
+      "$656\\text{~nm}$",
+      "$1216\\text{~nm}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-42",
+    "stem": "Quantum Numbers: Which of the following sets of quantum numbers $\\left( n,l,m_{l},m_{s} \\right)$ is unacceptable or invalid?",
+    "choices": [
+      "$(3,1,0, + 1/2)$",
+      "$(2,2,1, - 1/2)$",
+      "$(4,0,0, + 1/2)$",
+      "$(5,3, - 2, - 1/2)$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-43",
+    "stem": "Photon Energy Calculation: What is the energy of a single photon of green light with a frequency of $5.45 \\times 10^{14}\\text{~Hz}$?",
+    "choices": [
+      "$3.61 \\times 10^{- 19}\\text{~J}$",
+      "$5.45 \\times 10^{- 19}\\text{~J}$",
+      "$3.61 \\times 10^{- 20}\\text{~J}$",
+      "$1.09 \\times 10^{- 18}\\text{~J}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-44",
+    "stem": "Heisenberg Uncertainty Principle: The uncertainty in the position of a particle is $1.0 \\times 10^{- 10}\\text{~m}$. What is the minimum uncertainty in its momentum? ($h = 6.626 \\times 10^{- 34}\\text{~J} \\cdot \\text{s}$)",
+    "choices": [
+      "$5.27 \\times 10^{- 25}\\text{~kg} \\cdot \\text{m/s}$",
+      "$1.05 \\times 10^{- 24}\\text{~kg} \\cdot \\text{m/s}$",
+      "$3.32 \\times 10^{- 24}\\text{~kg} \\cdot \\text{m/s}$",
+      "$6.63 \\times 10^{- 24}\\text{~kg} \\cdot \\text{m/s}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-45",
+    "stem": "Electronic Configurations & Magnetism: What is the ground-state electron configuration and number of unpaired electrons for a neutral Chromium atom ($Cr$, atomic number $24$)?",
+    "choices": [
+      "$\\lbrack Ar\\rbrack 4s^{2}3d^{4}$; $4$ unpaired electrons",
+      "$\\lbrack Ar\\rbrack 4s^{1}3d^{5}$; $6$ unpaired electrons",
+      "$\\lbrack Ar\\rbrack 4s^{2}3d^{4}$; $2$ unpaired electrons",
+      "$\\lbrack Ar\\rbrack 4s^{0}3d^{6}$; $0$ unpaired electrons"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-46",
+    "stem": "Atomic Orbitals & Nodes: How many total nodes (radial plus angular nodes) does a $4s$ orbital have?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-47",
+    "stem": "Electromagnetic Spectrum: Rank the following types of electromagnetic radiation in order of increasing wavelength:",
+    "choices": [
+      "Gamma rays < Ultraviolet < Infrared < Radio waves",
+      "Radio waves < Infrared < Ultraviolet < Gamma rays",
+      "Ultraviolet < Gamma rays < Radio waves < Infrared",
+      "Infrared < Gamma rays < Radio waves < Ultraviolet"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-48",
+    "stem": "Rydberg Formula / Series: The series of spectral lines corresponding to electron transitions to $n = 1$ in the hydrogen atom emission spectrum is known as the:",
+    "choices": [
+      "Balmer series",
+      "Paschen series",
+      "Lyman series",
+      "Brackett series"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-49",
+    "stem": "Aufbau Principle Exceptions: Which of the following transition metal atoms exhibits an anomalous electron configuration due to the stability of half-filled subshells?",
+    "choices": [
+      "Titanium ($\\text{Ti}$)",
+      "Copper ($\\text{Cu}$)",
+      "Zinc ($\\text{Zn}$)",
+      "Iron ($\\text{Fe}$)"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-50",
+    "stem": "Quantum Mechanics Interpretation: What physical significance is associated with the square of the wave function, $|\\psi|^{2}$, in quantum mechanics?",
+    "choices": [
+      "Total energy of the electron",
+      "Electron spin angular momentum",
+      "Probability density of finding an electron at a given point in space",
+      "Velocity vector of the electron orbit"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-01",
+    "stem": "Primary Standard Calibration: A student standardizes a sodium hydroxide ($\\text{NaOH}$) solution using primary standard potassium hydrogen phthalate ($\\text{KHP}$, $\\text{KHC}_{8}\\text{H}_{4}\\text{O}_{4}$, $\\text{MW} = 204.22\\text{~g/mol}$). If a $0.5105\\text{-g}$ sample of KHP requires $24.20\\text{~mL}$ of $\\text{NaOH}$ to reach the phenolphthalein end point, what is the exact molarity of the $\\text{NaOH}$ solution?",
+    "choices": [
+      "$0.0982\\text{~M}$",
+      "$0.1033\\text{~M}$",
+      "$0.1051\\text{~M}$",
+      "$0.1124\\text{~M}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-02",
+    "stem": "Titration Error Analysis: During an acid-base titration using a $50\\text{-mL}$ buret, the student leaves an undetected air bubble in the tip of the buret before starting the titration. The air bubble dislodges during the titration. How will this affect the reported concentration of the analyte in the flask?",
+    "choices": [
+      "The reported concentration will be higher than the true value.",
+      "The reported concentration will be lower than the true value.",
+      "The reported concentration will remain unaffected.",
+      "It depends on whether the acid or base is in the buret."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-03",
+    "stem": "Volumetric Glassware Washing: Before filling a buret with a standardized titrant, what is the proper laboratory protocol after rinsing with distilled water?",
+    "choices": [
+      "Dry the inside of the buret using a paper towel wrapped around a wire.",
+      "Rinse the buret two to three times with small portions of the titrant solution.",
+      "Heat the buret in an oven at $110^{\\circ}\\text{C}$ to dry completely.",
+      "Rinse the buret with ethanol and allow it to evaporate."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-04",
+    "stem": "Gravimetric Analysis Protocol: In the determination of $\\text{SO}_{4}^{2 -}$ as $\\text{BaSO}_{4}(s)$, the precipitate is digested in a warm solution before filtration. What is the primary analytical purpose of digestion?",
+    "choices": [
+      "To oxidize residual impurities in the precipitate.",
+      "To allow small crystals to dissolve and recrystallize onto larger ones (Ostwald ripening).",
+      "To increase the solubility product ($K_{sp}$) of $\\text{BaSO}_{4}$.",
+      "To precipitate excess $\\text{Ba}^{2 +}$ ions from solution."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-05",
+    "stem": "Analytical Filter Paper Selection: When filtering a fine crystalline precipitate of $\\text{BaSO}_{4}$ for quantitative ignition in a crucible, which filter paper grade is most appropriate?",
+    "choices": [
+      "Qualitative rapid-flow filter paper",
+      "Ashless fine-porosity quantitative filter paper",
+      "Glass fiber membrane with $5.0\\text{~}\\mu\\text{m}$ pores",
+      "Phase-separating filter paper"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-06",
+    "stem": "Redox Titration Indicator: In a permanganate titration ($\\text{KMnO}_{4}$ titrant), why is an external indicator usually not required?",
+    "choices": [
+      "$\\text{MnO}_{4}^{-}$ acts as its own self-indicator, changing from deep purple to faint pink at the endpoint.",
+      "The reaction is purely color-neutralized by $\\text{Fe}^{3 +}$ ions.",
+      "Starch forms a blue-black complex with $\\text{Mn}^{2 +}$ at the equivalence point.",
+      "Phenolphthalein turns colorless in the presence of strong oxidizers."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-07",
+    "stem": "Iodometric Titration: In the determination of dissolved oxygen or copper content via iodometry, starch indicator is added:",
+    "choices": [
+      "At the beginning of the titration when the solution is dark brown.",
+      "Near the end of the titration when the yellow $\\text{I}_{3}^{-}$ color becomes very pale.",
+      "After the endpoint has already been passed to confirm complete reaction.",
+      "In excess prior to dissolving the sample in acid."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-08",
+    "stem": "Gravimetric Analysis Calculations: A $0.6240\\text{-g}$ sample of an alloy containing nickel is dissolved and treated with dimethylglyoxime ($\\text{DMG}$, $\\text{C}_{4}\\text{H}_{8}\\text{N}_{2}\\text{O}_{2}$) to yield $0.4820\\text{~g}$ of $\\text{Ni(DMG)}_{2}$ precipitate ($\\text{MW} = 288.91\\text{~g/mol}$). What is the mass fraction of nickel ($\\text{AW} = 58.69\\text{~g/mol}$) in the alloy?",
+    "choices": [
+      "$15.7\\%$",
+      "$23.3\\%$",
+      "$31.8\\%$",
+      "$42.1\\%$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-09",
+    "stem": "pH Meter Calibration: Before performing a precision acid-base titration curve experiment, a pH meter must be calibrated using standard buffers. Which procedure represents proper technique?",
+    "choices": [
+      "Calibrate using a single buffer solution of $\\text{pH~}7.00$ at $0^{\\circ}\\text{C}$.",
+      "Perform a two- or three-point calibration using buffers that bracket the expected experimental pH range.",
+      "Rinse the electrode with acetone between different buffer solutions",
+      "Wipe the glass bulb vigorously with a dry paper towel to remove water droplets."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-10",
+    "stem": "Solution Preparation from Concentrated Stock: Concentrated hydrochloric acid is labeled as $37.0\\%$ $\\text{HCl}$ by mass with a density of $1.19\\text{~g/mL}$. How many milliliters of this stock solution are needed to prepare $500.0\\text{~mL}$ of $0.200\\text{~M~HCl}$? ($\\text{MW~of~HCl} = 36.46\\text{~g/mol}$)",
+    "choices": [
+      "$4.14\\text{~mL}$",
+      "$8.28\\text{~mL}$",
+      "$12.4\\text{~mL}$",
+      "$16.6\\text{~mL}$"
+    ]
+  }
+]
