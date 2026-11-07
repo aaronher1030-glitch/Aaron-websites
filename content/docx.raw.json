@@ -1,0 +1,3477 @@
+[
+  {
+    "id": "ch1-3-theory-01",
+    "paper": "ch1-3-theory",
+    "number": 1,
+    "section": "Section I: Matter, Measurement, and Dimensional Analysis",
+    "stem": "A spherical gold nanoparticle has a radius of $2.50\\text{~nm}$. Assuming gold crystallizes in a face-centered cubic structure with a density of $19.3\\text{~g/cm}^{3}$, how many gold atoms ($M = 197.0\\text{~g/mol}$) are present in a single nanoparticle?",
+    "choices": [
+      "$1.93 \\times 10^{3}$",
+      "$3.86 \\times 10^{3}$",
+      "$3.84 \\times 10^{4}$",
+      "$1.92 \\times 10^{4}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Volume $V = \\frac{4}{3}\\pi r^{3} = \\frac{4}{3}\\pi\\left( 2.50 \\times 10^{- 7}\\text{~cm} \\right)^{3} = 6.545 \\times 10^{- 20}\\text{~cm}^{3}$.\n\nMass $m = d \\cdot V = 19.3\\text{~g/cm}^{3} \\times 6.545 \\times 10^{- 20}\\text{~cm}^{3} = 1.263 \\times 10^{- 18}\\text{~g}$.\n\nAtoms $= \\frac{1.263 \\times 10^{- 18}\\text{~g}}{197.0\\text{~g/mol}} \\times 6.022 \\times 10^{23} = 3.86 \\times 10^{3}$ atoms. Wait, check: $\\left( 1.263 \\times 10^{- 18}/197.0 \\right) \\times 6.022 \\times 10^{23} = 3.86 \\times 10^{3}$. Correct Choice: B (Key fix: $3.86 \\times 10^{3}$).",
+    "flags": [
+      "key-commentary",
+      "claimed-B"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-02",
+    "paper": "ch1-3-theory",
+    "number": 2,
+    "section": "Section I: Matter, Measurement, and Dimensional Analysis",
+    "stem": "The speed of light is $3.00 \\times 10^{8}\\text{~m/s}$. Express this speed in furlongs per fortnight. ($1\\text{~furlong} = 201.168\\text{~m}$; $1\\text{~fortnight} = 14\\text{~days}$).",
+    "choices": [
+      "$1.80 \\times 10^{12}\\text{~furlongs/fortnight}$",
+      "$1.80 \\times 10^{14}\\text{~furlongs/fortnight}$",
+      "$9.01 \\times 10^{11}\\text{~furlongs/fortnight}$",
+      "$1.80 \\times 10^{9}\\text{~furlongs/fortnight}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$\\frac{3.00 \\times 10^{8}\\text{~m}}{1\\text{~s}} \\times \\frac{1\\text{~furlong}}{201.168\\text{~m}} \\times \\frac{86400\\text{~s}}{1\\text{~day}} \\times \\frac{14\\text{~days}}{1\\text{~fortnight}} = 1.80 \\times 10^{14}\\text{~furlongs/fortnight}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-03",
+    "paper": "ch1-3-theory",
+    "number": 3,
+    "section": "Section I: Matter, Measurement, and Dimensional Analysis",
+    "stem": "Which of the following statements represents an intensive physical property?",
+    "choices": [
+      "The total heat capacity of a sample of water is $418.4\\text{~J/K}$.",
+      "A sample of copper has a volume of $12.5\\text{~mL}$.",
+      "The standard boiling point of ethanol is ${78.37}^{\\circ}\\text{C}$.",
+      "The mass of a gold bar is $1.00\\text{~kg}$."
+    ],
+    "sourceKey": "C",
+    "explanation": "Boiling point is an intensive property (does not depend on sample size). Heat capacity, volume, and mass are extensive.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-04",
+    "paper": "ch1-3-theory",
+    "number": 4,
+    "section": "Section I: Matter, Measurement, and Dimensional Analysis",
+    "stem": "Perform the following calculation and express the answer to the correct number of significant figures:\n\n$$\\frac{(14.285 - 0.0821) \\times 0.05200}{3.14159 + 0.002}$$",
+    "choices": [
+      "$0.2351$",
+      "$0.235$",
+      "$0.23497$",
+      "$0.2350$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$14.285 - 0.0821 = 14.2029 \\rightarrow 14.203$ (3 decimal places, 5 sig figs).\n\nNumerator: $14.203 \\times 0.05200 = 0.738556$ (4 sig figs).\n\nDenominator: $3.14159 + 0.002 = 3.14359 \\rightarrow 3.144$ (3 decimal places, 4 sig figs).\n\nDivision: $\\frac{0.73856}{3.1436} = 0.23494 \\rightarrow 0.235$ (3 sig figs due to $0.05200$ having 4 sig figs, wait $0.05200$ has 4 sig figs, $14.203$ has 5, $3.144$ has 4 $\\rightarrow$ answer should have 4 sig figs: $0.2349$). Let's round to $0.235$ for 3 sig figs or $0.2349$. $0.235$ is B.",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-05",
+    "paper": "ch1-3-theory",
+    "number": 5,
+    "section": "Section I: Matter, Measurement, and Dimensional Analysis",
+    "stem": "A hydrometer measures liquid density. A cylindrical piece of cork ($d = 0.240\\text{~g/cm}^{3}$) with length $10.0\\text{~cm}$ and cross-sectional area $1.50\\text{~cm}^{2}$ floats vertically in a fluid of density $1.20\\text{~g/cm}^{3}$. How much length of the cork is submerged below the liquid surface?",
+    "choices": [
+      "$2.00\\text{~cm}$",
+      "$4.00\\text{~cm}$",
+      "$6.00\\text{~cm}$",
+      "$8.00\\text{~cm}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Floating equilibrium: Mass of cork = Mass of displaced fluid.\n\n$V_{\\text{cork}} \\cdot d_{\\text{cork}} = V_{\\text{sub}} \\cdot d_{\\text{fluid}} \\Longrightarrow \\left( A \\cdot L_{\\text{total}} \\right)d_{\\text{cork}} = \\left( A \\cdot L_{\\text{sub}} \\right)d_{\\text{fluid}}$.\n\n$L_{\\text{sub}} = 10.0\\text{~cm} \\times \\frac{0.240}{1.20} = 2.00\\text{~cm}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-06",
+    "paper": "ch1-3-theory",
+    "number": 6,
+    "section": "Section I: Matter, Measurement, and Dimensional Analysis",
+    "stem": "A container weighs $22.10\\text{~g}$ when empty, $45.50\\text{~g}$ when filled with water ($d = 0.998\\text{~g/mL}$ at $20^{\\circ}\\text{C}$), and $51.20\\text{~g}$ when filled with an unknown liquid at the same temperature. What is the density of the unknown liquid?",
+    "choices": [
+      "$1.24\\text{~g/mL}$",
+      "$1.20\\text{~g/mL}$",
+      "$1.13\\text{~g/mL}$",
+      "$0.806\\text{~g/mL}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Mass of water $= 45.50 - 22.10 = 23.40\\text{~g}$.\n\nVolume of flask $= \\frac{23.40\\text{~g}}{0.998\\text{~g/mL}} = 23.447\\text{~mL}$.\n\nMass of liquid $= 51.20 - 22.10 = 29.10\\text{~g}$.\n\nDensity $= \\frac{29.10\\text{~g}}{23.447\\text{~mL}} = 1.24\\text{~g/mL}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-07",
+    "paper": "ch1-3-theory",
+    "number": 7,
+    "section": "Section I: Matter, Measurement, and Dimensional Analysis",
+    "stem": "Which of the following processes represents a chemical change?",
+    "choices": [
+      "Sublimation of dry ice ($CO_{2}$)",
+      "Dissolution of sodium chloride in water",
+      "Tarnishing of silver cutlery in air",
+      "Fractional distillation of liquid air"
+    ],
+    "sourceKey": "C",
+    "explanation": "Tarnishing is a chemical reaction of silver with sulfur in air forming $\\text{Ag}_{2}\\text{S}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-08",
+    "paper": "ch1-3-theory",
+    "number": 8,
+    "section": "Section I: Matter, Measurement, and Dimensional Analysis",
+    "stem": "The temperature on a newly devised temperature scale, $_{}^{\\circ}X$, is related to the Celsius scale by $_{}^{\\circ}X = 1.50( \\circ C) + 20.0$. What is the absolute zero temperature ($- {273.15}^{\\circ}\\text{C}$) on the $_{}^{\\circ}X$ scale?",
+    "choices": [
+      "$- {389.73}^{\\circ}\\text{X}$",
+      "$- {429.73}^{\\circ}\\text{X}$",
+      "$- {369.73}^{\\circ}\\text{X}$",
+      "$- {253.15}^{\\circ}\\text{X}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$_{}^{\\circ}X = 1.50( - 273.15) + 20.0 = - 409.725 + 20.0 = - {389.73}^{\\circ}\\text{X}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-09",
+    "paper": "ch1-3-theory",
+    "number": 9,
+    "section": "Section I: Matter, Measurement, and Dimensional Analysis",
+    "stem": "Homogeneous mixtures are distinguished from pure substances because homogeneous mixtures:",
+    "choices": [
+      "Can be separated into simpler substances using physical methods.",
+      "Have a fixed composition regardless of preparation.",
+      "Consist of only one type of atom.",
+      "Cannot exist in the gaseous phase."
+    ],
+    "sourceKey": "A",
+    "explanation": "Homogeneous mixtures can be separated into pure components via physical processes (e.g., distillation, evaporation).",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-10",
+    "paper": "ch1-3-theory",
+    "number": 10,
+    "section": "Section I: Matter, Measurement, and Dimensional Analysis",
+    "stem": "A sheet of platinum foil has dimensions $2.50\\text{~cm} \\times 4.00\\text{~cm}$ and a mass of $1.076\\text{~g}$. Given the density of platinum is $21.45\\text{~g/cm}^{3}$, what is the thickness of the foil in micrometers ($\\mu\\text{m}$)?",
+    "choices": [
+      "$50.2\\ \\mu\\text{m}$",
+      "$5.02\\ \\mu\\text{m}$",
+      "$501.6\\ \\mu\\text{m}$",
+      "$0.502\\ \\mu\\text{m}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Volume $= \\frac{\\text{mass}}{\\text{density}} = \\frac{1.076\\text{~g}}{21.45\\text{~g/cm}^{3}} = 0.050163\\text{~cm}^{3}$.\n\nArea $= 2.50\\text{~cm} \\times 4.00\\text{~cm} = 10.0\\text{~cm}^{2}$.\n\nThickness $= \\frac{0.050163\\text{~cm}^{3}}{10.0\\text{~cm}^{2}} = 0.0050163\\text{~cm} = 5.016 \\times 10^{- 5}\\text{~m} = 50.2\\ \\mu\\text{m}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-11",
+    "paper": "ch1-3-theory",
+    "number": 11,
+    "section": "Section II: Atomic Structure, Isotopes, and Subatomic Particles",
+    "stem": "In J.J. Thomson’s cathode-ray tube experiment, the mass-to-charge ratio ($m/e$) of the electron was determined. If Robert Millikan determined the charge of an electron to be $- 1.602 \\times 10^{- 19}\\text{~C}$ and $e/m = - 1.76 \\times 10^{8}\\text{~C/g}$, what is the mass of a single electron?",
+    "choices": [
+      "$9.10 \\times 10^{- 28}\\text{~g}$",
+      "$9.10 \\times 10^{- 31}\\text{~g}$",
+      "$1.67 \\times 10^{- 24}\\text{~g}$",
+      "$1.09 \\times 10^{- 27}\\text{~g}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$m = \\frac{- 1.602 \\times 10^{- 19}\\text{~C}}{- 1.76 \\times 10^{8}\\text{~C/g}} = 9.10 \\times 10^{- 28}\\text{~g}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-12",
+    "paper": "ch1-3-theory",
+    "number": 12,
+    "section": "Section II: Atomic Structure, Isotopes, and Subatomic Particles",
+    "stem": "An atom of the radioactive nuclide $_{92}^{238}\\text{U}$ undergoes decay by emitting an alpha particle ($\\alpha$), followed by two consecutive beta particles ($\\beta^{-}$). What is the resulting daughter nuclide?",
+    "choices": [
+      "$_{90}^{234}\\text{Th}$",
+      "$_{91}^{234}\\text{Pa}$",
+      "$_{92}^{234}\\text{U}$",
+      "$_{90}^{230}\\text{Th}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Alpha decay: Z drops by 2, A drops by 4 ($_{90}^{234}\\text{Th}$). Two $\\beta^{-}$ decays: Z increases by 2, A stays same ($_{92}^{234}\\text{U}$).",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-13",
+    "paper": "ch1-3-theory",
+    "number": 13,
+    "section": "Section II: Atomic Structure, Isotopes, and Subatomic Particles",
+    "stem": "Naturally occurring chlorine consists of two stable isotopes: $_{}^{35}\\text{Cl}$ ($34.9688\\text{~amu}$) and $_{}^{37}\\text{Cl}$ ($36.9659\\text{~amu}$). The average atomic mass of chlorine is $35.4527\\text{~amu}$. What is the percent abundance of $_{}^{37}\\text{Cl}$?",
+    "choices": [
+      "$24.23\\%$",
+      "$75.77\\%$",
+      "$35.45\\%$",
+      "$48.46\\%$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$35.4527 = 34.9688(1 - x) + 36.9659(x) \\Longrightarrow 1.9971x = 0.4839 \\Longrightarrow x = 0.2423 = 24.23\\%$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-14",
+    "paper": "ch1-3-theory",
+    "number": 14,
+    "section": "Section II: Atomic Structure, Isotopes, and Subatomic Particles",
+    "stem": "How many protons, neutrons, and electrons are present in a single ${_{}^{59}\\text{Ni}}^{3 +}$ ion?",
+    "choices": [
+      "28 protons, 31 neutrons, 25 electrons",
+      "28 protons, 31 neutrons, 31 electrons",
+      "31 protons, 28 neutrons, 25 electrons",
+      "28 protons, 59 neutrons, 25 electrons"
+    ],
+    "sourceKey": "A",
+    "explanation": "Nickel (Ni) has $Z = 28$ (28 protons). Neutrons $= 59 - 28 = 31$. $3 +$ charge means $28 - 3 = 25$ electrons.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-15",
+    "paper": "ch1-3-theory",
+    "number": 15,
+    "section": "Section II: Atomic Structure, Isotopes, and Subatomic Particles",
+    "stem": "Rutherford’s gold foil experiment demonstrated that:",
+    "choices": [
+      "Electrons orbit the nucleus in fixed energy levels.",
+      "Electrons are embedded in a uniform sphere of positive charge.",
+      "Most of the mass and all positive charge of an atom are concentrated in a tiny dense nucleus.",
+      "Neutrons exist in equal numbers to protons in stable nuclei."
+    ],
+    "sourceKey": "C",
+    "explanation": "Deflection of alpha particles revealed a small, dense, positively charged nucleus.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-16",
+    "paper": "ch1-3-theory",
+    "number": 16,
+    "section": "Section II: Atomic Structure, Isotopes, and Subatomic Particles",
+    "stem": "Which pair represents isotopes of the same element?",
+    "choices": [
+      "$_{6}^{14}\\text{C}$ and $_{7}^{14}\\text{N}$",
+      "$_{18}^{40}\\text{Ar}$ and $_{20}^{40}\\text{Ca}$",
+      "$_{52}^{128}\\text{Te}$ and $_{54}^{128}\\text{Xe}$",
+      "$_{82}^{204}\\text{Pb}$ and $_{82}^{208}\\text{Pb}$"
+    ],
+    "sourceKey": "D",
+    "explanation": "Isotopes have the same atomic number (proton count) but different mass numbers. Lead ($Z = 82$).",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-17",
+    "paper": "ch1-3-theory",
+    "number": 17,
+    "section": "Section II: Atomic Structure, Isotopes, and Subatomic Particles",
+    "stem": "An element $\\text{X}$ forms a compound with oxygen having the formula $\\text{X}_{2}\\text{O}_{3}$, which contains $30.06\\%$ oxygen by mass. Identify the element $\\text{X}$.",
+    "choices": [
+      "$\\text{Al}$",
+      "$\\text{Fe}$",
+      "$\\text{Cr}$",
+      "$\\text{B}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Mass % O $= \\frac{3(16.00)}{2M_{X} + 3(16.00)} = 0.3006 \\Longrightarrow 48.00 = 0.6012M_{X} + 14.4288 \\Longrightarrow M_{X} = 55.84\\text{~g/mol}$ ($\\text{Fe}$).",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-18",
+    "paper": "ch1-3-theory",
+    "number": 18,
+    "section": "Section II: Atomic Structure, Isotopes, and Subatomic Particles",
+    "stem": "Which of the following species is isoelectronic with the argon atom ($\\text{Ar}$)?",
+    "choices": [
+      "$\\text{Na}^{+}$",
+      "$\\text{S}^{2 -}$",
+      "$\\text{Br}^{-}$",
+      "$\\text{Fe}^{2 +}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Argon has 18 electrons. $\\text{S}^{2 -}$ has $16 + 2 = 18$ electrons.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-19",
+    "paper": "ch1-3-theory",
+    "number": 19,
+    "section": "Section II: Atomic Structure, Isotopes, and Subatomic Particles",
+    "stem": "An unknown element $\\text{M}$ has three naturally occurring isotopes: $\\text{M} - 24$ ($23.9850\\text{~amu}$, $78.99\\%$), $\\text{M} - 25$ ($24.9858\\text{~amu}$, $10.00\\%$), and $\\text{M} - 26$ ($25.9826\\text{~amu}$, $11.01\\%$). Calculate the atomic weight of $\\text{M}$ and identify the element.",
+    "choices": [
+      "$24.31\\text{~amu}$, Magnesium ($\\text{Mg}$)",
+      "$28.09\\text{~amu}$, Silicon ($\\text{Si}$)",
+      "$26.98\\text{~amu}$, Aluminum ($\\text{Al}$)",
+      "$23.00\\text{~amu}$, Sodium ($\\text{Na}$)"
+    ],
+    "sourceKey": "A",
+    "explanation": "$\\text{AW} = 0.7899(23.9850) + 0.1000(24.9858) + 0.1101(25.9826) = 24.31\\text{~amu}$ (Magnesium).",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-20",
+    "paper": "ch1-3-theory",
+    "number": 20,
+    "section": "Section II: Atomic Structure, Isotopes, and Subatomic Particles",
+    "stem": "How many total electrons are in a nitrate ion ($\\text{NO}_{3}^{-}$)?",
+    "choices": [
+      "30",
+      "31",
+      "32",
+      "24"
+    ],
+    "sourceKey": "C",
+    "explanation": "Total electrons $= 7\\ \\left( \\text{N} \\right) + 3 \\times 8\\ \\left( \\text{O} \\right) + 1\\ \\left( \\text{charge} \\right) = 32$ electrons.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-21",
+    "paper": "ch1-3-theory",
+    "number": 21,
+    "section": "Section III: Chemical Nomenclature and Formulas",
+    "stem": "What is the correct IUPAC name for the ionic compound $\\text{Fe}_{2}\\left( \\text{SO}_{4} \\right)_{3} \\cdot 9\\text{H}_{2}\\text{O}$?",
+    "choices": [
+      "Iron(II) sulfate nonahydrate",
+      "Diiron trisulfate nonahydrate",
+      "Iron(III) sulfate nonahydrate",
+      "Iron trisulfate nonahydrate"
+    ],
+    "sourceKey": "C",
+    "explanation": "$\\text{Fe}^{3 +}$ with $\\text{SO}_{4}^{2 -}$ is iron(III) sulfate, hydrated with 9 water molecules = nonahydrate.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-22",
+    "paper": "ch1-3-theory",
+    "number": 22,
+    "section": "Section III: Chemical Nomenclature and Formulas",
+    "stem": "What is the correct formula for perchloric acid?",
+    "choices": [
+      "$\\text{HclO}$",
+      "$\\text{HClO}_{2}$",
+      "$\\text{HClO}_{3}$",
+      "$\\text{HClO}_{4}$"
+    ],
+    "sourceKey": "D",
+    "explanation": "Perchloric acid is $\\text{HClO}_{4}$. ($\\text{HClO}$ = hypochlorous, $\\text{HClO}_{2}$ = chlorous, $\\text{HClO}_{3}$ = chloric).",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-23",
+    "paper": "ch1-3-theory",
+    "number": 23,
+    "section": "Section III: Chemical Nomenclature and Formulas",
+    "stem": "What is the systematic name of the binary covalent compound $\\text{P}_{4}\\text{O}_{10}$?",
+    "choices": [
+      "Tetraphosphorus decoxide",
+      "Phosphorus decoxide",
+      "Triphosphorus decoxide",
+      "Phosphoric anhydride"
+    ],
+    "sourceKey": "A",
+    "explanation": "4 phosphorus = tetraphosphorus, 10 oxygen = decoxide.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-24",
+    "paper": "ch1-3-theory",
+    "number": 24,
+    "section": "Section III: Chemical Nomenclature and Formulas",
+    "stem": "Which of the following chemical formulas is INCORRECT based on standard ionic charges?",
+    "choices": [
+      "$\\text{Al}_{2}\\text{S}_{3}$",
+      "$\\text{Ca}_{3}\\left( \\text{PO}_{4} \\right)_{2}$",
+      "$\\text{K}_{2}\\text{Cr}_{2}\\text{O}_{7}$",
+      "$\\text{BaHCO}_{3}$"
+    ],
+    "sourceKey": "D",
+    "explanation": "Bicarbonate is $\\text{HCO}_{3}^{-}$, barium is $\\text{Ba}^{2 +}$. Correct formula is ${\\text{Ba(}\\text{HCO}}_{3})_{2}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-25",
+    "paper": "ch1-3-theory",
+    "number": 25,
+    "section": "Section III: Chemical Nomenclature and Formulas",
+    "stem": "What is the correct chemical formula for dinitrogen pentoxide?",
+    "choices": [
+      "$\\text{N}_{2}\\text{O}_{3}$",
+      "$\\text{NO}_{2}$",
+      "$\\text{N}_{2}\\text{O}_{5}$",
+      "$\\text{N}_{5}\\text{O}_{2}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Dinitrogen pentoxide = $\\text{N}_{2}\\text{O}_{5}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-26",
+    "paper": "ch1-3-theory",
+    "number": 26,
+    "section": "Section III: Chemical Nomenclature and Formulas",
+    "stem": "Identify the IUPAC name for the compound $\\text{Cr}\\left( \\text{BrO}_{3} \\right)_{3}$.",
+    "choices": [
+      "Chromium(III) bromate",
+      "Chromium(III) bromide",
+      "Chromium(VI) bromite",
+      "Chromium(III) perbromate"
+    ],
+    "sourceKey": "A",
+    "explanation": "$\\text{BrO}_{3}^{-}$ is bromate. Chromium has $+ 3$ charge to balance three bromates $\\rightarrow$ Chromium(III) bromate.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-27",
+    "paper": "ch1-3-theory",
+    "number": 27,
+    "section": "Section III: Chemical Nomenclature and Formulas",
+    "stem": "Which of the following oxoacids has an acid name ending in \"-ous acid\"?",
+    "choices": [
+      "$\\text{HNO}_{3}$",
+      "$\\text{H}_{2}\\text{SO}_{3}$",
+      "$\\text{H}_{3}\\text{PO}_{4}$",
+      "$\\text{HClO}_{4}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Sulfite ($\\text{SO}_{3}^{2 -}$) forms sulfurous acid ($\\text{H}_{2}\\text{SO}_{3}$).",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-28",
+    "paper": "ch1-3-theory",
+    "number": 28,
+    "section": "Section III: Chemical Nomenclature and Formulas",
+    "stem": "What is the formula of the organic molecule propane?",
+    "choices": [
+      "$\\text{C}_{2}\\text{H}_{6}$",
+      "$\\text{C}_{3}\\text{H}_{8}$",
+      "$\\text{C}_{4}\\text{H}_{10}$",
+      "$\\text{C}_{3}\\text{H}_{6}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Alkane general formula $\\text{C}_{n}\\text{H}_{2n + 2}$. Propane ($n = 3$) $\\rightarrow \\text{C}_{3}\\text{H}_{8}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-29",
+    "paper": "ch1-3-theory",
+    "number": 29,
+    "section": "Section III: Chemical Nomenclature and Formulas",
+    "stem": "The formula of ammonium dichromate is:",
+    "choices": [
+      "$\\left( \\text{NH}_{4} \\right)_{2}\\text{CrO}_{4}$",
+      "$\\text{NH}_{4}\\text{Cr}_{2}\\text{O}_{7}$",
+      "$\\left( \\text{NH}_{4} \\right)_{2}\\text{Cr}_{2}\\text{O}_{7}$",
+      "$\\left( \\text{NH}_{4} \\right)_{3}\\text{CrO}_{4}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Ammonium is $\\text{NH}_{4}^{+}$, dichromate is $\\text{Cr}_{2}\\text{O}_{7}^{2 -} \\Longrightarrow \\left( \\text{NH}_{4} \\right)_{2}\\text{Cr}_{2}\\text{O}_{7}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-30",
+    "paper": "ch1-3-theory",
+    "number": 30,
+    "section": "Section III: Chemical Nomenclature and Formulas",
+    "stem": "Name the organic compound represented by the functional group formula $\\text{CH}_{3}\\text{CH}_{2}\\text{OH}$.",
+    "choices": [
+      "Methanol",
+      "Ethanol",
+      "Dimethyl ether",
+      "Propanol"
+    ],
+    "sourceKey": "B",
+    "explanation": "Two-carbon alcohol is ethanol.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-31",
+    "paper": "ch1-3-theory",
+    "number": 31,
+    "section": "Section IV: Moles, Stoichiometry, and Empirical Formulas",
+    "stem": "How many total oxygen atoms are present in $0.250\\text{~moles}$ of hydrated copper(II) sulfate, $\\text{CuSO}_{4} \\cdot 5\\text{H}_{2}\\text{O}$?",
+    "choices": [
+      "$1.51 \\times 10^{23}$",
+      "$6.02 \\times 10^{23}$",
+      "$1.35 \\times 10^{24}$",
+      "$2.71 \\times 10^{24}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Each formula unit has $4 + 5 = 9$ oxygen atoms.\n\nOxygen atoms $= 0.250\\text{~mol} \\times 9 \\times 6.022 \\times 10^{23} = 1.35 \\times 10^{24}$ atoms.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-32",
+    "paper": "ch1-3-theory",
+    "number": 32,
+    "section": "Section IV: Moles, Stoichiometry, and Empirical Formulas",
+    "stem": "A compound contains $40.00\\%$ C, $6.71\\%$ H, and $53.29\\%$ O by mass. If its molar mass is approximately $180\\text{~g/mol}$, what is its molecular formula?",
+    "choices": [
+      "$\\text{CH}_{2}\\text{O}$",
+      "$\\text{C}_{2}\\text{H}_{4}\\text{O}_{2}$",
+      "$\\text{C}_{6}\\text{H}_{12}\\text{O}_{6}$",
+      "$\\text{C}_{3}\\text{H}_{6}\\text{O}_{3}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Empirical ratio: $\\text{C} = 40.00/12.01 = 3.33$, $\\text{H} = 6.71/1.008 = 6.66$, $\\text{O} = 53.29/16.00 = 3.33 \\Longrightarrow \\text{CH}_{2}\\text{O}$ ($M_{\\text{emp}} = 30$).\n\n$\\text{Ratio} = 180/30 = 6 \\Longrightarrow \\text{C}_{6}\\text{H}_{12}\\text{O}_{6}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-33",
+    "paper": "ch1-3-theory",
+    "number": 33,
+    "section": "Section IV: Moles, Stoichiometry, and Empirical Formulas",
+    "stem": "Combustion of $1.50\\text{~g}$ of a hydrocarbon yields $4.71\\text{~g}$ of $\\text{CO}_{2}$ and $1.93\\text{~g}$ of $\\text{H}_{2}\\text{O}$. What is the empirical formula of the hydrocarbon?",
+    "choices": [
+      "$\\text{CH}$",
+      "$\\text{CH}_{2}$",
+      "$\\text{C}_{2}\\text{H}_{5}$",
+      "$\\text{CH}_{3}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Mass C $= 4.71 \\times \\frac{12.01}{44.01} = 1.285\\text{~g}$ ($0.107\\text{~mol}$).\n\nMass H $= 1.93 \\times \\frac{2.016}{18.02} = 0.216\\text{~g}$ ($0.214\\text{~mol}$).\n\nRatio $\\text{H}/\\text{C} = 2 \\Longrightarrow \\text{CH}_{2}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-34",
+    "paper": "ch1-3-theory",
+    "number": 34,
+    "section": "Section IV: Moles, Stoichiometry, and Empirical Formulas",
+    "stem": "What is the mass percent of nitrogen in ammonium nitrate ($\\text{NH}_{4}\\text{NO}_{3}$, $M = 80.04\\text{~g/mol}$)?",
+    "choices": [
+      "$17.5\\%$",
+      "$35.0\\%$",
+      "$28.0\\%$",
+      "$42.0\\%$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$\\%\\text{N} = \\frac{2 \\times 14.01}{80.04} \\times 100\\% = 35.0\\%$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-35",
+    "paper": "ch1-3-theory",
+    "number": 35,
+    "section": "Section IV: Moles, Stoichiometry, and Empirical Formulas",
+    "stem": "How many grams of iron can be extracted from $500.0\\text{~g}$ of iron(III) oxide ($\\text{Fe}_{2}\\text{O}_{3}$, $M = 159.7\\text{~g/mol}$)?",
+    "choices": [
+      "$349.7\\text{~g}$",
+      "$174.9\\text{~g}$",
+      "$233.1\\text{~g}$",
+      "$350.0\\text{~g}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$\\%\\text{Fe} = \\frac{2 \\times 55.85}{159.7} = 69.94\\%$.\n\nMass $\\text{Fe} = 500.0\\text{~g} \\times 0.6994 = 349.7\\text{~g}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-36",
+    "paper": "ch1-3-theory",
+    "number": 36,
+    "section": "Section IV: Moles, Stoichiometry, and Empirical Formulas",
+    "stem": "A sample of hydrated zinc sulfate ($\\text{ZnSO}_{4} \\cdot x\\text{H}_{2}\\text{O}$) weighing $5.75\\text{~g}$ is heated until all water is driven off. The anhydrous residue weighs $3.23\\text{~g}$. Determine the value of $x$. ($M_{\\text{ZnSO}_{4}} = 161.47\\text{~g/mol}$, $M_{\\text{H}_{2}\\text{O}} = 18.02\\text{~g/mol}$)",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "sourceKey": "C",
+    "explanation": "Mass $\\text{H}_{2}\\text{O} = 5.75 - 3.23 = 2.52\\text{~g}$.\n\nMoles $\\text{ZnSO}_{4} = 3.23/161.47 = 0.0200\\text{~mol}$.\n\nMoles $\\text{H}_{2}\\text{O} = 2.52/18.02 = 0.140\\text{~mol}$.\n\n$x = 0.140/0.0200 = 7$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-37",
+    "paper": "ch1-3-theory",
+    "number": 37,
+    "section": "Section IV: Moles, Stoichiometry, and Empirical Formulas",
+    "stem": "In a mass spectrometer, a sample of xenon is ionized to form $\\text{Xe}^{+}$ ions. What governs the deflection of these ions in the magnetic field?",
+    "choices": [
+      "Nuclear charge only",
+      "Mass-to-charge ratio ($m/z$)",
+      "Electron affinity of xenon",
+      "Total molecular volume"
+    ],
+    "sourceKey": "B",
+    "explanation": "Ions in a mass spectrometer are separated based on their mass-to-charge ratio ($m/z$).",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-38",
+    "paper": "ch1-3-theory",
+    "number": 38,
+    "section": "Section IV: Moles, Stoichiometry, and Empirical Formulas",
+    "stem": "How many moles of sodium ions ($\\text{Na}^{+}$) are present in a sample containing $3.01 \\times 10^{23}$ formula units of sodium phosphate ($\\text{Na}_{3}\\text{PO}_{4}$)?",
+    "choices": [
+      "$0.500\\text{~mol}$",
+      "$1.50\\text{~mol}$",
+      "$3.00\\text{~mol}$",
+      "$1.00\\text{~mol}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Moles of $\\text{Na}_{3}\\text{PO}_{4} = \\frac{3.01 \\times 10^{23}}{6.022 \\times 10^{23}} = 0.500\\text{~mol}$.\n\nMoles of $\\text{Na}^{+} = 3 \\times 0.500 = 1.50\\text{~mol}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-39",
+    "paper": "ch1-3-theory",
+    "number": 39,
+    "section": "Section IV: Moles, Stoichiometry, and Empirical Formulas",
+    "stem": "An oxide of nitrogen contains $30.45\\%$ nitrogen by mass. What is its empirical formula?",
+    "choices": [
+      "$\\text{NO}$",
+      "$\\text{NO}_{2}$",
+      "$\\text{N}_{2}\\text{O}$",
+      "$\\text{N}_{2}\\text{O}_{5}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$\\%\\text{N} = 30.45\\%$, $\\%\\text{O} = 69.55\\%$.\n\nMoles $\\text{N} = 30.45/14.01 = 2.173$; Moles $\\text{O} = 69.55/16.00 = 4.347$. Ratio $= 1:2 \\Longrightarrow \\text{NO}_{2}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-40",
+    "paper": "ch1-3-theory",
+    "number": 40,
+    "section": "Section IV: Moles, Stoichiometry, and Empirical Formulas",
+    "stem": "A mixture of $\\text{NaCl}$ ($M = 58.44\\text{~g/mol}$) and $\\text{KCl}$ ($M = 74.55\\text{~g/mol}$) weighing $2.000\\text{~g}$ contains $0.0300\\text{~mol}$ of total chloride ions. Calculate the mass of $\\text{NaCl}$ in the mixture.",
+    "choices": [
+      "$1.168\\text{~g}$",
+      "$0.832\\text{~g}$",
+      "$0.868\\text{~g}$",
+      "$1.432\\text{~g}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Let $x = \\text{moles~NaCl}$, $y = \\text{moles~KCl}$.\n\n$x + y = 0.0300$\n\n$58.44x + 74.55(0.0300 - x) = 2.000 \\Longrightarrow 16.11x = 0.2365 \\Longrightarrow x = 0.01468\\text{~mol}$.\n\nMass $\\text{NaCl} = 0.01468 \\times 58.44 = 0.858\\text{~g}$. (Recalculating: $74.55 \\times 0.0300 = 2.2365$. $2.2365 - 2.000 = 0.2365$. $x = 0.2365/16.11 = 0.01468\\text{~mol}$. Mass $= 0.858\\text{~g}$). Correct Choice: C ($0.868\\text{~g}$ rounded to 3 sig figs depending on molar masses).",
+    "flags": [
+      "key-commentary",
+      "claimed-C"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-41",
+    "paper": "ch1-3-theory",
+    "number": 41,
+    "section": "Section V: Stoichiometric Calculations, Limiting Reagents, and Reaction Yields",
+    "stem": "Consider the reaction:\n\n$$2\\text{Al}(s) + 3\\text{Cl}_{2}(g) \\rightarrow 2\\text{AlCl}_{3}(s)$$\n\nIf $10.0\\text{~g}$ of $\\text{Al}$ ($M = 26.98\\text{~g/mol}$) reacts with $35.0\\text{~g}$ of $\\text{Cl}_{2}$ ($M = 70.90\\text{~g/mol}$), what mass of $\\text{AlCl}_{3}$ ($M = 133.34\\text{~g/mol}$) is formed?",
+    "choices": [
+      "$49.4\\text{~g}$",
+      "$43.9\\text{~g}$",
+      "$29.3\\text{~g}$",
+      "$22.0\\text{~g}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Moles $\\text{Al} = 10.0/26.98 = 0.3706\\text{~mol}$. Required $\\text{Cl}_{2} = 1.5 \\times 0.3706 = 0.5559\\text{~mol}$.\n\nMoles $\\text{Cl}_{2} = 35.0/70.90 = 0.4937\\text{~mol} \\Longrightarrow \\text{Cl}_{2}$ is limiting.\n\nMoles $\\text{AlCl}_{3} = 0.4937 \\times \\frac{2}{3} = 0.3291\\text{~mol}$.\n\nMass $\\text{AlCl}_{3} = 0.3291 \\times 133.34 = 43.9\\text{~g}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-42",
+    "paper": "ch1-3-theory",
+    "number": 42,
+    "section": "Section V: Stoichiometric Calculations, Limiting Reagents, and Reaction Yields",
+    "stem": "In the reaction given in Question 41, which reactant is the limiting reagent, and how much excess reagent remains unreacted?",
+    "choices": [
+      "$\\text{Al}$ is limiting; $1.11\\text{~g}$ of $\\text{Cl}_{2}$ remains.",
+      "$\\text{Cl}_{2}$ is limiting; $1.11\\text{~g}$ of $\\text{Al}$ remains.",
+      "$\\text{Cl}_{2}$ is limiting; $5.56\\text{~g}$ of $\\text{Al}$ remains.",
+      "$\\text{Al}$ is limiting; $8.32\\text{~g}$ of $\\text{Cl}_{2}$ remains."
+    ],
+    "sourceKey": "B",
+    "explanation": "$\\text{Cl}_{2}$ is limiting. $\\text{Al}$ used $= 0.4937 \\times \\frac{2}{3} = 0.3291\\text{~mol}$.\n\n$\\text{Al}$ remaining $= (0.3706 - 0.3291) \\times 26.98 = 1.11\\text{~g}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-43",
+    "paper": "ch1-3-theory",
+    "number": 43,
+    "section": "Section V: Stoichiometric Calculations, Limiting Reagents, and Reaction Yields",
+    "stem": "Titanium metal is produced by the reaction:\n\n$$\\text{TiCl}_{4}(g) + 2\\text{Mg}(l) \\rightarrow \\text{Ti}(s) + 2\\text{MgCl}_{2}(l)$$\n\nWhen $3.54 \\times 10^{7}\\text{~g}$ of $\\text{TiCl}_{4}$ ($M = 189.7\\text{~g/mol}$) reacts with $1.13 \\times 10^{7}\\text{~g}$ of $\\text{Mg}$ ($M = 24.31\\text{~g/mol}$), $7.81 \\times 10^{6}\\text{~g}$ of $\\text{Ti}$ ($M = 47.87\\text{~g/mol}$) is isolated. What is the percentage yield of $\\text{Ti}$?",
+    "choices": [
+      "$87.4\\%$",
+      "$74.2\\%$",
+      "$89.3\\%$",
+      "$95.1\\%$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Moles $\\text{TiCl}_{4} = 3.54 \\times 10^{7}/189.7 = 1.866 \\times 10^{5}\\text{~mol}$.\n\nMoles $\\text{Mg} = 1.13 \\times 10^{7}/24.31 = 4.648 \\times 10^{5}\\text{~mol}$.\n\n$\\text{TiCl}_{4}$ requires $2 \\times 1.866 \\times 10^{5} = 3.732 \\times 10^{5}\\text{~mol}$ $\\text{Mg}$, so $\\text{TiCl}_{4}$ is limiting.\n\nTheoretical yield of $\\text{Ti} = 1.866 \\times 10^{5} \\times 47.87 = 8.932 \\times 10^{6}\\text{~g}$.\n\n$\\%$ yield $= \\frac{7.81 \\times 10^{6}}{8.932 \\times 10^{6}} \\times 100\\% = 87.4\\%$. Correct Choice: A.",
+    "flags": [
+      "key-commentary",
+      "claimed-A"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-44",
+    "paper": "ch1-3-theory",
+    "number": 44,
+    "section": "Section V: Stoichiometric Calculations, Limiting Reagents, and Reaction Yields",
+    "stem": "Balance the following combustion equation with lowest whole-number coefficients:\n\n$$a\\,\\text{C}_{4}\\text{H}_{10}(g) + b\\,\\text{O}_{2}(g) \\rightarrow c\\,\\text{CO}_{2}(g) + d\\,\\text{H}_{2}\\text{O}(g)$$\n\nWhat is the value of coefficient $b$?",
+    "choices": [
+      "13",
+      "26",
+      "6.5",
+      "10"
+    ],
+    "sourceKey": "A",
+    "explanation": "$2\\text{C}_{4}\\text{H}_{10} + 13\\text{O}_{2} \\rightarrow 8\\text{CO}_{2} + 10\\text{H}_{2}\\text{O}$. $b = 13$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-45",
+    "paper": "ch1-3-theory",
+    "number": 45,
+    "section": "Section V: Stoichiometric Calculations, Limiting Reagents, and Reaction Yields",
+    "stem": "Calcium carbide ($\\text{CaC}_{2}$) reacts with water to produce acetylene gas ($\\text{C}_{2}\\text{H}_{2}$):\n\n$$\\text{CaC}_{2}(s) + 2\\text{H}_{2}\\text{O}(l) \\rightarrow \\text{Ca(OH)}_{2}(s) + \\text{C}_{2}\\text{H}_{2}(g)$$\n\nHow many grams of acetylene are produced when $100.0\\text{~g}$ of $\\text{CaC}_{2}$ ($85.0\\%$ pure by mass) reacts with excess water? ($M_{\\text{CaC}_{2}} = 64.10\\text{~g/mol}$, $M_{\\text{C}_{2}\\text{H}_{2}} = 26.04\\text{~g/mol}$)",
+    "choices": [
+      "$40.6\\text{~g}$",
+      "$34.5\\text{~g}$",
+      "$29.3\\text{~g}$",
+      "$38.2\\text{~g}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Pure $\\text{CaC}_{2} = 100.0\\text{~g} \\times 0.850 = 85.0\\text{~g}$.\n\nMoles $\\text{CaC}_{2} = 85.0/64.10 = 1.326\\text{~mol}$.\n\nMass $\\text{C}_{2}\\text{H}_{2} = 1.326 \\times 26.04 = 34.5\\text{~g}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-46",
+    "paper": "ch1-3-theory",
+    "number": 46,
+    "section": "Section V: Stoichiometric Calculations, Limiting Reagents, and Reaction Yields",
+    "stem": "Ammonia is produced industrially via the Haber-Bosch process:\n\n$$\\text{N}_{2}(g) + 3\\text{H}_{2}(g) \\rightarrow 2\\text{NH}_{3}(g)$$\n\nIf a mixture of $28.0\\text{~g}$ of $\\text{N}_{2}$ and $9.00\\text{~g}$ of $\\text{H}_{2}$ produces $25.5\\text{~g}$ of $\\text{NH}_{3}$, what is the percent yield? ($M_{\\text{N}_{2}} = 28.02\\text{~g/mol}$, $M_{\\text{H}_{2}} = 2.016\\text{~g/mol}$, $M_{\\text{NH}_{3}} = 17.03\\text{~g/mol}$)",
+    "choices": [
+      "$75.0\\%$",
+      "$85.0\\%$",
+      "$90.0\\%$",
+      "$60.0\\%$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Moles $\\text{N}_{2} = 28.0/28.02 = 1.00\\text{~mol}$. Requires $3.00\\text{~mol}$ $\\text{H}_{2}$.\n\nMoles $\\text{H}_{2} = 9.00/2.016 = 4.46\\text{~mol} \\Longrightarrow \\text{N}_{2}$ is limiting.\n\nTheoretical yield $\\text{NH}_{3} = 2.00\\text{~mol} \\times 17.03 = 34.06\\text{~g}$.\n\n$\\%$ yield $= \\frac{25.5}{34.06} \\times 100\\% = 74.9\\% \\approx 75.0\\%$.",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-47",
+    "paper": "ch1-3-theory",
+    "number": 47,
+    "section": "Section V: Stoichiometric Calculations, Limiting Reagents, and Reaction Yields",
+    "stem": "Consider the multi-step synthesis of sulfuric acid:\n\n$$\\begin{aligned}\n\\text{S}_{8} + 8\\text{O}_{2} & \\rightarrow 8\\text{SO}_{2} \\\\\n2\\text{SO}_{2} + \\text{O}_{2} & \\rightarrow 2\\text{SO}_{3} \\\\\n\\text{SO}_{3} + \\text{H}_{2}\\text{O} & \\rightarrow \\text{H}_{2}\\text{SO}_{4}\n\\end{aligned}$$\n\nStarting with $1.00\\text{~kg}$ of sulfur ($\\text{S}_{8}$, $M = 256.5\\text{~g/mol}$), what is the maximum theoretical mass of $\\text{H}_{2}\\text{SO}_{4}$ ($M = 98.08\\text{~g/mol}$) that can be produced assuming quantitative yield in all steps?",
+    "choices": [
+      "$3.06\\text{~kg}$",
+      "$1.53\\text{~kg}$",
+      "$6.12\\text{~kg}$",
+      "$0.38\\text{~kg}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Overall stoichiometry: $1\\text{~mol~S} \\rightarrow 1\\text{~mol~H}_{2}\\text{SO}_{4}$.\n\nMoles $\\text{S} = 1000\\text{~g}/32.07\\text{~g/mol} = 31.18\\text{~mol}$.\n\nTheoretical mass $\\text{H}_{2}\\text{SO}_{4} = 31.18\\text{~mol} \\times 98.08\\text{~g/mol} = 3058\\text{~g} = 3.06\\text{~kg}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-48",
+    "paper": "ch1-3-theory",
+    "number": 48,
+    "section": "Section V: Stoichiometric Calculations, Limiting Reagents, and Reaction Yields",
+    "stem": "A mixture of $2.00\\text{~mol}$ of $\\text{H}_{2}$ and $2.00\\text{~mol}$ of $\\text{O}_{2}$ is ignited to form water:\n\n$$2\\text{H}_{2}(g) + \\text{O}_{2}(g) \\rightarrow 2\\text{H}_{2}\\text{O}(g)$$\n\nHow many total moles of gas remain in the container after the reaction goes to completion?",
+    "choices": [
+      "$1.00\\text{~mol}$",
+      "$2.00\\text{~mol}$",
+      "$3.00\\text{~mol}$",
+      "$2.50\\text{~mol}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "$2\\text{H}_{2} + \\text{O}_{2} \\rightarrow 2\\text{H}_{2}\\text{O}$.\n\n$2.00\\text{~mol~H}_{2}$ reacts with $1.00\\text{~mol~O}_{2}$ to produce $2.00\\text{~mol~H}_{2}\\text{O}(g)$.\n\nExcess $\\text{O}_{2} = 2.00 - 1.00 = 1.00\\text{~mol}$. Total remaining gas $= 2.00\\text{~mol~H}_{2}\\text{O} + 1.00\\text{~mol~O}_{2} = 3.00\\text{~mol}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-49",
+    "paper": "ch1-3-theory",
+    "number": 49,
+    "section": "Section V: Stoichiometric Calculations, Limiting Reagents, and Reaction Yields",
+    "stem": "When $0.500\\text{~mol}$ of a metal $\\text{M}$ reacts completely with excess nitrogen gas, $0.167\\text{~mol}$ of a nitride compound $\\text{M}_{x}\\text{N}_{y}$ is produced. What is the value of $x$?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "sourceKey": "C",
+    "explanation": "Ratio of moles of $\\text{M}$ to compound $= 0.500/0.167 = 3$. Thus $x = 3$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-theory-50",
+    "paper": "ch1-3-theory",
+    "number": 50,
+    "section": "Section V: Stoichiometric Calculations, Limiting Reagents, and Reaction Yields",
+    "stem": "Aspirin ($\\text{C}_{9}\\text{H}_{8}\\text{O}_{4}$, $M = 180.16\\text{~g/mol}$) is synthesized by reacting salicylic acid ($\\text{C}_{7}\\text{H}_{6}\\text{O}_{3}$, $M = 138.12\\text{~g/mol}$) with acetic anhydride ($\\text{C}_{4}\\text{H}_{6}\\text{O}_{3}$, $M = 102.09\\text{~g/mol}$):\n\n$$\\text{C}_{7}\\text{H}_{6}\\text{O}_{3} + \\text{C}_{4}\\text{H}_{6}\\text{O}_{3} \\rightarrow \\text{C}_{9}\\text{H}_{8}\\text{O}_{4} + \\text{C}_{2}\\text{H}_{4}\\text{O}_{2}$$\n\nIf $2.00\\text{~g}$ of salicylic acid reacts with $2.00\\text{~g}$ of acetic anhydride with an $85.0\\%$ yield, what mass of aspirin is collected?",
+    "choices": [
+      "$2.22\\text{~g}$",
+      "$2.61\\text{~g}$",
+      "$3.07\\text{~g}$",
+      "$1.89\\text{~g}$"
+    ],
+    "sourceKey": "D",
+    "explanation": "Moles salicylic acid $= 2.00/138.12 = 0.01448\\text{~mol}$.\n\nMoles acetic anhydride $= 2.00/102.09 = 0.01959\\text{~mol} \\Longrightarrow$ Salicylic acid is limiting.\n\nTheoretical aspirin mass $= 0.01448 \\times 180.16 = 2.609\\text{~g}$.\n\nActual mass $= 2.609\\text{~g} \\times 0.850 = 2.22\\text{~g}$. Correct Choice: A.",
+    "flags": [
+      "key-commentary",
+      "claimed-A"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-01",
+    "paper": "ch1-3-lab",
+    "number": 1,
+    "section": "Section I: Lab Apparatus, Measurement, and Density Analysis",
+    "stem": "A student uses an analytical balance to measure the mass of a clean, dry porcelain crucible. The recorded masses from three trial weighing are $15.4321\\text{~g}$, $15.4323\\text{~g}$, and $15.4320\\text{~g}$. The true mass of the crucible is $15.4500\\text{~g}$. How would you describe the student's measurements?",
+    "choices": [
+      "Both precise and accurate",
+      "Precise but not accurate",
+      "Accurate but not precise",
+      "Neither precise nor accurate"
+    ],
+    "sourceKey": "B",
+    "explanation": "Precision refers to the reproducibility of values ($15.4321,15.4323,15.4320$ are very close). Accuracy refers to closeness to the true value ($15.4500\\text{~g}$). Since the mean ($15.4321\\text{~g}$) differs significantly from $15.4500\\text{~g}$, it is precise but not accurate.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-02",
+    "paper": "ch1-3-lab",
+    "number": 2,
+    "section": "Section I: Lab Apparatus, Measurement, and Density Analysis",
+    "stem": "When measuring liquid volume using a volumetric pipet, which technique is recommended to ensure correct volume delivery?",
+    "choices": [
+      "Blow out the small remaining drop at the tip using a rubber bulb.",
+      "Touch the tip of the pipet to the inner wall of the receiving vessel after drainage stops.",
+      "Rinse the inside of the pipet with distilled water right before drawing the liquid sample.",
+      "Read the liquid volume from the top of the convex meniscus for aqueous solutions."
+    ],
+    "sourceKey": "B",
+    "explanation": "Volumetric pipets are calibrated to \"deliver\" (TD). The remaining drop in the tip is accounted for in calibration; touching the tip against the wall removes excess hanging liquid without forcing out the calibrated internal drop.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-03",
+    "paper": "ch1-3-lab",
+    "number": 3,
+    "section": "Section I: Lab Apparatus, Measurement, and Density Analysis",
+    "stem": "A student determines the density of an irregularly shaped solid by water displacement. If air bubbles remain trapped on the surface of the submerged solid, how will this systematic error affect the calculated density?",
+    "choices": [
+      "The calculated density will be higher than the true value.",
+      "The calculated density will be lower than the true value.",
+      "The calculated density will remain unaffected.",
+      "The density will be zero because the volume measurement is invalid."
+    ],
+    "sourceKey": "B",
+    "explanation": "Trapped air bubbles increase the measured total volume ($V$). Since density $d = \\frac{m}{V}$, an artificially large volume causes the calculated density to be lower than true.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-04",
+    "paper": "ch1-3-lab",
+    "number": 4,
+    "section": "Section I: Lab Apparatus, Measurement, and Density Analysis",
+    "stem": "A picnometer (density bottle) has a mass of $25.000\\text{~g}$ empty. When filled with water at $20^{\\circ}\\text{C}$ ($d = 0.9982\\text{~g/cm}^{3}$), the total mass is $50.000\\text{~g}$. When filled with an unknown oil, the total mass is $46.250\\text{~g}$. What is the density of the oil?",
+    "choices": [
+      "$0.8483\\text{~g/cm}^{3}$",
+      "$0.8500\\text{~g/cm}^{3}$",
+      "$0.9250\\text{~g/cm}^{3}$",
+      "$0.8125\\text{~g/cm}^{3}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Mass of water $= 50.000 - 25.000 = 25.000\\text{~g}$.\n\nVolume of picnometer $= \\frac{25.000\\text{~g}}{0.9982\\text{~g/cm}^{3}} = 25.045\\text{~cm}^{3}$.\n\nMass of oil $= 46.250 - 25.000 = 21.250\\text{~g}$.\n\nDensity of oil $= \\frac{21.250\\text{~g}}{25.045\\text{~cm}^{3}} = 0.8485 \\approx 0.8483\\text{~g/cm}^{3}$.",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-05",
+    "paper": "ch1-3-lab",
+    "number": 5,
+    "section": "Section I: Lab Apparatus, Measurement, and Density Analysis",
+    "stem": "Which piece of volumetric glassware delivers a variable volume of liquid with the highest precision in a gravimetric preparation?",
+    "choices": [
+      "Volumetric flask",
+      "Graduated cylinder",
+      "Buret",
+      "Beaker"
+    ],
+    "sourceKey": "C",
+    "explanation": "A buret allows precise delivery of variable liquid volumes.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-06",
+    "paper": "ch1-3-lab",
+    "number": 6,
+    "section": "Section I: Lab Apparatus, Measurement, and Density Analysis",
+    "stem": "A solid sample is weighed using a top-loading balance that reads to $\\pm 0.01\\text{~g}$. If the mass of a weighing boat is $1.25\\text{~g}$ and the mass of the boat plus sample is $4.78\\text{~g}$, what is the absolute uncertainty in the net mass of the sample?",
+    "choices": [
+      "$\\pm 0.005\\text{~g}$",
+      "$\\pm 0.01\\text{~g}$",
+      "$\\pm 0.02\\text{~g}$",
+      "$\\pm 0.014\\text{~g}$"
+    ],
+    "sourceKey": "D",
+    "explanation": "For addition/subtraction of quantities with absolute uncertainties: $u_{\\text{net}} = \\sqrt{(0.01)^{2} + (0.01)^{2}} = \\sqrt{0.0002} = \\pm 0.014\\text{~g}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-07",
+    "paper": "ch1-3-lab",
+    "number": 7,
+    "section": "Section I: Lab Apparatus, Measurement, and Density Analysis",
+    "stem": "A student calibrated a $10.00\\text{~mL}$ volumetric pipet by measuring the mass of distilled water delivered at $25^{\\circ}\\text{C}$ ($d_{\\text{water}} = 0.99707\\text{~g/mL}$). The average mass delivered across 4 trials was $9.9231\\text{~g}$. What is the true volume delivered by the pipet?",
+    "choices": [
+      "$9.9522\\text{~mL}$",
+      "$9.8940\\text{~mL}$",
+      "$10.000\\text{~mL}$",
+      "$9.9231\\text{~mL}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$V = \\frac{\\text{mass}}{\\text{density}} = \\frac{9.9231\\text{~g}}{0.99707\\text{~g/mL}} = 9.9522\\text{~mL}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-08",
+    "paper": "ch1-3-lab",
+    "number": 8,
+    "section": "Section I: Lab Apparatus, Measurement, and Density Analysis",
+    "stem": "During a density laboratory experiment, a student neglects to dry the outside of a solid metal cylinder after retrieving it from a water bath. How will this error affect the calculated volume and calculated density of the cylinder?",
+    "choices": [
+      "Calculated volume increases; calculated density decreases.",
+      "Calculated volume decreases; calculated density increases.",
+      "Calculated volume is unaffected; calculated density decreases.",
+      "Calculated volume increases; calculated density increases."
+    ],
+    "sourceKey": "A",
+    "explanation": "Extra water droplets add mass to the water displaced/measured volume, leading to an increased measured volume, which decreases the density ratio ($d = m/V$).",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-09",
+    "paper": "ch1-3-lab",
+    "number": 9,
+    "section": "Section I: Lab Apparatus, Measurement, and Density Analysis",
+    "stem": "Which safety device should be used immediately if a chemical splash enters a person's eyes in the laboratory?",
+    "choices": [
+      "Safety shower",
+      "Eyewash station",
+      "Fume hood",
+      "Fire blanket"
+    ],
+    "sourceKey": "B",
+    "explanation": "Eye splashes must be immediately rinsed at an eyewash station for at least 15 minutes.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-10",
+    "paper": "ch1-3-lab",
+    "number": 10,
+    "section": "Section I: Lab Apparatus, Measurement, and Density Analysis",
+    "stem": "A temperature sensor calibrated in Kelvin records $298.15\\text{~K}$. What is this temperature on the Fahrenheit ($_{}^{\\circ}\\text{F}$) scale?",
+    "choices": [
+      "${77.0}^{\\circ}\\text{F}$",
+      "${25.0}^{\\circ}\\text{F}$",
+      "${98.6}^{\\circ}\\text{F}$",
+      "${68.0}^{\\circ}\\text{F}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$T\\left( \\circ \\text{C} \\right) = 298.15 - 273.15 = {25.0}^{\\circ}\\text{C}$.\n\n$T\\left( \\circ \\text{F} \\right) = \\frac{9}{5}(25.0) + 32 = 45 + 32 = {77.0}^{\\circ}\\text{F}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-11",
+    "paper": "ch1-3-lab",
+    "number": 11,
+    "section": "Section II: Separation Techniques, Matter, and Physical/Chemical Changes",
+    "stem": "A mixture containing fine sand ($\\text{SiO}_{2}$), sodium chloride ($\\text{NaCl}$), and ammonium chloride ($\\text{NH}_{4}\\text{Cl}$) needs to be separated into its pure components. Which sequence of physical operations will successfully isolate all three components in sequence?",
+    "choices": [
+      "Sublimation $\\rightarrow$ Dissolution in water $\\rightarrow$ Filtration $\\rightarrow$ Evaporation",
+      "Dissolution in water $\\rightarrow$ Sublimation $\\rightarrow$ Filtration $\\rightarrow$ Distillation",
+      "Filtration $\\rightarrow$ Sublimation $\\rightarrow$ Decantation $\\rightarrow$ Evaporation",
+      "Centrifugation $\\rightarrow$ Crystallization $\\rightarrow$ Extraction $\\rightarrow$ Sublimation"
+    ],
+    "sourceKey": "A",
+    "explanation": "Heating sublimes $\\text{NH}_{4}\\text{Cl}$ gas directly. Adding water dissolves $\\text{NaCl}$ while $\\text{SiO}_{2}$ remains solid. Filtering isolates $\\text{SiO}_{2}$, and evaporating water leaves pure $\\text{NaCl}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-12",
+    "paper": "ch1-3-lab",
+    "number": 12,
+    "section": "Section II: Separation Techniques, Matter, and Physical/Chemical Changes",
+    "stem": "Paper chromatography is performed to separate a mixture of organic dyes. If Dye A travels $2.4\\text{~cm}$ while the solvent front travels $8.0\\text{~cm}$, what is the retention factor ($R_{f}$) for Dye A?",
+    "choices": [
+      "0.30",
+      "3.33",
+      "0.24",
+      "0.76"
+    ],
+    "sourceKey": "A",
+    "explanation": "$R_{f} = \\frac{\\text{distance~traveled~by~solute}}{\\text{distance~traveled~by~solvent~front}} = \\frac{2.4\\text{~cm}}{8.0\\text{~cm}} = 0.30$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-13",
+    "paper": "ch1-3-lab",
+    "number": 13,
+    "section": "Section II: Separation Techniques, Matter, and Physical/Chemical Changes",
+    "stem": "In a distillation experiment, why is cooling water fed into the bottom inlet of the Liebig condenser rather than the top inlet?",
+    "choices": [
+      "To ensure the condenser remains completely filled with water for efficient thermal exchange.",
+      "To prevent the glass inner tube from thermal shock and cracking.",
+      "To force the vapor to move upwards against gravity.",
+      "To increase the boiling point of the distillate inside the tube."
+    ],
+    "sourceKey": "A",
+    "explanation": "Feeding water from the bottom prevents air pockets and ensures the entire cooling jacket remains filled with cold water.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-14",
+    "paper": "ch1-3-lab",
+    "number": 14,
+    "section": "Section II: Separation Techniques, Matter, and Physical/Chemical Changes",
+    "stem": "Which of the following observations provides clear visual evidence that a chemical change (rather than a physical change) has occurred in a laboratory experiment?",
+    "choices": [
+      "Formation of a yellow precipitate upon mixing two clear, colorless solutions.",
+      "Condensation of water drops on the cool glass wall of an evaporating dish.",
+      "Dissolution of white sugar crystals in warm water.",
+      "Melting of a solid paraffin wax candle."
+    ],
+    "sourceKey": "A",
+    "explanation": "Precipitate formation indicates a chemical reaction resulting in a new insoluble ionic compound.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-15",
+    "paper": "ch1-3-lab",
+    "number": 15,
+    "section": "Section II: Separation Techniques, Matter, and Physical/Chemical Changes",
+    "stem": "A lab technician needs to purify benzoic acid containing soluble inorganic impurities. Which lab procedure is most appropriate?",
+    "choices": [
+      "Fractional distillation",
+      "Recrystallization using hot water as solvent",
+      "Paper chromatography",
+      "Paper filtration without solvent"
+    ],
+    "sourceKey": "B",
+    "explanation": "Benzoic acid dissolves in hot water but is poorly soluble in cold water; recrystallization removes inorganic soluble impurities.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-16",
+    "paper": "ch1-3-lab",
+    "number": 16,
+    "section": "Section II: Separation Techniques, Matter, and Physical/Chemical Changes",
+    "stem": "What is the primary purpose of adding \"boiling chips\" (porous silicon carbide or ceramic pieces) to a liquid mixture before heating it to boiling in a distillation flask?",
+    "choices": [
+      "To catalyze the breakdown of complex organic impurities.",
+      "To promote smooth, even boiling and prevent violent \"bumping.\"",
+      "To absorb volatile impurities from the liquid phase.",
+      "To lower the standard boiling point of the liquid mixture."
+    ],
+    "sourceKey": "B",
+    "explanation": "Boiling chips provide nucleation sites to prevent localized superheating (\"bumping\").",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-17",
+    "paper": "ch1-3-lab",
+    "number": 17,
+    "section": "Section II: Separation Techniques, Matter, and Physical/Chemical Changes",
+    "stem": "A mixture of two miscible liquids, Liquid A (boiling point $56^{\\circ}\\text{C}$) and Liquid B (boiling point $110^{\\circ}\\text{C}$), is subjected to fractional distillation. Which component will be collected first as the distillate?",
+    "choices": [
+      "Liquid A",
+      "Liquid B",
+      "An equimolar mixture of A and B",
+      "Neither; they distill simultaneously at $83^{\\circ}\\text{C}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Liquid A has a lower boiling point ($56^{\\circ}\\text{C}$), so its vapor pressure is higher, distilling over first.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-18",
+    "paper": "ch1-3-lab",
+    "number": 18,
+    "section": "Section II: Separation Techniques, Matter, and Physical/Chemical Changes",
+    "stem": "During gravimetric filtration using filter paper, why should the filter paper cone be wet with a small amount of pure solvent before pouring the suspension?",
+    "choices": [
+      "To dissolve any loose fibers on the paper surface.",
+      "To seal the edges of the filter paper against the funnel wall to prevent bypass.",
+      "To accelerate the rate of chemical reaction in the filtrate.",
+      "To dilute the precipitate and make it pass through faster."
+    ],
+    "sourceKey": "B",
+    "explanation": "Wetting seals the paper edges against the funnel, preventing liquid and solid particles from leaking down the sides.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-19",
+    "paper": "ch1-3-lab",
+    "number": 19,
+    "section": "Section II: Separation Techniques, Matter, and Physical/Chemical Changes",
+    "stem": "In a centrifugation experiment, what forces dense suspended particles to gather at the bottom of the centrifuge tube?",
+    "choices": [
+      "Capillary force",
+      "Centripetal acceleration / apparent centrifugal force",
+      "Electrostatic repulsion",
+      "Surface tension"
+    ],
+    "sourceKey": "B",
+    "explanation": "Centrifugation uses rapid rotation to generate high centripetal acceleration, driving denser particles outward/downward.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-20",
+    "paper": "ch1-3-lab",
+    "number": 20,
+    "section": "Section II: Separation Techniques, Matter, and Physical/Chemical Changes",
+    "stem": "Which property of a substance must be different for its components to be separated by fractional crystallization?",
+    "choices": [
+      "Boiling point",
+      "Temperature dependence of solubility",
+      "Density",
+      "Vapor pressure at room temperature"
+    ],
+    "sourceKey": "B",
+    "explanation": "Fractional crystallization depends on significant differences in compound solubility as a function of temperature.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-21",
+    "paper": "ch1-3-lab",
+    "number": 21,
+    "section": "Section III: Mass Spectrometry, Isotopes, and Characterization",
+    "stem": "In a high-resolution mass spectrometer, a pure element sample produces two sharp signals at $m/z = 62.93\\text{~amu}$ (relative intensity $100.0$) and $m/z = 64.93\\text{~amu}$ (relative intensity $44.7$). Assuming singly charged ions ($z = + 1$), what is the atomic weight of the element?",
+    "choices": [
+      "$63.55\\text{~amu}$",
+      "$63.85\\text{~amu}$",
+      "$64.00\\text{~amu}$",
+      "$63.22\\text{~amu}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Fractional abundance of isotope 1 $= \\frac{100.0}{100.0 + 44.7} = 0.6911$.\n\nIsotope 2 $= \\frac{44.7}{144.7} = 0.3089$.\n\nAtomic Mass $= 0.6911(62.93) + 0.3089(64.93) = 43.491 + 20.057 = 63.55\\text{~amu}$ (Copper, $\\text{Cu}$).",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-22",
+    "paper": "ch1-3-lab",
+    "number": 22,
+    "section": "Section III: Mass Spectrometry, Isotopes, and Characterization",
+    "stem": "What is the main function of the ionization chamber in an electron-impact mass spectrometer?",
+    "choices": [
+      "To accelerate neutral molecules using high-voltage electric fields.",
+      "To knock off electrons from sample molecules/atoms using high-energy electron beams to form positive ions.",
+      "To separate isotopes according to their physical kinetic energies.",
+      "To detect the number of hit particles using a Faraday cup."
+    ],
+    "sourceKey": "B",
+    "explanation": "High-energy electron impact ionization strips electrons from sample particles to form cations.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-23",
+    "paper": "ch1-3-lab",
+    "number": 23,
+    "section": "Section III: Mass Spectrometry, Isotopes, and Characterization",
+    "stem": "A sample containing synthetic polymer chains is analyzed in a mass spectrometer. If a molecular ion peak $\\lbrack M\\rbrack^{+}$ appears at $m/z = 180$, which organic molecule could this correspond to?",
+    "choices": [
+      "Glucose ($\\text{C}_{6}\\text{H}_{12}\\text{O}_{6}$)",
+      "Benzene ($\\text{C}_{6}\\text{H}_{6}$)",
+      "Ethanol ($\\text{C}_{2}\\text{H}_{6}\\text{O}$)",
+      "Sucrose ($\\text{C}_{12}\\text{H}_{22}\\text{O}_{11}$)"
+    ],
+    "sourceKey": "A",
+    "explanation": "Molar mass of Glucose ($\\text{C}_{6}\\text{H}_{12}\\text{O}_{6}$) $= 6(12) + 12(1) + 6(16) = 180\\text{~g/mol}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-24",
+    "paper": "ch1-3-lab",
+    "number": 24,
+    "section": "Section III: Mass Spectrometry, Isotopes, and Characterization",
+    "stem": "Mass spectrometry data for an unknown hydrocarbon sample reveals an intense molecular ion peak at $m/z = 44$. What is the identity of this hydrocarbon?",
+    "choices": [
+      "Methane ($\\text{CH}_{4}$)",
+      "Ethane ($\\text{C}_{2}\\text{H}_{6}$)",
+      "Propane ($\\text{C}_{3}\\text{H}_{8}$)",
+      "Butane ($\\text{C}_{4}\\text{H}_{10}$)"
+    ],
+    "sourceKey": "C",
+    "explanation": "Propane ($\\text{C}_{3}\\text{H}_{8}$) mass $= 3(12) + 8(1) = 44\\text{~amu}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-25",
+    "paper": "ch1-3-lab",
+    "number": 25,
+    "section": "Section III: Mass Spectrometry, Isotopes, and Characterization",
+    "stem": "An isotope ratio mass spectrometer measures the ratio of $_{}^{18}\\text{O}$ to $_{}^{16}\\text{O}$ in water samples. If an oxygen atom has 8 protons and 10 neutrons, what is its correct isotopic symbol?",
+    "choices": [
+      "$_{10}^{18}\\text{O}$",
+      "$_{8}^{18}\\text{O}$",
+      "$_{8}^{10}\\text{O}$",
+      "$_{8}^{16}\\text{O}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Protons $= 8$ ($Z$), Mass Number $A = 8 + 10 = 18 \\Longrightarrow_{8}^{18}\\text{O}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-26",
+    "paper": "ch1-3-lab",
+    "number": 26,
+    "section": "Section III: Mass Spectrometry, Isotopes, and Characterization",
+    "stem": "In mass spectrometry, if the magnetic field strength $B$ is increased while keeping the accelerating voltage $V$ constant, what happens to the radius of curvature $r$ of a charged particle path? ($r = \\frac{1}{B}\\sqrt{\\frac{2mV}{q}}$)",
+    "choices": [
+      "The radius increases.",
+      "The radius decreases.",
+      "The radius remains unchanged.",
+      "The radius drops to zero instantly."
+    ],
+    "sourceKey": "B",
+    "explanation": "According to $r = \\frac{1}{B}\\sqrt{\\frac{2mV}{q}}$, increasing $B$ in the denominator decreases $r$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-27",
+    "paper": "ch1-3-lab",
+    "number": 27,
+    "section": "Section III: Mass Spectrometry, Isotopes, and Characterization",
+    "stem": "A synthetic chemist synthesizes a sample of copper(II) sulfate. To confirm whether the product is anhydrous ($\\text{CuSO}_{4}$) or hydrated ($\\text{CuSO}_{4} \\cdot 5\\text{H}_{2}\\text{O}$), which laboratory observation is most conclusive?",
+    "choices": [
+      "Anhydrous $\\text{CuSO}_{4}$ is white powder, while $\\text{CuSO}_{4} \\cdot 5\\text{H}_{2}\\text{O}$ is blue crystals.",
+      "Anhydrous $\\text{CuSO}_{4}$ reacts violently with helium gas.",
+      "Hydrated $\\text{CuSO}_{4} \\cdot 5\\text{H}_{2}\\text{O}$ sublimes at room temperature.",
+      "Anhydrous $\\text{CuSO}_{4}$ is insoluble in water."
+    ],
+    "sourceKey": "A",
+    "explanation": "Anhydrous copper sulfate is white; hydrated copper sulfate pentahydrate is bright blue.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-28",
+    "paper": "ch1-3-lab",
+    "number": 28,
+    "section": "Section III: Mass Spectrometry, Isotopes, and Characterization",
+    "stem": "What type of spectrum is produced when light from a heated gas discharge tube containing hydrogen is passed through a glass prism in an optical spectrometer?",
+    "choices": [
+      "Continuous spectrum",
+      "Line emission spectrum",
+      "Absorption spectrum",
+      "X-ray diffraction pattern"
+    ],
+    "sourceKey": "B",
+    "explanation": "Excited atomic gases emit light at discrete wavelengths, producing line emission spectra.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-29",
+    "paper": "ch1-3-lab",
+    "number": 29,
+    "section": "Section III: Mass Spectrometry, Isotopes, and Characterization",
+    "stem": "An experimental analysis of an ionic salt shows it contains a polyatomic cation and a monoatomic anion. Which technique provides direct elemental quantitative mass ratios of the elements present?",
+    "choices": [
+      "Elemental Combustion Analysis",
+      "Decantation",
+      "Simple Distillation",
+      "Thin-Layer Chromatography"
+    ],
+    "sourceKey": "A",
+    "explanation": "Elemental combustion analysis directly measures the elemental composition ($\\text{C,~H,~N,~S}$) ratios by mass.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-30",
+    "paper": "ch1-3-lab",
+    "number": 30,
+    "section": "Section III: Mass Spectrometry, Isotopes, and Characterization",
+    "stem": "When performing a flame test in the laboratory, a laboratory student observes a persistent bright yellow flame. Which alkali metal ion is present in the sample?",
+    "choices": [
+      "Lithium ($\\text{Li}^{+}$)",
+      "Sodium ($\\text{Na}^{+}$)",
+      "Potassium ($\\text{K}^{+}$)",
+      "Calcium ($\\text{Ca}^{2 +}$)"
+    ],
+    "sourceKey": "B",
+    "explanation": "Sodium produces an intense, characteristic yellow flame.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-31",
+    "paper": "ch1-3-lab",
+    "number": 31,
+    "section": "Section IV: Empirical Formula Determination and Combustion Analysis Experiments",
+    "stem": "In a laboratory experiment to determine the empirical formula of magnesium oxide ($\\text{Mg}_{x}\\text{O}_{y}$), $0.243\\text{~g}$ of magnesium ribbon is burned in a crucible with air. After heating and cooling, the mass of the magnesium oxide product is $0.403\\text{~g}$. What is the empirical formula?",
+    "choices": [
+      "$\\text{MgO}$",
+      "$\\text{MgO}_{2}$",
+      "$\\text{Mg}_{2}\\text{O}$",
+      "$\\text{Mg}_{3}\\text{O}_{2}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Mass $\\text{Mg} = 0.243\\text{~g}$ ($0.0100\\text{~mol}$). Mass $\\text{O} = 0.403 - 0.243 = 0.160\\text{~g}$ ($0.0100\\text{~mol}$). Ratio $= 1:1 \\Longrightarrow \\text{MgO}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-32",
+    "paper": "ch1-3-lab",
+    "number": 32,
+    "section": "Section IV: Empirical Formula Determination and Combustion Analysis Experiments",
+    "stem": "In the experiment described in Question 31, if the crucible cover is NOT lifted periodically to admit air, soot/unreacted magnesium remains, and some magnesium reacts with atmospheric nitrogen to form $\\text{Mg}_{3}\\text{N}_{2}$. How does the presence of unreacted $\\text{Mg}$ affect the calculated ratio of $\\text{O}$ to $\\text{Mg}$?",
+    "choices": [
+      "Increases the calculated $\\text{O/Mg}$ mole ratio.",
+      "Decreases the calculated $\\text{O/Mg}$ mole ratio.",
+      "Has no effect on the mole ratio.",
+      "Causes the mole ratio to become infinite."
+    ],
+    "sourceKey": "B",
+    "explanation": "Unreacted $\\text{Mg}$ or formation of $\\text{Mg}_{3}\\text{N}_{2}$ reduces apparent oxygen mass gained, underestimating the $\\text{O/Mg}$ ratio.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-33",
+    "paper": "ch1-3-lab",
+    "number": 33,
+    "section": "Section IV: Empirical Formula Determination and Combustion Analysis Experiments",
+    "stem": "A $2.000\\text{~g}$ sample of a pure organic compound containing only $\\text{C}$, $\\text{H}$, and $\\text{O}$ undergoes complete combustion in an automated combustion analyzer, yielding $2.933\\text{~g}$ of $\\text{CO}_{2}$ and $1.200\\text{~g}$ of $\\text{H}_{2}\\text{O}$. What is the mass of oxygen in the original $2.000\\text{~g}$ sample?",
+    "choices": [
+      "$0.800\\text{~g}$",
+      "$1.066\\text{~g}$",
+      "$0.134\\text{~g}$",
+      "$0.533\\text{~g}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Mass $\\text{C} = 2.933 \\times \\frac{12.011}{44.01} = 0.800\\text{~g}$. Mass $\\text{H} = 1.200 \\times \\frac{2.016}{18.02} = 0.134\\text{~g}$.\n\nMass $\\text{O} = 2.000 - (0.800 + 0.134) = 1.066\\text{~g}$. Wait, calculation check: $2.000 - 0.934 = 1.066\\text{~g}$. Correct Choice: B.",
+    "flags": [
+      "key-commentary",
+      "claimed-B"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-34",
+    "paper": "ch1-3-lab",
+    "number": 34,
+    "section": "Section IV: Empirical Formula Determination and Combustion Analysis Experiments",
+    "stem": "What is the empirical formula of the organic compound analyzed in Question 33?",
+    "choices": [
+      "$\\text{CH}_{2}\\text{O}$",
+      "$\\text{C}_{2}\\text{H}_{4}\\text{O}_{3}$",
+      "$\\text{CH}_{2}\\text{O}_{2}$",
+      "$\\text{C}_{3}\\text{H}_{6}\\text{O}_{2}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Moles $\\text{C} = 0.800/12.011 = 0.0666$. Moles $\\text{H} = 0.134/1.008 = 0.133$. Moles $\\text{O} = 1.066/16.00 = 0.0666$.\n\nRatio $\\text{C:H:O} = 1:2:1 \\Longrightarrow \\text{CH}_{2}\\text{O}$. Correct Choice: A.",
+    "flags": [
+      "key-commentary",
+      "claimed-A"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-35",
+    "paper": "ch1-3-lab",
+    "number": 35,
+    "section": "Section IV: Empirical Formula Determination and Combustion Analysis Experiments",
+    "stem": "In a combustion analyzer, what is the function of magnesium perchlorate, ${\\text{Mg(}\\text{ClO}}_{4})_{2}$, packing in the first absorption tube?",
+    "choices": [
+      "To absorb carbon dioxide gas ($\\text{CO}_{2}$)",
+      "To absorb water vapor ($\\text{H}_{2}\\text{O}$)",
+      "To absorb unreacted oxygen gas ($\\text{O}_{2}$)",
+      "To oxidize carbon monoxide to carbon dioxide"
+    ],
+    "sourceKey": "B",
+    "explanation": "Magnesium perchlorate is a desiccant used specifically to absorb produced water vapor.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-36",
+    "paper": "ch1-3-lab",
+    "number": 36,
+    "section": "Section IV: Empirical Formula Determination and Combustion Analysis Experiments",
+    "stem": "In a gravimetric analysis experiment, a student heats a $3.120\\text{~g}$ sample of hydrated copper(II) sulfate ($\\text{CuSO}_{4} \\cdot x\\text{H}_{2}\\text{O}$) in a crucible until constant mass is reached. The mass of anhydrous $\\text{CuSO}_{4}$ residue is $1.995\\text{~g}$. What is the experimental value of $x$? ($M_{\\text{CuSO}_{4}} = 159.61\\text{~g/mol}$, $M_{\\text{H}_{2}\\text{O}} = 18.02\\text{~g/mol}$)",
+    "choices": [
+      "3",
+      "5",
+      "7",
+      "10"
+    ],
+    "sourceKey": "B",
+    "explanation": "Mass $\\text{H}_{2}\\text{O} = 3.120 - 1.995 = 1.125\\text{~g}$ ($0.0624\\text{~mol}$).\n\nMoles $\\text{CuSO}_{4} = 1.995/159.61 = 0.0125\\text{~mol}$.\n\nRatio $x = 0.0624/0.0125 = 5$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-37",
+    "paper": "ch1-3-lab",
+    "number": 37,
+    "section": "Section IV: Empirical Formula Determination and Combustion Analysis Experiments",
+    "stem": "In the hydrate heating experiment (Question 36), what does \"heating to constant mass\" mean?",
+    "choices": [
+      "Heating the sample continuously for 24 hours without stopping.",
+      "Repeatedly heating, cooling in a desiccator, and weighing until successive weighings agree within $\\pm 0.002\\text{~g}$.",
+      "Heating until the color of the sample stops changing.",
+      "Boiling the sample in water until all solid dissolves."
+    ],
+    "sourceKey": "B",
+    "explanation": "Heating to constant mass ensures complete removal of all volatile water.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-38",
+    "paper": "ch1-3-lab",
+    "number": 38,
+    "section": "Section IV: Empirical Formula Determination and Combustion Analysis Experiments",
+    "stem": "What is the purpose of placing the heated crucible into a desiccator during the cooling phase before weighing?",
+    "choices": [
+      "To speed up the cooling process using cold water jets.",
+      "To prevent the anhydrous residue from reabsorbing moisture from atmospheric air.",
+      "To allow volatile gases to escape into the room.",
+      "To sterilize the crucible outer surface."
+    ],
+    "sourceKey": "B",
+    "explanation": "A desiccator contains drying agents to prevent dry hot samples from reabsorbing ambient atmospheric water vapor as they cool.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-39",
+    "paper": "ch1-3-lab",
+    "number": 39,
+    "section": "Section IV: Empirical Formula Determination and Combustion Analysis Experiments",
+    "stem": "A sample of pure hydrocarbon is burned in a combustion train. The mass of the $\\text{CO}_{2}$ absorber increases by $3.52\\text{~g}$ and the mass of the $\\text{H}_{2}\\text{O}$ absorber increases by $1.44\\text{~g}$. What is the empirical formula of the hydrocarbon?",
+    "choices": [
+      "$\\text{CH}$",
+      "$\\text{CH}_{2}$",
+      "$\\text{CH}_{3}$",
+      "$\\text{C}_{2}\\text{H}_{5}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Mass $\\text{C} = 3.52 \\times (12.011/44.01) = 0.960\\text{~g}$ ($0.0800\\text{~mol}$).\n\nMass $\\text{H} = 1.44 \\times (2.016/18.02) = 0.161\\text{~g}$ ($0.160\\text{~mol}$).\n\nRatio $\\text{H/C} = 2 \\Longrightarrow \\text{CH}_{2}$. Correct Choice: B.",
+    "flags": [
+      "key-commentary",
+      "claimed-B"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-40",
+    "paper": "ch1-3-lab",
+    "number": 40,
+    "section": "Section IV: Empirical Formula Determination and Combustion Analysis Experiments",
+    "stem": "If a student fails to heat the hydrated salt sufficiently in a gravimetric hydrate experiment, leaving some hydration water intact, how will this affect the reported empirical formula's water-to-salt mole ratio ($x$)?",
+    "choices": [
+      "Experimental $x$ will be higher than true value.",
+      "Experimental $x$ will be lower than true value.",
+      "Experimental $x$ will be unaffected.",
+      "Experimental $x$ will be negative."
+    ],
+    "sourceKey": "B",
+    "explanation": "Incomplete drying leaves residual mass in the salt, underestimating lost water mass and decreasing $x$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-41",
+    "paper": "ch1-3-lab",
+    "number": 41,
+    "section": "Section V: Stoichiometry, Yield Calculations, and Reaction Experiments",
+    "stem": "A student reacts $2.00\\text{~g}$ of copper metal with excess sulfur powder in a covered crucible to prepare copper(I) sulfide ($\\text{Cu}_{2}\\text{S}$). After reaction and burning off excess sulfur, the mass of the product obtained is $2.45\\text{~g}$. What is the percentage yield of $\\text{Cu}_{2}\\text{S}$? ($M_{\\text{Cu}} = 63.55\\text{~g/mol}$, $M_{\\text{Cu}_{2}\\text{S}} = 159.16\\text{~g/mol}$)",
+    "choices": [
+      "$88.0\\%$",
+      "$97.8\\%$",
+      "$92.3\\%$",
+      "$102.1\\%$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Moles $\\text{Cu} = 2.00/63.55 = 0.03147\\text{~mol}$.\n\nTheoretical yield $\\text{Cu}_{2}\\text{S} = \\frac{0.03147}{2} \\times 159.16 = 2.505\\text{~g}$.\n\n$\\%$ yield $= \\frac{2.45}{2.505} \\times 100\\% = 97.8\\%$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-42",
+    "paper": "ch1-3-lab",
+    "number": 42,
+    "section": "Section V: Stoichiometry, Yield Calculations, and Reaction Experiments",
+    "stem": "In a synthesis of iron(III) oxide:\n\n$$4\\text{Fe}(s) + 3\\text{O}_{2}(g) \\rightarrow 2\\text{Fe}_{2}\\text{O}_{3}(s)$$\n\nA student reacts $5.585\\text{~g}$ of iron powder ($M = 55.85\\text{~g/mol}$) with $3.200\\text{~g}$ of oxygen gas ($M = 32.00\\text{~g/mol}$). What is the limiting reagent?",
+    "choices": [
+      "$\\text{Fe}$",
+      "$\\text{O}_{2}$",
+      "Both reactants are present in exact stoichiometric proportion",
+      "$\\text{Fe}_{2}\\text{O}_{3}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Moles $\\text{Fe} = 5.585/55.85 = 0.100\\text{~mol}$. Moles $\\text{O}_{2} = 3.200/32.00 = 0.100\\text{~mol}$.\n\nReaction ratio requires $4/3 = 1.33$ moles $\\text{Fe}$ per mole of $\\text{O}_{2}$. Since ratio is $1:1$, $\\text{Fe}$ is limiting.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-43",
+    "paper": "ch1-3-lab",
+    "number": 43,
+    "section": "Section V: Stoichiometry, Yield Calculations, and Reaction Experiments",
+    "stem": "For the reaction in Question 42, what is the theoretical mass of $\\text{Fe}_{2}\\text{O}_{3}$ ($M = 159.70\\text{~g/mol}$) that can be produced?",
+    "choices": [
+      "$7.985\\text{~g}$",
+      "$10.65\\text{~g}$",
+      "$15.97\\text{~g}$",
+      "$5.323\\text{~g}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Theoretical yield $\\text{Fe}_{2}\\text{O}_{3} = \\frac{0.100}{2} \\times 159.70 = 7.985\\text{~g}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-44",
+    "paper": "ch1-3-lab",
+    "number": 44,
+    "section": "Section V: Stoichiometry, Yield Calculations, and Reaction Experiments",
+    "stem": "In an experimental synthesis, a student generates hydrogen gas by reacting zinc metal with hydrochloric acid:\n\n$$\\text{Zn}(s) + 2\\text{HCl}(aq) \\rightarrow \\text{ZnCl}_{2}(aq) + \\text{H}_{2}(g)$$\n\nIf $6.54\\text{~g}$ of zinc ($M = 65.38\\text{~g/mol}$) reacts with excess acid and $0.180\\text{~g}$ of $\\text{H}_{2}$ gas ($M = 2.016\\text{~g/mol}$) is collected in a gas syringe, what is the percent yield of $\\text{H}_{2}$?",
+    "choices": [
+      "$89.3\\%$",
+      "$90.0\\%$",
+      "$100.0\\%$",
+      "$95.2\\%$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Moles $\\text{Zn} = 6.54/65.38 = 0.100\\text{~mol} \\Longrightarrow$ theoretical $\\text{H}_{2} = 0.100\\text{~mol} = 0.2016\\text{~g}$.\n\n$\\%$ yield $= \\frac{0.180}{0.2016} \\times 100\\% = 89.3\\%$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-45",
+    "paper": "ch1-3-lab",
+    "number": 45,
+    "section": "Section V: Stoichiometry, Yield Calculations, and Reaction Experiments",
+    "stem": "A chemist needs to prepare $100.0\\text{~mL}$ of a $0.500\\text{~M}$ sodium carbonate ($\\text{Na}_{2}\\text{CO}_{3}$) standard solution. What mass of solid anhydrous $\\text{Na}_{2}\\text{CO}_{3}$ ($M = 105.99\\text{~g/mol}$) must be weighed on an analytical balance?",
+    "choices": [
+      "$5.30\\text{~g}$",
+      "$10.60\\text{~g}$",
+      "$2.65\\text{~g}$",
+      "$53.0\\text{~g}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Mass $= M \\times V \\times \\text{MW} = 0.500\\text{~mol/L} \\times 0.1000\\text{~L} \\times 105.99\\text{~g/mol} = 5.30\\text{~g}$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-46",
+    "paper": "ch1-3-lab",
+    "number": 46,
+    "section": "Section V: Stoichiometry, Yield Calculations, and Reaction Experiments",
+    "stem": "When gravimetrically determining the yield of a reaction product collected on a vacuum filter paper, why must the product be washed with small portions of ice-cold solvent during filtration?",
+    "choices": [
+      "To dissolve the desired insoluble solid product.",
+      "To wash away unreacted soluble starting materials and impurities without dissolving significant product.",
+      "To raise the temperature of the filter funnel.",
+      "To speed up the filtration rate."
+    ],
+    "sourceKey": "B",
+    "explanation": "Ice-cold solvent washes off soluble impurities without dissolving significant amounts of the solid product.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-47",
+    "paper": "ch1-3-lab",
+    "number": 47,
+    "section": "Section V: Stoichiometry, Yield Calculations, and Reaction Experiments",
+    "stem": "A reaction between $10.0\\text{~g}$ of substance A and $10.0\\text{~g}$ of substance B yields $12.0\\text{~g}$ of product C. If the theoretical yield is $15.0\\text{~g}$, what is the percent yield?",
+    "choices": [
+      "$80.0\\%$",
+      "$60.0\\%$",
+      "$75.0\\%$",
+      "$120.0\\%$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$\\%$ yield $= \\frac{\\text{actual~yield}}{\\text{theoretical~yield}} \\times 100\\% = \\frac{12.0}{15.0} \\times 100\\% = 80.0\\%$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-48",
+    "paper": "ch1-3-lab",
+    "number": 48,
+    "section": "Section V: Stoichiometry, Yield Calculations, and Reaction Experiments",
+    "stem": "In a thermal decomposition experiment, $10.00\\text{~g}$ of calcium carbonate ($\\text{CaCO}_{3}$, $M = 100.09\\text{~g/mol}$) is heated strongly in an open crucible:\n\n$$\\text{CaCO}_{3}(s)\\overset{\\Delta}{\\rightarrow}\\text{CaO}(s) + \\text{CO}_{2}(g)$$\n\nIf the solid mass remaining in the crucible after heating is $6.04\\text{~g}$, what percentage of the $\\text{CaCO}_{3}$ sample was decomposed? ($M_{\\text{CaO}} = 56.08\\text{~g/mol}$, $M_{\\text{CO}_{2}} = 44.01\\text{~g/mol}$)",
+    "choices": [
+      "$60.4\\%$",
+      "$90.0\\%$",
+      "$100.0\\%$",
+      "$44.0\\%$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Mass lost $= \\text{mass~of~CO}_{2} = 10.00 - 6.04 = 3.96\\text{~g}$.\n\nMoles $\\text{CO}_{2}$ lost $= 3.96/44.01 = 0.08998\\text{~mol}$.\n\nMoles $\\text{CaCO}_{3}$ initial $= 10.00/100.09 = 0.09991\\text{~mol}$.\n\nDecomposed percentage $= \\frac{0.08998}{0.09991} \\times 100\\% = 90.0\\%$.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-49",
+    "paper": "ch1-3-lab",
+    "number": 49,
+    "section": "Section V: Stoichiometry, Yield Calculations, and Reaction Experiments",
+    "stem": "A student records the following data in a stoichiometric lab activity:\n\n- Mass of empty evaporating dish = $42.10\\text{~g}$\n\n- Mass of dish + sodium bicarbonate ($\\text{NaHCO}_{3}$) = $46.30\\text{~g}$\n\n- Mass of dish + residue ($\\text{NaCl}$) after reaction with $\\text{HCl}$ and evaporation = $45.02\\text{~g}$\n\nReaction:\n\n$$\\text{NaHCO}_{3}(s) + \\text{HCl}(aq) \\rightarrow \\text{NaCl}(s) + \\text{H}_{2}\\text{O}(l) + \\text{CO}_{2}(g)$$\n\nWhat is the student's percent yield of $\\text{NaCl}$? ($M_{\\text{NaHCO}_{3}} = 84.01\\text{~g/mol}$, $M_{\\text{NaCl}} = 58.44\\text{~g/mol}$)",
+    "choices": [
+      "$98.0\\%$",
+      "$101.4\\%$",
+      "$95.5\\%$",
+      "$92.1\\%$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Mass $\\text{NaHCO}_{3} = 46.30 - 42.10 = 4.20\\text{~g}$ ($0.0500\\text{~mol}$).\n\nTheoretical $\\text{NaCl} = 0.0500 \\times 58.44 = 2.922\\text{~g}$.\n\nActual $\\text{NaCl} = 45.02 - 42.10 = 2.92\\text{~g}$.\n\n$\\%$ yield $= \\frac{2.92}{2.922} \\times 100\\% = 99.9\\% \\approx 100.0\\%$ (or $101.4\\%$ with precision rounding depending on exact sig figs).",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch1-3-lab-50",
+    "paper": "ch1-3-lab",
+    "number": 50,
+    "section": "Section V: Stoichiometry, Yield Calculations, and Reaction Experiments",
+    "stem": "Why is it crucial to let a heated porcelain crucible cool down to room temperature before taking its mass on an analytical balance?",
+    "choices": [
+      "Buoyancy effects and convection air currents above a hot crucible cause the mass reading to appear artificially low/unstable.",
+      "Hot porcelain dissolves into the balance pan surface.",
+      "Thermal expansion increases the true mass of the crucible.",
+      "Cold air enters the balance chamber and adds extra weight to the crucible."
+    ],
+    "sourceKey": "A",
+    "explanation": "Hot objects heat surrounding air, creating upward thermal convection currents that lift the balance pan, making the mass reading unstable and artificially low.",
+    "flags": [],
+    "sourceFile": "ch1-3.md"
+  },
+  {
+    "id": "ch4-7-theory-01",
+    "paper": "ch4-7-theory",
+    "number": 1,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Precipitation / Stoichiometry: What volume of $0.150\\text{~M}\\text{~BaCl}_{2}$ is required to completely precipitate all the sulfate ions from $25.0\\text{~mL}$ of $0.200\\text{~M}\\text{~Al}_{2}\\left( \\text{SO}_{4} \\right)_{3}$ solution?",
+    "choices": [
+      "$33.3\\text{~mL}$",
+      "$50.0\\text{~mL}$",
+      "$66.7\\text{~mL}$",
+      "$100.0\\text{~mL}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Stoichiometric ratio: $3\\text{~Ba}^{2 +} \\sim 2\\text{~Al}_{3}\\left( \\text{SO}_{4} \\right)_{3}$. Moles of $\\text{SO}_{4}^{2 -} = 2 \\times (0.0250 \\times 0.200) = 0.010\\text{~mol}$. Required $\\text{Ba}^{2 +} = 0.010\\text{~mol}$, volume $= 0.010/0.150 = 0.0667\\text{~L} = 66.7\\text{~mL}$? Wait, check: $n\\left( \\text{Al}_{2}\\left( \\text{SO}_{4} \\right)_{3} \\right) = 0.025 \\times 0.200 = 0.005\\text{~mol}$. Each mole contains $3$ moles of $\\text{SO}_{4}^{2 -}$, so $0.015\\text{~moles~of~}\\text{SO}_{4}^{2 -}$. $\\text{Ba}^{2 +} + \\text{SO}_{4}^{2 -} \\rightarrow \\text{BaSO}_{4}$. So $0.015\\text{~moles~of~}\\text{BaCl}_{2}$ needed. $V = 0.015/0.150 = 0.100\\text{~L} = 100.0\\text{~mL}$. (Correct option: D)",
+    "flags": [
+      "key-commentary",
+      "claimed-D"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-02",
+    "paper": "ch4-7-theory",
+    "number": 2,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Oxidation-Reduction: In the balanced redox reaction in acidic solution:\n\n$$\\text{MnO}_{4}^{-} + \\text{Fe}^{2 +} + \\text{H}^{+} \\rightarrow \\text{Mn}^{2 +} + \\text{Fe}^{3 +} + \\text{H}_{2}\\text{O}$$\n\nWhat is the stoichiometric coefficient for $\\text{H}^{+}$ when the equation is balanced with smallest whole-number coefficients",
+    "choices": [
+      "4",
+      "8",
+      "16",
+      "5"
+    ],
+    "sourceKey": "C",
+    "explanation": "Balanced equation: $5\\text{Fe}^{2 +} + \\text{MnO}_{4}^{-} + 8\\text{H}^{+} \\rightarrow 5\\text{Fe}^{3 +} + \\text{Mn}^{2 +} + 4\\text{H}_{2}\\text{O}$. Coefficient for $\\text{H}^{+}$ is 8. Wait, let's balance carefully: $MnO_{4}^{-} + 8H^{+} + 5e^{-} \\rightarrow Mn^{2 +} + 4H_{2}O$, coefficient is 8. (B)",
+    "flags": [
+      "key-commentary",
+      "claimed-B"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-03",
+    "paper": "ch4-7-theory",
+    "number": 3,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Gravimetric Analysis: A $1.200\\text{-g}$ sample containing chloride is dissolved in water and treated with excess $\\text{AgNO}_{3}$, yielding $1.875\\text{~g}$ of $\\text{AgCl}$ precipitate. What is the mass percentage of chlorine in the original sample? (Atomic masses: $\\text{Ag} = 107.87$, $\\text{Cl} = 35.45$)",
+    "choices": [
+      "$38.6\\%$",
+      "$48.6\\%$",
+      "$55.2\\%$",
+      "$61.3\\%$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Mass of Cl in $1.875\\text{~g~AgCl} = 1.875 \\times (35.45/143.32) = 0.4638\\text{~g}$. Mass $\\% = (0.4638/1.200) \\times 100\\% = 38.6\\%$. (A)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-04",
+    "paper": "ch4-7-theory",
+    "number": 4,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Acid-Base Titration (Back Titration): A $0.500\\text{-g}$ antacid tablet containing $\\text{CaCO}_{3}$ was treated with $50.0\\text{~mL}$ of $0.100\\text{~M~HCl}$. The excess acid required $6.2\\text{~mL}$ of $0.150\\text{~M~NaOH}$ for complete neutralization. What percentage by mass of the tablet is $\\text{CaCO}_{3}$? ($\\text{CaCO}_{3} = 100.09\\text{~g/mol}$)",
+    "choices": [
+      "$41.2\\%$",
+      "$55.5\\%$",
+      "$81.7\\%$",
+      "$92.4\\%$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Total acid = $0.050 \\times 0.100 = 0.005\\text{~mol}$. Excess $\\text{NaOH}$ neutralized excess acid: $n\\left( \\text{NaOH} \\right) = 0.0062 \\times 0.150 = 0.00093\\text{~mol}$. Acid reacted with $\\text{CaCO}_{3} = 0.005 - 0.00093 = 0.00407\\text{~mol}$. Moles $\\text{CaCO}_{3} = 0.002035\\text{~mol}$. Mass $= 0.002035 \\times 100.09 = 0.2037\\text{~g}$. $\\% = (0.2037/0.500) \\times 100\\% = 40.7\\% \\approx$ let's re-verify titration stoichiometry: $2\\text{HCl} + \\text{CaCO}_{3}$. (C)",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-05",
+    "paper": "ch4-7-theory",
+    "number": 5,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Conceptual Redox: Which of the following species can act both as an oxidizing agent and a reducing agent?",
+    "choices": [
+      "$\\text{MnO}_{4}^{-}$",
+      "$\\text{H}_{2}\\text{O}_{2}$",
+      "$\\text{F}_{2}$",
+      "$\\text{Na}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$\\text{H}_{2}\\text{O}_{2}$ contains oxygen in oxidation state $- 1$; it can be oxidized to $\\text{O}_{2}$ ($0$) or reduced to $\\text{H}_{2}\\text{O}$ ($- 2$). (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-06",
+    "paper": "ch4-7-theory",
+    "number": 6,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Concentration / Molarity: If $15.0\\text{~mL}$ of $0.500\\text{~M}\\text{~HNO}_{3}$ is mixed with $35.0\\text{~mL}$ of $0.200\\text{~M}\\text{~Ba(OH)}_{2}$, what is the resulting $\\left\\lbrack \\text{OH}^{-} \\right\\rbrack$ in the final solution?",
+    "choices": [
+      "$0.000\\text{~M}$",
+      "$0.140\\text{~M}$",
+      "$0.210\\text{~M}$",
+      "$0.280\\text{~M}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$n\\left( \\text{H}^{+} \\right) = 0.015 \\times 0.500 = 0.0075\\text{~mol}$. $n\\left( \\text{OH}^{-} \\right) = 0.035 \\times 0.200 \\times 2 = 0.014\\text{~mol}$. Excess $\\text{OH}^{-} = 0.014 - 0.0075 = 0.0065\\text{~mol}$. Total volume $= 50.0\\text{~mL} = 0.050\\text{~L}$. $\\left\\lbrack \\text{OH}^{-} \\right\\rbrack = 0.0065/0.050 = 0.130\\text{~M}$ (approx B / C check calculations).",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-07",
+    "paper": "ch4-7-theory",
+    "number": 7,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Solubility Rules: Which of the following pairs of aqueous solutions, when mixed, will not produce a precipitate?",
+    "choices": [
+      "$\\text{KOH} + \\text{CuSO}_{4}$",
+      "$\\text{Ba(NO}_{3})_{2} + \\text{Na}_{2}\\text{SO}_{4}$",
+      "$\\text{NH}_{4}\\text{Cl} + \\text{AgNO}_{3}$",
+      "$\\text{NaNO}_{3} + \\text{CuSO}_{4}$"
+    ],
+    "sourceKey": "D",
+    "explanation": "$\\text{NaNO}_{3}$ and $\\text{CuSO}_{4}$ are both fully soluble and share no combination to form an insoluble salt. (D)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-08",
+    "paper": "ch4-7-theory",
+    "number": 8,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Oxidation Numbers: What is the oxidation state of sulfur in sodium tetrathionate, $\\text{Na}_{2}\\text{S}_{4}\\text{O}_{6}$, according to average oxidation state and structural bonding considerations?",
+    "choices": [
+      "$+ 2$",
+      "$+ 2.5$",
+      "$+ 4$",
+      "$+ 6$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$\\text{Na}_{2}\\text{S}_{4}\\text{O}_{6}$ has a structure where two sulfur atoms are central ($0$ oxidation state) and two are outer (+5), averaging $+ 2.5$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-09",
+    "paper": "ch4-7-theory",
+    "number": 9,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Stoichiometry in Solutions: A $25.0\\text{-mL}$ sample of an unknown monoprotic acid is neutralized by $32.4\\text{~mL}$ of $0.128\\text{~M~NaOH}$. What is the molar concentration of the acid?",
+    "choices": [
+      "$0.0988\\text{~M}$",
+      "$0.166\\text{~M}$",
+      "$0.324\\text{~M}$",
+      "$0.625\\text{~M}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$M_{a}V_{a} = M_{b}V_{b} \\Rightarrow M_{a} \\times 25.0 = 0.128 \\times 32.4 \\Rightarrow M_{a} = 0.166\\text{~M}$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-10",
+    "paper": "ch4-7-theory",
+    "number": 10,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Ionic Equations: When aqueous solutions of lead(II) nitrate and potassium iodide are mixed, the net ionic equation for the reaction is:",
+    "choices": [
+      "$\\text{Pb}^{2 +}(aq) + 2\\text{I}^{-}(aq) \\rightarrow \\text{PbI}_{2}(s)$",
+      "$\\text{K}^{+}(aq) + \\text{NO}_{3}^{-}(aq) \\rightarrow \\text{KNO}_{3}(s)$",
+      "$\\text{Pb}^{2 +}(aq) + 2\\text{NO}_{3}^{-}(aq) + 2\\text{K}^{+}(aq) + 2\\text{I}^{-}(aq) \\rightarrow \\text{PbI}_{2}(s) + 2\\text{K}^{+}(aq) + 2\\text{NO}_{3}^{-}(aq)$",
+      "$\\text{Pb}^{2 +}(aq) + \\text{I}^{-}(aq) \\rightarrow \\text{PbI}(s)$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Lead iodide is an insoluble yellow precipitate: $\\text{Pb}^{2 +} + 2\\text{I}^{-} \\rightarrow \\text{PbI}_{2}$. (A)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-11",
+    "paper": "ch4-7-theory",
+    "number": 11,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Disproportionation Reactions: In the reaction: $\\text{Cl}_{2} + 2\\text{OH}^{-} \\rightarrow \\text{ClO}^{-} + \\text{Cl}^{-} + \\text{H}_{2}\\text{O}$, chlorine undergoes:",
+    "choices": [
+      "Oxidation only",
+      "Reduction only",
+      "Disproportionation (both oxidation and reduction)",
+      "Neither oxidation nor reduction"
+    ],
+    "sourceKey": "C",
+    "explanation": "Chlorine goes from $0$ to $+ 1$ ($\\text{ClO}^{-}$) and $- 1$ ($\\text{Cl}^{-}$). (C)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-12",
+    "paper": "ch4-7-theory",
+    "number": 12,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Solution Preparation: How many grams of $\\text{Na}_{2}\\text{CO}_{3}$ ($105.99\\text{~g/mol}$) are required to prepare $250.0\\text{~mL}$ of a solution with a sodium ion concentration of $0.200\\text{~M}$?",
+    "choices": [
+      "$1.32\\text{~g}$",
+      "$2.65\\text{~g}$",
+      "$5.30\\text{~g}$",
+      "$10.60\\text{~g}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "$\\left\\lbrack \\text{Na}^{+} \\right\\rbrack = 0.200\\text{~M}$, so $\\left\\lbrack \\text{Na}_{2}\\text{CO}_{3} \\right\\rbrack = 0.100\\text{~M}$. Moles needed $= 0.100 \\times 0.250 = 0.025\\text{~mol}$. Mass $= 0.025 \\times 105.99 = 2.65\\text{~g}$? Wait, $2 \\times \\text{Na}^{+}$ per mole of $\\text{Na}_{2}\\text{CO}_{3}$, so $\\left\\lbrack \\text{Na}_{2}\\text{CO}_{3} \\right\\rbrack = 0.100\\text{~M}$. Moles $= 0.025$, mass $= 2.65\\text{~g}$. (B)",
+    "flags": [
+      "key-commentary",
+      "claimed-B"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-13",
+    "paper": "ch4-7-theory",
+    "number": 13,
+    "section": "Part I: Chapter 4 — Reactions in Aqueous Solutions (Q1–Q13)",
+    "stem": "Titration Stoichiometry (Redox): A $0.300\\text{-g}$ sample of iron ore is dissolved in acid, reducing all iron to $\\text{Fe}^{2 +}$. Titrating the solution requires $25.0\\text{~mL}$ of $0.0200\\text{~M}\\text{~KMnO}_{4}$ in acidic medium. What is the percentage of Fe ($55.85\\text{~g/mol}$) in the ore?",
+    "choices": [
+      "$14.0\\%$",
+      "$23.3\\%$",
+      "$46.5\\%$",
+      "$69.8\\%$"
+    ],
+    "sourceKey": "C",
+    "explanation": "$5\\text{Fe}^{2 +} \\sim \\text{MnO}_{4}^{-}$. Moles $\\text{MnO}_{4}^{-} = 0.025 \\times 0.0200 = 0.0005\\text{~mol}$. Moles $\\text{Fe} = 0.0025\\text{~mol}$. Mass Fe $= 0.0025 \\times 55.85 = 0.1396\\text{~g}$. $\\% = (0.1396/0.300) \\times 100\\% = 46.5\\%$. (C)\n\nChapter 5",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-14",
+    "paper": "ch4-7-theory",
+    "number": 14,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Ideal Gas Law / Density: What is the density of carbon dioxide gas ($\\text{CO}_{2}$) at $750\\text{~mmHg}$ and $27^{\\circ}\\text{C}$?",
+    "choices": [
+      "$1.42\\text{~g/L}$",
+      "$1.79\\text{~g/L}$",
+      "$1.96\\text{~g/L}$",
+      "$2.20\\text{~g/L}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "$d = \\frac{PM}{RT} = \\frac{(750/760)\\text{~atm} \\times 44.01\\text{~g/mol}}{0.08206 \\times 300.15\\text{~K}} = 1.96\\text{~g/L}$. (C)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-15",
+    "paper": "ch4-7-theory",
+    "number": 15,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Graham’s Law of Effusion: An unknown gas effuses through a pinhole $1.66$ times slower than $\\text{CH}_{4}$ gas under identical conditions. What is the molar mass of the unknown gas?",
+    "choices": [
+      "$16.0\\text{~g/mol}$",
+      "$28.0\\text{~g/mol}$",
+      "$44.0\\text{~g/mol}$",
+      "$72.0\\text{~g/mol}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "$\\text{Rate}_{1}/\\text{Rate}_{2} = \\sqrt{M_{2}/M_{1}} \\Rightarrow 1.66 = \\sqrt{M/16.0} \\Rightarrow M = {1.66}^{2} \\times 16 \\approx 44\\text{~g/mol}$ ($\\text{CO}_{3}$ or $\\text{CO}_{2}$). (C)",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-16",
+    "paper": "ch4-7-theory",
+    "number": 16,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Dalton’s Law of Partial Pressures: A mixture of $2.00\\text{~g}$ of $\\text{He}$ and $8.00\\text{~g}$ of $\\text{Ar}$ is placed in a rigid $5.00\\text{-L}$ container at $25^{\\circ}\\text{C}$. What is the total pressure of the gas mixture?",
+    "choices": [
+      "$0.98\\text{~atm}$",
+      "$1.43\\text{~atm}$",
+      "$2.44\\text{~atm}$",
+      "$3.42\\text{~atm}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$n\\left( \\text{He} \\right) = 2.0/4.003 = 0.50\\text{~mol}$; $n\\left( \\text{Ar} \\right) = 8.0/39.95 = 0.20\\text{~mol}$. Total $n = 0.70\\text{~mol}$. $P = nRT/V = (0.70 \\times 0.08206 \\times 298.15)/5.00 = 3.42\\text{~atm}$? Wait, let's recalculate: $0.7 \\times 0.0821 \\times 298/5 = 3.42\\text{~atm}$. Option D is $3.42\\text{~atm}$. (D)",
+    "flags": [
+      "key-commentary",
+      "claimed-D"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-17",
+    "paper": "ch4-7-theory",
+    "number": 17,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Gas Stoichiometry over Water: Zinc metal reacts with hydrochloric acid to produce hydrogen gas:\n\n$$\\text{Zn}(s) + 2\\text{HCl}(aq) \\rightarrow \\text{ZnCl}_{2}(aq) + \\text{H}_{2}(g)$$\n\nIf $250\\text{~mL}$ of $\\text{H}_{2}$ is collected over water at $22^{\\circ}\\text{C}$ and a total pressure of $760\\text{~mmHg}$ (vapor pressure of water at $22^{\\circ}\\text{C} = 19.8\\text{~mmHg}$), how many moles of Zn were consumed?",
+    "choices": [
+      "$9.82 \\times 10^{- 3}\\text{~mol}$",
+      "$1.01 \\times 10^{- 2}\\text{~mol}$",
+      "$2.02 \\times 10^{- 2}\\text{~mol}$",
+      "$4.05 \\times 10^{- 2}\\text{~mol}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$P_{\\text{H}_{2}} = 760 - 19.8 = 740.2\\text{~mmHg} = 0.974\\text{~atm}$. $n = PV/RT = (0.974 \\times 0.250)/(0.08206 \\times 295.15) = 1.01 \\times 10^{- 2}\\text{~mol}$ (Wait, $1:1$ mole ratio with Zn, so $1.01 \\times 10^{- 2}\\text{~mol}$). Let's check B.",
+    "flags": [
+      "key-commentary",
+      "claimed-B"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-18",
+    "paper": "ch4-7-theory",
+    "number": 18,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Kinetic Molecular Theory: What is the root-mean-square speed ($u_{rms}$) of $\\text{N}_{2}$ molecules at $27^{\\circ}\\text{C}$? ($R = 8.314\\text{~J/(mol} \\cdot \\text{K)}$, molar mass of $\\text{N}_{2} = 0.0280\\text{~kg/mol}$)",
+    "choices": [
+      "$317\\text{~m/s}$",
+      "$517\\text{~m/s}$",
+      "$775\\text{~m/s}$",
+      "$1004\\text{~m/s}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$u_{rms} = \\sqrt{3RT/M} = \\sqrt{3 \\times 8.314 \\times 300/0.0280} = 517\\text{~m/s}$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-19",
+    "paper": "ch4-7-theory",
+    "number": 19,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Real Gases & Van der Waals Equation: For which of the following gases would you expect the Van der Waals constant '$a$' (representing intermolecular attractive forces) to be the largest?",
+    "choices": [
+      "$\\text{He}$",
+      "$\\text{Ne}$",
+      "$\\text{H}_{2}$",
+      "$\\text{Cl}_{2}$"
+    ],
+    "sourceKey": "D",
+    "explanation": "$\\text{Cl}_{2}$ has the largest electron cloud and strongest dispersion forces, yielding the largest $a$ parameter. (D)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-20",
+    "paper": "ch4-7-theory",
+    "number": 20,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Compressibility Factor ($Z$): Under what conditions do real gases deviate most significantly from ideal gas behavior?",
+    "choices": [
+      "High temperature and low pressure",
+      "High temperature and high pressure",
+      "Low temperature and high pressure",
+      "Low temperature and low pressure"
+    ],
+    "sourceKey": "C",
+    "explanation": "Low temperature and high pressure promote intermolecular proximity and volume dominance by gas molecules. (C)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-21",
+    "paper": "ch4-7-theory",
+    "number": 21,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Connected Bulbs: Bulb A ($1.00\\text{~L}$, containing $\\text{Ne}$ at $2.0\\text{~atm}$) and Bulb B ($2.00\\text{~L}$, containing $\\text{Ar}$ at $1.0\\text{~atm}$) are connected by a closed valve at constant temperature. When the valve is opened, what is the final partial pressure of neon?",
+    "choices": [
+      "$0.33\\text{~atm}$",
+      "$0.67\\text{~atm}$",
+      "$1.00\\text{~atm}$",
+      "$1.33\\text{~atm}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$P_{1}V_{1} = P_{final}V_{total} \\Rightarrow (2.0)(1.0) = P_{f}(3.0) \\Rightarrow P_{f} = 0.67\\text{~atm}$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-22",
+    "paper": "ch4-7-theory",
+    "number": 22,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Gas Kinetics: If the absolute temperature of an ideal gas is doubled while its volume is halved, what happens to the pressure of the gas?",
+    "choices": [
+      "Remains unchanged",
+      "Doubled",
+      "Quadrupled",
+      "Halved"
+    ],
+    "sourceKey": "C",
+    "explanation": "$P_{2} = P_{1} \\times \\left( T_{2}/T_{1} \\right) \\times \\left( V_{1}/V_{2} \\right) = P_{1} \\times (2) \\times (2) = 4P_{1}$ (Quadrupled). (C)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-23",
+    "paper": "ch4-7-theory",
+    "number": 23,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Stoichiometry & Combustion: What volume of oxygen gas at STP is required to completely combust $5.60\\text{~g}$ of butane ($\\text{C}_{4}\\text{H}_{10}$)?",
+    "choices": [
+      "$11.2\\text{~L}$",
+      "$13.4\\text{~L}$",
+      "$22.4\\text{~L}$",
+      "$35.8\\text{~L}$"
+    ],
+    "sourceKey": "D",
+    "explanation": "$\\text{C}_{4}\\text{H}_{10} + 6.5\\text{~O}_{2} \\rightarrow 4\\text{CO}_{2} + 5\\text{H}_{2}\\text{O}$. $n\\left( \\text{butane} \\right) = 5.60/58.12 = 0.0963\\text{~mol}$. $n\\left( \\text{O}_{2} \\right) = 0.626\\text{~mol}$. $V = 0.626 \\times 22.4 = 14.0\\text{~L}$? Wait, $6.5 \\times 22.4 = 145.6$, $0.0963 \\times 145.6 = 14.0\\text{~L}$ or if $V_{m} = 22.71$, let's verify.",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-24",
+    "paper": "ch4-7-theory",
+    "number": 24,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Effusion Time: How long will it take for $50\\text{~mL}$ of $\\text{O}_{2}$ to effuse through a pinhole if $50\\text{~mL}$ of $\\text{He}$ takes $12.0\\text{~seconds}$ under identical conditions?",
+    "choices": [
+      "$3.0\\text{~s}$",
+      "$12.0\\text{~s}$",
+      "$33.9\\text{~s}$",
+      "$48.0\\text{~s}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "$\\text{Time}_{\\text{O}_{2}}/\\text{Time}_{\\text{He}} = \\sqrt{M_{\\text{O}_{2}}/M_{\\text{He}}} = \\sqrt{32/4} = \\sqrt{8} = 2.828$. Time $= 12.0 \\times 2.828 = 33.9\\text{~s}$. (C)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-25",
+    "paper": "ch4-7-theory",
+    "number": 25,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Partial Pressure Fraction: A gaseous mixture consists of $60.0$ mole percent $\\text{N}_{2}$ and $40.0$ mole percent $\\text{O}_{2}$. If the total pressure is $750\\text{~mmHg}$, what is the partial pressure of $\\text{O}_{2}$?",
+    "choices": [
+      "$300\\text{~mmHg}$",
+      "$450\\text{~mmHg}$",
+      "$600\\text{~mmHg}$",
+      "$750\\text{~mmHg}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$P_{\\text{O}_{2}} = X_{\\text{O}_{2}} \\times P_{total} = 0.40 \\times 750 = 300\\text{~mmHg}$. (A)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-26",
+    "paper": "ch4-7-theory",
+    "number": 26,
+    "section": "Part II: Chapter 5 — Gases (Q14–Q26)",
+    "stem": "Kinetic Energy Comparison: Compare $1\\text{~mole}$ of $\\text{He}$ gas and $1\\text{~mole}$ of $\\text{Xe}$ gas at the same temperature ($25^{\\circ}\\text{C}$). Which of the following statements is true?",
+    "choices": [
+      "$\\text{He}$ has a higher average kinetic energy than $\\text{Xe}$.",
+      "$\\text{Xe}$ has a higher average kinetic energy than $\\text{He}$.",
+      "Both gases have the exact same average kinetic energy.",
+      "$\\text{He}$ molecules travel slower on average than $\\text{Xe}$ molecules."
+    ],
+    "sourceKey": "C",
+    "explanation": "Temperature is a measure of average kinetic energy; both gases have the exact same average kinetic energy at the same temperature. (C)\n\nChapter 6",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-27",
+    "paper": "ch4-7-theory",
+    "number": 27,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "Hess’s Law. Given the thermochemical equations:\n\n1. $C(graphite) + O_{2}(g) \\rightarrow CO_{2}(g)\\quad\\Delta H^{\\circ} = - 393.5\\text{~kJ/mol}$\n\n2. $H_{2}(g) + \\frac{1}{2}O_{2}(g) \\rightarrow H_{2}O(l)\\quad\\Delta H^{\\circ} = - 285.8\\text{~kJ/mol}$\n\n3. $2C_{2}H_{2}(g) + 5O_{2}(g) \\rightarrow 4CO_{2}(g) + 2H_{2}O(l)\\quad\\Delta H^{\\circ} = - 2598.8\\text{~kJ/mol}$\n\nCalculate $\\Delta H^{\\circ}$ for the formation of acetylene: $2C(graphite) + H_{2}(g) \\rightarrow C_{2}H_{2}(g)$.",
+    "choices": [
+      "$+ 226.7\\text{~kJ/mol}$",
+      "$- 226.7\\text{~kJ/mol}$",
+      "$+ 453.4\\text{~kJ/mol}$",
+      "$- 453.4\\text{~kJ/mol}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Using Hess's law combination: $2(1) + (2) - 0.5(3) \\rightarrow + 226.7\\text{~kJ/mol}$. (A)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-28",
+    "paper": "ch4-7-theory",
+    "number": 28,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "Enthalpy of Formation: Using standard enthalpies of formation ($\\Delta H_{f}^{\\circ}$ for $\\text{CO}_{2}(g) = - 393.5$, $\\text{H}_{2}\\text{O}(l) = - 285.8$, $\\text{CH}_{4}(g) = - 74.8\\text{~kJ/mol}$), calculate $\\Delta H_{rxn}^{\\circ}$ for the combustion of methane:\n\n$$\\text{CH}_{4}(g) + 2\\text{O}_{2}(g) \\rightarrow \\text{CO}_{2}(g) + 2\\text{H}_{2}\\text{O}(l)$$",
+    "choices": [
+      "$- 604.5\\text{~kJ/mol}$",
+      "$- 890.5\\text{~kJ/mol}$",
+      "$- 1045.1\\text{~kJ/mol}$",
+      "$+ 890.5\\text{~kJ/mol}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$\\Delta H_{rxn}^{\\circ} = \\left\\lbrack ( - 393.5) + 2( - 285.8) \\right\\rbrack - \\lbrack - 74.8\\rbrack = - 890.5\\text{~kJ/mol}$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-29",
+    "paper": "ch4-7-theory",
+    "number": 29,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "Calorimetry: When $50.0\\text{~mL}$ of $1.00\\text{~M~HCl}$ and $50.0\\text{~mL}$ of $1.00\\text{~M~NaOH}$ are mixed in a coffee-cup calorimeter, the temperature rises from ${21.5}^{\\circ}\\text{C}$ to ${28.1}^{\\circ}\\text{C}$. Assuming the specific heat capacity of the solution is $4.18\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$ and the density is $1.00\\text{~g/mL}$, calculate the enthalpy of neutralization per mole of $\\text{HCl}$.",
+    "choices": [
+      "$- 27.6\\text{~kJ/mol}$",
+      "$- 55.2\\text{~kJ/mol}$",
+      "$- 110.4\\text{~kJ/mol}$",
+      "$- 552\\text{~kJ/mol}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Heat released $= mc\\Delta T = 100.0\\text{~g} \\times 4.18\\text{~J/(g} \\cdot^{\\circ}\\text{C)} \\times {6.6}^{\\circ}\\text{C} = 2758.8\\text{~J} = 2.76\\text{~kJ}$. Moles of acid neutralized $= 0.050\\text{~mol}$. $\\Delta H = - 2.76/0.050 = - 55.2\\text{~kJ/mol}$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-30",
+    "paper": "ch4-7-theory",
+    "number": 30,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "Bomb Calorimetry: A bomb calorimeter has a heat capacity of $3.50\\text{~kJ}/^{\\circ}\\text{C}$. When a $1.50\\text{-g}$ sample of glucose is burned in the calorimeter, the temperature increases by ${4.22}^{\\circ}\\text{C}$. What is the heat of combustion of glucose in $\\text{kJ/g}$?",
+    "choices": [
+      "$- 4.92\\text{~kJ/g}$",
+      "$- 9.85\\text{~kJ/g}$",
+      "$- 14.77\\text{~kJ/g}$",
+      "$- 29.54\\text{~kJ/g}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Heat capacity method: $q = C_{cal} \\times \\Delta T = 3.50\\text{~kJ}/^{\\circ}\\text{C} \\times {4.22}^{\\circ}\\text{C} = 14.77\\text{~kJ}$. Per gram: $14.77/1.50 = 9.85\\text{~kJ/g}$ (released, so $- 9.85\\text{~kJ/g}$). (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-31",
+    "paper": "ch4-7-theory",
+    "number": 31,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "First Law of Thermodynamics: A system absorbs $250\\text{~J}$ of heat from its surroundings and does $450\\text{~J}$ of expansion work on the surroundings. What is the change in internal energy ($\\Delta U$) of the system?",
+    "choices": [
+      "$+ 700\\text{~J}$",
+      "$+ 200\\text{~J}$",
+      "$- 200\\text{~J}$",
+      "$- 700\\text{~J}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$\\Delta U = q + w = + 250\\text{~J} + \\left( - 450\\text{~J} \\right) = - 200\\text{~J}$. (C)",
+    "flags": [
+      "claimed-C"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-32",
+    "paper": "ch4-7-theory",
+    "number": 32,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "Expansion Work: Calculate the work done ($in\\text{~Joules}$) when $2.0\\text{~moles}$ of an ideal gas expands isothermally and reversibly from $5.0\\text{~L}$ to $20.0\\text{~L}$ at $300\\text{~K}$. ($R = 8.314\\text{~J/(mol} \\cdot \\text{K)}$)",
+    "choices": [
+      "$- 3.46\\text{~kJ}$",
+      "$- 6.92\\text{~kJ}$",
+      "$+ 3.46\\text{~kJ}$",
+      "$+ 6.92\\text{~kJ}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$w = - nRT\\ln\\left( V_{2}/V_{1} \\right) = - (2.0)(8.314)(300)\\ln(20/5) = - 6920\\text{~J} = - 6.92\\text{~kJ}$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-33",
+    "paper": "ch4-7-theory",
+    "number": 33,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "Bond Enthalpies: Using average bond enthalpies ($\\text{C-H} = 413$, $\\text{Cl-Cl} = 242$, $\\text{C-Cl} = 328$, $\\text{H-Cl} = 431\\text{~kJ/mol}$), estimate $\\Delta H^{\\circ}$ for the chlorination of methane:\n\n$$\\text{CH}_{4}(g) + \\text{Cl}_{2}(g) \\rightarrow \\text{CH}_{3}\\text{Cl}(g) + \\text{HCl}(g)$$",
+    "choices": [
+      "$+ 104\\text{~kJ/mol}$",
+      "$- 104\\text{~kJ/mol}$",
+      "$+ 150\\text{~kJ/mol}$",
+      "$- 150\\text{~kJ/mol}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Bonds broken: $4\\left( \\text{C-H} \\right) + \\left( \\text{Cl-Cl} \\right) = 4(413) + 242 = 1894\\text{~kJ}$. Bonds formed: $3\\left( \\text{C-H} \\right) + \\left( \\text{C-Cl} \\right) + \\left( \\text{H-Cl} \\right) = 3(413) + 328 + 431 = 1998\\text{~kJ}$. $\\Delta H = 1894 - 1998 = - 104\\text{~kJ/mol}$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-34",
+    "paper": "ch4-7-theory",
+    "number": 34,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "Enthalpy of Solution: The lattice energy of $\\text{NaCl}$ is $+ 788\\text{~kJ/mol}$ and its enthalpy of solution is $+ 4.0\\text{~kJ/mol}$. What is the total hydration enthalpy of $\\text{Na}^{+}$ and $\\text{Cl}^{-}$ ions?",
+    "choices": [
+      "$- 784\\text{~kJ/mol}$",
+      "$- 792\\text{~kJ/mol}$",
+      "$+ 784\\text{~kJ/mol}$",
+      "$+ 792\\text{~kJ/mol}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$\\Delta H_{sol} = U_{lattice} + \\Delta H_{hydration} \\Rightarrow 4 = 788 + \\Delta H_{hydration} \\Rightarrow \\Delta H_{hydration} = - 784\\text{~kJ/mol}$. (A)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-35",
+    "paper": "ch4-7-theory",
+    "number": 35,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "State vs. Path Functions: Which of the following properties is classified as a path function rather than a state function?",
+    "choices": [
+      "Enthalpy ($H$)",
+      "Internal Energy ($U$)",
+      "Heat ($q$)",
+      "Entropy ($S$)"
+    ],
+    "sourceKey": "C",
+    "explanation": "Heat ($q$) and work ($w$) depend on the path taken; state functions depend only on initial and final states. (C)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-36",
+    "paper": "ch4-7-theory",
+    "number": 36,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "Thermochemical Stoichiometry: Given: $2\\text{SO}_{2}(g) + \\text{O}_{2}(g) \\rightarrow 2\\text{SO}_{3}(g)\\quad\\Delta H^{\\circ} = - 198\\text{~kJ/mol}$. How much heat is released when $1.00\\text{~metric~ton}$ ($1.00 \\times 10^{6}\\text{~g}$) of $\\text{SO}_{2}$ ($64.07\\text{~g/mol}$) is converted to $\\text{SO}_{3}$?",
+    "choices": [
+      "$1.55 \\times 10^{3}\\text{~kJ}$",
+      "$1.55 \\times 10^{6}\\text{~kJ}$",
+      "$3.10 \\times 10^{6}\\text{~kJ}$",
+      "$6.20 \\times 10^{6}\\text{~kJ}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Moles $\\text{SO}_{2} = 1.00 \\times 10^{6}\\text{~g}/64.07\\text{~g/mol} = 15615\\text{~mol}$. Heat released $= 15615 \\times (198/2) = 1.55 \\times 10^{6}\\text{~kJ}$? Wait, $198\\text{~kJ}$ per $2\\text{~moles}$, so $15615 \\times 99 = 1.55 \\times 10^{6}\\text{~kJ}$. Let's verify scaling. (B)",
+    "flags": [
+      "key-commentary",
+      "claimed-B"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-37",
+    "paper": "ch4-7-theory",
+    "number": 37,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "Standard State Definition: Which of the following substances has a standard enthalpy of formation ($\\Delta H_{f}^{\\circ}$) equal to zero at $25^{\\circ}\\text{C}$ and $1\\text{~atm}$?",
+    "choices": [
+      "$\\text{H}_{2}\\text{O}(l)$",
+      "$\\text{Br}_{2}(g)$",
+      "$\\text{C}(graphite)$",
+      "$\\text{I}_{2}(l)$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Pure elements in their standard reference state at $1\\text{~atm}$ and $25^{\\circ}\\text{C}$ have $\\Delta H_{f}^{\\circ} = 0$; carbon graphite is the standard state of carbon. (C)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-38",
+    "paper": "ch4-7-theory",
+    "number": 38,
+    "section": "Part III: Chapter 6 — Thermochemistry (Q27–Q38)",
+    "stem": "Fuel Value: Glucose ($\\text{C}_{6}\\text{H}_{12}\\text{O}_{6}$, molar mass $180.16\\text{~g/mol}$) has a standard enthalpy of combustion of $- 2800\\text{~kJ/mol}$. What is its fuel value in $\\text{kJ/g}$?",
+    "choices": [
+      "$15.5\\text{~kJ/g}$",
+      "$25.5\\text{~kJ/g}$",
+      "$30.2\\text{~kJ/g}$",
+      "$45.1\\text{~kJ/g}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Fuel value $= 2800\\text{~kJ/mol}/180.16\\text{~g/mol} = 15.5\\text{~kJ/g}$. (A)\n\nChapter 7",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-39",
+    "paper": "ch4-7-theory",
+    "number": 39,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Photoelectric Effect: Light with a wavelength of $400\\text{~nm}$ strikes a metal surface. If the work function ($\\Phi$) of the metal is $2.40\\text{~eV}$ ($1\\text{~eV} = 1.602 \\times 10^{- 19}\\text{~J}$), what is the maximum kinetic energy of the emitted photoelectrons? ($h = 6.626 \\times 10^{- 34}\\text{~J} \\cdot \\text{s}$, $c = 3.00 \\times 10^{8}\\text{~m/s}$)",
+    "choices": [
+      "$0.70\\text{~eV}$",
+      "$1.25\\text{~eV}$",
+      "$3.10\\text{~eV}$",
+      "$4.50\\text{~eV}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Photon energy $E = hc/\\lambda = \\left( 6.626 \\times 10^{- 34} \\times 3.00 \\times 10^{8} \\right)/\\left( 400 \\times 10^{- 9} \\right) = 4.97 \\times 10^{- 19}\\text{~J} = 3.10\\text{~eV}$. Kinetic energy $= E - \\Phi = 3.10\\text{~eV} - 2.40\\text{~eV} = 0.70\\text{~eV}$. (A)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-40",
+    "paper": "ch4-7-theory",
+    "number": 40,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "De Broglie Wavelength: What is the de Broglie wavelength of an electron ($mass = 9.109 \\times 10^{- 31}\\text{~kg}$) traveling at a speed of $2.00 \\times 10^{6}\\text{~m/s}$?",
+    "choices": [
+      "$3.64 \\times 10^{- 10}\\text{~m}$",
+      "$3.64 \\times 10^{- 13}\\text{~m}$",
+      "$6.63 \\times 10^{- 34}\\text{~m}$",
+      "$1.82 \\times 10^{- 11}\\text{~m}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$\\lambda = h/(mv) = \\left( 6.626 \\times 10^{- 34} \\right)/\\left( 9.109 \\times 10^{- 31} \\times 2.00 \\times 10^{6} \\right) = 3.64 \\times 10^{- 13}\\text{~m}$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-41",
+    "paper": "ch4-7-theory",
+    "number": 41,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Bohr Model of Hydrogen: Calculate the wavelength of the photon emitted when a hydrogen electron transitions from the $n = 4$ level to the $n = 2$ level (Balmer series). (Rydberg constant $R_{H} = 1.097 \\times 10^{7}\\text{~m}^{- 1}$)",
+    "choices": [
+      "$389\\text{~nm}$",
+      "$486\\text{~nm}$",
+      "$656\\text{~nm}$",
+      "$1216\\text{~nm}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$1/\\lambda = R_{H}\\left( 1/2^{2} - 1/4^{2} \\right) = 1.097 \\times 10^{7}(1/4 - 1/16) = 2.057 \\times 10^{6}\\text{~m}^{- 1} \\Rightarrow \\lambda = 486\\text{~nm}$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-42",
+    "paper": "ch4-7-theory",
+    "number": 42,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Quantum Numbers: Which of the following sets of quantum numbers $\\left( n,l,m_{l},m_{s} \\right)$ is unacceptable or invalid?",
+    "choices": [
+      "$(3,1,0, + 1/2)$",
+      "$(2,2,1, - 1/2)$",
+      "$(4,0,0, + 1/2)$",
+      "$(5,3, - 2, - 1/2)$"
+    ],
+    "sourceKey": "B",
+    "explanation": "For $n = 2$, allowed $l$ values are $0$ and $1$. $l$ cannot equal $2$ when $n = 2$. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-43",
+    "paper": "ch4-7-theory",
+    "number": 43,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Photon Energy Calculation: What is the energy of a single photon of green light with a frequency of $5.45 \\times 10^{14}\\text{~Hz}$?",
+    "choices": [
+      "$3.61 \\times 10^{- 19}\\text{~J}$",
+      "$5.45 \\times 10^{- 19}\\text{~J}$",
+      "$3.61 \\times 10^{- 20}\\text{~J}$",
+      "$1.09 \\times 10^{- 18}\\text{~J}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$E = h\\nu = \\left( 6.626 \\times 10^{- 34}\\text{~J} \\cdot \\text{s} \\right)\\left( 5.45 \\times 10^{14}\\text{~s}^{- 1} \\right) = 3.61 \\times 10^{- 19}\\text{~J}$. (A)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-44",
+    "paper": "ch4-7-theory",
+    "number": 44,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Heisenberg Uncertainty Principle: The uncertainty in the position of a particle is $1.0 \\times 10^{- 10}\\text{~m}$. What is the minimum uncertainty in its momentum? ($h = 6.626 \\times 10^{- 34}\\text{~J} \\cdot \\text{s}$)",
+    "choices": [
+      "$5.27 \\times 10^{- 25}\\text{~kg} \\cdot \\text{m/s}$",
+      "$1.05 \\times 10^{- 24}\\text{~kg} \\cdot \\text{m/s}$",
+      "$3.32 \\times 10^{- 24}\\text{~kg} \\cdot \\text{m/s}$",
+      "$6.63 \\times 10^{- 24}\\text{~kg} \\cdot \\text{m/s}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$\\Delta x \\cdot \\Delta p \\geq h/(4\\pi) \\Rightarrow \\Delta p = \\left( 6.626 \\times 10^{- 34} \\right)/\\left( 4\\pi \\times 1.0 \\times 10^{- 10} \\right) = 5.27 \\times 10^{- 25}\\text{~kg} \\cdot \\text{m/s}$. (A)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-45",
+    "paper": "ch4-7-theory",
+    "number": 45,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Electronic Configurations & Magnetism: What is the ground-state electron configuration and number of unpaired electrons for a neutral Chromium atom ($Cr$, atomic number $24$)?",
+    "choices": [
+      "$\\lbrack Ar\\rbrack 4s^{2}3d^{4}$; $4$ unpaired electrons",
+      "$\\lbrack Ar\\rbrack 4s^{1}3d^{5}$; $6$ unpaired electrons",
+      "$\\lbrack Ar\\rbrack 4s^{2}3d^{4}$; $2$ unpaired electrons",
+      "$\\lbrack Ar\\rbrack 4s^{0}3d^{6}$; $0$ unpaired electrons"
+    ],
+    "sourceKey": "B",
+    "explanation": "Chromium has an Aufbau exception: $\\left\\lbrack \\text{Ar} \\right\\rbrack 4s^{1}3d^{5}$ with $6$ unpaired electrons. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-46",
+    "paper": "ch4-7-theory",
+    "number": 46,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Atomic Orbitals & Nodes: How many total nodes (radial plus angular nodes) does a $4s$ orbital have?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "sourceKey": "C",
+    "explanation": "Total nodes $= n - 1$. For $4s$, $n = 4$, total nodes $= 3$? Wait, radial nodes $= n - l - 1 = 4 - 0 - 1 = 3$, angular nodes $= l = 0$, total nodes $= 3$. Let's check option D.",
+    "flags": [
+      "key-commentary",
+      "claimed-D"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-47",
+    "paper": "ch4-7-theory",
+    "number": 47,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Electromagnetic Spectrum: Rank the following types of electromagnetic radiation in order of increasing wavelength:",
+    "choices": [
+      "Gamma rays < Ultraviolet < Infrared < Radio waves",
+      "Radio waves < Infrared < Ultraviolet < Gamma rays",
+      "Ultraviolet < Gamma rays < Radio waves < Infrared",
+      "Infrared < Gamma rays < Radio waves < Ultraviolet"
+    ],
+    "sourceKey": "A",
+    "explanation": "Increasing wavelength corresponds to decreasing energy and frequency: Gamma rays < UV < Infrared < Radio waves. (A)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-48",
+    "paper": "ch4-7-theory",
+    "number": 48,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Rydberg Formula / Series: The series of spectral lines corresponding to electron transitions to $n = 1$ in the hydrogen atom emission spectrum is known as the:",
+    "choices": [
+      "Balmer series",
+      "Paschen series",
+      "Lyman series",
+      "Brackett series"
+    ],
+    "sourceKey": "C",
+    "explanation": "Transitions to $n = 1$ form the ultraviolet Lyman series. (C)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-49",
+    "paper": "ch4-7-theory",
+    "number": 49,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Aufbau Principle Exceptions: Which of the following transition metal atoms exhibits an anomalous electron configuration due to the stability of half-filled subshells?",
+    "choices": [
+      "Titanium ($\\text{Ti}$)",
+      "Copper ($\\text{Cu}$)",
+      "Zinc ($\\text{Zn}$)",
+      "Iron ($\\text{Fe}$)"
+    ],
+    "sourceKey": "B",
+    "explanation": "Copper ($\\text{Cu}$) and Chromium ($\\text{Cr}$) are classic exceptions due to half-filled/fully-filled $d$-subshell stability. (B)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-theory-50",
+    "paper": "ch4-7-theory",
+    "number": 50,
+    "section": "Part IV: Chapter 7 — Quantum Theory & Electronic Structure (Q39–Q50)",
+    "stem": "Quantum Mechanics Interpretation: What physical significance is associated with the square of the wave function, $|\\psi|^{2}$, in quantum mechanics?",
+    "choices": [
+      "Total energy of the electron",
+      "Electron spin angular momentum",
+      "Probability density of finding an electron at a given point in space",
+      "Velocity vector of the electron orbit"
+    ],
+    "sourceKey": "C",
+    "explanation": "Max Born interpretation: $|\\psi|^{2}$ represents the probability density of finding the electron at a specific location. (C)",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-01",
+    "paper": "ch4-7-lab",
+    "number": 1,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Primary Standard Calibration: A student standardizes a sodium hydroxide ($\\text{NaOH}$) solution using primary standard potassium hydrogen phthalate ($\\text{KHP}$, $\\text{KHC}_{8}\\text{H}_{4}\\text{O}_{4}$, $\\text{MW} = 204.22\\text{~g/mol}$). If a $0.5105\\text{-g}$ sample of KHP requires $24.20\\text{~mL}$ of $\\text{NaOH}$ to reach the phenolphthalein end point, what is the exact molarity of the $\\text{NaOH}$ solution?",
+    "choices": [
+      "$0.0982\\text{~M}$",
+      "$0.1033\\text{~M}$",
+      "$0.1051\\text{~M}$",
+      "$0.1124\\text{~M}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$n\\left( \\text{KHP} \\right) = 0.5105\\text{~g}/204.22\\text{~g/mol} = 0.002500\\text{~mol}$. $M\\left( \\text{NaOH} \\right) = 0.002500\\text{~mol}/0.02420\\text{~L} = 0.1033\\text{~M}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-02",
+    "paper": "ch4-7-lab",
+    "number": 2,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Titration Error Analysis: During an acid-base titration using a $50\\text{-mL}$ buret, the student leaves an undetected air bubble in the tip of the buret before starting the titration. The air bubble dislodges during the titration. How will this affect the reported concentration of the analyte in the flask?",
+    "choices": [
+      "The reported concentration will be higher than the true value.",
+      "The reported concentration will be lower than the true value.",
+      "The reported concentration will remain unaffected.",
+      "It depends on whether the acid or base is in the buret."
+    ],
+    "sourceKey": "A",
+    "explanation": "The air bubble leaves as liquid titrant, recording a larger volume delivered ($\\Delta V_{buret}$) than actually delivered into the flask. Higher titrant volume leads to a higher calculated concentration.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-03",
+    "paper": "ch4-7-lab",
+    "number": 3,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Volumetric Glassware Washing: Before filling a buret with a standardized titrant, what is the proper laboratory protocol after rinsing with distilled water?",
+    "choices": [
+      "Dry the inside of the buret using a paper towel wrapped around a wire.",
+      "Rinse the buret two to three times with small portions of the titrant solution.",
+      "Heat the buret in an oven at $110^{\\circ}\\text{C}$ to dry completely.",
+      "Rinse the buret with ethanol and allow it to evaporate."
+    ],
+    "sourceKey": "B",
+    "explanation": "Rinsing with titrant removes residual water droplets that would otherwise dilute the standard titrant solution.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-04",
+    "paper": "ch4-7-lab",
+    "number": 4,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Gravimetric Analysis Protocol: In the determination of $\\text{SO}_{4}^{2 -}$ as $\\text{BaSO}_{4}(s)$, the precipitate is digested in a warm solution before filtration. What is the primary analytical purpose of digestion?",
+    "choices": [
+      "To oxidize residual impurities in the precipitate.",
+      "To allow small crystals to dissolve and recrystallize onto larger ones (Ostwald ripening).",
+      "To increase the solubility product ($K_{sp}$) of $\\text{BaSO}_{4}$.",
+      "To precipitate excess $\\text{Ba}^{2 +}$ ions from solution."
+    ],
+    "sourceKey": "B",
+    "explanation": "Digestion promotes Ostwald ripening (dissolution of small particles and growth of larger crystals), improving filterability and purity.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-05",
+    "paper": "ch4-7-lab",
+    "number": 5,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Analytical Filter Paper Selection: When filtering a fine crystalline precipitate of $\\text{BaSO}_{4}$ for quantitative ignition in a crucible, which filter paper grade is most appropriate?",
+    "choices": [
+      "Qualitative rapid-flow filter paper",
+      "Ashless fine-porosity quantitative filter paper",
+      "Glass fiber membrane with $5.0\\text{~}\\mu\\text{m}$ pores",
+      "Phase-separating filter paper"
+    ],
+    "sourceKey": "B",
+    "explanation": "Quantitative filter paper burns off without leaving ash ($< 0.0001\\text{~g}$ residue) during ignition of precipitates like $\\text{BaSO}_{4}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-06",
+    "paper": "ch4-7-lab",
+    "number": 6,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Redox Titration Indicator: In a permanganate titration ($\\text{KMnO}_{4}$ titrant), why is an external indicator usually not required?",
+    "choices": [
+      "$\\text{MnO}_{4}^{-}$ acts as its own self-indicator, changing from deep purple to faint pink at the endpoint.",
+      "The reaction is purely color-neutralized by $\\text{Fe}^{3 +}$ ions.",
+      "Starch forms a blue-black complex with $\\text{Mn}^{2 +}$ at the equivalence point.",
+      "Phenolphthalein turns colorless in the presence of strong oxidizers."
+    ],
+    "sourceKey": "A",
+    "explanation": "Excess $\\text{MnO}_{4}^{-}$ provides a self-indicating pink color change at the equivalence point.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-07",
+    "paper": "ch4-7-lab",
+    "number": 7,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Iodometric Titration: In the determination of dissolved oxygen or copper content via iodometry, starch indicator is added:",
+    "choices": [
+      "At the beginning of the titration when the solution is dark brown.",
+      "Near the end of the titration when the yellow $\\text{I}_{3}^{-}$ color becomes very pale.",
+      "After the endpoint has already been passed to confirm complete reaction.",
+      "In excess prior to dissolving the sample in acid."
+    ],
+    "sourceKey": "B",
+    "explanation": "Starch must be added near the end of titration; if added early, $\\text{I}_{2}$ complexes too strongly to the starch matrix, delaying release.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-08",
+    "paper": "ch4-7-lab",
+    "number": 8,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Gravimetric Analysis Calculations: A $0.6240\\text{-g}$ sample of an alloy containing nickel is dissolved and treated with dimethylglyoxime ($\\text{DMG}$, $\\text{C}_{4}\\text{H}_{8}\\text{N}_{2}\\text{O}_{2}$) to yield $0.4820\\text{~g}$ of $\\text{Ni(DMG)}_{2}$ precipitate ($\\text{MW} = 288.91\\text{~g/mol}$). What is the mass fraction of nickel ($\\text{AW} = 58.69\\text{~g/mol}$) in the alloy?",
+    "choices": [
+      "$15.7\\%$",
+      "$23.3\\%$",
+      "$31.8\\%$",
+      "$42.1\\%$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Mass of Ni $= 0.4820 \\times (58.69/288.91) = 0.0979\\text{~g}$. Mass $\\% = (0.0979/0.6240) \\times 100\\% = 15.7\\%$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-09",
+    "paper": "ch4-7-lab",
+    "number": 9,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "pH Meter Calibration: Before performing a precision acid-base titration curve experiment, a pH meter must be calibrated using standard buffers. Which procedure represents proper technique?",
+    "choices": [
+      "Calibrate using a single buffer solution of $\\text{pH~}7.00$ at $0^{\\circ}\\text{C}$.",
+      "Perform a two- or three-point calibration using buffers that bracket the expected experimental pH range.",
+      "Rinse the electrode with acetone between different buffer solutions",
+      "Wipe the glass bulb vigorously with a dry paper towel to remove water droplets."
+    ],
+    "sourceKey": "B",
+    "explanation": "Two- or three-point calibration using standard buffer solutions bracketing the target pH range accounts for glass electrode slope ($S$) and temperature factors.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-10",
+    "paper": "ch4-7-lab",
+    "number": 10,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Solution Preparation from Concentrated Stock: Concentrated hydrochloric acid is labeled as $37.0\\%$ $\\text{HCl}$ by mass with a density of $1.19\\text{~g/mL}$. How many milliliters of this stock solution are needed to prepare $500.0\\text{~mL}$ of $0.200\\text{~M~HCl}$? ($\\text{MW~of~HCl} = 36.46\\text{~g/mol}$)",
+    "choices": [
+      "$4.14\\text{~mL}$",
+      "$8.28\\text{~mL}$",
+      "$12.4\\text{~mL}$",
+      "$16.6\\text{~mL}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Molarity of stock $\\text{HCl} = (1.19 \\times 1000 \\times 0.370)/36.46 = 12.08\\text{~M}$. $V_{1} = (0.200 \\times 500.0)/12.08 = 8.28\\text{~mL}$. (Correct option: B)",
+    "flags": [
+      "key-commentary",
+      "claimed-B"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-11",
+    "paper": "ch4-7-lab",
+    "number": 11,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Precipitate Igniting Safety: When heating a wet filter paper containing a precipitate inside a porcelain crucible over a Bunsen burner, why must the crucible cover be left slightly ajar?",
+    "choices": [
+      "To allow carbon monoxide to enter and reduce the precipitate.",
+      "To permit steam escape and prevent sudden pressure buildup/spattering.",
+      "To prevent atmospheric oxygen from oxidizing the precipitate.",
+      "To maintain a constant temperature inside the crucible."
+    ],
+    "sourceKey": "B",
+    "explanation": "Leaving the cover ajar lets steam escape safely without creating pressure build-up that causes loss of sample by spattering.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-12",
+    "paper": "ch4-7-lab",
+    "number": 12,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Back-Titration Analysis: A $0.2000\\text{-g}$ sample of impure ammonium sulfate, $\\left( \\text{NH}_{4} \\right)_{2}\\text{SO}_{4}$, is boiled with $50.00\\text{~mL}$ of $0.1000\\text{~M~NaOH}$ to drive off all $\\text{NH}_{3}$ gas:\n\n$$\\left( \\text{NH}_{4} \\right)_{2}\\text{SO}_{4} + 2\\text{NaOH} \\rightarrow \\text{Na}_{2}\\text{SO}_{4} + 2\\text{NH}_{3}(g) + 2\\text{H}_{2}\\text{O}$$\n\nThe unreacted excess $\\text{NaOH}$ requires $21.40\\text{~mL}$ of $0.1000\\text{~M~HCl}$ for neutralization. Calculate the percentage purity of the ammonium sulfate sample. ($\\text{MW} = 132.14\\text{~g/mol}$)",
+    "choices": [
+      "$47.2\\%$",
+      "$64.8\\%$",
+      "$94.5\\%$",
+      "$98.1\\%$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Total $\\text{NaOH} = 0.05000 \\times 0.1000 = 0.005000\\text{~mol}$. Excess $\\text{NaOH} = 0.02140 \\times 0.1000 = 0.002140\\text{~mol}$. $\\text{NaOH}$ consumed by $\\left( \\text{NH}_{4} \\right)_{2}\\text{SO}_{4} = 0.002860\\text{~mol}$. Moles $\\left( \\text{NH}_{4} \\right)_{2}\\text{SO}_{4} = 0.002860/2 = 0.001430\\text{~mol}$. Mass $= 0.001430 \\times 132.14 = 0.1889\\text{~g}$. Purity $= (0.1889/0.2000) \\times 100\\% = 94.5\\%$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-13",
+    "paper": "ch4-7-lab",
+    "number": 13,
+    "section": "Part I: Chapter 4 — Laboratory Techniques in Aqueous Solutions & Titration (Q1–Q13)",
+    "stem": "Water of Crystallization Determination: In a lab experiment, a student heats $2.497\\text{~g}$ of hydrated copper(II) sulfate ($\\text{CuSO}_{4} \\cdot x\\text{H}_{2}\\text{O}$) in a crucible until constant mass. The anhydrous $\\text{CuSO}_{4}$ remains as $1.596\\text{~g}$. What is the experimentally determined value of $x$? ($\\text{CuSO}_{4} = 159.6\\text{~g/mol}$, $\\text{H}_{2}\\text{O} = 18.02\\text{~g/mol}$)",
+    "choices": [
+      "2",
+      "3",
+      "5",
+      "7"
+    ],
+    "sourceKey": "C",
+    "explanation": "Mass $\\text{H}_{2}\\text{O} = 2.497 - 1.596 = 0.901\\text{~g}$. Moles $\\text{CuSO}_{4} = 1.596/159.6 = 0.0100\\text{~mol}$. Moles $\\text{H}_{2}\\text{O} = 0.901/18.02 = 0.0500\\text{~mol}$. Ratio $x = 0.0500/0.0100 = 5$.\n\nChapter 5 — Laboratory Gas Laws, Apparatus & Manometry",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-14",
+    "paper": "ch4-7-lab",
+    "number": 14,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Water Vapor Correction: A sample of oxygen gas is collected over water in a gas-measuring eudiometer tube at $23^{\\circ}\\text{C}$ and a barometric pressure of $754.0\\text{~mmHg}$. The atmospheric pressure matches the internal gas height. If the vapor pressure of water at $23^{\\circ}\\text{C}$ is $21.1\\text{~mmHg}$, what is the dry pressure of the oxygen gas?",
+    "choices": [
+      "$732.9\\text{~mmHg}$",
+      "$754.0\\text{~mmHg}$",
+      "$775.1\\text{~mmHg}$",
+      "$760.0\\text{~mmHg}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$P_{\\text{O}_{2}} = P_{bar} - P_{\\text{H}_{2}\\text{O}} = 754.0 - 21.1 = 732.9\\text{~mmHg}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-15",
+    "paper": "ch4-7-lab",
+    "number": 15,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Manometer Level Difference: An open-end liquid manometer filled with mercury ($\\rho = 13.6\\text{~g/cm}^{3}$) is connected to a gas bulb. The mercury level in the arm open to the atmosphere is $45\\text{~mm}$ lower than the arm connected to the gas bulb. If atmospheric pressure is $755\\text{~mmHg}$, what is the absolute gas pressure inside the bulb?",
+    "choices": [
+      "$710\\text{~mmHg}$",
+      "$755\\text{~mmHg}$",
+      "$800\\text{~mmHg}$",
+      "$845\\text{~mmHg}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "The atmospheric arm level is lower, meaning gas pressure is lower than atmospheric pressure: $P_{gas} = 755 - 45 = 710\\text{~mmHg}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-16",
+    "paper": "ch4-7-lab",
+    "number": 16,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Dumas Method for Molar Mass: In a Dumas method experiment, a volatile liquid vaporizes at ${99.0}^{\\circ}\\text{C}$ in a $250.0\\text{-mL}$ flask at an atmospheric pressure of $0.985\\text{~atm}$. The mass of the condensed vapor inside the flask is $0.684\\text{~g}$. What is the molar mass of the compound?",
+    "choices": [
+      "$46.1\\text{~g/mol}$",
+      "$84.2\\text{~g/mol}$",
+      "$114.7\\text{~g/mol}$",
+      "$142.3\\text{~g/mol}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$M = \\frac{mRT}{PV} = \\frac{0.684 \\times 0.08206 \\times 372.15}{0.985 \\times 0.2500} = 84.8\\text{~g/mol} \\approx 84.2\\text{~g/mol}$.",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-17",
+    "paper": "ch4-7-lab",
+    "number": 17,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Victor Meyer Method Error: In the Victor Meyer apparatus for molar mass determination of volatile liquids, if a few drops of the sample fail to vaporize completely inside the heated inner tube, how does this affect the calculated molar mass?",
+    "choices": [
+      "The calculated molar mass will be higher than the true value.",
+      "The calculated molar mass will be lower than the true value.",
+      "The calculated molar mass will remain unaffected.",
+      "The gas volume displaced will be artificially increased."
+    ],
+    "sourceKey": "A",
+    "explanation": "Unvaporized liquid displacement yields a smaller gas volume ($V$). Since $M \\propto 1/V$, molar mass is overestimated.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-18",
+    "paper": "ch4-7-lab",
+    "number": 18,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Eudiometer Height Adjustment: When measuring the volume of hydrogen gas collected over water in a eudiometer tube, the water level inside the tube is $6.8\\text{~cm}$ higher than the water level outside in the beaker. If $13.6\\text{~mm~H}_{2}\\text{O} = 1.00\\text{~mm~Hg}$, what correction must be applied to the barometric pressure to find the total gas pressure inside the tube?",
+    "choices": [
+      "Add $5.0\\text{~mmHg}$",
+      "Subtract $5.0\\text{~mmHg}$",
+      "Add $6.8\\text{~mmHg}$",
+      "Subtract $6.8\\text{~mmHg}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Pressure inside eudiometer is lower than barometric pressure by liquid column height: $68\\text{~mm~H}_{2}\\text{O}/13.6 = 5.0\\text{~mmHg}$. Subtract $5.0\\text{~mmHg}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-19",
+    "paper": "ch4-7-lab",
+    "number": 19,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Gas Effusion Apparatus Calibration: A student uses a Schloesing effusion apparatus to measure the effusion rate of an unknown gas relative to argon ($\\text{MW} = 39.95\\text{~g/mol}$). The argon gas takes $48.2\\text{~s}$ to effuse through a microscopic orifice, while the same volume of unknown gas takes $64.1\\text{~s}$ under identical temperature and pressure. What is the molar mass of the unknown gas?",
+    "choices": [
+      "$22.6\\text{~g/mol}$",
+      "$53.1\\text{~g/mol}$",
+      "$70.6\\text{~g/mol}$",
+      "$88.3\\text{~g/mol}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "$\\frac{t_{2}}{t_{1}} = \\sqrt{\\frac{M_{2}}{M_{1}}} \\Rightarrow \\frac{64.1}{48.2} = \\sqrt{\\frac{M_{2}}{39.95}} \\Rightarrow M_{2} = 39.95 \\times (1.330)^{2} = 70.6\\text{~g/mol}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-20",
+    "paper": "ch4-7-lab",
+    "number": 20,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Gas Generation Safety: When producing acetylene ($\\text{C}_{2}\\text{H}_{2}$) gas in a lab setting by adding water to calcium carbide ($\\text{CaC}_{2}$), why is a gas washing bottle containing acidified copper(II) sulfate ($\\text{CuSO}_{4}$) solution placed in the gas collection line?",
+    "choices": [
+      "To absorb unreacted water vapor.",
+      "To remove phosphine ($\\text{PH}_{3}$) and hydrogen sulfide ($\\text{H}_{2}\\text{S}$) impurities.",
+      "To catalyze the combustion of acetylene.",
+      "To act as a liquid seal to prevent back-suction of oxygen."
+    ],
+    "sourceKey": "B",
+    "explanation": "Calcium carbide impurities ($\\text{Ca}_{3}\\text{P}_{2}$, $\\text{CaS}$) generate foul and toxic $\\text{PH}_{3}$ and $\\text{H}_{2}\\text{S}$, which precipitate out in $\\text{CuSO}_{4}$ solution.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-21",
+    "paper": "ch4-7-lab",
+    "number": 21,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Gas Syringe Reading: A gas syringe is used to record gas evolution kinetics. At $25^{\\circ}\\text{C}$, the friction of the syringe plunger introduces a small resistive force corresponding to $+ 15.0\\text{~Torr}$ extra pressure inside the syringe. If the barometric pressure is $750.0\\text{~Torr}$, what is the true gas pressure driving the expansion?",
+    "choices": [
+      "$735.0\\text{~Torr}$",
+      "$750.0\\text{~Torr}$",
+      "$765.0\\text{~Torr}$",
+      "$780.0\\text{~Torr}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Gas inside must push atmospheric pressure plus plunger friction: $P_{gas} = 750.0 + 15.0 = 765.0\\text{~Torr}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-22",
+    "paper": "ch4-7-lab",
+    "number": 22,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Ideal vs Real Gas Lab Deviation: A laboratory gas cylinder filled with carbon dioxide ($\\text{CO}_{2}$) at high pressure ($50\\text{~atm}$) is opened slightly, releasing gas into a ambient plastic vessel. The temperature of the released gas near the nozzle drops noticeably. This cooling effect (Joule-Thomson expansion) occurs primarily because:",
+    "choices": [
+      "The gas does work overcoming attractive intermolecular forces (Van der Waals $a$ constant).",
+      "The molecular volume of the gas molecules expands rapidly (Van der Waals $b$ constant).",
+      "Kinetic energy is converted directly into potential energy of covalent bonds.",
+      "Air surrounding the nozzle absorbs heat from the expanding gas."
+    ],
+    "sourceKey": "A",
+    "explanation": "In real gas expansion, molecules work against attractive intermolecular forces (Van der Waals $a$), causing a drop in kinetic energy and cooling.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-23",
+    "paper": "ch4-7-lab",
+    "number": 23,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Stoichiometry of Gas Generation: A student decomposes a $0.400\\text{-g}$ mixture of $\\text{KClO}_{3}$ and $\\text{KCl}$ in the presence of $\\text{MnO}_{2}$ catalyst by heating. The evolved $\\text{O}_{2}$ gas is collected, occupying $68.5\\text{~mL}$ at $22^{\\circ}\\text{C}$ and $740.0\\text{~mmHg}$ (dry). What is the percentage of $\\text{KClO}_{3}$ ($\\text{MW} = 122.55\\text{~g/mol}$) in the initial sample?",
+    "choices": [
+      "$42.5\\%$",
+      "$56.3\\%$",
+      "$67.1\\%$",
+      "$84.2\\%$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Moles $\\text{O}_{2} = \\frac{(740/760) \\times 0.0685}{0.08206 \\times 295.15} = 0.00276\\text{~mol}$. $2\\text{KClO}_{3} \\rightarrow 2\\text{KCl} + 3\\text{O}_{2} \\Rightarrow n\\left( \\text{KClO}_{3} \\right) = \\frac{2}{3}(0.00276) = 0.00184\\text{~mol}$. Mass $= 0.00184 \\times 122.55 = 0.2255\\text{~g}$. $\\% = (0.2255/0.400) \\times 100\\% = 56.3\\%$. (Correct option: B)",
+    "flags": [
+      "key-commentary",
+      "claimed-B"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-24",
+    "paper": "ch4-7-lab",
+    "number": 24,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Drying Agents for Gases: Which of the following drying agents is unsuitable for drying gaseous ammonia ($\\text{NH}_{3}$) in a laboratory purification train?",
+    "choices": [
+      "Quicklime ($\\text{CaO}$)",
+      "Solid potassium hydroxide ($\\text{KOH}$)",
+      "Anhydrous calcium chloride ($\\text{CaCl}_{2}$)",
+      "Soda lime ($\\text{NaOH} + \\text{CaO}$)"
+    ],
+    "sourceKey": "C",
+    "explanation": "$\\text{CaCl}_{2}$ reacts with basic ammonia to form an adduct complex $\\text{CaCl}_{2} \\cdot 8\\text{NH}_{3}$, absorbing the gas instead of drying it.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-25",
+    "paper": "ch4-7-lab",
+    "number": 25,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Barometer Temperature Correction: A mercury barometer reads $762.4\\text{~mm}$ at a room temperature of $28^{\\circ}\\text{C}$. Given that the thermal expansion coefficient of mercury is $\\beta = 1.82 \\times 10^{- 4}\\text{~K}^{- 1}$, what is the corrected barometric height at standard temperature ($0^{\\circ}\\text{C}$)?",
+    "choices": [
+      "$758.5\\text{~mm}$",
+      "$760.0\\text{~mm}$",
+      "$762.4\\text{~mm}$",
+      "$766.3\\text{~mm}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$h_{0} = h_{T}(1 - \\beta\\Delta T) = 762.4 \\times \\left( 1 - 1.82 \\times 10^{- 4} \\times 28 \\right) = 758.5\\text{~mm}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-26",
+    "paper": "ch4-7-lab",
+    "number": 26,
+    "section": "Part II: Chapter 5 — Laboratory Gas Laws, Apparatus & Manometry (Q14–Q26)",
+    "stem": "Gas Leak Detection Technique: In high-vacuum laboratory systems containing helium gas, small pinhole leaks are localized using a mass spectrometer leak detector (MSLD). Why is helium chosen as the tracer gas?",
+    "choices": [
+      "Helium has a high polarizability making it easy to ionize.",
+      "Helium has a small atomic radius, low background atmospheric concentration, and fast effusion rate.",
+      "Helium reacts rapidly with air to produce visible optical fluorescence.",
+      "Helium condenses easily at ambient temperatures."
+    ],
+    "sourceKey": "B",
+    "explanation": "Helium has a very small atomic mass/size, effuses extremely fast through small leaks, and does not linger in normal background air.\n\nChapter 6 — Laboratory Calorimetry & Thermochemistry",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-27",
+    "paper": "ch4-7-lab",
+    "number": 27,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Coffee-Cup Calorimeter Heat Capacity: To measure the heat capacity of a polystyrene coffee-cup calorimeter, $50.0\\text{~mL}$ of hot water at ${60.0}^{\\circ}\\text{C}$ is added to $50.0\\text{~mL}$ of cold water at ${20.0}^{\\circ}\\text{C}$ inside the cup. The final equilibrium temperature is ${38.5}^{\\circ}\\text{C}$. Taking the specific heat of water as $4.184\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$ and density as $1.00\\text{~g/mL}$, what is the heat capacity of the calorimeter ($C_{cal}$)?",
+    "choices": [
+      "$15.7\\text{~J/}^{\\circ}\\text{C}$",
+      "$33.9\\text{~J/}^{\\circ}\\text{C}$",
+      "$62.8\\text{~J/}^{\\circ}\\text{C}$",
+      "$104.6\\text{~J/}^{\\circ}\\text{C}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Heat lost by hot water $= 50.0 \\times 4.184 \\times (60.0 - 38.5) = 4497.8\\text{~J}$. Heat gained by cold water $= 50.0 \\times 4.184 \\times (38.5 - 20.0) = 3870.2\\text{~J}$. Heat gained by calorimeter $= 4497.8 - 3870.2 = 627.6\\text{~J}$. $C_{cal} = 627.6/(38.5 - 20.0) = 33.9\\text{~J/}^{\\circ}\\text{C}$. (Correct option: B)",
+    "flags": [
+      "key-commentary",
+      "claimed-B"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-28",
+    "paper": "ch4-7-lab",
+    "number": 28,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Heat of Solution Measurement: In a coffee-cup calorimeter ($C_{cal} = 25.0\\text{~J/}^{\\circ}\\text{C}$), $8.00\\text{~g}$ of ammonium nitrate ($\\text{NH}_{4}\\text{NO}_{3}$, $\\text{MW} = 80.04\\text{~g/mol}$) is dissolved in $100.0\\text{~g}$ of distilled water, both initially at ${22.0}^{\\circ}\\text{C}$. The temperature drops to ${16.5}^{\\circ}\\text{C}$. Assuming the specific heat of the solution is $4.18\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$, calculate the molar enthalpy of solution ($\\Delta H_{soln}$) for $\\text{NH}_{4}\\text{NO}_{3}$.",
+    "choices": [
+      "$+ 26.2\\text{~kJ/mol}$",
+      "$- 26.2\\text{~kJ/mol}$",
+      "$+ 18.4\\text{~kJ/mol}$",
+      "$+ 31.5\\text{~kJ/mol}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$q_{solution} = 108.0 \\times 4.18 \\times ( - 5.5) = - 2482.9\\text{~J}$. $q_{cal} = 25.0 \\times ( - 5.5) = - 137.5\\text{~J}$. Total $q_{rxn} = + 2620.4\\text{~J} = + 2.62\\text{~kJ}$. Moles $= 8.00/80.04 = 0.100\\text{~mol}$. $\\Delta H = + 2.62/0.100 = + 26.2\\text{~kJ/mol}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-29",
+    "paper": "ch4-7-lab",
+    "number": 29,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Bomb Calorimeter Calibration: Benzoic acid ($\\text{C}_{7}\\text{H}_{6}\\text{O}_{2}$) is used as a standard for calibrating bomb calorimeters. Its heat of combustion is known to be $- 32.27\\text{~kJ/g}$. When $1.152\\text{~g}$ of benzoic acid is burned in excess oxygen in a bomb calorimeter, the temperature rises by ${3.125}^{\\circ}\\text{C}$. What is the heat capacity of the calorimeter assembly ($C_{cal}$)?",
+    "choices": [
+      "$11.90\\text{~kJ/}^{\\circ}\\text{C}$",
+      "$14.52\\text{~kJ/}^{\\circ}\\text{C}$",
+      "$8.65\\text{~kJ/}^{\\circ}\\text{C}$",
+      "$37.18\\text{~kJ/}^{\\circ}\\text{C}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Heat released $= 1.152\\text{~g} \\times 32.27\\text{~kJ/g} = 37.18\\text{~kJ}$. $C_{cal} = 37.18/3.125 = 11.90\\text{~kJ/}^{\\circ}\\text{C}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-30",
+    "paper": "ch4-7-lab",
+    "number": 30,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Enthalpy of Neutralization (Polyprotic Acid): When $50.0\\text{~mL}$ of $1.00\\text{~M}\\text{~H}_{2}\\text{SO}_{4}$ is reacted with $100.0\\text{~mL}$ of $1.00\\text{~M~NaOH}$ in a calorimeter, the heat released is $5.71\\text{~kJ}$. What is the molar enthalpy of neutralization expressed per mole of water formed?",
+    "choices": [
+      "$- 28.55\\text{~kJ/mol}$",
+      "$- 57.1\\text{~kJ/mol}$",
+      "$- 114.2\\text{~kJ/mol}$",
+      "$- 171.3\\text{~kJ/mol}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Moles of $\\text{H}^{+} = 2 \\times 0.050 \\times 1.00 = 0.100\\text{~mol}$. Moles of $\\text{OH}^{-} = 0.100 \\times 1.00 = 0.100\\text{~mol}$. Moles $\\text{H}_{2}\\text{O}$ formed $= 0.100\\text{~mol}$. $\\Delta H = - 5.71\\text{~kJ}/0.100\\text{~mol} = - 57.1\\text{~kJ/mol}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-31",
+    "paper": "ch4-7-lab",
+    "number": 31,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Systematic Error in Calorimetry: If a student fails to stir the solution adequately in a coffee-cup calorimeter experiment, how will this affect the observed peak temperature change ($\\Delta T_{\\max}$)?",
+    "choices": [
+      "$\\Delta T_{\\max}$ will be artificially high due to localized hot spots near the thermometer bulb.",
+      "$\\Delta T_{\\max}$ will be underestimated due to slow thermal distribution and continuous heat loss to surroundings before equilibrium.",
+      "$\\Delta T_{\\max}$ will remain unaffected because heat capacity is constant.",
+      "$\\Delta T_{\\max}$ will shift from exothermic to endothermic."
+    ],
+    "sourceKey": "B",
+    "explanation": "Inadequate mixing slows thermal equilibration, causing continuous heat dissipation to the surroundings before reaching peak temperature.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-32",
+    "paper": "ch4-7-lab",
+    "number": 32,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Flame Calorimetry (Fuel Value): A spirit lamp containing ethanol ($\\text{C}_{2}\\text{H}_{5}\\text{OH}$) is used to heat $200.0\\text{~g}$ of water in a copper beaker. The mass of the lamp decreases by $0.550\\text{~g}$ while the water temperature increases from ${20.0}^{\\circ}\\text{C}$ to ${36.5}^{\\circ}\\text{C}$. Taking $c_{water} = 4.184\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$, calculate the experimental heat of combustion of ethanol in $\\text{kJ/mol}$. ($\\text{MW} = 46.07\\text{~g/mol}$)",
+    "choices": [
+      "$- 420\\text{~kJ/mol}$",
+      "$- 1150\\text{~kJ/mol}$",
+      "$- 1367\\text{~kJ/mol}$",
+      "$- 1520\\text{~kJ/mol}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "$q_{water} = 200.0 \\times 4.184 \\times 16.5 = 13807\\text{~J} = 13.81\\text{~kJ}$. Moles burned $= 0.550/46.07 = 0.01194\\text{~mol}$. $\\Delta H = - 13.81/0.01194 = - 1156\\text{~kJ/mol} \\approx - 1150\\text{~kJ/mol}$.",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-33",
+    "paper": "ch4-7-lab",
+    "number": 33,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Hess’s Law Experimental Validation: In a lab validation of Hess’s law, three reactions are measured calorimetrically:\n\n$$\\text{Reaction~1:~NaOH}(s) \\rightarrow \\text{Na}^{+}(aq) + \\text{OH}^{-}(aq)\\quad\\Delta H_{1}$$\n\n$$\\text{Reaction~2:~NaOH}(s) + \\text{HCl}(aq) \\rightarrow \\text{NaCl}(aq) + \\text{H}_{2}\\text{O}(l)\\quad\\Delta H_{2}$$\n\n$$\\text{Reaction~3:~NaOH}(aq) + \\text{HCl}(aq) \\rightarrow \\text{NaCl}(aq) + \\text{H}_{2}\\text{O}(l)\\quad\\Delta H_{3}$$\n\nAccording to Hess's law, which relationship must hold theoretically?",
+    "choices": [
+      "$\\Delta H_{1} = \\Delta H_{2} + \\Delta H_{3}$",
+      "$\\Delta H_{2} = \\Delta H_{1} + \\Delta H_{3}$",
+      "$\\Delta H_{3} = \\Delta H_{1} + \\Delta H_{2}$",
+      "$\\Delta H_{2} = \\Delta H_{1} - \\Delta H_{3}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Dissolving $\\text{NaOH}(s)$ directly into $\\text{HCl}(aq)$ (Reaction 2) equals dissolving $\\text{NaOH}(s)$ in water (Reaction 1) plus reacting $\\text{NaOH}(aq)$ with $\\text{HCl}(aq)$ (Reaction 3).",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-34",
+    "paper": "ch4-7-lab",
+    "number": 34,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Heat Loss Correction (Newton’s Law of Cooling): In precision calorimetry, temperature is recorded against time before, during, and after a reaction. To obtain the true adiabatic temperature rise ($\\Delta T_{true}$), one should:",
+    "choices": [
+      "Extrapolate the post-reaction cooling curve back to the time of reaction mixing.",
+      "Take the difference between the minimum baseline temperature and the ultimate room temperature.",
+      "Multiply the maximum recorded temperature by $1.10$.",
+      "Subtract the ambient room temperature from the peak recorded temperature."
+    ],
+    "sourceKey": "A",
+    "explanation": "Extrapolating the linear cooling slope back to the mixing time corrects for heat loss during the non-instantaneous reaction period.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-35",
+    "paper": "ch4-7-lab",
+    "number": 35,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Differential Scanning Calorimetry (DSC) Concept: In a DSC laboratory instrument, a sample pan and a reference pan are heated at a constant rate. When an endothermic phase transition occurs in the sample:",
+    "choices": [
+      "Less thermal power is supplied to the sample pan relative to the reference pan.",
+      "More thermal power is supplied to the sample pan relative to the reference pan to maintain equal temperature.",
+      "The temperature of the sample pan rises dramatically above the reference pan.",
+      "The electrical current to both pans is shut off completely."
+    ],
+    "sourceKey": "B",
+    "explanation": "Endothermic changes absorb extra heat; the DSC system increases electrical heater power to the sample pan to maintain zero temperature difference ($\\Delta T = 0$).",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-36",
+    "paper": "ch4-7-lab",
+    "number": 36,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Enthalpy of Fusion Measurement: A $25.0\\text{-g}$ piece of ice at ${0.0}^{\\circ}\\text{C}$ is placed into $150.0\\text{~g}$ of water at ${25.0}^{\\circ}\\text{C}$ in an insulated vessel ($C_{cal} \\approx 0$). The mixture reaches equilibrium at ${10.2}^{\\circ}\\text{C}$. What is the experimental enthalpy of fusion ($\\Delta H_{fus}$) of ice in $\\text{kJ/mol}$?",
+    "choices": [
+      "$5.4\\text{~kJ/mol}$",
+      "$6.0\\text{~kJ/mol}$",
+      "$7.2\\text{~kJ/mol}$",
+      "$8.8\\text{~kJ/mol}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Heat lost by water $= 150.0 \\times 4.184 \\times (25.0 - 10.2) = 9288.5\\text{~J}$. Heat gained by melted ice water $= 25.0 \\times 4.184 \\times (10.2 - 0.0) = 1066.9\\text{~J}$. Heat for fusion $= 9288.5 - 1066.9 = 8221.6\\text{~J} = 8.22\\text{~kJ}$. Moles ice $= 25.0/18.02 = 1.387\\text{~mol}$. $\\Delta H_{fus} = 8.22/1.387 = 5.93 \\approx 6.0\\text{~kJ/mol}$.",
+    "flags": [
+      "key-commentary"
+    ],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-37",
+    "paper": "ch4-7-lab",
+    "number": 37,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Calorimetric Water Equivalent: The water equivalent ($W$) of a calorimeter is defined as the mass of water that absorbs the same amount of heat as the calorimeter components for a unit temperature rise. If a calorimeter has $C_{cal} = 83.68\\text{~J/}^{\\circ}\\text{C}$, what is its water equivalent? ($c_{water} = 4.184\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$)",
+    "choices": [
+      "$10.0\\text{~g}$",
+      "$20.0\\text{~g}$",
+      "$50.0\\text{~g}$",
+      "$100.0\\text{~g}$"
+    ],
+    "sourceKey": "B",
+    "explanation": "Water equivalent $W = C_{cal}/c_{water} = 83.68/4.184 = 20.0\\text{~g}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-38",
+    "paper": "ch4-7-lab",
+    "number": 38,
+    "section": "Part III: Chapter 6 — Laboratory Calorimetry & Thermochemistry (Q27–Q38)",
+    "stem": "Thermometric Titration: In a thermometric titration of $25.0\\text{~mL}$ of an unknown acid with $1.00\\text{~M~NaOH}$, temperature is plotted versus volume of titrant added. The endpoint of the titration corresponds to:",
+    "choices": [
+      "The minimum temperature recorded during the run.",
+      "The point of maximum temperature (or sharp break in slope) on the thermometric curve.",
+      "The point where temperature rise becomes linear.",
+      "The inflection point where temperature equals ambient room temperature."
+    ],
+    "sourceKey": "B",
+    "explanation": "Neutralization reactions are exothermic; maximum temperature indicates complete reaction before subsequent titrant cooling sets in.\n\nChapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-39",
+    "paper": "ch4-7-lab",
+    "number": 39,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Spectrophotometry (Beer-Lambert Law): A solution of cobalt(II) nitrate in a $1.00\\text{-cm}$ path length cuvette yields a percent transmittance ($\\% T$) of $25.0\\%$ at $\\lambda_{\\max} = 510\\text{~nm}$. What is the absorbance ($A$) of the solution?",
+    "choices": [
+      "$0.250$",
+      "$0.400$",
+      "$0.602$",
+      "$1.398$"
+    ],
+    "sourceKey": "C",
+    "explanation": "$A = - \\log(T) = - \\log(0.250) = 0.602$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-40",
+    "paper": "ch4-7-lab",
+    "number": 40,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Molar Absorptivity Calculation: Using a $1.00\\text{-cm}$ cuvette, a $4.00 \\times 10^{- 4}\\text{~M}$ solution of a dye exhibits an absorbance of $0.680$ at $620\\text{~nm}$. What is the molar absorptivity ($\\varepsilon$) of the dye at this wavelength?",
+    "choices": [
+      "$1.70 \\times 10^{3}\\text{~L/(mol} \\cdot \\text{cm)}$",
+      "$2.72 \\times 10^{3}\\text{~L/(mol} \\cdot \\text{cm)}$",
+      "$4.00 \\times 10^{3}\\text{~L/(mol} \\cdot \\text{cm)}$",
+      "$6.80 \\times 10^{3}\\text{~L/(mol} \\cdot \\text{cm)}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "$A = \\varepsilon bC \\Rightarrow \\varepsilon = 0.680/\\left( 1.00 \\times 4.00 \\times 10^{- 4} \\right) = 1.70 \\times 10^{3}\\text{~L/(mol} \\cdot \\text{cm)}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-41",
+    "paper": "ch4-7-lab",
+    "number": 41,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Spectrophotometric Dilution / Analysis: A student measures the absorbance of a standard curve for $\\text{Fe(SCN)}^{2 +}$ at $447\\text{~nm}$ and obtains a linear calibration line: $A = 4500 \\cdot C$ (where $C$ is in $\\text{M}$). An unknown solution is diluted by taking $5.00\\text{~mL}$ and diluting to $50.0\\text{~mL}$. The diluted sample gives $A = 0.360$. What is the concentration of $\\text{Fe(SCN)}^{2 +}$ in the original undiluted sample?",
+    "choices": [
+      "$8.00 \\times 10^{- 5}\\text{~M}$",
+      "$1.60 \\times 10^{- 4}\\text{~M}$",
+      "$8.00 \\times 10^{- 4}\\text{~M}$",
+      "$1.60 \\times 10^{- 3}\\text{~M}$"
+    ],
+    "sourceKey": "C",
+    "explanation": "Diluted concentration $= 0.360/4500 = 8.00 \\times 10^{- 5}\\text{~M}$. Dilution factor is $10$, so initial concentration $= 8.00 \\times 10^{- 4}\\text{~M}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-42",
+    "paper": "ch4-7-lab",
+    "number": 42,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Flame Test Identification: During qualitative inorganic analysis, a sample yields a persistent brick-red flame test when viewed through clean platinum wire, and when viewed through cobalt blue glass, no violet mask appears. Which alkali/alkaline earth cation is indicated?",
+    "choices": [
+      "Lithium ($\\text{Li}^{+}$)",
+      "Sodium ($\\text{Na}^{+}$)",
+      "Calcium ($\\text{Ca}^{2 +}$)",
+      "Strontium ($\\text{Sr}^{2 +}$)"
+    ],
+    "sourceKey": "C",
+    "explanation": "Calcium ($\\text{Ca}^{2 +}$) produces a characteristic brick-red flame test.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-43",
+    "paper": "ch4-7-lab",
+    "number": 43,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Purpose of Cobalt Blue Glass: In flame spectroscopy and qualitative flame tests, why is cobalt blue glass held in front of the flame when testing for potassium ($\\text{K}^{+}$)?",
+    "choices": [
+      "It enhances the orange emission lines of calcium.",
+      "It absorbs intense yellow light emitted by trace sodium ($\\text{Na}^{+}$) contamination, revealing potassium's pale violet flame.",
+      "It shifts infrared emissions into the visible spectrum.",
+      "It polarizes the light emitted by excited electrons."
+    ],
+    "sourceKey": "B",
+    "explanation": "Cobalt blue glass filters out high-intensity $589\\text{~nm}$ yellow light from ubiquitous sodium contamination, revealing potassium's weak $404\\text{~nm}$ violet emission.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-44",
+    "paper": "ch4-7-lab",
+    "number": 44,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Atomic Emission Spectroscopy (Rydberg Calibration): A gas discharge tube containing atomic hydrogen is analyzed using a diffraction grating spectrometer. A spectral line is observed at $\\lambda = 656.3\\text{~nm}$. This red line (Balmer $\\alpha$) originates from which electronic transition?",
+    "choices": [
+      "$n = 2 \\rightarrow n = 1$",
+      "$n = 3 \\rightarrow n = 2$",
+      "$n = 4 \\rightarrow n = 2$",
+      "$n = 5 \\rightarrow n = 3$"
+    ],
+    "sourceKey": "B",
+    "explanation": "The red line of the Balmer series ($656.3\\text{~nm}$) corresponds to the transition from $n = 3$ to $n = 2$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-45",
+    "paper": "ch4-7-lab",
+    "number": 45,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Cuvette Material Selection: Which cuvette material must be used when measuring optical absorbance in the ultraviolet (UV) region ($200\\text{~nm} - 350\\text{~nm}$)?",
+    "choices": [
+      "Standard borosilicate glass",
+      "Polystyrene / Clear plastic",
+      "Quartz (fused silica)",
+      "Soda-lime glass"
+    ],
+    "sourceKey": "C",
+    "explanation": "Glass and plastic absorb light in the UV region below $350\\text{~nm}$; fused quartz is transparent down to $190\\text{~nm}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-46",
+    "paper": "ch4-7-lab",
+    "number": 46,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Spectrophotometer Blank Selection: When measuring the absorption spectrum of a metal-ligand complex formed in an aqueous solution containing ethanol and buffer reagents, what should the \"blank\" cuvette contain to calibrate zero absorbance?",
+    "choices": [
+      "Pure distilled water only",
+      "All reagents and solvents in identical proportions except the metal ion (or target analyte)",
+      "Absolute ethanol only",
+      "Air inside the cuvette holder"
+    ],
+    "sourceKey": "B",
+    "explanation": "The blank must contain all matrix components except the target light-absorbing species to correct for background matrix absorption.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-47",
+    "paper": "ch4-7-lab",
+    "number": 47,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Photoelectron Spectroscopy (PES): In a PES experiment, high-energy X-ray photons ($h\\nu = 1253.6\\text{~eV}$) strike a gas-phase atom. Electrons are ejected with kinetic energy $E_{k} = 1100.0\\text{~eV}$. What is the binding energy ($E_{b}$) of the core electron?",
+    "choices": [
+      "$153.6\\text{~eV}$",
+      "$1100.0\\text{~eV}$",
+      "$1253.6\\text{~eV}$",
+      "$2353.6\\text{~eV}$"
+    ],
+    "sourceKey": "A",
+    "explanation": "Photoelectric relation: $E_{b} = h\\nu - E_{k} = 1253.6\\text{~eV} - 1100.0\\text{~eV} = 153.6\\text{~eV}$.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-48",
+    "paper": "ch4-7-lab",
+    "number": 48,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Spectrophotometric Deviations from Beer’s Law: Which factor causes a chemical deviation (non-linearity) from Beer-Lambert’s law at high concentrations?",
+    "choices": [
+      "Monochromatic light source beam divergence",
+      "Solute association/dissociation or acid-base equilibria changing the absorbing species distribution",
+      "Fingerprints on the cuvette wall",
+      "Using a cuvette of $1.00\\text{-cm}$ path length"
+    ],
+    "sourceKey": "B",
+    "explanation": "Chemical deviations occur when solute concentration changes alter chemical equilibrium concentrations of the absorbing species.",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-49",
+    "paper": "ch4-7-lab",
+    "number": 49,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Emission Spectrograph Calibration: In an emission spectrograph experiment, a calibration spectrum of a mercury vapor lamp is recorded alongside an unknown metal vapor. Mercury lines appear at $404.7\\text{~nm}$, $435.8\\text{~nm}$, and $546.1\\text{~nm}$. If an unknown element produces a bright doublet near $589.0\\text{~nm}$, the element is most likely:",
+    "choices": [
+      "Mercury ($\\text{Hg}$)",
+      "Sodium ($\\text{Na}$)",
+      "Copper ($\\text{Cu}$)",
+      "Helium ($\\text{He}$)"
+    ],
+    "sourceKey": "B",
+    "explanation": "Sodium emits a bright characteristic yellow D-doublet ($588.9\\text{~nm}$ and $589.6\\text{~nm}$).",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  },
+  {
+    "id": "ch4-7-lab-50",
+    "paper": "ch4-7-lab",
+    "number": 50,
+    "section": "Part IV: Chapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation (Q39–Q50)",
+    "stem": "Laser Fluorescence Lab Measurement: A nitrogen laser ($\\lambda = 337\\text{~nm}$) pumps a solution of fluorescein dye, emitting green fluorescence light. According to Stokes shift in luminescence laboratory instrumentation, the emitted fluorescence photon will always have:",
+    "choices": [
+      "Higher energy and shorter wavelength than the excitation photon.",
+      "Lower energy and longer wavelength than the excitation photon.",
+      "Equal energy and identical frequency as the excitation photon.",
+      "Zero velocity in air."
+    ],
+    "sourceKey": "B",
+    "explanation": "Fluorescence photon emission occurs after vibrational relaxation, leading to a loss of energy ($\\Delta E = h\\nu$), which corresponds to a longer wavelength (Stokes shift).",
+    "flags": [],
+    "sourceFile": "ch4-7.md"
+  }
+]
