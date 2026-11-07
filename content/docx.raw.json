@@ -1958,7 +1958,7 @@
       "$69.8\\%$"
     ],
     "sourceKey": "C",
-    "explanation": "$5\\text{Fe}^{2 +} \\sim \\text{MnO}_{4}^{-}$. Moles $\\text{MnO}_{4}^{-} = 0.025 \\times 0.0200 = 0.0005\\text{~mol}$. Moles $\\text{Fe} = 0.0025\\text{~mol}$. Mass Fe $= 0.0025 \\times 55.85 = 0.1396\\text{~g}$. $\\% = (0.1396/0.300) \\times 100\\% = 46.5\\%$. (C)\n\nChapter 5",
+    "explanation": "$5\\text{Fe}^{2 +} \\sim \\text{MnO}_{4}^{-}$. Moles $\\text{MnO}_{4}^{-} = 0.025 \\times 0.0200 = 0.0005\\text{~mol}$. Moles $\\text{Fe} = 0.0025\\text{~mol}$. Mass Fe $= 0.0025 \\times 55.85 = 0.1396\\text{~g}$. $\\% = (0.1396/0.300) \\times 100\\% = 46.5\\%$. (C)",
     "flags": [],
     "sourceFile": "ch4-7.md"
   },
@@ -2189,7 +2189,7 @@
       "$\\text{He}$ molecules travel slower on average than $\\text{Xe}$ molecules."
     ],
     "sourceKey": "C",
-    "explanation": "Temperature is a measure of average kinetic energy; both gases have the exact same average kinetic energy at the same temperature. (C)\n\nChapter 6",
+    "explanation": "Temperature is a measure of average kinetic energy; both gases have the exact same average kinetic energy at the same temperature. (C)",
     "flags": [],
     "sourceFile": "ch4-7.md"
   },
@@ -2398,7 +2398,7 @@
       "$45.1\\text{~kJ/g}$"
     ],
     "sourceKey": "A",
-    "explanation": "Fuel value $= 2800\\text{~kJ/mol}/180.16\\text{~g/mol} = 15.5\\text{~kJ/g}$. (A)\n\nChapter 7",
+    "explanation": "Fuel value $= 2800\\text{~kJ/mol}/180.16\\text{~g/mol} = 15.5\\text{~kJ/g}$. (A)",
     "flags": [],
     "sourceFile": "ch4-7.md"
   },
@@ -2829,7 +2829,7 @@
       "7"
     ],
     "sourceKey": "C",
-    "explanation": "Mass $\\text{H}_{2}\\text{O} = 2.497 - 1.596 = 0.901\\text{~g}$. Moles $\\text{CuSO}_{4} = 1.596/159.6 = 0.0100\\text{~mol}$. Moles $\\text{H}_{2}\\text{O} = 0.901/18.02 = 0.0500\\text{~mol}$. Ratio $x = 0.0500/0.0100 = 5$.\n\nChapter 5 — Laboratory Gas Laws, Apparatus & Manometry",
+    "explanation": "Mass $\\text{H}_{2}\\text{O} = 2.497 - 1.596 = 0.901\\text{~g}$. Moles $\\text{CuSO}_{4} = 1.596/159.6 = 0.0100\\text{~mol}$. Moles $\\text{H}_{2}\\text{O} = 0.901/18.02 = 0.0500\\text{~mol}$. Ratio $x = 0.0500/0.0100 = 5$.",
     "flags": [],
     "sourceFile": "ch4-7.md"
   },
@@ -3055,7 +3055,7 @@
       "Helium condenses easily at ambient temperatures."
     ],
     "sourceKey": "B",
-    "explanation": "Helium has a very small atomic mass/size, effuses extremely fast through small leaks, and does not linger in normal background air.\n\nChapter 6 — Laboratory Calorimetry & Thermochemistry",
+    "explanation": "Helium has a very small atomic mass/size, effuses extremely fast through small leaks, and does not linger in normal background air.",
     "flags": [],
     "sourceFile": "ch4-7.md"
   },
@@ -3266,7 +3266,7 @@
       "The inflection point where temperature equals ambient room temperature."
     ],
     "sourceKey": "B",
-    "explanation": "Neutralization reactions are exothermic; maximum temperature indicates complete reaction before subsequent titrant cooling sets in.\n\nChapter 7 — Spectroscopy, Flame Tests & Quantum Instrumentation",
+    "explanation": "Neutralization reactions are exothermic; maximum temperature indicates complete reaction before subsequent titrant cooling sets in.",
     "flags": [],
     "sourceFile": "ch4-7.md"
   },

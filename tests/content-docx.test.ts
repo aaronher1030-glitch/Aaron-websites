@@ -38,6 +38,27 @@ test("every question has four choices, a key, and an explanation", () => {
 
 test("known contradictory keys are flagged", () => {
   expect(items.filter((q) => q.flags.length > 0).length).toBeGreaterThan(10);
+  // Named contradictions from the source papers: each states a key on the key
+  // line that its own worked solution contradicts. A regression that loses a
+  // per-item flag must fail here, not just shrink the aggregate count.
+  const known: Record<string, string> = {
+    "ch1-3-theory-01": "B",
+    "ch4-7-theory-46": "D",
+    "ch4-7-lab-10": "B",
+  };
+  for (const [id, claimed] of Object.entries(known)) {
+    const item = items.find((q) => q.id === id);
+    expect(item, `missing ${id}`).toBeDefined();
+    expect(item!.flags).toContain("key-commentary");
+    expect(item!.flags).toContain(`claimed-${claimed}`);
+    expect(item!.sourceKey).not.toBe(claimed);
+  }
+});
+
+test("explanations never carry the next key section's chapter heading", () => {
+  for (const q of items) {
+    expect(q.explanation).not.toMatch(/\n\n(?:Chapter|Part|Section)\s/);
+  }
 });
 
 test("ids are unique, kebab-case, and follow <paper>-<number:02d>", () => {

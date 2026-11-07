@@ -262,7 +262,9 @@ def parse_file(filename: str, paper_ids: list[str]) -> list[dict]:
 
             number = numbers[index]
             source_key, key_body = keys_by_number[number]
-            explanation = clean_explanation(render(key_body))
+            # clean_explanation renders internally; it must see the raw key body so
+            # drop_trailing_bold_paragraphs can still recognise "**Chapter N**" headings.
+            explanation = clean_explanation(key_body)
             section = ""
             for offset, label in sections:
                 if offset < start.start():
