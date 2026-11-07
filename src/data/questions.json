@@ -1,0 +1,75 @@
+[
+  {
+    "id": "seed-gas-001",
+    "domain": "Physical",
+    "chapter": 5,
+    "topic": "Gases",
+    "difficulty": "Standard",
+    "stem": "What is the density of $\\ce{CO2}$ at $750\\ \\mathrm{mmHg}$ and $27^{\\circ}\\mathrm{C}$? Use $R=0.08206\\ \\mathrm{L\\,atm\\,mol^{-1}\\,K^{-1}}$.",
+    "choices": [
+      "$1.42\\ \\mathrm{g/L}$",
+      "$1.76\\ \\mathrm{g/L}$",
+      "$2.24\\ \\mathrm{g/L}$",
+      "$3.10\\ \\mathrm{g/L}$"
+    ],
+    "answer": 1,
+    "explanation": "$T=300.15\\ \\mathrm{K}$, $P=750/760=0.9868\\ \\mathrm{atm}$. Density $=PM/RT=(0.9868)(44.01)/(0.08206)(300.15)=1.76\\ \\mathrm{g/L}$.",
+    "source": "gap-fill",
+    "tags": ["calculation", "ideal-gas-law"],
+    "verified": { "status": "verified", "reviewedAt": "2026-11-07" }
+  },
+  {
+    "id": "seed-sigfig-001",
+    "domain": "General",
+    "chapter": 1,
+    "topic": "Measurement and units",
+    "difficulty": "Foundation",
+    "stem": "A sample has a mass of 12.3456 g and a volume of 2.4 mL. What is its density, expressed to the correct number of significant figures?",
+    "choices": ["5.1 g/mL", "5.14 g/mL", "5.144 g/mL", "5.0 g/mL"],
+    "answer": 0,
+    "explanation": "Density is mass divided by volume: $12.3456/2.4=5.144$. Division is limited by the factor carrying the fewest significant figures, and 2.4 mL has two, so the quotient is reported to two significant figures: 5.1 g/mL. The choices 5.14 and 5.144 keep digits the measurement does not support, and 5.0 comes from rounding 5.144 incorrectly.",
+    "source": "gap-fill",
+    "tags": ["significant-figures", "calculation"],
+    "verified": { "status": "verified", "reviewedAt": "2026-11-07" }
+  },
+  {
+    "id": "seed-titration-001",
+    "domain": "Analytical",
+    "chapter": 4,
+    "topic": "Aqueous reactions",
+    "difficulty": "Olympiad",
+    "stem": "A 25.00 mL aliquot of 0.1000 M oxalic acid, $\\ce{H2C2O4}$, is titrated in acid with 0.1000 M $\\ce{KMnO4}$. What volume of permanganate is required?",
+    "choices": ["4.000 mL", "10.00 mL", "25.00 mL", "50.00 mL"],
+    "answer": 1,
+    "explanation": "The balanced titration reaction is $2\\ce{MnO4-} + 5\\ce{H2C2O4} + 6\\ce{H+} -> 2\\ce{Mn^2+} + 10\\ce{CO2} + 8\\ce{H2O}$, so one mole of permanganate consumes $5/2$ mol of oxalic acid. Amount of oxalic acid: $n=(0.02500\\ \\mathrm{L})(0.1000\\ \\mathrm{mol\\,L^{-1}})=0.002500\\ \\mathrm{mol}$. Amount of permanganate: $0.002500 \\times (2/5)=0.001000\\ \\mathrm{mol}$. Volume: $0.001000\\ \\mathrm{mol} / 0.1000\\ \\mathrm{mol\\,L^{-1}}=0.01000\\ \\mathrm{L}=10.00\\ \\mathrm{mL}$.",
+    "source": "gap-fill",
+    "tags": ["titration", "stoichiometry", "calculation", "redox"],
+    "verified": { "status": "verified", "reviewedAt": "2026-11-07" }
+  },
+  {
+    "id": "seed-organic-001",
+    "domain": "Organic",
+    "topic": "Organic chemistry",
+    "difficulty": "Standard",
+    "stem": "Which functional group is present in butan-2-one, $\\ce{CH3COCH2CH3}$?",
+    "choices": ["Ketone", "Aldehyde", "Carboxylic acid", "Ester"],
+    "answer": 0,
+    "explanation": "The carbonyl carbon in butan-2-one is bonded to two carbon atoms, the methyl group on one side and the ethyl group on the other, which is the defining feature of a ketone. An aldehyde would have a hydrogen on the carbonyl carbon, a carboxylic acid would have an $-\\ce{OH}$ attached to it, and an ester would have an $-\\ce{OR}$ group in place of one carbon chain.",
+    "source": "gap-fill",
+    "tags": ["functional-groups", "concept"],
+    "verified": { "status": "verified", "reviewedAt": "2026-11-07" }
+  },
+  {
+    "id": "seed-burette-001",
+    "domain": "Laboratory",
+    "topic": "Laboratory technique",
+    "difficulty": "Foundation",
+    "stem": "A burette reads 0.42 mL before a titration and 23.58 mL at the endpoint. What volume was delivered?",
+    "choices": ["23.16 mL", "23.58 mL", "24.00 mL", "23.2 mL"],
+    "answer": 0,
+    "explanation": "The delivered volume is the difference between the final and initial readings: $23.58-0.42=23.16\\ \\mathrm{mL}$. Both readings were recorded to $0.01\\ \\mathrm{mL}$, so the difference also keeps two decimal places. 23.58 mL is the endpoint reading rather than the volume delivered, 24.00 mL assumes the initial reading was exactly zero, and 23.2 mL discards a recorded digit.",
+    "source": "gap-fill",
+    "tags": ["burette", "reading", "laboratory-technique"],
+    "verified": { "status": "verified", "reviewedAt": "2026-11-07" }
+  }
+]
