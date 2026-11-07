@@ -116,6 +116,8 @@ describe("apply-verification truth table", () => {
     makeCandidate("missing-blind-with-adj"),
     makeCandidate("blind-ambiguous-string-resolved"),
     makeCandidate("adj-explanation-fallback"),
+    makeCandidate("adj-changed-source-fallback"),
+    makeCandidate("adj-third-letter-blind-agrees"),
     makeCandidate("claimed-agree", { flags: ["key-commentary", "claimed-B"] }),
   ];
 
@@ -137,6 +139,11 @@ describe("apply-verification truth table", () => {
       cleanExplanation: "Blind solution.",
     }),
     blindRow("adj-explanation-fallback", "B", { cleanExplanation: "Blind reasoning." }),
+    blindRow("adj-changed-source-fallback", "B", {
+      work: "Blind worked B reasoning.",
+      cleanExplanation: "Blind worked B reasoning.",
+    }),
+    blindRow("adj-third-letter-blind-agrees", "A", { cleanExplanation: "Blind solution." }),
     blindRow("claimed-agree", "A", { cleanExplanation: "Solution." }),
   ];
 
@@ -148,6 +155,8 @@ describe("apply-verification truth table", () => {
     { id: "missing-blind-with-adj", answer: "A" },
     { id: "blind-ambiguous-string-resolved", answer: "A", ambiguous: false },
     { id: "adj-explanation-fallback", answer: "A", cleanExplanation: "Wait, meta only." },
+    { id: "adj-changed-source-fallback", answer: "A", cleanExplanation: "Wait, check the key." },
+    { id: "adj-third-letter-blind-agrees", answer: "C", cleanExplanation: "Adjudicated solution." },
     { id: "claimed-agree", answer: "A", cleanExplanation: "Adjudicated solution." },
   ];
 
@@ -182,11 +191,25 @@ describe("apply-verification truth table", () => {
     expect(allMeta.issue).toMatch(/explanation empty after removing key commentary/);
     expect(publishedById.has("all-meta")).toBe(false);
 
-    // An emptied adjudicated solution falls through to the blind reasoning.
+    // An emptied adjudicated solution falls through to the source explanation,
+    // which matches the letter the adjudicator endorsed — never the blind
+    // reasoning for the rejected letter.
     const changed = publishedById.get("adj-explanation-fallback");
     expect(changed).toBeDefined();
     expect(changed.answer).toBe(0);
-    expect(changed.explanation).toBe("Blind reasoning.");
+    expect(changed.explanation).toBe("Source worked solution.");
+  });
+
+  test("I1: a changed-letter adjudication never publishes the rejected blind reasoning", () => {
+    const row = rowById.get("adj-changed-source-fallback");
+    expect(row.status).toBe("verified");
+    expect(row.answer).toBe("A");
+
+    const item = publishedById.get("adj-changed-source-fallback");
+    expect(item).toBeDefined();
+    expect(item.answer).toBe(0);
+    expect(item.explanation).toBe("Source worked solution.");
+    expect(item.explanation).not.toMatch(/Blind worked B reasoning/);
   });
 
   test("I2: an adjudicator may only confirm the source key or the blind answer", () => {
@@ -206,11 +229,19 @@ describe("apply-verification truth table", () => {
       expect(row.adjudicatorDisagreesWithBoth).toBe(true);
       expect(publishedById.has(id)).toBe(false);
     }
-    expect(audit.adjudicatorDisagreements).toBe(1);
+    expect(audit.adjudicatorDisagreements).toBe(2);
 
     // A blind row is still required: an adjudicator alone cannot publish.
     expect(rowById.get("missing-blind-with-adj").status).toBe("flagged");
     expect(rowById.get("missing-blind-with-adj").issue).toMatch(/missing blind result/);
+  });
+
+  test("I2: a third-letter adjudication is not hidden by blind agreement", () => {
+    const row = rowById.get("adj-third-letter-blind-agrees");
+    expect(row.status).toBe("flagged");
+    expect(row.issue).toBe("adjudicator disagrees with both");
+    expect(row.adjudicatorDisagreesWithBoth).toBe(true);
+    expect(publishedById.has("adj-third-letter-blind-agrees")).toBe(false);
   });
 
   test("I3: ambiguous is true for boolean true and for the string \"true\"", () => {
@@ -328,6 +359,37 @@ describe("make-adjudication routing", () => {
       ambiguous: 1,
       claimedKeyConflicts: 2,
       files: { "batch-01.json": 5 },
+    });
+  });
+});
+
+describe("single-object adjudication result files", () => {
+  // The live hand-off saves one JSON object per file, not an array.
+  const row = { id: "adj-single-object", answer: "A", cleanExplanation: "Adjudicated solution." };
+  const candidates = [makeCandidate("adj-single-object")];
+  const blind = [blindRow("adj-single-object", "B", { cleanExplanation: "Blind solution." })];
+  const objectRoot = makeSandbox({ candidates, blind, adjudication: row });
+  const arrayRoot = makeSandbox({ candidates, blind, adjudication: [row] });
+  const objectResult = run(objectRoot, "apply-verification.mjs", ["--allow-partial"]);
+  const arrayResult = run(arrayRoot, "apply-verification.mjs", ["--allow-partial"]);
+
+  test("a single object is applied exactly like a one-row array", () => {
+    expect(objectResult.status, objectResult.stderr).toBe(0);
+    expect(arrayResult.status, arrayResult.stderr).toBe(0);
+
+    const fromObject = readJson(objectRoot, "content/verification/published.json");
+    const fromArray = readJson(arrayRoot, "content/verification/published.json");
+    expect(fromObject).toHaveLength(1);
+    expect(fromObject).toEqual(fromArray);
+    expect(fromObject[0]).toMatchObject({
+      id: "adj-single-object",
+      answer: 0,
+      explanation: "Adjudicated solution.",
+    });
+    expect(readJson(objectRoot, "content/verification/ledger.json")[0]).toMatchObject({
+      id: "adj-single-object",
+      status: "verified",
+      answer: "A",
     });
   });
 });

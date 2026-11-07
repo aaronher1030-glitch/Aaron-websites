@@ -132,9 +132,21 @@ function main() {
     : [];
   const adjudicatedById = new Map();
   for (const file of adjudicationFiles) {
-    const parsed = readJson(file);
-    if (!Array.isArray(parsed)) fail(`${file} must contain a JSON array`);
-    for (const row of parsed) {
+    let parsed;
+    try {
+      parsed = readJson(file);
+    } catch (error) {
+      fail(`${file} is not valid JSON (${error.message})`);
+    }
+    // The live hand-off saves one JSON object per file; an array of rows is
+    // also accepted for older/manual fixtures.
+    const rows = Array.isArray(parsed)
+      ? parsed
+      : parsed && typeof parsed === "object"
+        ? [parsed]
+        : null;
+    if (!rows) fail(`${file} must contain a JSON object or array of adjudication rows`);
+    for (const row of rows) {
       if (!row || typeof row.id !== "string") continue;
       adjudicatedById.set(row.id, row);
     }
@@ -216,12 +228,14 @@ function main() {
       status = adjudged.status === "flagged" ? "flagged" : "verified";
       answerSource = "adjudicated";
       if (status === "flagged") issue = "adjudicator flagged this item";
+    } else if (adjudicatedDisagreesWithBoth) {
+      // Checked before blind agreement: a valid third letter from the
+      // adjudicator must be surfaced, not hidden behind an agreeing blind run.
+      issue = "adjudicator disagrees with both";
     } else if (blindAgrees) {
       answerLetter = sourceKey;
       status = "verified";
       answerSource = "blind";
-    } else if (adjudicatedDisagreesWithBoth) {
-      issue = "adjudicator disagrees with both";
     } else if (!blind) {
       issue =
         adjudicatedAnswer !== null
@@ -250,7 +264,7 @@ function main() {
     const adjudicationChangedAnswer =
       answerSource === "adjudicated" && blindAnswer !== adjudicatedAnswer;
     const explanation = adjudicationChangedAnswer
-      ? adjudicatedClean || blindClean || sourceClean
+      ? adjudicatedClean || sourceClean || blindClean
       : blindClean || adjudicatedClean || sourceClean;
     if (!explanation && status === "verified") {
       status = "flagged";
