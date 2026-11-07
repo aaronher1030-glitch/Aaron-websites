@@ -69,6 +69,22 @@ export function sourceKeyFor(answer) {
   return KEY_LETTERS[answer] ?? "";
 }
 
+/**
+ * Coerce a solver/adjudicator `ambiguous` field to a boolean. JSON from a
+ * prompt-following model sometimes arrives as the string "true"; treating only
+ * boolean `true` as ambiguous would let a string bypass the publication gate.
+ */
+export function isAmbiguous(value) {
+  if (value === true) return true;
+  return typeof value === "string" && value.trim().toLowerCase() === "true";
+}
+
+/** `claimed-*` flags mark a paper that names a different answer than the key. */
+export function claimedKeyFlags(flags) {
+  if (!Array.isArray(flags)) return [];
+  return flags.filter((flag) => typeof flag === "string" && flag.startsWith("claimed-"));
+}
+
 const META_COMMENTARY =
   /\b(?:wait|hmm|hold on|correct option|correct choice|correct answer|key fix|answer key|re-?verify|re-?check|should be)\b/i;
 

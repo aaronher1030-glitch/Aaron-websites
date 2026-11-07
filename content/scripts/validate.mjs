@@ -31,7 +31,13 @@ const SOURCES = ["supplied-paper", "textbook", "mixed", "gap-fill"];
 const PAPERS = ["ch1-3-theory", "ch1-3-lab", "ch4-7-theory", "ch4-7-lab", "mixed-practice"];
 const SUPPLIED_PAPERS = ["ch1-3-theory", "ch1-3-lab", "ch4-7-theory", "ch4-7-lab"];
 const TOPIC_NAMES = new Set(TOPIC_META.map((topic) => topic.name));
-const META_COMMENTARY = /wait|correct option|correct choice|key fix|re-verify|should be/i;
+/**
+ * Forbidden explanation commentary. Deliberately narrower than the brief's
+ * `/wait|check|.../`: the bare word "check" is ordinary chemistry wording
+ * ("check the burette reading"), so it is not flagged. "wait" is only meta when
+ * it stands alone as a word or sentence opener — never inside "await"/"waiting".
+ */
+const META_COMMENTARY = /\bwait\b|correct option|correct choice|key fix|re-verify|should be/i;
 const MIN_ITEMS = 350;
 const PAPER_SIZE = 50;
 

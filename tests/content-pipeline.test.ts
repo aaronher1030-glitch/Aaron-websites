@@ -78,6 +78,41 @@ test("proto-textbook choices are deterministically re-shuffled", () => {
   expect(changed.length).toBeGreaterThanOrEqual(90);
 });
 
+test("every shuffled item keeps its original correct choice text", () => {
+  const textbook = candidates.filter((candidate) => candidate.id.startsWith("proto-textbook-"));
+  const rawById = new Map(prototype.map((item) => [item.id, item]));
+
+  for (const candidate of textbook) {
+    const raw = rawById.get(candidate.id);
+    expect(raw, candidate.id).toBeDefined();
+    // The remapped answer must still point at the original correct choice.
+    expect(candidate.choices[candidate.answer], candidate.id).toBe(raw!.choices[raw!.answer]);
+    // ...and the four choices must be the same set, only reordered.
+    expect([...candidate.choices].sort(), candidate.id).toEqual([...raw!.choices].sort());
+    expect(new Set(candidate.choices).size, candidate.id).toBe(4);
+  }
+});
+
+test("batch order and content mirror the candidate list", () => {
+  expect(manifest.batchSize).toBe(20);
+  for (const { name, items } of batches) {
+    const batchNumber = Number(name.match(/^batch-(\d+)\.json$/)?.[1]);
+    expect(batchNumber, name).toBeGreaterThanOrEqual(1);
+    const start = (batchNumber - 1) * manifest.batchSize;
+    items.forEach((item, offset) => {
+      const candidate = candidates[start + offset];
+      expect(candidate, `${name} offset ${offset}`).toBeDefined();
+      expect({ id: item.id, stem: item.stem, choices: item.choices }, `${name} offset ${offset}`).toEqual({
+        id: candidate.id,
+        stem: candidate.stem,
+        choices: candidate.choices,
+      });
+    });
+    const expectedLength = Math.min(manifest.batchSize, candidates.length - start);
+    expect(items.length, name).toBe(expectedLength);
+  }
+});
+
 test("every batch item exposes only id, stem, and choices", () => {
   expect(batches.map((batch) => batch.name)).toEqual(Object.keys(manifest.files).sort());
   for (const { name, items } of batches) {

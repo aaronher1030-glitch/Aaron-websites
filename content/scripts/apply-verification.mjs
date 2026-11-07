@@ -3,11 +3,17 @@
  *
  * Safety rules:
  *  - refuses to run without the full 22-batch result set unless --allow-partial;
- *  - publishes only items whose blind answer matches the source key, or that an
- *    adjudicator resolved with a valid, non-ambiguous answer;
- *  - writes a ledger, an audit summary, and a *staged* published bank
- *    (content/verification/published.json). validate.mjs is the only script
- *    that writes src/data/questions.json, and only after re-checking everything.
+ *  - publishes only items whose blind answer matches the source key, or whose
+ *    adjudicator confirmed one of those two letters (never a third letter);
+ *  - treats `ambiguous` as true for boolean true and the string "true";
+ *  - strips every explanation source before choosing one, so a commentary-only
+ *    solver answer falls through to the source explanation;
+ *  - reads adjudicator answers from results/adjudication-NN.json only — the
+ *    adjudication/ directory holds prompts, never answers;
+ *  - writes a ledger (with candidate flags), an audit summary, and a *staged*
+ *    published bank (content/verification/published.json). validate.mjs is the
+ *    only script that writes src/data/questions.json, and only after re-checking
+ *    everything.
  *
  * Run with: npm run content:apply [-- --allow-partial]
  */
@@ -16,6 +22,8 @@ import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 import {
+  claimedKeyFlags,
+  isAmbiguous,
   KEY_LETTERS,
   sha256,
   sourceKeyFor,
@@ -113,29 +121,41 @@ function main() {
   const manifest = existsSync(MANIFEST) ? readJson(MANIFEST) : null;
   const blindById = loadRows(resultFiles);
 
-  const adjudicationFiles = [];
-  if (existsSync(ADJ_DIR)) {
-    adjudicationFiles.push(
-      ...readdirSync(ADJ_DIR)
-        .filter((name) => name.endsWith(".json") && name !== "manifest.json")
-        .map((name) => join(ADJ_DIR, name)),
-    );
-  }
-  // Backwards compatibility with the brief's results/adjudication-*.json naming.
-  if (existsSync(RESULTS_DIR)) {
-    adjudicationFiles.push(
-      ...readdirSync(RESULTS_DIR)
-        .filter((name) => name.startsWith("adjudication-") && name.endsWith(".json"))
-        .map((name) => join(RESULTS_DIR, name)),
-    );
-  }
+  // Adjudicator answers live next to the blind results as
+  // results/adjudication-NN.json. The prompt directory only ever holds the
+  // hand-off (no answers), so it is never read here.
+  const adjudicationFiles = existsSync(RESULTS_DIR)
+    ? readdirSync(RESULTS_DIR)
+        .filter((name) => /^adjudication-\d+\.json$/.test(name))
+        .sort()
+        .map((name) => join(RESULTS_DIR, name))
+    : [];
   const adjudicatedById = new Map();
-  for (const file of adjudicationFiles.sort()) {
+  for (const file of adjudicationFiles) {
     const parsed = readJson(file);
     if (!Array.isArray(parsed)) fail(`${file} must contain a JSON array`);
     for (const row of parsed) {
       if (!row || typeof row.id !== "string") continue;
       adjudicatedById.set(row.id, row);
+    }
+  }
+
+  if (existsSync(ADJ_DIR)) {
+    const leaked = readdirSync(ADJ_DIR).filter((name) => {
+      if (!name.endsWith(".json") || name === "manifest.json") return false;
+      try {
+        const rows = readJson(join(ADJ_DIR, name));
+        return Array.isArray(rows) && rows.some((row) => row && typeof row === "object" && "answer" in row);
+      } catch {
+        return false;
+      }
+    });
+    if (leaked.length > 0) {
+      console.warn(
+        `apply-verification: ${ADJ_DIR} contains what look like adjudicator answers ` +
+          `(${leaked.slice(0, 3).join(", ")}); answers in the prompt directory are ignored. ` +
+          `Save them to ${RESULTS_DIR}/adjudication-NN.json instead.`,
+      );
     }
   }
 
@@ -157,23 +177,42 @@ function main() {
       : sourceKeyFor(candidate.answer);
     const blind = blindById.get(candidate.id);
     const adjudged = adjudicatedById.get(candidate.id);
+    const flags = Array.isArray(candidate.flags) ? candidate.flags : [];
 
-    const blindValid =
-      blind !== undefined && validLetter(blind.answer) && blind.ambiguous !== true;
-    const blindAgrees = blindValid && sourceKey !== "" && blind.answer === sourceKey;
+    // I3: `ambiguous` counts as true for boolean true and the string "true"
+    // (any case). A string would otherwise slip past the publication gate.
+    const blindAmbiguous = isAmbiguous(blind?.ambiguous);
+    const adjudicatedAmbiguous = isAmbiguous(adjudged?.ambiguous);
 
-    const adjudgedValid =
-      adjudged !== undefined && validLetter(adjudged.answer) && adjudged.ambiguous !== true;
+    const blindAnswer = blind !== undefined && validLetter(blind.answer) ? blind.answer : null;
+    const blindValid = blindAnswer !== null && !blindAmbiguous;
+    const blindAgrees = blindValid && sourceKey !== "" && blindAnswer === sourceKey;
+
+    const adjudicatedAnswer =
+      adjudged !== undefined && validLetter(adjudged.answer) ? adjudged.answer : null;
+    // I2: an adjudication may only confirm the source key or the blind answer.
+    // A third letter would publish an answer nobody actually endorsed. A blind
+    // row must still exist: adjudication never substitutes for verification.
+    const adjudicatedConfirms =
+      adjudicatedAnswer !== null &&
+      !adjudicatedAmbiguous &&
+      blind !== undefined &&
+      (adjudicatedAnswer === sourceKey || adjudicatedAnswer === blindAnswer);
+    const adjudicatedDisagreesWithBoth =
+      adjudicatedAnswer !== null &&
+      !adjudicatedAmbiguous &&
+      blindAnswer !== null &&
+      sourceKey !== "" &&
+      adjudicatedAnswer !== sourceKey &&
+      adjudicatedAnswer !== blindAnswer;
 
     let status = "flagged";
     let answerLetter = null;
     let answerSource = "";
     let issue = "";
 
-    if (adjudgedValid) {
-      // An adjudication always wins when valid (it exists only for disputes or
-      // ambiguous blind rows). `status` defaults to verified.
-      answerLetter = adjudged.answer;
+    if (adjudicatedConfirms) {
+      answerLetter = adjudicatedAnswer;
       status = adjudged.status === "flagged" ? "flagged" : "verified";
       answerSource = "adjudicated";
       if (status === "flagged") issue = "adjudicator flagged this item";
@@ -181,30 +220,41 @@ function main() {
       answerLetter = sourceKey;
       status = "verified";
       answerSource = "blind";
+    } else if (adjudicatedDisagreesWithBoth) {
+      issue = "adjudicator disagrees with both";
     } else if (!blind) {
-      issue = "missing blind result and no adjudication";
-    } else if (blind.ambiguous === true) {
+      issue =
+        adjudicatedAnswer !== null
+          ? `missing blind result; adjudication (${adjudicatedAnswer}) cannot publish without a blind answer`
+          : "missing blind result and no adjudication";
+    } else if (blindAmbiguous) {
       issue = "blind result marked ambiguous and no (valid) adjudication";
-    } else if (!blindValid) {
+    } else if (!validLetter(blind.answer)) {
       issue = `invalid blind answer ${JSON.stringify(blind.answer)} and no (valid) adjudication`;
+    } else if (adjudged !== undefined && validLetter(adjudged.answer) && adjudicatedAmbiguous) {
+      issue = "adjudication marked ambiguous";
     } else {
       issue = `source key ${sourceKey} disagrees with blind ${blind.answer} and no (valid) adjudication`;
     }
 
-    let explanation = "";
-    const blindExplanation = typeof blind?.cleanExplanation === "string" ? blind.cleanExplanation.trim() : "";
-    const adjudicatedExplanation =
-      typeof adjudged?.cleanExplanation === "string" ? adjudged.cleanExplanation.trim() : "";
-    if (answerSource === "adjudicated" && blind?.answer !== adjudged?.answer) {
-      // Keep the published reasoning consistent with the adjudicated answer.
-      explanation = adjudicatedExplanation || blindExplanation;
-    } else {
-      explanation = blindExplanation || adjudicatedExplanation;
-    }
-    if (!explanation) explanation = candidate.explanation ?? "";
-    explanation = stripMetaCommentary(explanation);
-    if (explanation.length === 0 && status === "verified") {
+    // I1: strip every candidate source first, then take the first non-empty one.
+    // Stripping after the choice (the old behaviour) could empty the selected
+    // text and skip the fallback entirely.
+    const clean = (value) =>
+      typeof value === "string" ? stripMetaCommentary(value.trim()) : "";
+    const blindClean = clean(blind?.cleanExplanation);
+    const adjudicatedClean = clean(adjudged?.cleanExplanation);
+    const sourceClean = clean(candidate.explanation);
+    // Keep the published reasoning aligned with the published answer: when the
+    // adjudicator changed the letter, prefer the adjudicator's solution.
+    const adjudicationChangedAnswer =
+      answerSource === "adjudicated" && blindAnswer !== adjudicatedAnswer;
+    const explanation = adjudicationChangedAnswer
+      ? adjudicatedClean || blindClean || sourceClean
+      : blindClean || adjudicatedClean || sourceClean;
+    if (!explanation && status === "verified") {
       status = "flagged";
+      answerSource = "";
       issue = "explanation empty after removing key commentary";
     }
 
@@ -215,11 +265,11 @@ function main() {
     }
 
     const noteParts = [];
-    if (adjudgedValid) {
-      if (!blind || blind.answer !== adjudged.answer || adjudged.answer !== sourceKey) {
+    if (adjudicatedConfirms) {
+      if (adjudicatedAnswer !== sourceKey || adjudicatedAnswer !== blindAnswer) {
         noteParts.push(
-          `source ${sourceKey || "missing"}; blind ${blind?.answer ?? "missing"}; ` +
-            `adjudicated ${adjudged.answer}`,
+          `source ${sourceKey || "missing"}; blind ${blindAnswer ?? "missing"}; ` +
+            `adjudicated ${adjudicatedAnswer}`,
         );
       }
     } else if (blind && sourceKey && blind.answer !== sourceKey) {
@@ -251,11 +301,17 @@ function main() {
       id: candidate.id,
       sourceKey,
       blind: blind?.answer ?? null,
-      blindAmbiguous: blind?.ambiguous === true,
+      blindAmbiguous,
       adjudicated: adjudged?.answer ?? null,
       status,
       answer: answerLetter,
       published: isPublished,
+      // I5: keep the candidate flags so claimed-key conflicts stay visible.
+      flags,
+      ...(blind?.ambiguous !== undefined && typeof blind.ambiguous !== "boolean"
+        ? { blindAmbiguousRaw: blind.ambiguous }
+        : {}),
+      ...(adjudicatedDisagreesWithBoth ? { adjudicatorDisagreesWithBoth: true } : {}),
       ...(issue ? { issue } : {}),
     });
   }
@@ -275,6 +331,15 @@ function main() {
     batches: manifest?.batches ?? null,
     missingBlind: ledger.filter((row) => row.blind === null).length,
     adjudicated: ledger.filter((row) => row.adjudicated !== null).length,
+    // I5: candidates whose paper claims a different key; these are always sent
+    // to adjudication and stay visible at publish time.
+    claimedKeyConflicts: ledger.filter(
+      (row) => claimedKeyFlags(row.flags).length > 0,
+    ).length,
+    claimedKeyConflictsPublished: ledger.filter(
+      (row) => row.published && claimedKeyFlags(row.flags).length > 0,
+    ).length,
+    adjudicatorDisagreements: ledger.filter((row) => row.adjudicatorDisagreesWithBoth).length,
     publishedByPaper: published.reduce((counts, item) => {
       const key = item.paper ?? "(no paper)";
       counts[key] = (counts[key] ?? 0) + 1;
@@ -289,7 +354,9 @@ function main() {
   console.log(
     `apply-verification: ${published.length}/${ledger.length} publishable; ` +
       `${audit.flagged} flagged, ${audit.corrections} correction(s), ` +
-      `${audit.missingBlind} missing blind, ${audit.adjudicated} adjudicated`,
+      `${audit.missingBlind} missing blind, ${audit.adjudicated} adjudicated, ` +
+      `${audit.claimedKeyConflicts} claimed-key conflict(s), ` +
+      `${audit.adjudicatorDisagreements} adjudicator disagreement(s)`,
   );
   console.log(`apply-verification: staged ${STAGED_BANK}; run content:validate to publish`);
 }

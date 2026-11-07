@@ -7,6 +7,20 @@
  * omits `sourceKey` so adjudicators keep solving blind; only the disputed blind
  * answer is included as context.
  *
+ * Routing rules:
+ *  - missing or invalid blind row                    -> missing-blind / invalid-blind
+ *  - blind answer differs from the source key         -> source-disagreement
+ *  - blind marked ambiguous (boolean true or "true")  -> ambiguous
+ *  - candidate carries any `claimed-*` flag          -> claimed-key-conflict
+ *
+ * A `claimed-*` flag means the supplied paper itself names a different key, so
+ * those items go to adjudication even when blind and source agree.
+ *
+ * File locations: prompts are written to content/verification/adjudication/;
+ * adjudicator answers are read back from
+ * content/verification/results/adjudication-NN.json. Answers are never written
+ * into the prompt directory and the results directory is never cleared here.
+ *
  * Safe no-op: with no blind results it prints a message and writes nothing.
  *
  * Run with: npm run content:adjudicate
@@ -15,7 +29,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { KEY_LETTERS, sha256 } from "./lib.mjs";
+import { claimedKeyFlags, isAmbiguous, KEY_LETTERS, sha256 } from "./lib.mjs";
 
 const RESULTS_DIR = "content/verification/results";
 const BATCHES_DIR = "content/verification/batches";
@@ -36,6 +50,13 @@ function listBatchFiles() {
     .filter((name) => /^batch-\d+\.json$/.test(name))
     .sort()
     .map((name) => join(BATCHES_DIR, name));
+}
+
+function sourceKeyOf(candidate) {
+  if (typeof candidate.sourceKey === "string" && KEY_LETTERS.includes(candidate.sourceKey)) {
+    return candidate.sourceKey;
+  }
+  return KEY_LETTERS[candidate.answer] ?? "";
 }
 
 function main() {
@@ -80,9 +101,13 @@ function main() {
 
   const batchFiles = listBatchFiles();
   const worklist = [];
-  let missingBlind = 0;
-  let disagreements = 0;
-  let ambiguous = 0;
+  const counts = {
+    missingBlind: 0,
+    invalidBlind: 0,
+    disagreements: 0,
+    ambiguous: 0,
+    claimedKeyConflicts: 0,
+  };
 
   for (const file of batchFiles) {
     const name = file.split(/[\\/]/).pop();
@@ -95,24 +120,40 @@ function main() {
         continue;
       }
       const blind = blindById.get(item.id);
-      const validLetter = blind && KEY_LETTERS.includes(blind.answer);
-      const needs = !validLetter || blind.answer !== candidate.sourceKey || blind.ambiguous === true;
-      if (!needs) continue;
+      const sourceKey = sourceKeyOf(candidate);
+      const blindAnswer =
+        blind && typeof blind.answer === "string" && KEY_LETTERS.includes(blind.answer)
+          ? blind.answer
+          : null;
+      const blindAmbiguous = isAmbiguous(blind?.ambiguous);
+      const claimed = claimedKeyFlags(candidate.flags);
 
-      if (!blind) missingBlind += 1;
-      else if (blind.answer !== candidate.sourceKey) disagreements += 1;
-      if (blind?.ambiguous === true) ambiguous += 1;
+      const reasons = [];
+      if (!blind) reasons.push("missing-blind");
+      else if (blindAnswer === null) reasons.push("invalid-blind");
+      else if (blindAnswer !== sourceKey) reasons.push("source-disagreement");
+      if (blind && blindAmbiguous) reasons.push("ambiguous");
+      if (claimed.length > 0) reasons.push("claimed-key-conflict");
+      if (reasons.length === 0) continue;
+
+      if (!blind) counts.missingBlind += 1;
+      else if (blindAnswer === null) counts.invalidBlind += 1;
+      else if (blindAnswer !== sourceKey) counts.disagreements += 1;
+      if (blindAmbiguous) counts.ambiguous += 1;
+      if (claimed.length > 0) counts.claimedKeyConflicts += 1;
 
       items.push({
         id: item.id,
         stem: item.stem,
         choices: item.choices,
+        reason: reasons[0],
+        reasons,
         blind: blind
           ? {
               answer: blind.answer ?? null,
               confidence: blind.confidence ?? null,
               work: blind.work ?? null,
-              ambiguous: blind.ambiguous === true,
+              ambiguous: blindAmbiguous,
             }
           : null,
       });
@@ -130,9 +171,11 @@ function main() {
   const manifest = {
     total: worklist.reduce((sum, batch) => sum + batch.items.length, 0),
     batches: worklist.length,
-    missingBlind,
-    disagreements,
-    ambiguous,
+    missingBlind: counts.missingBlind,
+    invalidBlind: counts.invalidBlind,
+    disagreements: counts.disagreements,
+    ambiguous: counts.ambiguous,
+    claimedKeyConflicts: counts.claimedKeyConflicts,
     createdAt: new Date().toISOString(),
     files: Object.fromEntries(worklist.map(({ name, items }) => [name, items.length])),
   };
@@ -140,7 +183,13 @@ function main() {
 
   console.log(
     `make-adjudication: ${manifest.total} item(s) in ${manifest.batches} batch file(s) ` +
-      `(missing blind ${missingBlind}, disagreements ${disagreements}, ambiguous ${ambiguous})`,
+      `(missing blind ${manifest.missingBlind}, invalid blind ${manifest.invalidBlind}, ` +
+      `disagreements ${manifest.disagreements}, ambiguous ${manifest.ambiguous}, ` +
+      `claimed-key conflicts ${manifest.claimedKeyConflicts})`,
+  );
+  console.log(
+    `make-adjudication: prompts in ${OUT_DIR}; save answers to ` +
+      `${RESULTS_DIR}/adjudication-NN.json (the results directory is never cleared)`,
   );
 }
 
