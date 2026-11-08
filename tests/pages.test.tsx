@@ -1,6 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter, Route, Routes } from "react-router-dom";
 import Home from "../src/pages/Home";
+import Accomplishments from "../src/pages/Accomplishments";
+import ActivityPage from "../src/pages/ActivityPage";
 
 test("Home names the government once and features INKantations", () => {
   render(
@@ -17,4 +19,22 @@ test("Home names the government once and features INKantations", () => {
   // singular getByRole would throw; the footer lives in the layout test.
   expect(screen.getAllByRole("link", { name: /Read more/i })).toHaveLength(3);
   expect(screen.getAllByText(/INKantations/i).length).toBeGreaterThan(0);
+});
+
+test("accomplishments render every title and link to detail pages", () => {
+  render(<MemoryRouter><Accomplishments /></MemoryRouter>);
+  expect(screen.getByRole("heading", { level: 1, name: "Accomplishments" })).toBeInTheDocument();
+  expect(screen.getAllByRole("link", { name: /INKantations/i }).length).toBeGreaterThan(0);
+  expect(screen.getByRole("link", { name: /Read more accomplishment reports/i })).toHaveAttribute("href", expect.stringContaining("1_44iCUzUJAaBi0cc0a7DcpauUPpRJIxj"));
+});
+
+test("an unknown activity slug renders not found", () => {
+  render(
+    <MemoryRouter initialEntries={["/accomplishments/nope"]}>
+      <Routes>
+        <Route path="/accomplishments/:slug" element={<ActivityPage />} />
+      </Routes>
+    </MemoryRouter>,
+  );
+  expect(screen.getByRole("heading", { level: 1, name: /page not found/i })).toBeInTheDocument();
 });
