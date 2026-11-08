@@ -1,7 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import { SiteLayout } from "./components/SiteLayout";
 import Bank from "./pages/Bank";
+import Drill from "./pages/Drill";
 import Home from "./pages/Home";
+import Practice from "./pages/Practice";
 import QuestionPage from "./pages/QuestionPage";
 import { StoreProvider } from "./store";
 
@@ -27,8 +29,8 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="bank" element={<Bank />} />
           <Route path="q/:id" element={<QuestionPage />} />
-          <Route path="practice" element={<Placeholder name="Practice" />} />
-          <Route path="drill/:id" element={<Placeholder name="Drill" />} />
+          <Route path="practice" element={<Practice />} />
+          <Route path="drill/:id" element={<Drill />} />
           <Route path="drill/:id/results" element={<Placeholder name="Results" />} />
           <Route path="progress" element={<Placeholder name="Progress" />} />
           <Route path="review" element={<Placeholder name="Review" />} />

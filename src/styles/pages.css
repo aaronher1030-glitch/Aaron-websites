@@ -1814,3 +1814,612 @@ html::-webkit-scrollbar-thumb:hover {
     transition: none;
   }
 }
+
+/* ---------------------------------------------------------------
+   Practice: preset cards, scoped options, a mode switch, and a
+   summary strip that keeps the live match count honest.
+   --------------------------------------------------------------- */
+
+.practice {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-md);
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+.practice-head {
+  display: grid;
+  gap: var(--space-sm);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--rule);
+}
+
+.practice-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.practice-eyebrow::before {
+  content: "";
+  flex: none;
+  width: 30px;
+  height: var(--rule-width);
+  background: currentColor;
+}
+
+.practice h1 {
+  max-width: 20ch;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.practice-lede {
+  max-width: 64ch;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+/* Presets: ruled cards; the active one lifts onto a cobalt tint. */
+
+.practice-presets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-sm);
+}
+
+.practice-preset {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas: "icon name" "copy copy";
+  align-items: center;
+  gap: 8px 10px;
+  min-width: 0;
+  padding: 14px 16px;
+  background: var(--surface);
+  color: var(--ink);
+  border: var(--rule-width) solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 120ms var(--ease), box-shadow 120ms var(--ease),
+    border-color 120ms var(--ease), background-color 120ms var(--ease);
+}
+
+.practice-preset .icon {
+  grid-area: icon;
+  color: var(--copper);
+}
+
+.practice-preset:hover {
+  border-color: var(--copper);
+  transform: translate(-1px, -1px);
+  box-shadow: var(--shadow-hard);
+}
+
+.practice-preset:focus-visible {
+  outline: 2.5px solid var(--cobalt);
+  outline-offset: 3px;
+}
+
+.practice-preset[aria-pressed="true"] {
+  border-color: var(--cobalt);
+  background: color-mix(in srgb, var(--cobalt) 7%, var(--surface));
+  box-shadow: var(--shadow-hard);
+}
+
+.practice-preset[aria-pressed="true"] .icon,
+.practice-preset[aria-pressed="true"] .practice-preset-name {
+  color: var(--cobalt);
+}
+
+.practice-preset-name {
+  grid-area: name;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.practice-preset-copy {
+  grid-area: copy;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.practice-option {
+  max-width: 420px;
+}
+
+.practice-custom {
+  display: grid;
+  gap: var(--space-md);
+  min-width: 0;
+}
+
+.practice-custom .bank-search {
+  margin-bottom: 0;
+}
+
+.practice-custom-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--space-sm);
+}
+
+.practice-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.practice-mode[aria-pressed="true"] {
+  color: var(--cobalt);
+  border-color: var(--cobalt);
+  background: color-mix(in srgb, var(--cobalt) 9%, var(--surface));
+}
+
+/* Summary: the count is the headline; empty presets explain themselves. */
+
+.practice-summary {
+  display: grid;
+  gap: var(--space-sm);
+  justify-items: start;
+  padding: var(--space-md);
+  background: var(--surface);
+  border: var(--rule-width) solid var(--rule);
+  border-top: 4px solid var(--copper);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.practice-count {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+.practice-empty {
+  max-width: 64ch;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.practice-limit {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+}
+
+.practice-start {
+  margin-top: 4px;
+}
+
+/* ---------------------------------------------------------------
+   Drill: the player sheet, a sticky progress rail with the question
+   map, and a submit confirmation dialog.
+   --------------------------------------------------------------- */
+
+.drill {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-md);
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+.drill-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--rule);
+}
+
+.drill-head-copy {
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.drill-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.drill-eyebrow::before {
+  content: "";
+  flex: none;
+  width: 30px;
+  height: var(--rule-width);
+  background: currentColor;
+}
+
+.drill h1 {
+  max-width: 24ch;
+  font-size: clamp(2rem, 4.4vw, 3rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+
+.drill-submit {
+  flex: none;
+}
+
+.drill-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 18px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.drill-position {
+  color: var(--ink);
+}
+
+.drill-meta-item {
+  color: var(--muted);
+}
+
+.drill-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  color: var(--cobalt);
+  font-variant-numeric: tabular-nums;
+}
+
+.drill-timer[data-tone="hazard"] {
+  color: var(--hazard);
+}
+
+.drill-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.drill-main {
+  display: grid;
+  gap: var(--space-md);
+  min-width: 0;
+}
+
+/* The sheet keeps the default choice grid so eliminations stay reachable. */
+
+.drill-sheet {
+  min-width: 0;
+  padding: var(--space-md);
+  background: var(--surface);
+  border: var(--rule-width) solid var(--rule);
+  border-top: 5px solid var(--copper);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow-wrap: break-word;
+}
+
+.drill-sheet .question-badges {
+  margin-bottom: var(--space-sm);
+}
+
+.drill-note {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+
+.drill-flag[aria-pressed="true"] {
+  color: var(--copper);
+  border-color: var(--copper);
+  background: color-mix(in srgb, var(--copper) 9%, var(--surface));
+}
+
+button.question-nav-link {
+  cursor: pointer;
+}
+
+button.question-nav-link:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button.question-nav-link:disabled:hover {
+  color: var(--ink);
+  border-color: var(--rule);
+  transform: none;
+  box-shadow: none;
+}
+
+/* Rail: the map is the bench's index card — answered cobalt, flagged
+   copper corner, current inked outline. */
+
+.drill-rail {
+  display: grid;
+  gap: var(--space-md);
+  min-width: 0;
+  padding: var(--space-md);
+  background: var(--surface);
+  border: var(--rule-width) solid var(--rule);
+  border-top: 4px solid var(--cobalt);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.question-map {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(38px, 1fr));
+  gap: 6px;
+}
+
+.question-map-cell {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 38px;
+  padding: 4px;
+  background: var(--surface-2);
+  color: var(--muted);
+  border: 1.5px solid var(--rule);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 120ms var(--ease), color 120ms var(--ease),
+    background-color 120ms var(--ease);
+}
+
+.question-map-cell:hover {
+  border-color: var(--copper);
+  color: var(--copper);
+}
+
+.question-map-cell:focus-visible {
+  outline: 2.5px solid var(--cobalt);
+  outline-offset: 2px;
+}
+
+.question-map-cell[data-answered="true"] {
+  background: color-mix(in srgb, var(--cobalt) 12%, var(--surface));
+  border-color: var(--cobalt);
+  color: var(--cobalt);
+}
+
+.question-map-cell[data-flagged="true"]::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 7px;
+  height: 7px;
+  background: var(--copper);
+  border-radius: 2px;
+}
+
+.question-map-cell[data-current="true"] {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 1.5px var(--ink);
+  color: var(--ink);
+}
+
+.drill-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.drill-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.drill-swatch {
+  width: 12px;
+  height: 12px;
+  background: var(--surface-2);
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+}
+
+.drill-swatch[data-state="answered"] {
+  background: color-mix(in srgb, var(--cobalt) 18%, var(--surface));
+  border-color: var(--cobalt);
+}
+
+.drill-swatch[data-state="flagged"] {
+  background: var(--copper);
+  border-color: var(--copper);
+}
+
+.drill-swatch[data-state="current"] {
+  border-color: var(--ink);
+  box-shadow: 0 0 0 1px var(--ink);
+}
+
+.drill-stats {
+  display: grid;
+  gap: 4px;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+}
+
+/* Submit dialog: a ruled card over an inked scrim, focus trapped inside. */
+
+.drill-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: var(--space-md);
+  background: color-mix(in srgb, var(--ink) 45%, transparent);
+}
+
+.drill-modal {
+  display: grid;
+  gap: var(--space-sm);
+  width: min(430px, 100%);
+  max-height: calc(100dvh - 2 * var(--space-md));
+  overflow-y: auto;
+  padding: var(--space-md);
+  background: var(--surface);
+  border: var(--rule-width) solid var(--rule);
+  border-top: 5px solid var(--copper);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-hard);
+}
+
+.drill-modal h2 {
+  font-size: 1.6rem;
+  line-height: 1.1;
+}
+
+.drill-modal-counts {
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.drill-modal-copy {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.drill-modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: 4px;
+}
+
+.drill-modal-actions .home-button {
+  flex: 1 1 140px;
+}
+
+.drill-missing-back {
+  width: fit-content;
+  margin-top: var(--space-lg);
+}
+
+.drill-missing code {
+  padding: 1px 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  overflow-wrap: anywhere;
+}
+
+.drill-finished-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+@media (min-width: 980px) {
+  .drill-layout {
+    grid-template-columns: minmax(0, 1fr) 280px;
+  }
+
+  .drill-rail {
+    position: sticky;
+    top: 84px;
+  }
+}
+
+@media (max-width: 480px) {
+  .practice-presets {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .practice-modes .home-button {
+    flex: 1 1 140px;
+  }
+
+  .drill-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .drill-submit {
+    width: 100%;
+  }
+
+  .drill-timer {
+    margin-left: 0;
+  }
+
+  .drill-modal-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .practice-preset,
+  .question-map-cell {
+    transition: none;
+  }
+}

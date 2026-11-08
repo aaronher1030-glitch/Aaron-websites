@@ -6,6 +6,7 @@ import App from "../src/App";
 import {
   DOMAIN_COUNTS,
   QUESTIONS,
+  QUESTION_BY_ID,
   QUESTION_COUNT,
   questionsForPaper,
 } from "../src/data/questions";
@@ -816,4 +817,643 @@ test("reporting always offers diagnostics and corrections, never an invented Git
     screen.getByRole("link", { name: /corrections log/i }),
   ).toHaveAttribute("href", "/about#corrections");
   expect(screen.queryByRole("link", { name: /github/i })).not.toBeInTheDocument();
+});
+
+/* ---------------------------------------------------------------
+   Practice builder + Drill player
+   --------------------------------------------------------------- */
+
+function readPersisted() {
+  return JSON.parse(window.localStorage.getItem("chembank:v1") ?? "{}");
+}
+
+function seedStore(partial: Record<string, unknown>) {
+  window.localStorage.setItem(
+    "chembank:v1",
+    JSON.stringify({
+      version: 1,
+      attempts: [],
+      drills: [],
+      review: [],
+      stashed: [],
+      theme: "auto",
+      createdAt: 1,
+      ...partial,
+    }),
+  );
+}
+
+test("diagnostic preset starts a drill that walks choose, check, next, submit to results", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=diagnostic-20");
+
+  expect(
+    screen.getByRole("heading", { level: 1, name: /build a drill/i }),
+  ).toBeInTheDocument();
+  expect(screen.getByText("20 questions match")).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", { name: /diagnostic 20/i }),
+  ).toHaveAttribute("aria-pressed", "true");
+
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+
+  const persisted = readPersisted();
+  expect(persisted.drills).toHaveLength(1);
+  const drill = persisted.drills[0];
+  expect(drill.qids).toHaveLength(20);
+  expect(drill.mode).toBe("practice");
+  expect(drill.limitSec).toBe(0);
+  expect(screen.getByTestId("location-pathname").textContent).toBe(
+    `/drill/${drill.id}`,
+  );
+  expect(
+    screen.getByRole("heading", { level: 1, name: drill.name }),
+  ).toBeInTheDocument();
+  expect(screen.getByText("Question 1 of 20")).toBeInTheDocument();
+
+  const first = QUESTION_BY_ID.get(drill.qids[0]);
+  expect(first).toBeDefined();
+  expect(document.querySelector(".drill-sheet")?.textContent).toContain(
+    first!.topic,
+  );
+  expect(screen.getAllByRole("radio")).toHaveLength(4);
+
+  await user.click(screen.getAllByRole("radio")[first!.answer]);
+  await user.click(screen.getByRole("button", { name: /^check$/i }));
+
+  const status = screen.getByRole("status");
+  expect(status).toHaveAttribute("aria-live", "polite");
+  expect(status).toHaveAttribute("data-verdict", "correct");
+  expect(status).toHaveFocus();
+  expect(screen.getByRole("region", { name: "Solution" })).toBeInTheDocument();
+
+  await user.click(screen.getByRole("button", { name: /^next$/i }));
+  expect(screen.getByText("Question 2 of 20")).toBeInTheDocument();
+  expect(screen.queryByRole("status")).not.toBeInTheDocument();
+
+  await user.click(screen.getByRole("button", { name: /submit drill/i }));
+  const dialog = screen.getByRole("dialog");
+  expect(dialog).toHaveAttribute("aria-modal", "true");
+  await user.click(within(dialog).getByRole("button", { name: /^submit$/i }));
+
+  expect(screen.getByTestId("location-pathname").textContent).toBe(
+    `/drill/${drill.id}/results`,
+  );
+  const finished = readPersisted().drills[0];
+  expect(finished.done).toBe(true);
+  expect(typeof finished.finishedAt).toBe("number");
+});
+
+test("paper preset hydrates from the URL and drills the full published paper", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=paper&paper=ch1-3-lab");
+
+  expect(screen.getByRole("combobox", { name: "Paper" })).toHaveValue("ch1-3-lab");
+  expect(screen.getByText("49 questions match")).toBeInTheDocument();
+
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+
+  const drill = readPersisted().drills[0];
+  expect(drill.qids).toEqual(questionsForPaper("ch1-3-lab").map((q) => q.id));
+  expect(drill.name).toBe("Chapters 1–3 Lab");
+});
+
+test("the builder defaults to the diagnostic preset for a bare visit", () => {
+  renderAt("/practice");
+
+  expect(screen.getByText("20 questions match")).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", { name: /diagnostic 20/i }),
+  ).toHaveAttribute("aria-pressed", "true");
+});
+
+test("unknown preset and paper params fall back to safe defaults", () => {
+  const bogus = renderAt("/practice?preset=bogus");
+  expect(screen.getByText("20 questions match")).toBeInTheDocument();
+  bogus.unmount();
+
+  renderAt("/practice?preset=paper&paper=nope");
+  expect(screen.getByRole("combobox", { name: "Paper" })).toHaveValue("ch1-3-theory");
+  expect(screen.getByText("49 questions match")).toBeInTheDocument();
+});
+
+test("weak and due presets are honestly empty on a fresh store", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=weak");
+
+  expect(screen.getByText("0 questions match")).toBeInTheDocument();
+  expect(screen.getByRole("button", { name: /start drill/i })).toBeDisabled();
+  expect(screen.getByText(/no weak topics yet/i)).toBeInTheDocument();
+
+  await user.click(screen.getByRole("button", { name: /due review/i }));
+
+  expect(screen.getByText("0 questions match")).toBeInTheDocument();
+  expect(screen.getByRole("button", { name: /start drill/i })).toBeDisabled();
+  expect(screen.getByText(/nothing is due yet/i)).toBeInTheDocument();
+});
+
+test("weak preset drills whole topics under the accuracy threshold", async () => {
+  const kinetics = QUESTIONS.filter((q) => q.topic === "Kinetics");
+  seedStore({
+    attempts: [
+      { qid: kinetics[0].id, correct: false, answer: "A", ts: 1, elapsedSec: 1, mode: "single" },
+      { qid: kinetics[1].id, correct: false, answer: "A", ts: 2, elapsedSec: 1, mode: "single" },
+    ],
+  });
+  const user = userEvent.setup();
+  renderAt("/practice?preset=weak");
+
+  expect(
+    screen.getByText(`${kinetics.length} questions match`),
+  ).toBeInTheDocument();
+
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+
+  expect(readPersisted().drills[0].qids).toEqual(kinetics.map((q) => q.id));
+});
+
+test("due preset drills the sorted due queue", async () => {
+  const [a, b, c] = QUESTIONS;
+  const now = Date.now();
+  seedStore({
+    review: [
+      { qid: b.id, dueAt: now - 1000, step: 0, lastSeen: 0 },
+      { qid: a.id, dueAt: now - 5000, step: 1, lastSeen: 0 },
+      { qid: c.id, dueAt: now + 999_999, step: 0, lastSeen: 0 },
+    ],
+  });
+  const user = userEvent.setup();
+  renderAt("/practice?preset=due");
+
+  expect(screen.getByText("2 questions match")).toBeInTheDocument();
+
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+
+  expect(readPersisted().drills[0].qids).toEqual([a.id, b.id]);
+});
+
+test("custom preset filters live and disables start at zero", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=custom");
+
+  expect(
+    screen.getByText(`${QUESTION_COUNT} questions match`),
+  ).toBeInTheDocument();
+
+  await user.selectOptions(
+    screen.getByRole("combobox", { name: "Domain" }),
+    "Laboratory",
+  );
+  expect(
+    screen.getByText(`${DOMAIN_COUNTS.Laboratory} questions match`),
+  ).toBeInTheDocument();
+
+  await user.type(
+    screen.getByRole("searchbox", { name: /search questions/i }),
+    "zzzz-no-match",
+  );
+  expect(screen.getByText("0 questions match")).toBeInTheDocument();
+  expect(screen.getByRole("button", { name: /start drill/i })).toBeDisabled();
+});
+
+test("chapter preset hydrates and drills the selected chapter", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=chapter&chapter=3");
+
+  expect(screen.getByRole("combobox", { name: "Chapter" })).toHaveValue("3");
+  const count3 = QUESTIONS.filter((q) => q.chapter === 3).length;
+  expect(screen.getByText(`${count3} questions match`)).toBeInTheDocument();
+
+  await user.selectOptions(screen.getByRole("combobox", { name: "Chapter" }), "5");
+  const count5 = QUESTIONS.filter((q) => q.chapter === 5).length;
+  expect(screen.getByText(`${count5} questions match`)).toBeInTheDocument();
+});
+
+test("daily, random, and lab presets match their published scopes", () => {
+  const daily = renderAt("/practice?preset=daily-10");
+  expect(screen.getByText("10 questions match")).toBeInTheDocument();
+  daily.unmount();
+
+  const random = renderAt("/practice?preset=random-10");
+  expect(screen.getByText("10 questions match")).toBeInTheDocument();
+  random.unmount();
+
+  renderAt("/practice?preset=lab");
+  expect(
+    screen.getByText(`${DOMAIN_COUNTS.Laboratory} questions match`),
+  ).toBeInTheDocument();
+});
+
+test("timed mode keeps choices editable, records nothing until submit, then one attempt per answered item", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=random-10");
+
+  await user.click(screen.getByRole("button", { name: /^timed$/i }));
+  expect(screen.getByRole("button", { name: /^timed$/i })).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+
+  const drill = readPersisted().drills[0];
+  expect(drill.mode).toBe("timed");
+  expect(drill.limitSec).toBe(10 * 90);
+  expect(
+    screen.queryByRole("button", { name: /^check$/i }),
+  ).not.toBeInTheDocument();
+  expect(screen.getByRole("timer")).toBeInTheDocument();
+
+  const first = QUESTION_BY_ID.get(drill.qids[0])!;
+  const second = QUESTION_BY_ID.get(drill.qids[1])!;
+
+  await user.click(screen.getAllByRole("radio")[0]);
+  await user.click(screen.getAllByRole("radio")[1]);
+  expect(screen.getAllByRole("radio")[1]).toHaveAttribute("aria-checked", "true");
+  expect(readPersisted().attempts).toEqual([]);
+
+  await user.click(screen.getByRole("button", { name: /^next$/i }));
+  await user.click(screen.getAllByRole("radio")[second.answer]);
+  expect(readPersisted().attempts).toEqual([]);
+
+  await user.click(screen.getByRole("button", { name: /submit drill/i }));
+  const dialog = screen.getByRole("dialog");
+  expect(within(dialog).getByText("8 unanswered · 0 flagged")).toBeInTheDocument();
+  await user.click(within(dialog).getByRole("button", { name: /^submit$/i }));
+
+  expect(screen.getByTestId("location-pathname").textContent).toBe(
+    `/drill/${drill.id}/results`,
+  );
+  const persisted = readPersisted();
+  expect(persisted.attempts).toHaveLength(2);
+  expect(persisted.attempts[0]).toMatchObject({
+    qid: first.id,
+    answer: "B",
+    correct: first.answer === 1,
+    mode: "timed",
+  });
+  expect(persisted.attempts[1]).toMatchObject({
+    qid: second.id,
+    answer: String.fromCharCode(65 + second.answer),
+    correct: true,
+    mode: "timed",
+  });
+  for (const a of persisted.attempts) {
+    expect(typeof a.ts).toBe("number");
+    expect(a.elapsedSec).toBe(persisted.drills[0].elapsedSec);
+  }
+});
+
+test("a timed drill counts down and auto-submits at zero", () => {
+  vi.useFakeTimers();
+  try {
+    const [a, b, c] = QUESTIONS;
+    seedStore({
+      drills: [
+        {
+          id: "auto-submit-test",
+          name: "Short timed",
+          mode: "timed",
+          qids: [a.id, b.id, c.id],
+          answers: { [a.id]: String.fromCharCode(65 + a.answer) },
+          checked: {},
+          flagged: {},
+          strikes: {},
+          index: 0,
+          limitSec: 3,
+          elapsedSec: 0,
+          startedAt: Date.now(),
+          done: false,
+        },
+      ],
+    });
+    renderAt("/drill/auto-submit-test");
+
+    expect(screen.getByRole("timer")).toHaveTextContent("0:03");
+    act(() => {
+      vi.advanceTimersByTime(1000);
+    });
+    expect(screen.getByRole("timer")).toHaveTextContent("0:02");
+    act(() => {
+      vi.advanceTimersByTime(2000);
+    });
+
+    expect(screen.getByTestId("location-pathname").textContent).toBe(
+      "/drill/auto-submit-test/results",
+    );
+    const persisted = readPersisted();
+    expect(persisted.drills[0]).toMatchObject({ done: true, elapsedSec: 3 });
+    expect(typeof persisted.drills[0].finishedAt).toBe("number");
+    expect(persisted.attempts).toHaveLength(1);
+    expect(persisted.attempts[0]).toMatchObject({
+      qid: a.id,
+      mode: "timed",
+      correct: true,
+      elapsedSec: 3,
+    });
+  } finally {
+    vi.useRealTimers();
+  }
+});
+
+test("a timed drill resumes its persisted clock after a remount", () => {
+  vi.useFakeTimers();
+  try {
+    seedStore({
+      drills: [
+        {
+          id: "resume-clock",
+          name: "Resumed timed",
+          mode: "timed",
+          qids: [QUESTIONS[0].id],
+          answers: {},
+          checked: {},
+          flagged: {},
+          strikes: {},
+          index: 0,
+          limitSec: 100,
+          elapsedSec: 5,
+          startedAt: Date.now(),
+          done: false,
+        },
+      ],
+    });
+    renderAt("/drill/resume-clock");
+
+    expect(screen.getByRole("timer")).toHaveTextContent("1:35");
+    act(() => {
+      vi.advanceTimersByTime(1000);
+    });
+    expect(screen.getByRole("timer")).toHaveTextContent("1:34");
+    expect(readPersisted().drills[0].elapsedSec).toBe(6);
+  } finally {
+    vi.useRealTimers();
+  }
+});
+
+test("keyboard a–d selects, Enter checks and advances, f flags, arrows navigate", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=diagnostic-20");
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+  const drill = readPersisted().drills[0];
+  const first = QUESTION_BY_ID.get(drill.qids[0])!;
+
+  fireEvent.keyDown(window, { key: "a" });
+  expect(screen.getAllByRole("radio")[0]).toHaveAttribute("aria-checked", "true");
+
+  fireEvent.keyDown(window, { key: "Enter" });
+  expect(screen.getByRole("status")).toHaveAttribute(
+    "data-verdict",
+    first.answer === 0 ? "correct" : "wrong",
+  );
+
+  fireEvent.keyDown(window, { key: "Enter" });
+  expect(screen.getByText("Question 2 of 20")).toBeInTheDocument();
+
+  fireEvent.keyDown(window, { key: "ArrowLeft" });
+  expect(screen.getByText("Question 1 of 20")).toBeInTheDocument();
+  fireEvent.keyDown(window, { key: "ArrowRight" });
+  expect(screen.getByText("Question 2 of 20")).toBeInTheDocument();
+
+  fireEvent.keyDown(window, { key: "f" });
+  expect(screen.getByRole("button", { name: /^flagged$/i })).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  expect(readPersisted().drills[0].flagged[drill.qids[1]]).toBe(true);
+
+  fireEvent.keyDown(window, { key: "f" });
+  expect(screen.getByRole("button", { name: /^flag$/i })).toHaveAttribute(
+    "aria-pressed",
+    "false",
+  );
+});
+
+test("shortcuts ignore inputs, selects, textareas, and contenteditable targets", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=diagnostic-20");
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+
+  for (const tag of ["input", "select", "textarea"] as const) {
+    const field = document.createElement(tag);
+    document.body.appendChild(field);
+    field.focus();
+    fireEvent.keyDown(field, { key: "a" });
+    fireEvent.keyDown(field, { key: "Enter" });
+    fireEvent.keyDown(field, { key: "f" });
+    fireEvent.keyDown(field, { key: "ArrowRight" });
+    field.remove();
+  }
+  const editable = document.createElement("div");
+  editable.setAttribute("contenteditable", "true");
+  document.body.appendChild(editable);
+  editable.focus();
+  fireEvent.keyDown(editable, { key: "b" });
+  editable.remove();
+
+  expect(screen.getAllByRole("radio")[0]).toHaveAttribute("aria-checked", "false");
+  expect(screen.getAllByRole("radio")[1]).toHaveAttribute("aria-checked", "false");
+  expect(screen.queryByRole("status")).not.toBeInTheDocument();
+  expect(screen.getByText("Question 1 of 20")).toBeInTheDocument();
+  expect(screen.getByRole("button", { name: /^flag$/i })).toHaveAttribute(
+    "aria-pressed",
+    "false",
+  );
+});
+
+test("the question map jumps and reflects answered, flagged, and current states", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=diagnostic-20");
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+
+  const map = screen.getByRole("group", { name: "Question map" });
+  expect(within(map).getAllByRole("button")).toHaveLength(20);
+  expect(
+    within(map).getByRole("button", { name: "Question 1" }),
+  ).toHaveAttribute("aria-current", "true");
+
+  await user.click(within(map).getByRole("button", { name: "Question 5" }));
+  expect(screen.getByText("Question 5 of 20")).toBeInTheDocument();
+  expect(
+    within(map).getByRole("button", { name: "Question 5" }),
+  ).toHaveAttribute("aria-current", "true");
+
+  await user.click(screen.getAllByRole("radio")[0]);
+  expect(
+    within(map).getByRole("button", { name: "Question 5, answered" }),
+  ).toBeInTheDocument();
+
+  await user.click(screen.getByRole("button", { name: /^flag$/i }));
+  expect(
+    within(map).getByRole("button", { name: "Question 5, answered, flagged" }),
+  ).toBeInTheDocument();
+  expect(readPersisted().drills[0].index).toBe(4);
+});
+
+test("eliminations persist in the drill and toggle back", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=diagnostic-20");
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+  const drill = readPersisted().drills[0];
+  const qid = drill.qids[0];
+
+  await user.click(screen.getByRole("button", { name: "Eliminate A" }));
+  expect(screen.getByRole("button", { name: "Undo A" })).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  expect(readPersisted().drills[0].strikes[qid]).toEqual(["A"]);
+
+  await user.click(screen.getByRole("button", { name: "Undo A" }));
+  expect(readPersisted().drills[0].strikes[qid]).toEqual([]);
+});
+
+test("a drill resumes its index, answers, and flags after a remount", async () => {
+  const user = userEvent.setup();
+  const first = renderAt("/practice?preset=diagnostic-20");
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+  const drill = readPersisted().drills[0];
+
+  await user.click(screen.getAllByRole("radio")[1]);
+  await user.click(screen.getByRole("button", { name: /^flag$/i }));
+  await user.click(screen.getByRole("button", { name: /^next$/i }));
+  await user.click(screen.getAllByRole("radio")[2]);
+  first.unmount();
+
+  renderAt(`/drill/${drill.id}`);
+  expect(screen.getByText("Question 2 of 20")).toBeInTheDocument();
+  expect(screen.getAllByRole("radio")[2]).toHaveAttribute("aria-checked", "true");
+
+  await user.click(screen.getByRole("button", { name: /^previous$/i }));
+  expect(screen.getAllByRole("radio")[1]).toHaveAttribute("aria-checked", "true");
+  expect(screen.getByRole("button", { name: /^flagged$/i })).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  const map = screen.getByRole("group", { name: "Question map" });
+  expect(
+    within(map).getByRole("button", { name: "Question 1, answered, flagged" }),
+  ).toBeInTheDocument();
+});
+
+test("practice check records exactly one practice attempt and stays checked after resume", async () => {
+  const user = userEvent.setup();
+  const first = renderAt("/practice?preset=diagnostic-20");
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+  const drill = readPersisted().drills[0];
+  const q = QUESTION_BY_ID.get(drill.qids[0])!;
+  const letter = String.fromCharCode(65 + q.answer);
+
+  await user.click(screen.getAllByRole("radio")[q.answer]);
+  const check = screen.getByRole("button", { name: /^check$/i });
+  await user.click(check);
+  expect(check).toBeDisabled();
+  expect(screen.getAllByRole("radio")[0]).toBeDisabled();
+
+  const persisted = readPersisted();
+  expect(persisted.attempts).toHaveLength(1);
+  expect(persisted.attempts[0]).toMatchObject({
+    qid: q.id,
+    correct: true,
+    answer: letter,
+    mode: "practice",
+  });
+  expect(typeof persisted.attempts[0].ts).toBe("number");
+  expect(persisted.attempts[0].elapsedSec).toBeGreaterThanOrEqual(0);
+
+  await user.click(screen.getByRole("button", { name: /^next$/i }));
+  await user.click(screen.getByRole("button", { name: /^previous$/i }));
+  expect(screen.getByRole("button", { name: /^check$/i })).toBeDisabled();
+  expect(screen.getByRole("status")).toHaveAttribute("data-verdict", "correct");
+  first.unmount();
+
+  renderAt(`/drill/${drill.id}`);
+  expect(screen.getByRole("button", { name: /^check$/i })).toBeDisabled();
+  expect(readPersisted().attempts).toHaveLength(1);
+});
+
+test("the submit modal reports unanswered and flagged counts and can be cancelled", async () => {
+  const user = userEvent.setup();
+  renderAt("/practice?preset=diagnostic-20");
+  await user.click(screen.getByRole("button", { name: /start drill/i }));
+  const drill = readPersisted().drills[0];
+
+  await user.click(screen.getAllByRole("radio")[0]);
+  await user.click(screen.getByRole("button", { name: /^next$/i }));
+  await user.click(screen.getAllByRole("radio")[1]);
+  await user.click(screen.getByRole("button", { name: /^flag$/i }));
+
+  const trigger = screen.getByRole("button", { name: /submit drill/i });
+  await user.click(trigger);
+
+  const dialog = screen.getByRole("dialog");
+  expect(dialog).toHaveAttribute("aria-modal", "true");
+  expect(
+    within(dialog).getByText("18 unanswered · 1 flagged"),
+  ).toBeInTheDocument();
+  expect(
+    within(dialog).getByRole("button", { name: /keep working/i }),
+  ).toHaveFocus();
+
+  await user.click(
+    within(dialog).getByRole("button", { name: /keep working/i }),
+  );
+  expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+  expect(trigger).toHaveFocus();
+  expect(readPersisted().drills[0].done).toBe(false);
+
+  await user.click(trigger);
+  await user.click(
+    within(screen.getByRole("dialog")).getByRole("button", { name: /^submit$/i }),
+  );
+  expect(screen.getByTestId("location-pathname").textContent).toBe(
+    `/drill/${drill.id}/results`,
+  );
+});
+
+test("an unknown drill id shows an honest not-found state", () => {
+  renderAt("/drill/does-not-exist");
+
+  expect(
+    screen.getByRole("heading", { level: 1, name: /drill not found/i }),
+  ).toBeInTheDocument();
+  expect(
+    screen.getByRole("link", { name: /back to practice/i }),
+  ).toHaveAttribute("href", "/practice");
+  expect(screen.queryAllByRole("radio")).toHaveLength(0);
+});
+
+test("a finished drill links to its results instead of replaying", () => {
+  seedStore({
+    drills: [
+      {
+        id: "done-drill",
+        name: "Finished",
+        mode: "practice",
+        qids: [QUESTIONS[0].id],
+        answers: {},
+        checked: {},
+        flagged: {},
+        strikes: {},
+        index: 0,
+        limitSec: 0,
+        elapsedSec: 0,
+        startedAt: 1,
+        finishedAt: 2,
+        done: true,
+      },
+    ],
+  });
+  renderAt("/drill/done-drill");
+
+  expect(
+    screen.getByRole("heading", { level: 1, name: /drill finished/i }),
+  ).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /view results/i })).toHaveAttribute(
+    "href",
+    "/drill/done-drill/results",
+  );
+  expect(
+    screen.getByRole("link", { name: /back to practice/i }),
+  ).toHaveAttribute("href", "/practice");
 });

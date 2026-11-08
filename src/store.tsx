@@ -7,13 +7,21 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import type { Attempt, Store } from "./data/types";
+import type { Attempt, Drill, Store } from "./data/types";
+import { createDrill as buildDrill } from "./lib/drill";
 
 const STORAGE_KEY = "chembank:v1";
 
 export interface StoreApi {
   store: Store;
   recordAttempt: (attempt: Attempt) => void;
+  createDrill: (input: {
+    name: string;
+    mode: "practice" | "timed";
+    qids: string[];
+    limitSec: number;
+  }) => Drill;
+  updateDrill: (drill: Drill) => void;
   toggleStash: (qid: string) => void;
 }
 
@@ -75,6 +83,25 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     }));
   }, []);
 
+  const createDrill = useCallback(
+    (input: { name: string; mode: "practice" | "timed"; qids: string[]; limitSec: number }) => {
+      const drill = buildDrill(input);
+      setStore((current) => ({
+        ...current,
+        drills: [...current.drills, drill],
+      }));
+      return drill;
+    },
+    [],
+  );
+
+  const updateDrill = useCallback((drill: Drill) => {
+    setStore((current) => ({
+      ...current,
+      drills: current.drills.map((existing) => (existing.id === drill.id ? drill : existing)),
+    }));
+  }, []);
+
   const toggleStash = useCallback((qid: string) => {
     setStore((current) => ({
       ...current,
@@ -85,8 +112,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const value = useMemo<StoreApi>(
-    () => ({ store, recordAttempt, toggleStash }),
-    [store, recordAttempt, toggleStash],
+    () => ({ store, recordAttempt, createDrill, updateDrill, toggleStash }),
+    [store, recordAttempt, createDrill, updateDrill, toggleStash],
   );
 
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>;

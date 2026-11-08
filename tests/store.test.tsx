@@ -2,7 +2,7 @@ import { act, renderHook } from "@testing-library/react";
 import type { ReactNode } from "react";
 import { afterEach, beforeEach, expect, test, vi } from "vitest";
 import { StoreProvider, useStore } from "../src/store";
-import type { Attempt } from "../src/data/types";
+import type { Attempt, Drill } from "../src/data/types";
 
 const STORAGE_KEY = "chembank:v1";
 
@@ -42,14 +42,88 @@ test("hydrates the default store when nothing is persisted", () => {
   expect(typeof result.current.store.createdAt).toBe("number");
 });
 
-test("exposes exactly store, recordAttempt, and toggleStash", () => {
+test("exposes exactly the store, attempt, drill, and stash APIs", () => {
   const { result } = renderHook(() => useStore(), { wrapper });
 
   expect(Object.keys(result.current).sort()).toEqual([
+    "createDrill",
     "recordAttempt",
     "store",
     "toggleStash",
+    "updateDrill",
   ]);
+});
+
+test("createDrill appends, persists, and returns the new drill", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+
+  let returned: Drill | undefined;
+  act(() => {
+    returned = result.current.createDrill({
+      name: "Diagnostic 20",
+      mode: "practice",
+      qids: ["q-1", "q-2"],
+      limitSec: 0,
+    });
+  });
+
+  expect(returned).toBeDefined();
+  expect(returned).toMatchObject({
+    name: "Diagnostic 20",
+    mode: "practice",
+    qids: ["q-1", "q-2"],
+    limitSec: 0,
+    answers: {},
+    checked: {},
+    flagged: {},
+    strikes: {},
+    index: 0,
+    elapsedSec: 0,
+    done: false,
+  });
+  expect(typeof returned!.id).toBe("string");
+  expect(typeof returned!.startedAt).toBe("number");
+  expect(result.current.store.drills).toHaveLength(1);
+  expect(result.current.store.drills[0]).toEqual(returned);
+  const persisted = JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "{}");
+  expect(persisted.drills).toEqual([returned]);
+});
+
+test("updateDrill replaces by id and persists; an unknown id is a no-op", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+
+  let returned: Drill | undefined;
+  act(() => {
+    returned = result.current.createDrill({
+      name: "Short timed",
+      mode: "timed",
+      qids: ["q-1"],
+      limitSec: 90,
+    });
+  });
+  const drill = returned!;
+
+  act(() => {
+    result.current.updateDrill({ ...drill, index: 1, elapsedSec: 5, answers: { "q-1": "B" } });
+  });
+  expect(result.current.store.drills).toHaveLength(1);
+  expect(result.current.store.drills[0]).toMatchObject({
+    id: drill.id,
+    index: 1,
+    elapsedSec: 5,
+    answers: { "q-1": "B" },
+  });
+  expect(JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "{}").drills[0]).toMatchObject({
+    id: drill.id,
+    index: 1,
+    elapsedSec: 5,
+  });
+
+  act(() => {
+    result.current.updateDrill({ ...drill, id: "ghost", index: 9 });
+  });
+  expect(result.current.store.drills).toHaveLength(1);
+  expect(result.current.store.drills[0].index).toBe(1);
 });
 
 test("recordAttempt appends and persists to chembank:v1", () => {
