@@ -17,7 +17,7 @@
 }
 
 html {
-  color-scheme: dark;
+  color-scheme: light;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   scroll-padding-block-start: calc(var(--header-h) + var(--space-4));
@@ -84,7 +84,13 @@ a {
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
-  text-decoration-color: color-mix(in srgb, var(--accent-soft) 70%, transparent);
+  text-decoration-color: var(--link-underline-dark);
+}
+
+/* The gold underline composites to ~1.1:1 on mint; light bands flip it. */
+.band--mint a,
+.band--paper a {
+  text-decoration-color: var(--link-underline-light);
 }
 
 /* ------------------------------------------------------------------ *
@@ -103,7 +109,7 @@ a {
   outline-color: var(--focus-on-light);
 }
 
-::selection { background: var(--gold-300); color: var(--navy-950); }
+::selection { background: var(--gold-300); color: var(--on-accent); }
 
 .skip-link {
   position: fixed;
@@ -112,9 +118,9 @@ a {
   z-index: 100;
   transform: translateY(-200%);
   padding: 0.7rem 1rem;
-  background: var(--white);
-  color: var(--navy-950);
-  font-size: var(--text-sm);
+  background: var(--bg-bar);
+  color: var(--on-accent);
+  font-size: var(--text-base);
   font-weight: 600;
   border-radius: var(--radius-sm);
   transition: transform 150ms var(--ease-out);

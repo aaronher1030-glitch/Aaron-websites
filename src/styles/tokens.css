@@ -2,6 +2,7 @@
   /* Primitives — navy */
   --navy-950: #02133e;
   --navy-900: #061a4a;
+  --navy-850: #141953;
   --navy-800: #08205d;
   --navy-700: #0d2a6e;
   --navy-line: #1b3570;
@@ -23,7 +24,7 @@
 
   /* Semantic — surfaces and text */
   --bg-page: var(--navy-950);
-  --bg-title: var(--navy-900);
+  --bg-title: var(--navy-850);
   --bg-panel: var(--navy-800);
   --bg-band: var(--mint-100);
   --bg-bar: var(--paper);
@@ -31,6 +32,8 @@
   --text-light: var(--ink);
   --text-muted-dark: #b9c6dd;
   --text-muted-light: #3a4f70;
+  --link-underline-dark: color-mix(in srgb, var(--gold-300) 70%, transparent);
+  --link-underline-light: color-mix(in srgb, var(--navy-950) 55%, transparent);
   --border-dark: rgba(249, 249, 249, 0.16);
   --border-light: rgba(10, 28, 61, 0.16);
   --accent: var(--gold-500);
