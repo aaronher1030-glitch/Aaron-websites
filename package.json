@@ -11,8 +11,8 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "seo": "node scripts/generate-seo.mjs",
-    "deploy": "npm run build && npx --yes wrangler pages deploy dist --project-name lemma",
-    "deploy:preview": "npm run build && npx --yes wrangler pages deploy dist --project-name lemma --branch preview"
+    "deploy": "npm run build && npx --yes wrangler pages deploy dist --project-name lemma --branch main --commit-dirty=true",
+    "deploy:preview": "npm run build && npx --yes wrangler pages deploy dist --project-name lemma --branch preview --commit-dirty=true"
   },
   "dependencies": {
     "katex": "^0.19.1",
