@@ -110,3 +110,39 @@
   font-weight: 700;
   letter-spacing: 0.08em;
 }
+
+/* Home — hero, latest, about and the three doorway cards. The bands are
+ * full-bleed colour fields, so the shared .page rhythm (which would leave
+ * navy seams between them) is opted out of on this frame only. */
+
+.page--home > * + * { margin-block-start: 0; }
+
+.home-latest { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+.home-latest__media { aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius-sm); }
+.home-latest__media img { width: 100%; height: 100%; object-fit: cover; }
+.home-latest h2 { font-size: clamp(1.75rem, 2.6vw, 2.5rem); color: var(--text-dark); }
+.home-latest p { max-width: 52ch; margin-block: var(--space-3) var(--space-5); color: var(--text-muted-dark); }
+.home-latest .cta-bar { max-width: 320px; }
+
+.home-about { display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+.home-about figure { margin: 0; }
+.home-about img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-sm); }
+.home-about figcaption { margin-block-start: var(--space-2); color: var(--text-muted-light); font-size: var(--text-sm); }
+.home-about h3 { color: var(--text-light); }
+.home-about p { margin-block: var(--space-3) var(--space-5); color: var(--ink-soft); }
+.home-about .cta-bar { background: var(--navy-950); color: var(--paper); }
+@media (hover: hover) { .home-about .cta-bar:hover { background: var(--navy-700); color: var(--paper); } }
+
+.home-destinations { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.25rem, 3vw, 2.5rem); align-items: end; }
+.home-destinations article { display: grid; gap: var(--space-4); justify-items: center; text-align: center; }
+.home-destinations img { width: min(100%, 220px); height: auto; }
+.home-destinations .cta-bar { width: 100%; }
+
+@media (max-width: 899.98px) {
+  .home-latest, .home-about { grid-template-columns: 1fr; }
+  .home-about figure { max-width: 560px; }
+}
+@media (max-width: 639.98px) {
+  .home-destinations { grid-template-columns: 1fr; }
+  .home-destinations img { width: 160px; }
+}
