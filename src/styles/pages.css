@@ -4074,6 +4074,233 @@ button.question-nav-link:disabled:hover {
   color: var(--copper);
 }
 
+/* Optional account / sync menu: env-gated, absent in local-only builds. */
+
+.account-menu {
+  position: relative;
+}
+
+.account-menu > summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.account-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.account-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.account-menu[open] > summary {
+  color: var(--copper);
+  border-bottom-color: var(--copper);
+}
+
+.account-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+
+.account-dot-syncing {
+  background: var(--copper);
+  animation: account-pulse 0.9s var(--ease) infinite alternate;
+}
+
+.account-dot-synced {
+  background: var(--acid);
+}
+
+.account-dot-error {
+  background: var(--hazard);
+}
+
+@keyframes account-pulse {
+  from {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.account-panel {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  z-index: 70;
+  display: grid;
+  gap: 10px;
+  width: min(288px, calc(100vw - 2 * var(--gutter)));
+  padding: 14px;
+  background: var(--surface);
+  border: var(--rule-strong) solid var(--ink);
+  border-radius: 10px;
+  box-shadow: var(--shadow-hard);
+  text-align: left;
+}
+
+.account-body {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.account-heading {
+  margin: 0;
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.account-copy {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.account-email {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.account-status {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.account-status-offline {
+  color: var(--muted);
+}
+
+.account-status-syncing {
+  color: var(--copper);
+}
+
+.account-status-synced {
+  color: var(--acid);
+}
+
+.account-status-error {
+  color: var(--hazard);
+}
+
+.account-message {
+  margin: 0;
+  padding: 6px 8px;
+  background: var(--surface-2);
+  border-left: 3px solid var(--copper);
+  border-radius: 0 6px 6px 0;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.account-field {
+  display: grid;
+  gap: 4px;
+}
+
+.account-field > span {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.account-field input {
+  padding: 8px 10px;
+  background: var(--surface-2);
+  border: var(--rule-width) solid var(--rule);
+  border-radius: 6px;
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: 13px;
+}
+
+.account-field input:focus-visible {
+  border-color: var(--copper);
+  outline: 2px solid color-mix(in srgb, var(--copper) 45%, transparent);
+  outline-offset: 1px;
+}
+
+.account-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.account-button {
+  padding: 9px 12px;
+  background: var(--ink);
+  border: none;
+  border-radius: 6px;
+  color: var(--paper);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: transform 120ms var(--ease), opacity 120ms var(--ease);
+}
+
+.account-button:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+}
+
+.account-button:active:not(:disabled) {
+  transform: translate(1px, 1px);
+}
+
+.account-button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.account-button-quiet {
+  background: transparent;
+  border: var(--rule-width) solid var(--rule);
+  color: var(--ink);
+}
+
+.account-switch {
+  justify-self: start;
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--cobalt);
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.account-footnote {
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+
 @media (max-width: 1160px) {
   .periodic-layout {
     grid-template-columns: minmax(0, 1fr);

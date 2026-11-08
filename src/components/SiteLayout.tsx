@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import { AccountMenu } from "./AccountMenu";
 import { InstallPrompt } from "./InstallPrompt";
 import { Logo } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
@@ -55,6 +56,7 @@ export function SiteLayout() {
               ))}
             </nav>
           </details>
+          <AccountMenu />
           <ThemeToggle />
         </div>
       </header>
@@ -75,7 +77,7 @@ export function SiteLayout() {
               {" · "}
               <NavLink to="/formulas">Formula sheet</NavLink>
             </p>
-            <p>Free forever. No ads, accounts, or payment.</p>
+            <p>Free forever. No ads or payment.</p>
           </div>
           <p className="footer-stamp" aria-hidden="true">
             Unofficial

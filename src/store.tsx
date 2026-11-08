@@ -115,8 +115,10 @@ function isValidDrill(value: unknown): value is Drill {
 /* Checking only the top-level arrays lets a payload like { attempts: [null] }
    persist and then crash every page that reads attempt fields, with reset
    itself stranded on a crashing page. Validate each element's minimal shape
-   so import refuses it and hydrate falls back to a clean notebook instead. */
-function isValidStore(parsed: unknown): parsed is Store {
+   so import refuses it and hydrate falls back to a clean notebook instead.
+   Exported so the optional sync adapter can apply the same gate to remote
+   payloads before merging them into the local notebook. */
+export function isValidStore(parsed: unknown): parsed is Store {
   return (
     isRecord(parsed) &&
     parsed.version === 1 &&
