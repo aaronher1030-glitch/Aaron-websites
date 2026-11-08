@@ -6,6 +6,7 @@
   --navy-800: #08205d;
   --navy-700: #0d2a6e;
   --navy-line: #1b3570;
+  --hero-top: #091449;
 
   /* Primitives — mint */
   --mint-100: #d0e0e3;
@@ -41,6 +42,19 @@
   --focus-on-dark: var(--gold-300);
   --focus-on-light: var(--navy-950);
   --on-accent: var(--navy-950);
+
+  /* Semantic — hero field. The beams and glows are defined here so the
+     component sheet carries no literal colour. */
+  --glow-blue: rgba(43, 84, 178, 0.55);
+  --glow-blue-deep: rgba(26, 63, 150, 0.42);
+  --glow-gold: rgba(201, 162, 39, 0.28);
+  --beam-edge: rgba(185, 138, 74, 0.1);
+  --beam-tail: rgba(232, 201, 143, 0.15);
+
+  /* Semantic — shell hairlines and the scrolled masthead. */
+  --masthead-bg: color-mix(in srgb, var(--navy-950) 94%, transparent);
+  --rule-paper: color-mix(in srgb, var(--paper) 85%, transparent);
+  --hairline-paper: color-mix(in srgb, var(--paper) 55%, transparent);
 
   /* Type */
   --font-display: "Gentium Book Plus", Gentium, Georgia, serif;

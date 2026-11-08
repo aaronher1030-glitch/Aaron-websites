@@ -1,11 +1,224 @@
 /* ------------------------------------------------------------------ *
- * Site shell — bands carry the page; every later task composes these.
+ * Site shell — skip link, sticky masthead, mobile disclosure, hero and
+ * footer. The band and CTA primitives below stay unchanged.
  * ------------------------------------------------------------------ */
 
 .site { display: flex; flex-direction: column; min-height: 100svh; background: var(--bg-page); }
 .site-main { flex: 1 0 auto; }
 /* Programmatic focus after the skip link must not ring the whole page. */
 .site-main:focus { outline: none; }
+
+/* The shell sits on navy, so the skip link keeps the light underline. */
+.skip-link { text-decoration-color: var(--link-underline-light); }
+
+#top-sentinel { position: absolute; inset-block-start: 0; width: 1px; height: 1px; }
+
+/* Hero ------------------------------------------------------------- */
+
+.beams {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(55% 65% at 72% 34%, var(--glow-blue), transparent 62%),
+    radial-gradient(45% 55% at 16% 84%, var(--glow-blue-deep), transparent 68%),
+    linear-gradient(180deg, var(--hero-top) 0%, var(--navy-950) 58%, var(--navy-950) 100%);
+}
+.beam {
+  position: absolute;
+  inset-inline: -20%;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent 4%, var(--beam-edge) 22%, var(--gold-300) 48%, var(--beam-tail) 72%, transparent 96%);
+  opacity: 0.85;
+}
+.beam--a { inset-block-start: 24%; transform: rotate(-13deg); }
+.beam--b { inset-block-start: 79%; transform: rotate(8deg); }
+.beam-glow {
+  position: absolute;
+  inset-inline: -20%;
+  height: 160px;
+  filter: blur(34px);
+  background: radial-gradient(50% 50% at 50% 50%, var(--glow-gold), transparent 72%);
+}
+.beam-glow--a { inset-block-start: 18%; }
+.beam-glow--b { inset-block-start: 74%; }
+
+.hero { position: relative; isolation: isolate; display: grid; place-items: center; overflow: hidden; background: var(--navy-950); color: var(--text-dark); }
+.hero--home { min-height: var(--hero-min); padding-block: var(--space-8) var(--space-9); }
+.hero--page {
+  min-height: var(--title-h);
+  padding-block: calc(var(--header-h) * 0.15) var(--space-6);
+  border-block-end: 1px solid var(--hairline-paper);
+  background: linear-gradient(180deg, var(--bg-title) 0%, var(--navy-950) 100%);
+}
+/* The beams cover the home field; the title band keeps its ruled gradient. */
+.hero--page .beams { background: none; }
+/* Lift the title above the z-index:0 beams layer. */
+.hero__page-inner { position: relative; z-index: 1; width: 100%; max-width: var(--page-max); padding-inline: var(--gutter); text-align: center; }
+.hero--page h1 { font-size: var(--text-h1); line-height: 1.2; letter-spacing: 0.055em; text-transform: uppercase; }
+.hero__lead { max-width: 58ch; margin: var(--space-3) auto 0; color: var(--text-muted-dark); font-size: var(--text-base); }
+
+.hero__lockup {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto 1px auto;
+  gap: clamp(1.25rem, 3vw, 2.25rem);
+  align-items: center;
+  padding-inline: var(--gutter);
+}
+.hero__seals { display: grid; gap: var(--space-3); justify-items: center; }
+.hero__seals img { width: clamp(56px, 5.8vw, 84px); height: auto; }
+.hero__rule { width: 1px; align-self: stretch; background: var(--rule-paper); }
+.hero__type { display: grid; gap: var(--space-2); }
+.hero__school,
+.hero__year {
+  font-family: var(--font-display);
+  /* 13px floor: the brief's 0.7rem start fell under the label minimum. */
+  font-size: clamp(0.8125rem, 0.9vw, 0.875rem);
+  line-height: 1.3;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.hero__wordmark {
+  font-family: var(--font-wordmark);
+  font-size: var(--text-wordmark);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.hero__year { color: var(--text-muted-dark); }
+
+.hero__scroll {
+  position: absolute;
+  inset-block-end: var(--space-5);
+  inset-inline-start: 50%;
+  translate: -50% 0;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--paper);
+  border-radius: 50%;
+  opacity: 0.85;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero__scroll svg { animation: nudge 2.4s var(--ease-out) infinite; }
+}
+@keyframes nudge {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+@media (max-width: 560px) {
+  .hero__lockup { grid-template-columns: 1fr; justify-items: start; gap: var(--space-5); }
+  .hero__seals { grid-auto-flow: column; gap: var(--space-4); }
+  .hero__rule { display: none; }
+}
+
+/* Masthead --------------------------------------------------------- */
+
+.masthead {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 50;
+  background: transparent;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .masthead { transition: background-color 200ms var(--ease-out), box-shadow 200ms var(--ease-out); }
+}
+.masthead[data-scrolled="true"] {
+  background: var(--masthead-bg);
+  box-shadow: 0 1px 0 var(--border-dark);
+  backdrop-filter: blur(10px);
+}
+.masthead__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  max-width: var(--page-max);
+  min-height: var(--header-h);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.brand { display: inline-flex; align-items: center; gap: var(--space-3); text-decoration: none; }
+.brand img { width: 40px; height: 40px; }
+.brand__name {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--text-dark);
+}
+.site-nav { display: flex; align-items: center; gap: var(--space-1); margin-inline-start: auto; }
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: var(--space-3);
+  color: var(--text-dark);
+  /* Controls stay at the 16px floor; the brief's 0.9375rem sat below it. */
+  font-size: var(--text-base);
+  font-weight: 500;
+  text-decoration: none;
+  border-block-end: 2px solid transparent;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .site-nav a { transition: color 150ms var(--ease-out), border-color 150ms var(--ease-out); }
+}
+@media (hover: hover) { .site-nav a:hover { border-block-end-color: var(--gold-300); } }
+.site-nav a[aria-current="page"] { border-block-end-color: var(--gold-300); }
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  margin-inline-start: auto;
+  background: transparent;
+  color: var(--text-dark);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+  font-size: 1.25rem;
+}
+
+@media (max-width: 899.98px) {
+  .menu-toggle { display: grid; place-items: center; }
+  .site-nav {
+    position: absolute;
+    inset-block-start: 100%;
+    inset-inline: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: var(--space-2) var(--gutter) var(--space-4);
+    background: var(--navy-900);
+    box-shadow: var(--shadow-panel);
+  }
+  .site-nav[data-open="true"] { display: flex; }
+  .site-nav a { min-height: 48px; padding-inline: 0; border-block-end: 1px solid var(--border-dark); }
+}
+
+/* Footer ----------------------------------------------------------- */
+
+.site-footer { background: var(--navy-950); color: var(--text-dark); border-block-start: 1px solid var(--border-dark); }
+.site-footer__inner {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding: var(--space-7) var(--gutter) var(--space-6);
+  text-align: center;
+}
+.site-footer__name { display: flex; align-items: center; gap: var(--space-3); max-width: 62ch; font-size: var(--text-base); }
+.site-footer__name img { width: 48px; height: 48px; }
+.site-footer__fb { width: min(100%, 560px); }
+.site-footer__note { color: var(--text-muted-dark); font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase; }
 
 .band { padding-block: clamp(2.5rem, 5vw, 4.5rem); }
 .band--navy { background: var(--bg-panel); color: var(--text-dark); }

@@ -1,5 +1,6 @@
-import { NavLink, Outlet } from "react-router-dom";
-import { APP_NAME, FACEBOOK_URL } from "../config";
+import { useEffect, useId, useRef, useState } from "react";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { FACEBOOK_URL } from "../config";
 
 const NAV = [
   ["/", "Home"],
@@ -12,32 +13,74 @@ const NAV = [
 ] as const;
 
 export function SiteLayout() {
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const menuId = useId();
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const { pathname } = useLocation();
+
+  useEffect(() => setOpen(false), [pathname]);
+
+  useEffect(() => {
+    const sentinel = document.getElementById("top-sentinel");
+    if (!sentinel) return;
+    const observer = new IntersectionObserver(([entry]) => setScrolled(!entry.isIntersecting), { threshold: 0 });
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        buttonRef.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+
   return (
     <div className="site">
       <a className="skip-link" href="#main">Skip to content</a>
-      <header className="masthead">
-        <div className="masthead-top">
-          <span>S.Y. 2026–2027</span>
-          <span>Benigno S. Aquino National High School</span>
-        </div>
-        <div className="masthead-main">
-          <NavLink to="/" className="wordmark">
-            <span className="wordmark-mark">SSLG</span>
-            <span className="wordmark-sub">Supreme Secondary Learner Government</span>
+      <div id="top-sentinel" aria-hidden="true" />
+      <header className="masthead" data-scrolled={scrolled}>
+        <div className="masthead__inner">
+          <NavLink to="/" className="brand" aria-label="BSANHS SSLG, home">
+            <img src="/brand/seal-sslg.png" alt="" width="40" height="40" />
+            <span className="brand__name">BSANHS</span>
           </NavLink>
-          <nav className="site-nav" aria-label="Primary">
+          <nav className="site-nav" aria-label="Primary" data-open={open} id={menuId}>
             {NAV.map(([to, label]) => (
               <NavLink key={to} to={to} end={to === "/"}>{label}</NavLink>
             ))}
           </nav>
+          <button
+            ref={buttonRef}
+            type="button"
+            className="menu-toggle"
+            aria-expanded={open}
+            aria-controls={menuId}
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span aria-hidden="true">{open ? "×" : "☰"}</span>
+          </button>
         </div>
       </header>
-      {/* tabIndex lets the skip link move keyboard focus, not just scroll. */}
       <main id="main" className="site-main" tabIndex={-1}><Outlet /></main>
       <footer className="site-footer">
-        <p>Benigno S. Aquino National High School Supreme Secondary Learner Government</p>
-        <p><a href={FACEBOOK_URL} rel="noreferrer">facebook.com/bsanhssslg</a></p>
-        <p className="footer-note">{APP_NAME} · Public records and activity reports</p>
+        <div className="site-footer__inner">
+          <p className="site-footer__name">
+            <img src="/brand/seal-sslg.png" alt="" width="48" height="48" />
+            <span>Benigno S. Aquino National High School Supreme Secondary Learner Government</span>
+          </p>
+          <a className="cta-bar site-footer__fb" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
+            <span>facebook.com/SSLGBSANHS</span>
+          </a>
+          <p className="site-footer__note">S.Y. 2026–2027 · Official website</p>
+        </div>
       </footer>
     </div>
   );
