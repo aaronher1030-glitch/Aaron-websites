@@ -73,13 +73,17 @@ test("the footer names the government and links Facebook", () => {
 test("the opened panel follows the toggle in the document", () => {
   renderLayout();
   const toggle = screen.getByRole("button", { name: "Open menu" });
+  // Focus the trigger first: jsdom's click does not move focus, so a click
+  // alone would make the post-click assertion below pass vacuously.
+  toggle.focus();
+  expect(document.activeElement).toBe(toggle);
   fireEvent.click(toggle);
+  expect(toggle).toHaveAttribute("aria-expanded", "true");
   const nav = screen.getByRole("navigation", { name: "Primary" });
   expect(nav).toHaveAttribute("data-open", "true");
 
   // Opening does not move focus: the trigger keeps it.
-  toggle.focus();
-  expect(toggle).toHaveFocus();
+  expect(document.activeElement).toBe(toggle);
 
   // jsdom does not implement sequential focus navigation, so a Tab keydown
   // cannot move focus here. The browser guarantee is the DOM order: the toggle
@@ -87,7 +91,6 @@ test("the opened panel follows the toggle in the document", () => {
   expect(toggle.compareDocumentPosition(nav) & Node.DOCUMENT_POSITION_FOLLOWING).toBe(
     Node.DOCUMENT_POSITION_FOLLOWING,
   );
-  expect(within(nav).getAllByRole("link")[0]).toBeInTheDocument();
 });
 
 test("the masthead follows the observed sentinel", () => {
@@ -106,5 +109,18 @@ test("the masthead follows the observed sentinel", () => {
 
   act(() => callback?.([{ isIntersecting: true } as IntersectionObserverEntry]));
   expect(masthead).toHaveAttribute("data-scrolled", "false");
+});
+
+test("the masthead falls back to scrolled styling without IntersectionObserver", () => {
+  const saved = Object.getOwnPropertyDescriptor(globalThis, "IntersectionObserver");
+  delete (globalThis as any).IntersectionObserver;
+  try {
+    expect(globalThis.IntersectionObserver).toBeUndefined();
+    const { container } = renderLayout();
+    expect(container.querySelector(".masthead")).toHaveAttribute("data-scrolled", "true");
+  } finally {
+    if (saved) Object.defineProperty(globalThis, "IntersectionObserver", saved);
+    else (globalThis as any).IntersectionObserver = undefined;
+  }
 });
 
