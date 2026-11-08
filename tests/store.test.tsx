@@ -42,12 +42,17 @@ test("hydrates the default store when nothing is persisted", () => {
   expect(typeof result.current.store.createdAt).toBe("number");
 });
 
-test("exposes exactly the store, attempt, drill, and stash APIs", () => {
+test("exposes exactly the full store surface", () => {
   const { result } = renderHook(() => useStore(), { wrapper });
 
   expect(Object.keys(result.current).sort()).toEqual([
+    "clearReview",
     "createDrill",
+    "exportData",
+    "importData",
     "recordAttempt",
+    "reset",
+    "setTheme",
     "store",
     "toggleStash",
     "updateDrill",
@@ -211,4 +216,154 @@ test("blocked storage does not crash the provider and state still updates in mem
 
 test("useStore outside a provider fails loudly", () => {
   expect(() => renderHook(() => useStore())).toThrow(/StoreProvider/);
+});
+
+test("recordAttempt upserts a review item carrying the attempt qid in every mode", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+
+  for (const mode of ["single", "practice", "timed"] as const) {
+    act(() => result.current.recordAttempt({ ...attempt, qid: `q-${mode}`, mode, correct: false }));
+  }
+
+  expect(result.current.store.review.map((item) => item.qid).sort()).toEqual([
+    "q-practice",
+    "q-single",
+    "q-timed",
+  ]);
+  for (const item of result.current.store.review) {
+    expect(item.qid).not.toBe("");
+    expect(item.step).toBe(0);
+  }
+
+  // A repeat attempt upserts the same qid rather than appending a duplicate.
+  act(() => result.current.recordAttempt({ ...attempt, qid: "q-single", correct: true }));
+  expect(result.current.store.review).toHaveLength(3);
+  const single = result.current.store.review.find((item) => item.qid === "q-single")!;
+  expect(single.step).toBe(1);
+  expect(JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "{}").review).toHaveLength(3);
+});
+
+test("clearReview removes one review item, persists, and ignores unknown ids", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+  act(() => {
+    result.current.recordAttempt({ ...attempt, qid: "q-1", correct: false });
+    result.current.recordAttempt({ ...attempt, qid: "q-2", correct: false });
+  });
+
+  act(() => result.current.clearReview("q-1"));
+  expect(result.current.store.review.map((item) => item.qid)).toEqual(["q-2"]);
+  expect(JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "{}").review.map((item: { qid: string }) => item.qid)).toEqual(["q-2"]);
+
+  act(() => result.current.clearReview("ghost"));
+  expect(result.current.store.review).toHaveLength(1);
+});
+
+test("exportData serializes the current store as JSON", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+  act(() => result.current.recordAttempt(attempt));
+
+  const json = result.current.exportData();
+  expect(typeof json).toBe("string");
+  const parsed = JSON.parse(json);
+  expect(parsed.version).toBe(1);
+  expect(parsed.attempts).toEqual([attempt]);
+});
+
+test("importData replaces the store when the payload is valid", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+  const payload = {
+    version: 1,
+    attempts: [attempt],
+    drills: [],
+    review: [{ qid: "q-1", dueAt: 5, step: 0, lastSeen: 1 }],
+    stashed: ["q-9"],
+    theme: "light",
+    createdAt: 42,
+  };
+
+  let ok = false;
+  act(() => {
+    ok = result.current.importData(JSON.stringify(payload));
+  });
+
+  expect(ok).toBe(true);
+  expect(result.current.store.attempts).toEqual([attempt]);
+  expect(result.current.store.stashed).toEqual(["q-9"]);
+  expect(result.current.store.review).toEqual(payload.review);
+  expect(result.current.store.createdAt).toBe(42);
+  expect(JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "{}").attempts).toEqual([attempt]);
+});
+
+test("importData rejects invalid payloads and leaves the store unchanged", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+  act(() => result.current.recordAttempt(attempt));
+  const before = result.current.store;
+
+  const badPayloads = [
+    "{not json",
+    JSON.stringify({ version: 2, attempts: [], drills: [], review: [], stashed: [] }),
+    JSON.stringify({ version: 1, attempts: "nope", drills: [], review: [], stashed: [] }),
+    JSON.stringify({ version: 1, attempts: [], drills: [], review: [], stashed: "nope" }),
+  ];
+  for (const bad of badPayloads) {
+    let ok = true;
+    act(() => {
+      ok = result.current.importData(bad);
+    });
+    expect(ok).toBe(false);
+    expect(result.current.store).toEqual(before);
+  }
+});
+
+test("reset restores fresh defaults with a new createdAt", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+  act(() => {
+    result.current.recordAttempt(attempt);
+    result.current.toggleStash("q-1");
+  });
+  const oldCreated = result.current.store.createdAt;
+  vi.spyOn(Date, "now").mockReturnValue(oldCreated + 1000);
+
+  act(() => result.current.reset());
+
+  expect(result.current.store).toMatchObject({
+    version: 1,
+    attempts: [],
+    drills: [],
+    review: [],
+    stashed: [],
+    theme: "auto",
+    createdAt: oldCreated + 1000,
+  });
+  expect(JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "{}").attempts).toEqual([]);
+});
+
+test("setTheme writes store.theme and delegates light/dark to the theme module", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+
+  act(() => result.current.setTheme("dark"));
+  expect(result.current.store.theme).toBe("dark");
+  expect(document.documentElement.dataset.theme).toBe("dark");
+  expect(window.localStorage.getItem("chembank:theme")).toBe("dark");
+
+  act(() => result.current.setTheme("light"));
+  expect(result.current.store.theme).toBe("light");
+  expect(document.documentElement.dataset.theme).toBe("light");
+  expect(window.localStorage.getItem("chembank:theme")).toBe("light");
+});
+
+test("setTheme auto clears the stored override and applies the system theme", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+  act(() => result.current.setTheme("dark"));
+  act(() => result.current.setTheme("auto"));
+
+  expect(result.current.store.theme).toBe("auto");
+  expect(window.localStorage.getItem("chembank:theme")).toBeNull();
+  expect(["light", "dark"]).toContain(document.documentElement.dataset.theme);
+});
+
+test("the provider hydrates store.theme from the stored theme override", () => {
+  window.localStorage.setItem("chembank:theme", "dark");
+  const { result } = renderHook(() => useStore(), { wrapper });
+  expect(result.current.store.theme).toBe("dark");
 });

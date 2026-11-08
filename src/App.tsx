@@ -4,7 +4,10 @@ import Bank from "./pages/Bank";
 import Drill from "./pages/Drill";
 import Home from "./pages/Home";
 import Practice from "./pages/Practice";
+import Progress from "./pages/Progress";
 import QuestionPage from "./pages/QuestionPage";
+import Results from "./pages/Results";
+import Review from "./pages/Review";
 import { StoreProvider } from "./store";
 
 function Placeholder({ name }: { name: string }) {
@@ -31,9 +34,9 @@ export default function App() {
           <Route path="q/:id" element={<QuestionPage />} />
           <Route path="practice" element={<Practice />} />
           <Route path="drill/:id" element={<Drill />} />
-          <Route path="drill/:id/results" element={<Placeholder name="Results" />} />
-          <Route path="progress" element={<Placeholder name="Progress" />} />
-          <Route path="review" element={<Placeholder name="Review" />} />
+          <Route path="drill/:id/results" element={<Results />} />
+          <Route path="progress" element={<Progress />} />
+          <Route path="review" element={<Review />} />
           <Route path="notes" element={<Placeholder name="Notes" />} />
           <Route path="notes/:slug" element={<Placeholder name="Note" />} />
           <Route path="lab" element={<Placeholder name="Lab bench" />} />

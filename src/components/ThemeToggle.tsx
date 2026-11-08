@@ -1,17 +1,14 @@
-import { useState } from "react";
-import { applyTheme, resolveTheme, storeTheme, type Theme } from "../theme";
+import { useStore } from "../store";
+import { systemTheme } from "../theme";
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>(() => resolveTheme());
+  const { store, setTheme } = useStore();
+  const effective = store.theme === "auto" ? systemTheme() : store.theme;
+  const dark = effective === "dark";
 
   function handleToggle() {
-    const next: Theme = theme === "dark" ? "light" : "dark";
-    setTheme(next);
-    applyTheme(next);
-    storeTheme(next);
+    setTheme(dark ? "light" : "dark");
   }
-
-  const dark = theme === "dark";
 
   return (
     <button

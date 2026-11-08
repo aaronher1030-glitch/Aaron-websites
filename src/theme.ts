@@ -46,6 +46,14 @@ export function storeTheme(theme: Theme): void {
   }
 }
 
+export function clearStoredTheme(): void {
+  try {
+    storage()?.removeItem(STORAGE_KEY);
+  } catch {
+    // Private mode or blocked storage: nothing to clear.
+  }
+}
+
 export function initTheme(): void {
   applyTheme(resolveTheme());
 }

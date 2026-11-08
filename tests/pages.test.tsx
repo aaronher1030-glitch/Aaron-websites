@@ -1457,3 +1457,325 @@ test("a finished drill links to its results instead of replaying", () => {
     screen.getByRole("link", { name: /back to practice/i }),
   ).toHaveAttribute("href", "/practice");
 });
+
+/* ---------------------------------------------------------------
+   Results, Progress, Review
+   --------------------------------------------------------------- */
+
+function mkAttempt(qid: string, correct: boolean, ts = 1): import("../src/data/types").Attempt {
+  return { qid, correct, answer: correct ? "A" : "B", ts, elapsedSec: 1, mode: "single" };
+}
+
+const letterOf = (q: import("../src/data/types").Question) => String.fromCharCode(65 + q.answer);
+const wrongOf = (q: import("../src/data/types").Question) => String.fromCharCode(65 + ((q.answer + 1) % 4));
+
+function resultsFixture(overrides: Record<string, unknown> = {}) {
+  const [a, b, c] = QUESTIONS;
+  return {
+    id: "results-drill",
+    name: "Results fixture",
+    mode: "practice",
+    qids: [a.id, b.id, c.id],
+    answers: { [a.id]: letterOf(a), [b.id]: wrongOf(b), [c.id]: letterOf(c) },
+    checked: {},
+    flagged: {},
+    strikes: {},
+    index: 0,
+    limitSec: 0,
+    elapsedSec: 65,
+    startedAt: 1,
+    finishedAt: 66,
+    done: true,
+    ...overrides,
+  };
+}
+
+test("a finished drill shows score, accuracy, time, mode, and per-question review", () => {
+  const [a, b, c] = QUESTIONS;
+  seedStore({ drills: [resultsFixture()] });
+  renderAt("/drill/results-drill/results");
+
+  expect(screen.getByRole("heading", { level: 1, name: /results/i })).toBeInTheDocument();
+  const score = within(document.querySelector(".results-score") as HTMLElement);
+  expect(score.getByText("2/3")).toBeInTheDocument();
+  expect(score.getByText("67%")).toBeInTheDocument();
+  expect(score.getByText("1:05")).toBeInTheDocument();
+  expect(score.getByText("Practice mode")).toBeInTheDocument();
+
+  const items = document.querySelectorAll(".results-question");
+  expect(items).toHaveLength(3);
+  const wrongItem = document.querySelector(`.results-question[data-qid="${b.id}"]`) as HTMLElement;
+  expect(wrongItem).toHaveAttribute("data-verdict", "wrong");
+  expect(within(wrongItem).getByText(/Chosen/)).toHaveTextContent(wrongOf(b));
+  expect(within(wrongItem).getByText(/Correct/)).toHaveTextContent(letterOf(b));
+  expect(wrongItem.querySelectorAll("p.solution-paragraph").length).toBeGreaterThanOrEqual(1);
+  expect(document.querySelector(`.results-question[data-qid="${a.id}"]`)).toHaveAttribute("data-verdict", "correct");
+  expect(document.querySelector(`.results-question[data-qid="${c.id}"]`)).toHaveAttribute("data-verdict", "correct");
+});
+
+test("Repair wrong starts a practice drill of only the incorrect qids", async () => {
+  const [, b] = QUESTIONS;
+  seedStore({ drills: [resultsFixture()] });
+  const user = userEvent.setup();
+  renderAt("/drill/results-drill/results");
+
+  await user.click(screen.getByRole("button", { name: /repair wrong/i }));
+
+  const drills = readPersisted().drills;
+  expect(drills).toHaveLength(2);
+  const repair = drills[1];
+  expect(repair.qids).toEqual([b.id]);
+  expect(repair.mode).toBe("practice");
+  expect(repair.limitSec).toBe(0);
+  expect(screen.getByTestId("location-pathname").textContent).toBe(`/drill/${repair.id}`);
+});
+
+test("Repair wrong is hidden when every answer is correct", () => {
+  const [a, b, c] = QUESTIONS;
+  seedStore({
+    drills: [resultsFixture({ answers: { [a.id]: letterOf(a), [b.id]: letterOf(b), [c.id]: letterOf(c) } })],
+  });
+  renderAt("/drill/results-drill/results");
+
+  expect(screen.queryByRole("button", { name: /repair wrong/i })).not.toBeInTheDocument();
+});
+
+test("Retry reshuffles the same qids in the same mode and limit", async () => {
+  const [a, b, c] = QUESTIONS;
+  seedStore({ drills: [resultsFixture({ mode: "timed", limitSec: 270 })] });
+  const user = userEvent.setup();
+  renderAt("/drill/results-drill/results");
+
+  await user.click(screen.getByRole("button", { name: /^retry$/i }));
+
+  const drills = readPersisted().drills;
+  expect(drills).toHaveLength(2);
+  const retry = drills[1];
+  expect([...retry.qids].sort()).toEqual([a.id, b.id, c.id].sort());
+  expect(retry.mode).toBe("timed");
+  expect(retry.limitSec).toBe(270);
+  expect(retry.id).not.toBe("results-drill");
+  expect(screen.getByTestId("location-pathname").textContent).toBe(`/drill/${retry.id}`);
+});
+
+test("an unfinished drill links back to the player from results", () => {
+  seedStore({ drills: [resultsFixture({ done: false, finishedAt: undefined })] });
+  renderAt("/drill/results-drill/results");
+
+  expect(screen.getByRole("link", { name: /resume drill/i })).toHaveAttribute(
+    "href",
+    "/drill/results-drill",
+  );
+});
+
+test("an unknown results id shows not-found with a way back to practice", () => {
+  renderAt("/drill/nope/results");
+
+  expect(screen.getByRole("heading", { level: 1, name: /not found/i })).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /back to practice/i })).toHaveAttribute("href", "/practice");
+});
+
+test("progress shows KPIs, the accuracy ring, and the local-only sync line", () => {
+  const [a, b] = QUESTIONS;
+  seedStore({ attempts: [mkAttempt(a.id, true), mkAttempt(b.id, false)] });
+  renderAt("/progress");
+
+  expect(screen.getByRole("heading", { level: 1, name: /progress/i })).toBeInTheDocument();
+  expect(screen.getByText("Local only — sync arrives in a later build")).toBeInTheDocument();
+  expect(screen.getByRole("img", { name: "Overall accuracy, 50%" })).toBeInTheDocument();
+  expect(document.querySelector('[data-kpi="attempted"]')?.textContent).toContain("2");
+  expect(document.querySelector('[data-kpi="due"]')?.textContent).toContain("0");
+});
+
+test("weakest topics offer a drill of the topic qids", async () => {
+  const kinetics = QUESTIONS.filter((q) => q.topic === "Kinetics");
+  seedStore({ attempts: [mkAttempt(kinetics[0].id, false), mkAttempt(kinetics[1].id, false)] });
+  const user = userEvent.setup();
+  renderAt("/progress");
+
+  const buttons = screen.getAllByRole("button", { name: /drill this/i });
+  expect(buttons).toHaveLength(1);
+  await user.click(buttons[0]);
+
+  const drill = readPersisted().drills[0];
+  expect(drill.mode).toBe("practice");
+  expect(drill.limitSec).toBe(0);
+  expect(drill.qids).toEqual(kinetics.map((q) => q.id));
+  expect(screen.getByTestId("location-pathname").textContent).toBe(`/drill/${drill.id}`);
+});
+
+test("a strong topic is not listed as weak", () => {
+  const gases = QUESTIONS.filter((q) => q.topic === "Gases");
+  seedStore({ attempts: [mkAttempt(gases[0].id, true), mkAttempt(gases[1].id, true)] });
+  renderAt("/progress");
+
+  expect(screen.queryByRole("button", { name: /drill this/i })).not.toBeInTheDocument();
+});
+
+test("progress lists the ten most recent attempts", () => {
+  const attempts = QUESTIONS.slice(0, 12).map((q, i) => mkAttempt(q.id, i % 2 === 0, i + 1));
+  seedStore({ attempts });
+  renderAt("/progress");
+
+  const recent = screen.getByRole("list", { name: /recent attempts/i });
+  expect(within(recent).getAllByRole("listitem")).toHaveLength(10);
+});
+
+test("progress exports the store as a JSON download", async () => {
+  seedStore({ attempts: [mkAttempt(QUESTIONS[0].id, true)] });
+  const createObjectURL = vi.fn(() => "blob:chembank");
+  const revokeObjectURL = vi.fn();
+  const originalCreate = URL.createObjectURL;
+  const originalRevoke = URL.revokeObjectURL;
+  URL.createObjectURL = createObjectURL;
+  URL.revokeObjectURL = revokeObjectURL;
+  const clickSpy = vi.spyOn(HTMLAnchorElement.prototype, "click").mockImplementation(() => {});
+  try {
+    const user = userEvent.setup();
+    renderAt("/progress");
+    await user.click(screen.getByRole("button", { name: /export/i }));
+    expect(createObjectURL).toHaveBeenCalled();
+    expect(clickSpy).toHaveBeenCalled();
+  } finally {
+    URL.createObjectURL = originalCreate;
+    URL.revokeObjectURL = originalRevoke;
+  }
+});
+
+test("progress imports a valid file and reports failure on a bad one", async () => {
+  const user = userEvent.setup();
+  renderAt("/progress");
+  const input = document.querySelector('input[type="file"]') as HTMLInputElement;
+  expect(input).not.toBeNull();
+
+  const payload = JSON.stringify({
+    version: 1,
+    attempts: [mkAttempt(QUESTIONS[0].id, true)],
+    drills: [],
+    review: [],
+    stashed: [],
+    theme: "auto",
+    createdAt: 5,
+  });
+  await user.upload(input, new File([payload], "export.json", { type: "application/json" }));
+  expect(await screen.findByText(/imported/i)).toBeInTheDocument();
+  expect(readPersisted().attempts).toHaveLength(1);
+
+  await user.upload(input, new File(["{not json"], "bad.json", { type: "application/json" }));
+  expect(await screen.findByText(/import failed/i)).toBeInTheDocument();
+  expect(readPersisted().attempts).toHaveLength(1);
+});
+
+test("progress reset asks for confirmation and clears the notebook", async () => {
+  seedStore({ attempts: [mkAttempt(QUESTIONS[0].id, true)], stashed: [QUESTIONS[1].id] });
+  const user = userEvent.setup();
+  renderAt("/progress");
+
+  await user.click(screen.getByRole("button", { name: /^reset$/i }));
+  const dialog = screen.getByRole("dialog");
+  expect(dialog).toHaveAttribute("aria-modal", "true");
+  await user.click(within(dialog).getByRole("button", { name: /keep/i }));
+  expect(readPersisted().attempts).toHaveLength(1);
+
+  await user.click(screen.getByRole("button", { name: /^reset$/i }));
+  await user.click(within(screen.getByRole("dialog")).getByRole("button", { name: /reset everything/i }));
+  expect(readPersisted().attempts).toEqual([]);
+  expect(readPersisted().stashed).toEqual([]);
+});
+
+test("review tabs show counts and switch between wrong, flagged, and due", async () => {
+  const [a, b, c] = QUESTIONS;
+  const now = Date.now();
+  seedStore({
+    attempts: [mkAttempt(a.id, false), mkAttempt(b.id, true)],
+    stashed: [c.id],
+    review: [{ qid: a.id, dueAt: now - 1000, step: 0, lastSeen: now - 2000 }],
+  });
+  const user = userEvent.setup();
+  renderAt("/review");
+
+  expect(screen.getByRole("heading", { level: 1, name: /review/i })).toBeInTheDocument();
+  const wrongTab = screen.getByRole("tab", { name: /wrong/i });
+  expect(wrongTab).toHaveAttribute("aria-selected", "true");
+  expect(wrongTab.textContent).toContain("1");
+  expect(screen.getByRole("tab", { name: /flagged/i }).textContent).toContain("1");
+  expect(screen.getByRole("tab", { name: /due/i }).textContent).toContain("1");
+
+  await user.click(screen.getByRole("tab", { name: /flagged/i }));
+  expect(screen.getByRole("tab", { name: /flagged/i })).toHaveAttribute("aria-selected", "true");
+  await user.click(screen.getByRole("tab", { name: /due/i }));
+  expect(screen.getByRole("tab", { name: /due/i })).toHaveAttribute("aria-selected", "true");
+});
+
+test("review items show a stem preview and the last result", () => {
+  const a = QUESTIONS[0];
+  seedStore({ attempts: [mkAttempt(a.id, false)] });
+  renderAt("/review");
+
+  const item = document.querySelector(`[data-qid="${a.id}"]`);
+  expect(item).not.toBeNull();
+  expect(item?.textContent).toContain(a.topic);
+  expect(item?.textContent).toMatch(/wrong/i);
+});
+
+test("Remove on the flagged tab unstashes the item", async () => {
+  const c = QUESTIONS[2];
+  seedStore({ stashed: [c.id] });
+  const user = userEvent.setup();
+  renderAt("/review");
+
+  await user.click(screen.getByRole("tab", { name: /flagged/i }));
+  await user.click(screen.getByRole("button", { name: /remove/i }));
+  expect(readPersisted().stashed).toEqual([]);
+});
+
+test("Remove on the due tab clears the review item", async () => {
+  const a = QUESTIONS[0];
+  const now = Date.now();
+  seedStore({ review: [{ qid: a.id, dueAt: now - 1000, step: 0, lastSeen: 0 }] });
+  const user = userEvent.setup();
+  renderAt("/review");
+
+  await user.click(screen.getByRole("tab", { name: /due/i }));
+  await user.click(screen.getByRole("button", { name: /remove/i }));
+  expect(readPersisted().review).toEqual([]);
+});
+
+test("Review due starts a practice drill of the due qids, oldest first", async () => {
+  const [a, b] = QUESTIONS;
+  const now = Date.now();
+  seedStore({
+    review: [
+      { qid: b.id, dueAt: now - 1000, step: 0, lastSeen: 0 },
+      { qid: a.id, dueAt: now - 5000, step: 0, lastSeen: 0 },
+    ],
+  });
+  const user = userEvent.setup();
+  renderAt("/review");
+
+  const button = screen.getByRole("button", { name: /review due/i });
+  expect(button).toBeEnabled();
+  await user.click(button);
+
+  const drill = readPersisted().drills[0];
+  expect(drill.qids).toEqual([a.id, b.id]);
+  expect(drill.mode).toBe("practice");
+  expect(drill.limitSec).toBe(0);
+  expect(screen.getByTestId("location-pathname").textContent).toBe(`/drill/${drill.id}`);
+});
+
+test("Review due is disabled when nothing is due", () => {
+  renderAt("/review");
+  expect(screen.getByRole("button", { name: /review due/i })).toBeDisabled();
+});
+
+test("review shows honest empty states on a fresh store", async () => {
+  const user = userEvent.setup();
+  renderAt("/review");
+
+  expect(screen.getByText(/no wrong answers/i)).toBeInTheDocument();
+  await user.click(screen.getByRole("tab", { name: /flagged/i }));
+  expect(screen.getByText(/nothing stashed/i)).toBeInTheDocument();
+  await user.click(screen.getByRole("tab", { name: /due/i }));
+  expect(screen.getByText(/nothing is due/i)).toBeInTheDocument();
+});
