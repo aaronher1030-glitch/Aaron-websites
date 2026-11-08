@@ -179,12 +179,12 @@
   margin-inline-start: auto;
   background: transparent;
   color: var(--text-dark);
-  border: 1px solid var(--border-dark);
+  border: 1px solid var(--border-strong-dark);
   border-radius: var(--radius-sm);
   font-size: 1.25rem;
 }
 
-@media (max-width: 899.98px) {
+@media (max-width: 1023.98px) {
   .menu-toggle { display: grid; place-items: center; }
   .site-nav {
     position: absolute;

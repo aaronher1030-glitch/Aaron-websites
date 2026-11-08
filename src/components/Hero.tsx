@@ -23,7 +23,7 @@ export function HomeHero() {
         <span className="hero__rule" aria-hidden="true" />
         <div className="hero__type">
           <p className="hero__school">Benigno S. Aquino National High School</p>
-          <h1 id="hero-title" className="hero__wordmark">
+          <h1 id="hero-title" className="hero__wordmark" aria-label="Supreme Secondary Learner Government">
             Supreme<br />Secondary<br />Learner<br />Government
           </h1>
           <p className="hero__year">School Year 2026–2027</p>

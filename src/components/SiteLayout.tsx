@@ -22,6 +22,13 @@ export function SiteLayout() {
   useEffect(() => setOpen(false), [pathname]);
 
   useEffect(() => {
+    // Without IntersectionObserver the masthead would never leave its
+    // transparent state; fall back to the scrolled styling rather than a
+    // transparent bar over page content.
+    if (typeof IntersectionObserver === "undefined") {
+      setScrolled(true);
+      return;
+    }
     const sentinel = document.getElementById("top-sentinel");
     if (!sentinel) return;
     const observer = new IntersectionObserver(([entry]) => setScrolled(!entry.isIntersecting), { threshold: 0 });
@@ -51,11 +58,8 @@ export function SiteLayout() {
             <img src="/brand/seal-sslg.png" alt="" width="40" height="40" />
             <span className="brand__name">BSANHS</span>
           </NavLink>
-          <nav className="site-nav" aria-label="Primary" data-open={open} id={menuId}>
-            {NAV.map(([to, label]) => (
-              <NavLink key={to} to={to} end={to === "/"}>{label}</NavLink>
-            ))}
-          </nav>
+          {/* The toggle precedes the nav so forward Tab from the trigger enters
+              the opened panel. It is display:none above the breakpoint. */}
           <button
             ref={buttonRef}
             type="button"
@@ -67,6 +71,11 @@ export function SiteLayout() {
           >
             <span aria-hidden="true">{open ? "×" : "☰"}</span>
           </button>
+          <nav className="site-nav" aria-label="Primary" data-open={open} id={menuId}>
+            {NAV.map(([to, label]) => (
+              <NavLink key={to} to={to} end={to === "/"}>{label}</NavLink>
+            ))}
+          </nav>
         </div>
       </header>
       <main id="main" className="site-main" tabIndex={-1}><Outlet /></main>

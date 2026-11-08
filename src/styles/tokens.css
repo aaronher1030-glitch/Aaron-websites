@@ -36,6 +36,7 @@
   --link-underline-dark: color-mix(in srgb, var(--gold-300) 70%, transparent);
   --link-underline-light: color-mix(in srgb, var(--navy-950) 55%, transparent);
   --border-dark: rgba(249, 249, 249, 0.16);
+  --border-strong-dark: color-mix(in srgb, var(--paper) 45%, transparent);
   --border-light: rgba(10, 28, 61, 0.16);
   --accent: var(--gold-500);
   --accent-soft: var(--gold-300);

@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, within } from "@testing-library/react";
+import { act, fireEvent, render, screen, within } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { SiteLayout } from "../src/components/SiteLayout";
 
@@ -69,3 +69,42 @@ test("the footer names the government and links Facebook", () => {
   expect(screen.getByText(/Benigno S\. Aquino National High School Supreme Secondary Learner Government/i)).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /facebook\.com\/SSLGBSANHS/i })).toHaveAttribute("href", "https://www.facebook.com/SSLGBSANHS");
 });
+
+test("the opened panel follows the toggle in the document", () => {
+  renderLayout();
+  const toggle = screen.getByRole("button", { name: "Open menu" });
+  fireEvent.click(toggle);
+  const nav = screen.getByRole("navigation", { name: "Primary" });
+  expect(nav).toHaveAttribute("data-open", "true");
+
+  // Opening does not move focus: the trigger keeps it.
+  toggle.focus();
+  expect(toggle).toHaveFocus();
+
+  // jsdom does not implement sequential focus navigation, so a Tab keydown
+  // cannot move focus here. The browser guarantee is the DOM order: the toggle
+  // precedes the nav, so forward Tab from the opened trigger enters the panel.
+  expect(toggle.compareDocumentPosition(nav) & Node.DOCUMENT_POSITION_FOLLOWING).toBe(
+    Node.DOCUMENT_POSITION_FOLLOWING,
+  );
+  expect(within(nav).getAllByRole("link")[0]).toBeInTheDocument();
+});
+
+test("the masthead follows the observed sentinel", () => {
+  const { container } = renderLayout();
+  const masthead = container.querySelector(".masthead");
+  expect(masthead).toHaveAttribute("data-scrolled", "false");
+
+  // The stub observed the element the component picked; it must be the sentinel.
+  expect(globalThis.__ioObserved.map((el) => el.id)).toContain("top-sentinel");
+
+  const callback = globalThis.__ioCallbacks.at(-1);
+  expect(callback).toBeTypeOf("function");
+
+  act(() => callback?.([{ isIntersecting: false } as IntersectionObserverEntry]));
+  expect(masthead).toHaveAttribute("data-scrolled", "true");
+
+  act(() => callback?.([{ isIntersecting: true } as IntersectionObserverEntry]));
+  expect(masthead).toHaveAttribute("data-scrolled", "false");
+});
+
