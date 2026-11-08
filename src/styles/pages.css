@@ -15,3 +15,98 @@
 .page > p {
   max-width: var(--measure);
 }
+
+/* Album grid — page-specific composition for /photos. Three columns at
+ * wide widths, two from 560px and one below; the covers keep a hairline
+ * edge so a pale photograph still separates from the navy band. */
+
+.album-year + .album-year { margin-block-start: var(--space-7); }
+.album-year > h2 { margin-block-end: var(--space-4); }
+.album-term + .album-term { margin-block-start: var(--space-5); }
+.album-term > h3 {
+  margin-block-end: var(--space-3);
+  color: var(--text-muted-dark);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 560px) {
+  .album-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 896px) {
+  .album-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-5); }
+}
+
+.album-card {
+  display: grid;
+  gap: var(--space-2);
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+.album-card .smart-image,
+.album-plate {
+  outline: 1px solid var(--border-dark);
+  outline-offset: -1px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .album-card .smart-image { transition: outline-color 180ms var(--ease-out); }
+}
+@media (hover: hover) {
+  .album-card:hover .smart-image { outline-color: var(--accent-soft); }
+  .album-card:hover .album-card__name {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-soft);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+  }
+}
+.album-card[aria-expanded="true"] .album-card__name {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-soft);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+.album-card__name {
+  color: var(--text-dark);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.album-card__count {
+  color: var(--text-muted-dark);
+  font-size: var(--text-xs);
+  letter-spacing: 0.02em;
+}
+
+.album-plate {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  background: var(--bg-panel);
+  border-radius: var(--radius-sm);
+}
+.album-plate__initials {
+  color: var(--accent-soft);
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}

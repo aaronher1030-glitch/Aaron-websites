@@ -286,3 +286,304 @@
 @media (hover: hover) {
   .cta-bar:hover { background: var(--gold-300); color: var(--on-accent); }
 }
+
+/* ------------------------------------------------------------------ *
+ * Media layer — SmartImage, photo grid and lightbox, the inline album
+ * panel and the shared loading/empty states. Covers sit on navy, so
+ * every edge uses a semantic token rather than a literal colour.
+ * ------------------------------------------------------------------ */
+
+/* SmartImage ------------------------------------------------------- */
+
+.smart-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--white) 6%, var(--bg-panel));
+  border-radius: var(--radius-sm);
+}
+.smart-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+.smart-image[data-status="ready"] > img { opacity: 1; }
+.smart-image__skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 18%,
+    color-mix(in srgb, var(--paper) 10%, transparent) 50%,
+    transparent 82%
+  );
+}
+@media (prefers-reduced-motion: no-preference) {
+  .smart-image > img { transition: opacity 320ms var(--ease-out); }
+  .smart-image__skeleton { animation: shimmer 1.8s linear infinite; }
+}
+@keyframes shimmer {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+.smart-image--error {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  background: var(--bg-panel);
+  outline: 1px solid var(--border-dark);
+  outline-offset: -1px;
+}
+.smart-image__alt {
+  color: var(--text-muted-dark);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.smart-image__label {
+  color: var(--text-muted-dark);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Photo grid ------------------------------------------------------- */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.photo-grid__button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: var(--radius-sm);
+  color: inherit;
+  cursor: pointer;
+}
+.photo-grid__button .smart-image {
+  outline: 1px solid var(--border-dark);
+  outline-offset: -1px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .photo-grid__button .smart-image { transition: outline-color 180ms var(--ease-out); }
+}
+@media (hover: hover) {
+  .photo-grid__button:hover .smart-image { outline-color: var(--accent-soft); }
+}
+
+/* Lightbox --------------------------------------------------------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--gutter);
+  background: color-mix(in srgb, var(--navy-950) 92%, transparent);
+  backdrop-filter: blur(6px);
+  color: var(--text-dark);
+}
+.lightbox__dialog {
+  display: grid;
+  gap: var(--space-3);
+  width: min(100%, 1100px);
+  max-height: calc(100svh - var(--gutter) * 2);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.lightbox__bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.lightbox__name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  font-family: var(--font-ui);
+  font-size: var(--text-base);
+  font-weight: 500;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lightbox__control {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--border-strong-dark);
+  border-radius: var(--radius-sm);
+  color: var(--text-dark);
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .lightbox__control:hover { border-color: var(--accent-soft); color: var(--accent-soft); }
+}
+.lightbox__stage { display: grid; place-items: center; min-height: 0; }
+.lightbox__image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: min(72svh, 780px);
+  object-fit: contain;
+  background: var(--bg-panel);
+  border-radius: var(--radius-sm);
+}
+.lightbox__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+}
+.lightbox__counter {
+  color: var(--text-muted-dark);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Inline album panel ----------------------------------------------- */
+
+.album-panel {
+  display: grid;
+  gap: var(--space-4);
+  margin-block-start: var(--space-6);
+  padding: var(--space-5);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+  scroll-margin-block-start: calc(var(--header-h) + var(--space-4));
+}
+.album-panel-host:empty { display: none; }
+.album-panel__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+.album-panel__name {
+  flex: 1 1 12ch;
+  min-width: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.album-panel__close {
+  flex: none;
+  min-height: 44px;
+  padding-inline: var(--space-4);
+  background: transparent;
+  border: 1px solid var(--border-strong-dark);
+  border-radius: var(--radius-sm);
+  color: var(--text-dark);
+  font-size: var(--text-base);
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .album-panel__close:hover { border-color: var(--accent-soft); color: var(--accent-soft); }
+}
+
+/* Loading and empty states ----------------------------------------- */
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 44px;
+  color: var(--text-muted-dark);
+}
+.loading__dots {
+  display: grid;
+  grid-template-columns: repeat(3, 6px);
+  gap: 4px;
+  width: 26px;
+}
+.loading__dot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent-soft);
+  border-radius: 50%;
+  opacity: 0.35;
+}
+/* The centre of the 3×3 closes the ring at eight dots. */
+.loading__dot:nth-child(5) { visibility: hidden; }
+@media (prefers-reduced-motion: no-preference) {
+  .loading__dot { animation: dot-pulse 1.2s var(--ease-out) infinite; }
+  .loading__dot:nth-child(2) { animation-delay: 100ms; }
+  .loading__dot:nth-child(3) { animation-delay: 200ms; }
+  .loading__dot:nth-child(6) { animation-delay: 300ms; }
+  .loading__dot:nth-child(9) { animation-delay: 400ms; }
+  .loading__dot:nth-child(8) { animation-delay: 500ms; }
+  .loading__dot:nth-child(7) { animation-delay: 600ms; }
+  .loading__dot:nth-child(4) { animation-delay: 700ms; }
+}
+@keyframes dot-pulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+.loading__label { font-size: var(--text-sm); }
+
+.empty-state {
+  display: grid;
+  gap: var(--space-2);
+  max-width: 60ch;
+  padding: var(--space-5);
+  background: var(--bg-panel);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+}
+.empty-state__title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  line-height: 1.3;
+}
+.empty-state__body {
+  color: var(--text-muted-dark);
+  font-size: var(--text-sm);
+}
+.empty-state__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-block-start: var(--space-2);
+}
+.empty-state__link { flex: 0 1 auto; }
+.empty-state__button {
+  min-height: 44px;
+  padding-inline: var(--space-4);
+  background: transparent;
+  border: 1px solid var(--border-strong-dark);
+  border-radius: var(--radius-sm);
+  color: var(--text-dark);
+  font-size: var(--text-base);
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .empty-state__button:hover { border-color: var(--accent-soft); color: var(--accent-soft); }
+}
