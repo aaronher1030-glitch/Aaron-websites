@@ -1,4 +1,4 @@
-export const SITE_URL = "https://sslg.pages.dev";
+export const SITE_URL = "https://sslg-2sr.pages.dev";
 export const APP_NAME = "BSANHS SSLG";
 export const SITE_DESCRIPTION =
   "Official website of the Supreme Secondary Learner Government of Benigno S. Aquino National High School.";
