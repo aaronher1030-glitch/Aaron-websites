@@ -50,6 +50,46 @@ test("the lightbox cycles focus between close, previous and next", () => {
   expect(document.activeElement).toBe(close);
 });
 
+test("Escape inside the lightbox closes only the lightbox, not the album panel", async () => {
+  const onClose = vi.fn();
+  vi.stubGlobal(
+    "fetch",
+    vi.fn(async () => ({
+      ok: true,
+      json: async () => ({
+        album: { id: "nestedAlbum0000000000000", name: "Nested album" },
+        photos: [
+          { id: "1", name: "IMG_0012.JPG", mime: "image/jpeg", thumb: "/a.jpg", full: "/b.jpg" },
+          { id: "2", name: "IMG_0013.JPG", mime: "image/jpeg", thumb: "/c.jpg", full: "/d.jpg" },
+        ],
+        fetchedAt: "2026-11-08T00:00:00.000Z",
+      }),
+    })),
+  );
+
+  render(
+    <AlbumViewer albumId="nestedAlbum0000000000000" name="Nested album" onClose={onClose} />,
+  );
+
+  const trigger = await screen.findByRole("button", { name: /IMG 0012/i });
+  const panel = screen.getByRole("region", { name: /Nested album album/i });
+  trigger.focus();
+  fireEvent.click(trigger);
+  expect(screen.getByRole("dialog")).toBeInTheDocument();
+
+  // Dispatch on the focused control INSIDE the panel so the event bubbles
+  // through the panel's own Escape handler — the path that double-closed both
+  // layers before the capture-phase guard.
+  const close = screen.getByRole("button", { name: /Close photo viewer/i });
+  expect(document.activeElement).toBe(close);
+  fireEvent.keyDown(close, { key: "Escape" });
+
+  expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+  expect(panel).toBeInTheDocument();
+  expect(onClose).not.toHaveBeenCalled();
+  expect(document.activeElement).toBe(trigger);
+});
+
 test("an empty album says so and still links to its Drive folder", async () => {
   const fetchMock = vi.fn(async () => ({
     ok: true,

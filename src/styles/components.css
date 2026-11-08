@@ -563,7 +563,8 @@
 }
 .empty-state__body {
   color: var(--text-muted-dark);
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
+  line-height: 1.6;
 }
 .empty-state__actions {
   display: flex;

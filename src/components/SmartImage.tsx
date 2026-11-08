@@ -27,10 +27,14 @@ export function SmartImage({
 
   useEffect(() => setStatus("loading"), [src]);
 
-  // A cached image can finish decoding before React attaches onLoad.
+  // A cached image can finish decoding before React attaches onLoad. A cached
+  // failure (complete but zero natural width) must also resolve, or the
+  // skeleton would spin forever on a broken thumbnail that never re-fires
+  // onError.
   useEffect(() => {
     const img = imgRef.current;
     if (img?.complete && img.naturalWidth > 0) setStatus("ready");
+    else if (img?.complete) setStatus("error");
   }, [src]);
 
   if (status === "error") {

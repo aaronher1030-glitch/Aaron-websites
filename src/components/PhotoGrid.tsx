@@ -100,20 +100,26 @@ function Lightbox({
     };
   }, []);
 
+  // Capture phase + stopPropagation: the lightbox sits inside the album
+  // panel, whose own Escape handler must not also fire and collapse both
+  // layers. Handling the key here keeps it from reaching the panel at all.
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         event.preventDefault();
+        event.stopPropagation();
         onClose();
         return;
       }
       if (event.key === "ArrowRight") {
         event.preventDefault();
+        event.stopPropagation();
         onStep(1);
         return;
       }
       if (event.key === "ArrowLeft") {
         event.preventDefault();
+        event.stopPropagation();
         onStep(-1);
         return;
       }
@@ -126,10 +132,11 @@ function Lightbox({
       const at = active ? controls.indexOf(active) : -1;
       const next = (at + (event.shiftKey ? -1 : 1) + controls.length) % controls.length;
       event.preventDefault();
-      controls[at === -1 ? 0 : next].focus();
+      event.stopPropagation();
+      controls[at === -1 ? (event.shiftKey ? controls.length - 1 : 0) : next].focus();
     };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
+    document.addEventListener("keydown", onKey, true);
+    return () => document.removeEventListener("keydown", onKey, true);
   }, [onClose, onStep]);
 
   return (

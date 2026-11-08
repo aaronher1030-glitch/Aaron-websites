@@ -66,7 +66,11 @@ export function AlbumViewer({
       role="region"
       aria-label={`${name} album`}
       onKeyDown={(event) => {
-        if (event.key === "Escape") onClose();
+        // The lightbox inside this panel handles its own Escape in the capture
+        // phase and stops propagation, so this never sees that event. The
+        // defaultPrevented guard is belt-and-braces: if a future child consumes
+        // Escape without stopping propagation, the panel still stays open.
+        if (event.key === "Escape" && !event.defaultPrevented) onClose();
       }}
     >
       <div className="album-panel__bar">
