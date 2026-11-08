@@ -1,6 +1,7 @@
 export type Cover =
   | { kind: "album"; album: string }
   | { kind: "doc"; fileId: string }
+  | { kind: "image"; src: string; alt?: string }
   | { kind: "none" };
 
 export interface Activity {
@@ -18,10 +19,12 @@ export interface Officer {
   name: string;
   role: string;
   group: "executive" | "grade" | "school";
+  photo: string;
 }
 
 export interface DocumentGroup {
   key: "minutes" | "notices" | "elections" | "proposals" | "memorandums" | "finance";
   label: string;
   blurb: string;
+  folderUrl: string;
 }

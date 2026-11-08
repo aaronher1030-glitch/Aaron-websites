@@ -1,6 +1,13 @@
 import type { Officer } from "./types";
 
-export const OFFICERS = [
+const photo = (name: string) =>
+  `/brand/officers/${name
+    .replace(/^Hon\.\s*/, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")}.webp`;
+
+const roster = [
   { name: "Hon. Rhian Jade L. Castro", role: "SSLG President", group: "executive" },
   { name: "Hon. Aaron Y. Hernandez", role: "SSLG Vice President", group: "executive" },
   { name: "Hon. Micaella Sabelle R. Monloy", role: "SSLG Secretary", group: "executive" },
@@ -28,4 +35,9 @@ export const OFFICERS = [
   { name: "Hon. Mary Joy Santos", role: "SSLG Co-Adviser", group: "school" },
   { name: "Hon. Ma Theresa Gatchalian", role: "SSLG Co-Adviser", group: "school" },
   { name: "Hon. Mira Narciso", role: "SSLG Co-Adviser", group: "school" },
-] satisfies Officer[];
+] satisfies Omit<Officer, "photo">[];
+
+export const OFFICERS: Officer[] = roster.map((officer) => ({
+  ...officer,
+  photo: photo(officer.name),
+}));

@@ -4,6 +4,18 @@ const driveFile = (id: string) => `https://drive.google.com/file/d/${id}/view`;
 
 export const ACTIVITIES = [
   {
+    slug: "inkantations-2026",
+    title: "INKantations: Melodramatic Essay Writing Contest",
+    caption:
+      "To celebrate the power of the written word, the SSLG invites learners to pen dramatically tragic, wildly theatrical essays in this spooky-season showcase of creativity and flair.",
+    cover: {
+      kind: "image",
+      src: "/media/inkantations-2026.webp",
+      alt: "INKantations poster: Melodramatic Essay Writing Contest",
+    },
+    featured: true,
+  },
+  {
     slug: "world-teachers-day-2026",
     title: "World Teachers' Day 2026",
     caption:
@@ -11,7 +23,6 @@ export const ACTIVITIES = [
     cover: { kind: "album", album: "1yVIUPC5q0G8EsRahOUxbHG_EvSByCXlz" },
     album: "1yVIUPC5q0G8EsRahOUxbHG_EvSByCXlz",
     reportUrl: driveFile("1KiYs31znp_3EKYMNV0hxJCQvcK90mtws"),
-    featured: true,
   },
   {
     slug: "lgcc-clean-up-2026",
@@ -78,7 +89,11 @@ export const ACTIVITIES = [
     title: "Onto the Next Leaders Induction Ceremony",
     caption:
       "To instill a sense of responsibility, leadership, and commitment among the officers, this event formally introduced and recognized the newly elected student leaders.",
-    cover: { kind: "album", album: "1iPxMcxI61C0pIZDc_2raj4IYfZAyxLL_" },
+    cover: {
+      kind: "image",
+      src: "/media/induction-2026.webp",
+      alt: "SSLG officers at the Onto the Next Leaders induction ceremony",
+    },
     album: "1iPxMcxI61C0pIZDc_2raj4IYfZAyxLL_",
     reportUrl: driveFile("1omiyOdHtxgngsb7WMcpNGTaZsaMBgrYE"),
   },
