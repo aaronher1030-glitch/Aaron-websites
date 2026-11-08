@@ -18,7 +18,13 @@ let clientPromise: Promise<SupabaseClient> | null = null;
 export async function getClient(): Promise<SupabaseClient | null> {
   if (!syncEnabled()) return null;
   if (!clientPromise) {
-    clientPromise = import("@supabase/supabase-js").then(({ createClient }) => createClient(url!, key!));
+    clientPromise = import("@supabase/supabase-js")
+      .then(({ createClient }) => createClient(url!, key!))
+      .catch((error: unknown) => {
+        // A failed chunk load (e.g. offline) must not poison every later call.
+        clientPromise = null;
+        throw error;
+      });
   }
   return clientPromise;
 }

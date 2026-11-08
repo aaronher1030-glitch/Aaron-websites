@@ -42,6 +42,7 @@ beforeEach(() => {
 });
 
 afterEach(() => {
+  vi.useRealTimers();
   vi.unstubAllEnvs();
   vi.resetModules();
   window.localStorage.clear();
@@ -208,4 +209,83 @@ test("sign out returns the menu to the offline sign-in form", async () => {
   expect(h.client.auth.signOut).toHaveBeenCalledTimes(1);
   await screen.findByRole("button", { name: "Sign in" }, { timeout: 5000 });
   expect(screen.getByText("Offline — local only")).toBeInTheDocument();
+}, 15000);
+
+test("a slow sign-in pull never lets the debounce push the pre-merge store", async () => {
+  vi.resetModules();
+  const { AccountMenu } = await import("../src/components/AccountMenu");
+  const { StoreProvider, useStore } = await import("../src/store");
+  vi.useFakeTimers();
+
+  // Deferred pull: the remote notebook only lands after the debounce window.
+  const remote: Store = {
+    ...base,
+    attempts: [{ qid: "remote", correct: true, answer: "B", ts: 2, elapsedSec: 2, mode: "single" }],
+    stashed: ["b"],
+  };
+  let resolvePull!: (value: { data: unknown; error: null }) => void;
+  const pullPromise = new Promise<{ data: unknown; error: null }>((resolve) => {
+    resolvePull = resolve;
+  });
+  const maybeSingle = vi.fn(() => pullPromise);
+  const eq = vi.fn(() => ({ maybeSingle }));
+  const select = vi.fn(() => ({ eq }));
+  const upsert = vi.fn(
+    async (
+      _payload: unknown,
+      _options?: unknown,
+    ): Promise<{ error: { message: string } | null }> => ({ error: null }),
+  );
+  h.client.from.mockReturnValue({ select, upsert });
+  // A restored session starts the same pull→merge→push cycle as a sign-in.
+  h.client.auth.getSession.mockImplementation(async () => ({
+    data: { session: { user: { id: "u-1", email: "student@example.com" } } },
+    error: null,
+  }));
+
+  let api: StoreApi | null = null;
+  function Probe() {
+    api = useStore();
+    return <AccountMenu />;
+  }
+  render(
+    <StoreProvider>
+      <Probe />
+    </StoreProvider>,
+  );
+
+  // Let the session restore and runSync reach the pending pull.
+  await act(async () => {});
+  expect(maybeSingle).toHaveBeenCalledTimes(1);
+
+  // Edit the local notebook mid-pull, then let the debounce window elapse.
+  act(() => {
+    api!.recordAttempt({ qid: "local", correct: true, answer: "A", ts: 5, elapsedSec: 1, mode: "single" });
+  });
+  await act(async () => {
+    vi.advanceTimersByTime(3000);
+  });
+  // The pre-merge store must never reach the remote while the pull is in flight.
+  expect(upsert).not.toHaveBeenCalled();
+
+  // The pull lands: the push must carry the merge of remote + mid-pull edit.
+  await act(async () => {
+    resolvePull({ data: { data: remote }, error: null });
+  });
+  expect(upsert).toHaveBeenCalledTimes(1);
+  const pushed = upsert.mock.calls[0][0] as { user_id: string; data: Store };
+  expect(pushed.user_id).toBe("u-1");
+  expect(pushed.data.attempts.map((a) => a.qid).sort()).toEqual(["local", "remote"]);
+  expect(api!.store.attempts.map((a) => a.qid).sort()).toEqual(["local", "remote"]);
+
+  // Once the initial sync completes, normal debounced pushes resume.
+  act(() => {
+    api!.recordAttempt({ qid: "after", correct: true, answer: "C", ts: 6, elapsedSec: 1, mode: "single" });
+  });
+  await act(async () => {
+    vi.advanceTimersByTime(2500);
+  });
+  expect(upsert.mock.calls.length).toBeGreaterThan(1);
+  const last = upsert.mock.calls[upsert.mock.calls.length - 1][0] as { data: Store };
+  expect(last.data.attempts.map((a) => a.qid).sort()).toEqual(["after", "local", "remote"]);
 }, 15000);

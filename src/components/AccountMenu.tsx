@@ -59,9 +59,13 @@ export function AccountMenu() {
   const [password, setPassword] = useState("");
   const [mode, setMode] = useState<"in" | "up">("in");
   const [busy, setBusy] = useState(false);
+  // True while a pull→merge→push cycle owns the remote write. Debounce pushes
+  // must not race it: pushing the pre-merge store would drop remote-only data.
+  const syncInFlightRef = useRef(false);
 
   const runSync = useCallback(
     async (userId: string) => {
+      syncInFlightRef.current = true;
       setStatus("syncing");
       setMessage("");
       try {
@@ -79,6 +83,8 @@ export function AccountMenu() {
       } catch (error) {
         setStatus("error");
         setMessage(errorMessage(error));
+      } finally {
+        syncInFlightRef.current = false;
       }
     },
     [importData],
@@ -137,14 +143,26 @@ export function AccountMenu() {
   useEffect(() => {
     if (!enabled || !account) return;
     const userId = account.id;
-    const timer = window.setTimeout(() => {
+    let timer: number;
+    const push = () => {
+      if (syncInFlightRef.current) {
+        // The sign-in cycle owns the remote write and its push already
+        // includes edits made during the pull; retry once it has landed.
+        timer = window.setTimeout(push, SYNC_DEBOUNCE_MS);
+        return;
+      }
       pushProgress(userId, storeRef.current)
-        .then(() => setStatus("synced"))
+        .then(() => {
+          // Never clobber a newer sync's syncing/error status.
+          if (!syncInFlightRef.current) setStatus("synced");
+        })
         .catch((error) => {
+          if (syncInFlightRef.current) return;
           setStatus("error");
           setMessage(errorMessage(error));
         });
-    }, SYNC_DEBOUNCE_MS);
+    };
+    timer = window.setTimeout(push, SYNC_DEBOUNCE_MS);
     return () => window.clearTimeout(timer);
   }, [enabled, account, store]);
 
