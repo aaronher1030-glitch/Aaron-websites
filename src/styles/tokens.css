@@ -1,23 +1,81 @@
 :root {
-  --paper: #f5f0e4;
-  --paper-2: #ece4d2;
-  --surface: #fffdf6;
-  --ink: #14213a;
-  --ink-2: #3c4a63;
-  --muted: #6b7280;
-  --navy: #0f2440;
-  --navy-2: #1a3557;
-  --gold: #b8862f;
-  --gold-soft: #e8d3a4;
-  --brick: #8a3324;
-  --rule: #d8cdb6;
-  --shadow: 0 1px 0 rgba(20, 33, 58, 0.06), 0 12px 28px -20px rgba(20, 33, 58, 0.45);
-  --radius: 4px;
-  --font-display: "Instrument Serif", Georgia, serif;
-  --font-ui: "IBM Plex Sans", system-ui, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
-  --page-max: 1160px;
-  --measure: 66ch;
-  --gutter: clamp(1rem, 4vw, 2.75rem);
-  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* Primitives — navy */
+  --navy-950: #02133e;
+  --navy-900: #061a4a;
+  --navy-800: #08205d;
+  --navy-700: #0d2a6e;
+  --navy-line: #1b3570;
+
+  /* Primitives — mint */
+  --mint-100: #d0e0e3;
+  --mint-200: #bfd2d6;
+
+  /* Primitives — gold */
+  --gold-300: #e8c98f;
+  --gold-500: #c9a227;
+  --gold-600: #b98a4a;
+
+  /* Neutrals */
+  --paper: #f9f9f9;
+  --white: #ffffff;
+  --ink: #0a1c3d;
+  --ink-soft: #2b4166;
+
+  /* Semantic — surfaces and text */
+  --bg-page: var(--navy-950);
+  --bg-title: var(--navy-900);
+  --bg-panel: var(--navy-800);
+  --bg-band: var(--mint-100);
+  --bg-bar: var(--paper);
+  --text-dark: var(--paper);
+  --text-light: var(--ink);
+  --text-muted-dark: #b9c6dd;
+  --text-muted-light: #3a4f70;
+  --border-dark: rgba(249, 249, 249, 0.16);
+  --border-light: rgba(10, 28, 61, 0.16);
+  --accent: var(--gold-500);
+  --accent-soft: var(--gold-300);
+  --focus-on-dark: var(--gold-300);
+  --focus-on-light: var(--navy-950);
+  --on-accent: var(--navy-950);
+
+  /* Type */
+  --font-display: "Gentium Book Plus", Gentium, Georgia, serif;
+  --font-wordmark: "Montserrat", "Archivo Black", system-ui, sans-serif;
+  --font-ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+
+  --text-xs: 0.8125rem;   /* 13 */
+  --text-sm: 0.875rem;    /* 14 */
+  --text-base: 1rem;      /* 16 */
+  --text-lg: 1.125rem;    /* 18 */
+  --text-xl: 1.375rem;    /* 22 */
+  --text-h3: 1.1667rem;   /* 18.67 */
+  --text-h2: clamp(1.375rem, 1.6vw, 1.5rem);
+  --text-h1: clamp(2rem, 3.2vw, 2.833rem); /* 32 → 45.33 */
+  --text-wordmark: clamp(2.25rem, 4vw, 3.25rem);
+
+  /* Space — 4px base */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  /* Layout */
+  --page-max: 1152px;
+  --gutter: clamp(1.25rem, 5vw, 1.5rem);
+  --measure: 68ch;
+  --header-h: 72px;
+  --hero-min: clamp(560px, calc(100svh - var(--header-h)), 980px);
+  --title-h: clamp(200px, 18vw, 240px);
+  --radius-sm: 3px;
+  --radius-md: 8px;
+  --shadow-panel: 0 18px 40px -24px rgba(2, 19, 62, 0.7);
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
+  --ease-card: cubic-bezier(0.23, 1, 0.32, 1);
 }

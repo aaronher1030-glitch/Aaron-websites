@@ -1,91 +1,17 @@
 /* ------------------------------------------------------------------ *
  * Breakpoints. Base sheets describe the wide layout; this file only
- * narrows it. 820px is the masthead's single-to-two-line threshold.
+ * narrows it. Masthead, navigation and footer rules land in Task 2, so
+ * only the primitives that already exist are tuned here.
  * ------------------------------------------------------------------ */
 
-@media (max-width: 819.98px) {
-  .masthead-main {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.75rem;
-    padding-top: 1.15rem;
-  }
-
-  .wordmark {
-    align-self: flex-start;
-  }
-
-  .wordmark-mark {
-    font-size: clamp(2rem, 8vw, 2.6rem);
-  }
-
-  .site-nav {
-    width: 100%;
-    margin-top: 0.25rem;
-    margin-left: 0;
-    border-top: 1px solid var(--rule);
-  }
-
-  .site-nav a {
-    min-height: 44px;
-    min-width: 44px;
-    margin-bottom: 0;
-    padding: 0.7rem 0.6rem;
-  }
-
-  .site-nav a + a {
-    border-left: 0;
-  }
-}
-
 @media (max-width: 640px) {
-  .masthead-top {
-    flex-direction: column;
-    gap: 0.15rem;
-    letter-spacing: 0.12em;
-  }
-
-  .site-main {
-    padding-top: 1.75rem;
-  }
-
-  .site-footer {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.3rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.75rem;
-  }
-
-  .site-footer p:nth-child(2) {
-    white-space: normal;
-  }
-
-  .site-footer .footer-note {
-    grid-column: 1;
+  .band {
+    padding-block: clamp(2rem, 7vw, 2.75rem);
   }
 }
 
 @media (max-width: 480px) {
-  .eyebrow {
-    font-size: 0.625rem;
-    letter-spacing: 0.12em;
-  }
-
-  .eyebrow::after {
-    display: none;
-  }
-
-  .site-nav a {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .wordmark-mark {
-    font-size: 1.9rem;
-  }
-
-  .site-nav a {
-    padding-inline: 0.45rem;
+  .cta-bar {
+    padding-inline: var(--space-4);
   }
 }
