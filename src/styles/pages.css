@@ -4243,3 +4243,99 @@ button.question-nav-link:disabled:hover {
     width: auto;
   }
 }
+
+/* PWA install prompt: a quiet bench chip in the header tools. It only exists
+   while the browser offers installation and the student has not dismissed it. */
+
+.install-prompt {
+  display: inline-flex;
+  align-items: stretch;
+  background: var(--surface);
+  border: var(--rule-width) solid var(--ink);
+  border-radius: 7px;
+  box-shadow: var(--shadow-hard);
+}
+
+.install-prompt-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 42px;
+  padding: 0 12px;
+  background: transparent;
+  border: 0;
+  border-radius: 6px 0 0 6px;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 120ms var(--ease), color 120ms var(--ease);
+}
+
+.install-prompt-action svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
+.install-prompt-action:hover {
+  background: var(--surface-2);
+  color: var(--copper);
+}
+
+.install-prompt-dismiss {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-left: var(--rule-width) solid var(--rule);
+  border-radius: 0 6px 6px 0;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background-color 120ms var(--ease), color 120ms var(--ease);
+}
+
+.install-prompt-dismiss svg {
+  width: 13px;
+  height: 13px;
+}
+
+.install-prompt-dismiss:hover {
+  background: var(--surface-2);
+  color: var(--hazard);
+}
+
+/* Below this width the primary nav needs the room, so the chip goes icon-only.
+   The accessible name ("Install ChemBank") is unchanged. */
+@media (max-width: 1200px) {
+  .install-prompt-action {
+    width: 42px;
+    padding: 0;
+  }
+
+  .install-prompt-action span {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .install-prompt {
+    box-shadow: 2px 2px 0 color-mix(in srgb, var(--ink) 20%, transparent);
+  }
+
+  .install-prompt-action {
+    width: 44px;
+    min-height: 44px;
+  }
+
+  .install-prompt-dismiss {
+    width: 32px;
+  }
+}

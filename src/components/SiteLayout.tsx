@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import { InstallPrompt } from "./InstallPrompt";
 import { Logo } from "./Logo";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -43,6 +44,7 @@ export function SiteLayout() {
           ))}
         </nav>
         <div className="header-tools">
+          <InstallPrompt />
           <details className="nav-more-menu" ref={menuRef}>
             <summary className="nav-more">More</summary>
             <nav className="nav-more-panel" aria-label="Reference">

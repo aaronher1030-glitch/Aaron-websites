@@ -36,8 +36,8 @@ const pages = [
   { path: "/", priority: "1.0", changefreq: "weekly" },
   { path: "/bank", priority: "0.9", changefreq: "weekly" },
   { path: "/practice", priority: "0.9", changefreq: "monthly" },
-  { path: "/review", priority: "0.6", changefreq: "monthly" },
-  { path: "/progress", priority: "0.5", changefreq: "monthly" },
+  // /progress and /review are deliberately noindex (local-only working pages),
+  // so they stay out of the sitemap.
   { path: "/notes", priority: "0.9", changefreq: "monthly" },
   ...noteSlugs.map((slug) => ({
     path: `/notes/${slug}`,
