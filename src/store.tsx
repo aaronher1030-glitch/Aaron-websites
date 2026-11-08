@@ -7,7 +7,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import type { Attempt, Drill, Store } from "./data/types";
+import type { Attempt, Drill, ReviewItem, Store } from "./data/types";
 import { createDrill as buildDrill } from "./lib/drill";
 import { scheduleReview } from "./lib/review";
 import {
@@ -62,14 +62,73 @@ function hydrateTheme(): Store["theme"] {
   }
 }
 
-function isValidStore(parsed: unknown): parsed is Store {
-  const candidate = parsed as Store | null;
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function isStringArray(value: unknown): value is string[] {
+  return Array.isArray(value) && value.every((entry) => typeof entry === "string");
+}
+
+function isValidAttempt(value: unknown): value is Attempt {
   return (
-    candidate?.version === 1 &&
-    Array.isArray(candidate.attempts) &&
-    Array.isArray(candidate.drills) &&
-    Array.isArray(candidate.review) &&
-    Array.isArray(candidate.stashed)
+    isRecord(value) &&
+    typeof value.qid === "string" &&
+    typeof value.correct === "boolean" &&
+    typeof value.answer === "string" &&
+    typeof value.ts === "number" &&
+    typeof value.elapsedSec === "number" &&
+    (value.mode === "practice" || value.mode === "timed" || value.mode === "single")
+  );
+}
+
+function isValidReviewItem(value: unknown): value is ReviewItem {
+  return (
+    isRecord(value) &&
+    typeof value.qid === "string" &&
+    typeof value.dueAt === "number" &&
+    typeof value.step === "number" &&
+    typeof value.lastSeen === "number"
+  );
+}
+
+function isValidDrill(value: unknown): value is Drill {
+  return (
+    isRecord(value) &&
+    typeof value.id === "string" &&
+    typeof value.name === "string" &&
+    (value.mode === "practice" || value.mode === "timed") &&
+    isStringArray(value.qids) &&
+    isRecord(value.answers) &&
+    isRecord(value.checked) &&
+    isRecord(value.flagged) &&
+    isRecord(value.strikes) &&
+    typeof value.index === "number" &&
+    typeof value.limitSec === "number" &&
+    typeof value.elapsedSec === "number" &&
+    typeof value.startedAt === "number" &&
+    typeof value.done === "boolean" &&
+    (value.finishedAt === undefined || typeof value.finishedAt === "number")
+  );
+}
+
+/* Checking only the top-level arrays lets a payload like { attempts: [null] }
+   persist and then crash every page that reads attempt fields, with reset
+   itself stranded on a crashing page. Validate each element's minimal shape
+   so import refuses it and hydrate falls back to a clean notebook instead. */
+function isValidStore(parsed: unknown): parsed is Store {
+  return (
+    isRecord(parsed) &&
+    parsed.version === 1 &&
+    Array.isArray(parsed.attempts) &&
+    parsed.attempts.every(isValidAttempt) &&
+    Array.isArray(parsed.drills) &&
+    parsed.drills.every(isValidDrill) &&
+    Array.isArray(parsed.review) &&
+    parsed.review.every(isValidReviewItem) &&
+    isStringArray(parsed.stashed) &&
+    (parsed.theme === "auto" || parsed.theme === "light" || parsed.theme === "dark") &&
+    typeof parsed.createdAt === "number"
   );
 }
 
@@ -78,7 +137,7 @@ function readStore(): Store {
     const theme = hydrateTheme();
     const raw = window.localStorage.getItem(STORAGE_KEY);
     if (!raw) return { ...defaultStore(), theme };
-    const parsed = JSON.parse(raw) as Store;
+    const parsed: unknown = JSON.parse(raw);
     if (!isValidStore(parsed)) return { ...defaultStore(), theme };
     return { ...defaultStore(), ...parsed, theme };
   } catch {
@@ -106,10 +165,6 @@ function applyThemeChoice(theme: Store["theme"]): void {
     clearStoredTheme();
     applyTheme(systemTheme());
   }
-}
-
-function sanitizeTheme(theme: unknown): Store["theme"] {
-  return theme === "light" || theme === "dark" ? theme : "auto";
 }
 
 export function StoreProvider({ children }: { children: ReactNode }) {
@@ -177,7 +232,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       return false;
     }
     if (!isValidStore(parsed)) return false;
-    const next: Store = { ...defaultStore(), ...parsed, theme: sanitizeTheme(parsed.theme) };
+    // isValidStore already guarantees a valid theme, so the payload is safe as-is.
+    const next: Store = { ...defaultStore(), ...parsed };
     setStore(next);
     applyThemeChoice(next.theme);
     return true;

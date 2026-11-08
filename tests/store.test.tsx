@@ -315,6 +315,127 @@ test("importData rejects invalid payloads and leaves the store unchanged", () =>
   }
 });
 
+function importPayload() {
+  return {
+    version: 1,
+    attempts: [{ ...attempt }],
+    drills: [
+      {
+        id: "d-1",
+        name: "Imported drill",
+        mode: "practice",
+        qids: ["q-1"],
+        answers: {},
+        checked: {},
+        flagged: {},
+        strikes: {},
+        index: 0,
+        limitSec: 0,
+        elapsedSec: 0,
+        startedAt: 1,
+        done: false,
+      },
+    ],
+    review: [{ qid: "q-1", dueAt: 5, step: 0, lastSeen: 1 }],
+    stashed: ["q-9"],
+    theme: "light",
+    createdAt: 42,
+  };
+}
+
+function omitKey<T extends object, K extends keyof T>(source: T, key: K): Omit<T, K> {
+  const copy = { ...source };
+  delete copy[key];
+  return copy;
+}
+
+/* One malformed element is enough to refuse the whole payload: a null attempt
+   otherwise persists and crashes every page that reads latestAttemptMap. */
+function malformedPayloads(): { label: string; payload: unknown }[] {
+  const base = importPayload();
+  const drill = base.drills[0];
+  const reviewItem = base.review[0];
+  return [
+    { label: "null attempt", payload: { ...base, attempts: [null] } },
+    { label: "empty attempt object", payload: { ...base, attempts: [{}] } },
+    { label: "attempt qid not a string", payload: { ...base, attempts: [{ ...attempt, qid: 7 }] } },
+    { label: "attempt correct not a boolean", payload: { ...base, attempts: [{ ...attempt, correct: "yes" }] } },
+    { label: "attempt answer not a string", payload: { ...base, attempts: [{ ...attempt, answer: null }] } },
+    { label: "attempt ts not a number", payload: { ...base, attempts: [{ ...attempt, ts: "1" }] } },
+    { label: "attempt missing elapsedSec", payload: { ...base, attempts: [omitKey(attempt, "elapsedSec")] } },
+    { label: "attempt mode outside the union", payload: { ...base, attempts: [{ ...attempt, mode: "exam" }] } },
+    { label: "null review item", payload: { ...base, review: [null] } },
+    { label: "review qid not a string", payload: { ...base, review: [{ ...reviewItem, qid: 3 }] } },
+    { label: "review dueAt not a number", payload: { ...base, review: [{ ...reviewItem, dueAt: "5" }] } },
+    { label: "review step not a number", payload: { ...base, review: [{ ...reviewItem, step: null }] } },
+    { label: "review missing lastSeen", payload: { ...base, review: [omitKey(reviewItem, "lastSeen")] } },
+    { label: "null drill", payload: { ...base, drills: [null] } },
+    { label: "drill id not a string", payload: { ...base, drills: [{ ...drill, id: 5 }] } },
+    { label: "drill missing name", payload: { ...base, drills: [omitKey(drill, "name")] } },
+    { label: "drill mode outside practice|timed", payload: { ...base, drills: [{ ...drill, mode: "single" }] } },
+    { label: "drill qids not an array", payload: { ...base, drills: [{ ...drill, qids: "q-1" }] } },
+    { label: "drill qids entries not strings", payload: { ...base, drills: [{ ...drill, qids: [7] }] } },
+    { label: "drill answers not an object", payload: { ...base, drills: [{ ...drill, answers: [] }] } },
+    { label: "drill checked null", payload: { ...base, drills: [{ ...drill, checked: null }] } },
+    { label: "drill flagged not an object", payload: { ...base, drills: [{ ...drill, flagged: "no" }] } },
+    { label: "drill strikes not an object", payload: { ...base, drills: [{ ...drill, strikes: [] }] } },
+    { label: "drill index not a number", payload: { ...base, drills: [{ ...drill, index: "0" }] } },
+    { label: "drill missing limitSec", payload: { ...base, drills: [omitKey(drill, "limitSec")] } },
+    { label: "drill elapsedSec not a number", payload: { ...base, drills: [{ ...drill, elapsedSec: null }] } },
+    { label: "drill startedAt not a number", payload: { ...base, drills: [{ ...drill, startedAt: "x" }] } },
+    { label: "drill done not a boolean", payload: { ...base, drills: [{ ...drill, done: "false" }] } },
+    { label: "stashed entry null", payload: { ...base, stashed: [null] } },
+    { label: "stashed entry not a string", payload: { ...base, stashed: [42] } },
+    { label: "theme outside the union", payload: { ...base, theme: "neon" } },
+    { label: "createdAt not a number", payload: { ...base, createdAt: "42" } },
+    { label: "missing createdAt", payload: omitKey(base, "createdAt") },
+  ];
+}
+
+test("importData rejects every malformed element shape and leaves the store unchanged", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+  act(() => result.current.recordAttempt(attempt));
+  const before = result.current.store;
+
+  for (const { label, payload } of malformedPayloads()) {
+    let ok = true;
+    act(() => {
+      ok = result.current.importData(JSON.stringify(payload));
+    });
+    expect(ok, label).toBe(false);
+    expect(result.current.store, label).toEqual(before);
+  }
+});
+
+test("importData accepts a well-formed payload that includes a drill", () => {
+  const { result } = renderHook(() => useStore(), { wrapper });
+  const payload = importPayload();
+
+  let ok = false;
+  act(() => {
+    ok = result.current.importData(JSON.stringify(payload));
+  });
+
+  expect(ok).toBe(true);
+  expect(result.current.store.attempts).toEqual(payload.attempts);
+  expect(result.current.store.drills).toEqual(payload.drills);
+  expect(result.current.store.review).toEqual(payload.review);
+  expect(result.current.store.theme).toBe("light");
+});
+
+test("malformed persisted elements fall back to defaults on hydrate", () => {
+  for (const { label, payload } of malformedPayloads()) {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+    const { result, unmount } = renderHook(() => useStore(), { wrapper });
+    expect(result.current.store.version, label).toBe(1);
+    expect(result.current.store.attempts, label).toEqual([]);
+    expect(result.current.store.drills, label).toEqual([]);
+    expect(result.current.store.review, label).toEqual([]);
+    expect(result.current.store.stashed, label).toEqual([]);
+    unmount();
+  }
+});
+
 test("reset restores fresh defaults with a new createdAt", () => {
   const { result } = renderHook(() => useStore(), { wrapper });
   act(() => {

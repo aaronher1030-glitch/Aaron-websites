@@ -41,6 +41,7 @@ export default function Progress() {
   const fileRef = useRef<HTMLInputElement>(null);
   const resetRef = useRef<HTMLButtonElement>(null);
   const cancelRef = useRef<HTMLButtonElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
   const [resetOpen, setResetOpen] = useState(false);
   const [status, setStatus] = useState("");
 
@@ -73,7 +74,8 @@ export default function Progress() {
     document.body.appendChild(anchor);
     anchor.click();
     anchor.remove();
-    URL.revokeObjectURL(url);
+    // Give the download a beat to start before releasing the blob URL.
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
   async function onImport(event: ChangeEvent<HTMLInputElement>) {
@@ -100,6 +102,19 @@ export default function Progress() {
       event.preventDefault();
       setResetOpen(false);
       resetRef.current?.focus();
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const buttons = modalRef.current?.querySelectorAll<HTMLButtonElement>("button");
+    if (!buttons || buttons.length === 0) return;
+    const first = buttons[0];
+    const last = buttons[buttons.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
     }
   }
 
@@ -247,6 +262,7 @@ export default function Progress() {
           }}
         >
           <div
+            ref={modalRef}
             className="drill-modal"
             role="dialog"
             aria-modal="true"

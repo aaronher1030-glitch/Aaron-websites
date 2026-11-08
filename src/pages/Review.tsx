@@ -135,14 +135,18 @@ export default function Review() {
                     <Link className="home-button home-button-secondary" to={`/q/${qid}`}>
                       Open
                     </Link>
-                    <button
-                      type="button"
-                      className="home-button home-button-secondary"
-                      onClick={() => remove(qid)}
-                    >
-                      <Icon name="close" size={15} />
-                      Remove
-                    </button>
+                    {/* Wrong is derived from latest attempts, so clearReview would
+                        be a visible no-op there; only Flagged and Due can remove. */}
+                    {tab !== "wrong" ? (
+                      <button
+                        type="button"
+                        className="home-button home-button-secondary"
+                        onClick={() => remove(qid)}
+                      >
+                        <Icon name="close" size={15} />
+                        Remove
+                      </button>
+                    ) : null}
                   </div>
                 </li>
               );

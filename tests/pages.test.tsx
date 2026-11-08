@@ -1642,6 +1642,29 @@ test("progress exports the store as a JSON download", async () => {
   }
 });
 
+test("export revokes the blob URL only after a delay, not before the click settles", () => {
+  vi.useFakeTimers();
+  const createObjectURL = vi.fn(() => "blob:chembank");
+  const revokeObjectURL = vi.fn();
+  const originalCreate = URL.createObjectURL;
+  const originalRevoke = URL.revokeObjectURL;
+  URL.createObjectURL = createObjectURL;
+  URL.revokeObjectURL = revokeObjectURL;
+  const clickSpy = vi.spyOn(HTMLAnchorElement.prototype, "click").mockImplementation(() => {});
+  try {
+    renderAt("/progress");
+    fireEvent.click(screen.getByRole("button", { name: /export/i }));
+    expect(clickSpy).toHaveBeenCalled();
+    expect(revokeObjectURL).not.toHaveBeenCalled();
+    vi.advanceTimersByTime(1000);
+    expect(revokeObjectURL).toHaveBeenCalledWith("blob:chembank");
+  } finally {
+    URL.createObjectURL = originalCreate;
+    URL.revokeObjectURL = originalRevoke;
+    vi.useRealTimers();
+  }
+});
+
 test("progress imports a valid file and reports failure on a bad one", async () => {
   const user = userEvent.setup();
   renderAt("/progress");
@@ -1681,6 +1704,40 @@ test("progress reset asks for confirmation and clears the notebook", async () =>
   await user.click(within(screen.getByRole("dialog")).getByRole("button", { name: /reset everything/i }));
   expect(readPersisted().attempts).toEqual([]);
   expect(readPersisted().stashed).toEqual([]);
+});
+
+test("the reset dialog traps Tab and Shift+Tab within its buttons", async () => {
+  const user = userEvent.setup();
+  renderAt("/progress");
+
+  await user.click(screen.getByRole("button", { name: /^reset$/i }));
+  const dialog = screen.getByRole("dialog");
+  const keep = within(dialog).getByRole("button", { name: /keep/i });
+  const confirm = within(dialog).getByRole("button", { name: /reset everything/i });
+  expect(keep).toHaveFocus();
+
+  await user.tab();
+  expect(confirm).toHaveFocus();
+  await user.tab();
+  expect(keep).toHaveFocus();
+  await user.tab({ shift: true });
+  expect(confirm).toHaveFocus();
+});
+
+test("a corrupted persisted notebook falls back to defaults and Progress still renders", () => {
+  seedStore({ attempts: [null] });
+  renderAt("/progress");
+
+  expect(screen.getByRole("heading", { level: 1, name: /progress/i })).toBeInTheDocument();
+  expect(screen.getByText(/no attempts yet/i)).toBeInTheDocument();
+});
+
+test("a corrupted review queue falls back to defaults and Review still renders", () => {
+  seedStore({ review: [null] });
+  renderAt("/review");
+
+  expect(screen.getByRole("heading", { level: 1, name: /review/i })).toBeInTheDocument();
+  expect(screen.getByText(/no wrong answers/i)).toBeInTheDocument();
 });
 
 test("review tabs show counts and switch between wrong, flagged, and due", async () => {
@@ -1739,6 +1796,32 @@ test("Remove on the due tab clears the review item", async () => {
   await user.click(screen.getByRole("tab", { name: /due/i }));
   await user.click(screen.getByRole("button", { name: /remove/i }));
   expect(readPersisted().review).toEqual([]);
+});
+
+test("the Wrong tab hides Remove while Flagged and Due keep it", async () => {
+  const [a, b, c] = QUESTIONS;
+  const now = Date.now();
+  seedStore({
+    attempts: [mkAttempt(a.id, false)],
+    stashed: [c.id],
+    review: [{ qid: b.id, dueAt: now - 1000, step: 0, lastSeen: 0 }],
+  });
+  const user = userEvent.setup();
+  renderAt("/review");
+
+  const wrongPanel = screen.getByRole("tabpanel");
+  expect(within(wrongPanel).getByRole("link", { name: /^open$/i })).toBeInTheDocument();
+  expect(within(wrongPanel).queryByRole("button", { name: /remove/i })).not.toBeInTheDocument();
+
+  await user.click(screen.getByRole("tab", { name: /flagged/i }));
+  expect(
+    within(screen.getByRole("tabpanel")).getByRole("button", { name: /remove/i }),
+  ).toBeInTheDocument();
+
+  await user.click(screen.getByRole("tab", { name: /due/i }));
+  expect(
+    within(screen.getByRole("tabpanel")).getByRole("button", { name: /remove/i }),
+  ).toBeInTheDocument();
 });
 
 test("Review due starts a practice drill of the due qids, oldest first", async () => {
