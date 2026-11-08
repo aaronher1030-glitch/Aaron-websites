@@ -2,6 +2,7 @@ import { useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent }
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { ChoiceList } from "../components/ChoiceList";
 import { Icon } from "../components/Icon";
+import { PageMeta } from "../components/PageMeta";
 import { QuestionMap } from "../components/QuestionMap";
 import { RichText } from "../components/RichText";
 import { Bar, DifficultyBadge, DomainBadge, SourceBadge } from "../components/ui";
@@ -340,6 +341,10 @@ export default function Drill() {
 
   return (
     <div className="drill">
+      <PageMeta
+        title={drill.name}
+        description="A ChemBank practice drill. Progress is saved in this browser only."
+      />
       <header className="drill-head">
         <div className="drill-head-copy">
           <p className="drill-eyebrow">Drill · {practice ? "Practice" : "Timed"}</p>

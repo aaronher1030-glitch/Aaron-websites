@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ChoiceList } from "../components/ChoiceList";
 import { Icon, type IconName } from "../components/Icon";
+import { PageMeta } from "../components/PageMeta";
 import { RichText } from "../components/RichText";
 import { Bar, DifficultyBadge, DomainBadge } from "../components/ui";
 import {
@@ -180,6 +181,11 @@ export default function Home() {
 
   return (
     <div className="home">
+      <PageMeta
+        title="Free PNCO and ACho chemistry reviewer"
+        description="430 independently verified chemistry questions with worked solutions, chapter notes, formula sheet, periodic table, and local progress. Free, no accounts, no ads."
+        path="/"
+      />
       <section className="home-hero" aria-labelledby="home-hero-title">
         <div className="home-hero-copy">
           <p className="home-eyebrow">

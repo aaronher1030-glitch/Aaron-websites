@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
+import { UpdatePrompt } from "./components/UpdatePrompt";
 import { initTheme } from "./theme";
 
 import "./styles/tokens.css";
@@ -22,6 +23,7 @@ createRoot(container).render(
   <StrictMode>
     <BrowserRouter>
       <App />
+      <UpdatePrompt />
     </BrowserRouter>
   </StrictMode>,
 );

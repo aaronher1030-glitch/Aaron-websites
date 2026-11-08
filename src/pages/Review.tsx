@@ -1,6 +1,7 @@
 import { useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Icon } from "../components/Icon";
+import { PageMeta } from "../components/PageMeta";
 import { QUESTION_BY_ID } from "../data/questions";
 import { latestAttemptMap } from "../lib/drill";
 import { normalizeText } from "../lib/format";
@@ -65,6 +66,10 @@ export default function Review() {
 
   return (
     <div className="review">
+      <PageMeta
+        title="Spaced review"
+        description="Review mistakes on a spaced schedule. Your queue lives in this browser and is never uploaded."
+      />
       <header className="practice-head">
         <p className="practice-eyebrow">Review</p>
         <h1>Review</h1>

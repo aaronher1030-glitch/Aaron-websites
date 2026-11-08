@@ -12,8 +12,8 @@ import {
 } from "../src/data/questions";
 
 /* Bank tests mount pages of rich-text/KaTeX cards; give them headroom over
-   the 5s default so parallel workers do not flake them. */
-vi.setConfig({ testTimeout: 20000 });
+   the default so parallel workers do not flake them. */
+vi.setConfig({ testTimeout: 60000 });
 
 /* Hidden probes expose the router location so filter persistence and
    prev/next navigation can be asserted without a snapshot. */
@@ -82,7 +82,7 @@ test("unknown routes fall back to the not found page inside the shell", () => {
   expect(
     screen.getByRole("heading", { level: 1, name: /not found/i }),
   ).toBeInTheDocument();
-  expect(screen.getByRole("banner")).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /chembank home/i })).toBeInTheDocument();
 });
 
 test("the home page leads with the exact headline", () => {

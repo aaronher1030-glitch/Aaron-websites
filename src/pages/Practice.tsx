@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { Icon, type IconName } from "../components/Icon";
+import { PageMeta } from "../components/PageMeta";
 import { QUESTIONS } from "../data/questions";
 import { TOPICS } from "../data/topics";
 import { DIFFICULTIES, DOMAINS, SOURCES, type SourceKind } from "../data/types";
@@ -177,6 +178,11 @@ export default function Practice() {
 
   return (
     <div className="practice">
+      <PageMeta
+        title="Practice builder"
+        description="Build an untimed or timed chemistry drill by chapter, lab domain, paper, weak topic, or your own filters."
+        path="/practice"
+      />
       <header className="practice-head">
         <p className="practice-eyebrow">Practice</p>
         <h1>Build a drill</h1>

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ChoiceList } from "../components/ChoiceList";
 import { Icon } from "../components/Icon";
+import { PageMeta } from "../components/PageMeta";
 import { RichText } from "../components/RichText";
 import {
   DifficultyBadge,
@@ -131,6 +132,11 @@ export default function QuestionPage() {
 
   return (
     <div className="question">
+      <PageMeta
+        title={`${question.topic} question ${question.id}`}
+        description={question.stem.replace(/\$[^$]*\$|<[^>]*>/g, "").slice(0, 150)}
+        path={`/q/${question.id}`}
+      />
       <nav className="question-crumbs" aria-label="Breadcrumb">
         <Link to="/bank">
           <Icon name="arrow-left" size={14} />

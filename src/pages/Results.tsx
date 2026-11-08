@@ -1,5 +1,6 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Icon } from "../components/Icon";
+import { PageMeta } from "../components/PageMeta";
 import { RichText } from "../components/RichText";
 import {
   Bar,
@@ -128,6 +129,10 @@ export default function Results() {
 
   return (
     <div className="results">
+      <PageMeta
+        title={`${drill.name} results`}
+        description="Drill score, per-domain breakdown, and the items to repair next."
+      />
       <header className="drill-head">
         <div className="drill-head-copy">
           <p className="drill-eyebrow">Results · {drill.name}</p>

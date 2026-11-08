@@ -1,6 +1,7 @@
 import { useRef, useState, type ChangeEvent, type KeyboardEvent as ReactKeyboardEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { Icon } from "../components/Icon";
+import { PageMeta } from "../components/PageMeta";
 import { Bar, ProgressRing } from "../components/ui";
 import { QUESTIONS, QUESTION_BY_ID } from "../data/questions";
 import { latestAttemptMap } from "../lib/drill";
@@ -120,6 +121,10 @@ export default function Progress() {
 
   return (
     <div className="progress">
+      <PageMeta
+        title="Progress"
+        description="Your local ChemBank notebook: coverage, accuracy by domain and chapter, recent attempts, streaks, and backup controls."
+      />
       <header className="practice-head">
         <p className="practice-eyebrow">Progress</p>
         <h1>Progress</h1>

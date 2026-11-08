@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Icon } from "../components/Icon";
+import { PageMeta } from "../components/PageMeta";
 import { QuestionCard } from "../components/QuestionCard";
 import { QUESTIONS, QUESTION_COUNT } from "../data/questions";
 import { TOPICS } from "../data/topics";
@@ -128,6 +129,11 @@ export default function Bank() {
 
   return (
     <div className="bank">
+      <PageMeta
+        title="Question bank"
+        description="Filter 430 blind-verified chemistry questions by domain, chapter, topic, difficulty, source, and your own attempt history."
+        path="/bank"
+      />
       <header className="bank-head">
         <p className="bank-eyebrow">The bank</p>
         <h1>Question bank</h1>

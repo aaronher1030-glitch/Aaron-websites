@@ -1,28 +1,23 @@
 import { Route, Routes } from "react-router-dom";
 import { SiteLayout } from "./components/SiteLayout";
+import About from "./pages/About";
 import Bank from "./pages/Bank";
 import Drill from "./pages/Drill";
+import Formulas from "./pages/Formulas";
+import Guide from "./pages/Guide";
 import Home from "./pages/Home";
+import Lab from "./pages/Lab";
+import LabPage from "./pages/LabPage";
+import NotePage from "./pages/NotePage";
+import Notes from "./pages/Notes";
+import NotFound from "./pages/NotFound";
+import PeriodicTable from "./pages/PeriodicTable";
 import Practice from "./pages/Practice";
 import Progress from "./pages/Progress";
 import QuestionPage from "./pages/QuestionPage";
 import Results from "./pages/Results";
 import Review from "./pages/Review";
 import { StoreProvider } from "./store";
-
-function Placeholder({ name }: { name: string }) {
-  return (
-    <section className="page">
-      <p className="page-eyebrow">Shell route</p>
-      <h1>{name}</h1>
-      <p className="page-lede">Coming online.</p>
-      <p className="page-note">
-        This bench is scaffolded but empty. Questions, drills, and notes arrive in
-        the next build.
-      </p>
-    </section>
-  );
-}
 
 export default function App() {
   return (
@@ -37,15 +32,15 @@ export default function App() {
           <Route path="drill/:id/results" element={<Results />} />
           <Route path="progress" element={<Progress />} />
           <Route path="review" element={<Review />} />
-          <Route path="notes" element={<Placeholder name="Notes" />} />
-          <Route path="notes/:slug" element={<Placeholder name="Note" />} />
-          <Route path="lab" element={<Placeholder name="Lab bench" />} />
-          <Route path="lab/:slug" element={<Placeholder name="Lab technique" />} />
-          <Route path="formulas" element={<Placeholder name="Formula sheet" />} />
-          <Route path="periodic-table" element={<Placeholder name="Periodic table" />} />
-          <Route path="guide" element={<Placeholder name="PNCO guide" />} />
-          <Route path="about" element={<Placeholder name="About" />} />
-          <Route path="*" element={<Placeholder name="Not found" />} />
+          <Route path="notes" element={<Notes />} />
+          <Route path="notes/:slug" element={<NotePage />} />
+          <Route path="lab" element={<Lab />} />
+          <Route path="lab/:slug" element={<LabPage />} />
+          <Route path="formulas" element={<Formulas />} />
+          <Route path="periodic-table" element={<PeriodicTable />} />
+          <Route path="guide" element={<Guide />} />
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </StoreProvider>
