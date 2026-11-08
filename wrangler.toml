@@ -1,0 +1,11 @@
+name = "lemma"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-07"
+
+# Cloudflare Pages configuration.
+# Build command: npm run build
+# Output directory: dist
+# Node version: pinned in .nvmrc
+#
+# Deploy from the dashboard (connect the GitHub repository) or from CI with
+# CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID repository secrets.

@@ -1,0 +1,17 @@
+{
+  "name": "Lemma — AMO problem bank",
+  "short_name": "Lemma",
+  "description": "Original olympiad problems, 16 techniques, full solutions, timed drills.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4efe4",
+  "theme_color": "#163f33",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

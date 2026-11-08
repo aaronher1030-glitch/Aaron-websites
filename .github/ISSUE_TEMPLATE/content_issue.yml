@@ -1,0 +1,50 @@
+name: Content or answer issue
+description: A problem, solution, rubric, or technique guide is wrong or unclear.
+title: "[Content] "
+labels: ["content", "triage"]
+body:
+  - type: input
+    id: problem
+    attributes:
+      label: Problem or guide id
+      description: The id shown on the problem page, or the technique slug.
+      placeholder: nt-div-3 / modular-arithmetic
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of issue is it?
+      options:
+        - Wrong final answer
+        - Solution has a gap or error
+        - Statement is ambiguous or has a typo
+        - Difficulty seems wrong
+        - Technique tag seems wrong
+        - Proof rubric is unclear
+        - Copyright / originality concern
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: What is wrong?
+      description: Quote the smallest relevant part of the statement, solution, or rubric.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+      description: If you have a corrected argument, include it. A sketch is fine.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmations
+      options:
+        - label: This report does not reproduce an official past paper.
+          required: true
+        - label: I understand Lemma is independent and not affiliated with any organiser.
+          required: true

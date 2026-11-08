@@ -1,0 +1,56 @@
+name: Bug report
+description: Something on the site is broken or behaves unexpectedly.
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing Lemma. Please do not paste official competition papers or copyrighted material into this issue.
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: The route where the problem happened. Use a problem id or paste the path.
+      placeholder: /problem/alg-vieta-1
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened instead?
+      description: Include the exact wording of any error message.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open /bank
+        2. Filter by Proof
+        3. Click ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      placeholder: Chrome 140 on Windows 11 / Safari on iPhone 15
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have not included official past-paper text or copyrighted material.
+          required: true
+        - label: This is not a request for an official competition past paper.
+          required: true
