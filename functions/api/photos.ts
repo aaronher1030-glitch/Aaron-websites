@@ -18,7 +18,10 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
   try {
     const tree = await cached(env, "album-ids:v2", 900, async () => {
       const years = await driveList(env, PIO_ROOT, ` and mimeType = '${FOLDER_MIME}'`);
-      const ids: Record<string, string> = {};
+      const ids: Record<string, string> = Object.create(null) as Record<
+        string,
+        string
+      >;
       for (const year of years) {
         for (const term of await driveList(
           env,
@@ -37,8 +40,10 @@ export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
       return ids;
     });
 
+    if (!Object.hasOwn(tree, album)) {
+      return json({ error: "unknown-album" }, 404);
+    }
     const name = tree[album];
-    if (!name) return json({ error: "unknown-album" }, 404);
 
     const photos = await cached(env, `photos:${album}:v2`, 900, async () => {
       const files = await driveList(env, album, ` and mimeType contains 'image/'`);

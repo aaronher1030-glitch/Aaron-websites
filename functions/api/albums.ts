@@ -8,26 +8,9 @@ import {
   type Env,
   type DriveFile,
 } from "./_drive";
-import { imageThumb } from "../../shared/drive";
+import { imageThumb, type Album, type Term, type Year } from "../../shared/drive";
 
-export interface Album {
-  id: string;
-  name: string;
-  count: number;
-  cover: string | null;
-}
-
-export interface Term {
-  id: string;
-  name: string;
-  albums: Album[];
-}
-
-export interface Year {
-  id: string;
-  name: string;
-  terms: Term[];
-}
+export type { Album, Term, Year } from "../../shared/drive";
 
 export const onRequestGet: PagesFunction<Env> = async ({ env }) => {
   if (!env.GOOGLE_API_KEY) return json({ error: "drive-not-configured" }, 503);

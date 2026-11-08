@@ -1,5 +1,9 @@
 /// <reference types="@cloudflare/workers-types" />
 
+import type { FolderKey } from "../../shared/drive";
+
+export type { FolderKey } from "../../shared/drive";
+
 export interface Env {
   GOOGLE_API_KEY: string;
   CACHE: KVNamespace;
@@ -14,9 +18,7 @@ export const FOLDERS = {
   elections: "1hiqv7sFda_cGWVo7OtgJs5cpPS-buZ4L",
   proposals: "15vGFBRfifPvEUkN5yo1iv87MQPAoaFHE",
   memorandums: "1xszCcvP83aaVus3xLQ4f1RDmjvWqLHUj",
-} as const;
-
-export type FolderKey = keyof typeof FOLDERS;
+} as const satisfies Record<FolderKey, string>;
 
 export const FOLDER_MIME = "application/vnd.google-apps.folder";
 const FIELDS =
@@ -37,7 +39,9 @@ export function json(data: unknown, status = 200): Response {
     headers: {
       "content-type": "application/json; charset=utf-8",
       "cache-control":
-        "public, max-age=60, s-maxage=300, stale-while-revalidate=86400",
+        status >= 400
+          ? "no-store"
+          : "public, max-age=60, s-maxage=300, stale-while-revalidate=86400",
     },
   });
 }
@@ -55,6 +59,7 @@ export async function driveList(
   url.searchParams.set("key", env.GOOGLE_API_KEY);
   const res = await fetch(url.toString(), {
     cf: { cacheTtl: 300, cacheEverything: true },
+    signal: AbortSignal.timeout(10_000),
   });
   if (!res.ok) throw new Error(`Drive ${res.status} for ${folderId}`);
   const body = (await res.json()) as { files?: DriveFile[] };

@@ -6,18 +6,17 @@ import {
   FOLDERS,
   FOLDER_MIME,
   type Env,
-  type FolderKey,
 } from "./_drive";
-import { docThumb } from "../../shared/drive";
+import { docThumb, isFolderKey } from "../../shared/drive";
 
 export const onRequestGet: PagesFunction<Env> = async ({ request, env }) => {
   const key = new URL(request.url).searchParams.get("folder") ?? "";
-  if (!(key in FOLDERS)) return json({ error: "unknown-folder" }, 400);
+  if (!isFolderKey(key)) return json({ error: "unknown-folder" }, 400);
   if (!env.GOOGLE_API_KEY) return json({ error: "drive-not-configured" }, 503);
 
   try {
     const data = await cached(env, `docs:${key}:v2`, 900, async () => {
-      const items = await driveList(env, FOLDERS[key as FolderKey]);
+      const items = await driveList(env, FOLDERS[key]);
       return {
         folders: items
           .filter((f) => f.mimeType === FOLDER_MIME)
