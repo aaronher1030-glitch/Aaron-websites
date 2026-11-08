@@ -1,54 +1,23 @@
 :root {
-  color-scheme: light;
-
-  --paper: #f4f1e8;
-  --paper-deep: #ebe5d6;
-  --ink: #141414;
-  --muted: #5c5a52;
-  --cobalt: #1f3a8a;
-  --copper: #b45309;
-  --acid: #2f6b4f;
-  --hazard: #b42318;
-  --rule: #d8d2c4;
-  --surface: #fffdf7;
-  --surface-2: #f8f4e9;
-  --radius: 14px;
-  --shadow: 4px 4px 0 rgba(20, 20, 20, 0.08);
-  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
-  --font-ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
-
-  /* Bench furniture: rules, ruled paper, spacing. */
-  --rule-width: 1.5px;
-  --rule-strong: 2px;
-  --paper-lines: rgba(20, 20, 20, 0.045);
-  --shadow-hard: 3px 3px 0 rgba(20, 20, 20, 0.16);
-  --page-max: 1180px;
-  --measure: 64ch;
-  --gutter: clamp(1rem, 4vw, 2.5rem);
-  --space-xs: 6px;
-  --space-sm: 12px;
-  --space-md: 20px;
-  --space-lg: 32px;
-  --space-xl: 56px;
+  --paper: #f5f0e4;
+  --paper-2: #ece4d2;
+  --surface: #fffdf6;
+  --ink: #14213a;
+  --ink-2: #3c4a63;
+  --muted: #6b7280;
+  --navy: #0f2440;
+  --navy-2: #1a3557;
+  --gold: #b8862f;
+  --gold-soft: #e8d3a4;
+  --brick: #8a3324;
+  --rule: #d8cdb6;
+  --shadow: 0 1px 0 rgba(20, 33, 58, 0.06), 0 12px 28px -20px rgba(20, 33, 58, 0.45);
+  --radius: 4px;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-ui: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --page-max: 1160px;
+  --measure: 66ch;
+  --gutter: clamp(1rem, 4vw, 2.75rem);
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-:root[data-theme="dark"] {
-  color-scheme: dark;
-
-  --paper: #121212;
-  --paper-deep: #1b1b1b;
-  --ink: #f2eee4;
-  --muted: #b7b0a3;
-  --cobalt: #8ba3ff;
-  --copper: #f2b544;
-  --acid: #7bc59a;
-  --hazard: #ff8a80;
-  --rule: #33312c;
-  --surface: #1a1a18;
-  --surface-2: #22211e;
-  --shadow: 4px 4px 0 rgba(0, 0, 0, 0.35);
-  --paper-lines: rgba(242, 238, 228, 0.05);
-  --shadow-hard: 3px 3px 0 rgba(0, 0, 0, 0.55);
 }

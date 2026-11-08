@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------------ *
+ * Page frame — Task 5+ pages render inside .site-main as one .page.
+ * ------------------------------------------------------------------ */
+
+.page {
+  width: 100%;
+}
+
+.page > * + * {
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.page > p {
+  max-width: var(--measure);
+  color: var(--ink-2);
+}
