@@ -130,7 +130,7 @@
 }
 
 /* ------------------------------------------------------------------ *
- * Navigation — a ruled index; the current page is marked in gold.
+ * Navigation — a ruled index; the current page carries a navy rule.
  * ------------------------------------------------------------------ */
 
 .site-nav {
@@ -165,12 +165,12 @@
 }
 
 .site-nav a:hover {
-  border-bottom-color: var(--gold-soft);
+  border-bottom-color: var(--gold);
   color: var(--navy);
 }
 
 .site-nav a[aria-current="page"] {
-  border-bottom-color: var(--gold);
+  border-bottom-color: var(--navy);
   color: var(--navy);
 }
 

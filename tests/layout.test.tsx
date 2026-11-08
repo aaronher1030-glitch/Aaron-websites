@@ -17,4 +17,6 @@ test("keeps the published nav order with Photos after Accomplishments", () => {
     "Home", "Finance", "Accomplishments", "Photos", "Transparency", "About us", "Feedback",
   ]);
   expect(screen.getByRole("link", { name: "Skip to content" })).toHaveAttribute("href", "#main");
+  expect(screen.getByRole("main")).toHaveAttribute("id", "main");
+  expect(screen.getByRole("link", { name: "Home" })).toHaveAttribute("aria-current", "page");
 });
