@@ -10,7 +10,7 @@ Lemma is an independent, free problem bank and proof-training studio for the **A
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-f38020?logo=cloudflare&logoColor=white)](https://pages.cloudflare.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-2f7c60)](LICENSE)
 
-- **Live site:** <https://lemma.pages.dev>
+- **Live site:** <https://lemma-478.pages.dev>
 - **Source:** this repository
 - **Stack:** Vite · React 19 · TypeScript · React Router · KaTeX · static Cloudflare Pages
 
@@ -224,7 +224,7 @@ Optionally add these repository **variables**:
 
 | Variable | Purpose |
 | --- | --- |
-| `VITE_SITE_URL` | Canonical origin, e.g. `https://lemma.example.com`. Defaults to `https://lemma.pages.dev`. |
+| `VITE_SITE_URL` | Canonical origin, e.g. `https://lemma.example.com`. Defaults to `https://lemma-478.pages.dev`. |
 | `VITE_GITHUB_URL` | Repository URL. When set, a “Source on GitHub” link appears in the footer. |
 
 ### Command line

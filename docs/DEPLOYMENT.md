@@ -100,7 +100,7 @@ GitHub → **Settings** → **Secrets and variables** → **Actions**:
 
 | Variable | Value |
 | --- | --- |
-| `VITE_SITE_URL` | Canonical origin, e.g. `https://lemma.example.com`. |
+| `VITE_SITE_URL` | Canonical origin, e.g. `https://lemma-478.pages.dev`. |
 | `VITE_GITHUB_URL` | Repository URL; enables the footer source link. |
 
 ### How the deploy works
@@ -164,7 +164,7 @@ All variables are build-time. Changing one requires a rebuild.
 
 | Name | Default | Purpose |
 | --- | --- | --- |
-| `VITE_SITE_URL` | `https://lemma.pages.dev` | Canonical origin for metadata and sitemap. No trailing slash needed. |
+| `VITE_SITE_URL` | `https://lemma-478.pages.dev` | Canonical origin for metadata and sitemap. No trailing slash needed. |
 | `VITE_GITHUB_URL` | empty | Repository URL. When set, the footer shows “Source on GitHub”. |
 | `NODE_VERSION` | `.nvmrc` (`22`) | Used by the Pages builder if the dashboard setting is not enough. |
 

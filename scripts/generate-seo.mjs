@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const root = process.cwd();
-const site = (process.env.VITE_SITE_URL || "https://lemma.pages.dev").trim().replace(/\/+$/, "");
+const site = (process.env.VITE_SITE_URL || "https://lemma-478.pages.dev").trim().replace(/\/+$/, "");
 const today = new Date().toISOString().slice(0, 10);
 
 function read(path) {

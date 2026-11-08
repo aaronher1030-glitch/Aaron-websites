@@ -16,7 +16,7 @@ export const SITE = {
     "Lemma is an independent AMO problem bank: 248 olympiad problems including all 40 official Australian AMO questions from 2016–2020, 16 technique guides, worked solutions, timed drills, and honest guidance on every competition called AMO.",
   shortDescription:
     "An independent AMO-family problem bank with 248 problems, including all 40 official Australian AMO questions from 2016–2020, plus 16 technique guides and timed drills.",
-  url: (rawSiteUrl?.trim().replace(/\/+$/, "") || "https://lemma.pages.dev"),
+  url: (rawSiteUrl?.trim().replace(/\/+$/, "") || "https://lemma-478.pages.dev"),
   githubUrl: (import.meta.env.VITE_GITHUB_URL as string | undefined)?.trim() || "",
   author: "Lemma contributors",
   license: "MIT",

@@ -182,7 +182,7 @@ The hook runs after render, so `index.html` carries complete baseline tags for c
 - `dist/sitemap.xml` — static routes (including `/amo-papers`), 16 technique routes, and 248 problem routes;
 - `dist/robots.txt` — allows public routes and disallows `/progress`, `/review`, and `/drill/`.
 
-Canonical origin comes from `VITE_SITE_URL` (default `https://lemma.pages.dev`).
+Canonical origin comes from `VITE_SITE_URL` (default `https://lemma-478.pages.dev`).
 
 `src/config.ts` centralises site name, description, default URL, GitHub URL, locale, keywords, and verification date.
 
