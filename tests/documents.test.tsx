@@ -53,3 +53,56 @@ test("finance prints the published figures", async () => {
   expect(screen.getByText("10")).toBeInTheDocument();
   expect(screen.getByText(/Samantha C\. De Venecia/)).toBeInTheDocument();
 });
+
+test("document rows show the Drive thumb, extension tag and only documented dates", async () => {
+  // "notices" is untouched by the shared cache in this file, so the row
+  // payload below is actually fetched instead of replaying an empty slot.
+  vi.stubGlobal(
+    "fetch",
+    vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({
+        folders: [],
+        files: [
+          {
+            id: "a",
+            name: "Minutes-2026-11-08.pdf",
+            mime: "application/pdf",
+            modified: "2026-11-08T12:00:00Z",
+            thumb: "https://drive.google.com/thumbnail?id=a&sz=w600",
+            view: "https://drive.google.com/file/d/a/view",
+          },
+          {
+            id: "b",
+            name: "Unsigned-Minutes",
+            mime: "application/vnd.google-apps.document",
+            modified: null,
+            thumb: "",
+            view: "https://drive.google.com/file/d/b/view",
+          },
+        ],
+        fetchedAt: "2026-11-08T12:00:00Z",
+      }),
+    }),
+  );
+  await act(async () => {
+    render(<DocumentList folder="notices" fallbackUrl="https://drive.google.com/drive/folders/y" />);
+  });
+  const rows = screen.getAllByRole("link");
+  expect(rows).toHaveLength(2);
+  expect(rows[0]).toHaveAttribute("href", "https://drive.google.com/file/d/a/view");
+  expect(rows[0]).toHaveAttribute("target", "_blank");
+  expect(rows[0].getAttribute("rel")).toContain("noreferrer");
+  // Scoped to the tag: the plate fallback repeats the type as its label.
+  expect(rows[0].querySelector(".doc-row__tag")).toHaveTextContent("PDF");
+  expect(rows[1].querySelector(".doc-row__tag")).toHaveTextContent("DOC");
+  // en-PH with day/month/year components; the undated file invents nothing.
+  expect(screen.getByText("November 8, 2026")).toBeInTheDocument();
+  expect(document.querySelectorAll(".doc-row__date")).toHaveLength(1);
+  expect(rows[0].querySelector("img")).toHaveAttribute(
+    "src",
+    "https://drive.google.com/thumbnail?id=a&sz=w600",
+  );
+  expect(rows[1].querySelector("img")).toBeNull();
+  expect(rows[1].querySelector(".doc-plate")).not.toBeNull();
+});
