@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import Home from "../src/pages/Home";
 import Accomplishments from "../src/pages/Accomplishments";
@@ -21,8 +21,14 @@ test("Home names the government once and features INKantations", () => {
   expect(screen.getAllByText(/INKantations/i).length).toBeGreaterThan(0);
 });
 
-test("accomplishments render every title and link to detail pages", () => {
-  render(<MemoryRouter><Accomplishments /></MemoryRouter>);
+test("accomplishments render every title and link to detail pages", async () => {
+  // useAlbums() settles asynchronously (the fetch rejects with no API server in
+  // jsdom); wrapping the render in async act flushes that state update inside
+  // act so it does not print an unwrapped-update warning. Assertions are the
+  // brief's verbatim.
+  await act(async () => {
+    render(<MemoryRouter><Accomplishments /></MemoryRouter>);
+  });
   expect(screen.getByRole("heading", { level: 1, name: "Accomplishments" })).toBeInTheDocument();
   expect(screen.getAllByRole("link", { name: /INKantations/i }).length).toBeGreaterThan(0);
   expect(screen.getByRole("link", { name: /Read more accomplishment reports/i })).toHaveAttribute("href", expect.stringContaining("1_44iCUzUJAaBi0cc0a7DcpauUPpRJIxj"));
