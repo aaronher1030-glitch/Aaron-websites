@@ -66,7 +66,7 @@ export default function Transparency() {
           title="Browse the records"
           lead="Six folders from the public Drive vault. Pick a card to read its documents here — arrow keys move between folders, Home and End jump to the first and last."
         />
-        <div role="tablist" aria-label="Document folders" className="doc-tabs">
+        <div role="tablist" aria-label="Document folders" className="doc-tabs" data-reveal-group>
           {DOCUMENT_GROUPS.map((item, index) => (
             <button
               key={item.key}

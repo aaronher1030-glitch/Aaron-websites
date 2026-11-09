@@ -44,6 +44,79 @@ export function SiteLayout() {
   }, [pathname, hash]);
 
   useEffect(() => {
+    // Reveal-on-scroll. The CSS only hides a group's children while
+    // html.reveal-armed is present (set by main.tsx before first paint), so
+    // reduced motion, a missing observer, or a missing script still shows
+    // everything. This effect runs before the masthead observer below, which
+    // keeps the sentinel the last observer registered.
+    const root = document.documentElement;
+    if (!root.classList.contains("reveal-armed")) return;
+    if (typeof IntersectionObserver === "undefined") {
+      root.classList.remove("reveal-armed");
+      return;
+    }
+    const groups = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal-group]"));
+    if (groups.length === 0) return;
+
+    const reveal = (target: Element) => target.classList.add("is-revealed");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          reveal(entry.target);
+          observer.unobserve(entry.target);
+        }
+      },
+      { rootMargin: "0px 0px -6% 0px", threshold: 0.08 },
+    );
+
+    // Async panels (documents, albums, error states) replace their band
+    // child after mount, so each group is watched for inserted children;
+    // otherwise the replacement node would never be observed and would
+    // stay at the hidden reveal state.
+    const watch = (group: Element) => {
+      const children = Array.from(group.children) as HTMLElement[];
+      children.forEach((child) => {
+        if (child.classList.contains("album-panel-host")) return;
+        const order = children.indexOf(child);
+        child.style.setProperty("--reveal-delay", `${Math.min(order, 4) * 70}ms`);
+        observer.observe(child);
+      });
+    };
+    groups.forEach(watch);
+
+    const mutations = new MutationObserver((records) => {
+      const touched = new Set<Element>();
+      for (const record of records) {
+        for (const node of Array.from(record.addedNodes)) {
+          const parent = node.parentElement;
+          if (parent?.hasAttribute("data-reveal-group")) touched.add(parent);
+        }
+      }
+      touched.forEach(watch);
+    });
+    groups.forEach((group) => mutations.observe(group, { childList: true }));
+
+    // Fail-open: a blocked observer must never leave the page invisible.
+    // Anything at or above the fold is released even if no entry arrives.
+    const guard = window.setTimeout(() => {
+      for (const group of groups) {
+        for (const child of Array.from(group.children)) {
+          if (!(child instanceof HTMLElement)) continue;
+          if (child.classList.contains("album-panel-host")) continue;
+          if (child.getBoundingClientRect().top < window.innerHeight) reveal(child);
+        }
+      }
+    }, 900);
+
+    return () => {
+      window.clearTimeout(guard);
+      mutations.disconnect();
+      observer.disconnect();
+    };
+  }, [pathname]);
+
+  useEffect(() => {
     // Without IntersectionObserver the masthead would never leave its
     // transparent state; fall back to the scrolled styling rather than a
     // transparent bar over page content.
@@ -99,9 +172,11 @@ export function SiteLayout() {
             ))}
           </nav>
         </div>
+        <span className="scroll-progress" aria-hidden="true" />
       </header>
       <main id="main" className="site-main" tabIndex={-1}><Outlet /></main>
       <footer className="site-footer">
+        <span className="site-footer__watermark" aria-hidden="true">SSLG</span>
         <div className="site-footer__inner">
           <p className="site-footer__name">
             <img src="/brand/seal-sslg.png" alt="" width="48" height="48" />

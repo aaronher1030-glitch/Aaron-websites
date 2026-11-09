@@ -39,7 +39,7 @@ export default function Accomplishments() {
           title="Activity record"
           lead="Every activity opens its own record. Photo albums load from the PIO's public Drive; accomplishment reports open in the vault."
         />
-        <div className="activity-grid">
+        <div className="activity-grid" data-reveal-group>
           {ACTIVITIES.map((activity) => (
             <ActivityCard key={activity.slug} activity={activity} albumCovers={albumCovers} />
           ))}

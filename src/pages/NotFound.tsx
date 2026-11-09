@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { Band } from "../components/Band";
+import { Band, CtaBar } from "../components/Band";
 import { PageHero } from "../components/Hero";
 import { PageMeta } from "../components/PageMeta";
 
@@ -20,9 +19,12 @@ export default function NotFound() {
         lead="That page is not part of the SSLG record."
       />
       <Band variant="deep">
-        <div className="not-found__links">
-          <Link className="cta-bar" to="/"><span>Back to Home</span></Link>
-          <Link className="cta-bar" to="/accomplishments"><span>Browse accomplishments</span></Link>
+        <div className="not-found">
+          <p className="not-found__code" aria-hidden="true">404</p>
+          <div className="not-found__links">
+            <CtaBar href="/">Back to Home</CtaBar>
+            <CtaBar href="/accomplishments">Browse accomplishments</CtaBar>
+          </div>
         </div>
       </Band>
     </section>

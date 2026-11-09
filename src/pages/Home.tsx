@@ -26,7 +26,7 @@ export default function Home() {
       <HomeHero />
       <Band variant="deep" id="latest">
         <SectionTitle title="Latest" lead="Stay Updated with Current SSLG Affairs Here" />
-        <div className="home-latest">
+        <div className="home-latest" data-reveal-group>
           {featured.cover.kind === "image" ? (
             <SmartImage
               className="home-latest__media"
@@ -45,7 +45,7 @@ export default function Home() {
       </Band>
       <Band variant="mint">
         <SectionTitle title="About us" lead="Get to know your student leaders here" />
-        <div className="home-about">
+        <div className="home-about" data-reveal-group>
           <figure>
             <img
               src="/media/induction-2026.webp"
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </Band>
       <Band variant="navy">
-        <div className="home-destinations">
+        <div className="home-destinations" data-reveal-group>
           {DESTINATIONS.map((destination) => (
             <article key={destination.href}>
               <img src={destination.art} alt="" decoding="async" />

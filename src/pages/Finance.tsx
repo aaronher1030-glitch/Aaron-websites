@@ -41,7 +41,7 @@ export default function Finance() {
       </Band>
 
       <Band variant="mint" className="finance-stats-band">
-        <div className="finance-stats">
+        <div className="finance-stats" data-reveal-group>
           {FINANCE_STATS.map((stat) => (
             <Stat key={stat.key} value={stat.value} label={stat.label} note={stat.note} />
           ))}

@@ -43,7 +43,7 @@ export default function About() {
       {ROSTER_BANDS.map((band) => (
         <Band key={band.group} variant={band.variant}>
           <SectionTitle title={band.title} />
-          <div className={`officer-grid ${band.grid}`}>
+          <div className={`officer-grid ${band.grid}`} data-reveal-group>
             {OFFICERS.filter((officer) => officer.group === band.group).map((officer) => (
               <OfficerCard key={officer.photo} officer={officer} />
             ))}
@@ -54,7 +54,7 @@ export default function About() {
       <Band variant="mint" id="mandate">
         <div className="mandate">
           <h2>Duties, Responsibilities, and Obligations of the Supreme Secondary Learner Government</h2>
-          <div className="mandate__lists">
+          <div className="mandate__lists" data-reveal-group>
             <section className="mandate__list" aria-labelledby="mandate-objectives">
               <h3 id="mandate-objectives">Objectives of the SSLG</h3>
               <ol>
