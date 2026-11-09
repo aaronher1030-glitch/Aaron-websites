@@ -8,7 +8,7 @@ import { PageMeta } from "../components/PageMeta";
 import { RECORDS_ROOT_URL } from "../config";
 import { DOCUMENT_GROUPS } from "../content/documents";
 import { GPOA, LEGAL_BASES } from "../content/site";
-import { GPOA_FILE } from "../lib/driveSnapshot";
+import { GPOA_FILE, GPOA_PREVIEW, previewFor } from "../lib/driveSnapshot";
 
 const PANEL_ID = "doc-tabpanel";
 const tabId = (key: string) => `doc-tab-${key}`;
@@ -53,7 +53,12 @@ export default function Transparency() {
 
       <Band variant="navy">
         <div className="gpoa-feature">
-          <DocumentPlate label={GPOA.title} readHere className="gpoa-feature__plate" />
+          <DocumentPlate
+            label={GPOA.title}
+            readHere
+            preview={GPOA_PREVIEW}
+            className="gpoa-feature__plate"
+          />
           <div className="gpoa-feature__body">
             <h2>{GPOA.title}</h2>
             <p>{GPOA.body}</p>
@@ -83,7 +88,11 @@ export default function Transparency() {
               onClick={() => setSelected(index)}
               onKeyDown={(event) => onTabKeyDown(event, index)}
             >
-              <DocumentPlate label={item.label} />
+              <DocumentPlate
+                label={item.label}
+                preview={previewFor(item.key)}
+                order={index}
+              />
               <span className="doc-tab__label">{item.label}</span>
               <span className="doc-tab__viewing" aria-hidden="true">Viewing</span>
             </button>

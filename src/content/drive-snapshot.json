@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T06:00:37.102Z",
+  "generatedAt": "2026-11-09T06:31:52.506Z",
   "documents": {
     "minutes": [
       {
@@ -996,5 +996,69 @@
         }
       ]
     }
-  ]
+  ],
+  "previews": {
+    "minutes": {
+      "id": "1Ui3iak71XLHyF99lkx8dEKVyBYVNhujZ",
+      "name": "MOM_SSLG_2026_006.docx",
+      "lines": [
+        "MINUTES OF THE MEETING",
+        "Subject:",
+        "TEACHERS’ DAY and FOUNDATION DAY…",
+        "Date:",
+        "September 29, 2026",
+        "ATS:"
+      ]
+    },
+    "notices": {
+      "id": "1RcTtKXcjvgoUinBqK5imE6GOdS-xlXZK",
+      "name": "NOM_SSLG_2026_007.docx",
+      "lines": [
+        "October 28, 2026",
+        "NOTICE OF MEETING",
+        "TO:",
+        "SUPREME SECONDARY LEARNER…",
+        "FROM:Hon. RHIAN JADE L.…",
+        "SUBJECT:"
+      ]
+    },
+    "elections": null,
+    "proposals": {
+      "id": "1XUtCUTFk7kJ8KL2Z6sD1AdyqliJDo8Xw",
+      "name": "AP_SSLG_2026_009.docx",
+      "lines": [
+        "ACTIVITY PROPOSAL",
+        "ACTIVITY TITLE:",
+        "DISYEMBREgalo: A Season of Giving",
+        "RATIONALE:",
+        "The Christmas season is a time of…",
+        "In line with this, the Supreme…"
+      ]
+    },
+    "memorandums": null,
+    "finance": {
+      "id": "1seHH69wtIMTTQU3fQbmD2GvD0FjIM1vx",
+      "name": "SSLG_Cosolidated_Financial_Report_2026.docx",
+      "lines": [
+        "FINANCIAL REPORT",
+        "Consolidated record of SSLG funds…",
+        "I. BEGINNING FUNDS",
+        "Source",
+        "Amount",
+        "Initial Funds"
+      ]
+    }
+  },
+  "gpoaPreview": {
+    "id": "1rupX95ZLI_JE_rpW2OTTlOzhx8cnzbVn",
+    "name": "BSANHS-GPOA.docx",
+    "lines": [
+      "LEARNER GOVERNMENT COORDINATING…",
+      "GENERAL PLAN OF ACTIONS (GPOA),…",
+      "REGION",
+      "III – Central Luzon",
+      "DIVISION",
+      "Tarlac Province"
+    ]
+  }
 }

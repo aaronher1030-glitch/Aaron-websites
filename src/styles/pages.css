@@ -424,6 +424,115 @@
   background: linear-gradient(180deg, var(--gold-300), var(--gold-500));
   border-radius: 0 0 var(--radius-sm) var(--radius-sm);
 }
+
+/* A real page from the folder: file reference, opening lines, SSLG seal.
+ * The lines type themselves on reveal; hover replays the pass. */
+.doc-plate__meta {
+  position: absolute;
+  inset-block-start: 8%;
+  inset-inline: 10% 30%;
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+  overflow: hidden;
+  color: color-mix(in srgb, var(--ink) 52%, transparent);
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.doc-plate__dot {
+  flex: none;
+  width: 5px;
+  height: 5px;
+  background: var(--gold-500);
+  border-radius: 50%;
+}
+.doc-plate__filename {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.doc-plate__doc {
+  position: absolute;
+  inset-block-start: 26%;
+  inset-inline: 10%;
+  display: grid;
+  align-content: start;
+  gap: 0.3em;
+  overflow: hidden;
+  text-align: start;
+}
+.doc-plate__line {
+  display: block;
+  height: 1.5em;
+  overflow: hidden;
+  color: color-mix(in srgb, var(--ink) 72%, transparent);
+  font-family: var(--font-ui);
+  font-size: 0.6rem;
+  line-height: 1.5;
+  white-space: pre;
+}
+.doc-plate__caret {
+  display: inline-block;
+  width: 1px;
+  height: 0.95em;
+  margin-inline-start: 1px;
+  background: var(--gold-600);
+  vertical-align: -0.12em;
+}
+.doc-plate__seal {
+  position: absolute;
+  inset-block-start: 13.5%;
+  inset-inline-end: 9%;
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1.5px solid var(--gold-500);
+  border-radius: 50%;
+  color: var(--gold-600);
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  opacity: 0;
+  transform: rotate(-9deg);
+}
+.doc-plate__seal::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 1px solid color-mix(in srgb, var(--gold-500) 50%, transparent);
+  border-radius: 50%;
+}
+.doc-plate--stamped .doc-plate__seal { animation: seal-stamp 540ms var(--ease-card) forwards; }
+.doc-plate--typing .doc-plate__dot { animation: dot-pulse 900ms var(--ease-out) infinite; }
+
+/* The feature plates are wider, so the page reads at a slightly larger size. */
+.gpoa-feature__plate .doc-plate__line,
+.finance-feature__plate .doc-plate__line { font-size: 0.72rem; }
+.gpoa-feature__plate .doc-plate__meta,
+.finance-feature__plate .doc-plate__meta { font-size: 0.6rem; }
+.gpoa-feature__plate .doc-plate__seal,
+.finance-feature__plate .doc-plate__seal { width: 2.1rem; height: 2.1rem; font-size: 0.56rem; }
+
+@keyframes seal-stamp {
+  0% { opacity: 0; transform: rotate(-24deg) scale(1.7); }
+  62% { opacity: 1; transform: rotate(-7deg) scale(0.94); }
+  100% { opacity: 1; transform: rotate(-9deg) scale(1); }
+}
+@keyframes dot-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.72); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .doc-plate__seal { opacity: 1; }
+  .doc-plate__dot { animation: none; }
+}
+
 .doc-plate__rules {
   position: absolute;
   inset-block-start: 26%;
@@ -438,6 +547,18 @@
 }
 .doc-plate__rule:nth-child(2) { width: 86%; }
 .doc-plate__rule:nth-child(3) { width: 62%; }
+@media (prefers-reduced-motion: no-preference) {
+  .doc-tab.is-revealed .doc-plate__rule {
+    transform-origin: 0 50%;
+    animation: plate-rule-draw 600ms var(--ease-out) both;
+  }
+  .doc-tab.is-revealed .doc-plate__rule:nth-child(2) { animation-delay: 90ms; }
+  .doc-tab.is-revealed .doc-plate__rule:nth-child(3) { animation-delay: 180ms; }
+}
+@keyframes plate-rule-draw {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
 .doc-plate__label {
   position: relative;
   color: var(--ink-soft);
@@ -452,7 +573,7 @@
 }
 .doc-plate__pill {
   position: absolute;
-  inset-block-start: 46%;
+  inset-block-start: 60%;
   inset-inline-start: 50%;
   translate: -50% 0;
   padding: 0.3em 0.9em;
@@ -463,6 +584,13 @@
   letter-spacing: 0.04em;
   white-space: nowrap;
   border-radius: 999px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .doc-plate__caret { animation: caret-blink 800ms steps(1) infinite; }
+}
+@keyframes caret-blink {
+  0%, 55% { opacity: 1; }
+  56%, 100% { opacity: 0; }
 }
 
 /* The 56px row fallback: same sheet, tighter register, ellipsised label. */

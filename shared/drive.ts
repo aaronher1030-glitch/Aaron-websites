@@ -92,6 +92,16 @@ export interface SnapshotYear {
 }
 
 /**
+ * The opening lines of a public document, extracted at build time so the
+ * plate can show a real page instead of placeholder rules.
+ */
+export interface DocPreview {
+  id: string;
+  name: string;
+  lines: string[];
+}
+
+/**
  * The build-time snapshot written by scripts/sync-drive.mjs. Everything the
  * site shows from Drive comes from here, so no API key or runtime proxy is
  * needed; `generatedAt` dates the snapshot.
@@ -102,6 +112,8 @@ export interface DriveSnapshot {
   gpoa: DocFile | null;
   reports: DocFile[];
   years: SnapshotYear[];
+  previews?: Partial<Record<FolderKey, DocPreview>>;
+  gpoaPreview?: DocPreview | null;
 }
 
 const isHeic = (mime: string) => /heic|heif/i.test(mime);

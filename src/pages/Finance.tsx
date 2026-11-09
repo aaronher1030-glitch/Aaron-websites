@@ -5,6 +5,7 @@ import { PageHero } from "../components/Hero";
 import { PageMeta } from "../components/PageMeta";
 import { Stat } from "../components/Stat";
 import { FINANCE_REPORT, FINANCE_STATS } from "../content/finance";
+import { previewFor } from "../lib/driveSnapshot";
 
 /**
  * The published financial record. The report line and byline quote the
@@ -26,7 +27,12 @@ export default function Finance() {
 
       <Band variant="mint">
         <div className="finance-feature">
-          <DocumentPlate label="Financial Report" readHere className="finance-feature__plate" />
+          <DocumentPlate
+            label="Financial Report"
+            readHere
+            preview={previewFor("finance")}
+            className="finance-feature__plate"
+          />
           <div className="finance-feature__body">
             <h2>Latest Financial Reports</h2>
             <p className="finance-feature__report">

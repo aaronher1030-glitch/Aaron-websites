@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { expect, test } from "vitest";
 import { DocumentList } from "../src/components/DocumentList";
-import { GPOA_FILE, documentsFor } from "../src/lib/driveSnapshot";
+import { GPOA_FILE, GPOA_PREVIEW, documentsFor, previewFor } from "../src/lib/driveSnapshot";
 import Finance from "../src/pages/Finance";
 import Transparency from "../src/pages/Transparency";
 
@@ -31,6 +31,26 @@ test("the General Plan of Action opens the document itself", () => {
     expect(screen.getByRole("link", { name: /open the plan/i })).toHaveAttribute(
       "href",
       GPOA_FILE.view,
+    );
+  }
+});
+
+test("the plates print a real page from the folder's newest document", () => {
+  render(<MemoryRouter><Transparency /></MemoryRouter>);
+
+  const minutes = previewFor("minutes");
+  const minutesPlate = screen
+    .getByRole("tab", { name: "Minutes of the Meeting" })
+    .querySelector(".doc-plate");
+  expect(minutes?.lines.length).toBeGreaterThan(0);
+  expect(minutesPlate?.querySelector(".doc-plate__filename")).toHaveTextContent(
+    minutes!.name.replace(/\.[^.]+$/, ""),
+  );
+  expect(minutesPlate?.textContent).toContain(minutes!.lines[0]);
+
+  if (GPOA_PREVIEW) {
+    expect(document.querySelector(".gpoa-feature__plate")?.textContent).toContain(
+      GPOA_PREVIEW.lines[0],
     );
   }
 });

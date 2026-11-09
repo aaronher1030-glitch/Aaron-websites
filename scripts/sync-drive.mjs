@@ -14,6 +14,7 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { inflateRawSync } from "node:zlib";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const snapshotPath = join(root, "src", "content", "drive-snapshot.json");
@@ -173,6 +174,142 @@ function previousSnapshot() {
   }
 }
 
+/* ------------------------------------------------------------------ *
+ * Document previews: the opening lines of the latest public DOCX, so
+ * the plate shows a real page rather than placeholder rules.
+ * ------------------------------------------------------------------ */
+
+const PREVIEW_LINES = 6;
+const PREVIEW_CHARS = 34;
+const MAX_DOCX_BYTES = 30 * 1024 * 1024;
+
+const xmlEntities = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'" };
+
+function decodeXml(text) {
+  return text.replace(/&(#x?[0-9a-fA-F]+|[a-z]+);/g, (entity, code) => {
+    if (code[0] === "#") {
+      const point = code[1].toLowerCase() === "x"
+        ? Number.parseInt(code.slice(2), 16)
+        : Number.parseInt(code.slice(1), 10);
+      return Number.isFinite(point) ? String.fromCodePoint(point) : entity;
+    }
+    return xmlEntities[code] ?? entity;
+  });
+}
+
+/** Read one file out of a ZIP archive (DOCX is a ZIP of XML parts). */
+function readZipEntry(buffer, entryName) {
+  const eocd = buffer.lastIndexOf(Buffer.from([0x50, 0x4b, 0x05, 0x06]));
+  if (eocd < 0) throw new Error("not a zip archive");
+  const count = buffer.readUInt16LE(eocd + 10);
+  let cursor = buffer.readUInt32LE(eocd + 16);
+  for (let index = 0; index < count; index += 1) {
+    if (buffer.readUInt32LE(cursor) !== 0x02014b50) break;
+    const method = buffer.readUInt16LE(cursor + 10);
+    const compressedSize = buffer.readUInt32LE(cursor + 20);
+    const nameLength = buffer.readUInt16LE(cursor + 28);
+    const extraLength = buffer.readUInt16LE(cursor + 30);
+    const commentLength = buffer.readUInt16LE(cursor + 32);
+    const localOffset = buffer.readUInt32LE(cursor + 42);
+    const name = buffer.toString("utf8", cursor + 46, cursor + 46 + nameLength);
+    if (name === entryName) {
+      if (buffer.readUInt32LE(localOffset) !== 0x04034b50) {
+        throw new Error("bad local header");
+      }
+      const localName = buffer.readUInt16LE(localOffset + 26);
+      const localExtra = buffer.readUInt16LE(localOffset + 28);
+      const start = localOffset + 30 + localName + localExtra;
+      const data = buffer.subarray(start, start + compressedSize);
+      if (method === 0) return data;
+      if (method === 8) return inflateRawSync(data);
+      throw new Error(`unsupported compression ${method}`);
+    }
+    cursor += 46 + nameLength + extraLength + commentLength;
+  }
+  throw new Error(`${entryName} not found`);
+}
+
+/** Shorten a line at a word boundary; the ellipsis is part of the preview. */
+function clipLine(text) {
+  if (text.length <= PREVIEW_CHARS) return text;
+  const cut = text.slice(0, PREVIEW_CHARS);
+  const space = cut.lastIndexOf(" ");
+  return `${(space > PREVIEW_CHARS * 0.55 ? cut.slice(0, space) : cut).trimEnd()}…`;
+}
+
+/** The first few non-empty paragraphs of word/document.xml. */
+function docxLines(buffer) {
+  const xml = readZipEntry(buffer, "word/document.xml").toString("utf8");
+  const lines = [];
+  for (const paragraph of xml.matchAll(/<w:p(?:\s[^>]*)?>([\s\S]*?)<\/w:p>/g)) {
+    let text = "";
+    for (const run of paragraph[1].matchAll(
+      /<w:t(?:\s[^>]*)?>([\s\S]*?)<\/w:t>/g,
+    )) {
+      text += decodeXml(run[1]);
+    }
+    text = text
+      .replace(/\s+/g, " ")
+      .replace(/[\u0000-\u001f]/g, "")
+      .trim();
+    if (text.length < 2) continue;
+    lines.push(clipLine(text));
+    if (lines.length >= PREVIEW_LINES) break;
+  }
+  return lines;
+}
+
+async function fetchDocx(id, label) {
+  const url = `https://drive.google.com/uc?export=download&id=${id}`;
+  let lastError;
+  for (let attempt = 1; attempt <= 2; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        headers: { "user-agent": "Mozilla/5.0 BSANHS-SSLG-build" },
+        redirect: "follow",
+        signal: AbortSignal.timeout(60_000),
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const declared = Number(response.headers.get("content-length") ?? 0);
+      if (declared > MAX_DOCX_BYTES) throw new Error(`${declared} bytes, too large`);
+      const buffer = Buffer.from(await response.arrayBuffer());
+      if (buffer.length < 4 || buffer.readUInt32LE(0) !== 0x04034b50) {
+        throw new Error("response is not a docx archive");
+      }
+      if (buffer.length > MAX_DOCX_BYTES) throw new Error(`${buffer.length} bytes, too large`);
+      return buffer;
+    } catch (error) {
+      lastError = error;
+      if (attempt < 2) await sleep(900);
+    }
+  }
+  console.warn(`sync-drive: preview ${label} skipped: ${lastError?.message ?? lastError}`);
+  return null;
+}
+
+/**
+ * Build (or keep) the preview for one file. A preview is reused when the
+ * same document is still the newest, so routine deploys download nothing.
+ */
+async function previewFor(file, prior, label) {
+  if (!file || extension(file.name) !== "docx") return null;
+  if (prior && prior.id === file.id && prior.lines?.length) return prior;
+  const buffer = await fetchDocx(file.id, label);
+  if (!buffer) return prior ?? null;
+  try {
+    const lines = docxLines(buffer);
+    if (lines.length === 0) throw new Error("no text paragraphs");
+    return { id: file.id, name: file.name, lines };
+  } catch (error) {
+    console.warn(`sync-drive: preview ${label} unreadable: ${error?.message ?? error}`);
+    return prior ?? null;
+  }
+}
+
+const latestDocx = (files) =>
+  [...files].reverse().find((file) => extension(file.name) === "docx") ?? null;
+
+
 async function main() {
   const previous = previousSnapshot();
   const snapshot = {
@@ -181,9 +318,12 @@ async function main() {
     gpoa: null,
     reports: [],
     years: [],
+    previews: {},
+    gpoaPreview: null,
   };
 
-  for (const { key, id } of documentFolders()) {
+  const folders = documentFolders();
+  for (const { key, id } of folders) {
     const entries = await listFolder(id, `documents/${key}`);
     if (entries === null) {
       snapshot.documents[key] = previous?.documents?.[key] ?? [];
@@ -193,6 +333,16 @@ async function main() {
       .filter((entry) => !entry.folder)
       .map(documentFile)
       .sort((a, b) => natural.compare(a.name, b.name));
+  }
+
+  // The plate on each record card shows a page from this folder's newest
+  // document, so the preview follows the listing rather than living apart.
+  for (const { key } of folders) {
+    snapshot.previews[key] = await previewFor(
+      latestDocx(snapshot.documents[key] ?? []),
+      previous?.previews?.[key] ?? null,
+      `documents/${key}`,
+    );
   }
 
   const gpoaId = folderId(gpoaUrl[1], "GPOA");
@@ -207,6 +357,12 @@ async function main() {
     snapshot.gpoa =
       files.find((file) => extension(file.name) === "docx") ?? files[0] ?? null;
   }
+
+  snapshot.gpoaPreview = await previewFor(
+    snapshot.gpoa,
+    previous?.gpoaPreview ?? null,
+    "gpoa",
+  );
 
   const reportsId = folderId(reportsUrl[1], "reports");
   const reportEntries = await listFolder(reportsId, "reports");

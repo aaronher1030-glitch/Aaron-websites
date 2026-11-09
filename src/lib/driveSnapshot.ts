@@ -1,6 +1,7 @@
 import snapshot from "../content/drive-snapshot.json";
 import type {
   DocFile,
+  DocPreview,
   DriveSnapshot,
   FolderKey,
   SnapshotAlbum,
@@ -19,6 +20,14 @@ export function documentsFor(folder: FolderKey): DocFile[] {
 
 /** The actual General Plan of Action document, when the snapshot found one. */
 export const GPOA_FILE: DocFile | null = DRIVE_SNAPSHOT.gpoa;
+
+/** Opening lines of a folder's latest document, read at build time. */
+export function previewFor(folder: FolderKey): DocPreview | null {
+  return DRIVE_SNAPSHOT.previews?.[folder] ?? null;
+}
+
+/** Opening lines of the General Plan of Action itself. */
+export const GPOA_PREVIEW: DocPreview | null = DRIVE_SNAPSHOT.gpoaPreview ?? null;
 
 /** The accomplishment reports listed by the snapshot. */
 export const REPORT_FILES: DocFile[] = DRIVE_SNAPSHOT.reports;
