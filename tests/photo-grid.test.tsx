@@ -116,8 +116,12 @@ test("an inline album leaves focus and Escape alone", async () => {
   expect(await screen.findByText("This album has no photos yet.")).toBeInTheDocument();
   expect(document.activeElement).not.toBe(close);
 
-  // focusOnMount defaults to false here, so Escape is not a close gesture.
+  // focusOnMount defaults to false here, so Escape is not a close gesture —
+  // not even from the panel's own Close button, which is focusable inline.
   fireEvent.keyDown(document.body, { key: "Escape" });
+  expect(onClose).not.toHaveBeenCalled();
+  close.focus();
+  fireEvent.keyDown(close, { key: "Escape" });
   expect(onClose).not.toHaveBeenCalled();
 });
 
