@@ -1,13 +1,12 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
-import { ALBUM_YEARS, REPORT_FILES } from "../src/lib/driveSnapshot";
+import { REPORT_FILES } from "../src/lib/driveSnapshot";
 import Home from "../src/pages/Home";
 import Accomplishments from "../src/pages/Accomplishments";
 import ActivityPage from "../src/pages/ActivityPage";
 import About from "../src/pages/About";
 import Feedback from "../src/pages/Feedback";
 import NotFound from "../src/pages/NotFound";
-import Photos from "../src/pages/Photos";
 
 test("Home names the government once and features INKantations", () => {
   render(
@@ -74,31 +73,4 @@ test("the 404 keeps the layout and offers a way home", () => {
   render(<MemoryRouter><NotFound /></MemoryRouter>);
   expect(screen.getByRole("heading", { level: 1, name: /page not found/i })).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /home/i })).toBeInTheDocument();
-});
-
-test("the photos page lists the published Drive album tree", () => {
-  render(<MemoryRouter><Photos /></MemoryRouter>);
-  const year = ALBUM_YEARS[0];
-  if (!year) return; // A snapshot with no albums renders the empty state.
-  expect(screen.getByRole("heading", { name: year.name })).toBeInTheDocument();
-  const album = year.terms.flatMap((term) => term.albums)[0];
-  if (!album) return;
-  expect(screen.getByRole("button", { name: new RegExp(album.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i") })).toBeInTheDocument();
-});
-
-test("opening an album moves focus into the panel and Escape closes it", () => {
-  render(<MemoryRouter><Photos /></MemoryRouter>);
-  const album = ALBUM_YEARS[0]?.terms.flatMap((term) => term.albums)[0];
-  if (!album) return;
-  const card = screen.getByRole("button", { name: new RegExp(album.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i") });
-  // jsdom's click does not move focus, so focus the trigger explicitly to
-  // prove the panel — not the click — moves it.
-  card.focus();
-  fireEvent.click(card);
-  const close = screen.getByRole("button", { name: "Close" });
-  expect(document.activeElement).toBe(close);
-
-  fireEvent.keyDown(document.body, { key: "Escape" });
-  expect(screen.queryByRole("button", { name: "Close" })).not.toBeInTheDocument();
-  expect(document.activeElement).toBe(card);
 });

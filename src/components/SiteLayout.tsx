@@ -6,7 +6,6 @@ const NAV = [
   ["/", "Home"],
   ["/finance", "Finance"],
   ["/accomplishments", "Accomplishments"],
-  ["/photos", "Photos"],
   ["/transparency", "Transparency"],
   ["/about-us", "About us"],
   ["/feedback", "Feedback"],

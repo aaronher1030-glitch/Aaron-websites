@@ -34,7 +34,6 @@ const staticRoutes = [
   "/",
   "/finance",
   "/accomplishments",
-  "/photos",
   "/transparency",
   "/about-us",
   "/feedback",

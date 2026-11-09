@@ -15,15 +15,18 @@ test("slugs are unique and every activity has copy", () => {
   }
 });
 
-test("album covers reference a known album id", () => {
-  for (const a of ACTIVITIES.filter((x) => x.cover.kind === "album")) {
-    expect(a.album).toMatch(/^[A-Za-z0-9_-]{20,}$/);
-  }
-});
-
 test("image covers point at a shipped webp under /media", () => {
+  // One shipped poster per activity published on the school's public
+  // accomplishments page, so the index matches that page image-for-image.
   expect(ACTIVITIES.filter((a) => a.cover.kind === "image").map((a) => a.slug)).toEqual([
-    "inkantations-2026", "induction-ceremony-2026",
+    "world-teachers-day-2026",
+    "inkantations-2026",
+    "lgcc-clean-up-2026",
+    "earthquake-drill-2026",
+    "project-tinig",
+    "induction-ceremony-2026",
+    "grade-7-representatives-election-2026",
+    "club-organizations-membership-drive-2026",
   ]);
   for (const a of ACTIVITIES.filter((x) => x.cover.kind === "image")) {
     expect(a.cover.kind === "image" && a.cover.src).toMatch(/^\/media\/[a-z0-9-]+\.webp$/);
@@ -50,25 +53,26 @@ test("every officer has a published name, role and a shipped portrait", () => {
 });
 
 test("keeps the published activity and officer inventory", () => {
-  expect(ACTIVITIES).toHaveLength(11);
-  const albumCovers = ACTIVITIES.filter((a) => a.cover.kind === "album");
-  expect(albumCovers).toHaveLength(6);
-  for (const a of albumCovers) {
-    expect(a.cover.kind === "album" && a.cover.album).toBe(a.album);
-  }
+  // The index mirrors the school's public accomplishments page deck-for-deck.
+  expect(ACTIVITIES).toHaveLength(8);
+  expect(ACTIVITIES.every((a) => a.cover.kind === "image")).toBe(true);
   expect(ACTIVITIES.filter((a) => a.featured).map((a) => a.slug)).toEqual(["inkantations-2026"]);
 
   const induction = ACTIVITIES.find((a) => a.slug === "induction-ceremony-2026");
   expect(induction?.cover).toEqual({
     kind: "image",
     src: "/media/induction-2026.webp",
-    alt: "SSLG officers at the Onto the Next Leaders induction ceremony",
+    alt: "Onto the Next Leaders Induction Ceremony 2026 invitation",
   });
   expect(induction?.album).toBe("1iPxMcxI61C0pIZDc_2raj4IYfZAyxLL_");
   expect(induction?.reportUrl).toMatch(/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{20,}\/view$/);
 
   const tinig = ACTIVITIES.find((a) => a.slug === "project-tinig");
-  expect(tinig?.cover.kind).toBe("none");
+  expect(tinig?.cover).toEqual({
+    kind: "image",
+    src: "/media/project-tinig.webp",
+    alt: "Project Tinig poster",
+  });
   expect(tinig?.album).toBeUndefined();
   expect(tinig?.reportUrl).toBeUndefined();
   for (const a of ACTIVITIES.filter((x) => x.reportUrl)) {

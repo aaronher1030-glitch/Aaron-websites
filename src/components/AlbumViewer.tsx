@@ -24,7 +24,7 @@ export function AlbumViewer({
   name: string;
   photos: Photo[];
   onClose: () => void;
-  /** True only when the panel opens as a disclosure (Photos): focus moves in.
+  /** True only when the panel opens as a disclosure: focus moves in.
    *  False when it is page content (an activity detail), so the initial load
    *  keeps focus at the top and the skip link stays the first stop. */
   focusOnMount?: boolean;

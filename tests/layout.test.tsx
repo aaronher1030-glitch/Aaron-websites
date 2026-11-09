@@ -15,11 +15,11 @@ function renderLayout() {
   );
 }
 
-test("keeps the published nav order with Photos after Accomplishments", () => {
+test("keeps the published nav order", () => {
   renderLayout();
   const nav = screen.getByRole("navigation", { name: "Primary" });
   expect(within(nav).getAllByRole("link").map((a) => a.textContent)).toEqual([
-    "Home", "Finance", "Accomplishments", "Photos", "Transparency", "About us", "Feedback",
+    "Home", "Finance", "Accomplishments", "Transparency", "About us", "Feedback",
   ]);
 });
 
