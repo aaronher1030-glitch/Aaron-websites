@@ -13,14 +13,41 @@ export function Beams() {
   );
 }
 
+/* The continuous layer on the home field: two rings, a slow scan line and
+ * paper slips that float as if the field had lost its gravity. Decorative
+ * only; the CSS stops every piece under reduced motion. */
+function HeroAmbient() {
+  return (
+    <div className="hero-ambient" aria-hidden="true">
+      <span className="hero-ambient__halo" />
+      <span className="hero-ambient__halo hero-ambient__halo--inner" />
+      <span className="hero-ambient__scan" />
+      <span className="hero-ambient__figure">
+        <img src="/media/aquinaldo-gold.webp" alt="" width="505" height="618" decoding="async" />
+      </span>
+      {[1, 2, 3, 4].map((n) => (
+        <span key={n} className={`hero-ambient__sheet hero-ambient__sheet--${n}`} />
+      ))}
+      {[1, 2, 3, 4, 5, 6].map((n) => (
+        <span key={n} className={`hero-ambient__mote hero-ambient__mote--${n}`} />
+      ))}
+    </div>
+  );
+}
+
 export function HomeHero() {
   return (
     <section className="hero hero--home" aria-labelledby="hero-title">
       <Beams />
+      <HeroAmbient />
       <div className="hero__lockup">
         <div className="hero__seals">
-          <img src="/brand/seal-school.png" alt="" width="84" height="87" />
-          <img src="/brand/seal-sslg.png" alt="" width="84" height="84" />
+          <span className="hero__seal">
+            <img src="/brand/seal-school.png" alt="" width="84" height="87" />
+          </span>
+          <span className="hero__seal">
+            <img src="/brand/seal-sslg.png" alt="" width="84" height="84" />
+          </span>
         </div>
         <span className="hero__rule" aria-hidden="true" />
         <div className="hero__type">

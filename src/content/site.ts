@@ -1,6 +1,10 @@
 export const MANDATE =
   "The SSLG shall be the highest student governing body in the school, be the forefront of learners' rights and welfare; model of learners' excellence; and representation of good character and deep sense of good moral values.";
 
+/** The school motto as printed on the official letterhead. */
+export const MOTTO =
+  "Disiplina at Galing ing Armas Ku, Aquinian Ku, Pagmaragul Ku!";
+
 export const OBJECTIVES = [
   "Be the forefront of learners' rights and welfare",
   "Model of the learners' excellence",

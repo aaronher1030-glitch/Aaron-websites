@@ -11,9 +11,9 @@ import type { Officer } from "../content/types";
  * Co-Adviser closes it, exactly as the content layer commits them.
  */
 const ROSTER_BANDS = [
-  { title: "Executive Officers", group: "executive", variant: "navy", grid: "officer-grid--executive" },
-  { title: "Grade-Level Representatives", group: "grade", variant: "deep", grid: "officer-grid--grade" },
-  { title: "School Leadership", group: "school", variant: "navy", grid: "officer-grid--school" },
+  { index: "01", title: "Executive Officers", group: "executive", variant: "navy", grid: "officer-grid--executive" },
+  { index: "02", title: "Grade-Level Representatives", group: "grade", variant: "deep", grid: "officer-grid--grade" },
+  { index: "03", title: "School Leadership", group: "school", variant: "navy", grid: "officer-grid--school" },
 ] as const;
 
 function OfficerCard({ officer }: { officer: Officer }) {
@@ -41,7 +41,8 @@ export default function About() {
       <PageHero title="About us" lead={ABOUT_INTRO} />
 
       {ROSTER_BANDS.map((band) => (
-        <Band key={band.group} variant={band.variant}>
+        <Band key={band.group} variant={band.variant} className="band--roster">
+          <span className="roster-index" aria-hidden="true">{band.index}</span>
           <SectionTitle title={band.title} />
           <div className={`officer-grid ${band.grid}`} data-reveal-group>
             {OFFICERS.filter((officer) => officer.group === band.group).map((officer) => (

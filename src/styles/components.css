@@ -79,6 +79,151 @@
 .beam-glow--a { inset-block-start: 18%; }
 .beam-glow--b { inset-block-start: 59%; }
 
+/* The field itself is a drafting sheet: a faint grid, faded at the rim so
+ * the hero still reads as a lit stage rather than a diagram. */
+.beams::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background-image: var(--tex-grid);
+  background-size: 72px 72px;
+  opacity: 0.085;
+  -webkit-mask-image: radial-gradient(72% 78% at 52% 42%, #000 8%, transparent 76%);
+  mask-image: radial-gradient(72% 78% at 52% 42%, #000 8%, transparent 76%);
+}
+
+/* Ambient layer — the continuous motion on the home page. Rings, a slow
+ * scan and levitating paper slips sit behind the lockup; every piece moves
+ * on transform/opacity only and stops under reduced motion. */
+.hero-ambient {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.hero-ambient__halo {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  width: clamp(360px, 62vw, 760px);
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  border: 1px solid color-mix(in srgb, var(--gold-300) 22%, transparent);
+  border-radius: 50%;
+  opacity: 0.5;
+  -webkit-mask-image: linear-gradient(180deg, #000 4%, transparent 62%);
+  mask-image: linear-gradient(180deg, #000 4%, transparent 62%);
+}
+.hero-ambient__halo--inner {
+  width: clamp(240px, 40vw, 480px);
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--paper) 16%, transparent);
+  opacity: 0.42;
+}
+.hero-ambient__scan {
+  position: absolute;
+  inset-inline: 8%;
+  inset-block-start: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--gold-300) 55%, transparent) 22%, color-mix(in srgb, var(--paper) 55%, transparent) 50%, color-mix(in srgb, var(--gold-300) 55%, transparent) 78%, transparent);
+  opacity: 0;
+}
+/* The Aguinaldo statue, ghosted into the right of the field exactly as the
+ * letterhead sets it behind the title. Decorative; it carries no text. */
+.hero-ambient__figure {
+  position: absolute;
+  inset-inline-end: -3%;
+  inset-block-end: 4%;
+  width: clamp(240px, 25vw, 360px);
+  opacity: 0.4;
+  filter: saturate(1.25) brightness(1.06);
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, #000 22%, #000 100%),
+    linear-gradient(180deg, transparent 0%, #000 16%, #000 78%, rgba(0, 0, 0, 0.55) 92%, transparent 100%);
+  mask-image:
+    linear-gradient(90deg, transparent 0%, #000 22%, #000 100%),
+    linear-gradient(180deg, transparent 0%, #000 16%, #000 78%, rgba(0, 0, 0, 0.55) 92%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+}
+.hero-ambient__figure img { width: 100%; height: auto; }
+@media (max-width: 1023.98px) {
+  .hero-ambient__figure { display: none; }
+}
+.hero-ambient__sheet {
+  --rot: 0deg;
+  --drift: -18px;
+  position: absolute;
+  width: clamp(54px, 6vw, 88px);
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(158deg, color-mix(in srgb, var(--paper) 13%, transparent), color-mix(in srgb, var(--paper) 2%, transparent));
+  border: 1px solid color-mix(in srgb, var(--gold-300) 26%, transparent);
+  border-radius: 2px;
+  box-shadow: 0 22px 34px -26px rgba(0, 0, 0, 0.85);
+  transform: rotate(var(--rot));
+}
+.hero-ambient__sheet::before {
+  content: "";
+  position: absolute;
+  inset: 22% 16% auto;
+  height: 1px;
+  background: color-mix(in srgb, var(--gold-300) 55%, transparent);
+  box-shadow:
+    0 9px 0 color-mix(in srgb, var(--paper) 20%, transparent),
+    0 18px 0 color-mix(in srgb, var(--paper) 14%, transparent),
+    0 27px 0 color-mix(in srgb, var(--paper) 10%, transparent);
+}
+.hero-ambient__sheet--1 { inset-block-start: 18%; inset-inline-start: 5%; --rot: -10deg; --drift: -20px; }
+.hero-ambient__sheet--2 { inset-block-start: 14%; inset-inline-end: 6%; --rot: 8deg; --drift: -14px; }
+.hero-ambient__sheet--3 { inset-block-end: 12%; inset-inline-start: 12%; --rot: 6deg; --drift: -24px; }
+.hero-ambient__sheet--4 { inset-block-end: 9%; inset-inline-end: 7%; --rot: -13deg; --drift: -16px; }
+.hero-ambient__mote {
+  position: absolute;
+  inset-block-end: 8%;
+  width: 3px;
+  height: 3px;
+  background: var(--gold-300);
+  border-radius: 50%;
+  box-shadow: 0 0 8px 1px color-mix(in srgb, var(--gold-300) 65%, transparent);
+  opacity: 0;
+}
+.hero-ambient__mote--1 { inset-inline-start: 14%; }
+.hero-ambient__mote--2 { inset-inline-start: 28%; inset-block-end: 16%; animation-delay: -3s; }
+.hero-ambient__mote--3 { inset-inline-start: 46%; inset-block-end: 6%; animation-delay: -7s; }
+.hero-ambient__mote--4 { inset-inline-start: 63%; inset-block-end: 12%; animation-delay: -2s; }
+.hero-ambient__mote--5 { inset-inline-start: 78%; inset-block-end: 5%; animation-delay: -9s; }
+.hero-ambient__mote--6 { inset-inline-start: 88%; inset-block-end: 20%; animation-delay: -5s; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-ambient__halo--inner { animation: halo-turn 120s linear infinite; }
+  .hero-ambient__scan { animation: scan-pass 15s var(--ease-in-out) 4s infinite; }
+  .hero-ambient__sheet { animation: sheet-drift var(--dur-ambient) var(--ease-in-out) infinite alternate; }
+  .hero-ambient__sheet--2 { animation-duration: 31s; animation-delay: -6s; }
+  .hero-ambient__sheet--3 { animation-duration: 36s; animation-delay: -12s; }
+  .hero-ambient__sheet--4 { animation-duration: 29s; animation-delay: -4s; }
+  .hero-ambient__mote { animation: mote-rise 17s linear infinite; }
+}
+@keyframes halo-turn {
+  to { rotate: 360deg; }
+}
+@keyframes scan-pass {
+  0% { opacity: 0; transform: translateY(-6%); }
+  12% { opacity: 0.6; }
+  82% { opacity: 0.45; }
+  100% { opacity: 0; transform: translateY(84vh); }
+}
+@keyframes sheet-drift {
+  from { transform: translateY(0) rotate(var(--rot)); }
+  to { transform: translateY(var(--drift)) rotate(calc(var(--rot) + 3deg)); }
+}
+@keyframes mote-rise {
+  0% { opacity: 0; transform: translateY(0) scale(0.7); }
+  14% { opacity: 0.85; }
+  70% { opacity: 0.55; }
+  100% { opacity: 0; transform: translateY(-42vh) scale(1); }
+}
+
 .hero { position: relative; isolation: isolate; display: grid; place-items: center; overflow: hidden; background: var(--navy-950); color: var(--text-dark); }
 .hero--home { min-height: var(--hero-min); padding-block: var(--space-8) var(--space-9); }
 /* A hairline frame inset from the edge: the field reads as a printed page. */
@@ -123,6 +268,7 @@
   padding-inline: var(--gutter);
 }
 .hero__seals { display: grid; gap: var(--space-4); justify-items: center; }
+.hero__seal { display: grid; justify-items: center; }
 .hero__seals img {
   width: clamp(56px, 5.8vw, 88px);
   height: auto;
@@ -202,7 +348,10 @@
     animation-delay: calc(120ms + var(--i) * 85ms);
   }
   .hero__seals img { animation: fade-rise 800ms var(--ease-out) both; }
-  .hero__seals img:nth-child(2) { animation-delay: 90ms; }
+  .hero__seal:nth-child(2) img { animation-delay: 90ms; }
+  /* Each seal then drifts on its own beat, as if weightless. */
+  .hero__seal { animation: seal-bob 9s var(--ease-in-out) infinite alternate; }
+  .hero__seal:nth-child(2) { animation-duration: 11s; animation-delay: -3s; }
   .hero__school { animation: fade-rise 700ms var(--ease-out) 260ms both; }
   .hero__year { animation: fade-rise 700ms var(--ease-out) 560ms both; }
   .hero__rule { animation: rule-grow 900ms var(--ease-out) 360ms both; }
@@ -218,6 +367,10 @@
 @keyframes word-rise {
   from { transform: translateY(112%); }
   to { transform: translateY(0); }
+}
+@keyframes seal-bob {
+  from { transform: translateY(0); }
+  to { transform: translateY(-7px); }
 }
 @keyframes fade-rise {
   from { opacity: 0; transform: translateY(10px); }
@@ -248,6 +401,15 @@
   /* Keep the lower beam clear of the stacked wordmark and the scroll cue. */
   .beam--b { inset-block-start: 71%; }
   .beam-glow--b { inset-block-start: 66%; }
+  /* Two slips and three motes are enough on a phone; the rest would crowd
+   * the wordmark. */
+  .hero-ambient__sheet--1,
+  .hero-ambient__sheet--3,
+  .hero-ambient__mote--3,
+  .hero-ambient__mote--5,
+  .hero-ambient__mote--6 { display: none; }
+  .hero-ambient__sheet { width: 54px; opacity: 0.8; }
+  .hero-ambient__halo { width: 86vw; }
 }
 /* At 320px the 44px wordmark floor makes "GOVERNMENT." wider than the
  * 288px content column, so the hero clips it; step down until it fits. */
@@ -293,11 +455,13 @@
   pointer-events: none;
 }
 @supports (animation-timeline: scroll()) {
-  .scroll-progress {
-    opacity: 1;
-    transform: scaleX(0);
-    animation: progress-grow linear both;
-    animation-timeline: scroll(root block);
+  @media (prefers-reduced-motion: no-preference) {
+    .scroll-progress {
+      opacity: 1;
+      transform: scaleX(0);
+      animation: progress-grow linear both;
+      animation-timeline: scroll(root block);
+    }
   }
 }
 @keyframes progress-grow {
@@ -443,7 +607,35 @@
 .band--deep { background-color: var(--bg-page); color: var(--text-dark); }
 .band--mint { background-color: var(--bg-band); color: var(--text-light); }
 .band--paper { background-color: var(--bg-bar); color: var(--text-light); }
-/* The grain sits under the content but over the colour field. */
+/* Textures sit under the content but over the colour field. Navy and deep
+ * bands take a drafting grid that fades out at the band edges, then the
+ * grain; the mint takes a paper fibre instead, so no two surfaces share a
+ * texture. The textures are static, so they cost nothing while the page
+ * moves. */
+.band--navy::before,
+.band--deep::before,
+.band--mint::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.band--navy::before,
+.band--deep::before {
+  background-image: var(--tex-grid);
+  background-size: 64px 64px;
+  opacity: 0.075;
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 14%, #000 86%, transparent);
+  mask-image: linear-gradient(180deg, transparent, #000 14%, #000 86%, transparent);
+}
+.band--deep::before { opacity: 0.05; }
+.band--mint::before {
+  background-image: var(--tex-fibre);
+  background-size: 240px 240px;
+  opacity: 0.055;
+  mix-blend-mode: multiply;
+}
 .band--navy::after,
 .band--deep::after,
 .band--mint::after {
@@ -457,7 +649,7 @@
 }
 .band--navy::after,
 .band--deep::after { opacity: 0.05; mix-blend-mode: soft-light; }
-.band--mint::after { opacity: 0.035; mix-blend-mode: multiply; }
+.band--mint::after { opacity: 0.05; mix-blend-mode: multiply; }
 .band__inner {
   position: relative;
   z-index: 1;

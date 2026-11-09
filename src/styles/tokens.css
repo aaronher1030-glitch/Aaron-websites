@@ -106,8 +106,17 @@
   --reveal-rise: 12px;
   --ease-out: cubic-bezier(0.2, 0, 0, 1);
   --ease-card: cubic-bezier(0.23, 1, 0.32, 1);
+  /* On-screen movement (drifting slips, seal bob, plate breath) starts and
+     ends gently. Without this token the shorthand resolves to `none`. */
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+  /* Ambient motion is slow on purpose: it should be noticed only after a
+     beat, never compete with reading. */
+  --dur-ambient: 26s;
+  --dur-marquee: 58s;
 
-  /* A single monochrome noise tile, blended at low opacity on the colour
-     fields so the navy and mint read as paper rather than flat fills. */
+  /* Surface textures. The grain is the base; the grid turns the navy bands
+     into a drafting sheet, and the fibre gives the mint its paper tooth. */
   --grain: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODAiIGhlaWdodD0iMTgwIj48ZmlsdGVyIGlkPSJnIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC44MiIgbnVtT2N0YXZlcz0iMyIgc3RpdGNoVGlsZXM9InN0aXRjaCIvPjxmZUNvbG9yTWF0cml4IHR5cGU9InNhdHVyYXRlIiB2YWx1ZXM9IjAiLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgZmlsdGVyPSJ1cmwoI2cpIi8+PC9zdmc+");
+  --tex-grid: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc2NCcgaGVpZ2h0PSc2NCc+PHBhdGggZD0nTTY0IDBIMHY2NCcgZmlsbD0nbm9uZScgc3Ryb2tlPScjZmZmZmZmJyBzdHJva2Utb3BhY2l0eT0nLjU1JyBzdHJva2Utd2lkdGg9JzEnLz48Y2lyY2xlIGN4PSczMicgY3k9JzMyJyByPScxJyBmaWxsPScjZmZmZmZmJyBmaWxsLW9wYWNpdHk9Jy41Jy8+PC9zdmc+");
+  --tex-fibre: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyNDAnIGhlaWdodD0nMjQwJz48ZmlsdGVyIGlkPSdmJz48ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgYmFzZUZyZXF1ZW5jeT0nMC45IDAuMDM1JyBudW1PY3RhdmVzPScyJyBzdGl0Y2hUaWxlcz0nc3RpdGNoJy8+PGZlQ29sb3JNYXRyaXggdHlwZT0nc2F0dXJhdGUnIHZhbHVlcz0nMCcvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPScyNDAnIGhlaWdodD0nMjQwJyBmaWx0ZXI9J3VybCgjZiknLz48L3N2Zz4=");
 }
