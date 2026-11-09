@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "pages:dev": "npm run build && wrangler pages dev dist",
-    "deploy": "npm run build && wrangler pages deploy dist --project-name sslg --branch main"
+    "deploy": "npm run build && wrangler pages deploy dist --project-name bsanhs --branch main"
   },
   "dependencies": {
     "@fontsource/gentium-book-plus": "^5.3.0",

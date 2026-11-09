@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sslg-2sr.pages.dev/sitemap.xml
+Sitemap: https://bsanhs.pages.dev/sitemap.xml
