@@ -35,6 +35,7 @@ export function AlbumViewer({
   focusOnMount?: boolean;
 }) {
   const [attempt, setAttempt] = useState(0);
+  const panelRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const [state, setState] = useState<ViewerState>(() => {
     const hit = cache.get(albumId);
@@ -47,16 +48,23 @@ export function AlbumViewer({
     if (focusOnMount) closeRef.current?.focus({ preventScroll: true });
   }, [focusOnMount]);
 
-  // Document-level so Escape works even when focus has not stayed inside the
-  // panel. The nested lightbox listens in the capture phase and stops
-  // propagation, so this bubble-phase listener never sees its Escape.
+  // Escape belongs to the disclosure only: page content (an activity detail)
+  // must not treat Escape anywhere on the page as "leave". Listening on the
+  // document covers focus that moved between panel controls, while requiring
+  // focus inside keeps Escape from closing a stacked mobile menu *and* this
+  // panel in one keypress. The nested lightbox handles Escape in the capture
+  // phase and stops propagation, so this bubble-phase listener never sees it.
   useEffect(() => {
+    if (!focusOnMount) return;
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape" && !event.defaultPrevented) onClose();
+      if (event.key !== "Escape" || event.defaultPrevented) return;
+      const panel = panelRef.current;
+      if (!panel || !panel.contains(document.activeElement)) return;
+      onClose();
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [onClose]);
+  }, [focusOnMount, onClose]);
 
   useEffect(() => {
     const hit = cache.get(albumId);
@@ -84,7 +92,7 @@ export function AlbumViewer({
   const driveUrl = folderUrl(albumId);
 
   return (
-    <div className="album-panel" role="region" aria-label={`${name} album`}>
+    <div className="album-panel" role="region" aria-label={`${name} album`} ref={panelRef}>
       <div className="album-panel__bar">
         <p className="album-panel__name">{name}</p>
         <button ref={closeRef} type="button" className="album-panel__close" onClick={onClose}>

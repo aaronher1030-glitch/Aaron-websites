@@ -68,7 +68,7 @@ test("Escape inside the lightbox closes only the lightbox, not the album panel",
   );
 
   render(
-    <AlbumViewer albumId="nestedAlbum0000000000000" name="Nested album" onClose={onClose} />,
+    <AlbumViewer albumId="nestedAlbum0000000000000" name="Nested album" onClose={onClose} focusOnMount />,
   );
 
   const trigger = await screen.findByRole("button", { name: /IMG 0012/i });
@@ -90,9 +90,11 @@ test("Escape inside the lightbox closes only the lightbox, not the album panel",
   expect(document.activeElement).toBe(trigger);
 });
 
-test("an inline album leaves focus alone; document Escape still closes it", async () => {
-  // AlbumViewer also mounts as page content (an activity detail). Focusing the
-  // panel then would steal focus from the top of a freshly loaded page.
+test("an inline album leaves focus and Escape alone", async () => {
+  // AlbumViewer also mounts as page content (an activity detail), where its
+  // onClose navigates back to the index. Focusing the panel then would steal
+  // focus on load, and a page-wide Escape would turn any dismiss gesture into
+  // a navigation — including closing the mobile menu.
   const onClose = vi.fn();
   vi.stubGlobal(
     "fetch",
@@ -114,13 +116,13 @@ test("an inline album leaves focus alone; document Escape still closes it", asyn
   expect(await screen.findByText("This album has no photos yet.")).toBeInTheDocument();
   expect(document.activeElement).not.toBe(close);
 
-  // Escape is a document listener, so it works even when focus never entered
-  // the panel (focusOnMount defaults to false here).
+  // focusOnMount defaults to false here, so Escape is not a close gesture.
   fireEvent.keyDown(document.body, { key: "Escape" });
-  expect(onClose).toHaveBeenCalledTimes(1);
+  expect(onClose).not.toHaveBeenCalled();
 });
 
-test("focusOnMount moves focus to the panel Close", async () => {
+test("focusOnMount moves focus to the panel Close and scopes Escape to it", async () => {
+  const onClose = vi.fn();
   vi.stubGlobal(
     "fetch",
     vi.fn(async () => ({
@@ -134,11 +136,21 @@ test("focusOnMount moves focus to the panel Close", async () => {
   );
 
   render(
-    <AlbumViewer albumId="disclosureAlbum0000000" name="Disclosure album" onClose={() => {}} focusOnMount />,
+    <AlbumViewer albumId="disclosureAlbum0000000" name="Disclosure album" onClose={onClose} focusOnMount />,
   );
   // Focus happens on mount; await the fetch to keep the state update in act.
   expect(await screen.findByText("This album has no photos yet.")).toBeInTheDocument();
   expect(document.activeElement).toBe(screen.getByRole("button", { name: "Close" }));
+
+  // Escape closes only while focus is inside the panel: a stacked menu owns
+  // the key when focus has moved there.
+  (document.activeElement as HTMLElement).blur();
+  fireEvent.keyDown(document.body, { key: "Escape" });
+  expect(onClose).not.toHaveBeenCalled();
+
+  screen.getByRole("button", { name: "Close" }).focus();
+  fireEvent.keyDown(document.body, { key: "Escape" });
+  expect(onClose).toHaveBeenCalledTimes(1);
 });
 
 test("an empty album says so and still links to its Drive folder", async () => {
