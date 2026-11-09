@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sslg-2sr.pages.dev/sitemap.xml

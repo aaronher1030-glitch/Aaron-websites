@@ -27,6 +27,20 @@ export function PageMeta({
     setMeta('meta[property="og:title"]', "og:title", fullTitle, "property");
     setMeta('meta[property="og:description"]', "og:description", description, "property");
     setMeta('meta[property="og:type"]', "og:type", "website", "property");
+    // The share image is static (public/og.png, declared in index.html).
+    // Ensure it survives SPA navigations without ever overwriting it.
+    ensureMeta(
+      'meta[property="og:image"]',
+      "og:image",
+      `${SITE_URL}/og.png`,
+      "property",
+    );
+    ensureMeta(
+      'meta[property="og:image:alt"]',
+      "og:image:alt",
+      "Supreme Secondary Learner Government wordmark with the BSANHS and SSLG seals",
+      "property",
+    );
 
     let canonical = document.head.querySelector<HTMLLinkElement>(
       'link[rel="canonical"]',
@@ -65,4 +79,18 @@ function setMeta(
     document.head.appendChild(element);
   }
   element.content = content;
+}
+
+/** Create the tag only when it is missing; never touch an existing value. */
+function ensureMeta(
+  selector: string,
+  name: string,
+  content: string,
+  attribute: "name" | "property" = "name",
+) {
+  if (document.head.querySelector(selector)) return;
+  const element = document.createElement("meta");
+  element.setAttribute(attribute, name);
+  element.content = content;
+  document.head.appendChild(element);
 }

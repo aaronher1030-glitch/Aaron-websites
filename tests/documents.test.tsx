@@ -2,6 +2,7 @@ import { act, fireEvent, render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { afterEach, beforeEach, expect, test, vi } from "vitest";
 import { DocumentList } from "../src/components/DocumentList";
+import { resetDocumentCacheForTests } from "../src/lib/useDocuments";
 import Finance from "../src/pages/Finance";
 import Transparency from "../src/pages/Transparency";
 
@@ -19,6 +20,9 @@ beforeEach(() => {
 
 afterEach(() => {
   vi.unstubAllGlobals();
+  // The per-folder promise cache is module-level and outlives each render;
+  // clear it so one test's stubbed payload can never leak into the next.
+  resetDocumentCacheForTests();
 });
 
 test("a document folder with no files shows the empty state and fallback", async () => {
@@ -55,8 +59,8 @@ test("finance prints the published figures", async () => {
 });
 
 test("document rows show the Drive thumb, extension tag and only documented dates", async () => {
-  // "notices" is untouched by the shared cache in this file, so the row
-  // payload below is actually fetched instead of replaying an empty slot.
+  // The afterEach cache reset guarantees a fresh fetch here, so the row
+  // payload below is actually requested instead of replaying an empty slot.
   vi.stubGlobal(
     "fetch",
     vi.fn().mockResolvedValue({

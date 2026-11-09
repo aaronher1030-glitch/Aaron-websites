@@ -4,7 +4,7 @@ import { useDocuments } from "../lib/useDocuments";
 import { DocumentPlate } from "./DocumentPlate";
 import { EmptyState, Loading } from "./EmptyState";
 
-/** en-PH day-month-year, exactly as the brief specifies. */
+/** en-PH with day/month/year components renders month-first: "November 8, 2026". */
 const modifiedFormat = new Intl.DateTimeFormat("en-PH", {
   day: "numeric",
   month: "long",

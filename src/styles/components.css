@@ -56,8 +56,13 @@
 /* The beams cover the home field; the title band keeps its ruled gradient. */
 .hero--page .beams { background: none; }
 /* Lift the title above the z-index:0 beams layer. */
-.hero__page-inner { position: relative; z-index: 1; width: 100%; max-width: var(--page-max); padding-inline: var(--gutter); text-align: center; }
-.hero--page h1 { font-size: var(--text-h1); line-height: 1.2; letter-spacing: 0.055em; text-transform: uppercase; }
+.hero__page-inner { position: relative; z-index: 1; width: 100%; min-width: 0; max-width: var(--page-max); padding-inline: var(--gutter); text-align: center; }
+.hero--page h1 { font-size: var(--text-h1); line-height: 1.2; letter-spacing: 0.055em; text-transform: uppercase; overflow-wrap: break-word; }
+/* At 320px the longest page title ("Accomplishments") exceeds the 280px
+ * content width at the 32px floor; step down so it never clips or breaks. */
+@media (max-width: 379px) {
+  .hero--page h1 { font-size: 1.75rem; }
+}
 .hero__lead { max-width: 58ch; margin: var(--space-3) auto 0; color: var(--text-muted-dark); font-size: var(--text-base); }
 
 .hero__lockup {
@@ -259,7 +264,11 @@
   text-align: center;
   text-decoration: none;
   border-radius: var(--radius-sm);
-  transition: background-color 180ms var(--ease-out), color 180ms var(--ease-out);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cta-bar {
+    transition: background-color 180ms var(--ease-out), color 180ms var(--ease-out);
+  }
 }
 .cta-bar > span { position: relative; z-index: 1; }
 /* Adapted from uiverse.io by neerajbaniwal (MIT) */

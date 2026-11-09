@@ -10,6 +10,15 @@ import { getJson } from "./api";
  */
 const pending = new Map<FolderKey, Promise<DocumentsResponse>>();
 
+/**
+ * Test-only escape hatch: the module-level cache outlives a rendered tree,
+ * so test files reset it between cases to keep fetch stubs independent.
+ * Never called by app code.
+ */
+export function resetDocumentCacheForTests(): void {
+  pending.clear();
+}
+
 export function loadDocuments(folder: FolderKey): Promise<DocumentsResponse> {
   let promise = pending.get(folder);
   if (!promise) {
