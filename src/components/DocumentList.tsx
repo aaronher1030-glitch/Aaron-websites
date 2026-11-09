@@ -87,10 +87,15 @@ function FileRow({ file }: { file: DocFile }) {
   );
 }
 
-const syncedFormat = new Intl.DateTimeFormat("en-PH", {
+/** Manila time, so the stamp matches the school's clock. */
+const updatedFormat = new Intl.DateTimeFormat("en-PH", {
   day: "numeric",
-  month: "long",
+  month: "short",
   year: "numeric",
+  hour: "numeric",
+  minute: "2-digit",
+  hour12: true,
+  timeZone: "Asia/Manila",
 });
 
 function SyncedNote() {
@@ -98,8 +103,7 @@ function SyncedNote() {
   if (Number.isNaN(date.getTime())) return null;
   return (
     <p className="doc-snapshot">
-      Snapshot of the public Drive folder, taken {syncedFormat.format(date)}.
-      Newer publications appear after the next update.
+      Pre-v1.0 · Updated {updatedFormat.format(date)}
     </p>
   );
 }

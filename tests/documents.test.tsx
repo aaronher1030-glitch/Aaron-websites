@@ -78,5 +78,7 @@ test("document rows come from the snapshot with Drive links, tags and no invente
   expect(rows[0].querySelector(".doc-row__tag")).toHaveTextContent("DOCX");
   // The listing prints only "Jun 5"; without a year the row invents no date.
   expect(document.querySelectorAll(".doc-row__date")).toHaveLength(0);
-  expect(screen.getByText(/snapshot of the public drive folder/i)).toBeInTheDocument();
+  // One compact stamp: version plus the Manila update time.
+  const note = document.querySelector(".doc-snapshot");
+  expect(note?.textContent).toMatch(/Pre-v1\.0 · Updated .*\d{1,2}:\d{2}\s?[AP]M/);
 });
