@@ -482,3 +482,137 @@
   .gpoa-feature__body,
   .finance-feature__body { justify-items: center; text-align: center; }
 }
+
+/* ------------------------------------------------------------------ *
+ * About — the roster grids, the nameplate crop and the mandate sheet.
+ * Officer bands are navy/deep, so every name and role uses the dark-side
+ * text tokens; the mandate band is mint and flips to the light-side ones.
+ * ------------------------------------------------------------------ */
+
+.officer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(160px, 100%), 1fr));
+  gap: var(--space-5) var(--space-4);
+}
+/* Wide screens give each group whole rows: 7 executives, 6 + 6 grade
+ * representatives, 4 + 4 school leaders — no orphan cards. */
+@media (min-width: 1000px) {
+  .officer-grid--executive { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+  .officer-grid--grade { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .officer-grid--school { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-6) var(--space-5); }
+}
+
+.officer { display: grid; gap: var(--space-3); margin: 0; align-content: start; }
+/* The brief's crop frame, with one measured correction: the baked nameplate
+ * starts at 73.6–78.5% of the square source's height (school/grade/executive
+ * templates), so the brief's 132% width — which only hides the bottom 5.3% —
+ * left the plate visible in the 1440/390 verification shots. 176% width puts
+ * the image height at 140.8% of the 4/5 frame, hiding everything below 71%
+ * of the source: plate gone, face and shoulders centred. max-width: none
+ * lifts the global img clamp, which would otherwise pin the width to 100%. */
+.officer__frame { display: block; aspect-ratio: 4 / 5; overflow: hidden; background: var(--navy-800); border-radius: var(--radius-sm); outline: 1px solid var(--border-dark); outline-offset: -1px; }
+.officer__frame img { width: 176%; margin-inline-start: -38%; height: auto; max-width: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .officer__frame img { transition: transform 450ms var(--ease-card); }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .officer:hover .officer__frame img { transform: scale(1.03); }
+}
+.officer figcaption { display: grid; gap: var(--space-1); justify-items: center; text-align: center; }
+.officer__name {
+  color: var(--text-dark);
+  font-size: var(--text-base);
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.officer__role {
+  color: var(--text-muted-dark);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+/* Mandate — objectives beside duties, then the bordered mandate aside. */
+
+.mandate { display: grid; gap: var(--space-5); justify-items: start; }
+.mandate h2 { max-width: 46ch; color: var(--text-light); }
+.mandate__lists {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+  width: 100%;
+}
+.mandate__list h3 { margin-block-end: var(--space-3); color: var(--text-light); }
+.mandate__list ol,
+.mandate__list ul {
+  display: grid;
+  gap: var(--space-3);
+  margin: 0;
+  padding-inline-start: 1.4em;
+  color: var(--ink-soft);
+  font-size: var(--text-base);
+  line-height: 1.6;
+}
+.mandate__list li::marker { color: var(--navy-800); font-weight: 600; }
+.mandate__quote {
+  width: 100%;
+  padding: var(--space-5);
+  background: color-mix(in srgb, var(--white) 55%, transparent);
+  border: 1px solid var(--text-muted-light);
+  border-inline-start: 3px solid var(--navy-800);
+  border-radius: var(--radius-sm);
+}
+.mandate__quote p {
+  max-width: var(--measure);
+  color: var(--text-light);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-style: italic;
+  line-height: 1.6;
+}
+@media (max-width: 899.98px) {
+  .mandate__lists { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ------------------------------------------------------------------ *
+ * Feedback — a white sheet on the mint band carrying the embedded form.
+ * ------------------------------------------------------------------ */
+
+.feedback-card {
+  display: grid;
+  gap: var(--space-4);
+  justify-items: start;
+  width: 100%;
+  max-width: 880px;
+  margin-inline: auto;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-panel);
+  color: var(--text-light);
+}
+.feedback-card h2 { color: var(--text-light); }
+.feedback-card__intro {
+  max-width: var(--measure);
+  color: var(--ink-soft);
+  font-size: var(--text-base);
+}
+.feedback-frame {
+  display: block;
+  width: 100%;
+  min-height: 900px;
+  border: 0;
+  background: var(--white);
+}
+.feedback-fallback { color: var(--text-muted-light); font-size: var(--text-base); }
+.feedback-fallback a {
+  color: var(--text-light);
+  font-weight: 500;
+  text-decoration-color: var(--link-underline-light);
+}
+@media (hover: hover) {
+  .feedback-fallback a:hover { color: var(--navy-700); }
+}

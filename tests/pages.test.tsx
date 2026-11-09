@@ -3,6 +3,9 @@ import { MemoryRouter, Route, Routes } from "react-router-dom";
 import Home from "../src/pages/Home";
 import Accomplishments from "../src/pages/Accomplishments";
 import ActivityPage from "../src/pages/ActivityPage";
+import About from "../src/pages/About";
+import Feedback from "../src/pages/Feedback";
+import NotFound from "../src/pages/NotFound";
 
 test("Home names the government once and features INKantations", () => {
   render(
@@ -43,4 +46,30 @@ test("an unknown activity slug renders not found", () => {
     </MemoryRouter>,
   );
   expect(screen.getByRole("heading", { level: 1, name: /page not found/i })).toBeInTheDocument();
+});
+
+test("About lists all 27 officers and the objectives", () => {
+  render(<MemoryRouter><About /></MemoryRouter>);
+  expect(screen.getAllByRole("img", { name: /^Portrait of /i })).toHaveLength(27);
+  // Pin the published order: filtering by group must preserve the roster's
+  // listed sequence, first officer through last.
+  const portraits = screen.getAllByRole("img", { name: /^Portrait of /i });
+  expect(portraits[0]).toHaveAttribute("alt", "Portrait of Hon. Rhian Jade L. Castro");
+  expect(portraits[26]).toHaveAttribute("alt", "Portrait of Hon. Mira Narciso");
+  for (const name of ["Hon. Rhian Jade L. Castro", "Dr. Amparo M. Munoz", "Hon. Mira Narciso"]) {
+    expect(screen.getByText(name)).toBeInTheDocument();
+  }
+  expect(screen.getByRole("heading", { level: 2, name: /Duties, Responsibilities/i })).toBeInTheDocument();
+});
+
+test("Feedback embeds the form with a fallback link", () => {
+  render(<MemoryRouter><Feedback /></MemoryRouter>);
+  expect(screen.getByTitle("BSANHS SSLG feedback form")).toHaveAttribute("src", expect.stringContaining("?embedded=true"));
+  expect(screen.getByRole("link", { name: /open it in a new tab/i })).toHaveAttribute("href", expect.stringContaining("docs.google.com/forms"));
+});
+
+test("the 404 keeps the layout and offers a way home", () => {
+  render(<MemoryRouter><NotFound /></MemoryRouter>);
+  expect(screen.getByRole("heading", { level: 1, name: /page not found/i })).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /home/i })).toBeInTheDocument();
 });

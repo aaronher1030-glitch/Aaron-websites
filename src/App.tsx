@@ -1,9 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import { SiteLayout } from "./components/SiteLayout";
+import About from "./pages/About";
 import Accomplishments from "./pages/Accomplishments";
 import ActivityPage from "./pages/ActivityPage";
+import Feedback from "./pages/Feedback";
 import Finance from "./pages/Finance";
 import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 import Photos from "./pages/Photos";
 import Transparency from "./pages/Transparency";
 
@@ -17,7 +20,9 @@ export default function App() {
         <Route path="finance" element={<Finance />} />
         <Route path="photos" element={<Photos />} />
         <Route path="transparency" element={<Transparency />} />
-        {/* Remaining routes are added in Tasks 8–9. */}
+        <Route path="about-us" element={<About />} />
+        <Route path="feedback" element={<Feedback />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

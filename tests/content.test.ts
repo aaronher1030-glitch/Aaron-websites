@@ -120,7 +120,7 @@ test("keeps the published document groups and About copy", () => {
   ]);
   expect(OBJECTIVES).toHaveLength(5);
   expect(DUTIES).toHaveLength(3);
-  expect(MANDATE.length).toBeGreaterThan(30);
+  expect(MANDATE).toBe("The SSLG shall be the highest student governing body in the school, be the forefront of learners' rights and welfare; model of learners' excellence; and representation of good character and deep sense of good moral values.");
 });
 
 test("carries the About intro, legal basis and GPOA copy", () => {
