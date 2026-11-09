@@ -90,6 +90,57 @@ test("Escape inside the lightbox closes only the lightbox, not the album panel",
   expect(document.activeElement).toBe(trigger);
 });
 
+test("an inline album leaves focus alone; document Escape still closes it", async () => {
+  // AlbumViewer also mounts as page content (an activity detail). Focusing the
+  // panel then would steal focus from the top of a freshly loaded page.
+  const onClose = vi.fn();
+  vi.stubGlobal(
+    "fetch",
+    vi.fn(async () => ({
+      ok: true,
+      json: async () => ({
+        album: { id: "inlineAlbum00000000000", name: "Inline album" },
+        photos: [],
+        fetchedAt: "2026-11-08T00:00:00.000Z",
+      }),
+    })),
+  );
+
+  render(<AlbumViewer albumId="inlineAlbum00000000000" name="Inline album" onClose={onClose} />);
+
+  const close = screen.getByRole("button", { name: "Close" });
+  expect(document.activeElement).not.toBe(close);
+  // Let the fetch settle inside act so the assertion above is not racing it.
+  expect(await screen.findByText("This album has no photos yet.")).toBeInTheDocument();
+  expect(document.activeElement).not.toBe(close);
+
+  // Escape is a document listener, so it works even when focus never entered
+  // the panel (focusOnMount defaults to false here).
+  fireEvent.keyDown(document.body, { key: "Escape" });
+  expect(onClose).toHaveBeenCalledTimes(1);
+});
+
+test("focusOnMount moves focus to the panel Close", async () => {
+  vi.stubGlobal(
+    "fetch",
+    vi.fn(async () => ({
+      ok: true,
+      json: async () => ({
+        album: { id: "disclosureAlbum0000000", name: "Disclosure album" },
+        photos: [],
+        fetchedAt: "2026-11-08T00:00:00.000Z",
+      }),
+    })),
+  );
+
+  render(
+    <AlbumViewer albumId="disclosureAlbum0000000" name="Disclosure album" onClose={() => {}} focusOnMount />,
+  );
+  // Focus happens on mount; await the fetch to keep the state update in act.
+  expect(await screen.findByText("This album has no photos yet.")).toBeInTheDocument();
+  expect(document.activeElement).toBe(screen.getByRole("button", { name: "Close" }));
+});
+
 test("an empty album says so and still links to its Drive folder", async () => {
   const fetchMock = vi.fn(async () => ({
     ok: true,

@@ -75,6 +75,7 @@ export default function Photos() {
           <EmptyState
             title="Albums are unavailable"
             body={error}
+            role="alert"
             action={{ href: PIO_FOLDER_URL, label: "Open the Drive folder", external: true }}
           />
         ) : null}
@@ -139,6 +140,7 @@ export default function Photos() {
               albumId={open.id}
               name={open.name}
               onClose={closePanel}
+              focusOnMount
             />
           ) : null}
         </div>

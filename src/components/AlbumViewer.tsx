@@ -24,10 +24,15 @@ export function AlbumViewer({
   albumId,
   name,
   onClose,
+  focusOnMount = false,
 }: {
   albumId: string;
   name: string;
   onClose: () => void;
+  /** True only when the panel opens as a disclosure (Photos): focus moves in.
+   *  False when it is page content (an activity detail), so the initial load
+   *  keeps focus at the top and the skip link stays the first stop. */
+  focusOnMount?: boolean;
 }) {
   const [attempt, setAttempt] = useState(0);
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -36,11 +41,11 @@ export function AlbumViewer({
     return hit ? { data: hit, error: null, loading: false } : { data: null, error: null, loading: true };
   });
 
-  // Opening the panel moves keyboard focus into it, so the region is entered
-  // deliberately rather than left behind on the album card.
+  // A disclosure moves keyboard focus into the panel it just opened; page
+  // content must not steal focus from the top of the document on load.
   useEffect(() => {
-    closeRef.current?.focus({ preventScroll: true });
-  }, []);
+    if (focusOnMount) closeRef.current?.focus({ preventScroll: true });
+  }, [focusOnMount]);
 
   // Document-level so Escape works even when focus has not stayed inside the
   // panel. The nested lightbox listens in the capture phase and stops

@@ -9,17 +9,21 @@ export function EmptyState({
   action,
   onRetry,
   retryLabel = "Try again",
+  role,
 }: {
   title: string;
   body?: string;
   action?: { href: string; label: string; external?: boolean };
   onRetry?: () => void;
   retryLabel?: string;
+  /** Overrides the default: an error offers Retry (alert), an empty state
+   *  does not (status). Pass "alert" for an error with no recovery button. */
+  role?: "status" | "alert";
 }) {
   return (
     // A live region so the state is announced when it replaces a loading
-    // block: an error offers Retry (alert), an empty state does not (status).
-    <div className="empty-state" role={onRetry ? "alert" : "status"}>
+    // block.
+    <div className="empty-state" role={role ?? (onRetry ? "alert" : "status")}>
       <p className="empty-state__title">{title}</p>
       {body ? <p className="empty-state__body">{body}</p> : null}
       {action || onRetry ? (

@@ -1,4 +1,4 @@
-import { act, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { vi } from "vitest";
 import { PIO_FOLDER_URL } from "../src/config";
@@ -92,10 +92,58 @@ test("the album list error names the state and links the public Drive folder", a
     expect(
       await screen.findByText(/albums are unavailable/i, { selector: ".empty-state__title" }),
     ).toBeInTheDocument();
+    // An error with no retry control still has to interrupt a screen reader.
+    expect(screen.getByRole("alert")).toHaveTextContent(/albums are unavailable/i);
     expect(screen.getByRole("link", { name: /open the drive folder/i })).toHaveAttribute(
       "href",
       PIO_FOLDER_URL,
     );
+  } finally {
+    vi.unstubAllGlobals();
+  }
+});
+
+test("opening an album moves focus into the panel and Escape closes it", async () => {
+  const album = { id: "openingAlbum0000000000", name: "Opening ceremony", count: 0, cover: null };
+  vi.stubGlobal(
+    "fetch",
+    vi.fn(async (input: RequestInfo | URL) => {
+      if (String(input).startsWith("/api/albums")) {
+        return {
+          ok: true,
+          json: async () => ({
+            years: [
+              { id: "year1", name: "2026–2027", terms: [{ id: "term1", name: "First term", albums: [album] }] },
+            ],
+            fetchedAt: "2026-11-09T00:00:00.000Z",
+          }),
+        };
+      }
+      return {
+        ok: true,
+        json: async () => ({
+          album: { id: album.id, name: album.name },
+          photos: [],
+          fetchedAt: "2026-11-09T00:00:00.000Z",
+        }),
+      };
+    }),
+  );
+  try {
+    await act(async () => {
+      render(<MemoryRouter><Photos /></MemoryRouter>);
+    });
+    const card = await screen.findByRole("button", { name: /Opening ceremony/i });
+    // jsdom's click does not move focus, so focus the trigger explicitly to
+    // prove the panel — not the click — moves it.
+    card.focus();
+    fireEvent.click(card);
+    const close = await screen.findByRole("button", { name: "Close" });
+    expect(document.activeElement).toBe(close);
+
+    fireEvent.keyDown(document.body, { key: "Escape" });
+    expect(screen.queryByRole("button", { name: "Close" })).not.toBeInTheDocument();
+    expect(document.activeElement).toBe(card);
   } finally {
     vi.unstubAllGlobals();
   }
