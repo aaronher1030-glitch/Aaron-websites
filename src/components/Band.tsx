@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Link, useInRouterContext } from "react-router-dom";
 
 type Variant = "navy" | "mint" | "deep" | "paper";
 
@@ -46,12 +47,27 @@ export function CtaBar({
   children: ReactNode;
   external?: boolean;
 }) {
+  // An internal href is a route change, so it goes through the router: a full
+  // document load would drop focus (a new page starts at the skip link) and
+  // reload the app. `useInRouterContext` keeps the component renderable
+  // outside a router (the design tests) by falling back to a plain anchor.
+  const inRouter = useInRouterContext();
+  if (external) {
+    return (
+      <a className="cta-bar" href={href} target="_blank" rel="noreferrer">
+        <span>{children}</span>
+      </a>
+    );
+  }
+  if (inRouter) {
+    return (
+      <Link className="cta-bar" to={href}>
+        <span>{children}</span>
+      </Link>
+    );
+  }
   return (
-    <a
-      className="cta-bar"
-      href={href}
-      {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-    >
+    <a className="cta-bar" href={href}>
       <span>{children}</span>
     </a>
   );

@@ -32,7 +32,7 @@ export default function Finance() {
             <p className="finance-feature__report">
               {FINANCE_REPORT.title} ({FINANCE_REPORT.date})
             </p>
-            <CtaBar href={FINANCE_REPORT.folderUrl} external>Open the November 8 report</CtaBar>
+            <CtaBar href={FINANCE_REPORT.folderUrl} external>Open the November 8 finance folder</CtaBar>
             <p className="finance-feature__byline">
               Prepared by {FINANCE_REPORT.preparedBy} ({FINANCE_REPORT.preparedRole})
             </p>

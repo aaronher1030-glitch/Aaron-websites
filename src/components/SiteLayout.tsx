@@ -17,9 +17,31 @@ export function SiteLayout() {
   const [scrolled, setScrolled] = useState(false);
   const menuId = useId();
   const buttonRef = useRef<HTMLButtonElement>(null);
-  const { pathname } = useLocation();
+  const firstRender = useRef(true);
+  const { pathname, hash } = useLocation();
 
   useEffect(() => setOpen(false), [pathname]);
+
+  useEffect(() => {
+    const first = firstRender.current;
+    firstRender.current = false;
+    const target = hash ? document.getElementById(hash.slice(1)) : null;
+    if (target) {
+      // Only move focus on a real navigation, never on first paint (the skip
+      // link must stay the first stop). A hash target is made programmatically
+      // focusable so the jump announces where it landed.
+      if (!first) {
+        if (!target.hasAttribute("tabindex")) target.setAttribute("tabindex", "-1");
+        target.focus({ preventScroll: true });
+      }
+      const reduce = typeof window.matchMedia === "function" &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      target.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
+      return;
+    }
+    if (first) return;
+    document.getElementById("main")?.focus({ preventScroll: true });
+  }, [pathname, hash]);
 
   useEffect(() => {
     // Without IntersectionObserver the masthead would never leave its

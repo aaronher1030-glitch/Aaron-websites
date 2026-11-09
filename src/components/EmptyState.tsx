@@ -17,7 +17,9 @@ export function EmptyState({
   retryLabel?: string;
 }) {
   return (
-    <div className="empty-state">
+    // A live region so the state is announced when it replaces a loading
+    // block: an error offers Retry (alert), an empty state does not (status).
+    <div className="empty-state" role={onRetry ? "alert" : "status"}>
       <p className="empty-state__title">{title}</p>
       {body ? <p className="empty-state__body">{body}</p> : null}
       {action || onRetry ? (

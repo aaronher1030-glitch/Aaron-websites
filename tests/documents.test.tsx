@@ -55,7 +55,35 @@ test("finance prints the published figures", async () => {
   expect(screen.getByText("₱13,327.90")).toBeInTheDocument();
   expect(screen.getByText("26")).toBeInTheDocument();
   expect(screen.getByText("10")).toBeInTheDocument();
+  // The published caption verbatim: the live page reads July 28, not July 26.
+  expect(screen.getByText("as of July 28, 2026")).toBeInTheDocument();
   expect(screen.getByText(/Samantha C\. De Venecia/)).toBeInTheDocument();
+});
+
+test("a failed document listing offers Retry and the Drive fallback", async () => {
+  const fetchMock = vi
+    .fn()
+    .mockResolvedValue({ ok: false, status: 503, json: async () => ({}) });
+  vi.stubGlobal("fetch", fetchMock);
+
+  await act(async () => {
+    render(<DocumentList folder="finance" fallbackUrl="https://drive.google.com/drive/folders/x" />);
+  });
+
+  expect(await screen.findByText(/documents are unavailable/i)).toBeInTheDocument();
+  const retry = screen.getByRole("button", { name: "Retry" });
+  expect(screen.getByRole("link", { name: /open the drive folder/i })).toHaveAttribute(
+    "href",
+    "https://drive.google.com/drive/folders/x",
+  );
+  expect(fetchMock).toHaveBeenCalledTimes(1);
+
+  // Retry drops the cached rejection and actually refetches.
+  await act(async () => {
+    fireEvent.click(retry);
+  });
+  expect(await screen.findByText(/documents are unavailable/i)).toBeInTheDocument();
+  expect(fetchMock).toHaveBeenCalledTimes(2);
 });
 
 test("document rows show the Drive thumb, extension tag and only documented dates", async () => {

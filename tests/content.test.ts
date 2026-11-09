@@ -94,6 +94,13 @@ test("carries the published finance figures", () => {
   expect(FINANCE_STATS.map((s) => s.label)).toEqual([
     "Current Funds", "Proposed PPAs", "Projects accomplished",
   ]);
+  // Pinned verbatim: the notes are published captions, and the projects date
+  // shipped a day early once (July 26 instead of the published July 28).
+  expect(FINANCE_STATS.map((s) => s.note)).toEqual([
+    "as of November 8, 2026",
+    "from the SSLG GPOA (up for approval)",
+    "as of July 28, 2026",
+  ]);
   expect(FINANCE_REPORT.title).toBe("SSLG Financial Report");
   expect(FINANCE_REPORT.date).toBe("November 8, 2026");
   expect(FINANCE_REPORT.preparedBy).toBe("Samantha C. De Venecia");

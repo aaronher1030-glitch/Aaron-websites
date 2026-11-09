@@ -50,14 +50,10 @@ function escapeXml(value) {
     .replaceAll("'", "&apos;");
 }
 
-// One honest build-date lastmod for every URL; per-page dates are not known.
-const lastmod = new Date().toISOString().slice(0, 10);
-
+// No lastmod: a build-date stamp repeated on all 18 URLs is a synthetic
+// freshness signal, and no per-page dates are known. Omit it entirely.
 const urls = routes
-  .map(
-    (route) =>
-      `  <url>\n    <loc>${escapeXml(`${siteUrl}${route}`)}</loc>\n    <lastmod>${lastmod}</lastmod>\n  </url>`,
-  )
+  .map((route) => `  <url>\n    <loc>${escapeXml(`${siteUrl}${route}`)}</loc>\n  </url>`)
   .join("\n");
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;

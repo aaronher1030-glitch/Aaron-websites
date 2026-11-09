@@ -28,7 +28,7 @@ function initialsOf(title: string): string {
 /** Decorative: the activity title is real text directly below the plate. */
 function Plate({ text }: { text: string }) {
   return (
-    <span className="album-plate activity-card__plate" aria-hidden="true">
+    <span className="album-plate" aria-hidden="true">
       <span className="album-plate__initials">{text}</span>
     </span>
   );

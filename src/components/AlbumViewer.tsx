@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { PhotosResponse } from "../../shared/drive";
 import { getJson } from "../lib/api";
 import { EmptyState, Loading } from "./EmptyState";
@@ -30,10 +30,28 @@ export function AlbumViewer({
   onClose: () => void;
 }) {
   const [attempt, setAttempt] = useState(0);
+  const closeRef = useRef<HTMLButtonElement>(null);
   const [state, setState] = useState<ViewerState>(() => {
     const hit = cache.get(albumId);
     return hit ? { data: hit, error: null, loading: false } : { data: null, error: null, loading: true };
   });
+
+  // Opening the panel moves keyboard focus into it, so the region is entered
+  // deliberately rather than left behind on the album card.
+  useEffect(() => {
+    closeRef.current?.focus({ preventScroll: true });
+  }, []);
+
+  // Document-level so Escape works even when focus has not stayed inside the
+  // panel. The nested lightbox listens in the capture phase and stops
+  // propagation, so this bubble-phase listener never sees its Escape.
+  useEffect(() => {
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && !event.defaultPrevented) onClose();
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [onClose]);
 
   useEffect(() => {
     const hit = cache.get(albumId);
@@ -61,21 +79,10 @@ export function AlbumViewer({
   const driveUrl = folderUrl(albumId);
 
   return (
-    <div
-      className="album-panel"
-      role="region"
-      aria-label={`${name} album`}
-      onKeyDown={(event) => {
-        // The lightbox inside this panel handles its own Escape in the capture
-        // phase and stops propagation, so this never sees that event. The
-        // defaultPrevented guard is belt-and-braces: if a future child consumes
-        // Escape without stopping propagation, the panel still stays open.
-        if (event.key === "Escape" && !event.defaultPrevented) onClose();
-      }}
-    >
+    <div className="album-panel" role="region" aria-label={`${name} album`}>
       <div className="album-panel__bar">
         <p className="album-panel__name">{name}</p>
-        <button type="button" className="album-panel__close" onClick={onClose}>
+        <button ref={closeRef} type="button" className="album-panel__close" onClick={onClose}>
           Close
         </button>
       </div>

@@ -17,7 +17,7 @@ export function HomeHero() {
       <Beams />
       <div className="hero__lockup">
         <div className="hero__seals">
-          <img src="/brand/seal-school.png" alt="" width="84" height="84" />
+          <img src="/brand/seal-school.png" alt="" width="84" height="87" />
           <img src="/brand/seal-sslg.png" alt="" width="84" height="84" />
         </div>
         <span className="hero__rule" aria-hidden="true" />

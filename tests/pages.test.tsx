@@ -1,11 +1,14 @@
 import { act, render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
+import { vi } from "vitest";
+import { PIO_FOLDER_URL } from "../src/config";
 import Home from "../src/pages/Home";
 import Accomplishments from "../src/pages/Accomplishments";
 import ActivityPage from "../src/pages/ActivityPage";
 import About from "../src/pages/About";
 import Feedback from "../src/pages/Feedback";
 import NotFound from "../src/pages/NotFound";
+import Photos from "../src/pages/Photos";
 
 test("Home names the government once and features INKantations", () => {
   render(
@@ -72,4 +75,28 @@ test("the 404 keeps the layout and offers a way home", () => {
   render(<MemoryRouter><NotFound /></MemoryRouter>);
   expect(screen.getByRole("heading", { level: 1, name: /page not found/i })).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /home/i })).toBeInTheDocument();
+});
+
+test("the album list error names the state and links the public Drive folder", async () => {
+  // useAlbums does not cache a rejection (it clears its slot), so this stub
+  // reaches the page even though the Accomplishments test above ran first.
+  vi.stubGlobal(
+    "fetch",
+    vi.fn().mockResolvedValue({ ok: false, status: 503, json: async () => ({}) }),
+  );
+  try {
+    await act(async () => {
+      render(<MemoryRouter><Photos /></MemoryRouter>);
+    });
+    // Scoped to the title: the body repeats the phrase ("…are unavailable right now.").
+    expect(
+      await screen.findByText(/albums are unavailable/i, { selector: ".empty-state__title" }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /open the drive folder/i })).toHaveAttribute(
+      "href",
+      PIO_FOLDER_URL,
+    );
+  } finally {
+    vi.unstubAllGlobals();
+  }
 });

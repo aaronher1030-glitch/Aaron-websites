@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@testing-library/react";
+import { act, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, expect, test, vi } from "vitest";
 import { AlbumViewer } from "../src/components/AlbumViewer";
 import { PhotoGrid } from "../src/components/PhotoGrid";
@@ -115,6 +115,45 @@ test("an empty album says so and still links to its Drive folder", async () => {
     "/api/photos?album=emptyAlbum00000000000000",
     expect.anything(),
   );
+});
+
+test("a failed album listing offers a retry that refetches", async () => {
+  const fetchMock = vi
+    .fn()
+    .mockRejectedValueOnce(new Error("network down"))
+    .mockResolvedValueOnce({
+      ok: true,
+      json: async () => ({
+        album: { id: "retryAlbum00000000000000", name: "Retry album" },
+        photos: [],
+        fetchedAt: "2026-11-08T00:00:00.000Z",
+      }),
+    });
+  vi.stubGlobal("fetch", fetchMock);
+
+  const onClose = vi.fn();
+  render(
+    <AlbumViewer albumId="retryAlbum00000000000000" name="Retry album" onClose={onClose} />,
+  );
+
+  // Scoped to the title: the body repeats the phrase ("…are unavailable right now.").
+  expect(
+    await screen.findByText(/photos are unavailable/i, { selector: ".empty-state__title" }),
+  ).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /open in drive/i })).toHaveAttribute(
+    "href",
+    "https://drive.google.com/drive/folders/retryAlbum00000000000000",
+  );
+  expect(fetchMock).toHaveBeenCalledTimes(1);
+
+  // Try again refetches; the second response is an empty album, which proves
+  // the panel replaced its error state with the new payload.
+  await act(async () => {
+    fireEvent.click(screen.getByRole("button", { name: "Try again" }));
+  });
+  expect(await screen.findByText("This album has no photos yet.")).toBeInTheDocument();
+  expect(screen.queryByText(/photos are unavailable/i)).not.toBeInTheDocument();
+  expect(fetchMock).toHaveBeenCalledTimes(2);
 });
 
 test("a failed album listing is not cached, so the next load retries", async () => {

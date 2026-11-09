@@ -11,10 +11,10 @@ import { useAlbums } from "../lib/useAlbums";
 
 /**
  * No cover art is shipped for albums without a first photograph, so the card
- * falls back to a ruled plate with the album initials. Inside the card the
- * plate is decorative: the album name is real text directly below it.
+ * falls back to a ruled plate with the album initials. The plate is always
+ * decorative: the album name is real text directly below it.
  */
-function AlbumPlate({ name, labelled = true }: { name: string; labelled?: boolean }) {
+function AlbumPlate({ name }: { name: string }) {
   const initials =
     name
       .split(/\s+/)
@@ -24,12 +24,7 @@ function AlbumPlate({ name, labelled = true }: { name: string; labelled?: boolea
       .join("") || "?";
 
   return (
-    <span
-      className="album-plate"
-      role={labelled ? "img" : undefined}
-      aria-label={labelled ? name : undefined}
-      aria-hidden={labelled ? undefined : true}
-    >
+    <span className="album-plate" aria-hidden="true">
       <span className="album-plate__initials">{initials}</span>
     </span>
   );
@@ -121,7 +116,7 @@ export default function Photos() {
                               sizes="(min-width: 896px) 352px, (min-width: 560px) 45vw, 90vw"
                             />
                           ) : (
-                            <AlbumPlate name={album.name} labelled={false} />
+                            <AlbumPlate name={album.name} />
                           )}
                           <span className="album-card__name">{album.name}</span>
                           <span className="album-card__count">
