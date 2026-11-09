@@ -6,6 +6,7 @@ import { PageMeta } from "../components/PageMeta";
 import { SmartImage } from "../components/SmartImage";
 import { ACTIVITIES } from "../content/activities";
 import type { Activity } from "../content/types";
+import { albumFor } from "../lib/driveSnapshot";
 import NotFound from "./NotFound";
 
 export default function ActivityPage() {
@@ -14,6 +15,7 @@ export default function ActivityPage() {
   // Widen to the interface: the content literal's union has no `date` member
   // yet, but the field is part of the contract and renders when documented.
   const activity: Activity | undefined = ACTIVITIES.find((entry) => entry.slug === slug);
+  const album = activity?.album ? albumFor(activity.album) : undefined;
 
   if (!activity) return <NotFound />;
 
@@ -60,6 +62,7 @@ export default function ActivityPage() {
           <AlbumViewer
             albumId={activity.album}
             name={activity.title}
+            photos={album?.photos ?? []}
             onClose={() => navigate("/accomplishments")}
           />
         ) : null}

@@ -1,13 +1,13 @@
 import { useEffect, useId, useRef, useState } from "react";
-import type { Album } from "../../shared/drive";
+import type { SnapshotAlbum } from "../../shared/drive";
 import { PIO_FOLDER_URL } from "../config";
 import { AlbumViewer } from "../components/AlbumViewer";
 import { Band, SectionTitle } from "../components/Band";
-import { EmptyState, Loading } from "../components/EmptyState";
+import { EmptyState } from "../components/EmptyState";
 import { PageHero } from "../components/Hero";
 import { PageMeta } from "../components/PageMeta";
 import { SmartImage } from "../components/SmartImage";
-import { useAlbums } from "../lib/useAlbums";
+import { ALBUM_YEARS } from "../lib/driveSnapshot";
 
 /**
  * No cover art is shipped for albums without a first photograph, so the card
@@ -31,8 +31,7 @@ function AlbumPlate({ name }: { name: string }) {
 }
 
 export default function Photos() {
-  const { data, error, loading } = useAlbums();
-  const [open, setOpen] = useState<Album | null>(null);
+  const [open, setOpen] = useState<SnapshotAlbum | null>(null);
   const panelId = useId();
   const panelRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
@@ -61,7 +60,7 @@ export default function Photos() {
       />
       <PageHero
         title="Photos"
-        lead="Albums from the SSLG and LGCC. Photos are added by the PIO; this page reads the public Drive albums directly."
+        lead="Albums from the SSLG and LGCC. Photos are added by the PIO to the public Drive vault and listed here from the latest snapshot."
       />
       <Band variant="deep">
         <SectionTitle
@@ -69,18 +68,7 @@ export default function Photos() {
           lead="Every album below is a folder in the PIO's public Drive vault. Select an album to read its photographs without leaving this page."
         />
 
-        {loading ? <Loading label="Loading albums…" /> : null}
-
-        {error ? (
-          <EmptyState
-            title="Albums are unavailable"
-            body={error}
-            role="alert"
-            action={{ href: PIO_FOLDER_URL, label: "Open the Drive folder", external: true }}
-          />
-        ) : null}
-
-        {data && data.years.length === 0 ? (
+        {ALBUM_YEARS.length === 0 ? (
           <EmptyState
             title="No albums yet"
             body="The public folder is empty, or the PIO has not published an album for this school year."
@@ -88,12 +76,17 @@ export default function Photos() {
           />
         ) : null}
 
-        {data?.years.map((year) => (
+        {ALBUM_YEARS.map((year) => (
           <section key={year.id} className="album-year">
             <h2>{year.name}</h2>
             {year.terms.map((term) => (
               <div key={term.id} className="album-term">
                 <h3>{term.name}</h3>
+                {term.albums.length === 0 ? (
+                  <p className="album-term__empty">
+                    No albums have been published for this term yet.
+                  </p>
+                ) : null}
                 <ul className="album-grid">
                   {term.albums.map((album) => {
                     const expanded = open?.id === album.id;
@@ -139,6 +132,7 @@ export default function Photos() {
               key={open.id}
               albumId={open.id}
               name={open.name}
+              photos={open.photos}
               onClose={closePanel}
               focusOnMount
             />

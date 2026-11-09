@@ -1,28 +1,13 @@
-import { useMemo } from "react";
 import { ActivityCard } from "../components/ActivityCard";
 import { Band, CtaBar, SectionTitle } from "../components/Band";
+import { DocumentRows } from "../components/DocumentList";
 import { PageHero } from "../components/Hero";
 import { PageMeta } from "../components/PageMeta";
 import { ACCOMPLISHMENT_REPORTS_URL } from "../config";
 import { ACTIVITIES } from "../content/activities";
-import { useAlbums } from "../lib/useAlbums";
+import { ALBUM_COVERS, REPORT_FILES } from "../lib/driveSnapshot";
 
 export default function Accomplishments() {
-  // One subscription for the whole grid. The shared useAlbums promise means
-  // this is also the only /api/albums request on the page; cards receive the
-  // resolved lookup and fall back to their initials plate while it is empty
-  // (loading, error, or an album without a cover).
-  const { data } = useAlbums();
-  const albumCovers = useMemo(() => {
-    const covers = new Map<string, string | null>();
-    for (const year of data?.years ?? []) {
-      for (const term of year.terms) {
-        for (const album of term.albums) covers.set(album.id, album.cover);
-      }
-    }
-    return covers;
-  }, [data]);
-
   return (
     <section className="page page--accomplishments">
       <PageMeta
@@ -37,15 +22,25 @@ export default function Accomplishments() {
       <Band variant="navy">
         <SectionTitle
           title="Activity record"
-          lead="Every activity opens its own record. Photo albums load from the PIO's public Drive; accomplishment reports open in the vault."
+          lead="Every activity opens its own record. Photo albums come from the PIO's public Drive vault; accomplishment reports open in the vault."
         />
         <div className="activity-grid" data-reveal-group>
           {ACTIVITIES.map((activity) => (
-            <ActivityCard key={activity.slug} activity={activity} albumCovers={albumCovers} />
+            <ActivityCard key={activity.slug} activity={activity} albumCovers={ALBUM_COVERS} />
           ))}
         </div>
       </Band>
       <Band variant="deep">
+        <SectionTitle
+          title="Accomplishment reports"
+          lead="The SSLG's accomplishment reports, read from the public Drive folder."
+        />
+        <DocumentRows
+          files={REPORT_FILES}
+          fallbackUrl={ACCOMPLISHMENT_REPORTS_URL}
+          emptyTitle="No accomplishment reports yet."
+          emptyBody="Published reports appear here after the next update."
+        />
         <CtaBar href={ACCOMPLISHMENT_REPORTS_URL} external>
           Read more accomplishment reports
         </CtaBar>

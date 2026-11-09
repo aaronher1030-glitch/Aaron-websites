@@ -1,8 +1,8 @@
 import { useState } from "react";
-import type { DocFile, DocFolder, FolderKey } from "../../shared/drive";
-import { useDocuments } from "../lib/useDocuments";
+import type { DocFile, FolderKey } from "../../shared/drive";
+import { DRIVE_SNAPSHOT, documentsFor } from "../lib/driveSnapshot";
 import { DocumentPlate } from "./DocumentPlate";
-import { EmptyState, Loading } from "./EmptyState";
+import { EmptyState } from "./EmptyState";
 
 /** en-PH with day/month/year components renders month-first: "November 8, 2026". */
 const modifiedFormat = new Intl.DateTimeFormat("en-PH", {
@@ -27,7 +27,7 @@ function typeTag(file: DocFile): string {
   return "FILE";
 }
 
-/** Only when the API documented a modified time — never invent a date. */
+/** Only when the listing documented a modified time — never invent a date. */
 function modifiedLabel(modified: string | null): string | null {
   if (!modified) return null;
   const date = new Date(modified);
@@ -44,8 +44,8 @@ function RowArrow() {
 }
 
 /**
- * The API already returns a thumbnail URL; use it. A missing or broken
- * thumbnail (Drive refuses previews for some types) falls back to the plate.
+ * The snapshot already carries a thumbnail URL; use it. A broken thumbnail
+ * (Drive refuses previews for some types) falls back to the plate.
  */
 function RowThumb({ file }: { file: DocFile }) {
   const [failed, setFailed] = useState(false);
@@ -87,31 +87,60 @@ function FileRow({ file }: { file: DocFile }) {
   );
 }
 
-/** Subfolders are navigation: same row, a plate thumb, no invented date. */
-function FolderRow({ folder }: { folder: DocFolder }) {
+const syncedFormat = new Intl.DateTimeFormat("en-PH", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
+
+function SyncedNote() {
+  const date = new Date(DRIVE_SNAPSHOT.generatedAt);
+  if (Number.isNaN(date.getTime())) return null;
   return (
-    <li>
-      <a className="doc-row" href={folder.url} target="_blank" rel="noreferrer">
-        <span className="doc-row__thumb">
-          <DocumentPlate label="Folder" className="doc-plate--thumb" />
-        </span>
-        <span className="doc-row__body">
-          <span className="doc-row__name">{folder.name}</span>
-          <span className="doc-row__meta">
-            <span className="doc-row__tag">Folder</span>
-          </span>
-        </span>
-        <RowArrow />
-      </a>
-    </li>
+    <p className="doc-snapshot">
+      Snapshot of the public Drive folder, taken {syncedFormat.format(date)}.
+      Newer publications appear after the next update.
+    </p>
   );
 }
 
 /**
- * The three Drive states plus the rows themselves. The public folder link
- * is always offered because Drive remains the source of truth; Retry drops
- * the cached rejection so a failed listing can actually recover.
+ * Rows for any list of Drive files. The files come from the committed
+ * snapshot, so the list renders immediately and never depends on a live API.
+ * The public folder link stays available because Drive is the source of truth.
  */
+export function DocumentRows({
+  files,
+  fallbackUrl,
+  emptyTitle = "No documents in this folder yet.",
+  emptyBody = "Published documents appear here after the next update.",
+}: {
+  files: DocFile[];
+  fallbackUrl: string;
+  emptyTitle?: string;
+  emptyBody?: string;
+}) {
+  if (files.length === 0) {
+    return (
+      <EmptyState
+        title={emptyTitle}
+        body={emptyBody}
+        action={{ href: fallbackUrl, label: "Open the Drive folder", external: true }}
+      />
+    );
+  }
+
+  return (
+    <>
+      <ul className="doc-list">
+        {files.map((file) => <FileRow key={file.id} file={file} />)}
+      </ul>
+      <SyncedNote />
+    </>
+  );
+}
+
+/** One document group, read from the snapshot by its folder key. */
 export function DocumentList({
   folder,
   fallbackUrl,
@@ -119,37 +148,5 @@ export function DocumentList({
   folder: FolderKey;
   fallbackUrl: string;
 }) {
-  const { data, error, loading, reload } = useDocuments(folder);
-  const driveAction = { href: fallbackUrl, label: "Open the Drive folder", external: true };
-
-  if (loading) return <Loading label="Loading documents…" />;
-
-  if (error) {
-    return (
-      <EmptyState
-        title="Documents are unavailable"
-        body={error}
-        onRetry={reload}
-        retryLabel="Retry"
-        action={driveAction}
-      />
-    );
-  }
-
-  if (!data || (data.files.length === 0 && data.folders.length === 0)) {
-    return (
-      <EmptyState
-        title="No documents in this folder yet."
-        body="Published documents appear here automatically once they land in the public Drive folder."
-        action={driveAction}
-      />
-    );
-  }
-
-  return (
-    <ul className="doc-list">
-      {data.folders.map((sub) => <FolderRow key={sub.id} folder={sub} />)}
-      {data.files.map((file) => <FileRow key={file.id} file={file} />)}
-    </ul>
-  );
+  return <DocumentRows files={documentsFor(folder)} fallbackUrl={fallbackUrl} />;
 }

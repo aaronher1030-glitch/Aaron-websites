@@ -74,6 +74,36 @@ export function isFolderKey(value: string): value is FolderKey {
   return (FOLDER_KEYS as readonly string[]).includes(value);
 }
 
+/** An album from the committed snapshot carries its photographs inline. */
+export interface SnapshotAlbum extends Album {
+  photos: Photo[];
+}
+
+export interface SnapshotTerm {
+  id: string;
+  name: string;
+  albums: SnapshotAlbum[];
+}
+
+export interface SnapshotYear {
+  id: string;
+  name: string;
+  terms: SnapshotTerm[];
+}
+
+/**
+ * The build-time snapshot written by scripts/sync-drive.mjs. Everything the
+ * site shows from Drive comes from here, so no API key or runtime proxy is
+ * needed; `generatedAt` dates the snapshot.
+ */
+export interface DriveSnapshot {
+  generatedAt: string;
+  documents: Record<FolderKey, DocFile[]>;
+  gpoa: DocFile | null;
+  reports: DocFile[];
+  years: SnapshotYear[];
+}
+
 const isHeic = (mime: string) => /heic|heif/i.test(mime);
 
 export function imageThumb(id: string, mime: string, width = 800): string {

@@ -5,10 +5,9 @@ import type { Activity } from "../content/types";
 import { SmartImage } from "./SmartImage";
 
 /**
- * Presentational card for one activity. The album-cover lookup is resolved
- * once by the Accomplishments page and passed down: while the album tree is
- * loading (or has failed) the map is empty, so album covers fall back to the
- * initials plate without a second subscription per card.
+ * Presentational card for one activity. The album-cover lookup comes from the
+ * committed Drive snapshot; an album with no photographs has no cover, so the
+ * card falls back to its initials plate.
  */
 
 const STOP_WORDS = new Set([
@@ -41,7 +40,7 @@ export function ActivityCard({
   albumCovers,
 }: {
   activity: Activity;
-  albumCovers: Map<string, string | null>;
+  albumCovers: ReadonlyMap<string, string | null>;
 }) {
   const plateText =
     activity.slug === "project-tinig" ? "TINIG" : initialsOf(activity.title);

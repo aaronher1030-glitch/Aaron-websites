@@ -1,46 +1,36 @@
-import { useEffect, useRef, useState } from "react";
-import type { PhotosResponse } from "../../shared/drive";
-import { getJson } from "../lib/api";
-import { EmptyState, Loading } from "./EmptyState";
+import { useEffect, useRef } from "react";
+import type { Photo } from "../../shared/drive";
+import { EmptyState } from "./EmptyState";
 import { PhotoGrid } from "./PhotoGrid";
 
-/** One album costs one Drive listing, so a hit survives reopening the panel. */
-const cache = new Map<string, PhotosResponse>();
-
 const folderUrl = (albumId: string) => `https://drive.google.com/drive/folders/${albumId}`;
-
-interface ViewerState {
-  data: PhotosResponse | null;
-  error: string | null;
-  loading: boolean;
-}
 
 /**
  * The inline panel that an album card discloses. Not a dialog: it sits in
  * the page flow, keeps the album grid visible and returns focus to the card
  * that opened it when it closes.
+ *
+ * Photographs come from the committed Drive snapshot, so the panel has no
+ * loading or error state: it either has photos to show or says it does not.
  */
 export function AlbumViewer({
   albumId,
   name,
+  photos,
   onClose,
   focusOnMount = false,
 }: {
   albumId: string;
   name: string;
+  photos: Photo[];
   onClose: () => void;
   /** True only when the panel opens as a disclosure (Photos): focus moves in.
    *  False when it is page content (an activity detail), so the initial load
    *  keeps focus at the top and the skip link stays the first stop. */
   focusOnMount?: boolean;
 }) {
-  const [attempt, setAttempt] = useState(0);
   const panelRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
-  const [state, setState] = useState<ViewerState>(() => {
-    const hit = cache.get(albumId);
-    return hit ? { data: hit, error: null, loading: false } : { data: null, error: null, loading: true };
-  });
 
   // A disclosure moves keyboard focus into the panel it just opened; page
   // content must not steal focus from the top of the document on load.
@@ -66,29 +56,6 @@ export function AlbumViewer({
     return () => document.removeEventListener("keydown", onKey);
   }, [focusOnMount, onClose]);
 
-  useEffect(() => {
-    const hit = cache.get(albumId);
-    if (hit) {
-      setState({ data: hit, error: null, loading: false });
-      return;
-    }
-    const controller = new AbortController();
-    setState({ data: null, error: null, loading: true });
-    getJson<PhotosResponse>(
-      `/api/photos?album=${encodeURIComponent(albumId)}`,
-      controller.signal,
-    )
-      .then((data) => {
-        cache.set(albumId, data);
-        if (!controller.signal.aborted) setState({ data, error: null, loading: false });
-      })
-      .catch((error: unknown) => {
-        if (controller.signal.aborted || (error as Error | null)?.name === "AbortError") return;
-        setState({ data: null, error: "Photos are unavailable right now.", loading: false });
-      });
-    return () => controller.abort();
-  }, [albumId, attempt]);
-
   const driveUrl = folderUrl(albumId);
 
   return (
@@ -100,28 +67,15 @@ export function AlbumViewer({
         </button>
       </div>
 
-      {state.loading ? <Loading label="Loading photos…" /> : null}
-
-      {state.error ? (
-        <EmptyState
-          title="Photos are unavailable"
-          body={state.error}
-          onRetry={() => setAttempt((value) => value + 1)}
-          action={{ href: driveUrl, label: "Open in Drive", external: true }}
-        />
-      ) : null}
-
-      {state.data && state.data.photos.length === 0 ? (
+      {photos.length === 0 ? (
         <EmptyState
           title="This album has no photos yet."
           body="The folder exists in Drive, but the PIO has not added photographs to it."
           action={{ href: driveUrl, label: "Open in Drive", external: true }}
         />
-      ) : null}
-
-      {state.data && state.data.photos.length > 0 ? (
-        <PhotoGrid photos={state.data.photos} label={`${name} photos`} />
-      ) : null}
+      ) : (
+        <PhotoGrid photos={photos} label={`${name} photos`} />
+      )}
     </div>
   );
 }

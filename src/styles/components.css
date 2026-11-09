@@ -96,8 +96,12 @@
   border-block-end: 1px solid var(--hairline-paper);
   background: linear-gradient(180deg, var(--bg-title) 0%, var(--navy-950) 100%);
 }
-/* The beams cover the home field; the title band keeps its ruled gradient. */
+/* The beams cover the home field; the title band keeps its ruled gradient.
+ * Hide the beam strokes themselves too: on a narrow screen the longer lead
+ * text grows the hero until the lower beam cuts through its last line. */
 .hero--page .beams { background: none; }
+.hero--page .beam,
+.hero--page .beam-glow { display: none; }
 /* Lift the title above the z-index:0 beams layer. */
 .hero__page-inner { position: relative; z-index: 1; width: 100%; min-width: 0; max-width: var(--page-max); padding-inline: var(--gutter); text-align: center; }
 .hero__page-rule { display: block; width: 44px; height: 2px; margin: 0 auto var(--space-4); background: var(--gold-300); transform-origin: 50% 50%; }

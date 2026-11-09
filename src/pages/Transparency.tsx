@@ -8,6 +8,7 @@ import { PageMeta } from "../components/PageMeta";
 import { RECORDS_ROOT_URL } from "../config";
 import { DOCUMENT_GROUPS } from "../content/documents";
 import { GPOA, LEGAL_BASES } from "../content/site";
+import { GPOA_FILE } from "../lib/driveSnapshot";
 
 const PANEL_ID = "doc-tabpanel";
 const tabId = (key: string) => `doc-tab-${key}`;
@@ -56,7 +57,7 @@ export default function Transparency() {
           <div className="gpoa-feature__body">
             <h2>{GPOA.title}</h2>
             <p>{GPOA.body}</p>
-            <CtaBar href={GPOA.folderUrl} external>Open the plan</CtaBar>
+            <CtaBar href={GPOA_FILE?.view ?? GPOA.folderUrl} external>Open the plan</CtaBar>
           </div>
         </div>
       </Band>
