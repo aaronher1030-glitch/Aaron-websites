@@ -38,7 +38,7 @@ test("image covers point at a shipped webp under /media", () => {
 // cannot be used here without adding a dependency.)
 const portraitsOnDisk = Object.keys(import.meta.glob("/public/brand/officers/*.webp"));
 
-test("every officer has a published name, role and a shipped portrait", () => {
+test("every officer has a published name, role and portrait path", () => {
   expect(OFFICERS.length).toBe(27);
   for (const o of OFFICERS) {
     expect(o.name.trim().length).toBeGreaterThan(0);
@@ -46,6 +46,11 @@ test("every officer has a published name, role and a shipped portrait", () => {
     expect(o.photo).toMatch(/^\/brand\/officers\/[a-z0-9-]+\.webp$/);
   }
   expect(new Set(OFFICERS.map((o) => o.photo)).size).toBe(27);
+});
+
+// The public source repository omits the school-owned portraits. In the
+// deployment checkout they are present, and then every officer must have one.
+test.skipIf(portraitsOnDisk.length === 0)("ships a portrait file for every officer", () => {
   for (const o of OFFICERS) {
     expect(portraitsOnDisk).toContain(`/public${o.photo}`);
   }
