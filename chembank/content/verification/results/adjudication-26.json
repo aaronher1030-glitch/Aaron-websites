@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-lab-27",
+  "answer": "B",
+  "confidence": "high",
+  "work": "Hot water (50.0 g) cools from 60.0 to 38.5 C, releasing q = 50.0 x 4.184 x 21.5 = 4498 J. Cold water (50.0 g) warms from 20.0 to 38.5 C, absorbing q = 50.0 x 4.184 x 18.5 = 3870 J. The 628 J shortfall is taken up by the calorimeter, which itself warms by 18.5 C, so C_cal = 628/18.5 = 33.9 J/C.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "Choice B (33.9 J/C) is the only value matching the energy balance: 4498 - 3870 = 628 J stored in the cup over an 18.5 C rise. The stored key letter C (62.8 J/C) is wrong and even contradicts the item's own explanation, which derives and names option B; the blind solver reproduced the correct derivation, so the blind answer is right.",
+  "cleanExplanation": "Heat lost by the hot water is 50.0 g x 4.184 J/(g C) x (60.0 - 38.5) C = 4498 J, while the cold water gains 50.0 g x 4.184 J/(g C) x (38.5 - 20.0) C = 3870 J. The difference, 628 J, is absorbed by the calorimeter as it warms from 20.0 C to 38.5 C. Dividing by that 18.5 C temperature rise gives C_cal = 628 J / 18.5 C = 33.9 J/C."
+}

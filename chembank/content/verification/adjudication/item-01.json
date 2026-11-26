@@ -1,0 +1,22 @@
+{
+  "id": "ch1-3-theory-01",
+  "paper": "ch1-3-theory",
+  "source": "supplied-paper",
+  "sourceKey": "A",
+  "blind": "B",
+  "blindWork": "r = 2.50 nm = 2.50x10^-7 cm, so V = (4/3)pi r^3 = 6.545x10^-20 cm^3. Mass = 19.3 x 6.545x10^-20 = 1.263x10^-18 g, giving n = 1.263x10^-18/197.0 = 6.41x10^-21 mol. Atoms = 6.41x10^-21 x 6.022x10^23 = 3.86x10^3. The FCC detail is not needed for a density-based count.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-B"
+  ],
+  "stem": "A spherical gold nanoparticle has a radius of $2.50\\text{~nm}$. Assuming gold crystallizes in a face-centered cubic structure with a density of $19.3\\text{~g/cm}^{3}$, how many gold atoms ($M = 197.0\\text{~g/mol}$) are present in a single nanoparticle?",
+  "choices": [
+    "$1.93 \\times 10^{3}$",
+    "$3.86 \\times 10^{3}$",
+    "$3.84 \\times 10^{4}$",
+    "$1.92 \\times 10^{4}$"
+  ],
+  "sourceExplanation": "Volume $V = \\frac{4}{3}\\pi r^{3} = \\frac{4}{3}\\pi\\left( 2.50 \\times 10^{- 7}\\text{~cm} \\right)^{3} = 6.545 \\times 10^{- 20}\\text{~cm}^{3}$.\n\nMass $m = d \\cdot V = 19.3\\text{~g/cm}^{3} \\times 6.545 \\times 10^{- 20}\\text{~cm}^{3} = 1.263 \\times 10^{- 18}\\text{~g}$.\n\nAtoms $= \\frac{1.263 \\times 10^{- 18}\\text{~g}}{197.0\\text{~g/mol}} \\times 6.022 \\times 10^{23} = 3.86 \\times 10^{3}$ atoms. Wait, check: $\\left( 1.263 \\times 10^{- 18}/197.0 \\right) \\times 6.022 \\times 10^{23} = 3.86 \\times 10^{3}$. Correct Choice: B (Key fix: $3.86 \\times 10^{3}$)."
+}

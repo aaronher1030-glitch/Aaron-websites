@@ -1,0 +1,22 @@
+{
+  "id": "ch4-7-theory-17",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "A",
+  "blind": "B",
+  "blindWork": "pH2 = 760 - 19.8 = 740.2 mmHg = 0.9740 atm; T = 295 K; V = 0.250 L. n = PV/RT = (0.9740)(0.250)/[(0.08206)(295)] = 0.2435/24.21 = 1.006e-2 mol. Zn:H2 is 1:1, so 1.01e-2 mol Zn.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-B"
+  ],
+  "stem": "Gas Stoichiometry over Water: Zinc metal reacts with hydrochloric acid to produce hydrogen gas:\n\n$$\\text{Zn}(s) + 2\\text{HCl}(aq) \\rightarrow \\text{ZnCl}_{2}(aq) + \\text{H}_{2}(g)$$\n\nIf $250\\text{~mL}$ of $\\text{H}_{2}$ is collected over water at $22^{\\circ}\\text{C}$ and a total pressure of $760\\text{~mmHg}$ (vapor pressure of water at $22^{\\circ}\\text{C} = 19.8\\text{~mmHg}$), how many moles of Zn were consumed?",
+  "choices": [
+    "$9.82 \\times 10^{- 3}\\text{~mol}$",
+    "$1.01 \\times 10^{- 2}\\text{~mol}$",
+    "$2.02 \\times 10^{- 2}\\text{~mol}$",
+    "$4.05 \\times 10^{- 2}\\text{~mol}$"
+  ],
+  "sourceExplanation": "$P_{\\text{H}_{2}} = 760 - 19.8 = 740.2\\text{~mmHg} = 0.974\\text{~atm}$. $n = PV/RT = (0.974 \\times 0.250)/(0.08206 \\times 295.15) = 1.01 \\times 10^{- 2}\\text{~mol}$ (Wait, $1:1$ mole ratio with Zn, so $1.01 \\times 10^{- 2}\\text{~mol}$). Let's check B."
+}

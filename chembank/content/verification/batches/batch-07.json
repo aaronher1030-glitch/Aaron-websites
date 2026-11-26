@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch4-7-theory-21",
+    "stem": "Connected Bulbs: Bulb A ($1.00\\text{~L}$, containing $\\text{Ne}$ at $2.0\\text{~atm}$) and Bulb B ($2.00\\text{~L}$, containing $\\text{Ar}$ at $1.0\\text{~atm}$) are connected by a closed valve at constant temperature. When the valve is opened, what is the final partial pressure of neon?",
+    "choices": [
+      "$0.33\\text{~atm}$",
+      "$0.67\\text{~atm}$",
+      "$1.00\\text{~atm}$",
+      "$1.33\\text{~atm}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-22",
+    "stem": "Gas Kinetics: If the absolute temperature of an ideal gas is doubled while its volume is halved, what happens to the pressure of the gas?",
+    "choices": [
+      "Remains unchanged",
+      "Doubled",
+      "Quadrupled",
+      "Halved"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-23",
+    "stem": "Stoichiometry & Combustion: What volume of oxygen gas at STP is required to completely combust $5.60\\text{~g}$ of butane ($\\text{C}_{4}\\text{H}_{10}$)?",
+    "choices": [
+      "$11.2\\text{~L}$",
+      "$13.4\\text{~L}$",
+      "$22.4\\text{~L}$",
+      "$35.8\\text{~L}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-24",
+    "stem": "Effusion Time: How long will it take for $50\\text{~mL}$ of $\\text{O}_{2}$ to effuse through a pinhole if $50\\text{~mL}$ of $\\text{He}$ takes $12.0\\text{~seconds}$ under identical conditions?",
+    "choices": [
+      "$3.0\\text{~s}$",
+      "$12.0\\text{~s}$",
+      "$33.9\\text{~s}$",
+      "$48.0\\text{~s}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-25",
+    "stem": "Partial Pressure Fraction: A gaseous mixture consists of $60.0$ mole percent $\\text{N}_{2}$ and $40.0$ mole percent $\\text{O}_{2}$. If the total pressure is $750\\text{~mmHg}$, what is the partial pressure of $\\text{O}_{2}$?",
+    "choices": [
+      "$300\\text{~mmHg}$",
+      "$450\\text{~mmHg}$",
+      "$600\\text{~mmHg}$",
+      "$750\\text{~mmHg}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-26",
+    "stem": "Kinetic Energy Comparison: Compare $1\\text{~mole}$ of $\\text{He}$ gas and $1\\text{~mole}$ of $\\text{Xe}$ gas at the same temperature ($25^{\\circ}\\text{C}$). Which of the following statements is true?",
+    "choices": [
+      "$\\text{He}$ has a higher average kinetic energy than $\\text{Xe}$.",
+      "$\\text{Xe}$ has a higher average kinetic energy than $\\text{He}$.",
+      "Both gases have the exact same average kinetic energy.",
+      "$\\text{He}$ molecules travel slower on average than $\\text{Xe}$ molecules."
+    ]
+  },
+  {
+    "id": "ch4-7-theory-27",
+    "stem": "Hess’s Law. Given the thermochemical equations:\n\n1. $C(graphite) + O_{2}(g) \\rightarrow CO_{2}(g)\\quad\\Delta H^{\\circ} = - 393.5\\text{~kJ/mol}$\n\n2. $H_{2}(g) + \\frac{1}{2}O_{2}(g) \\rightarrow H_{2}O(l)\\quad\\Delta H^{\\circ} = - 285.8\\text{~kJ/mol}$\n\n3. $2C_{2}H_{2}(g) + 5O_{2}(g) \\rightarrow 4CO_{2}(g) + 2H_{2}O(l)\\quad\\Delta H^{\\circ} = - 2598.8\\text{~kJ/mol}$\n\nCalculate $\\Delta H^{\\circ}$ for the formation of acetylene: $2C(graphite) + H_{2}(g) \\rightarrow C_{2}H_{2}(g)$.",
+    "choices": [
+      "$+ 226.7\\text{~kJ/mol}$",
+      "$- 226.7\\text{~kJ/mol}$",
+      "$+ 453.4\\text{~kJ/mol}$",
+      "$- 453.4\\text{~kJ/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-28",
+    "stem": "Enthalpy of Formation: Using standard enthalpies of formation ($\\Delta H_{f}^{\\circ}$ for $\\text{CO}_{2}(g) = - 393.5$, $\\text{H}_{2}\\text{O}(l) = - 285.8$, $\\text{CH}_{4}(g) = - 74.8\\text{~kJ/mol}$), calculate $\\Delta H_{rxn}^{\\circ}$ for the combustion of methane:\n\n$$\\text{CH}_{4}(g) + 2\\text{O}_{2}(g) \\rightarrow \\text{CO}_{2}(g) + 2\\text{H}_{2}\\text{O}(l)$$",
+    "choices": [
+      "$- 604.5\\text{~kJ/mol}$",
+      "$- 890.5\\text{~kJ/mol}$",
+      "$- 1045.1\\text{~kJ/mol}$",
+      "$+ 890.5\\text{~kJ/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-29",
+    "stem": "Calorimetry: When $50.0\\text{~mL}$ of $1.00\\text{~M~HCl}$ and $50.0\\text{~mL}$ of $1.00\\text{~M~NaOH}$ are mixed in a coffee-cup calorimeter, the temperature rises from ${21.5}^{\\circ}\\text{C}$ to ${28.1}^{\\circ}\\text{C}$. Assuming the specific heat capacity of the solution is $4.18\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$ and the density is $1.00\\text{~g/mL}$, calculate the enthalpy of neutralization per mole of $\\text{HCl}$.",
+    "choices": [
+      "$- 27.6\\text{~kJ/mol}$",
+      "$- 55.2\\text{~kJ/mol}$",
+      "$- 110.4\\text{~kJ/mol}$",
+      "$- 552\\text{~kJ/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-30",
+    "stem": "Bomb Calorimetry: A bomb calorimeter has a heat capacity of $3.50\\text{~kJ}/^{\\circ}\\text{C}$. When a $1.50\\text{-g}$ sample of glucose is burned in the calorimeter, the temperature increases by ${4.22}^{\\circ}\\text{C}$. What is the heat of combustion of glucose in $\\text{kJ/g}$?",
+    "choices": [
+      "$- 4.92\\text{~kJ/g}$",
+      "$- 9.85\\text{~kJ/g}$",
+      "$- 14.77\\text{~kJ/g}$",
+      "$- 29.54\\text{~kJ/g}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-31",
+    "stem": "First Law of Thermodynamics: A system absorbs $250\\text{~J}$ of heat from its surroundings and does $450\\text{~J}$ of expansion work on the surroundings. What is the change in internal energy ($\\Delta U$) of the system?",
+    "choices": [
+      "$+ 700\\text{~J}$",
+      "$+ 200\\text{~J}$",
+      "$- 200\\text{~J}$",
+      "$- 700\\text{~J}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-32",
+    "stem": "Expansion Work: Calculate the work done ($in\\text{~Joules}$) when $2.0\\text{~moles}$ of an ideal gas expands isothermally and reversibly from $5.0\\text{~L}$ to $20.0\\text{~L}$ at $300\\text{~K}$. ($R = 8.314\\text{~J/(mol} \\cdot \\text{K)}$)",
+    "choices": [
+      "$- 3.46\\text{~kJ}$",
+      "$- 6.92\\text{~kJ}$",
+      "$+ 3.46\\text{~kJ}$",
+      "$+ 6.92\\text{~kJ}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-33",
+    "stem": "Bond Enthalpies: Using average bond enthalpies ($\\text{C-H} = 413$, $\\text{Cl-Cl} = 242$, $\\text{C-Cl} = 328$, $\\text{H-Cl} = 431\\text{~kJ/mol}$), estimate $\\Delta H^{\\circ}$ for the chlorination of methane:\n\n$$\\text{CH}_{4}(g) + \\text{Cl}_{2}(g) \\rightarrow \\text{CH}_{3}\\text{Cl}(g) + \\text{HCl}(g)$$",
+    "choices": [
+      "$+ 104\\text{~kJ/mol}$",
+      "$- 104\\text{~kJ/mol}$",
+      "$+ 150\\text{~kJ/mol}$",
+      "$- 150\\text{~kJ/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-34",
+    "stem": "Enthalpy of Solution: The lattice energy of $\\text{NaCl}$ is $+ 788\\text{~kJ/mol}$ and its enthalpy of solution is $+ 4.0\\text{~kJ/mol}$. What is the total hydration enthalpy of $\\text{Na}^{+}$ and $\\text{Cl}^{-}$ ions?",
+    "choices": [
+      "$- 784\\text{~kJ/mol}$",
+      "$- 792\\text{~kJ/mol}$",
+      "$+ 784\\text{~kJ/mol}$",
+      "$+ 792\\text{~kJ/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-35",
+    "stem": "State vs. Path Functions: Which of the following properties is classified as a path function rather than a state function?",
+    "choices": [
+      "Enthalpy ($H$)",
+      "Internal Energy ($U$)",
+      "Heat ($q$)",
+      "Entropy ($S$)"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-36",
+    "stem": "Thermochemical Stoichiometry: Given: $2\\text{SO}_{2}(g) + \\text{O}_{2}(g) \\rightarrow 2\\text{SO}_{3}(g)\\quad\\Delta H^{\\circ} = - 198\\text{~kJ/mol}$. How much heat is released when $1.00\\text{~metric~ton}$ ($1.00 \\times 10^{6}\\text{~g}$) of $\\text{SO}_{2}$ ($64.07\\text{~g/mol}$) is converted to $\\text{SO}_{3}$?",
+    "choices": [
+      "$1.55 \\times 10^{3}\\text{~kJ}$",
+      "$1.55 \\times 10^{6}\\text{~kJ}$",
+      "$3.10 \\times 10^{6}\\text{~kJ}$",
+      "$6.20 \\times 10^{6}\\text{~kJ}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-37",
+    "stem": "Standard State Definition: Which of the following substances has a standard enthalpy of formation ($\\Delta H_{f}^{\\circ}$) equal to zero at $25^{\\circ}\\text{C}$ and $1\\text{~atm}$?",
+    "choices": [
+      "$\\text{H}_{2}\\text{O}(l)$",
+      "$\\text{Br}_{2}(g)$",
+      "$\\text{C}(graphite)$",
+      "$\\text{I}_{2}(l)$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-38",
+    "stem": "Fuel Value: Glucose ($\\text{C}_{6}\\text{H}_{12}\\text{O}_{6}$, molar mass $180.16\\text{~g/mol}$) has a standard enthalpy of combustion of $- 2800\\text{~kJ/mol}$. What is its fuel value in $\\text{kJ/g}$?",
+    "choices": [
+      "$15.5\\text{~kJ/g}$",
+      "$25.5\\text{~kJ/g}$",
+      "$30.2\\text{~kJ/g}$",
+      "$45.1\\text{~kJ/g}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-39",
+    "stem": "Photoelectric Effect: Light with a wavelength of $400\\text{~nm}$ strikes a metal surface. If the work function ($\\Phi$) of the metal is $2.40\\text{~eV}$ ($1\\text{~eV} = 1.602 \\times 10^{- 19}\\text{~J}$), what is the maximum kinetic energy of the emitted photoelectrons? ($h = 6.626 \\times 10^{- 34}\\text{~J} \\cdot \\text{s}$, $c = 3.00 \\times 10^{8}\\text{~m/s}$)",
+    "choices": [
+      "$0.70\\text{~eV}$",
+      "$1.25\\text{~eV}$",
+      "$3.10\\text{~eV}$",
+      "$4.50\\text{~eV}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-40",
+    "stem": "De Broglie Wavelength: What is the de Broglie wavelength of an electron ($mass = 9.109 \\times 10^{- 31}\\text{~kg}$) traveling at a speed of $2.00 \\times 10^{6}\\text{~m/s}$?",
+    "choices": [
+      "$3.64 \\times 10^{- 10}\\text{~m}$",
+      "$3.64 \\times 10^{- 13}\\text{~m}$",
+      "$6.63 \\times 10^{- 34}\\text{~m}$",
+      "$1.82 \\times 10^{- 11}\\text{~m}$"
+    ]
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "proto-mixed-021",
+    "stem": "Which change is a chemical change?",
+    "choices": [
+      "Ice melting",
+      "Iron rusting",
+      "Ethanol evaporating",
+      "Salt dissolving in water"
+    ]
+  },
+  {
+    "id": "proto-mixed-022",
+    "stem": "A metal block has mass 54.0 g and volume 20.0 cm<sup>3</sup>. What is its density?",
+    "choices": [
+      "0.370 g/cm<sup>3</sup>",
+      "2.70 g/cm<sup>3</sup>",
+      "34.0 g/cm<sup>3</sup>",
+      "1080 g/cm<sup>3</sup>"
+    ]
+  },
+  {
+    "id": "proto-mixed-023",
+    "stem": "How many electrons are in a Fe<sup>3+</sup> ion? (Fe: Z = 26)",
+    "choices": [
+      "23",
+      "26",
+      "29",
+      "3"
+    ]
+  },
+  {
+    "id": "proto-mixed-024",
+    "stem": "A compound is 40.0% C, 6.7% H and 53.3% O by mass. What is its empirical formula?",
+    "choices": [
+      "CHO",
+      "CH<sub>2</sub>O",
+      "C<sub>2</sub>H<sub>4</sub>O",
+      "CH<sub>4</sub>O"
+    ]
+  },
+  {
+    "id": "proto-mixed-025",
+    "stem": "At 273 K and 1.00 atm, 5.60 L of a gas has a mass of 11.0 g. What is its molar mass? (molar volume = 22.4 L/mol)",
+    "choices": [
+      "22.0 g/mol",
+      "44.0 g/mol",
+      "28.0 g/mol",
+      "88.0 g/mol"
+    ]
+  },
+  {
+    "id": "proto-mixed-026",
+    "stem": "Which phase change occurs when dry ice (solid CO<sub>2</sub>) is left at room pressure?",
+    "choices": [
+      "Melting",
+      "Sublimation",
+      "Deposition",
+      "Condensation"
+    ]
+  },
+  {
+    "id": "proto-mixed-027",
+    "stem": "Which set of quantum numbers (n, l, m<sub>l</sub>) is NOT allowed?",
+    "choices": [
+      "(2, 1, 0)",
+      "(3, 2, −2)",
+      "(2, 2, 1)",
+      "(4, 0, 0)"
+    ]
+  },
+  {
+    "id": "proto-mixed-028",
+    "stem": "Boron’s first ionization energy is lower than beryllium’s mainly because…",
+    "choices": [
+      "B has a larger nuclear charge",
+      "the 2p electron removed from B is higher in energy and better shielded than the 2s electron removed from Be",
+      "B has a half-filled subshell",
+      "B has two more electron shells"
+    ]
+  },
+  {
+    "id": "proto-mixed-029",
+    "stem": "Which compound has the largest lattice energy?",
+    "choices": [
+      "NaCl",
+      "KCl",
+      "MgO",
+      "CsI"
+    ]
+  },
+  {
+    "id": "proto-mixed-030",
+    "stem": "What is the molecular shape of SF<sub>4</sub>?",
+    "choices": [
+      "Tetrahedral",
+      "Square planar",
+      "Seesaw",
+      "Trigonal bipyramidal"
+    ]
+  },
+  {
+    "id": "proto-mixed-031",
+    "stem": "Which compound has the highest boiling point?",
+    "choices": [
+      "CH<sub>4</sub>",
+      "H<sub>2</sub>S",
+      "HCl",
+      "H<sub>2</sub>O"
+    ]
+  },
+  {
+    "id": "proto-mixed-032",
+    "stem": "What is the freezing point of a solution of 0.50 mol glucose in 1.0 kg water? (K<sub>f</sub> = 1.86 °C·kg/mol)",
+    "choices": [
+      "−0.93 °C",
+      "−1.86 °C",
+      "+0.93 °C",
+      "−0.50 °C"
+    ]
+  },
+  {
+    "id": "proto-mixed-033",
+    "stem": "How much heat raises 200 g of water from 20.0 °C to 30.0 °C? (c = 4.18 J/g·°C)",
+    "choices": [
+      "836 J",
+      "8.36 kJ",
+      "83.6 kJ",
+      "418 J"
+    ]
+  },
+  {
+    "id": "proto-mixed-034",
+    "stem": "A rate constant doubles when the temperature rises from 300 K to 310 K. What is E<sub>a</sub>? (R = 8.314 J/mol·K)",
+    "choices": [
+      "13 kJ/mol",
+      "27 kJ/mol",
+      "54 kJ/mol",
+      "108 kJ/mol"
+    ]
+  },
+  {
+    "id": "proto-mixed-035",
+    "stem": "A reaction has ΔH = +40 kJ/mol and ΔS = +100 J/mol·K. Above what temperature is it spontaneous?",
+    "choices": [
+      "100 K",
+      "298 K",
+      "400 K",
+      "4000 K"
+    ]
+  },
+  {
+    "id": "proto-mixed-036",
+    "stem": "At 298 K a reaction has ΔG° = −11.4 kJ/mol. What is K? (R = 8.314 J/mol·K)",
+    "choices": [
+      "1 × 10<sup>−2</sup>",
+      "4.6",
+      "1 × 10<sup>2</sup>",
+      "1 × 10<sup>5</sup>"
+    ]
+  },
+  {
+    "id": "proto-mixed-037",
+    "stem": "For A ⇌ B, K<sub>c</sub> = 4.0. If [A] = 0.50 M and [B] = 3.0 M, the system…",
+    "choices": [
+      "is at equilibrium",
+      "shifts to the right",
+      "shifts to the left",
+      "changes K<sub>c</sub>"
+    ]
+  },
+  {
+    "id": "proto-mixed-038",
+    "stem": "The K<sub>sp</sub> of AgCl is 1.8 × 10<sup>−10</sup>. What is its molar solubility in pure water?",
+    "choices": [
+      "1.8 × 10<sup>−10</sup> M",
+      "1.3 × 10<sup>−5</sup> M",
+      "9.0 × 10<sup>−11</sup> M",
+      "3.6 × 10<sup>−5</sup> M"
+    ]
+  },
+  {
+    "id": "proto-mixed-039",
+    "stem": "For Zn + Cu<sup>2+</sup> → Zn<sup>2+</sup> + Cu, E° (Cu<sup>2+</sup>/Cu) = +0.34 V and E° (Zn<sup>2+</sup>/Zn) = −0.76 V. What is E°<sub>cell</sub>?",
+    "choices": [
+      "+0.42 V",
+      "+1.10 V",
+      "−1.10 V",
+      "−0.42 V"
+    ]
+  },
+  {
+    "id": "proto-mixed-040",
+    "stem": "A cell has Zn²⁺ at 0.010 M and Cu<sup>2+</sup> at 1.0 M, with E°<sub>cell</sub> = 1.10 V at 25 °C. What is E<sub>cell</sub>?",
+    "choices": [
+      "1.04 V",
+      "1.10 V",
+      "1.16 V",
+      "1.22 V"
+    ]
+  }
+]

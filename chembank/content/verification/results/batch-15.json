@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-practice-001",
+    "answer": "B",
+    "confidence": "high",
+    "work": "r = 2.50 nm = 2.50e-7 cm, so V = (4/3)πr³ = 6.545e-20 cm³ and m = 19.3 × 6.545e-20 = 1.263e-18 g. n = 1.263e-18/197.0 = 6.41e-21 mol, N = 6.41e-21 × 6.022e23 ≈ 3.86e3 atoms.",
+    "ambiguous": false,
+    "cleanExplanation": "Convert the radius to cm: 2.50 nm = 2.50 × 10<sup>−7</sup> cm. The volume is (4/3)πr<sup>3</sup> = 6.54 × 10<sup>−20</sup> cm<sup>3</sup>, so the mass is 19.3 g/cm<sup>3</sup> × 6.54 × 10<sup>−20</sup> cm<sup>3</sup> = 1.26 × 10<sup>−18</sup> g. Dividing by 197.0 g/mol gives 6.41 × 10<sup>−21</sup> mol, and multiplying by Avogadro's number gives 3.86 × 10<sup>3</sup> atoms."
+  },
+  {
+    "id": "proto-practice-002",
+    "answer": "A",
+    "confidence": "high",
+    "work": "One fortnight = 14 × 24 × 3600 = 1,209,600 s, so light travels 3.00e8 × 1.2096e6 = 3.629e14 m per fortnight. Dividing by 201.168 m/furlong gives 1.80e12 furlongs per fortnight.",
+    "ambiguous": false,
+    "cleanExplanation": "A fortnight is 14 × 24 × 3600 = 1.2096 × 10<sup>6</sup> s, so in that time light covers 3.00 × 10<sup>8</sup> m/s × 1.2096 × 10<sup>6</sup> s = 3.629 × 10<sup>14</sup> m. Dividing by 201.168 m per furlong gives 1.80 × 10<sup>12</sup> furlongs per fortnight."
+  },
+  {
+    "id": "proto-practice-003",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Intensive properties do not depend on sample size. Boiling point (78.37 °C for ethanol) is a fixed characteristic of the substance, whereas heat capacity (418.4 J/K), volume (12.5 mL) and mass (1.00 kg) all scale with amount and are extensive.",
+    "ambiguous": false,
+    "cleanExplanation": "An intensive property is independent of the amount of material. A boiling point of 78.37 °C is a characteristic of ethanol itself, while heat capacity, volume and mass all change when you take more or less of the sample, making them extensive properties."
+  },
+  {
+    "id": "proto-practice-004",
+    "answer": "B",
+    "confidence": "medium",
+    "work": "14.285 − 0.0821 = 14.2029 (4 decimal places, 6 s.f.); 3.14159 + 0.002 = 3.14359. Then 14.2029 × 0.05200/3.14359 = 0.73855/3.14359 = 0.23494. The factor 0.05200 has 4 s.f., but 0.23494 rounds to 0.235 at 3 s.f., matching choice B (0.2350 is 4 s.f. of a wrong rounding and 0.23497 has too many digits).",
+    "ambiguous": false,
+    "cleanExplanation": "Subtract first: 14.285 − 0.0821 = 14.2029, and 3.14159 + 0.002 = 3.14359. Multiplying by 0.05200 and dividing by 3.14359 gives 0.23494, which is limited to three significant figures by the arithmetic, so the answer is 0.235."
+  },
+  {
+    "id": "proto-practice-005",
+    "answer": "A",
+    "confidence": "high",
+    "work": "For vertical floating, the submerged fraction equals the density ratio: 0.240/1.20 = 0.200. Submerged length = 0.200 × 10.0 cm = 2.00 cm.",
+    "ambiguous": false,
+    "cleanExplanation": "A floating object displaces its own weight, so the fraction of its volume below the surface equals the ratio of densities: 0.240 g/cm<sup>3</sup> ÷ 1.20 g/cm<sup>3</sup> = 0.200. Twenty percent of the 10.0 cm length, or 2.00 cm, lies below the surface."
+  },
+  {
+    "id": "proto-practice-006",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Water mass = 45.50 − 22.10 = 23.40 g, giving container volume = 23.40/0.998 = 23.45 mL. Unknown mass = 51.20 − 22.10 = 29.10 g, so density = 29.10/23.45 = 1.24 g/mL.",
+    "ambiguous": false,
+    "cleanExplanation": "The container holds 45.50 − 22.10 = 23.40 g of water, which occupies 23.40 ÷ 0.998 g/mL = 23.45 mL. The same volume of unknown liquid has mass 51.20 − 22.10 = 29.10 g, so its density is 29.10 g ÷ 23.45 mL = 1.24 g/mL."
+  },
+  {
+    "id": "proto-practice-007",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Tarnishing converts silver to Ag2S, forming a new substance. Sublimation, dissolution and fractional distillation all leave molecular/ionic identity unchanged and are physical changes.",
+    "ambiguous": false,
+    "cleanExplanation": "Tarnishing of silver produces silver sulfide, a new compound with different composition and properties, so it is a chemical change. Sublimation of dry ice, dissolving salt and fractional distillation of liquid air only change physical state or dispersion, not chemical identity."
+  },
+  {
+    "id": "proto-practice-008",
+    "answer": "A",
+    "confidence": "high",
+    "work": "°X = 1.50(−273.15) + 20.0 = −409.725 + 20.0 = −389.725 °X, which rounds to −389.73 °X.",
+    "ambiguous": false,
+    "cleanExplanation": "Substitute the Celsius value: °X = 1.50(−273.15) + 20.0 = −409.73 + 20.0 = −389.73. So absolute zero is −389.73 °X."
+  },
+  {
+    "id": "proto-practice-009",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Homogeneous mixtures (solutions) have variable composition and can be separated into their components by physical means such as distillation or evaporation. Fixed composition (B) and single-atom composition (C) describe pure substances or elements, and (D) is false since gases mix homogeneously.",
+    "ambiguous": false,
+    "cleanExplanation": "The components of a homogeneous mixture, such as salt and water in brine, can be separated by physical methods like evaporation or distillation. Pure substances have a fixed composition that cannot be changed without a chemical change."
+  },
+  {
+    "id": "proto-practice-010",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Area = 2.50 × 4.00 = 10.0 cm². Volume = 1.076/21.45 = 0.05016 cm³. Thickness = 0.05016/10.0 = 5.016e-3 cm = 50.2 µm.",
+    "ambiguous": false,
+    "cleanExplanation": "The volume of the foil is 1.076 g ÷ 21.45 g/cm<sup>3</sup> = 0.05016 cm<sup>3</sup>, and its face area is 2.50 cm × 4.00 cm = 10.0 cm<sup>2</sup>. Thickness = 0.05016 ÷ 10.0 = 5.02 × 10<sup>−3</sup> cm = 50.2 µm."
+  },
+  {
+    "id": "proto-practice-011",
+    "answer": "A",
+    "confidence": "high",
+    "work": "m = e ÷ (e/m) = 1.602e-19 C / 1.76e8 C/g = 9.10e-28 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Mass equals charge divided by charge-to-mass ratio: m = 1.602 × 10<sup>−19</sup> C ÷ 1.76 × 10<sup>8</sup> C/g = 9.10 × 10<sup>−28</sup> g, the accepted electron mass."
+  },
+  {
+    "id": "proto-practice-012",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Alpha decay: A 238→234, Z 92→90 (Th-234). Each β⁻ raises Z by 1 without changing A, so two betas give Z = 92, A = 234: <sup>234</sup>U.",
+    "ambiguous": false,
+    "cleanExplanation": "Alpha emission removes 4 mass units and 2 protons, giving <sup>234</sup>Th (Z = 90). Each β<sup>−</sup> emission converts a neutron into a proton, raising Z by one at constant mass number, so two betas restore Z to 92 without changing A = 234, giving <sup>234</sup>U."
+  },
+  {
+    "id": "proto-practice-013",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Let x = fraction of 37Cl: 34.9688(1−x) + 36.9659x = 35.4527 → 1.9971x = 0.4839 → x = 0.2423, i.e. 24.23%.",
+    "ambiguous": false,
+    "cleanExplanation": "Writing x for the fraction of <sup>37</sup>Cl: 34.9688(1 − x) + 36.9659x = 35.4527. This gives 1.9971x = 0.4839, so x = 0.2423, meaning <sup>37</sup>Cl is 24.23% abundant (and <sup>35</sup>Cl is 75.77%)."
+  },
+  {
+    "id": "proto-practice-014",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Z = 28 protons; neutrons = 59 − 28 = 31; a 3+ ion has lost 3 electrons, so 28 − 3 = 25 electrons.",
+    "ambiguous": false,
+    "cleanExplanation": "Nickel has Z = 28, so there are 28 protons and 59 − 28 = 31 neutrons. The 3+ charge means three electrons have been removed, leaving 28 − 3 = 25 electrons."
+  },
+  {
+    "id": "proto-practice-015",
+    "answer": "C",
+    "confidence": "high",
+    "work": "The small fraction of alpha particles deflected at large angles required a tiny, massive, positively charged nucleus. Fixed energy levels (A) is Bohr, the plum-pudding model (B) is Thomson's, and neutron/proton equality (D) is unrelated.",
+    "ambiguous": false,
+    "cleanExplanation": "Most alpha particles passed straight through the gold foil, but a few were deflected strongly backward, which is only possible if the atom's positive charge and nearly all its mass are concentrated in a very small, dense nucleus."
+  },
+  {
+    "id": "proto-practice-016",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Isotopes share the same atomic number (element) but differ in mass number. <sup>204</sup>Pb and <sup>208</sup>Pb both are Pb (Z = 82); the other pairs are different elements.",
+    "ambiguous": false,
+    "cleanExplanation": "Isotopes are atoms of the same element (same number of protons) with different numbers of neutrons. <sup>204</sup>Pb and <sup>208</sup>Pb both have Z = 82, whereas the pairs in the other choices involve two different elements."
+  },
+  {
+    "id": "proto-practice-017",
+    "answer": "C",
+    "confidence": "high",
+    "work": "XO3 is 48.00% O, so one mole has 48.00 g O = 3.000 mol O and 52.00 g of X. With one X per formula unit, M(X) = 52.00 g/mol, matching Cr (52.00).",
+    "ambiguous": false,
+    "cleanExplanation": "In 100 g of XO<sub>3</sub> there are 48.00 g of oxygen, which is 48.00 ÷ 16.00 = 3.00 mol O, and 52.00 g of X, i.e. 1 mol of X since the formula has one X. The molar mass of X is therefore about 52.0 g/mol, identifying chromium."
+  },
+  {
+    "id": "proto-practice-018",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Ar (Z = 18) has 18 electrons. S<sup>2−</sup> (Z = 16) gains two electrons, giving 18, so it is isoelectronic with Ar; Na<sup>+</sup> has 10 and Br<sup>−</sup> has 36.",
+    "ambiguous": false,
+    "cleanExplanation": "Argon has 18 electrons. Sulfur (Z = 16) gains two electrons to form S<sup>2−</sup>, which therefore also has 18 electrons and the same electron configuration, [Ne]3s<sup>2</sup>3p<sup>6</sup>."
+  },
+  {
+    "id": "proto-practice-019",
+    "answer": "A",
+    "confidence": "high",
+    "work": "0.7899(23.9850) + 0.1000(24.9858) + 0.1101(25.9826) = 18.946 + 2.499 + 2.861 = 24.305 amu, i.e. magnesium (24.31).",
+    "ambiguous": false,
+    "cleanExplanation": "Multiply each isotope mass by its fractional abundance and add: (0.7899)(23.9850) + (0.1000)(24.9858) + (0.1101)(25.9826) = 18.946 + 2.499 + 2.861 = 24.31 amu. That atomic weight identifies the element as magnesium."
+  },
+  {
+    "id": "proto-practice-020",
+    "answer": "C",
+    "confidence": "high",
+    "work": "N contributes 7 electrons and three O atoms contribute 24, for 31; the −1 charge adds one more electron, giving 32.",
+    "ambiguous": false,
+    "cleanExplanation": "Nitrogen has 7 electrons and each oxygen has 8, so the atoms supply 7 + 3(8) = 31 electrons. The extra electron from the −1 charge brings the total to 32 electrons."
+  }
+]

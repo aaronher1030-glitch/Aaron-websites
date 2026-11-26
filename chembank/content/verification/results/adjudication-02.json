@@ -1,0 +1,11 @@
+{
+  "id": "ch1-3-theory-02",
+  "answer": "A",
+  "confidence": "high",
+  "work": "Convert metres to furlongs: 3.00e8 m/s ÷ 201.168 m/furlong = 1.4913e6 furlongs/s. A fortnight is 14 × 24 × 3600 = 1.2096e6 s. Multiplying gives 1.4913e6 × 1.2096e6 = 1.804e12 furlongs/fortnight, which rounds to 1.80e12.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "The correct value is 1.80e12 furlongs/fortnight (choice A). The source's dimensional chain is set up correctly but its final arithmetic collapses 3.00e8 × 1.2096e6 ÷ 201.168 = 1.80e12 into 1.80e14, an exponent error of two decades, so the keyed answer B is wrong. The blind solver's chain and result are both correct, and choices C (9.01e11) and D (1.80e9) are off by factors of 2 and 1000 respectively.",
+  "cleanExplanation": "Write the speed as a single conversion chain: (3.00e8 m/s)(1 furlong/201.168 m)(86400 s/1 day)(14 days/1 fortnight). The metre and second units cancel, leaving furlongs per fortnight. Numerically, 3.00e8 ÷ 201.168 = 1.4913e6 furlongs/s, and 14 days is 1.2096e6 s, so the product is 1.4913e6 × 1.2096e6 = 1.80e12. Thus light travels about 1.80e12 furlongs per fortnight."
+}

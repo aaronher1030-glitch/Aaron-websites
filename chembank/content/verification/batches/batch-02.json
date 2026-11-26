@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch1-3-theory-21",
+    "stem": "What is the correct IUPAC name for the ionic compound $\\text{Fe}_{2}\\left( \\text{SO}_{4} \\right)_{3} \\cdot 9\\text{H}_{2}\\text{O}$?",
+    "choices": [
+      "Iron(II) sulfate nonahydrate",
+      "Diiron trisulfate nonahydrate",
+      "Iron(III) sulfate nonahydrate",
+      "Iron trisulfate nonahydrate"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-22",
+    "stem": "What is the correct formula for perchloric acid?",
+    "choices": [
+      "$\\text{HclO}$",
+      "$\\text{HClO}_{2}$",
+      "$\\text{HClO}_{3}$",
+      "$\\text{HClO}_{4}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-23",
+    "stem": "What is the systematic name of the binary covalent compound $\\text{P}_{4}\\text{O}_{10}$?",
+    "choices": [
+      "Tetraphosphorus decoxide",
+      "Phosphorus decoxide",
+      "Triphosphorus decoxide",
+      "Phosphoric anhydride"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-24",
+    "stem": "Which of the following chemical formulas is INCORRECT based on standard ionic charges?",
+    "choices": [
+      "$\\text{Al}_{2}\\text{S}_{3}$",
+      "$\\text{Ca}_{3}\\left( \\text{PO}_{4} \\right)_{2}$",
+      "$\\text{K}_{2}\\text{Cr}_{2}\\text{O}_{7}$",
+      "$\\text{BaHCO}_{3}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-25",
+    "stem": "What is the correct chemical formula for dinitrogen pentoxide?",
+    "choices": [
+      "$\\text{N}_{2}\\text{O}_{3}$",
+      "$\\text{NO}_{2}$",
+      "$\\text{N}_{2}\\text{O}_{5}$",
+      "$\\text{N}_{5}\\text{O}_{2}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-26",
+    "stem": "Identify the IUPAC name for the compound $\\text{Cr}\\left( \\text{BrO}_{3} \\right)_{3}$.",
+    "choices": [
+      "Chromium(III) bromate",
+      "Chromium(III) bromide",
+      "Chromium(VI) bromite",
+      "Chromium(III) perbromate"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-27",
+    "stem": "Which of the following oxoacids has an acid name ending in \"-ous acid\"?",
+    "choices": [
+      "$\\text{HNO}_{3}$",
+      "$\\text{H}_{2}\\text{SO}_{3}$",
+      "$\\text{H}_{3}\\text{PO}_{4}$",
+      "$\\text{HClO}_{4}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-28",
+    "stem": "What is the formula of the organic molecule propane?",
+    "choices": [
+      "$\\text{C}_{2}\\text{H}_{6}$",
+      "$\\text{C}_{3}\\text{H}_{8}$",
+      "$\\text{C}_{4}\\text{H}_{10}$",
+      "$\\text{C}_{3}\\text{H}_{6}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-29",
+    "stem": "The formula of ammonium dichromate is:",
+    "choices": [
+      "$\\left( \\text{NH}_{4} \\right)_{2}\\text{CrO}_{4}$",
+      "$\\text{NH}_{4}\\text{Cr}_{2}\\text{O}_{7}$",
+      "$\\left( \\text{NH}_{4} \\right)_{2}\\text{Cr}_{2}\\text{O}_{7}$",
+      "$\\left( \\text{NH}_{4} \\right)_{3}\\text{CrO}_{4}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-30",
+    "stem": "Name the organic compound represented by the functional group formula $\\text{CH}_{3}\\text{CH}_{2}\\text{OH}$.",
+    "choices": [
+      "Methanol",
+      "Ethanol",
+      "Dimethyl ether",
+      "Propanol"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-31",
+    "stem": "How many total oxygen atoms are present in $0.250\\text{~moles}$ of hydrated copper(II) sulfate, $\\text{CuSO}_{4} \\cdot 5\\text{H}_{2}\\text{O}$?",
+    "choices": [
+      "$1.51 \\times 10^{23}$",
+      "$6.02 \\times 10^{23}$",
+      "$1.35 \\times 10^{24}$",
+      "$2.71 \\times 10^{24}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-32",
+    "stem": "A compound contains $40.00\\%$ C, $6.71\\%$ H, and $53.29\\%$ O by mass. If its molar mass is approximately $180\\text{~g/mol}$, what is its molecular formula?",
+    "choices": [
+      "$\\text{CH}_{2}\\text{O}$",
+      "$\\text{C}_{2}\\text{H}_{4}\\text{O}_{2}$",
+      "$\\text{C}_{6}\\text{H}_{12}\\text{O}_{6}$",
+      "$\\text{C}_{3}\\text{H}_{6}\\text{O}_{3}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-33",
+    "stem": "Combustion of $1.50\\text{~g}$ of a hydrocarbon yields $4.71\\text{~g}$ of $\\text{CO}_{2}$ and $1.93\\text{~g}$ of $\\text{H}_{2}\\text{O}$. What is the empirical formula of the hydrocarbon?",
+    "choices": [
+      "$\\text{CH}$",
+      "$\\text{CH}_{2}$",
+      "$\\text{C}_{2}\\text{H}_{5}$",
+      "$\\text{CH}_{3}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-34",
+    "stem": "What is the mass percent of nitrogen in ammonium nitrate ($\\text{NH}_{4}\\text{NO}_{3}$, $M = 80.04\\text{~g/mol}$)?",
+    "choices": [
+      "$17.5\\%$",
+      "$35.0\\%$",
+      "$28.0\\%$",
+      "$42.0\\%$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-35",
+    "stem": "How many grams of iron can be extracted from $500.0\\text{~g}$ of iron(III) oxide ($\\text{Fe}_{2}\\text{O}_{3}$, $M = 159.7\\text{~g/mol}$)?",
+    "choices": [
+      "$349.7\\text{~g}$",
+      "$174.9\\text{~g}$",
+      "$233.1\\text{~g}$",
+      "$350.0\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-36",
+    "stem": "A sample of hydrated zinc sulfate ($\\text{ZnSO}_{4} \\cdot x\\text{H}_{2}\\text{O}$) weighing $5.75\\text{~g}$ is heated until all water is driven off. The anhydrous residue weighs $3.23\\text{~g}$. Determine the value of $x$. ($M_{\\text{ZnSO}_{4}} = 161.47\\text{~g/mol}$, $M_{\\text{H}_{2}\\text{O}} = 18.02\\text{~g/mol}$)",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-37",
+    "stem": "In a mass spectrometer, a sample of xenon is ionized to form $\\text{Xe}^{+}$ ions. What governs the deflection of these ions in the magnetic field?",
+    "choices": [
+      "Nuclear charge only",
+      "Mass-to-charge ratio ($m/z$)",
+      "Electron affinity of xenon",
+      "Total molecular volume"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-38",
+    "stem": "How many moles of sodium ions ($\\text{Na}^{+}$) are present in a sample containing $3.01 \\times 10^{23}$ formula units of sodium phosphate ($\\text{Na}_{3}\\text{PO}_{4}$)?",
+    "choices": [
+      "$0.500\\text{~mol}$",
+      "$1.50\\text{~mol}$",
+      "$3.00\\text{~mol}$",
+      "$1.00\\text{~mol}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-39",
+    "stem": "An oxide of nitrogen contains $30.45\\%$ nitrogen by mass. What is its empirical formula?",
+    "choices": [
+      "$\\text{NO}$",
+      "$\\text{NO}_{2}$",
+      "$\\text{N}_{2}\\text{O}$",
+      "$\\text{N}_{2}\\text{O}_{5}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-40",
+    "stem": "A mixture of $\\text{NaCl}$ ($M = 58.44\\text{~g/mol}$) and $\\text{KCl}$ ($M = 74.55\\text{~g/mol}$) weighing $2.000\\text{~g}$ contains $0.0300\\text{~mol}$ of total chloride ions. Calculate the mass of $\\text{NaCl}$ in the mixture.",
+    "choices": [
+      "$1.168\\text{~g}$",
+      "$0.832\\text{~g}$",
+      "$0.868\\text{~g}$",
+      "$1.432\\text{~g}$"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "id": "ch1-3-lab-49",
+  "paper": "ch1-3-lab",
+  "source": "supplied-paper",
+  "sourceKey": "B",
+  "blind": "B",
+  "blindWork": "NaHCO3 = 46.30 - 42.10 = 4.20 g = 0.0500 mol, so theoretical NaCl = 0.0500 x 58.44 = 2.922 g. Actual residue = 45.02 - 42.10 = 2.92 g, giving 2.92/2.922 = 99.9% (and the mass loss, 1.28 g, is exactly the theoretical loss). No choice equals 100.0%; 101.4% is numerically nearest.",
+  "blindConfidence": "low",
+  "ambiguous": true,
+  "flags": [
+    "key-commentary"
+  ],
+  "stem": "A student records the following data in a stoichiometric lab activity:\n\n- Mass of empty evaporating dish = $42.10\\text{~g}$\n\n- Mass of dish + sodium bicarbonate ($\\text{NaHCO}_{3}$) = $46.30\\text{~g}$\n\n- Mass of dish + residue ($\\text{NaCl}$) after reaction with $\\text{HCl}$ and evaporation = $45.02\\text{~g}$\n\nReaction:\n\n$$\\text{NaHCO}_{3}(s) + \\text{HCl}(aq) \\rightarrow \\text{NaCl}(s) + \\text{H}_{2}\\text{O}(l) + \\text{CO}_{2}(g)$$\n\nWhat is the student's percent yield of $\\text{NaCl}$? ($M_{\\text{NaHCO}_{3}} = 84.01\\text{~g/mol}$, $M_{\\text{NaCl}} = 58.44\\text{~g/mol}$)",
+  "choices": [
+    "$98.0\\%$",
+    "$101.4\\%$",
+    "$95.5\\%$",
+    "$92.1\\%$"
+  ],
+  "sourceExplanation": "Mass $\\text{NaHCO}_{3} = 46.30 - 42.10 = 4.20\\text{~g}$ ($0.0500\\text{~mol}$).\n\nTheoretical $\\text{NaCl} = 0.0500 \\times 58.44 = 2.922\\text{~g}$.\n\nActual $\\text{NaCl} = 45.02 - 42.10 = 2.92\\text{~g}$.\n\n$\\%$ yield $= \\frac{2.92}{2.922} \\times 100\\% = 99.9\\% \\approx 100.0\\%$ (or $101.4\\%$ with precision rounding depending on exact sig figs)."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ch4-7-lab-27",
+  "paper": "ch4-7-lab",
+  "source": "supplied-paper",
+  "sourceKey": "C",
+  "blind": "B",
+  "blindWork": "Heat lost by hot water = 50.0 x 4.184 x (60.0 - 38.5) = 50.0 x 4.184 x 21.5 = 4498 J. Heat gained by cold water = 50.0 x 4.184 x (38.5 - 20.0) = 3870 J. Difference = 628 J absorbed by the cup, so C_cal = 628/18.5 = 33.9 J/degC.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-B"
+  ],
+  "stem": "Coffee-Cup Calorimeter Heat Capacity: To measure the heat capacity of a polystyrene coffee-cup calorimeter, $50.0\\text{~mL}$ of hot water at ${60.0}^{\\circ}\\text{C}$ is added to $50.0\\text{~mL}$ of cold water at ${20.0}^{\\circ}\\text{C}$ inside the cup. The final equilibrium temperature is ${38.5}^{\\circ}\\text{C}$. Taking the specific heat of water as $4.184\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$ and density as $1.00\\text{~g/mL}$, what is the heat capacity of the calorimeter ($C_{cal}$)?",
+  "choices": [
+    "$15.7\\text{~J/}^{\\circ}\\text{C}$",
+    "$33.9\\text{~J/}^{\\circ}\\text{C}$",
+    "$62.8\\text{~J/}^{\\circ}\\text{C}$",
+    "$104.6\\text{~J/}^{\\circ}\\text{C}$"
+  ],
+  "sourceExplanation": "Heat lost by hot water $= 50.0 \\times 4.184 \\times (60.0 - 38.5) = 4497.8\\text{~J}$. Heat gained by cold water $= 50.0 \\times 4.184 \\times (38.5 - 20.0) = 3870.2\\text{~J}$. Heat gained by calorimeter $= 4497.8 - 3870.2 = 627.6\\text{~J}$. $C_{cal} = 627.6/(38.5 - 20.0) = 33.9\\text{~J/}^{\\circ}\\text{C}$. (Correct option: B)"
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "proto-textbook-031",
+    "stem": "Express 0.000 045 6 in scientific notation.",
+    "choices": [
+      "45.6 × 10<sup>−6</sup>",
+      "4.56 × 10<sup>−5</sup>",
+      "4.56 × 10<sup>−4</sup>",
+      "4.56 × 10<sup>5</sup>"
+    ]
+  },
+  {
+    "id": "proto-textbook-032",
+    "stem": "Calculate (3.20 × 10<sup>3</sup>)(2.0 × 10<sup>−2</sup>) with the correct significant figures.",
+    "choices": [
+      "6.4 × 10<sup>3</sup>",
+      "6.40 × 10<sup>1</sup>",
+      "64.0",
+      "64"
+    ]
+  },
+  {
+    "id": "proto-textbook-033",
+    "stem": "Round 2.7451 to three significant figures.",
+    "choices": [
+      "2.75",
+      "2.745",
+      "2.74",
+      "2.7"
+    ]
+  },
+  {
+    "id": "proto-textbook-034",
+    "stem": "Convert 72.0 km/h to m/s.",
+    "choices": [
+      "0.0200 m/s",
+      "1.20 m/s",
+      "20.0 m/s",
+      "259 m/s"
+    ]
+  },
+  {
+    "id": "proto-textbook-035",
+    "stem": "A car travels 150 km on 12.0 L of fuel. What is its consumption in L per 100 km?",
+    "choices": [
+      "12.5",
+      "1.25",
+      "0.0800",
+      "8.00"
+    ]
+  },
+  {
+    "id": "proto-textbook-036",
+    "stem": "How many seconds are in 2.50 hours?",
+    "choices": [
+      "4.17 × 10<sup>−2</sup> s",
+      "150 s",
+      "9.00 × 10<sup>3</sup> s",
+      "1.50 × 10<sup>4</sup> s"
+    ]
+  },
+  {
+    "id": "proto-textbook-037",
+    "stem": "According to Dalton’s atomic theory, all atoms of a given element…",
+    "choices": [
+      "can change into other elements",
+      "can be created in reactions",
+      "are identical in mass and properties",
+      "are destroyed in reactions"
+    ]
+  },
+  {
+    "id": "proto-textbook-038",
+    "stem": "Dalton’s idea that compounds contain atoms in fixed whole-number ratios explains the law of…",
+    "choices": [
+      "combining volumes",
+      "definite proportions",
+      "conservation of energy",
+      "gravitation"
+    ]
+  },
+  {
+    "id": "proto-textbook-039",
+    "stem": "Two compounds of carbon and oxygen contain 1.33 g and 2.67 g of oxygen per 1.00 g of carbon. This illustrates the law of…",
+    "choices": [
+      "definite proportions",
+      "multiple proportions",
+      "conservation of mass",
+      "combining volumes"
+    ]
+  },
+  {
+    "id": "proto-textbook-040",
+    "stem": "In a chemical reaction, atoms are…",
+    "choices": [
+      "converted into other elements",
+      "rearranged but not created or destroyed",
+      "created from energy",
+      "destroyed to form new atoms"
+    ]
+  },
+  {
+    "id": "proto-textbook-041",
+    "stem": "Which part of Dalton’s theory was later shown to be incorrect?",
+    "choices": [
+      "Atoms of different elements differ.",
+      "Atoms are indivisible.",
+      "Compounds have fixed composition.",
+      "Atoms combine in whole-number ratios."
+    ]
+  },
+  {
+    "id": "proto-textbook-042",
+    "stem": "Which subatomic particle has no charge and a mass close to that of a proton?",
+    "choices": [
+      "Positron",
+      "Alpha particle",
+      "Electron",
+      "Neutron"
+    ]
+  },
+  {
+    "id": "proto-textbook-043",
+    "stem": "Most alpha particles passed straight through Rutherford’s gold foil. This showed that atoms are…",
+    "choices": [
+      "solid spheres",
+      "made of neutrons only",
+      "full of electrons only",
+      "mostly empty space"
+    ]
+  },
+  {
+    "id": "proto-textbook-044",
+    "stem": "Thomson’s cathode-ray experiments showed that cathode rays are…",
+    "choices": [
+      "X-rays",
+      "neutral atoms",
+      "streams of electrons",
+      "streams of protons"
+    ]
+  },
+  {
+    "id": "proto-textbook-045",
+    "stem": "The atomic number of an element is the number of…",
+    "choices": [
+      "protons in the nucleus",
+      "neutrons in the nucleus",
+      "valence electrons",
+      "protons plus neutrons"
+    ]
+  },
+  {
+    "id": "proto-textbook-046",
+    "stem": "Elements in the same group have similar chemical properties because they have the same number of…",
+    "choices": [
+      "neutrons",
+      "protons",
+      "valence electrons",
+      "electron shells"
+    ]
+  },
+  {
+    "id": "proto-textbook-047",
+    "stem": "Which is an alkali metal?",
+    "choices": [
+      "Cl",
+      "Ne",
+      "Na",
+      "Ca"
+    ]
+  },
+  {
+    "id": "proto-textbook-048",
+    "stem": "Which group contains the halogens?",
+    "choices": [
+      "Group 1",
+      "Group 18",
+      "Group 17",
+      "Group 16"
+    ]
+  },
+  {
+    "id": "proto-textbook-049",
+    "stem": "Which element is a metalloid?",
+    "choices": [
+      "C",
+      "Al",
+      "Si",
+      "S"
+    ]
+  },
+  {
+    "id": "proto-textbook-050",
+    "stem": "Which pair of elements has the most similar chemical properties?",
+    "choices": [
+      "C and N",
+      "Na and Mg",
+      "Cl and Ar",
+      "Cl and Br"
+    ]
+  }
+]

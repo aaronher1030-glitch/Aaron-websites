@@ -1,0 +1,202 @@
+[
+  {
+    "id": "proto-mixed-061",
+    "stem": "What is the hybridization of carbon in CO<sub>2</sub>?",
+    "choices": [
+      "sp",
+      "sp<sup>2</sup>",
+      "sp<sup>3</sup>",
+      "sp<sup>3</sup>d"
+    ]
+  },
+  {
+    "id": "proto-mixed-062",
+    "stem": "What is the formal charge on nitrogen in the nitrate ion, NO<sub>3</sub><sup>−</sup>?",
+    "choices": [
+      "0",
+      "+1",
+      "−1",
+      "+2"
+    ]
+  },
+  {
+    "id": "proto-mixed-063",
+    "stem": "Which species has bond angles closest to 109.5°?",
+    "choices": [
+      "NH<sub>4</sub><sup>+</sup>",
+      "BF<sub>3</sub>",
+      "CO<sub>2</sub>",
+      "H<sub>2</sub>O"
+    ]
+  },
+  {
+    "id": "proto-mixed-064",
+    "stem": "Which substance has the strongest London dispersion forces?",
+    "choices": [
+      "CH<sub>4</sub>",
+      "C<sub>2</sub>H<sub>6</sub>",
+      "C<sub>4</sub>H<sub>10</sub>",
+      "C<sub>8</sub>H<sub>18</sub>"
+    ]
+  },
+  {
+    "id": "proto-mixed-065",
+    "stem": "What volume of 12.0 M HCl is needed to make 500 mL of 0.600 M HCl?",
+    "choices": [
+      "25.0 mL",
+      "50.0 mL",
+      "10.0 mL",
+      "250 mL"
+    ]
+  },
+  {
+    "id": "proto-mixed-066",
+    "stem": "Which 0.10 m aqueous solution has the lowest freezing point?",
+    "choices": [
+      "glucose",
+      "NaCl",
+      "CaCl<sub>2</sub>",
+      "CH<sub>3</sub>COOH"
+    ]
+  },
+  {
+    "id": "proto-mixed-067",
+    "stem": "ΔH<sub>f</sub>° is −393.5 kJ/mol for CO<sub>2</sub>(g), −285.8 kJ/mol for H<sub>2</sub>O(l) and −74.8 kJ/mol for CH<sub>4</sub>(g). What is ΔH° for CH<sub>4</sub> + 2O<sub>2</sub> → CO<sub>2</sub> + 2H<sub>2</sub>O(l)?",
+    "choices": [
+      "−890.3 kJ",
+      "−1040 kJ",
+      "−679.0 kJ",
+      "+890.3 kJ"
+    ]
+  },
+  {
+    "id": "proto-mixed-068",
+    "stem": "5.00 g of NH<sub>4</sub>NO<sub>3</sub> (M = 80.04 g/mol) dissolves in 100.0 g of water in a coffee-cup calorimeter, and the temperature falls from 25.0 °C to 21.0 °C. Taking c = 4.18 J/g·°C for the 105.0 g solution, what is ΔH of dissolution per mole?",
+    "choices": [
+      "+28.1 kJ/mol",
+      "−28.1 kJ/mol",
+      "+1.76 kJ/mol",
+      "+2.81 kJ/mol"
+    ]
+  },
+  {
+    "id": "proto-mixed-069",
+    "stem": "For A + B → products, doubling [A] doubles the rate and doubling [B] quadruples it. What is the rate law?",
+    "choices": [
+      "rate = k[A][B]",
+      "rate = k[A][B]<sup>2</sup>",
+      "rate = k[A]<sup>2</sup>[B]",
+      "rate = k[A]<sup>2</sup>[B]<sup>2</sup>"
+    ]
+  },
+  {
+    "id": "proto-mixed-070",
+    "stem": "A first-order reaction has k = 0.0231 min<sup>−1</sup>. How long does it take for 75% of the reactant to be used up?",
+    "choices": [
+      "30.0 min",
+      "60.0 min",
+      "90.0 min",
+      "120 min"
+    ]
+  },
+  {
+    "id": "proto-mixed-071",
+    "stem": "Which process has a negative ΔS?",
+    "choices": [
+      "Ice melting",
+      "Water evaporating",
+      "N<sub>2</sub>(g) + 3H<sub>2</sub>(g) → 2NH<sub>3</sub>(g)",
+      "Salt dissolving in water"
+    ]
+  },
+  {
+    "id": "proto-mixed-072",
+    "stem": "H<sub>2</sub> + I<sub>2</sub> ⇌ 2HI has K<sub>c</sub> = 50.0 at 700 K. At equilibrium [H<sub>2</sub>] = [I<sub>2</sub>] = 0.020 M. What is [HI]?",
+    "choices": [
+      "0.141 M",
+      "0.0200 M",
+      "0.400 M",
+      "1.00 M"
+    ]
+  },
+  {
+    "id": "proto-mixed-073",
+    "stem": "For N<sub>2</sub>(g) + 3H<sub>2</sub>(g) ⇌ 2NH<sub>3</sub>(g), which change shifts the equilibrium to the right?",
+    "choices": [
+      "Increasing the volume of the container",
+      "Removing NH<sub>3</sub> as it forms",
+      "Adding a catalyst",
+      "Decreasing the pressure"
+    ]
+  },
+  {
+    "id": "proto-mixed-074",
+    "stem": "A current of 2.00 A passes through molten NaCl for 965 s. What mass of sodium is deposited? (F = 96 485 C/mol; M of Na = 22.99 g/mol)",
+    "choices": [
+      "0.460 g",
+      "0.230 g",
+      "0.920 g",
+      "4.60 g"
+    ]
+  },
+  {
+    "id": "proto-mixed-075",
+    "stem": "What is the pH of 0.100 M acetic acid? (K<sub>a</sub> = 1.8 × 10<sup>−5</sup>)",
+    "choices": [
+      "1.00",
+      "2.87",
+      "4.74",
+      "5.74"
+    ]
+  },
+  {
+    "id": "proto-mixed-076",
+    "stem": "What is the pH of 0.020 M NaOH at 25 °C?",
+    "choices": [
+      "1.70",
+      "12.30",
+      "12.00",
+      "13.70"
+    ]
+  },
+  {
+    "id": "proto-mixed-077",
+    "stem": "A solution has absorbance 0.300 in a 1.00 cm cell and a molar absorptivity of 1.50 × 10<sup>3</sup> L mol<sup>−1</sup> cm<sup>−1</sup>. What is its concentration?",
+    "choices": [
+      "2.00 × 10<sup>−4</sup> M",
+      "5.00 × 10<sup>3</sup> M",
+      "4.50 × 10<sup>2</sup> M",
+      "2.00 × 10<sup>−3</sup> M"
+    ]
+  },
+  {
+    "id": "proto-mixed-078",
+    "stem": "Which compound is an aldehyde?",
+    "choices": [
+      "CH<sub>3</sub>COCH<sub>3</sub>",
+      "CH<sub>3</sub>CH<sub>2</sub>CHO",
+      "CH<sub>3</sub>COOH",
+      "CH<sub>3</sub>OCH<sub>3</sub>"
+    ]
+  },
+  {
+    "id": "proto-mixed-079",
+    "stem": "Heating a primary alcohol with excess acidified K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub> gives…",
+    "choices": [
+      "a ketone",
+      "an aldehyde only",
+      "a carboxylic acid",
+      "an ester"
+    ]
+  },
+  {
+    "id": "proto-mixed-080",
+    "stem": "What is the oxidation state of copper in [Cu(NH<sub>3</sub>)<sub>4</sub>]SO<sub>4</sub>?",
+    "choices": [
+      "0",
+      "+1",
+      "+2",
+      "+4"
+    ]
+  }
+]

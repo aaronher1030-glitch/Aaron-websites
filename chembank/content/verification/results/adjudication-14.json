@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-12",
+  "answer": "B",
+  "confidence": "high",
+  "work": "Each mole of Na2CO3 releases 2 mol Na+, so [Na2CO3] = 0.200 M / 2 = 0.100 M. In 0.2500 L this is n = 0.100 x 0.2500 = 0.02500 mol. Mass = 0.02500 mol x 105.99 g/mol = 2.65 g. Choice B (2.65 g) is the only match; doubling or halving again gives the 1.32 g or 5.30 g distractors.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "Dividing the sodium ion concentration by the stoichiometric factor of 2 gives 0.100 M Na2CO3, and 0.02500 mol times 105.99 g/mol equals 2.65 g, which is choice B. The source key letter (C, 5.30 g) contradicts the source's own explanation, which correctly derives 2.65 g and even labels it (B); the blind solver's answer and reasoning are correct.",
+  "cleanExplanation": "Sodium ion concentration is twice the Na2CO3 concentration because each formula unit provides two Na+ ions, so [Na2CO3] = 0.200 M / 2 = 0.100 M. The moles needed for 250.0 mL are 0.100 M x 0.2500 L = 0.02500 mol. Multiplying by the molar mass gives m = 0.02500 x 105.99 = 2.65 g. Therefore 2.65 g of Na2CO3 is required."
+}

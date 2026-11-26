@@ -1,0 +1,772 @@
+/* ---------------------------------------------------------------
+   Shell furniture: header, tabs, footer, skip link, theme toggle.
+   --------------------------------------------------------------- */
+
+.site {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 12px;
+  z-index: 200;
+  padding: 9px 14px;
+  transform: translateY(-180%);
+  background: var(--ink);
+  color: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: transform 140ms var(--ease);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+  color: var(--paper);
+  outline-color: var(--copper);
+}
+
+/* Header: a notebook sheet with a file-tab index across the bottom rule. */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: "brand nav tools";
+  align-items: end;
+  gap: 0 clamp(14px, 2.4vw, 30px);
+  padding: 10px var(--gutter) 0;
+  padding-inline: max(
+    var(--gutter),
+    calc((100% - var(--page-max)) / 2 + var(--gutter))
+  );
+  background: var(--paper);
+  border-bottom: var(--rule-strong) solid var(--ink);
+}
+
+.brand-link {
+  grid-area: brand;
+  align-self: center;
+  padding-block: 8px 12px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand-link:hover {
+  color: var(--ink);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 36px;
+  flex: none;
+  color: var(--cobalt);
+  transition: color 140ms var(--ease), transform 140ms var(--ease);
+}
+
+.brand-link:hover .brand-mark {
+  color: var(--copper);
+  transform: rotate(-4deg);
+}
+
+.brand-mark-ring {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linejoin: round;
+}
+
+.brand-mark-core {
+  fill: none;
+  stroke: var(--copper);
+  stroke-width: 2.2;
+}
+
+.brand-mark-tick {
+  stroke: var(--copper);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+
+.brand-sub {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* Primary nav: paper tabs sitting on the header rule. */
+
+.site-nav {
+  grid-area: nav;
+  justify-self: end;
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+  max-width: 100%;
+  margin-bottom: calc(-1 * var(--rule-strong));
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 13px;
+  border: var(--rule-width) solid transparent;
+  border-bottom: var(--rule-strong) solid transparent;
+  border-radius: 7px 7px 0 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 120ms var(--ease), color 120ms var(--ease),
+    border-color 120ms var(--ease);
+}
+
+.site-nav a:hover {
+  color: var(--ink);
+  background: var(--surface-2);
+  border-color: var(--rule);
+  border-bottom-color: transparent;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+  background: var(--surface);
+  border-color: var(--ink);
+  border-bottom-color: var(--surface);
+  box-shadow: inset 0 3px 0 var(--copper);
+}
+
+.header-tools {
+  grid-area: tools;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 1.4vw, 16px);
+  padding-block: 8px 10px;
+}
+
+.nav-more {
+  padding: 5px 1px;
+  border-bottom: 2px solid color-mix(in srgb, var(--copper) 45%, transparent);
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 120ms var(--ease), color 120ms var(--ease);
+}
+
+.nav-more:hover,
+.nav-more[aria-current="page"] {
+  color: var(--copper);
+  border-bottom-color: var(--copper);
+}
+
+.theme-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  background: var(--surface);
+  color: var(--ink);
+  border: var(--rule-width) solid var(--ink);
+  border-radius: 7px;
+  box-shadow: var(--shadow-hard);
+  cursor: pointer;
+  transition: transform 120ms var(--ease), box-shadow 120ms var(--ease),
+    background-color 120ms var(--ease), color 120ms var(--ease);
+}
+
+.theme-toggle svg {
+  width: 19px;
+  height: 19px;
+}
+
+.theme-toggle:hover {
+  transform: translate(-1px, -1px);
+  background: var(--surface-2);
+  color: var(--copper);
+  box-shadow: 4px 4px 0 color-mix(in srgb, var(--ink) 22%, transparent);
+}
+
+.theme-toggle:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 color-mix(in srgb, var(--ink) 22%, transparent);
+}
+
+/* Main bench surface. */
+
+.site-main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding: clamp(28px, 5vw, 60px) var(--gutter) clamp(48px, 7vw, 96px);
+}
+
+/* Footer: colophon with an unofficial stamp. */
+
+.site-footer {
+  border-top: var(--rule-strong) solid var(--ink);
+  background: var(--surface-2);
+  padding: 22px var(--gutter) 28px;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  max-width: var(--page-max);
+  margin-inline: auto;
+}
+
+.footer-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-copy p {
+  max-width: 68ch;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  line-height: 1.65;
+  letter-spacing: 0.015em;
+}
+
+.footer-copy a {
+  color: var(--ink);
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--copper);
+  text-underline-offset: 4px;
+}
+
+.footer-copy a:hover {
+  color: var(--copper);
+}
+
+.footer-stamp {
+  display: grid;
+  gap: 2px;
+  padding: 6px 10px 5px;
+  transform: rotate(-2deg);
+  border: var(--rule-width) dashed var(--copper);
+  border-radius: 5px;
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.footer-stamp span {
+  color: var(--muted);
+  font-size: 8.5px;
+  letter-spacing: 0.13em;
+}
+
+/* ---------------------------------------------------------------
+   Rich text, choices, badges, meters.
+
+   The question sheet: prose in the UI face, chemistry set back in a
+   serif rhythm, answer cards as ruled index cards with a quiet
+   eliminate control, and meters as thin ruled gauges.
+   --------------------------------------------------------------- */
+
+/* Rich text. Prose inherits its UI context; math takes the display serif. */
+
+.rich-text {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.rich-text sub,
+.rich-text sup {
+  font-size: 0.72em;
+  line-height: 0;
+}
+
+.tex {
+  display: inline;
+  font-family: var(--font-display);
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+.tex .katex {
+  font-size: 1em;
+}
+
+.tex-display {
+  display: block;
+}
+
+.math-block {
+  display: block;
+  max-width: 100%;
+  margin-block: var(--space-sm);
+  padding-block: 2px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  font-family: var(--font-display);
+  text-align: center;
+}
+
+.math-block .katex-display {
+  margin: 0;
+}
+
+/* Answer choices: ruled index cards, one per line. */
+
+.choice-list {
+  display: grid;
+  gap: 10px;
+}
+
+.choice {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.choice-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1.5px solid var(--rule);
+  border-radius: 12px;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 120ms var(--ease), background-color 120ms var(--ease);
+}
+
+.choice-card:hover:not(:disabled) {
+  border-color: var(--cobalt);
+}
+
+.choice-card:disabled {
+  cursor: default;
+}
+
+.choice-card:focus-visible {
+  outline: 2px solid var(--cobalt);
+  outline-offset: -3px;
+  border-radius: 12px;
+}
+
+.choice-letter {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  background: var(--surface-2);
+  color: var(--muted);
+  border: 1.5px solid var(--rule);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1;
+  transition: background-color 120ms var(--ease), border-color 120ms var(--ease),
+    color 120ms var(--ease);
+}
+
+.choice-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.choice.is-picked .choice-card {
+  border: 2px solid var(--cobalt);
+  background: color-mix(in srgb, var(--cobalt) 9%, var(--surface));
+}
+
+.choice.is-picked .choice-letter {
+  border-color: var(--cobalt);
+  color: var(--cobalt);
+}
+
+.choice.is-right .choice-card {
+  border: 2px solid var(--acid);
+  background: color-mix(in srgb, var(--acid) 10%, var(--surface));
+}
+
+.choice.is-right .choice-letter {
+  background: var(--acid);
+  border-color: var(--acid);
+  color: var(--surface);
+}
+
+.choice.is-wrong .choice-card {
+  border: 2px solid var(--hazard);
+  background: color-mix(in srgb, var(--hazard) 10%, var(--surface));
+}
+
+.choice.is-wrong .choice-letter {
+  background: var(--hazard);
+  border-color: var(--hazard);
+  color: var(--surface);
+}
+
+/* Quiet eliminate control: muted mono until touched, copper once struck. */
+
+.choice-strike {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 8px;
+  background: transparent;
+  color: var(--muted);
+  border: 1.5px solid transparent;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 120ms var(--ease), border-color 120ms var(--ease);
+}
+
+.choice-strike:hover:not(:disabled) {
+  color: var(--ink);
+  border-color: var(--rule);
+}
+
+.choice-strike[aria-pressed="true"] {
+  color: var(--copper);
+  border-color: color-mix(in srgb, var(--copper) 45%, transparent);
+}
+
+.choice-strike:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.choice-strike:focus-visible {
+  outline: 2px solid var(--cobalt);
+  outline-offset: 2px;
+}
+
+.choice.is-struck .choice-body,
+.choice:has(.choice-strike[aria-pressed="true"]) .choice-body {
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  opacity: 0.55;
+}
+
+/* Badges: small stamped labels in mono caps. */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  background: var(--surface-2);
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.badge .icon {
+  width: 13px;
+  height: 13px;
+}
+
+/* Domain accents. */
+
+.badge[data-domain="general"] {
+  color: var(--cobalt);
+  border-color: color-mix(in srgb, var(--cobalt) 35%, var(--rule));
+  background: color-mix(in srgb, var(--cobalt) 7%, var(--surface-2));
+}
+
+.badge[data-domain="physical"] {
+  color: var(--copper);
+  border-color: color-mix(in srgb, var(--copper) 35%, var(--rule));
+  background: color-mix(in srgb, var(--copper) 8%, var(--surface-2));
+}
+
+.badge[data-domain="analytical"] {
+  color: var(--acid);
+  border-color: color-mix(in srgb, var(--acid) 35%, var(--rule));
+  background: color-mix(in srgb, var(--acid) 8%, var(--surface-2));
+}
+
+.badge[data-domain="organic"] {
+  color: var(--hazard);
+  border-color: color-mix(in srgb, var(--hazard) 32%, var(--rule));
+  background: color-mix(in srgb, var(--hazard) 7%, var(--surface-2));
+}
+
+.badge[data-domain="laboratory"] {
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--ink) 30%, var(--rule));
+}
+
+/* Difficulty accents. */
+
+.badge[data-difficulty="foundation"] {
+  color: var(--acid);
+  border-color: color-mix(in srgb, var(--acid) 35%, var(--rule));
+}
+
+.badge[data-difficulty="standard"] {
+  color: var(--cobalt);
+  border-color: color-mix(in srgb, var(--cobalt) 32%, var(--rule));
+}
+
+.badge[data-difficulty="olympiad"] {
+  color: var(--copper);
+  border-color: color-mix(in srgb, var(--copper) 40%, var(--rule));
+}
+
+/* Verification status. Never phrased as "official". */
+
+.badge[data-status="verified"] {
+  color: var(--acid);
+  border-color: color-mix(in srgb, var(--acid) 35%, var(--rule));
+  background: color-mix(in srgb, var(--acid) 8%, var(--surface-2));
+}
+
+.badge[data-status="flagged"] {
+  color: var(--hazard);
+  border-color: color-mix(in srgb, var(--hazard) 35%, var(--rule));
+  background: color-mix(in srgb, var(--hazard) 8%, var(--surface-2));
+}
+
+/* Section headers: eyebrow rule, serif title, lede, right-aligned actions. */
+
+.section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "eyebrow actions"
+    "title actions"
+    "lede actions";
+  align-items: end;
+  gap: 6px 24px;
+  margin-block: var(--space-xl) var(--space-md);
+}
+
+.section-eyebrow {
+  grid-area: eyebrow;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.section-eyebrow::before {
+  content: "";
+  flex: none;
+  width: 26px;
+  height: var(--rule-width);
+  background: currentColor;
+}
+
+.section-head h2 {
+  grid-area: title;
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3.6vw, 2.4rem);
+}
+
+.section-lede {
+  grid-area: lede;
+  max-width: 60ch;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.section-actions {
+  grid-area: actions;
+  justify-self: end;
+  align-self: end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* Meters: thin ruled gauges and a bench dial. */
+
+.bar {
+  width: 100%;
+  height: 8px;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--cobalt);
+  border-radius: inherit;
+  transition: width 240ms var(--ease);
+}
+
+.bar[data-tone="cobalt"] .bar-fill {
+  background: var(--cobalt);
+}
+
+.bar[data-tone="acid"] .bar-fill {
+  background: var(--acid);
+}
+
+.bar[data-tone="copper"] .bar-fill {
+  background: var(--copper);
+}
+
+.bar[data-tone="hazard"] .bar-fill {
+  background: var(--hazard);
+}
+
+.progress-ring {
+  display: inline-grid;
+  place-items: center;
+  color: var(--cobalt);
+}
+
+.progress-ring > * {
+  grid-area: 1 / 1;
+}
+
+.progress-ring svg {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-track {
+  stroke: var(--rule);
+}
+
+.progress-ring-fill {
+  stroke: currentColor;
+}
+
+.progress-ring-value {
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.progress-ring[data-tone="acid"] {
+  color: var(--acid);
+}
+
+.progress-ring[data-tone="copper"] {
+  color: var(--copper);
+}
+
+.progress-ring[data-tone="hazard"] {
+  color: var(--hazard);
+}
+
+/* Icons sit on the text baseline like a stamped glyph. */
+
+.icon {
+  display: inline-block;
+  flex: none;
+  vertical-align: -0.15em;
+}
+
+@media (max-width: 700px) {
+  .section-head {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "eyebrow"
+      "title"
+      "lede"
+      "actions";
+  }
+
+  .section-actions {
+    justify-self: start;
+    justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .choice-card,
+  .choice-letter,
+  .choice-strike,
+  .bar-fill {
+    transition: none;
+  }
+}

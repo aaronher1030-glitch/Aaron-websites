@@ -1,0 +1,22 @@
+{
+  "id": "ch4-7-lab-23",
+  "paper": "ch4-7-lab",
+  "source": "supplied-paper",
+  "sourceKey": "C",
+  "blind": "B",
+  "blindWork": "P = 740.0/760 = 0.9737 atm, V = 0.0685 L, T = 295.15 K: n(O2) = PV/RT = (0.9737 x 0.0685)/(0.08206 x 295.15) = 0.06670/24.22 = 2.753e-3 mol. n(KClO3) = (2/3)n(O2) = 1.836e-3 mol, mass = 0.2250 g, % = 0.2250/0.400 = 56.2%.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-B"
+  ],
+  "stem": "Stoichiometry of Gas Generation: A student decomposes a $0.400\\text{-g}$ mixture of $\\text{KClO}_{3}$ and $\\text{KCl}$ in the presence of $\\text{MnO}_{2}$ catalyst by heating. The evolved $\\text{O}_{2}$ gas is collected, occupying $68.5\\text{~mL}$ at $22^{\\circ}\\text{C}$ and $740.0\\text{~mmHg}$ (dry). What is the percentage of $\\text{KClO}_{3}$ ($\\text{MW} = 122.55\\text{~g/mol}$) in the initial sample?",
+  "choices": [
+    "$42.5\\%$",
+    "$56.3\\%$",
+    "$67.1\\%$",
+    "$84.2\\%$"
+  ],
+  "sourceExplanation": "Moles $\\text{O}_{2} = \\frac{(740/760) \\times 0.0685}{0.08206 \\times 295.15} = 0.00276\\text{~mol}$. $2\\text{KClO}_{3} \\rightarrow 2\\text{KCl} + 3\\text{O}_{2} \\Rightarrow n\\left( \\text{KClO}_{3} \\right) = \\frac{2}{3}(0.00276) = 0.00184\\text{~mol}$. Mass $= 0.00184 \\times 122.55 = 0.2255\\text{~g}$. $\\% = (0.2255/0.400) \\times 100\\% = 56.3\\%$. (Correct option: B)"
+}

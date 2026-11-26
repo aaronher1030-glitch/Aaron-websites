@@ -1,0 +1,11 @@
+{
+  "id": "ch1-3-theory-01",
+  "answer": "B",
+  "confidence": "high",
+  "work": "r = 2.50 nm = 2.50 x 10^-7 cm, so V = (4/3)pi r^3 = 6.545 x 10^-20 cm^3. The particle mass is m = dV = 19.3 x 6.545 x 10^-20 = 1.263 x 10^-18 g, which is 1.263 x 10^-18 / 197.0 = 6.41 x 10^-21 mol, i.e. 3.86 x 10^3 atoms. Cross-checking with the FCC lattice (a = 0.4079 nm, 4 atoms per cell) gives 6.545 x 10^-20 / a^3 x 4 = 3.86 x 10^3, confirming the result.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "Density times sphere volume gives 1.263 x 10^-18 g, which divided by 197.0 g/mol and multiplied by Avogadro's number gives 3.86 x 10^3 atoms, choice B; an independent FCC unit-cell count reproduces the same number. The blind solver is correct, while the source's keyed letter A (1.93 x 10^3, exactly half the correct value) contradicts its own worked explanation, which arrives at 3.86 x 10^3 and even relabels the answer as B.",
+  "cleanExplanation": "Convert the radius to cm: 2.50 nm = 2.50 x 10^-7 cm. The sphere volume is V = (4/3)pi(2.50 x 10^-7)^3 = 6.545 x 10^-20 cm^3, so the mass is 19.3 g/cm^3 x 6.545 x 10^-20 cm^3 = 1.263 x 10^-18 g. Dividing by the molar mass gives 6.41 x 10^-21 mol, and multiplying by 6.022 x 10^23 atoms/mol gives 3.86 x 10^3 atoms. The FCC packing detail is already contained in the density and is not needed separately."
+}

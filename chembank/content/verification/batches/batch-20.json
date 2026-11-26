@@ -1,0 +1,202 @@
+[
+  {
+    "id": "proto-textbook-051",
+    "stem": "Which is a diatomic molecule of an element?",
+    "choices": [
+      "N<sub>2</sub>",
+      "CO",
+      "H<sub>2</sub>O",
+      "NaCl"
+    ]
+  },
+  {
+    "id": "proto-textbook-052",
+    "stem": "An atom that loses electrons forms a…",
+    "choices": [
+      "anion",
+      "isotope",
+      "molecule",
+      "cation"
+    ]
+  },
+  {
+    "id": "proto-textbook-053",
+    "stem": "How many protons and electrons are in Mg<sup>2+</sup>? (Mg: Z = 12)",
+    "choices": [
+      "12 protons, 10 electrons",
+      "10 protons, 12 electrons",
+      "14 protons, 12 electrons",
+      "12 protons, 14 electrons"
+    ]
+  },
+  {
+    "id": "proto-textbook-054",
+    "stem": "What is the empirical formula of hydrogen peroxide, H<sub>2</sub>O<sub>2</sub>?",
+    "choices": [
+      "H<sub>4</sub>O<sub>4</sub>",
+      "H<sub>2</sub>O<sub>2</sub>",
+      "H<sub>2</sub>O",
+      "HO"
+    ]
+  },
+  {
+    "id": "proto-textbook-055",
+    "stem": "How many atoms are in one formula unit of Ca(NO<sub>3</sub>)<sub>2</sub>?",
+    "choices": [
+      "6",
+      "8",
+      "9",
+      "7"
+    ]
+  },
+  {
+    "id": "proto-textbook-056",
+    "stem": "What is the name of FeCl<sub>2</sub>?",
+    "choices": [
+      "Iron chlorine",
+      "Iron(III) chloride",
+      "Iron(II) chloride",
+      "Iron dichloride"
+    ]
+  },
+  {
+    "id": "proto-textbook-057",
+    "stem": "Which is an everyday example of chemistry?",
+    "choices": [
+      "The moon orbiting Earth",
+      "Cooking an egg",
+      "A ball rolling downhill",
+      "Light bending in a lens"
+    ]
+  },
+  {
+    "id": "proto-textbook-058",
+    "stem": "Which achievement is mainly chemistry?",
+    "choices": [
+      "Measuring the strength of gravity",
+      "Measuring the speed of light",
+      "Mapping the stars",
+      "Making aspirin from simpler compounds"
+    ]
+  },
+  {
+    "id": "proto-textbook-059",
+    "stem": "Why can chemistry help with problems such as climate change?",
+    "choices": [
+      "It can stop all reactions in the atmosphere",
+      "It can change the laws of physics",
+      "It deals only with solids",
+      "It explains how substances like CO<sub>2</sub> react, absorb energy and can be captured or converted"
+    ]
+  },
+  {
+    "id": "proto-textbook-060",
+    "stem": "Water boiling is explained at the particle level by…",
+    "choices": [
+      "new elements forming",
+      "oxygen atoms turning into hydrogen atoms",
+      "electrons leaving the nucleus",
+      "molecules gaining enough energy to separate from one another"
+    ]
+  },
+  {
+    "id": "proto-textbook-061",
+    "stem": "Which of these is matter?",
+    "choices": [
+      "Light",
+      "Air",
+      "Heat",
+      "Sound"
+    ]
+  },
+  {
+    "id": "proto-textbook-062",
+    "stem": "A sealed flask has the same mass before and after an iron nail rusts inside it. This is consistent with…",
+    "choices": [
+      "conservation of mass",
+      "multiple proportions",
+      "a change in the number of atoms",
+      "mass turning into energy"
+    ]
+  },
+  {
+    "id": "proto-textbook-063",
+    "stem": "Which is a quantitative observation?",
+    "choices": [
+      "The solution has a mass of 25.3 g.",
+      "The solution smells sweet.",
+      "The solution is blue.",
+      "The solution looks cloudy."
+    ]
+  },
+  {
+    "id": "proto-textbook-064",
+    "stem": "To test a fertilizer, one group of plants gets it and another group does not, with identical soil, light and water. The group without fertilizer is the…",
+    "choices": [
+      "independent variable",
+      "control",
+      "dependent variable",
+      "hypothesis"
+    ]
+  },
+  {
+    "id": "proto-textbook-065",
+    "stem": "Why is it important to repeat an experiment?",
+    "choices": [
+      "It makes the hypothesis true",
+      "It shows whether the result is reproducible",
+      "It removes the need for data",
+      "It turns a hypothesis into a law"
+    ]
+  },
+  {
+    "id": "proto-textbook-066",
+    "stem": "Which is a homogeneous mixture?",
+    "choices": [
+      "Salt dissolved in water",
+      "Sand and iron filings",
+      "A fruit salad",
+      "Oil and water"
+    ]
+  },
+  {
+    "id": "proto-textbook-067",
+    "stem": "Which is an element?",
+    "choices": [
+      "Table salt, NaCl",
+      "Sulfur, S<sub>8</sub>",
+      "Water, H<sub>2</sub>O",
+      "Sugar, C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>"
+    ]
+  },
+  {
+    "id": "proto-textbook-068",
+    "stem": "Which statement about elements and compounds is correct?",
+    "choices": [
+      "An element contains more than one kind of atom.",
+      "A compound is always a mixture.",
+      "An element can be separated by filtration.",
+      "A compound can be broken down by chemical reactions; an element cannot."
+    ]
+  },
+  {
+    "id": "proto-textbook-069",
+    "stem": "In which state are the particles close together but able to slide past each other?",
+    "choices": [
+      "Solid",
+      "Gas",
+      "None of these",
+      "Liquid"
+    ]
+  },
+  {
+    "id": "proto-textbook-070",
+    "stem": "Dry ice (solid CO<sub>2</sub>) turns directly into gas at atmospheric pressure. This change is called…",
+    "choices": [
+      "condensation",
+      "deposition",
+      "sublimation",
+      "melting"
+    ]
+  }
+]

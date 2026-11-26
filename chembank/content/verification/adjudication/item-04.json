@@ -1,0 +1,22 @@
+{
+  "id": "ch1-3-theory-43",
+  "paper": "ch1-3-theory",
+  "source": "supplied-paper",
+  "sourceKey": "C",
+  "blind": "A",
+  "blindWork": "n(TiCl4) = 3.54e7/189.7 = 1.866e5 mol; n(Mg) = 1.13e7/24.31 = 4.648e5 mol. Mg required = 2 x 1.866e5 = 3.732e5 mol < 4.648e5, so TiCl4 is limiting. Theoretical Ti = 1.866e5 x 47.87 = 8.933e6 g; % yield = 7.81e6/8.933e6 x 100 = 87.4%.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-A"
+  ],
+  "stem": "Titanium metal is produced by the reaction:\n\n$$\\text{TiCl}_{4}(g) + 2\\text{Mg}(l) \\rightarrow \\text{Ti}(s) + 2\\text{MgCl}_{2}(l)$$\n\nWhen $3.54 \\times 10^{7}\\text{~g}$ of $\\text{TiCl}_{4}$ ($M = 189.7\\text{~g/mol}$) reacts with $1.13 \\times 10^{7}\\text{~g}$ of $\\text{Mg}$ ($M = 24.31\\text{~g/mol}$), $7.81 \\times 10^{6}\\text{~g}$ of $\\text{Ti}$ ($M = 47.87\\text{~g/mol}$) is isolated. What is the percentage yield of $\\text{Ti}$?",
+  "choices": [
+    "$87.4\\%$",
+    "$74.2\\%$",
+    "$89.3\\%$",
+    "$95.1\\%$"
+  ],
+  "sourceExplanation": "Moles $\\text{TiCl}_{4} = 3.54 \\times 10^{7}/189.7 = 1.866 \\times 10^{5}\\text{~mol}$.\n\nMoles $\\text{Mg} = 1.13 \\times 10^{7}/24.31 = 4.648 \\times 10^{5}\\text{~mol}$.\n\n$\\text{TiCl}_{4}$ requires $2 \\times 1.866 \\times 10^{5} = 3.732 \\times 10^{5}\\text{~mol}$ $\\text{Mg}$, so $\\text{TiCl}_{4}$ is limiting.\n\nTheoretical yield of $\\text{Ti} = 1.866 \\times 10^{5} \\times 47.87 = 8.932 \\times 10^{6}\\text{~g}$.\n\n$\\%$ yield $= \\frac{7.81 \\times 10^{6}}{8.932 \\times 10^{6}} \\times 100\\% = 87.4\\%$. Correct Choice: A."
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-mixed-041",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Ethylenediamine (en) is bidentate, so two en ligands supply 4 donor atoms; the two chloride ligands supply 2 more. Total coordination number = 4 + 2 = 6 (octahedral Co(III) centre).",
+    "ambiguous": false,
+    "cleanExplanation": "Each en ligand binds through two nitrogen donors, so [Co(en)<sub>2</sub>Cl<sub>2</sub>]<sup>+</sup> has 2 &#215; 2 = 4 N donors plus 2 Cl&#8722; donors. The coordination number is therefore 6, giving an octahedral geometry about Co."
+  },
+  {
+    "id": "proto-mixed-042",
+    "answer": "C",
+    "confidence": "high",
+    "work": "FCC: 8 corner atoms each shared by 8 cells (8 &#215; 1/8 = 1) plus 6 face atoms each shared by 2 cells (6 &#215; 1/2 = 3). Total = 1 + 3 = 4 atoms per unit cell.",
+    "ambiguous": false,
+    "cleanExplanation": "In a face-centred cubic cell the eight corners contribute 8 &#215; 1/8 = 1 atom and the six face centres contribute 6 &#215; 1/2 = 3 atoms. Adding these gives 4 atoms per unit cell."
+  },
+  {
+    "id": "proto-mixed-043",
+    "answer": "A",
+    "confidence": "high",
+    "work": "CH<sub>3</sub>CH(CH<sub>3</sub>)CH<sub>2</sub>CH<sub>3</sub> has a four-carbon longest chain (butane) with a methyl branch at C2. Hence 2-methylbutane; '3-methylbutane' is the same chain numbered from the wrong end.",
+    "ambiguous": false,
+    "cleanExplanation": "The longest continuous chain contains four carbons (butane), and the methyl substituent sits on the second carbon when the chain is numbered to give the lowest locant. The name is 2-methylbutane."
+  },
+  {
+    "id": "proto-mixed-044",
+    "answer": "C",
+    "confidence": "high",
+    "work": "2,3-Dibromopentane, CH<sub>3</sub>CHBrCHBrCH<sub>2</sub>CH<sub>3</sub>, has two stereogenic carbons (C2 and C3). These are not equivalent because C2 bears CH<sub>3</sub> while C3 bears C<sub>2</sub>H<sub>5</sub>, so the maximum number of stereoisomers is 2<sup>2</sup> = 4.",
+    "ambiguous": false,
+    "cleanExplanation": "Carbons 2 and 3 are both stereocentres and are not equivalent (one side ends in CH<sub>3</sub>, the other in CH<sub>2</sub>CH<sub>3</sub>), so no meso form is possible. With n = 2 stereocentres the number of stereoisomers is 2<sup>n</sup> = 4: two pairs of enantiomers."
+  },
+  {
+    "id": "proto-mixed-045",
+    "answer": "A",
+    "confidence": "high",
+    "work": "A Diels&#8211;Alder reaction needs a 4&#960; diene and a 2&#960; dienophile. 1,3-Butadiene (4&#960;) + ethene (2&#960;) gives cyclohexene; the other pairs are not diene/dienophile combinations (Br<sub>2</sub> gives addition, HBr with benzene gives substitution).",
+    "ambiguous": false,
+    "cleanExplanation": "The [4+2] cycloaddition requires a conjugated diene providing four &#960; electrons and an alkene providing two. 1,3-Butadiene plus ethene is exactly this pair and forms cyclohexene; Br<sub>2</sub> and HBr act as electrophiles, not dienophiles."
+  },
+  {
+    "id": "proto-mixed-046",
+    "answer": "B",
+    "confidence": "high",
+    "work": "A strong band at 1715 cm<sup>&#8722;1</sup> is a C=O stretch of a ketone (or aldehyde). The lack of a broad band near 3300 cm<sup>&#8722;1</sup> excludes an O&#8211;H group (carboxylic acid or alcohol), and an alkane has no band in the 1700 region.",
+    "ambiguous": false,
+    "cleanExplanation": "The sharp, strong absorption near 1715 cm<sup>&#8722;1</sup> is the carbonyl C=O stretch. Because there is no broad O&#8211;H absorption around 3300 cm<sup>&#8722;1</sup>, the compound cannot be an alcohol (C&#8211;O, no C=O) or a carboxylic acid, whose C=O is also near 1710 cm<sup>&#8722;1</sup> but accompanied by a very broad O&#8211;H band. A ketone is the only consistent option."
+  },
+  {
+    "id": "proto-mixed-047",
+    "answer": "C",
+    "confidence": "high",
+    "work": "In CH<sub>3</sub>CH<sub>2</sub>OH the methyl protons are adjacent to the CH<sub>2</sub> group (2 equivalent protons). By the n + 1 rule the CH<sub>3</sub> signal is split into 2 + 1 = 3 lines, a triplet.",
+    "ambiguous": false,
+    "cleanExplanation": "The CH<sub>3</sub> protons couple only to the two protons of the neighbouring CH<sub>2</sub> group. Applying the n+1 rule with n = 2 gives 3 lines, so the CH<sub>3</sub> resonance is a triplet (the CH<sub>2</sub> is a quartet and the OH a broad singlet)."
+  },
+  {
+    "id": "proto-mixed-048",
+    "answer": "B",
+    "confidence": "high",
+    "work": "A = &#949;bc, so &#949; = A/(bc) = 0.50/(2.0 &#215; 10<sup>&#8722;4</sup> mol/L &#215; 1.00 cm) = 2.5 &#215; 10<sup>3</sup> L mol<sup>&#8722;1</sup> cm<sup>&#8722;1</sup>.",
+    "ambiguous": false,
+    "cleanExplanation": "From Beer&#8211;Lambert, &#949; = A/(bc). Substituting A = 0.50, b = 1.00 cm and c = 2.0 &#215; 10<sup>&#8722;4</sup> mol/L gives &#949; = 0.50 / 2.0 &#215; 10<sup>&#8722;4</sup> = 2.5 &#215; 10<sup>3</sup> L mol<sup>&#8722;1</sup> cm<sup>&#8722;1</sup>."
+  },
+  {
+    "id": "proto-mixed-049",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(EDTA) = 0.0125 L &#215; 0.0100 mol/L = 1.25 &#215; 10<sup>&#8722;4</sup> mol. Since binding is 1:1, metal ions = 1.25 &#215; 10<sup>&#8722;4</sup> mol, and c = 1.25 &#215; 10<sup>&#8722;4</sup> / 0.0500 L = 2.50 &#215; 10<sup>&#8722;3</sup> M.",
+    "ambiguous": false,
+    "cleanExplanation": "The EDTA used is (0.0125 L)(0.0100 mol/L) = 1.25 &#215; 10<sup>&#8722;4</sup> mol. With 1:1 complexation this equals the moles of metal ion in the 50.0 mL sample, so the concentration is 1.25 &#215; 10<sup>&#8722;4</sup> mol / 0.0500 L = 2.50 &#215; 10<sup>&#8722;3</sup> M."
+  },
+  {
+    "id": "proto-mixed-050",
+    "answer": "C",
+    "confidence": "high",
+    "work": "n(MnO<sub>4</sub><sup>&#8722;</sup>) = 0.0200 L &#215; 0.0200 mol/L = 4.00 &#215; 10<sup>&#8722;4</sup> mol. The stoichiometry is 1 MnO<sub>4</sub><sup>&#8722;</sup> : 5 Fe<sup>2+</sup>, so n(Fe<sup>2+</sup>) = 5 &#215; 4.00 &#215; 10<sup>&#8722;4</sup> = 2.00 &#215; 10<sup>&#8722;3</sup> mol.",
+    "ambiguous": false,
+    "cleanExplanation": "Moles of permanganate = (0.0200 L)(0.0200 mol/L) = 4.00 &#215; 10<sup>&#8722;4</sup> mol. The balanced equation shows five Fe<sup>2+</sup> per MnO<sub>4</sub><sup>&#8722;</sup>, so 5 &#215; 4.00 &#215; 10<sup>&#8722;4</sup> = 2.00 &#215; 10<sup>&#8722;3</sup> mol of Fe<sup>2+</sup> was titrated."
+  },
+  {
+    "id": "proto-mixed-051",
+    "answer": "A",
+    "confidence": "high",
+    "work": "T = 27 + 273 = 300 K; d = PM/RT = (1.00 atm)(17.03 g/mol)/[(0.0821 L atm mol<sup>&#8722;1</sup> K<sup>&#8722;1</sup>)(300 K)] = 17.03/24.63 = 0.691 g/L.",
+    "ambiguous": false,
+    "cleanExplanation": "Rearranging the ideal gas law for density gives d = PM/RT. With T = 300 K: d = (1.00 &#215; 17.03)/(0.0821 &#215; 300) = 17.03/24.63 = 0.691 g/L."
+  },
+  {
+    "id": "proto-mixed-052",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Partial pressure depends only on the moles of that gas: P<sub>Ne</sub> = nRT/V = (3.00)(0.0821)(300)/10.0 = 73.89/10.0 = 7.39 atm.",
+    "ambiguous": false,
+    "cleanExplanation": "Each gas exerts its own partial pressure as if alone in the flask: P<sub>Ne</sub> = nRT/V = (3.00 mol)(0.0821 L atm mol<sup>&#8722;1</sup> K<sup>&#8722;1</sup>)(300 K)/(10.0 L) = 7.39 atm. (He would contribute 4.93 atm, and the total is 12.3 atm.)"
+  },
+  {
+    "id": "proto-mixed-053",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Graham's law: r(H<sub>2</sub>)/r(O<sub>2</sub>) = sqrt(M(O<sub>2</sub>)/M(H<sub>2</sub>)) = sqrt(32.00/2.016) &#8776; sqrt(15.9) &#8776; 4.0.",
+    "ambiguous": false,
+    "cleanExplanation": "Effusion rate varies inversely with the square root of molar mass: rate ratio = sqrt(32.0/2.02) = 4.0. Hydrogen therefore effuses about 4 times faster than oxygen."
+  },
+  {
+    "id": "proto-mixed-054",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The single point on a phase diagram where all three phases are in equilibrium is the triple point (temperature and pressure fixed). The critical point is the end of the liquid&#8211;gas line, and the normal boiling point lies on the liquid&#8211;gas boundary at 1 atm.",
+    "ambiguous": false,
+    "cleanExplanation": "The triple point is the unique temperature and pressure at which solid, liquid and vapour coexist in equilibrium. Above it lies the critical point (where liquid and gas become indistinguishable), and the normal boiling point is the liquid&#8211;vapour boundary at exactly 1 atm."
+  },
+  {
+    "id": "proto-mixed-055",
+    "answer": "A",
+    "confidence": "high",
+    "work": "BCC: 8 corners &#215; 1/8 = 1, plus 1 body-centre atom = 2 atoms per cell. The body-centre atom touches the 8 corner atoms along the body diagonal, so the coordination number is 8.",
+    "ambiguous": false,
+    "cleanExplanation": "A body-centred cubic cell contains 8 &#215; 1/8 = 1 atom from its corners plus the one atom at the centre, giving 2 atoms per unit cell. The central atom is in contact with all eight corner atoms, so the coordination number is 8."
+  },
+  {
+    "id": "proto-mixed-056",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Fe is [Ar] 4s<sup>2</sup> 3d<sup>6</sup> (Z = 26). The 4s electrons are removed first when cationising, so Fe<sup>2+</sup> = [Ar] 3d<sup>6</sup>.",
+    "ambiguous": false,
+    "cleanExplanation": "Neutral iron is [Ar] 4s<sup>2</sup> 3d<sup>6</sup>. Electrons are lost from the highest-n shell first, so the two 4s electrons are removed to give Fe<sup>2+</sup> = [Ar] 3d<sup>6</sup>."
+  },
+  {
+    "id": "proto-mixed-057",
+    "answer": "D",
+    "confidence": "high",
+    "work": "N is 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup>. The three 2p electrons occupy separate p orbitals with parallel spins (Hund's rule), giving 3 unpaired electrons.",
+    "ambiguous": false,
+    "cleanExplanation": "Nitrogen's configuration is 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup>. By Hund's rule the three 2p electrons singly occupy the p<sub>x</sub>, p<sub>y</sub> and p<sub>z</sub> orbitals with parallel spins, so there are 3 unpaired electrons."
+  },
+  {
+    "id": "proto-mixed-058",
+    "answer": "A",
+    "confidence": "high",
+    "work": "E = hc/&#955; = (6.626 &#215; 10<sup>&#8722;34</sup> J s)(3.00 &#215; 10<sup>8</sup> m/s)/(500 &#215; 10<sup>&#8722;9</sup> m) = 1.988 &#215; 10<sup>&#8722;25</sup>/5.00 &#215; 10<sup>&#8722;7</sup> = 3.98 &#215; 10<sup>&#8722;19</sup> J.",
+    "ambiguous": false,
+    "cleanExplanation": "Using E = hc/&#955; with &#955; = 5.00 &#215; 10<sup>&#8722;7</sup> m: E = (6.626 &#215; 10<sup>&#8722;34</sup>)(3.00 &#215; 10<sup>8</sup>)/(5.00 &#215; 10<sup>&#8722;7</sup>) = 3.98 &#215; 10<sup>&#8722;19</sup> J per photon."
+  },
+  {
+    "id": "proto-mixed-059",
+    "answer": "B",
+    "confidence": "medium",
+    "work": "Electron-gain enthalpy is F &#8722;328, Cl &#8722;349, Br &#8722;325, I &#8722;295 kJ/mol; Ne has a positive (unfavourable) value because its 2p shell is full. Chlorine releases the most energy, so it has the most negative electron affinity despite fluorine's higher electronegativity.",
+    "ambiguous": false,
+    "cleanExplanation": "Chlorine releases more energy on gaining an electron than fluorine does (about 349 vs 328 kJ/mol): fluorine's very small 2p orbitals cause extra electron&#8211;electron repulsion that offsets its high electronegativity. Bromine is less exothermic still, and neon, with a filled 2p shell, does not gain an electron at all, so chlorine has the most negative electron affinity."
+  },
+  {
+    "id": "proto-mixed-060",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Melting point rises with lattice energy &#8733; (q<sub>+</sub>q<sub>&#8722;</sub>)/(r<sub>+</sub> + r<sub>&#8722;</sub>). MgO has 2+&#215;2&#8722; charges = 4 with small ions, far exceeding NaCl (1), KBr (1) and CsI (1, largest ions), so MgO melts highest (~2850 &#176;C).",
+    "ambiguous": false,
+    "cleanExplanation": "All four are ionic solids, so the melting point follows lattice energy, which increases with ionic charge and decreases with ionic radius. MgO combines 2+ and 2&#8722; ions of small radius, giving by far the largest lattice energy, while NaCl, KBr and CsI are all 1:1 salts with progressively larger ions. MgO therefore has the highest melting point."
+  }
+]

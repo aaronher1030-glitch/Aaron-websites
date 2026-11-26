@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-lab-15",
+  "answer": "A",
+  "confidence": "high",
+  "work": "In an open-end mercury manometer the arm with the lower mercury level is the arm under the greater applied pressure, because that pressure has pushed the column down. The atmosphere arm is 45 mm lower, so atmospheric pressure exceeds the gas pressure by 45 mmHg of mercury. Therefore P_gas = 755 - 45 = 710 mmHg. The stated density of mercury is irrelevant because the head is already given in mmHg.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "source",
+  "rationale": "The blind solver inverted the manometer logic, claiming the gas side pushes the mercury down when in fact the atmosphere side is lower and therefore under higher pressure, so the gas pressure is below atmospheric by the 45 mm difference. That gives 710 mmHg, matching the keyed answer A, so both the letter and the sign of the correction in the source explanation are right.",
+  "cleanExplanation": "In an open-end manometer the side with the lower mercury level is under the higher pressure, since the greater pressure pushes the column down. Here the arm open to the atmosphere is 45 mm lower, so atmospheric pressure is greater than the gas pressure by 45 mmHg. Thus P_gas = 755 - 45 = 710 mmHg."
+}

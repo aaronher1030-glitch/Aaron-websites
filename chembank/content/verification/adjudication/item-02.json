@@ -1,0 +1,19 @@
+{
+  "id": "ch1-3-theory-02",
+  "paper": "ch1-3-theory",
+  "source": "supplied-paper",
+  "sourceKey": "B",
+  "blind": "A",
+  "blindWork": "3.00x10^8 m/s divided by 201.168 m/furlong gives 1.4913x10^6 furlongs per second. A fortnight is 14 x 24 x 3600 = 1,209,600 s. So 1.4913x10^6 x 1.2096x10^6 = 1.80x10^12 furlongs/fortnight.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [],
+  "stem": "The speed of light is $3.00 \\times 10^{8}\\text{~m/s}$. Express this speed in furlongs per fortnight. ($1\\text{~furlong} = 201.168\\text{~m}$; $1\\text{~fortnight} = 14\\text{~days}$).",
+  "choices": [
+    "$1.80 \\times 10^{12}\\text{~furlongs/fortnight}$",
+    "$1.80 \\times 10^{14}\\text{~furlongs/fortnight}$",
+    "$9.01 \\times 10^{11}\\text{~furlongs/fortnight}$",
+    "$1.80 \\times 10^{9}\\text{~furlongs/fortnight}$"
+  ],
+  "sourceExplanation": "$\\frac{3.00 \\times 10^{8}\\text{~m}}{1\\text{~s}} \\times \\frac{1\\text{~furlong}}{201.168\\text{~m}} \\times \\frac{86400\\text{~s}}{1\\text{~day}} \\times \\frac{14\\text{~days}}{1\\text{~fortnight}} = 1.80 \\times 10^{14}\\text{~furlongs/fortnight}$."
+}

@@ -1,0 +1,11 @@
+{
+  "id": "ch1-3-lab-33",
+  "answer": "B",
+  "confidence": "high",
+  "work": "All the carbon ends up as CO2, so m(C) = 2.933 g x (12.011/44.01) = 0.800 g. All the hydrogen ends up as H2O, so m(H) = 1.200 g x (2.016/18.015) = 0.134 g. Oxygen makes up the remainder of the 2.000 g sample: 2.000 - 0.800 - 0.134 = 1.066 g (using rounded masses; the unrounded difference is 1.065 g, which rounds to the same value).",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "The sample contains only C, H and O, so oxygen by difference is 2.000 - 0.800 - 0.134 = 1.066 g, which is choice B. Choice A is the carbon mass alone and choice C is the hydrogen mass alone, both partial results rather than the oxygen; choice D matches no computed quantity. The blind solver reached the same value (1.065 g, quoted as 1.066 g) and lettered B, while the stored key of A contradicts the item's own explanation, which explicitly concludes B.",
+  "cleanExplanation": "Combustion converts all carbon to CO2 and all hydrogen to H2O, so the carbon mass is 2.933 g x (12.011/44.01) = 0.800 g and the hydrogen mass is 1.200 g x (2.016/18.015) = 0.134 g. Because the compound contains only C, H and O, the oxygen is found by difference: 2.000 g - 0.800 g - 0.134 g = 1.066 g. Thus the original sample contains about 1.07 g of oxygen."
+}

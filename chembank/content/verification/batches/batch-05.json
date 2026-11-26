@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch1-3-lab-31",
+    "stem": "In a laboratory experiment to determine the empirical formula of magnesium oxide ($\\text{Mg}_{x}\\text{O}_{y}$), $0.243\\text{~g}$ of magnesium ribbon is burned in a crucible with air. After heating and cooling, the mass of the magnesium oxide product is $0.403\\text{~g}$. What is the empirical formula?",
+    "choices": [
+      "$\\text{MgO}$",
+      "$\\text{MgO}_{2}$",
+      "$\\text{Mg}_{2}\\text{O}$",
+      "$\\text{Mg}_{3}\\text{O}_{2}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-32",
+    "stem": "In the experiment described in Question 31, if the crucible cover is NOT lifted periodically to admit air, soot/unreacted magnesium remains, and some magnesium reacts with atmospheric nitrogen to form $\\text{Mg}_{3}\\text{N}_{2}$. How does the presence of unreacted $\\text{Mg}$ affect the calculated ratio of $\\text{O}$ to $\\text{Mg}$?",
+    "choices": [
+      "Increases the calculated $\\text{O/Mg}$ mole ratio.",
+      "Decreases the calculated $\\text{O/Mg}$ mole ratio.",
+      "Has no effect on the mole ratio.",
+      "Causes the mole ratio to become infinite."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-33",
+    "stem": "A $2.000\\text{~g}$ sample of a pure organic compound containing only $\\text{C}$, $\\text{H}$, and $\\text{O}$ undergoes complete combustion in an automated combustion analyzer, yielding $2.933\\text{~g}$ of $\\text{CO}_{2}$ and $1.200\\text{~g}$ of $\\text{H}_{2}\\text{O}$. What is the mass of oxygen in the original $2.000\\text{~g}$ sample?",
+    "choices": [
+      "$0.800\\text{~g}$",
+      "$1.066\\text{~g}$",
+      "$0.134\\text{~g}$",
+      "$0.533\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-34",
+    "stem": "What is the empirical formula of the organic compound analyzed in Question 33?",
+    "choices": [
+      "$\\text{CH}_{2}\\text{O}$",
+      "$\\text{C}_{2}\\text{H}_{4}\\text{O}_{3}$",
+      "$\\text{CH}_{2}\\text{O}_{2}$",
+      "$\\text{C}_{3}\\text{H}_{6}\\text{O}_{2}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-35",
+    "stem": "In a combustion analyzer, what is the function of magnesium perchlorate, ${\\text{Mg(}\\text{ClO}}_{4})_{2}$, packing in the first absorption tube?",
+    "choices": [
+      "To absorb carbon dioxide gas ($\\text{CO}_{2}$)",
+      "To absorb water vapor ($\\text{H}_{2}\\text{O}$)",
+      "To absorb unreacted oxygen gas ($\\text{O}_{2}$)",
+      "To oxidize carbon monoxide to carbon dioxide"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-36",
+    "stem": "In a gravimetric analysis experiment, a student heats a $3.120\\text{~g}$ sample of hydrated copper(II) sulfate ($\\text{CuSO}_{4} \\cdot x\\text{H}_{2}\\text{O}$) in a crucible until constant mass is reached. The mass of anhydrous $\\text{CuSO}_{4}$ residue is $1.995\\text{~g}$. What is the experimental value of $x$? ($M_{\\text{CuSO}_{4}} = 159.61\\text{~g/mol}$, $M_{\\text{H}_{2}\\text{O}} = 18.02\\text{~g/mol}$)",
+    "choices": [
+      "3",
+      "5",
+      "7",
+      "10"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-37",
+    "stem": "In the hydrate heating experiment (Question 36), what does \"heating to constant mass\" mean?",
+    "choices": [
+      "Heating the sample continuously for 24 hours without stopping.",
+      "Repeatedly heating, cooling in a desiccator, and weighing until successive weighings agree within $\\pm 0.002\\text{~g}$.",
+      "Heating until the color of the sample stops changing.",
+      "Boiling the sample in water until all solid dissolves."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-38",
+    "stem": "What is the purpose of placing the heated crucible into a desiccator during the cooling phase before weighing?",
+    "choices": [
+      "To speed up the cooling process using cold water jets.",
+      "To prevent the anhydrous residue from reabsorbing moisture from atmospheric air.",
+      "To allow volatile gases to escape into the room.",
+      "To sterilize the crucible outer surface."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-39",
+    "stem": "A sample of pure hydrocarbon is burned in a combustion train. The mass of the $\\text{CO}_{2}$ absorber increases by $3.52\\text{~g}$ and the mass of the $\\text{H}_{2}\\text{O}$ absorber increases by $1.44\\text{~g}$. What is the empirical formula of the hydrocarbon?",
+    "choices": [
+      "$\\text{CH}$",
+      "$\\text{CH}_{2}$",
+      "$\\text{CH}_{3}$",
+      "$\\text{C}_{2}\\text{H}_{5}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-40",
+    "stem": "If a student fails to heat the hydrated salt sufficiently in a gravimetric hydrate experiment, leaving some hydration water intact, how will this affect the reported empirical formula's water-to-salt mole ratio ($x$)?",
+    "choices": [
+      "Experimental $x$ will be higher than true value.",
+      "Experimental $x$ will be lower than true value.",
+      "Experimental $x$ will be unaffected.",
+      "Experimental $x$ will be negative."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-41",
+    "stem": "A student reacts $2.00\\text{~g}$ of copper metal with excess sulfur powder in a covered crucible to prepare copper(I) sulfide ($\\text{Cu}_{2}\\text{S}$). After reaction and burning off excess sulfur, the mass of the product obtained is $2.45\\text{~g}$. What is the percentage yield of $\\text{Cu}_{2}\\text{S}$? ($M_{\\text{Cu}} = 63.55\\text{~g/mol}$, $M_{\\text{Cu}_{2}\\text{S}} = 159.16\\text{~g/mol}$)",
+    "choices": [
+      "$88.0\\%$",
+      "$97.8\\%$",
+      "$92.3\\%$",
+      "$102.1\\%$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-42",
+    "stem": "In a synthesis of iron(III) oxide:\n\n$$4\\text{Fe}(s) + 3\\text{O}_{2}(g) \\rightarrow 2\\text{Fe}_{2}\\text{O}_{3}(s)$$\n\nA student reacts $5.585\\text{~g}$ of iron powder ($M = 55.85\\text{~g/mol}$) with $3.200\\text{~g}$ of oxygen gas ($M = 32.00\\text{~g/mol}$). What is the limiting reagent?",
+    "choices": [
+      "$\\text{Fe}$",
+      "$\\text{O}_{2}$",
+      "Both reactants are present in exact stoichiometric proportion",
+      "$\\text{Fe}_{2}\\text{O}_{3}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-43",
+    "stem": "For the reaction in Question 42, what is the theoretical mass of $\\text{Fe}_{2}\\text{O}_{3}$ ($M = 159.70\\text{~g/mol}$) that can be produced?",
+    "choices": [
+      "$7.985\\text{~g}$",
+      "$10.65\\text{~g}$",
+      "$15.97\\text{~g}$",
+      "$5.323\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-44",
+    "stem": "In an experimental synthesis, a student generates hydrogen gas by reacting zinc metal with hydrochloric acid:\n\n$$\\text{Zn}(s) + 2\\text{HCl}(aq) \\rightarrow \\text{ZnCl}_{2}(aq) + \\text{H}_{2}(g)$$\n\nIf $6.54\\text{~g}$ of zinc ($M = 65.38\\text{~g/mol}$) reacts with excess acid and $0.180\\text{~g}$ of $\\text{H}_{2}$ gas ($M = 2.016\\text{~g/mol}$) is collected in a gas syringe, what is the percent yield of $\\text{H}_{2}$?",
+    "choices": [
+      "$89.3\\%$",
+      "$90.0\\%$",
+      "$100.0\\%$",
+      "$95.2\\%$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-45",
+    "stem": "A chemist needs to prepare $100.0\\text{~mL}$ of a $0.500\\text{~M}$ sodium carbonate ($\\text{Na}_{2}\\text{CO}_{3}$) standard solution. What mass of solid anhydrous $\\text{Na}_{2}\\text{CO}_{3}$ ($M = 105.99\\text{~g/mol}$) must be weighed on an analytical balance?",
+    "choices": [
+      "$5.30\\text{~g}$",
+      "$10.60\\text{~g}$",
+      "$2.65\\text{~g}$",
+      "$53.0\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-46",
+    "stem": "When gravimetrically determining the yield of a reaction product collected on a vacuum filter paper, why must the product be washed with small portions of ice-cold solvent during filtration?",
+    "choices": [
+      "To dissolve the desired insoluble solid product.",
+      "To wash away unreacted soluble starting materials and impurities without dissolving significant product.",
+      "To raise the temperature of the filter funnel.",
+      "To speed up the filtration rate."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-47",
+    "stem": "A reaction between $10.0\\text{~g}$ of substance A and $10.0\\text{~g}$ of substance B yields $12.0\\text{~g}$ of product C. If the theoretical yield is $15.0\\text{~g}$, what is the percent yield?",
+    "choices": [
+      "$80.0\\%$",
+      "$60.0\\%$",
+      "$75.0\\%$",
+      "$120.0\\%$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-48",
+    "stem": "In a thermal decomposition experiment, $10.00\\text{~g}$ of calcium carbonate ($\\text{CaCO}_{3}$, $M = 100.09\\text{~g/mol}$) is heated strongly in an open crucible:\n\n$$\\text{CaCO}_{3}(s)\\overset{\\Delta}{\\rightarrow}\\text{CaO}(s) + \\text{CO}_{2}(g)$$\n\nIf the solid mass remaining in the crucible after heating is $6.04\\text{~g}$, what percentage of the $\\text{CaCO}_{3}$ sample was decomposed? ($M_{\\text{CaO}} = 56.08\\text{~g/mol}$, $M_{\\text{CO}_{2}} = 44.01\\text{~g/mol}$)",
+    "choices": [
+      "$60.4\\%$",
+      "$90.0\\%$",
+      "$100.0\\%$",
+      "$44.0\\%$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-49",
+    "stem": "A student records the following data in a stoichiometric lab activity:\n\n- Mass of empty evaporating dish = $42.10\\text{~g}$\n\n- Mass of dish + sodium bicarbonate ($\\text{NaHCO}_{3}$) = $46.30\\text{~g}$\n\n- Mass of dish + residue ($\\text{NaCl}$) after reaction with $\\text{HCl}$ and evaporation = $45.02\\text{~g}$\n\nReaction:\n\n$$\\text{NaHCO}_{3}(s) + \\text{HCl}(aq) \\rightarrow \\text{NaCl}(s) + \\text{H}_{2}\\text{O}(l) + \\text{CO}_{2}(g)$$\n\nWhat is the student's percent yield of $\\text{NaCl}$? ($M_{\\text{NaHCO}_{3}} = 84.01\\text{~g/mol}$, $M_{\\text{NaCl}} = 58.44\\text{~g/mol}$)",
+    "choices": [
+      "$98.0\\%$",
+      "$101.4\\%$",
+      "$95.5\\%$",
+      "$92.1\\%$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-50",
+    "stem": "Why is it crucial to let a heated porcelain crucible cool down to room temperature before taking its mass on an analytical balance?",
+    "choices": [
+      "Buoyancy effects and convection air currents above a hot crucible cause the mass reading to appear artificially low/unstable.",
+      "Hot porcelain dissolves into the balance pan surface.",
+      "Thermal expansion increases the true mass of the crucible.",
+      "Cold air enters the balance chamber and adds extra weight to the crucible."
+    ]
+  }
+]

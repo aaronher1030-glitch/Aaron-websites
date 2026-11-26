@@ -1,0 +1,22 @@
+{
+  "id": "ch4-7-theory-36",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "C",
+  "blind": "B",
+  "blindWork": "n(SO2) = 1.00 × 10^6 g / 64.07 g/mol = 1.561 × 10^4 mol. The equation releases 198 kJ per 2 mol SO2, i.e., 99.0 kJ/mol. Heat = 1.561×10^4 × 99.0 = 1.55 × 10^6 kJ.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-B"
+  ],
+  "stem": "Thermochemical Stoichiometry: Given: $2\\text{SO}_{2}(g) + \\text{O}_{2}(g) \\rightarrow 2\\text{SO}_{3}(g)\\quad\\Delta H^{\\circ} = - 198\\text{~kJ/mol}$. How much heat is released when $1.00\\text{~metric~ton}$ ($1.00 \\times 10^{6}\\text{~g}$) of $\\text{SO}_{2}$ ($64.07\\text{~g/mol}$) is converted to $\\text{SO}_{3}$?",
+  "choices": [
+    "$1.55 \\times 10^{3}\\text{~kJ}$",
+    "$1.55 \\times 10^{6}\\text{~kJ}$",
+    "$3.10 \\times 10^{6}\\text{~kJ}$",
+    "$6.20 \\times 10^{6}\\text{~kJ}$"
+  ],
+  "sourceExplanation": "Moles $\\text{SO}_{2} = 1.00 \\times 10^{6}\\text{~g}/64.07\\text{~g/mol} = 15615\\text{~mol}$. Heat released $= 15615 \\times (198/2) = 1.55 \\times 10^{6}\\text{~kJ}$? Wait, $198\\text{~kJ}$ per $2\\text{~moles}$, so $15615 \\times 99 = 1.55 \\times 10^{6}\\text{~kJ}$. Let's verify scaling. (B)"
+}

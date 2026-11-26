@@ -1,0 +1,202 @@
+[
+  {
+    "id": "proto-textbook-011",
+    "stem": "A tentative explanation that can be tested by experiment is a…",
+    "choices": [
+      "observation",
+      "theory",
+      "hypothesis",
+      "law"
+    ]
+  },
+  {
+    "id": "proto-textbook-012",
+    "stem": "A concise statement of a consistent pattern in many observations, without explaining why, is a…",
+    "choices": [
+      "hypothesis",
+      "model",
+      "theory",
+      "law"
+    ]
+  },
+  {
+    "id": "proto-textbook-013",
+    "stem": "A well-tested explanation that accounts for a wide range of observations is a…",
+    "choices": [
+      "theory",
+      "law",
+      "guess",
+      "hypothesis"
+    ]
+  },
+  {
+    "id": "proto-textbook-014",
+    "stem": "In a controlled experiment, the quantity the experimenter deliberately changes is the…",
+    "choices": [
+      "independent variable",
+      "dependent variable",
+      "control group",
+      "constant"
+    ]
+  },
+  {
+    "id": "proto-textbook-015",
+    "stem": "Experimental results contradict a hypothesis. The correct scientific response is to…",
+    "choices": [
+      "call the hypothesis a law",
+      "ignore the results",
+      "revise or reject the hypothesis",
+      "adjust the data to fit"
+    ]
+  },
+  {
+    "id": "proto-textbook-016",
+    "stem": "Which is a pure substance?",
+    "choices": [
+      "Brass",
+      "Seawater",
+      "Distilled water",
+      "Air"
+    ]
+  },
+  {
+    "id": "proto-textbook-017",
+    "stem": "Which is a heterogeneous mixture?",
+    "choices": [
+      "Brass",
+      "Sugar dissolved in water",
+      "Filtered air",
+      "Granite"
+    ]
+  },
+  {
+    "id": "proto-textbook-018",
+    "stem": "Which is a compound?",
+    "choices": [
+      "Helium, He",
+      "Carbon dioxide, CO<sub>2</sub>",
+      "Diamond, C",
+      "Ozone, O<sub>3</sub>"
+    ]
+  },
+  {
+    "id": "proto-textbook-019",
+    "stem": "Which method separates sugar from a sugar–water solution?",
+    "choices": [
+      "Filtration",
+      "Decanting",
+      "Evaporation",
+      "Using a magnet"
+    ]
+  },
+  {
+    "id": "proto-textbook-020",
+    "stem": "Which state of matter has a definite volume but no definite shape?",
+    "choices": [
+      "None of these",
+      "Gas",
+      "Solid",
+      "Liquid"
+    ]
+  },
+  {
+    "id": "proto-textbook-021",
+    "stem": "Which statement about gases is correct?",
+    "choices": [
+      "The particles are far apart and move freely.",
+      "The particles are held in fixed positions.",
+      "They cannot be compressed.",
+      "They have a fixed volume."
+    ]
+  },
+  {
+    "id": "proto-textbook-022",
+    "stem": "The change from gas directly to solid is called…",
+    "choices": [
+      "condensation",
+      "sublimation",
+      "deposition",
+      "freezing"
+    ]
+  },
+  {
+    "id": "proto-textbook-023",
+    "stem": "Which phase change absorbs heat (is endothermic)?",
+    "choices": [
+      "Deposition",
+      "Freezing",
+      "Melting",
+      "Condensation"
+    ]
+  },
+  {
+    "id": "proto-textbook-024",
+    "stem": "Solids are very hard to compress because…",
+    "choices": [
+      "their particles are already in contact",
+      "their particles are smaller",
+      "there are no attractions between particles",
+      "their particles move very fast"
+    ]
+  },
+  {
+    "id": "proto-textbook-025",
+    "stem": "Which is a chemical property?",
+    "choices": [
+      "Melting point",
+      "Colour",
+      "Flammability",
+      "Density"
+    ]
+  },
+  {
+    "id": "proto-textbook-026",
+    "stem": "Which is a physical change?",
+    "choices": [
+      "Rusting iron",
+      "Burning wood",
+      "Boiling water",
+      "Baking bread"
+    ]
+  },
+  {
+    "id": "proto-textbook-027",
+    "stem": "Which is an extensive property?",
+    "choices": [
+      "Density",
+      "Mass",
+      "Boiling point",
+      "Temperature"
+    ]
+  },
+  {
+    "id": "proto-textbook-028",
+    "stem": "What is the SI base unit of mass?",
+    "choices": [
+      "pound",
+      "kilogram",
+      "gram",
+      "newton"
+    ]
+  },
+  {
+    "id": "proto-textbook-029",
+    "stem": "What is 5.0 × 10<sup>3</sup> mg in grams?",
+    "choices": [
+      "50 g",
+      "5.0 g",
+      "0.50 g",
+      "5.0 × 10<sup>6</sup> g"
+    ]
+  },
+  {
+    "id": "proto-textbook-030",
+    "stem": "Convert 25 °C to kelvin.",
+    "choices": [
+      "−248 K",
+      "25 K",
+      "248 K",
+      "298 K"
+    ]
+  }
+]

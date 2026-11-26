@@ -1,0 +1,22 @@
+{
+  "id": "ch1-3-theory-50",
+  "paper": "ch1-3-theory",
+  "source": "supplied-paper",
+  "sourceKey": "D",
+  "blind": "A",
+  "blindWork": "n(salicylic acid) = 2.00/138.12 = 0.01448 mol; n(acetic anhydride) = 2.00/102.09 = 0.01959 mol, so salicylic acid is limiting. Theoretical aspirin = 0.01448 x 180.16 = 2.609 g; at 85.0% yield, 2.609 x 0.850 = 2.22 g.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-A"
+  ],
+  "stem": "Aspirin ($\\text{C}_{9}\\text{H}_{8}\\text{O}_{4}$, $M = 180.16\\text{~g/mol}$) is synthesized by reacting salicylic acid ($\\text{C}_{7}\\text{H}_{6}\\text{O}_{3}$, $M = 138.12\\text{~g/mol}$) with acetic anhydride ($\\text{C}_{4}\\text{H}_{6}\\text{O}_{3}$, $M = 102.09\\text{~g/mol}$):\n\n$$\\text{C}_{7}\\text{H}_{6}\\text{O}_{3} + \\text{C}_{4}\\text{H}_{6}\\text{O}_{3} \\rightarrow \\text{C}_{9}\\text{H}_{8}\\text{O}_{4} + \\text{C}_{2}\\text{H}_{4}\\text{O}_{2}$$\n\nIf $2.00\\text{~g}$ of salicylic acid reacts with $2.00\\text{~g}$ of acetic anhydride with an $85.0\\%$ yield, what mass of aspirin is collected?",
+  "choices": [
+    "$2.22\\text{~g}$",
+    "$2.61\\text{~g}$",
+    "$3.07\\text{~g}$",
+    "$1.89\\text{~g}$"
+  ],
+  "sourceExplanation": "Moles salicylic acid $= 2.00/138.12 = 0.01448\\text{~mol}$.\n\nMoles acetic anhydride $= 2.00/102.09 = 0.01959\\text{~mol} \\Longrightarrow$ Salicylic acid is limiting.\n\nTheoretical aspirin mass $= 0.01448 \\times 180.16 = 2.609\\text{~g}$.\n\nActual mass $= 2.609\\text{~g} \\times 0.850 = 2.22\\text{~g}$. Correct Choice: A."
+}

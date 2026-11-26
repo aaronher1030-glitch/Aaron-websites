@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch1-3-theory-01",
+    "stem": "A spherical gold nanoparticle has a radius of $2.50\\text{~nm}$. Assuming gold crystallizes in a face-centered cubic structure with a density of $19.3\\text{~g/cm}^{3}$, how many gold atoms ($M = 197.0\\text{~g/mol}$) are present in a single nanoparticle?",
+    "choices": [
+      "$1.93 \\times 10^{3}$",
+      "$3.86 \\times 10^{3}$",
+      "$3.84 \\times 10^{4}$",
+      "$1.92 \\times 10^{4}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-02",
+    "stem": "The speed of light is $3.00 \\times 10^{8}\\text{~m/s}$. Express this speed in furlongs per fortnight. ($1\\text{~furlong} = 201.168\\text{~m}$; $1\\text{~fortnight} = 14\\text{~days}$).",
+    "choices": [
+      "$1.80 \\times 10^{12}\\text{~furlongs/fortnight}$",
+      "$1.80 \\times 10^{14}\\text{~furlongs/fortnight}$",
+      "$9.01 \\times 10^{11}\\text{~furlongs/fortnight}$",
+      "$1.80 \\times 10^{9}\\text{~furlongs/fortnight}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-03",
+    "stem": "Which of the following statements represents an intensive physical property?",
+    "choices": [
+      "The total heat capacity of a sample of water is $418.4\\text{~J/K}$.",
+      "A sample of copper has a volume of $12.5\\text{~mL}$.",
+      "The standard boiling point of ethanol is ${78.37}^{\\circ}\\text{C}$.",
+      "The mass of a gold bar is $1.00\\text{~kg}$."
+    ]
+  },
+  {
+    "id": "ch1-3-theory-04",
+    "stem": "Perform the following calculation and express the answer to the correct number of significant figures:\n\n$$\\frac{(14.285 - 0.0821) \\times 0.05200}{3.14159 + 0.002}$$",
+    "choices": [
+      "$0.2351$",
+      "$0.235$",
+      "$0.23497$",
+      "$0.2350$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-05",
+    "stem": "A hydrometer measures liquid density. A cylindrical piece of cork ($d = 0.240\\text{~g/cm}^{3}$) with length $10.0\\text{~cm}$ and cross-sectional area $1.50\\text{~cm}^{2}$ floats vertically in a fluid of density $1.20\\text{~g/cm}^{3}$. How much length of the cork is submerged below the liquid surface?",
+    "choices": [
+      "$2.00\\text{~cm}$",
+      "$4.00\\text{~cm}$",
+      "$6.00\\text{~cm}$",
+      "$8.00\\text{~cm}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-06",
+    "stem": "A container weighs $22.10\\text{~g}$ when empty, $45.50\\text{~g}$ when filled with water ($d = 0.998\\text{~g/mL}$ at $20^{\\circ}\\text{C}$), and $51.20\\text{~g}$ when filled with an unknown liquid at the same temperature. What is the density of the unknown liquid?",
+    "choices": [
+      "$1.24\\text{~g/mL}$",
+      "$1.20\\text{~g/mL}$",
+      "$1.13\\text{~g/mL}$",
+      "$0.806\\text{~g/mL}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-07",
+    "stem": "Which of the following processes represents a chemical change?",
+    "choices": [
+      "Sublimation of dry ice ($CO_{2}$)",
+      "Dissolution of sodium chloride in water",
+      "Tarnishing of silver cutlery in air",
+      "Fractional distillation of liquid air"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-08",
+    "stem": "The temperature on a newly devised temperature scale, $_{}^{\\circ}X$, is related to the Celsius scale by $_{}^{\\circ}X = 1.50( \\circ C) + 20.0$. What is the absolute zero temperature ($- {273.15}^{\\circ}\\text{C}$) on the $_{}^{\\circ}X$ scale?",
+    "choices": [
+      "$- {389.73}^{\\circ}\\text{X}$",
+      "$- {429.73}^{\\circ}\\text{X}$",
+      "$- {369.73}^{\\circ}\\text{X}$",
+      "$- {253.15}^{\\circ}\\text{X}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-09",
+    "stem": "Homogeneous mixtures are distinguished from pure substances because homogeneous mixtures:",
+    "choices": [
+      "Can be separated into simpler substances using physical methods.",
+      "Have a fixed composition regardless of preparation.",
+      "Consist of only one type of atom.",
+      "Cannot exist in the gaseous phase."
+    ]
+  },
+  {
+    "id": "ch1-3-theory-10",
+    "stem": "A sheet of platinum foil has dimensions $2.50\\text{~cm} \\times 4.00\\text{~cm}$ and a mass of $1.076\\text{~g}$. Given the density of platinum is $21.45\\text{~g/cm}^{3}$, what is the thickness of the foil in micrometers ($\\mu\\text{m}$)?",
+    "choices": [
+      "$50.2\\ \\mu\\text{m}$",
+      "$5.02\\ \\mu\\text{m}$",
+      "$501.6\\ \\mu\\text{m}$",
+      "$0.502\\ \\mu\\text{m}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-11",
+    "stem": "In J.J. Thomson’s cathode-ray tube experiment, the mass-to-charge ratio ($m/e$) of the electron was determined. If Robert Millikan determined the charge of an electron to be $- 1.602 \\times 10^{- 19}\\text{~C}$ and $e/m = - 1.76 \\times 10^{8}\\text{~C/g}$, what is the mass of a single electron?",
+    "choices": [
+      "$9.10 \\times 10^{- 28}\\text{~g}$",
+      "$9.10 \\times 10^{- 31}\\text{~g}$",
+      "$1.67 \\times 10^{- 24}\\text{~g}$",
+      "$1.09 \\times 10^{- 27}\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-12",
+    "stem": "An atom of the radioactive nuclide $_{92}^{238}\\text{U}$ undergoes decay by emitting an alpha particle ($\\alpha$), followed by two consecutive beta particles ($\\beta^{-}$). What is the resulting daughter nuclide?",
+    "choices": [
+      "$_{90}^{234}\\text{Th}$",
+      "$_{91}^{234}\\text{Pa}$",
+      "$_{92}^{234}\\text{U}$",
+      "$_{90}^{230}\\text{Th}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-13",
+    "stem": "Naturally occurring chlorine consists of two stable isotopes: $_{}^{35}\\text{Cl}$ ($34.9688\\text{~amu}$) and $_{}^{37}\\text{Cl}$ ($36.9659\\text{~amu}$). The average atomic mass of chlorine is $35.4527\\text{~amu}$. What is the percent abundance of $_{}^{37}\\text{Cl}$?",
+    "choices": [
+      "$24.23\\%$",
+      "$75.77\\%$",
+      "$35.45\\%$",
+      "$48.46\\%$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-14",
+    "stem": "How many protons, neutrons, and electrons are present in a single ${_{}^{59}\\text{Ni}}^{3 +}$ ion?",
+    "choices": [
+      "28 protons, 31 neutrons, 25 electrons",
+      "28 protons, 31 neutrons, 31 electrons",
+      "31 protons, 28 neutrons, 25 electrons",
+      "28 protons, 59 neutrons, 25 electrons"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-15",
+    "stem": "Rutherford’s gold foil experiment demonstrated that:",
+    "choices": [
+      "Electrons orbit the nucleus in fixed energy levels.",
+      "Electrons are embedded in a uniform sphere of positive charge.",
+      "Most of the mass and all positive charge of an atom are concentrated in a tiny dense nucleus.",
+      "Neutrons exist in equal numbers to protons in stable nuclei."
+    ]
+  },
+  {
+    "id": "ch1-3-theory-16",
+    "stem": "Which pair represents isotopes of the same element?",
+    "choices": [
+      "$_{6}^{14}\\text{C}$ and $_{7}^{14}\\text{N}$",
+      "$_{18}^{40}\\text{Ar}$ and $_{20}^{40}\\text{Ca}$",
+      "$_{52}^{128}\\text{Te}$ and $_{54}^{128}\\text{Xe}$",
+      "$_{82}^{204}\\text{Pb}$ and $_{82}^{208}\\text{Pb}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-17",
+    "stem": "An element $\\text{X}$ forms a compound with oxygen having the formula $\\text{X}_{2}\\text{O}_{3}$, which contains $30.06\\%$ oxygen by mass. Identify the element $\\text{X}$.",
+    "choices": [
+      "$\\text{Al}$",
+      "$\\text{Fe}$",
+      "$\\text{Cr}$",
+      "$\\text{B}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-18",
+    "stem": "Which of the following species is isoelectronic with the argon atom ($\\text{Ar}$)?",
+    "choices": [
+      "$\\text{Na}^{+}$",
+      "$\\text{S}^{2 -}$",
+      "$\\text{Br}^{-}$",
+      "$\\text{Fe}^{2 +}$"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-19",
+    "stem": "An unknown element $\\text{M}$ has three naturally occurring isotopes: $\\text{M} - 24$ ($23.9850\\text{~amu}$, $78.99\\%$), $\\text{M} - 25$ ($24.9858\\text{~amu}$, $10.00\\%$), and $\\text{M} - 26$ ($25.9826\\text{~amu}$, $11.01\\%$). Calculate the atomic weight of $\\text{M}$ and identify the element.",
+    "choices": [
+      "$24.31\\text{~amu}$, Magnesium ($\\text{Mg}$)",
+      "$28.09\\text{~amu}$, Silicon ($\\text{Si}$)",
+      "$26.98\\text{~amu}$, Aluminum ($\\text{Al}$)",
+      "$23.00\\text{~amu}$, Sodium ($\\text{Na}$)"
+    ]
+  },
+  {
+    "id": "ch1-3-theory-20",
+    "stem": "How many total electrons are in a nitrate ion ($\\text{NO}_{3}^{-}$)?",
+    "choices": [
+      "30",
+      "31",
+      "32",
+      "24"
+    ]
+  }
+]

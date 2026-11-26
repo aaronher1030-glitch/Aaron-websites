@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ch1-3-lab-31",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Oxygen mass = 0.403 - 0.243 = 0.160 g. mol Mg = 0.243/24.31 = 0.01000; mol O = 0.160/16.00 = 0.01000, giving a 1:1 ratio.",
+    "ambiguous": false,
+    "cleanExplanation": "The mass gained is all oxygen: 0.403 g - 0.243 g = 0.160 g O. Moles: Mg = 0.243/24.31 = 1.00x10^-2 mol, O = 0.160/16.00 = 1.00x10^-2 mol. The 1:1 mole ratio gives the empirical formula MgO."
+  },
+  {
+    "id": "ch1-3-lab-32",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Apparent oxygen mass = final mass - initial Mg mass. Unreacted Mg adds no oxygen but stays in the crucible mass, so apparent O gain is too small; dividing by the full (unchanged) Mg moles gives too low an O/Mg ratio.",
+    "ambiguous": false,
+    "cleanExplanation": "The oxygen is found from the mass gain, assuming every gram of magnesium became MgO. If some magnesium is left unreacted, part of the final mass is still just Mg, so the apparent oxygen mass is too small. Dividing that underestimated O by the full moles of Mg gives an O/Mg ratio that is lower than the true value."
+  },
+  {
+    "id": "ch1-3-lab-33",
+    "answer": "B",
+    "confidence": "high",
+    "work": "C = (2.933/44.01)(12.011) = 0.8005 g; H = (1.200/18.015)(2)(1.008) = 0.1343 g; O = 2.000 - 0.8005 - 0.1343 = 1.065 g, i.e. 1.066 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Carbon: 2.933 g CO2 x (12.01/44.01) = 0.800 g C. Hydrogen: 1.200 g H2O x (2.016/18.02) = 0.134 g H. All the oxygen comes from the sample by difference: 2.000 - 0.800 - 0.134 = 1.066 g O."
+  },
+  {
+    "id": "ch1-3-lab-34",
+    "answer": "A",
+    "confidence": "high",
+    "work": "mol C = 0.8005/12.011 = 0.06665; mol H = 0.1343/1.008 = 0.1332; mol O = 1.065/16.00 = 0.06657. Dividing by 0.06657 gives C:H:O = 1.00:2.00:1.00, so CH2O.",
+    "ambiguous": false,
+    "cleanExplanation": "Moles: C = 0.800/12.01 = 0.0666, H = 0.134/1.008 = 0.133, O = 1.066/16.00 = 0.0666. Dividing each by the smallest (0.0666) gives 1:2:1, so the empirical formula is CH2O (molar mass 30.03 g/mol, consistent with the 2.000 g sample)."
+  },
+  {
+    "id": "ch1-3-lab-35",
+    "answer": "B",
+    "confidence": "high",
+    "work": "In a combustion train the first tube contains a desiccant; anhydrous magnesium perchlorate is a strong, high-capacity water absorbent. CO2 is absorbed downstream (e.g., by NaOH/Ascarite).",
+    "ambiguous": false,
+    "cleanExplanation": "Magnesium perchlorate is a powerful desiccant, so the first absorption tube traps the water vapour produced by combustion and its mass gain gives the mass of H2O (and hence hydrogen). Carbon dioxide is collected afterwards in a separate tube packed with a CO2 absorbent such as NaOH on asbestos or soda-lime."
+  },
+  {
+    "id": "ch1-3-lab-36",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Water lost = 3.120 - 1.995 = 1.125 g. mol CuSO4 = 1.995/159.61 = 0.012499; mol H2O = 1.125/18.02 = 0.062431. x = 0.062431/0.012499 = 4.995, so x = 5.",
+    "ambiguous": false,
+    "cleanExplanation": "Mass of water driven off = 3.120 g - 1.995 g = 1.125 g. Moles of anhydrous salt = 1.995/159.61 = 1.250x10^-2 mol; moles of water = 1.125/18.02 = 6.243x10^-2 mol. The ratio is 0.06243/0.01250 = 4.99, so x = 5 (CuSO4.5H2O)."
+  },
+  {
+    "id": "ch1-3-lab-37",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Constant mass means successive heating/cooling/weighing cycles reproduce the same mass within balance precision, showing all water has been driven off.",
+    "ambiguous": false,
+    "cleanExplanation": "Heating to constant mass means heating, cooling in a desiccator and weighing, then repeating the cycle until two consecutive masses agree closely (within about +/-0.002 g). This proves the residue no longer loses mass, i.e., dehydration is complete; a single fixed heating time cannot guarantee that."
+  },
+  {
+    "id": "ch1-3-lab-38",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Anhydrous CuSO4 (and other dehydrated salts) is hygroscopic and will readsorb atmospheric water during cooling, inflating the residue mass and lowering the apparent water loss.",
+    "ambiguous": false,
+    "cleanExplanation": "The cooled crucible must not sit in laboratory air, because the anhydrous residue is hygroscopic and readily reabsorbs moisture, which would make it weigh too much and make the calculated water content too small. A desiccator contains a drying agent, so the crucible cools in dry air and the residue mass reflects only the anhydrous salt."
+  },
+  {
+    "id": "ch1-3-lab-39",
+    "answer": "B",
+    "confidence": "high",
+    "work": "mol C = 3.52/44.01 = 0.07998; mol H = 2(1.44/18.015) = 0.15987. C:H = 0.07998:0.15987 = 1:2.00, so CH2.",
+    "ambiguous": false,
+    "cleanExplanation": "The CO2 gain gives carbon: 3.52/44.01 = 0.0800 mol C. The H2O gain gives hydrogen: 1.44/18.02 = 0.0799 mol H2O, so 0.160 mol H. The C:H ratio is 0.0800:0.160 = 1:2, giving the empirical formula CH2."
+  },
+  {
+    "id": "ch1-3-lab-40",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Incomplete dehydration leaves the residue mass too high, so the water mass (sample minus residue) is too small; moles of H2O divided by moles of anhydrous salt gives an x value that is too low.",
+    "ambiguous": false,
+    "cleanExplanation": "x is found from moles of water lost divided by moles of anhydrous salt. If some water is still bound, the residue weighs too much, so the calculated mass of water lost is too small while the anhydrous salt moles are essentially unchanged. The experimental x therefore comes out lower than the true value."
+  },
+  {
+    "id": "ch1-3-lab-41",
+    "answer": "B",
+    "confidence": "high",
+    "work": "mol Cu = 2.00/63.55 = 0.03147, so theoretical Cu2S = 0.03147/2 = 0.01574 mol = 2.505 g. Yield = 2.45/2.505 = 0.978 = 97.8%.",
+    "ambiguous": false,
+    "cleanExplanation": "Moles of copper = 2.00/63.55 = 3.147x10^-2 mol. Since 2 Cu give 1 Cu2S, theoretical Cu2S = 1.574x10^-2 mol x 159.16 g/mol = 2.50 g. Percent yield = (2.45/2.50) x 100 = 97.8%."
+  },
+  {
+    "id": "ch1-3-lab-42",
+    "answer": "A",
+    "confidence": "high",
+    "work": "mol Fe = 5.585/55.85 = 0.1000; mol O2 = 3.200/32.00 = 0.1000. Required O2 for 0.1000 mol Fe is (3/4)(0.1000) = 0.0750 mol, less than available, so O2 is in excess and Fe is limiting.",
+    "ambiguous": false,
+    "cleanExplanation": "Moles: Fe = 5.585/55.85 = 0.1000 mol; O2 = 3.200/32.00 = 0.1000 mol. From 4 Fe : 3 O2, 0.1000 mol Fe needs only 0.0750 mol O2, and 0.1000 mol O2 is present, so oxygen is in excess. Iron is the limiting reagent."
+  },
+  {
+    "id": "ch1-3-lab-43",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Fe limiting: 0.1000 mol Fe x (2 Fe2O3/4 Fe) = 0.0500 mol Fe2O3; mass = 0.0500 x 159.70 = 7.985 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Iron limits the reaction: 0.1000 mol Fe gives 0.1000/2 = 0.0500 mol Fe2O3 (4 Fe -> 2 Fe2O3). Mass = 0.0500 mol x 159.70 g/mol = 7.99 g, which is also less than the 10.65 g the available oxygen could support."
+  },
+  {
+    "id": "ch1-3-lab-44",
+    "answer": "A",
+    "confidence": "high",
+    "work": "mol Zn = 6.54/65.38 = 0.10003; theoretical H2 = 0.10003 x 2.016 = 0.2017 g. Yield = 0.180/0.2017 = 89.3%.",
+    "ambiguous": false,
+    "cleanExplanation": "Moles of zinc = 6.54/65.38 = 0.1000 mol, which by 1:1 stoichiometry gives 0.1000 mol H2 = 0.1000 x 2.016 = 0.202 g. Percent yield = (0.180 g/0.202 g) x 100 = 89.3%."
+  },
+  {
+    "id": "ch1-3-lab-45",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n = 0.500 mol/L x 0.1000 L = 0.0500 mol; m = 0.0500 x 105.99 = 5.30 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Moles needed = 0.500 mol/L x 0.1000 L = 0.0500 mol. Mass = 0.0500 mol x 105.99 g/mol = 5.30 g of anhydrous Na2CO3, weighed by difference and dissolved to 100.0 mL."
+  },
+  {
+    "id": "ch1-3-lab-46",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Washing removes adsorbed soluble impurities and mother liquor; using small portions of ice-cold solvent minimises dissolution losses of the slightly soluble product, so the isolated mass reflects the true yield.",
+    "ambiguous": false,
+    "cleanExplanation": "Washing displaces mother liquor and dissolves away soluble impurities and unreacted starting materials, which would otherwise contaminate the product and inflate its mass. Ice-cold solvent and small portions are used so that as little of the sparingly soluble product as possible dissolves, keeping the gravimetric yield accurate."
+  },
+  {
+    "id": "ch1-3-lab-47",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Percent yield = actual/theoretical x 100 = 12.0/15.0 x 100 = 80.0%. The 10.0 g quantities of A and B are irrelevant once the theoretical yield is given.",
+    "ambiguous": false,
+    "cleanExplanation": "Percent yield compares the mass actually obtained with the maximum possible mass: (12.0 g/15.0 g) x 100 = 80.0%. The starting masses do not enter the calculation because the theoretical yield already accounts for the limiting reagent."
+  },
+  {
+    "id": "ch1-3-lab-48",
+    "answer": "B",
+    "confidence": "high",
+    "work": "CO2 lost = 10.00 - 6.04 = 3.96 g = 0.08998 mol, so 0.08998 mol CaCO3 decomposed. Initial CaCO3 = 10.00/100.09 = 0.09991 mol. Fraction = 0.08998/0.09991 = 0.9006 = 90.0%.",
+    "ambiguous": false,
+    "cleanExplanation": "The mass lost is CO2: 10.00 - 6.04 = 3.96 g, i.e. 3.96/44.01 = 0.0900 mol CO2, so 0.0900 mol CaCO3 decomposed. The sample started with 10.00/100.09 = 0.0999 mol, so the fraction decomposed is 0.0900/0.0999 = 90.0%."
+  },
+  {
+    "id": "ch1-3-lab-49",
+    "answer": "B",
+    "confidence": "low",
+    "work": "NaHCO3 = 46.30 - 42.10 = 4.20 g = 0.0500 mol, so theoretical NaCl = 0.0500 x 58.44 = 2.922 g. Actual residue = 45.02 - 42.10 = 2.92 g, giving 2.92/2.922 = 99.9% (and the mass loss, 1.28 g, is exactly the theoretical loss). No choice equals 100.0%; 101.4% is numerically nearest.",
+    "ambiguous": true,
+    "cleanExplanation": "Sodium bicarbonate used = 46.30 - 42.10 = 4.20 g = 0.0500 mol, which by 1:1 stoichiometry gives 0.0500 mol NaCl = 2.922 g. The residue weighed 45.02 - 42.10 = 2.92 g, and the mass lost (1.28 g) matches the CO2/H2O expected, so the yield is essentially quantitative, about 100%."
+  },
+  {
+    "id": "ch1-3-lab-50",
+    "answer": "A",
+    "confidence": "high",
+    "work": "A hot object heats the air around it, creating convection updrafts and reduced air density that produce buoyancy on the crucible, so the balance reads a mass that drifts and is slightly too low until the object reaches room temperature.",
+    "ambiguous": false,
+    "cleanExplanation": "A hot crucible sets up convection currents in the air around it, and the warmed, less dense air changes the buoyant force on the object, so the balance gives an unstable and slightly low reading. Cooling to room temperature removes this effect and also protects the balance, ensuring the mass recorded is accurate and reproducible."
+  }
+]

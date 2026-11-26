@@ -1,0 +1,22 @@
+{
+  "id": "ch1-3-lab-33",
+  "paper": "ch1-3-lab",
+  "source": "supplied-paper",
+  "sourceKey": "A",
+  "blind": "B",
+  "blindWork": "C = (2.933/44.01)(12.011) = 0.8005 g; H = (1.200/18.015)(2)(1.008) = 0.1343 g; O = 2.000 - 0.8005 - 0.1343 = 1.065 g, i.e. 1.066 g.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-B"
+  ],
+  "stem": "A $2.000\\text{~g}$ sample of a pure organic compound containing only $\\text{C}$, $\\text{H}$, and $\\text{O}$ undergoes complete combustion in an automated combustion analyzer, yielding $2.933\\text{~g}$ of $\\text{CO}_{2}$ and $1.200\\text{~g}$ of $\\text{H}_{2}\\text{O}$. What is the mass of oxygen in the original $2.000\\text{~g}$ sample?",
+  "choices": [
+    "$0.800\\text{~g}$",
+    "$1.066\\text{~g}$",
+    "$0.134\\text{~g}$",
+    "$0.533\\text{~g}$"
+  ],
+  "sourceExplanation": "Mass $\\text{C} = 2.933 \\times \\frac{12.011}{44.01} = 0.800\\text{~g}$. Mass $\\text{H} = 1.200 \\times \\frac{2.016}{18.02} = 0.134\\text{~g}$.\n\nMass $\\text{O} = 2.000 - (0.800 + 0.134) = 1.066\\text{~g}$. Wait, calculation check: $2.000 - 0.934 = 1.066\\text{~g}$. Correct Choice: B."
+}

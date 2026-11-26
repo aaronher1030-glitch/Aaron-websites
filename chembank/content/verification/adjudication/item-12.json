@@ -1,0 +1,21 @@
+{
+  "id": "ch4-7-theory-04",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "C",
+  "blind": "A",
+  "blindWork": "Initial HCl = 50.0 mL x 0.100 M = 5.00 mmol; NaOH back-titrant = 6.2 mL x 0.150 M = 0.93 mmol, so HCl consumed by carbonate = 4.07 mmol. CaCO3 + 2HCl, so n(CaCO3) = 2.035 mmol = 0.2037 g. % = 0.2037/0.500 x 100 = 40.7% (approximately 41%, allowing for the 2-s.f. titrant volume).",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary"
+  ],
+  "stem": "Acid-Base Titration (Back Titration): A $0.500\\text{-g}$ antacid tablet containing $\\text{CaCO}_{3}$ was treated with $50.0\\text{~mL}$ of $0.100\\text{~M~HCl}$. The excess acid required $6.2\\text{~mL}$ of $0.150\\text{~M~NaOH}$ for complete neutralization. What percentage by mass of the tablet is $\\text{CaCO}_{3}$? ($\\text{CaCO}_{3} = 100.09\\text{~g/mol}$)",
+  "choices": [
+    "$41.2\\%$",
+    "$55.5\\%$",
+    "$81.7\\%$",
+    "$92.4\\%$"
+  ],
+  "sourceExplanation": "Total acid = $0.050 \\times 0.100 = 0.005\\text{~mol}$. Excess $\\text{NaOH}$ neutralized excess acid: $n\\left( \\text{NaOH} \\right) = 0.0062 \\times 0.150 = 0.00093\\text{~mol}$. Acid reacted with $\\text{CaCO}_{3} = 0.005 - 0.00093 = 0.00407\\text{~mol}$. Moles $\\text{CaCO}_{3} = 0.002035\\text{~mol}$. Mass $= 0.002035 \\times 100.09 = 0.2037\\text{~g}$. $\\% = (0.2037/0.500) \\times 100\\% = 40.7\\% \\approx$ let's re-verify titration stoichiometry: $2\\text{HCl} + \\text{CaCO}_{3}$. (C)"
+}

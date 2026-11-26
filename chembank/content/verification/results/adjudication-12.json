@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-04",
+  "answer": "A",
+  "confidence": "high",
+  "work": "Initial acid: 0.0500 L x 0.100 M = 5.00 mmol HCl. Back-titration: 0.0062 L x 0.150 M = 0.93 mmol NaOH, so excess HCl = 0.93 mmol and HCl consumed by the tablet = 5.00 - 0.93 = 4.07 mmol. Since CaCO3 + 2HCl -> CaCl2 + CO2 + H2O, n(CaCO3) = 4.07/2 = 2.035 mmol, mass = 2.035e-3 x 100.09 = 0.2037 g. Percent by mass = 0.2037/0.500 x 100 = 40.7%, which corresponds to the listed choice 41.2% (difference well inside the uncertainty of a 2-s.f. 6.2 mL volume); the 81.7% option comes from wrongly using a 1:1 acid:carbonate ratio.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "The 2:1 HCl:CaCO3 stoichiometry gives 4.07 mmol HCl consumed, 2.035 mmol CaCO3, 0.2037 g, i.e. 40.7% by mass, so A (41.2%) is the only defensible choice; 81.7% is exactly the value obtained if the factor of two in the balanced equation is omitted. The source keyed C while its own explanation derived 40.7%, so the source key is in error and the blind answer (A) is correct.",
+  "cleanExplanation": "The HCl added was 0.0500 L x 0.100 M = 5.00 mmol, and the 6.2 mL of 0.150 M NaOH used to neutralize the excess corresponds to 0.93 mmol of unreacted HCl. The tablet therefore consumed 5.00 - 0.93 = 4.07 mmol of HCl, and because CaCO3 + 2HCl -> CaCl2 + CO2 + H2O, the carbonate present is 4.07/2 = 2.035 mmol, or 2.035e-3 x 100.09 = 0.204 g. Dividing by the 0.500 g tablet mass and multiplying by 100 gives about 41% CaCO3 by mass."
+}

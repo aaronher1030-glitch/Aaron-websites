@@ -1,0 +1,22 @@
+{
+  "id": "ch4-7-theory-02",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "C",
+  "blind": "B",
+  "blindWork": "Permanganate half-reaction: MnO4^- + 8H+ + 5e- -> Mn2+ + 4H2O. The iron half-reaction is Fe2+ -> Fe3+ + e-, so balance electrons with 5 Fe2+. Full equation: MnO4^- + 5Fe2+ + 8H+ -> Mn2+ + 5Fe3+ + 4H2O.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-B"
+  ],
+  "stem": "Oxidation-Reduction: In the balanced redox reaction in acidic solution:\n\n$$\\text{MnO}_{4}^{-} + \\text{Fe}^{2 +} + \\text{H}^{+} \\rightarrow \\text{Mn}^{2 +} + \\text{Fe}^{3 +} + \\text{H}_{2}\\text{O}$$\n\nWhat is the stoichiometric coefficient for $\\text{H}^{+}$ when the equation is balanced with smallest whole-number coefficients",
+  "choices": [
+    "4",
+    "8",
+    "16",
+    "5"
+  ],
+  "sourceExplanation": "Balanced equation: $5\\text{Fe}^{2 +} + \\text{MnO}_{4}^{-} + 8\\text{H}^{+} \\rightarrow 5\\text{Fe}^{3 +} + \\text{Mn}^{2 +} + 4\\text{H}_{2}\\text{O}$. Coefficient for $\\text{H}^{+}$ is 8. Wait, let's balance carefully: $MnO_{4}^{-} + 8H^{+} + 5e^{-} \\rightarrow Mn^{2 +} + 4H_{2}O$, coefficient is 8. (B)"
+}

@@ -1,0 +1,111 @@
+/* Breakpoints checked at 390, 1024, and 1440. */
+
+@media (max-width: 980px) {
+  .site-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "brand tools"
+      "nav nav";
+    align-items: center;
+    gap: 0 12px;
+    padding-top: 8px;
+  }
+
+  .brand-link {
+    padding-block: 4px 2px;
+  }
+
+  .header-tools {
+    padding-block: 6px 8px;
+  }
+
+  .site-nav {
+    justify-self: stretch;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    margin-inline: calc(-1 * var(--gutter));
+    margin-bottom: calc(-1 * var(--rule-strong));
+    padding-inline: var(--gutter);
+    scroll-padding-inline: var(--gutter);
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav a {
+    min-height: 44px;
+    padding-inline: 12px;
+  }
+
+  /* The nav is a scroll container here, so an outset ring would be clipped on
+     all four sides. Draw the focus ring inside the tab instead. */
+  .site-nav a:focus-visible {
+    outline-offset: -3px;
+  }
+
+  .nav-more {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .account-summary {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-mark {
+    width: 29px;
+    height: 31px;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+  }
+
+  .brand-sub {
+    font-size: 8.5px;
+    letter-spacing: 0.15em;
+  }
+
+  .header-tools {
+    gap: 8px;
+  }
+
+  .nav-more {
+    font-size: 10.5px;
+  }
+
+  .theme-toggle {
+    width: 44px;
+    height: 44px;
+    box-shadow: 2px 2px 0 color-mix(in srgb, var(--ink) 20%, transparent);
+  }
+
+  .site-nav a {
+    padding-inline: 11px;
+    font-size: 11px;
+  }
+
+  .site-main {
+    padding-block: 26px 64px;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1440px) {
+  .site-main {
+    padding-block: 64px 104px;
+  }
+}

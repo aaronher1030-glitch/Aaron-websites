@@ -1,0 +1,19 @@
+{
+  "id": "ch4-7-lab-15",
+  "paper": "ch4-7-lab",
+  "source": "supplied-paper",
+  "sourceKey": "A",
+  "blind": "C",
+  "blindWork": "The mercury level is 45 mm lower in the arm open to the atmosphere, meaning the gas pushes the mercury down on that side, so the gas pressure exceeds atmospheric pressure. P_gas = 755 + 45 = 800 mmHg.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [],
+  "stem": "Manometer Level Difference: An open-end liquid manometer filled with mercury ($\\rho = 13.6\\text{~g/cm}^{3}$) is connected to a gas bulb. The mercury level in the arm open to the atmosphere is $45\\text{~mm}$ lower than the arm connected to the gas bulb. If atmospheric pressure is $755\\text{~mmHg}$, what is the absolute gas pressure inside the bulb?",
+  "choices": [
+    "$710\\text{~mmHg}$",
+    "$755\\text{~mmHg}$",
+    "$800\\text{~mmHg}$",
+    "$845\\text{~mmHg}$"
+  ],
+  "sourceExplanation": "The atmospheric arm level is lower, meaning gas pressure is lower than atmospheric pressure: $P_{gas} = 755 - 45 = 710\\text{~mmHg}$."
+}

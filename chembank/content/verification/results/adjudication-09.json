@@ -1,0 +1,11 @@
+{
+  "id": "ch1-3-lab-49",
+  "answer": "B",
+  "confidence": "medium",
+  "work": "NaHCO3 used = 46.30 - 42.10 = 4.20 g, i.e. 4.20/84.01 = 0.0500 mol, which gives a theoretical NaCl mass of 0.0500 x 58.44 = 2.92 g. The residue is 45.02 - 42.10 = 2.92 g, so the yield is 2.92/2.92 = 99.9%, and the observed mass loss of 1.28 g matches the theoretical 4.20 - 2.92 = 1.28 g exactly. The chemistry therefore gives essentially 100%, a value not offered; of the four choices the closest is 101.4% (1.4 away), followed by 98.0% (1.9 away). 101.4% cannot actually be produced by correct stoichiometry, so the item is a forced nearest-match rather than a clean fit.",
+  "ambiguous": true,
+  "status": "flagged",
+  "resolution": "source",
+  "rationale": "The correct percent yield is 99.9%, effectively 100%, so no choice is the true value; the item is flagged for that reason. Among the four options, B (101.4%) is numerically nearest to 99.9% and is the only choice consistent with an essentially quantitative recovery, while 98.0%, 95.5% and 92.1% all imply losses the data do not show. The source key (B) and the blind answer (B) both land on the nearest value; the source's rationale that 99.9% 'rounds' to 101.4% is chemically wrong even though its chosen letter is the defensible nearest one, and the blind solver reached B only by proximity.",
+  "cleanExplanation": "The mass of sodium bicarbonate is 46.30 - 42.10 = 4.20 g, which is 4.20/84.01 = 0.0500 mol. Because one mole of NaHCO3 gives one mole of NaCl, the theoretical mass of NaCl is 0.0500 x 58.44 = 2.92 g. The actual residue is 45.02 - 42.10 = 2.92 g, so the percent yield is (2.92/2.92) x 100 = 99.9%, essentially complete conversion, and the 1.28 g mass loss matches the amount of HCO3-/CO2 and water driven off. The closest listed value is 101.4%."
+}

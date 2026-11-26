@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ch1-3-theory-41",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n(Al) = 10.0/26.98 = 0.3706 mol; n(Cl2) = 35.0/70.90 = 0.4937 mol. Cl2 needs 1.5x0.3706 = 0.556 mol to consume all Al, so Cl2 is limiting. n(AlCl3) = (2/3)(0.4937) = 0.3291 mol; m = 0.3291 x 133.34 = 43.9 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Moles: Al = 10.0/26.98 = 0.3706 mol, Cl2 = 35.0/70.90 = 0.4937 mol. Completely consuming the Al would require 1.5 x 0.3706 = 0.556 mol Cl2, more than is present, so Cl2 is limiting. AlCl3 formed = (2/3)(0.4937) = 0.3291 mol, giving 0.3291 x 133.34 = 43.9 g."
+  },
+  {
+    "id": "ch1-3-theory-42",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Cl2 is limiting (0.4937 mol Cl2 consumes 0.3291 mol Al). Al consumed = 0.3291 x 26.98 = 8.88 g, so Al left = 10.0 - 8.88 = 1.12 g (1.11 g with rounded intermediates).",
+    "ambiguous": false,
+    "cleanExplanation": "Chlorine is limiting because 0.4937 mol Cl2 can consume only (2/3)(0.4937) = 0.3291 mol Al. That is 0.3291 x 26.98 = 8.88 g of Al used, so 10.0 - 8.88 = 1.12 g of Al remains unreacted."
+  },
+  {
+    "id": "ch1-3-theory-43",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(TiCl4) = 3.54e7/189.7 = 1.866e5 mol; n(Mg) = 1.13e7/24.31 = 4.648e5 mol. Mg required = 2 x 1.866e5 = 3.732e5 mol < 4.648e5, so TiCl4 is limiting. Theoretical Ti = 1.866e5 x 47.87 = 8.933e6 g; % yield = 7.81e6/8.933e6 x 100 = 87.4%.",
+    "ambiguous": false,
+    "cleanExplanation": "n(TiCl4) = 3.54x10^7/189.7 = 1.866x10^5 mol and n(Mg) = 1.13x10^7/24.31 = 4.65x10^5 mol; 1.866x10^5 mol TiCl4 needs only 3.73x10^5 mol Mg, so TiCl4 is limiting. Theoretical Ti = 1.866x10^5 x 47.87 = 8.93x10^6 g. Percent yield = (7.81x10^6/8.93x10^6) x 100 = 87.4%."
+  },
+  {
+    "id": "ch1-3-theory-44",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Clearing fractions on C4H10 + 6.5 O2 -> 4 CO2 + 5 H2O by multiplying by 2 gives 2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O, so b = 13. The value 6.5 requires a fractional coefficient and is not lowest whole-number.",
+    "ambiguous": false,
+    "cleanExplanation": "Carbon balance needs 4 CO2 and hydrogen balance needs 5 H2O per C4H10, which requires 4 + 5/2 = 6.5 O2. Multiplying through by 2 gives the lowest whole-number set 2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O, so b = 13."
+  },
+  {
+    "id": "ch1-3-theory-45",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Pure CaC2 = 0.850 x 100.0 = 85.0 g; n = 85.0/64.10 = 1.326 mol. The 1:1 stoichiometry gives 1.326 mol C2H2, mass = 1.326 x 26.04 = 34.5 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Only 85.0% of the 100.0 g is CaC2: 85.0 g, which is 85.0/64.10 = 1.326 mol. Since one mole of CaC2 gives one mole of C2H2, the acetylene mass is 1.326 x 26.04 = 34.5 g."
+  },
+  {
+    "id": "ch1-3-theory-46",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(N2) = 28.0/28.02 = 0.9993 mol; n(H2) = 9.00/2.016 = 4.464 mol. H2 needed = 3 x 0.9993 = 2.998 mol, so N2 is limiting. Theoretical NH3 = 2 x 0.9993 x 17.03 = 34.0 g; % yield = 25.5/34.0 x 100 = 74.9%.",
+    "ambiguous": false,
+    "cleanExplanation": "n(N2) = 28.0/28.02 = 0.999 mol and n(H2) = 9.00/2.016 = 4.46 mol; only 3.00 mol H2 is needed, so N2 is limiting. Theoretical NH3 = 2 x 0.999 x 17.03 = 34.0 g, and percent yield = (25.5/34.0) x 100 = 75.0%."
+  },
+  {
+    "id": "ch1-3-theory-47",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(S8) = 1000/256.5 = 3.899 mol, containing 8 x 3.899 = 31.19 mol S. Each S gives one H2SO4, so mass = 31.19 x 98.08 = 3059 g = 3.06 kg.",
+    "ambiguous": false,
+    "cleanExplanation": "1.00 kg of S8 is 1000/256.5 = 3.90 mol S8, i.e. 8 x 3.90 = 31.2 mol S atoms. Every sulfur atom ends up in one H2SO4 (S8 -> 8 SO2 -> 8 SO3 -> 8 H2SO4), so the mass is 31.2 x 98.08 = 3060 g = 3.06 kg."
+  },
+  {
+    "id": "ch1-3-theory-48",
+    "answer": "C",
+    "confidence": "high",
+    "work": "H2 is limiting: 2.00 mol H2 consumes 1.00 mol O2 and forms 2.00 mol H2O. O2 left = 2.00 - 1.00 = 1.00 mol, so total gas = 2.00 (H2O) + 1.00 (O2) = 3.00 mol.",
+    "ambiguous": false,
+    "cleanExplanation": "The 2.00 mol H2 requires only 1.00 mol O2, so H2 is limiting and 2.00 mol H2O vapor forms. The excess O2 is 2.00 - 1.00 = 1.00 mol, giving a total of 2.00 + 1.00 = 3.00 mol of gas."
+  },
+  {
+    "id": "ch1-3-theory-49",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Moles of M per mole of nitride = 0.500/0.167 = 3.0, so the formula is M3Ny (e.g. Mg3N2 with y = 2). Hence x = 3.",
+    "ambiguous": false,
+    "cleanExplanation": "The ratio of metal to nitride is 0.500 mol : 0.167 mol = 3 : 1, so each formula unit contains three metal atoms. The nitride is of the form M3N2 (such as Mg3N2), and x = 3."
+  },
+  {
+    "id": "ch1-3-theory-50",
+    "answer": "A",
+    "confidence": "high",
+    "work": "n(salicylic acid) = 2.00/138.12 = 0.01448 mol; n(acetic anhydride) = 2.00/102.09 = 0.01959 mol, so salicylic acid is limiting. Theoretical aspirin = 0.01448 x 180.16 = 2.609 g; at 85.0% yield, 2.609 x 0.850 = 2.22 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Moles: salicylic acid = 2.00/138.12 = 0.01448 mol, acetic anhydride = 2.00/102.09 = 0.01959 mol. The 1:1 reaction is limited by salicylic acid, giving 0.01448 x 180.16 = 2.61 g theoretical aspirin; at 85.0% yield, 2.61 x 0.850 = 2.22 g is collected."
+  },
+  {
+    "id": "ch1-3-lab-01",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The three masses span only 15.4320-15.4323 g (about 0.0003 g spread), so the measurements are highly reproducible (precise). All three lie about 0.018 g below the true 15.4500 g, a systematic offset, so they are not accurate.",
+    "ambiguous": false,
+    "cleanExplanation": "Precision describes how closely replicate measurements agree, and these three values differ by only about 0.0003 g, so the student is precise. Accuracy describes closeness to the true value; every reading is about 0.018 g low, so the data are precise but not accurate."
+  },
+  {
+    "id": "ch1-3-lab-02",
+    "answer": "B",
+    "confidence": "high",
+    "work": "A volumetric (TD) pipet is calibrated to deliver its stated volume when allowed to drain freely with the tip touching the inner wall of the receiving vessel. Blowing out the residual drop delivers extra volume, and rinsing with water dilutes the sample.",
+    "ambiguous": false,
+    "cleanExplanation": "A volumetric pipet is calibrated to deliver its nominal volume when the liquid drains freely and the tip is touched to the inner wall of the receiving vessel, letting capillary action remove the hanging drop. Blowing out the last drop would deliver more than the calibrated volume, and rinsing the pipet with water would dilute the sample."
+  },
+  {
+    "id": "ch1-3-lab-03",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Trapped bubbles add extra apparent displacement, so the volume read is larger than the solid's true volume. Since density = mass/volume with an inflated denominator, the calculated density comes out too low.",
+    "ambiguous": false,
+    "cleanExplanation": "Air bubbles stuck to the solid displace water just as the solid does, so the measured volume increase is larger than the true volume of the metal. The mass is unaffected, and dividing it by an oversized volume gives a density lower than the true value."
+  },
+  {
+    "id": "ch1-3-lab-04",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Water mass = 50.000 - 25.000 = 25.000 g, giving bottle volume = 25.000/0.9982 = 25.045 cm3. Oil mass = 46.250 - 25.000 = 21.250 g; density = 21.250/25.045 = 0.8485 g/cm3 (choice 0.8483 differs only in the third decimal).",
+    "ambiguous": false,
+    "cleanExplanation": "The bottle holds 50.000 - 25.000 = 25.000 g of water, so its volume is 25.000/0.9982 = 25.045 cm3. The oil filling it has mass 46.250 - 25.000 = 21.250 g, so its density is 21.250/25.045 = 0.8485 ~ 0.8483 g/cm3."
+  },
+  {
+    "id": "ch1-3-lab-05",
+    "answer": "C",
+    "confidence": "medium",
+    "work": "A buret is designed to deliver precisely measurable, continuously adjustable volumes (readings to 0.01 mL), making it the variable-volume device of highest precision. Graduated cylinders read only to about 0.1 mL, beakers have no reliable graduations, and a volumetric flask delivers a single fixed volume.",
+    "ambiguous": false,
+    "cleanExplanation": "Among volumetric tools, the buret is built for delivering variable volumes with high precision, since its fine graduations and stopcock allow readings to about 0.01 mL. A graduated cylinder is far less precise, a beaker is only approximate, and a volumetric flask holds one fixed volume rather than a variable one."
+  },
+  {
+    "id": "ch1-3-lab-06",
+    "answer": "D",
+    "confidence": "high",
+    "work": "The net mass requires two independent readings, each uncertain by 0.01 g. Combined in quadrature: sqrt(0.01^2 + 0.01^2) = 0.014 g. (A simple worst-case sum would give 0.02 g, but standard propagation for a difference uses 0.014 g.)",
+    "ambiguous": false,
+    "cleanExplanation": "The sample mass is 4.78 - 1.25 = 3.53 g, obtained from two separate weighings that each carry an uncertainty of 0.01 g. Uncertainties of added or subtracted values add in quadrature: sqrt(0.01^2 + 0.01^2) = 0.014 g, so the net mass is 3.53 +/- 0.014 g."
+  },
+  {
+    "id": "ch1-3-lab-07",
+    "answer": "A",
+    "confidence": "high",
+    "work": "At 25 degrees C the water density is 0.99707 g/mL, so V = m/d = 9.9231/0.99707 = 9.952 mL. Choosing 9.894 mL would correspond to dividing by a density greater than 1.",
+    "ambiguous": false,
+    "cleanExplanation": "The delivered water mass corresponds to a volume of V = m/d = 9.9231 g / 0.99707 g/mL = 9.952 mL. Thus the pipet delivers slightly less than its 10.00 mL nominal volume, a delivery of 9.952 mL."
+  },
+  {
+    "id": "ch1-3-lab-08",
+    "answer": "A",
+    "confidence": "medium",
+    "work": "Water clinging to the outside of the cylinder is carried into the displacement vessel, so the recorded final volume includes droplet volume and the calculated volume of the metal is too large. Dividing the metal mass by an inflated volume makes the calculated density lower than the true value.",
+    "ambiguous": false,
+    "cleanExplanation": "Droplets of water carried on the wet cylinder add extra liquid to the displacement measurement, so the volume attributed to the metal is larger than its true volume. Because density is mass divided by volume, an overestimated volume gives a calculated density lower than the true value."
+  },
+  {
+    "id": "ch1-3-lab-09",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Chemical splashes in the eye must be flushed immediately with copious low-pressure water for at least 15 minutes, which is what an eyewash station provides. Showers, hoods, and fire blankets serve other hazards (body splashes, vapors, fire).",
+    "ambiguous": false,
+    "cleanExplanation": "An eyewash station delivers a gentle, continuous flow of water for flushing the eyes and is the correct immediate response to a chemical splash in the eye, holding the lids open and rinsing for at least 15 minutes. A safety shower is for large body splashes, a fume hood controls vapors, and a fire blanket smothers flames."
+  },
+  {
+    "id": "ch1-3-lab-10",
+    "answer": "A",
+    "confidence": "high",
+    "work": "T(K) = 298.15 K = 25.00 degrees C. Then T(F) = (9/5)(25.00) + 32 = 45.00 + 32 = 77.0 degrees F.",
+    "ambiguous": false,
+    "cleanExplanation": "First convert Kelvin to Celsius: 298.15 - 273.15 = 25.00 degrees C. Then apply the Fahrenheit relation, F = (9/5)(25.00) + 32 = 45.0 + 32 = 77.0 degrees F."
+  }
+]

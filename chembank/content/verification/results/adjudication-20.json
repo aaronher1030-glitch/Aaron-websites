@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-36",
+  "answer": "B",
+  "confidence": "high",
+  "work": "Moles of SO2 = 1.00e6 g / 64.07 g/mol = 1.561e4 mol. The thermochemical equation gives 198 kJ per 2 mol SO2, so the heat per mole is 99 kJ/mol. Heat released = 1.561e4 mol x 99 kJ/mol = 1.55e6 kJ, which matches choice B.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "Choice B (1.55e6 kJ) follows directly from 15,610 mol SO2 x 99 kJ/mol. The source keyed C (3.10e6 kJ), which would require doubling the enthalpy, and its own explanation actually concludes (B), so the key letter is inconsistent with the source's chemistry; the blind answer B is correct.",
+  "cleanExplanation": "Convert the mass of SO2 to moles: 1.00e6 g / 64.07 g/mol = 1.56e4 mol. The equation releases 198 kJ for every 2 mol SO2, i.e. 99 kJ per mol. Multiplying gives 1.56e4 mol x 99 kJ/mol = 1.55e6 kJ released."
+}

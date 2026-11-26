@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ch1-3-theory-01",
+    "answer": "B",
+    "confidence": "high",
+    "work": "r = 2.50 nm = 2.50x10^-7 cm, so V = (4/3)pi r^3 = 6.545x10^-20 cm^3. Mass = 19.3 x 6.545x10^-20 = 1.263x10^-18 g, giving n = 1.263x10^-18/197.0 = 6.41x10^-21 mol. Atoms = 6.41x10^-21 x 6.022x10^23 = 3.86x10^3. The FCC detail is not needed for a density-based count.",
+    "ambiguous": false,
+    "cleanExplanation": "The particle volume is V = (4/3)&pi;r&sup3; with r = 2.50 &times; 10<sup>&minus;7</sup> cm, giving V = 6.55 &times; 10<sup>&minus;20</sup> cm&sup3;. Multiplying by the density 19.3 g/cm&sup3; gives a mass of 1.26 &times; 10<sup>&minus;18</sup> g, which is 6.41 &times; 10<sup>&minus;21</sup> mol of gold. Multiplying by Avogadro's number gives about 3.86 &times; 10<sup>3</sup> atoms in the nanoparticle."
+  },
+  {
+    "id": "ch1-3-theory-02",
+    "answer": "A",
+    "confidence": "high",
+    "work": "3.00x10^8 m/s divided by 201.168 m/furlong gives 1.4913x10^6 furlongs per second. A fortnight is 14 x 24 x 3600 = 1,209,600 s. So 1.4913x10^6 x 1.2096x10^6 = 1.80x10^12 furlongs/fortnight.",
+    "ambiguous": false,
+    "cleanExplanation": "First convert metres to furlongs: 3.00 &times; 10<sup>8</sup> m/s &divide; 201.168 m/furlong = 1.49 &times; 10<sup>6</sup> furlongs per second. One fortnight contains 14 &times; 24 &times; 3600 = 1.2096 &times; 10<sup>6</sup> s. Multiplying the two factors gives 1.80 &times; 10<sup>12</sup> furlongs per fortnight."
+  },
+  {
+    "id": "ch1-3-theory-03",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Intensive properties are independent of sample size. Total heat capacity (J/K), volume (mL) and mass (kg) all scale with the amount of material. The boiling point is a fixed characteristic of the substance and does not change with sample size.",
+    "ambiguous": false,
+    "cleanExplanation": "An intensive property does not depend on how much material is present. Heat capacity, volume and mass of a given sample all change when the sample size changes, so they are extensive. The boiling point, 78.37 &deg;C for ethanol, is a characteristic of the substance itself, so it is intensive."
+  },
+  {
+    "id": "ch1-3-theory-04",
+    "answer": "B",
+    "confidence": "medium",
+    "work": "Numerator: 14.285 - 0.0821 = 14.2029 -> 14.20 (hundredths place, 4 s.f.); times 0.05200 = 0.7384. Denominator: 3.14159 + 0.002 = 3.14359 -> 3.144 (thousandths place, 4 s.f.). The full quotient is 0.73855/3.14359 = 0.23494, which is 0.235 when expressed to three significant figures as in the choices.",
+    "ambiguous": false,
+    "cleanExplanation": "The difference 14.285 &minus; 0.0821 = 14.2029 is limited to the hundredths place, so it is 14.20; multiplying by 0.05200 gives 0.7384. The sum 3.14159 + 0.002 = 3.14359 is limited to the thousandths place, so it is 3.144. Dividing gives 0.23494, which is best expressed as 0.235."
+  },
+  {
+    "id": "ch1-3-theory-05",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Cork volume = 10.0 cm x 1.50 cm^2 = 15.0 cm^3, mass = 15.0 x 0.240 = 3.60 g. Floating means displaced fluid mass equals 3.60 g, so displaced volume = 3.60/1.20 = 3.00 cm^3. Submerged length = 3.00 cm^3 / 1.50 cm^2 = 2.00 cm.",
+    "ambiguous": false,
+    "cleanExplanation": "The cork has a volume of 10.0 cm &times; 1.50 cm&sup2; = 15.0 cm&sup3;, so its mass is 15.0 cm&sup3; &times; 0.240 g/cm&sup3; = 3.60 g. A floating object displaces its own mass of fluid, so 3.60 g of fluid is displaced, occupying 3.60/1.20 = 3.00 cm&sup3;. Dividing by the 1.50 cm&sup2; cross-section gives a submerged length of 2.00 cm."
+  },
+  {
+    "id": "ch1-3-theory-06",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Water mass = 45.50 - 22.10 = 23.40 g; container volume = 23.40/0.998 = 23.45 mL. Unknown liquid mass = 51.20 - 22.10 = 29.10 g. Density = 29.10/23.45 = 1.24 g/mL.",
+    "ambiguous": false,
+    "cleanExplanation": "The container holds 45.50 &minus; 22.10 = 23.40 g of water, which occupies 23.40/0.998 = 23.45 mL, so this is the container's volume. The unknown liquid has mass 51.20 &minus; 22.10 = 29.10 g in that same volume. Its density is 29.10/23.45 = 1.24 g/mL."
+  },
+  {
+    "id": "ch1-3-theory-07",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Sublimation, dissolution of NaCl and fractional distillation are all physical processes that change only state or dispersion, with the substance unchanged. Tarnishing converts silver metal to silver sulfide (Ag2S), forming a new substance with different composition.",
+    "ambiguous": false,
+    "cleanExplanation": "Sublimation, dissolving salt in water and fractional distillation of air all change only the physical state or the degree of mixing; the substances themselves are recovered unchanged. Tarnishing forms silver sulfide on the metal surface, a new compound with a different composition, so it is a chemical change."
+  },
+  {
+    "id": "ch1-3-theory-08",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Substitute -273.15: 1.50 x (-273.15) = -409.725; adding 20.0 gives -389.7. To the precision of the given data, -389.73 degrees X.",
+    "ambiguous": false,
+    "cleanExplanation": "Using the conversion, &deg;X = 1.50(&minus;273.15) + 20.0. The product is &minus;409.725, and adding 20.0 gives &minus;389.725, i.e. about &minus;389.73 &deg;X. Absolute zero therefore lies at &minus;389.73 on this scale."
+  },
+  {
+    "id": "ch1-3-theory-09",
+    "answer": "A",
+    "confidence": "high",
+    "work": "A homogeneous mixture (solution) has variable composition and its components retain their identities, so they can be separated by physical methods such as distillation or evaporation. Pure substances have fixed composition, and a mixture certainly may be a gas (e.g. air).",
+    "ambiguous": false,
+    "cleanExplanation": "In a homogeneous mixture the components keep their own identities and the composition can vary, so physical methods such as distillation or evaporation can separate them. A pure substance has a fixed composition and requires a chemical change to break it down. The other statements are false: mixtures need not have fixed composition or single-atom composition, and gases like air are homogeneous mixtures."
+  },
+  {
+    "id": "ch1-3-theory-10",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Foil volume = 1.076/21.45 = 0.05016 cm^3. Area = 2.50 x 4.00 = 10.0 cm^2. Thickness = 0.05016/10.0 = 5.016x10^-3 cm = 50.2 micrometers.",
+    "ambiguous": false,
+    "cleanExplanation": "The foil volume is mass/density = 1.076 g &divide; 21.45 g/cm&sup3; = 0.05016 cm&sup3;. Its face area is 2.50 cm &times; 4.00 cm = 10.0 cm&sup2;, so the thickness is 0.05016/10.0 = 5.02 &times; 10<sup>&minus;3</sup> cm. Since 1 cm = 10<sup>4</sup> &mu;m, this equals about 50.2 &mu;m."
+  },
+  {
+    "id": "ch1-3-theory-11",
+    "answer": "A",
+    "confidence": "high",
+    "work": "m = |e| / |e/m| = 1.602x10^-19 C / 1.76x10^8 C/g = 9.10x10^-28 g. The coulomb units cancel, leaving grams.",
+    "ambiguous": false,
+    "cleanExplanation": "The mass-to-charge ratio is 1.76 &times; 10<sup>8</sup> C/g, so mass = charge &divide; (e/m). Dividing 1.602 &times; 10<sup>&minus;19</sup> C by 1.76 &times; 10<sup>8</sup> C/g gives 9.10 &times; 10<sup>&minus;28</sup> g, the electron mass."
+  },
+  {
+    "id": "ch1-3-theory-12",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Alpha emission removes 2 protons and 4 mass units: U-238 -> Th-234. Each beta emission converts a neutron into a proton, so Z rises by 1 while A is unchanged: Th-234 -> Pa-234 -> U-234. Net result is U-234 with Z = 92.",
+    "ambiguous": false,
+    "cleanExplanation": "Alpha decay of U-238 gives Th-234 (A falls by 4, Z falls by 2). Each beta particle emission raises Z by one without changing A, so after two betas the product is Pa-234 and then U-234. The daughter nuclide is therefore U-234, with 92 protons and 234 nucleons."
+  },
+  {
+    "id": "ch1-3-theory-13",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Let x be the fraction of Cl-37: 34.9688(1-x) + 36.9659x = 35.4527. Then 1.9971x = 0.4839, so x = 0.2423, i.e. 24.23% Cl-37 (and 75.77% Cl-35).",
+    "ambiguous": false,
+    "cleanExplanation": "Set the fractional abundance of Cl-37 to x and that of Cl-35 to 1 &minus; x: 34.9688(1 &minus; x) + 36.9659x = 35.4527. Solving gives 1.9971x = 0.4839, so x = 0.2423. Thus Cl-37 is about 24.23% abundant and Cl-35 about 75.77%."
+  },
+  {
+    "id": "ch1-3-theory-14",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Nickel has Z = 28, so 28 protons; neutrons = 59 - 28 = 31. A 3+ cation has lost three electrons: 28 - 3 = 25 electrons.",
+    "ambiguous": false,
+    "cleanExplanation": "The atomic number of Ni is 28, so the nucleus contains 28 protons and 59 &minus; 28 = 31 neutrons. A 3+ ion has lost three electrons from the neutral atom, leaving 28 &minus; 3 = 25 electrons."
+  },
+  {
+    "id": "ch1-3-theory-15",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Most alpha particles passed straight through the foil while a small fraction were deflected strongly or back-scattered. This requires a tiny, massive, positively charged centre, i.e. a dense nucleus. Fixed energy levels (Bohr) and the plum-pudding model were not supported by this evidence.",
+    "ambiguous": false,
+    "cleanExplanation": "In Rutherford's experiment most alpha particles passed through the gold foil undeflected, but a few were strongly deflected or bounced back. That pattern is only possible if an atom's mass and positive charge are concentrated in a very small, dense nucleus, leaving mostly empty space. It also ruled out the uniform positive sphere (plum-pudding) model."
+  },
+  {
+    "id": "ch1-3-theory-16",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Isotopes are atoms of the same element (same Z) with different mass number. Pb-204 and Pb-208 both have Z = 82. The other pairs differ in atomic number (C/N, Ar/Ca, Te/Xe) and are not the same element.",
+    "ambiguous": false,
+    "cleanExplanation": "Isotopes have the same atomic number but different numbers of neutrons. Pb-204 and Pb-208 both have 82 protons, differing only in neutron count (122 vs 126). Each of the other pairs contains two different elements because their atomic numbers differ."
+  },
+  {
+    "id": "ch1-3-theory-17",
+    "answer": "B",
+    "confidence": "high",
+    "work": "In X2O3, 3 x 16.00 = 48.00 g of O is 30.06% of the molar mass, so M = 48.00/0.3006 = 159.7 g/mol. Then 2M(X) = 159.7 - 48.00 = 111.7, so M(X) = 55.8 g/mol, which is iron.",
+    "ambiguous": false,
+    "cleanExplanation": "One mole of X&#8322;O&#8323; contains 48.00 g of oxygen, which represents 30.06% of the formula mass. The formula mass is therefore 48.00/0.3006 = 159.7 g/mol, leaving 159.7 &minus; 48.00 = 111.7 g for two moles of X. Hence M(X) = 55.8 g/mol, identifying X as iron."
+  },
+  {
+    "id": "ch1-3-theory-18",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Ar has 18 electrons. Na+ has 10, S2- has 16 + 2 = 18, Br- has 36, and Fe2+ has 24. Only sulfide, S2-, has the argon electron count.",
+    "ambiguous": false,
+    "cleanExplanation": "Argon has 18 electrons. Na<sup>+</sup> has 10, S<sup>2&minus;</sup> has 16 + 2 = 18, Br<sup>&minus;</sup> has 36, and Fe<sup>2+</sup> has 24. Only S<sup>2&minus;</sup> is isoelectronic with argon."
+  },
+  {
+    "id": "ch1-3-theory-19",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Weighted average = 23.9850(0.7899) + 24.9858(0.1000) + 25.9826(0.1101) = 18.946 + 2.499 + 2.861 = 24.305 amu. That matches magnesium (24.31).",
+    "ambiguous": false,
+    "cleanExplanation": "Multiply each isotopic mass by its fractional abundance and add: 23.9850(0.7899) = 18.946, 24.9858(0.1000) = 2.499, and 25.9826(0.1101) = 2.861. The sum is 24.305 amu, which matches the atomic weight of magnesium (24.31 amu)."
+  },
+  {
+    "id": "ch1-3-theory-20",
+    "answer": "C",
+    "confidence": "high",
+    "work": "N contributes 7 electrons and three O atoms contribute 3 x 8 = 24, giving 31; the -1 charge adds one more electron. Total = 32 electrons.",
+    "ambiguous": false,
+    "cleanExplanation": "A nitrogen atom has 7 electrons and each of the three oxygen atoms has 8, for 7 + 24 = 31 electrons. The single negative charge adds one extra electron, so nitrate, NO&#8323;<sup>&minus;</sup>, has 32 electrons in total."
+  }
+]

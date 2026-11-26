@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-mixed-001",
+    "answer": "B",
+    "confidence": "high",
+    "work": "For <sup>35</sup>Cl the mass number is 35 and Z = 17, so neutrons = A - Z = 35 - 17 = 18. Gaining an electron changes only the electron count, not the nucleus.",
+    "ambiguous": false,
+    "cleanExplanation": "Chlorine has Z = 17, and the isotope is chlorine-35 (A = 35). Neutrons = A - Z = 35 - 17 = 18. The negative charge means one extra electron, which does not change the number of neutrons."
+  },
+  {
+    "id": "proto-mixed-002",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Na, Mg, Al and Cl are in the same period (period 3). Across a period, effective nuclear charge increases and radius decreases, so radius order is Na > Mg > Al > Cl.",
+    "ambiguous": false,
+    "cleanExplanation": "These four elements are all in period 3. Moving left to right, added protons pull the same-shell electrons in more tightly, so atomic radius decreases: Na > Mg > Al > Cl. Sodium therefore has the largest radius."
+  },
+  {
+    "id": "proto-mixed-003",
+    "answer": "C",
+    "confidence": "high",
+    "work": "CO<sub>2</sub> (linear), BF<sub>3</sub> (trigonal planar) and CH<sub>4</sub> (tetrahedral) have symmetric bond dipoles that cancel. NH<sub>3</sub> is trigonal pyramidal with a lone pair, so its dipoles do not cancel.",
+    "ambiguous": false,
+    "cleanExplanation": "A molecule is polar only if its bond dipoles do not cancel. CO<sub>2</sub>, BF<sub>3</sub> and CH<sub>4</sub> are symmetric, so their dipoles cancel. NH<sub>3</sub> is trigonal pyramidal with a lone pair on nitrogen, so the N-H dipoles add up to a net dipole."
+  },
+  {
+    "id": "proto-mixed-004",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Boyle's law at constant T: P<sub>1</sub>V<sub>1</sub> = P<sub>2</sub>V<sub>2</sub>. P<sub>2</sub> = (1.0 atm)(2.0 L)/(0.50 L) = 4.0 atm.",
+    "ambiguous": false,
+    "cleanExplanation": "At constant temperature, P<sub>1</sub>V<sub>1</sub> = P<sub>2</sub>V<sub>2</sub>. The volume falls from 2.0 L to 0.50 L, a factor of 4 decrease, so the pressure rises by the same factor: P<sub>2</sub> = 1.0 atm × 2.0/0.50 = 4.0 atm."
+  },
+  {
+    "id": "proto-mixed-005",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Each Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> unit contains 3 sulfate groups × 4 O = 12 O atoms. n(O) = 0.50 mol × 12 = 6.0 mol.",
+    "ambiguous": false,
+    "cleanExplanation": "In one formula unit of Al<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub> there are three sulfate ions, giving 3 × 4 = 12 oxygen atoms. So 0.50 mol of the compound contains 0.50 × 12 = 6.0 mol of oxygen atoms."
+  },
+  {
+    "id": "proto-mixed-006",
+    "answer": "B",
+    "confidence": "high",
+    "work": "n(H<sub>2</sub>) = 3.0/2.0 = 1.5 mol; n(O<sub>2</sub>) = 32/32 = 1.0 mol. 1.0 mol O<sub>2</sub> needs 2.0 mol H<sub>2</sub>, so H<sub>2</sub> is limiting. Water = 1.5 mol × 18 g/mol = 27 g.",
+    "ambiguous": false,
+    "cleanExplanation": "Moles: H<sub>2</sub> = 3.0/2.0 = 1.5 mol and O<sub>2</sub> = 32/32 = 1.0 mol. The equation needs 2 mol H<sub>2</sub> per 1 mol O<sub>2</sub>, so 1.0 mol O<sub>2</sub> would require 2.0 mol H<sub>2</sub>; only 1.5 mol is present, making H<sub>2</sub> the limiting reagent. Then 1.5 mol H<sub>2</sub> gives 1.5 mol H<sub>2</sub>O = 1.5 × 18 = 27 g."
+  },
+  {
+    "id": "proto-mixed-007",
+    "answer": "B",
+    "confidence": "high",
+    "work": "K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>: 2(+1) + 2x + 7(-2) = 0, so 2x = 12 and x = +6.",
+    "ambiguous": false,
+    "cleanExplanation": "Assign K = +1 and O = -2. The neutral salt requires 2(+1) + 2x + 7(-2) = 0, giving 2x = 12, so each chromium is +6."
+  },
+  {
+    "id": "proto-mixed-008",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Reverse the second equation (CO<sub>2</sub> → CO + ½O<sub>2</sub>, +283 kJ) and add it to C + O<sub>2</sub> → CO<sub>2</sub> (-394 kJ). Sum: C + ½O<sub>2</sub> → CO, ΔH = -394 + 283 = -111 kJ.",
+    "ambiguous": false,
+    "cleanExplanation": "Use Hess's law. Keep C + O<sub>2</sub> → CO<sub>2</sub> (ΔH = -394 kJ) and reverse CO + ½O<sub>2</sub> → CO<sub>2</sub> to get CO<sub>2</sub> → CO + ½O<sub>2</sub> (ΔH = +283 kJ). Adding and cancelling CO<sub>2</sub> leaves C + ½O<sub>2</sub> → CO with ΔH = -394 + 283 = -111 kJ."
+  },
+  {
+    "id": "proto-mixed-009",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The forward reaction is exothermic, so heat acts as a product. Raising T shifts the equilibrium left, lowering K because K depends only on temperature.",
+    "ambiguous": false,
+    "cleanExplanation": "For an exothermic reaction, heat is released as a product. Raising the temperature adds heat, shifting the equilibrium towards N<sub>2</sub> and H<sub>2</sub>. Because the equilibrium position moves to the reactant side, the equilibrium constant K decreases."
+  },
+  {
+    "id": "proto-mixed-010",
+    "answer": "D",
+    "confidence": "high",
+    "work": "60 min / 20 min = 3 half-lives. Remaining fraction = (1/2)<sup>3</sup> = 1/8.",
+    "ambiguous": false,
+    "cleanExplanation": "60 min is three half-lives (3 × 20 min). Each half-life halves the amount remaining, so the fraction left is (1/2)<sup>3</sup> = 1/8."
+  },
+  {
+    "id": "proto-mixed-011",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Moles HCl = 0.100 mol/L × 0.0250 L = 2.50 × 10<sup>-3</sup> mol. 1:1 with NaOH, so V = 2.50 × 10<sup>-3</sup>/0.125 = 0.0200 L = 20.0 mL.",
+    "ambiguous": false,
+    "cleanExplanation": "NaOH and HCl react 1:1. Moles of HCl = 0.100 × 0.0250 = 2.50 × 10<sup>-3</sup> mol, so 2.50 × 10<sup>-3</sup> mol NaOH is needed. Volume = 2.50 × 10<sup>-3</sup> / 0.125 = 0.0200 L = 20.0 mL."
+  },
+  {
+    "id": "proto-mixed-012",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Ba(OH)<sub>2</sub> gives 2 OH<sup>-</sup> per unit, so [OH<sup>-</sup>] = 2.0 × 10<sup>-3</sup> M. pOH = 2.70, pH = 14.00 - 2.70 = 11.30.",
+    "ambiguous": false,
+    "cleanExplanation": "Ba(OH)<sub>2</sub> is a strong base that releases two hydroxide ions, so [OH<sup>-</sup>] = 2 × 0.0010 = 0.0020 M. pOH = -log(0.0020) = 2.70, and pH = 14.00 - 2.70 = 11.30."
+  },
+  {
+    "id": "proto-mixed-013",
+    "answer": "A",
+    "confidence": "high",
+    "work": "R<sub>f</sub> = distance moved by spot / distance moved by solvent front = 3.0 cm / 6.0 cm = 0.50. R<sub>f</sub> is always between 0 and 1.",
+    "ambiguous": false,
+    "cleanExplanation": "The retention factor is the spot distance divided by the solvent-front distance: R<sub>f</sub> = 3.0/6.0 = 0.50. Values above 1 are impossible since a spot cannot travel beyond the solvent front."
+  },
+  {
+    "id": "proto-mixed-014",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Henderson-Hasselbalch: pH = pK<sub>a</sub> + log([A<sup>-</sup>]/[HA]) = 4.76 + log(0.20/0.10) = 4.76 + 0.30 = 5.06.",
+    "ambiguous": false,
+    "cleanExplanation": "Using the Henderson-Hasselbalch equation, pH = pK<sub>a</sub> + log([CH<sub>3</sub>COO<sup>-</sup>]/[CH<sub>3</sub>COOH]). The ratio is 0.20/0.10 = 2, and log 2 = 0.30, so pH = 4.76 + 0.30 = 5.06."
+  },
+  {
+    "id": "proto-mixed-015",
+    "answer": "B",
+    "confidence": "high",
+    "work": "CH<sub>3</sub>COCH<sub>3</sub> (acetone) has a carbonyl carbon bonded to two carbon atoms, which defines a ketone.",
+    "ambiguous": false,
+    "cleanExplanation": "The structure is CH<sub>3</sub>-CO-CH<sub>3</sub>: a carbonyl group whose carbon is bonded to two other carbons. That is the defining feature of a ketone (an aldehyde would have at least one H on the carbonyl carbon)."
+  },
+  {
+    "id": "proto-mixed-016",
+    "answer": "B",
+    "confidence": "high",
+    "work": "C<sub>5</sub>H<sub>12</sub> is an alkane (C<sub>n</sub>H<sub>2n+2</sub>) with three chain isomers: pentane, 2-methylbutane (isopentane) and 2,2-dimethylpropane (neopentane).",
+    "ambiguous": false,
+    "cleanExplanation": "Only three constitutional isomers exist for C<sub>5</sub>H<sub>12</sub>: pentane (straight chain), 2-methylbutane (one branch) and 2,2-dimethylpropane (two branches on one carbon). All other namings reduce to one of these."
+  },
+  {
+    "id": "proto-mixed-017",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Br<sub>2</sub> adds across the C=C double bond, converting it to a single bond with one Br on each carbon. No atoms are lost, so this is an addition reaction.",
+    "ambiguous": false,
+    "cleanExplanation": "Ethene's carbon-carbon double bond opens up and one bromine atom bonds to each carbon, giving 1,2-dibromoethane. Because the two reactants combine into a single product with no atoms lost, the reaction is an addition."
+  },
+  {
+    "id": "proto-mixed-018",
+    "answer": "B",
+    "confidence": "high",
+    "work": "A peptide bond is an amide linkage formed by condensation between the -COOH of one amino acid and the -NH<sub>2</sub> of another, with loss of H<sub>2</sub>O.",
+    "ambiguous": false,
+    "cleanExplanation": "The carboxyl group (-COOH) of one amino acid reacts with the amino group (-NH<sub>2</sub>) of the next, forming an amide (-CO-NH-) linkage and releasing one water molecule. This condensation is what joins amino acids into a peptide chain."
+  },
+  {
+    "id": "proto-mixed-019",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Leading zeros (0.00) are not significant; the significant digits are 3, 0, 4 and the final 0 after the decimal = 4 significant figures.",
+    "ambiguous": false,
+    "cleanExplanation": "In 0.003040 the leading zeros only locate the decimal point and are not significant. The significant digits are 3, 0, 4 and the trailing 0 after the decimal (a trailing zero after a decimal point is significant), giving 4 significant figures."
+  },
+  {
+    "id": "proto-mixed-020",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Sum = 10.2 + 10.4 + 10.1 + 10.3 = 41.0; divide by 4 values: 41.0/4 = 10.25.",
+    "ambiguous": false,
+    "cleanExplanation": "Add the four measurements: 10.2 + 10.4 + 10.1 + 10.3 = 41.0. Dividing by the count (4) gives the mean: 41.0/4 = 10.25."
+  }
+]

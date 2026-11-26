@@ -1,0 +1,142 @@
+[
+  {
+    "id": "proto-textbook-091",
+    "stem": "Which pair are isotopes of the same element?",
+    "choices": [
+      "<sup>12</sup>C and <sup>14</sup>C",
+      "<sup>1</sup>H and <sup>4</sup>He",
+      "<sup>14</sup>C and <sup>14</sup>N",
+      "<sup>40</sup>K and <sup>40</sup>Ca"
+    ]
+  },
+  {
+    "id": "proto-textbook-092",
+    "stem": "Copper has two isotopes, <sup>63</sup>Cu (62.93 amu, 69.15%) and <sup>65</sup>Cu (64.93 amu). What is the average atomic mass?",
+    "choices": [
+      "63.93 amu",
+      "62.93 amu",
+      "64.00 amu",
+      "63.55 amu"
+    ]
+  },
+  {
+    "id": "proto-textbook-093",
+    "stem": "Which of these is a noble gas?",
+    "choices": [
+      "Argon",
+      "Chlorine",
+      "Potassium",
+      "Calcium"
+    ]
+  },
+  {
+    "id": "proto-textbook-094",
+    "stem": "Which statement is true of metals compared with nonmetals?",
+    "choices": [
+      "Metals tend to gain electrons.",
+      "Metals tend to lose electrons and conduct electricity well.",
+      "Metals are usually gases.",
+      "Metals have high ionization energies."
+    ]
+  },
+  {
+    "id": "proto-textbook-095",
+    "stem": "How many elements are in Period 2?",
+    "choices": [
+      "18",
+      "10",
+      "2",
+      "8"
+    ]
+  },
+  {
+    "id": "proto-textbook-096",
+    "stem": "What is the charge on the sulfide ion formed from sulfur (Group 16)?",
+    "choices": [
+      "2+",
+      "6−",
+      "1−",
+      "2−"
+    ]
+  },
+  {
+    "id": "proto-textbook-097",
+    "stem": "Which is a polyatomic cation?",
+    "choices": [
+      "SO<sub>4</sub><sup>2−</sup>",
+      "NO<sub>3</sub><sup>−</sup>",
+      "NH<sub>4</sub><sup>+</sup>",
+      "Cl<sup>−</sup>"
+    ]
+  },
+  {
+    "id": "proto-textbook-098",
+    "stem": "How many electrons are in the chloride ion, Cl<sup>−</sup>? (Cl: Z = 17)",
+    "choices": [
+      "19",
+      "18",
+      "17",
+      "16"
+    ]
+  },
+  {
+    "id": "proto-textbook-099",
+    "stem": "What is the empirical formula of glucose, C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>?",
+    "choices": [
+      "CHO",
+      "CH<sub>2</sub>O",
+      "C<sub>3</sub>H<sub>6</sub>O<sub>3</sub>",
+      "C<sub>2</sub>H<sub>4</sub>O<sub>2</sub>"
+    ]
+  },
+  {
+    "id": "proto-textbook-100",
+    "stem": "What is the formula of the compound formed by Mg<sup>2+</sup> and PO<sub>4</sub><sup>3−</sup>?",
+    "choices": [
+      "MgPO<sub>4</sub>",
+      "Mg<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>",
+      "Mg<sub>2</sub>(PO<sub>4</sub>)<sub>3</sub>",
+      "Mg<sub>3</sub>PO<sub>4</sub>"
+    ]
+  },
+  {
+    "id": "proto-textbook-101",
+    "stem": "Which kind of formula shows how the atoms in a molecule are connected?",
+    "choices": [
+      "Empirical formula",
+      "Molecular formula",
+      "Structural formula",
+      "Formula unit"
+    ]
+  },
+  {
+    "id": "proto-textbook-102",
+    "stem": "What is the formula of sodium sulfite?",
+    "choices": [
+      "Na<sub>2</sub>SO<sub>3</sub>",
+      "Na<sub>2</sub>SO<sub>4</sub>",
+      "NaSO<sub>3</sub>",
+      "Na<sub>2</sub>S"
+    ]
+  },
+  {
+    "id": "proto-textbook-103",
+    "stem": "What is the name of CO?",
+    "choices": [
+      "Carbon monoxide",
+      "Carbon dioxide",
+      "Monocarbon oxide",
+      "Carbon oxide"
+    ]
+  },
+  {
+    "id": "proto-textbook-104",
+    "stem": "What is the name of HBr dissolved in water?",
+    "choices": [
+      "Hydrogen bromide acid",
+      "Bromic acid",
+      "Bromous acid",
+      "Hydrobromic acid"
+    ]
+  }
+]

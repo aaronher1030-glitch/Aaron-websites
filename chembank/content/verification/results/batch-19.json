@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-textbook-031",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Move the decimal point 5 places to the right to get 4.56, so the exponent is −5. Writing 45.6 × 10<sup>−6</sup> is numerically equal but not proper scientific notation (coefficient must be 1–10).",
+    "ambiguous": false,
+    "cleanExplanation": "Count the places the decimal point must move to place one non-zero digit before it: 0.000 045 6 becomes 4.56 after moving 5 places right, so the power of ten is −5. Hence 0.000 045 6 = 4.56 × 10<sup>−5</sup>, with all three significant figures retained."
+  },
+  {
+    "id": "proto-textbook-032",
+    "answer": "D",
+    "confidence": "high",
+    "work": "3.20 × 2.0 = 6.40 and 10<sup>3</sup> × 10<sup>−2</sup> = 10<sup>1</sup>, giving 6.40 × 10<sup>1</sup> = 64.0 before rounding. The factor 2.0 has only 2 significant figures, so the result must have 2, i.e. 64.",
+    "ambiguous": false,
+    "cleanExplanation": "Multiply the coefficients and add the exponents: (3.20 × 10<sup>3</sup>)(2.0 × 10<sup>−2</sup>) = 6.40 × 10<sup>1</sup> = 64.0. Since 2.0 has two significant figures, the answer must be rounded to two significant figures: 64 (2 sig figs)."
+  },
+  {
+    "id": "proto-textbook-033",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Three significant figures means keeping 2, 7, 4; the next digit is 5 followed by 1, so the value is greater than exactly half and rounds up. 2.7451 → 2.75.",
+    "ambiguous": false,
+    "cleanExplanation": "The first three significant figures of 2.7451 are 2, 7 and 4. The digit following is 5, and because there is a non-zero digit after it (the 1), the value exceeds half a unit in the last place, so round up: 2.7451 = 2.75 to three significant figures."
+  },
+  {
+    "id": "proto-textbook-034",
+    "answer": "C",
+    "confidence": "high",
+    "work": "72.0 km/h = 72 000 m / 3600 s = 20.0 m/s. Dividing by 3.6 is the shortcut (km/h ÷ 3.6 = m/s), and three significant figures are kept.",
+    "ambiguous": false,
+    "cleanExplanation": "Convert kilometres to metres (72.0 km = 7.20 × 10<sup>4</sup> m) and hours to seconds (1 h = 3600 s): 7.20 × 10<sup>4</sup> m ÷ 3600 s = 20.0 m/s. Equivalently, divide by 3.6, keeping three significant figures."
+  },
+  {
+    "id": "proto-textbook-035",
+    "answer": "D",
+    "confidence": "high",
+    "work": "12.0 L / 150 km = 0.0800 L/km; multiply by 100 km to scale: 0.0800 × 100 = 8.00 L per 100 km. Three significant figures are appropriate.",
+    "ambiguous": false,
+    "cleanExplanation": "Consumption per kilometre is 12.0 L ÷ 150 km = 0.0800 L/km. Scaling to 100 km gives 0.0800 L/km × 100 km = 8.00 L per 100 km, reported to three significant figures."
+  },
+  {
+    "id": "proto-textbook-036",
+    "answer": "C",
+    "confidence": "high",
+    "work": "2.50 h × 60 min/h × 60 s/min = 2.50 × 3600 s = 9000 s = 9.00 × 10<sup>3</sup> s. Three significant figures carried through the exact conversions.",
+    "ambiguous": false,
+    "cleanExplanation": "Each hour contains 60 minutes and each minute 60 seconds, so 1 h = 3600 s. Thus 2.50 h × 3600 s/h = 9000 s, written in scientific notation with three significant figures as 9.00 × 10<sup>3</sup> s."
+  },
+  {
+    "id": "proto-textbook-037",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Dalton's postulates state that all atoms of a given element are identical in mass and properties, while atoms of different elements differ. Creation, destruction and transmutation contradict his theory.",
+    "ambiguous": false,
+    "cleanExplanation": "Dalton proposed that each element consists of atoms that are all identical in mass and in chemical properties, and that atoms of different elements differ from one another. Atoms are also held to be indestructible and unchanging in reactions, so they cannot be created, destroyed or converted into other elements."
+  },
+  {
+    "id": "proto-textbook-038",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Fixed whole-number atom ratios in a given compound mean a fixed mass ratio of the elements, which is the law of definite (constant) proportions. Multiple proportions concerns two different compounds of the same elements.",
+    "ambiguous": false,
+    "cleanExplanation": "If a compound always contains atoms of its elements in a fixed whole-number ratio, then the mass ratio of those elements is also fixed. That is the law of definite proportions (constant composition), which Dalton's atomic theory explains directly."
+  },
+  {
+    "id": "proto-textbook-039",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Convert to moles: 1.00 g C = 0.0833 mol; 1.33 g O = 0.0831 mol → CO; 2.67 g O = 0.1669 mol → CO<sub>2</sub>. The oxygen masses for a fixed carbon mass are in the small whole-number ratio 1 : 2, which is the law of multiple proportions.",
+    "ambiguous": false,
+    "cleanExplanation": "For a fixed 1.00 g of carbon (0.0833 mol), the oxygen masses correspond to 0.0831 mol and 0.1669 mol of O, giving the formulas CO and CO<sub>2</sub>. Two different compounds of the same two elements contain oxygen in the small whole-number ratio 1 : 2, which is the law of multiple proportions."
+  },
+  {
+    "id": "proto-textbook-040",
+    "answer": "B",
+    "confidence": "high",
+    "work": "A chemical reaction only breaks and forms bonds: the same atoms appear in the products, so they are rearranged, not created or destroyed. This is the atomic basis of conservation of mass.",
+    "ambiguous": false,
+    "cleanExplanation": "In a chemical reaction the bonds between atoms break and new bonds form, so the atoms themselves are simply rearranged into new combinations. No atoms are created, destroyed or changed into other elements, which is why mass is conserved."
+  },
+  {
+    "id": "proto-textbook-041",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Dalton held atoms to be indivisible, but subatomic particles (electrons, protons, neutrons) and nuclear reactions show atoms have internal structure and can be split. The other three postulates remain valid.",
+    "ambiguous": false,
+    "cleanExplanation": "Dalton's claim that atoms are indivisible was disproved by the discovery of electrons, protons and neutrons, and by nuclear reactions in which atomic nuclei change. Atoms are therefore divisible into subatomic particles, although the postulates about fixed composition and whole-number combining ratios still hold."
+  },
+  {
+    "id": "proto-textbook-042",
+    "answer": "D",
+    "confidence": "high",
+    "work": "The neutron is neutral (no charge) with mass ≈ 1.675 × 10<sup>−27</sup> kg, essentially the same as a proton (1.673 × 10<sup>−27</sup> kg). Electrons are charged and ~1836 times lighter; positrons and alpha particles are charged.",
+    "ambiguous": false,
+    "cleanExplanation": "The neutron carries no electric charge and has a mass of about 1.67 × 10<sup>−27</sup> kg, nearly identical to the proton's mass. Electrons are charged and about 1800 times lighter, while the positron and alpha particle are both charged."
+  },
+  {
+    "id": "proto-textbook-043",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Since the vast majority of alpha particles were undeflected, most of the atom must contain no concentrated charge or mass along their path. Only the few deflected at large angles near the dense, positively charged nucleus show matter is concentrated there.",
+    "ambiguous": false,
+    "cleanExplanation": "Most alpha particles passed through the foil without deflection, so they encountered essentially nothing in their path: the atom is mostly empty space. Only the small fraction strongly deflected revealed a tiny, dense, positively charged nucleus containing nearly all the mass."
+  },
+  {
+    "id": "proto-textbook-044",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Thomson measured the charge-to-mass ratio of cathode rays and found it independent of the gas and electrode material, matching the electron. Their negative charge and very low mass identify them as electron beams.",
+    "ambiguous": false,
+    "cleanExplanation": "Thomson showed that cathode rays are deflected by electric and magnetic fields in the direction expected for negatively charged particles, and that their charge-to-mass ratio is the same regardless of the gas or electrode material used. This identified cathode rays as streams of electrons."
+  },
+  {
+    "id": "proto-textbook-045",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Atomic number Z is defined as the number of protons in the nucleus and fixes the element's identity. Protons plus neutrons gives the mass number, and neutrons alone give the neutron number.",
+    "ambiguous": false,
+    "cleanExplanation": "The atomic number of an element equals the number of protons in its nucleus, which determines the element's identity and its position in the periodic table. The number of protons plus neutrons is the mass number, not the atomic number."
+  },
+  {
+    "id": "proto-textbook-046",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Elements in the same group share the same valence-electron configuration, which governs bonding and reactivity. Neutron and proton counts vary within a group, and shell number increases down a group.",
+    "ambiguous": false,
+    "cleanExplanation": "Chemical properties depend mainly on the valence electrons, the electrons in the outermost shell. Elements in the same group have the same number of valence electrons (same outer-shell configuration), so they form similar bonds and show similar reactivity."
+  },
+  {
+    "id": "proto-textbook-047",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Na is in Group 1, the alkali metals, with one valence electron. Cl is a halogen, Ne a noble gas, and Ca an alkaline earth metal (Group 2).",
+    "ambiguous": false,
+    "cleanExplanation": "Alkali metals are the Group 1 elements, which have a single valence electron and form +1 ions. Sodium (Na) is in Group 1, whereas Cl is a halogen (Group 17), Ne a noble gas (Group 18) and Ca an alkaline earth metal (Group 2)."
+  },
+  {
+    "id": "proto-textbook-048",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Halogens (F, Cl, Br, I, At) have seven valence electrons and occupy Group 17. Group 1 is alkali metals, Group 16 chalcogens, Group 18 noble gases.",
+    "ambiguous": false,
+    "cleanExplanation": "The halogens are fluorine, chlorine, bromine, iodine and astatine, all with seven valence electrons. They make up Group 17 of the periodic table."
+  },
+  {
+    "id": "proto-textbook-049",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Silicon sits on the staircase between metals and nonmetals and shows intermediate semiconducting behaviour, making it the classic metalloid. Al is a metal, S and C are nonmetals.",
+    "ambiguous": false,
+    "cleanExplanation": "Metalloids have properties between those of metals and nonmetals; silicon is the standard example, lying along the metal/nonmetal boundary and behaving as a semiconductor. Aluminium is a metal, while sulfur and carbon are nonmetals."
+  },
+  {
+    "id": "proto-textbook-050",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Chemical similarity follows the group. Cl and Br are both Group 17 halogens with seven valence electrons, so they behave alike. C/N and Na/Mg are in different groups, and Cl/Ar differ as halogen versus noble gas.",
+    "ambiguous": false,
+    "cleanExplanation": "Elements in the same group have the same number of valence electrons and therefore similar chemistry. Chlorine and bromine are both Group 17 halogens with seven valence electrons, whereas the other pairs involve elements from different groups with different valence configurations."
+  }
+]

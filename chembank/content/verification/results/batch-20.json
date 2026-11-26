@@ -1,0 +1,162 @@
+[
+  {
+    "id": "proto-textbook-051",
+    "answer": "A",
+    "confidence": "high",
+    "work": "A diatomic molecule of an element must contain exactly two atoms of the same element. N<sub>2</sub> is two nitrogen atoms; CO and H<sub>2</sub>O contain different elements, and NaCl is an ionic lattice.",
+    "ambiguous": false,
+    "cleanExplanation": "A diatomic element molecule contains two atoms of the same element. N<sub>2</sub> fits: two nitrogen atoms. CO and H<sub>2</sub>O contain different elements (so they are compounds), and NaCl is an ionic solid, not a molecule."
+  },
+  {
+    "id": "proto-textbook-052",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Protons carry positive charge and electrons negative charge. Losing negatively charged electrons leaves an excess of positive protons, giving a positively charged ion, a cation.",
+    "ambiguous": false,
+    "cleanExplanation": "An atom is neutral because protons and electrons balance. Removing electrons leaves the positive protons unopposed, so the resulting ion is positively charged, which is called a cation."
+  },
+  {
+    "id": "proto-textbook-053",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Protons are fixed by the atomic number: Z = 12, so 12 protons. The 2+ charge means two electrons are lost, so 12 - 2 = 10 electrons.",
+    "ambiguous": false,
+    "cleanExplanation": "Magnesium has Z = 12, so every Mg nucleus has 12 protons; ionisation does not change proton number. The 2+ charge means it has lost two electrons, leaving 12 - 2 = 10 electrons."
+  },
+  {
+    "id": "proto-textbook-054",
+    "answer": "D",
+    "confidence": "high",
+    "work": "The empirical formula is the simplest whole-number ratio. H<sub>2</sub>O<sub>2</sub> simplifies by dividing both subscripts by 2, giving H:O = 1:1, i.e. HO.",
+    "ambiguous": false,
+    "cleanExplanation": "The empirical formula gives the simplest whole-number atom ratio. In H<sub>2</sub>O<sub>2</sub> the H:O ratio is 2:2, which reduces to 1:1, so the empirical formula is HO (the molecular formula is H<sub>2</sub>O<sub>2</sub>)."
+  },
+  {
+    "id": "proto-textbook-055",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Ca(NO<sub>3</sub>)<sub>2</sub> contains 1 Ca, 2 N and 2 x 3 = 6 O atoms. Total = 1 + 2 + 6 = 9 atoms per formula unit.",
+    "ambiguous": false,
+    "cleanExplanation": "Count each atom in the formula unit: 1 Ca, 2 N, and 2 x 3 = 6 O. Adding them gives 1 + 2 + 6 = 9 atoms."
+  },
+  {
+    "id": "proto-textbook-056",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Iron is a variable-valence metal, so the charge is shown by a Roman numeral. Two chloride ions give -2 total, so iron is +2, hence iron(II) chloride.",
+    "ambiguous": false,
+    "cleanExplanation": "Each chloride is 1-, so two chlorides total 2-, requiring Fe<sup>2+</sup>. For metals with variable charge the oxidation state is given as a Roman numeral, so FeCl<sub>2</sub> is iron(II) chloride."
+  },
+  {
+    "id": "proto-textbook-057",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Cooking an egg involves heat-driven chemical reactions that denature proteins and change their structure irreversibly. Orbiting, rolling and bending are purely physical motions.",
+    "ambiguous": false,
+    "cleanExplanation": "Chemistry concerns changes in substance composition and structure. Cooking an egg permanently changes its proteins through heat-driven chemical reactions, whereas an orbit, a rolling ball and light bending in a lens are purely physical events."
+  },
+  {
+    "id": "proto-textbook-058",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Synthesising aspirin from simpler compounds is a chemical transformation. The other options are measurements in physics and astronomy.",
+    "ambiguous": false,
+    "cleanExplanation": "Making aspirin from simpler compounds is a synthesis, a chemical transformation of one substance into another. Measuring gravity, measuring the speed of light and mapping stars belong to physics and astronomy."
+  },
+  {
+    "id": "proto-textbook-059",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Chemistry describes how substances react and interact with energy, including CO<sub>2</sub> absorption of infrared radiation and its capture or conversion. The other statements are physically impossible or false.",
+    "ambiguous": false,
+    "cleanExplanation": "Chemistry explains the behaviour of molecules: how CO<sub>2</sub> absorbs infrared energy and how it can be captured or converted into other substances. That molecular understanding is what allows chemists to design ways to reduce or use greenhouse gases."
+  },
+  {
+    "id": "proto-textbook-060",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Boiling is a physical change in which intermolecular forces are overcome. Added energy increases molecular kinetic energy until molecules can escape one another; no bonds within molecules break and no elements change.",
+    "ambiguous": false,
+    "cleanExplanation": "As water is heated, its molecules gain kinetic energy. At the boiling point they have enough energy to overcome the attractions holding them together in the liquid, so they separate and enter the gas phase. The H<sub>2</sub>O molecules themselves stay intact."
+  },
+  {
+    "id": "proto-textbook-061",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Matter is anything with mass that occupies volume. Air is a mixture of gases with mass; light, heat and sound are forms of energy, not matter.",
+    "ambiguous": false,
+    "cleanExplanation": "Matter is anything that has mass and takes up space. Air is a mixture of gas molecules and therefore has mass, whereas light, heat and sound are forms of energy rather than matter."
+  },
+  {
+    "id": "proto-textbook-062",
+    "answer": "A",
+    "confidence": "high",
+    "work": "A sealed flask prevents matter entering or leaving, so the total mass stays constant even though iron is converted to rust. This is the law of conservation of mass.",
+    "ambiguous": false,
+    "cleanExplanation": "In a sealed flask no atoms can enter or leave, so the same atoms are simply rearranged into new compounds during rusting. The total mass therefore stays constant, illustrating the law of conservation of mass."
+  },
+  {
+    "id": "proto-textbook-063",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Quantitative observations involve a measured number and unit. A mass of 25.3 g is numerical; smell, colour and cloudiness are qualitative descriptions.",
+    "ambiguous": false,
+    "cleanExplanation": "A quantitative observation records an amount with a number and a unit. \"Mass of 25.3 g\" is numerical, while a sweet smell, blue colour and cloudiness are qualitative descriptions without measurements."
+  },
+  {
+    "id": "proto-textbook-064",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The fertilised plants receive the treatment (the independent variable) and the untreated group provides the baseline for comparison. That baseline group is the control.",
+    "ambiguous": false,
+    "cleanExplanation": "The group given fertiliser tests the independent variable (presence of fertiliser). The group without fertiliser is kept identical in every other way so it can serve as the standard for comparison, which makes it the control group."
+  },
+  {
+    "id": "proto-textbook-065",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Repeating an experiment under the same conditions tests whether the same result is obtained again, i.e. reproducibility, and reduces the effect of random error. It cannot make a hypothesis true or create a law.",
+    "ambiguous": false,
+    "cleanExplanation": "Repeating an experiment checks whether the same result appears again, showing the result is reproducible and not due to a one-off error. Repeated agreement strengthens confidence in a conclusion but does not by itself prove a hypothesis or create a law."
+  },
+  {
+    "id": "proto-textbook-066",
+    "answer": "A",
+    "confidence": "high",
+    "work": "A homogeneous mixture has a single uniform phase with components not visibly distinguishable. Salt dissolved in water is uniform; sand with iron filings, fruit salad and oil with water are all visibly heterogeneous.",
+    "ambiguous": false,
+    "cleanExplanation": "A homogeneous mixture is uniform throughout, with no visible boundaries between components. Salt dissolved in water forms one clear solution. Sand with iron filings, fruit salad, and oil with water all show separate visible phases."
+  },
+  {
+    "id": "proto-textbook-067",
+    "answer": "B",
+    "confidence": "high",
+    "work": "An element consists of only one kind of atom; S<sub>8</sub> contains only sulfur atoms. NaCl, H<sub>2</sub>O and C<sub>12</sub>H<sub>22</sub>O<sub>11</sub> each contain two or more elements.",
+    "ambiguous": false,
+    "cleanExplanation": "An element contains only one type of atom. S<sub>8</sub> is made solely of sulfur atoms, so it is an element (in molecular form). NaCl, H<sub>2</sub>O and C<sub>12</sub>H<sub>22</sub>O<sub>11</sub> each contain atoms of two or more elements and are compounds."
+  },
+  {
+    "id": "proto-textbook-068",
+    "answer": "D",
+    "confidence": "high",
+    "work": "Compounds are made of two or more elements chemically combined and can be decomposed by chemical means. Elements contain one kind of atom and cannot be broken down chemically, so D is correct and A, B, C are false.",
+    "ambiguous": false,
+    "cleanExplanation": "A compound contains two or more elements chemically joined, so a chemical reaction can break it apart into simpler substances. An element contains only one kind of atom, so it cannot be split into simpler substances by chemical means."
+  },
+  {
+    "id": "proto-textbook-069",
+    "answer": "D",
+    "confidence": "high",
+    "work": "In a liquid the particles are close together with strong attractions but still mobile, so they slide past one another while the sample keeps a fixed volume but not a fixed shape. Solids are locked in place and gases are far apart.",
+    "ambiguous": false,
+    "cleanExplanation": "In the liquid state, particles are close together like a solid but are not locked into fixed positions, so they can slide past one another. This gives liquids a definite volume but no fixed shape."
+  },
+  {
+    "id": "proto-textbook-070",
+    "answer": "C",
+    "confidence": "high",
+    "work": "Sublimation is the direct solid-to-gas transition without passing through the liquid state, which is exactly what dry ice does at atmospheric pressure.",
+    "ambiguous": false,
+    "cleanExplanation": "When a solid changes directly into a gas without first melting to a liquid, the change is called sublimation. Dry ice (solid CO<sub>2</sub>) does exactly this at atmospheric pressure."
+  }
+]

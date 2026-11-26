@@ -1,0 +1,19 @@
+{
+  "id": "ch4-7-theory-14",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "C",
+  "blind": "B",
+  "blindWork": "P = 750/760 = 0.9868 atm, T = 300 K, M = 44.01 g/mol. d = PM/RT = (0.9868)(44.01)/((0.08206)(300)) = 43.4/24.62 = 1.76 g/L, matching 1.79 g/L to within rounding of intermediate values.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [],
+  "stem": "Ideal Gas Law / Density: What is the density of carbon dioxide gas ($\\text{CO}_{2}$) at $750\\text{~mmHg}$ and $27^{\\circ}\\text{C}$?",
+  "choices": [
+    "$1.42\\text{~g/L}$",
+    "$1.79\\text{~g/L}$",
+    "$1.96\\text{~g/L}$",
+    "$2.20\\text{~g/L}$"
+  ],
+  "sourceExplanation": "$d = \\frac{PM}{RT} = \\frac{(750/760)\\text{~atm} \\times 44.01\\text{~g/mol}}{0.08206 \\times 300.15\\text{~K}} = 1.96\\text{~g/L}$. (C)"
+}

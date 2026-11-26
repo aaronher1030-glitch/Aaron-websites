@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch4-7-lab-31",
+    "stem": "Systematic Error in Calorimetry: If a student fails to stir the solution adequately in a coffee-cup calorimeter experiment, how will this affect the observed peak temperature change ($\\Delta T_{\\max}$)?",
+    "choices": [
+      "$\\Delta T_{\\max}$ will be artificially high due to localized hot spots near the thermometer bulb.",
+      "$\\Delta T_{\\max}$ will be underestimated due to slow thermal distribution and continuous heat loss to surroundings before equilibrium.",
+      "$\\Delta T_{\\max}$ will remain unaffected because heat capacity is constant.",
+      "$\\Delta T_{\\max}$ will shift from exothermic to endothermic."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-32",
+    "stem": "Flame Calorimetry (Fuel Value): A spirit lamp containing ethanol ($\\text{C}_{2}\\text{H}_{5}\\text{OH}$) is used to heat $200.0\\text{~g}$ of water in a copper beaker. The mass of the lamp decreases by $0.550\\text{~g}$ while the water temperature increases from ${20.0}^{\\circ}\\text{C}$ to ${36.5}^{\\circ}\\text{C}$. Taking $c_{water} = 4.184\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$, calculate the experimental heat of combustion of ethanol in $\\text{kJ/mol}$. ($\\text{MW} = 46.07\\text{~g/mol}$)",
+    "choices": [
+      "$- 420\\text{~kJ/mol}$",
+      "$- 1150\\text{~kJ/mol}$",
+      "$- 1367\\text{~kJ/mol}$",
+      "$- 1520\\text{~kJ/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-33",
+    "stem": "Hess’s Law Experimental Validation: In a lab validation of Hess’s law, three reactions are measured calorimetrically:\n\n$$\\text{Reaction~1:~NaOH}(s) \\rightarrow \\text{Na}^{+}(aq) + \\text{OH}^{-}(aq)\\quad\\Delta H_{1}$$\n\n$$\\text{Reaction~2:~NaOH}(s) + \\text{HCl}(aq) \\rightarrow \\text{NaCl}(aq) + \\text{H}_{2}\\text{O}(l)\\quad\\Delta H_{2}$$\n\n$$\\text{Reaction~3:~NaOH}(aq) + \\text{HCl}(aq) \\rightarrow \\text{NaCl}(aq) + \\text{H}_{2}\\text{O}(l)\\quad\\Delta H_{3}$$\n\nAccording to Hess's law, which relationship must hold theoretically?",
+    "choices": [
+      "$\\Delta H_{1} = \\Delta H_{2} + \\Delta H_{3}$",
+      "$\\Delta H_{2} = \\Delta H_{1} + \\Delta H_{3}$",
+      "$\\Delta H_{3} = \\Delta H_{1} + \\Delta H_{2}$",
+      "$\\Delta H_{2} = \\Delta H_{1} - \\Delta H_{3}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-34",
+    "stem": "Heat Loss Correction (Newton’s Law of Cooling): In precision calorimetry, temperature is recorded against time before, during, and after a reaction. To obtain the true adiabatic temperature rise ($\\Delta T_{true}$), one should:",
+    "choices": [
+      "Extrapolate the post-reaction cooling curve back to the time of reaction mixing.",
+      "Take the difference between the minimum baseline temperature and the ultimate room temperature.",
+      "Multiply the maximum recorded temperature by $1.10$.",
+      "Subtract the ambient room temperature from the peak recorded temperature."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-35",
+    "stem": "Differential Scanning Calorimetry (DSC) Concept: In a DSC laboratory instrument, a sample pan and a reference pan are heated at a constant rate. When an endothermic phase transition occurs in the sample:",
+    "choices": [
+      "Less thermal power is supplied to the sample pan relative to the reference pan.",
+      "More thermal power is supplied to the sample pan relative to the reference pan to maintain equal temperature.",
+      "The temperature of the sample pan rises dramatically above the reference pan.",
+      "The electrical current to both pans is shut off completely."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-36",
+    "stem": "Enthalpy of Fusion Measurement: A $25.0\\text{-g}$ piece of ice at ${0.0}^{\\circ}\\text{C}$ is placed into $150.0\\text{~g}$ of water at ${25.0}^{\\circ}\\text{C}$ in an insulated vessel ($C_{cal} \\approx 0$). The mixture reaches equilibrium at ${10.2}^{\\circ}\\text{C}$. What is the experimental enthalpy of fusion ($\\Delta H_{fus}$) of ice in $\\text{kJ/mol}$?",
+    "choices": [
+      "$5.4\\text{~kJ/mol}$",
+      "$6.0\\text{~kJ/mol}$",
+      "$7.2\\text{~kJ/mol}$",
+      "$8.8\\text{~kJ/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-37",
+    "stem": "Calorimetric Water Equivalent: The water equivalent ($W$) of a calorimeter is defined as the mass of water that absorbs the same amount of heat as the calorimeter components for a unit temperature rise. If a calorimeter has $C_{cal} = 83.68\\text{~J/}^{\\circ}\\text{C}$, what is its water equivalent? ($c_{water} = 4.184\\text{~J/(g} \\cdot^{\\circ}\\text{C)}$)",
+    "choices": [
+      "$10.0\\text{~g}$",
+      "$20.0\\text{~g}$",
+      "$50.0\\text{~g}$",
+      "$100.0\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-38",
+    "stem": "Thermometric Titration: In a thermometric titration of $25.0\\text{~mL}$ of an unknown acid with $1.00\\text{~M~NaOH}$, temperature is plotted versus volume of titrant added. The endpoint of the titration corresponds to:",
+    "choices": [
+      "The minimum temperature recorded during the run.",
+      "The point of maximum temperature (or sharp break in slope) on the thermometric curve.",
+      "The point where temperature rise becomes linear.",
+      "The inflection point where temperature equals ambient room temperature."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-39",
+    "stem": "Spectrophotometry (Beer-Lambert Law): A solution of cobalt(II) nitrate in a $1.00\\text{-cm}$ path length cuvette yields a percent transmittance ($\\% T$) of $25.0\\%$ at $\\lambda_{\\max} = 510\\text{~nm}$. What is the absorbance ($A$) of the solution?",
+    "choices": [
+      "$0.250$",
+      "$0.400$",
+      "$0.602$",
+      "$1.398$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-40",
+    "stem": "Molar Absorptivity Calculation: Using a $1.00\\text{-cm}$ cuvette, a $4.00 \\times 10^{- 4}\\text{~M}$ solution of a dye exhibits an absorbance of $0.680$ at $620\\text{~nm}$. What is the molar absorptivity ($\\varepsilon$) of the dye at this wavelength?",
+    "choices": [
+      "$1.70 \\times 10^{3}\\text{~L/(mol} \\cdot \\text{cm)}$",
+      "$2.72 \\times 10^{3}\\text{~L/(mol} \\cdot \\text{cm)}$",
+      "$4.00 \\times 10^{3}\\text{~L/(mol} \\cdot \\text{cm)}$",
+      "$6.80 \\times 10^{3}\\text{~L/(mol} \\cdot \\text{cm)}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-41",
+    "stem": "Spectrophotometric Dilution / Analysis: A student measures the absorbance of a standard curve for $\\text{Fe(SCN)}^{2 +}$ at $447\\text{~nm}$ and obtains a linear calibration line: $A = 4500 \\cdot C$ (where $C$ is in $\\text{M}$). An unknown solution is diluted by taking $5.00\\text{~mL}$ and diluting to $50.0\\text{~mL}$. The diluted sample gives $A = 0.360$. What is the concentration of $\\text{Fe(SCN)}^{2 +}$ in the original undiluted sample?",
+    "choices": [
+      "$8.00 \\times 10^{- 5}\\text{~M}$",
+      "$1.60 \\times 10^{- 4}\\text{~M}$",
+      "$8.00 \\times 10^{- 4}\\text{~M}$",
+      "$1.60 \\times 10^{- 3}\\text{~M}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-42",
+    "stem": "Flame Test Identification: During qualitative inorganic analysis, a sample yields a persistent brick-red flame test when viewed through clean platinum wire, and when viewed through cobalt blue glass, no violet mask appears. Which alkali/alkaline earth cation is indicated?",
+    "choices": [
+      "Lithium ($\\text{Li}^{+}$)",
+      "Sodium ($\\text{Na}^{+}$)",
+      "Calcium ($\\text{Ca}^{2 +}$)",
+      "Strontium ($\\text{Sr}^{2 +}$)"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-43",
+    "stem": "Purpose of Cobalt Blue Glass: In flame spectroscopy and qualitative flame tests, why is cobalt blue glass held in front of the flame when testing for potassium ($\\text{K}^{+}$)?",
+    "choices": [
+      "It enhances the orange emission lines of calcium.",
+      "It absorbs intense yellow light emitted by trace sodium ($\\text{Na}^{+}$) contamination, revealing potassium's pale violet flame.",
+      "It shifts infrared emissions into the visible spectrum.",
+      "It polarizes the light emitted by excited electrons."
+    ]
+  },
+  {
+    "id": "ch4-7-lab-44",
+    "stem": "Atomic Emission Spectroscopy (Rydberg Calibration): A gas discharge tube containing atomic hydrogen is analyzed using a diffraction grating spectrometer. A spectral line is observed at $\\lambda = 656.3\\text{~nm}$. This red line (Balmer $\\alpha$) originates from which electronic transition?",
+    "choices": [
+      "$n = 2 \\rightarrow n = 1$",
+      "$n = 3 \\rightarrow n = 2$",
+      "$n = 4 \\rightarrow n = 2$",
+      "$n = 5 \\rightarrow n = 3$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-45",
+    "stem": "Cuvette Material Selection: Which cuvette material must be used when measuring optical absorbance in the ultraviolet (UV) region ($200\\text{~nm} - 350\\text{~nm}$)?",
+    "choices": [
+      "Standard borosilicate glass",
+      "Polystyrene / Clear plastic",
+      "Quartz (fused silica)",
+      "Soda-lime glass"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-46",
+    "stem": "Spectrophotometer Blank Selection: When measuring the absorption spectrum of a metal-ligand complex formed in an aqueous solution containing ethanol and buffer reagents, what should the \"blank\" cuvette contain to calibrate zero absorbance?",
+    "choices": [
+      "Pure distilled water only",
+      "All reagents and solvents in identical proportions except the metal ion (or target analyte)",
+      "Absolute ethanol only",
+      "Air inside the cuvette holder"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-47",
+    "stem": "Photoelectron Spectroscopy (PES): In a PES experiment, high-energy X-ray photons ($h\\nu = 1253.6\\text{~eV}$) strike a gas-phase atom. Electrons are ejected with kinetic energy $E_{k} = 1100.0\\text{~eV}$. What is the binding energy ($E_{b}$) of the core electron?",
+    "choices": [
+      "$153.6\\text{~eV}$",
+      "$1100.0\\text{~eV}$",
+      "$1253.6\\text{~eV}$",
+      "$2353.6\\text{~eV}$"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-48",
+    "stem": "Spectrophotometric Deviations from Beer’s Law: Which factor causes a chemical deviation (non-linearity) from Beer-Lambert’s law at high concentrations?",
+    "choices": [
+      "Monochromatic light source beam divergence",
+      "Solute association/dissociation or acid-base equilibria changing the absorbing species distribution",
+      "Fingerprints on the cuvette wall",
+      "Using a cuvette of $1.00\\text{-cm}$ path length"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-49",
+    "stem": "Emission Spectrograph Calibration: In an emission spectrograph experiment, a calibration spectrum of a mercury vapor lamp is recorded alongside an unknown metal vapor. Mercury lines appear at $404.7\\text{~nm}$, $435.8\\text{~nm}$, and $546.1\\text{~nm}$. If an unknown element produces a bright doublet near $589.0\\text{~nm}$, the element is most likely:",
+    "choices": [
+      "Mercury ($\\text{Hg}$)",
+      "Sodium ($\\text{Na}$)",
+      "Copper ($\\text{Cu}$)",
+      "Helium ($\\text{He}$)"
+    ]
+  },
+  {
+    "id": "ch4-7-lab-50",
+    "stem": "Laser Fluorescence Lab Measurement: A nitrogen laser ($\\lambda = 337\\text{~nm}$) pumps a solution of fluorescein dye, emitting green fluorescence light. According to Stokes shift in luminescence laboratory instrumentation, the emitted fluorescence photon will always have:",
+    "choices": [
+      "Higher energy and shorter wavelength than the excitation photon.",
+      "Lower energy and longer wavelength than the excitation photon.",
+      "Equal energy and identical frequency as the excitation photon.",
+      "Zero velocity in air."
+    ]
+  }
+]

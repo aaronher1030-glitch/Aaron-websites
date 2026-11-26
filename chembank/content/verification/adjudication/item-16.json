@@ -1,0 +1,22 @@
+{
+  "id": "ch4-7-theory-16",
+  "paper": "ch4-7-theory",
+  "source": "supplied-paper",
+  "sourceKey": "B",
+  "blind": "D",
+  "blindWork": "n(He) = 2.00/4.003 = 0.4996 mol; n(Ar) = 8.00/39.95 = 0.2003 mol; total = 0.6999 mol. P = nRT/V = (0.6999)(0.08206)(298.15)/5.00 = 17.13/5.00 = 3.43 atm.",
+  "blindConfidence": "high",
+  "ambiguous": false,
+  "flags": [
+    "key-commentary",
+    "claimed-D"
+  ],
+  "stem": "Dalton’s Law of Partial Pressures: A mixture of $2.00\\text{~g}$ of $\\text{He}$ and $8.00\\text{~g}$ of $\\text{Ar}$ is placed in a rigid $5.00\\text{-L}$ container at $25^{\\circ}\\text{C}$. What is the total pressure of the gas mixture?",
+  "choices": [
+    "$0.98\\text{~atm}$",
+    "$1.43\\text{~atm}$",
+    "$2.44\\text{~atm}$",
+    "$3.42\\text{~atm}$"
+  ],
+  "sourceExplanation": "$n\\left( \\text{He} \\right) = 2.0/4.003 = 0.50\\text{~mol}$; $n\\left( \\text{Ar} \\right) = 8.0/39.95 = 0.20\\text{~mol}$. Total $n = 0.70\\text{~mol}$. $P = nRT/V = (0.70 \\times 0.08206 \\times 298.15)/5.00 = 3.42\\text{~atm}$? Wait, let's recalculate: $0.7 \\times 0.0821 \\times 298/5 = 3.42\\text{~atm}$. Option D is $3.42\\text{~atm}$. (D)"
+}

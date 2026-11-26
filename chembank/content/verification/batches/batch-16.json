@@ -1,0 +1,202 @@
+[
+  {
+    "id": "proto-practice-021",
+    "stem": "What is the correct name of Fe<sub>2</sub>(SO<sub>4</sub>)<sub>3</sub>·9H<sub>2</sub>O?",
+    "choices": [
+      "Iron(II) sulfate nonahydrate",
+      "Diiron trisulfate nonahydrate",
+      "Iron(III) sulfate nonahydrate",
+      "Iron trisulfate nonahydrate"
+    ]
+  },
+  {
+    "id": "proto-practice-022",
+    "stem": "What is the formula of perchloric acid?",
+    "choices": [
+      "HClO",
+      "HClO<sub>2</sub>",
+      "HClO<sub>3</sub>",
+      "HClO<sub>4</sub>"
+    ]
+  },
+  {
+    "id": "proto-practice-023",
+    "stem": "What is the systematic name of the covalent compound P<sub>4</sub>O<sub>10</sub>?",
+    "choices": [
+      "Tetraphosphorus decoxide",
+      "Phosphorus decoxide",
+      "Triphosphorus decoxide",
+      "Phosphoric anhydride"
+    ]
+  },
+  {
+    "id": "proto-practice-024",
+    "stem": "Which formula is INCORRECT based on standard ionic charges?",
+    "choices": [
+      "Al<sub>2</sub>S<sub>3</sub>",
+      "Ca<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>",
+      "K<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>",
+      "BaHCO<sub>3</sub>"
+    ]
+  },
+  {
+    "id": "proto-practice-025",
+    "stem": "What is the formula of dinitrogen pentoxide?",
+    "choices": [
+      "N<sub>2</sub>O<sub>3</sub>",
+      "NO<sub>2</sub>",
+      "N<sub>2</sub>O<sub>5</sub>",
+      "N<sub>5</sub>O<sub>2</sub>"
+    ]
+  },
+  {
+    "id": "proto-practice-026",
+    "stem": "What is the name of Cr(BrO<sub>3</sub>)<sub>3</sub>?",
+    "choices": [
+      "Chromium(III) bromate",
+      "Chromium(III) bromide",
+      "Chromium(VI) bromate",
+      "Chromium(III) perbromate"
+    ]
+  },
+  {
+    "id": "proto-practice-027",
+    "stem": "Which oxoacid has a name ending in “-ous acid”?",
+    "choices": [
+      "HNO<sub>3</sub>",
+      "H<sub>2</sub>SO<sub>3</sub>",
+      "H<sub>3</sub>PO<sub>4</sub>",
+      "HClO<sub>4</sub>"
+    ]
+  },
+  {
+    "id": "proto-practice-028",
+    "stem": "What is the formula of propane?",
+    "choices": [
+      "C<sub>2</sub>H<sub>6</sub>",
+      "C<sub>3</sub>H<sub>8</sub>",
+      "C<sub>4</sub>H<sub>10</sub>",
+      "C<sub>3</sub>H<sub>6</sub>"
+    ]
+  },
+  {
+    "id": "proto-practice-029",
+    "stem": "What is the formula of ammonium dichromate?",
+    "choices": [
+      "(NH<sub>4</sub>)<sub>2</sub>CrO<sub>4</sub>",
+      "NH<sub>4</sub>Cr<sub>2</sub>O<sub>7</sub>",
+      "(NH<sub>4</sub>)<sub>2</sub>Cr<sub>2</sub>O<sub>7</sub>",
+      "(NH<sub>4</sub>)<sub>3</sub>CrO<sub>4</sub>"
+    ]
+  },
+  {
+    "id": "proto-practice-030",
+    "stem": "Name the organic compound with the formula CH<sub>3</sub>CH<sub>2</sub>OH.",
+    "choices": [
+      "Methanol",
+      "Ethanol",
+      "Dimethyl ether",
+      "Propanol"
+    ]
+  },
+  {
+    "id": "proto-practice-031",
+    "stem": "How many oxygen atoms are in 0.250 mol of hydrated copper(II) sulfate, CuSO<sub>4</sub>·5H<sub>2</sub>O?",
+    "choices": [
+      "1.51 × 10<sup>23</sup>",
+      "6.02 × 10<sup>23</sup>",
+      "1.35 × 10<sup>24</sup>",
+      "2.71 × 10<sup>24</sup>"
+    ]
+  },
+  {
+    "id": "proto-practice-032",
+    "stem": "A compound is 40.00% C, 6.71% H and 53.29% O by mass, with a molar mass of about 180 g/mol. What is its molecular formula?",
+    "choices": [
+      "CH<sub>2</sub>O",
+      "C<sub>2</sub>H<sub>4</sub>O<sub>2</sub>",
+      "C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>",
+      "C<sub>3</sub>H<sub>6</sub>O<sub>3</sub>"
+    ]
+  },
+  {
+    "id": "proto-practice-033",
+    "stem": "Burning 1.50 g of a hydrocarbon gives 4.71 g of CO<sub>2</sub> and 1.93 g of H<sub>2</sub>O. What is its empirical formula?",
+    "choices": [
+      "CH",
+      "CH<sub>2</sub>",
+      "C<sub>2</sub>H<sub>5</sub>",
+      "CH<sub>3</sub>"
+    ]
+  },
+  {
+    "id": "proto-practice-034",
+    "stem": "What is the mass percent of nitrogen in ammonium nitrate, NH<sub>4</sub>NO<sub>3</sub> (M = 80.04 g/mol)?",
+    "choices": [
+      "17.5%",
+      "35.0%",
+      "28.0%",
+      "42.0%"
+    ]
+  },
+  {
+    "id": "proto-practice-035",
+    "stem": "How many grams of iron can be extracted from 500.0 g of iron(III) oxide, Fe<sub>2</sub>O<sub>3</sub> (M = 159.7 g/mol)?",
+    "choices": [
+      "349.7 g",
+      "174.9 g",
+      "233.1 g",
+      "350.0 g"
+    ]
+  },
+  {
+    "id": "proto-practice-036",
+    "stem": "A 5.75 g sample of hydrated zinc sulfate, ZnSO<sub>4</sub>·xH<sub>2</sub>O, is heated until all the water is driven off. The anhydrous residue weighs 3.23 g. Find x. (M of ZnSO<sub>4</sub> = 161.47 g/mol; M of H<sub>2</sub>O = 18.02 g/mol)",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "id": "proto-practice-037",
+    "stem": "In a mass spectrometer, xenon is ionized to Xe<sup>+</sup> ions. What determines how far these ions are deflected in the magnetic field?",
+    "choices": [
+      "Nuclear charge only",
+      "Mass-to-charge ratio (m/z)",
+      "Electron affinity of xenon",
+      "Total molecular volume"
+    ]
+  },
+  {
+    "id": "proto-practice-038",
+    "stem": "How many moles of sodium ions are in a sample containing 3.01 × 10<sup>23</sup> formula units of sodium phosphate, Na<sub>3</sub>PO<sub>4</sub>?",
+    "choices": [
+      "0.500 mol",
+      "1.50 mol",
+      "3.00 mol",
+      "1.00 mol"
+    ]
+  },
+  {
+    "id": "proto-practice-039",
+    "stem": "An oxide of nitrogen contains 30.45% nitrogen by mass. What is its empirical formula?",
+    "choices": [
+      "NO",
+      "NO<sub>2</sub>",
+      "N<sub>2</sub>O",
+      "N<sub>2</sub>O<sub>5</sub>"
+    ]
+  },
+  {
+    "id": "proto-practice-040",
+    "stem": "A 2.000 g mixture of NaCl (M = 58.44 g/mol) and KCl (M = 74.55 g/mol) contains 0.0300 mol of chloride ions in total. What is the mass of NaCl in the mixture?",
+    "choices": [
+      "1.168 g",
+      "0.832 g",
+      "0.868 g",
+      "1.432 g"
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ch1-3-lab-11",
+    "answer": "A",
+    "confidence": "high",
+    "work": "NH4Cl is the only volatile component, so heating (sublimation) removes it first and it is collected on a cool surface. The residue (sand + NaCl) is stirred with water: NaCl dissolves, SiO2 does not, so filtration retains the sand and the filtrate is evaporated to recover NaCl. Sublimation → dissolution → filtration → evaporation isolates all three.",
+    "ambiguous": false,
+    "cleanExplanation": "Ammonium chloride sublimes on gentle heating, so it is removed and collected first as a solid on a cool surface. The remaining sand and sodium chloride are treated with water: the salt dissolves while silica does not, so filtration leaves pure sand on the paper. Evaporating the filtrate then recovers solid sodium chloride, giving all three components separately."
+  },
+  {
+    "id": "ch1-3-lab-12",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Rf is defined as the distance travelled by the solute divided by the distance travelled by the solvent front: Rf = 2.4 cm / 8.0 cm = 0.30. Rf must lie between 0 and 1, which also rules out 3.33 and makes 0.24 and 0.76 inconsistent with the data.",
+    "ambiguous": false,
+    "cleanExplanation": "The retention factor is the ratio of the distance moved by the dye to the distance moved by the solvent front. Dividing 2.4 cm by 8.0 cm gives 0.30. A value of 0.30 means Dye A is only weakly retained on the stationary phase relative to the mobile phase."
+  },
+  {
+    "id": "ch1-3-lab-13",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Feeding coolant at the lowest point fills the whole jacket and pushes out air, giving a completely water-filled condenser with counter-current flow (coolest water meets the coolest condensate), which maximizes heat exchange. Top inlet would leave the jacket partly empty and give poorer, uneven cooling.",
+    "ambiguous": false,
+    "cleanExplanation": "Water entering at the bottom fills the condenser jacket completely, displacing air and keeping the entire cooled surface in contact with water. This also gives counter-current flow, so the coldest water meets the coldest condensate at the outlet, maximizing heat removal. Entering from the top would leave the jacket partly filled with air and cool unevenly."
+  },
+  {
+    "id": "ch1-3-lab-14",
+    "answer": "A",
+    "confidence": "high",
+    "work": "A precipitate forming from two clear solutions means a new substance with new composition has been produced (e.g., an insoluble product), which is characteristic of a chemical reaction. Condensation, dissolving sugar and melting wax are all changes of state or mixing only, with no new substance.",
+    "ambiguous": false,
+    "cleanExplanation": "Forming a yellow solid when two clear solutions are mixed means a new, insoluble substance has been generated, which requires bond breaking and forming, so it is a chemical change. Condensation of water, dissolving sugar and melting wax only change the physical state or dispersion of the same substance."
+  },
+  {
+    "id": "ch1-3-lab-15",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Benzoic acid is much more soluble in hot water than in cold water and the inorganic impurities are either insoluble or stay dissolved, so dissolving in hot water, hot-filtering, then cooling crystallizes pure benzoic acid. Distillation, chromatography and dry filtration cannot separate an organic solid from soluble salts on a preparative scale.",
+    "ambiguous": false,
+    "cleanExplanation": "Benzoic acid dissolves readily in hot water but is only slightly soluble in cold water. Dissolving the impure solid in hot water, filtering while hot and then cooling causes pure benzoic acid to crystallize, leaving soluble salts in the mother liquor. The crystals are collected by suction filtration, so recrystallization is the appropriate purification."
+  },
+  {
+    "id": "ch1-3-lab-16",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Porous chips trap air and provide nucleation sites for vapour bubbles, so boiling starts gently and steadily instead of superheating the liquid and releasing a large bubble explosively (bumping). They are chemically inert and do not change boiling point.",
+    "ambiguous": false,
+    "cleanExplanation": "Boiling chips are porous and hold trapped air, which acts as nucleation sites so bubbles of vapour form steadily rather than the liquid superheating and erupting suddenly. This prevents bumping, which can eject hot liquid and spoil a distillation. The chips are inert and do not alter the boiling point."
+  },
+  {
+    "id": "ch1-3-lab-17",
+    "answer": "A",
+    "confidence": "high",
+    "work": "In fractional distillation the vapour rising through the column becomes progressively richer in the more volatile (lower boiling) component, which condenses at the top and distils first. Liquid A boils at 56 °C, well below B at 110 °C, so A is collected first; there is no single azeotrope-like temperature of 83 °C implied by the data.",
+    "ambiguous": false,
+    "cleanExplanation": "Fractional distillation separates liquids by volatility: the vapour enriched in the lower-boiling component travels up the column and condenses first. Liquid A boils at 56 °C versus 110 °C for B, so A distils over first while B remains in the flask. The distillation temperature then rises toward 110 °C as B is collected later."
+  },
+  {
+    "id": "ch1-3-lab-18",
+    "answer": "B",
+    "confidence": "high",
+    "work": "A slightly wet cone adheres firmly to the funnel wall, sealing the rim so the liquid cannot seep between paper and glass and bypass the filter. This ensures all filtrate passes through the pores, giving quantitative recovery of precipitate.",
+    "ambiguous": false,
+    "cleanExplanation": "Wetting the paper makes it cling tightly to the funnel, closing the gap at the rim. Without this seal, some of the mixture can creep between the paper and the glass and bypass the filter, which would contaminate the filtrate and lose precipitate. Sealing the edges therefore guarantees that every drop passes through the paper."
+  },
+  {
+    "id": "ch1-3-lab-19",
+    "answer": "B",
+    "confidence": "high",
+    "work": "In the rotating reference frame of the tube, particles experience an outward apparent centrifugal force proportional to mass, radius and ω²; denser particles experience a larger force per unit volume than the surrounding liquid and sediment. The physically correct description is the centripetal acceleration supplied by the tube wall forcing circular motion.",
+    "ambiguous": false,
+    "cleanExplanation": "Spinning the rotor forces the tube to move in a circle, so its contents need a large centripetal acceleration directed toward the axis. In the tube's frame this appears as an outward centrifugal force scaling with particle mass, so the denser solid particles are driven outward and pack at the tube bottom while the less dense liquid stays above."
+  },
+  {
+    "id": "ch1-3-lab-20",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Fractional crystallization relies on the components having different solubilities and, critically, different responses to temperature change, so that cooling a hot solution saturates and crystallizes one component while the other stays dissolved. Boiling point, density and vapour pressure are not the basis of this separation.",
+    "ambiguous": false,
+    "cleanExplanation": "Fractional crystallization works by cooling a hot saturated solution: the compound whose solubility falls most steeply with temperature crystallizes out first while the other stays in solution. The separating property is therefore how solubility varies with temperature. Boiling point, density and vapour pressure control distillations or centrifugations, not crystallization."
+  },
+  {
+    "id": "ch1-3-lab-21",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Normalize intensities: fractions are 100.0/144.7 = 0.6911 and 44.7/144.7 = 0.3089. Weighted mass = 0.6911(62.93) + 0.3089(64.93) = 43.49 + 20.06 = 63.55 amu, consistent with copper.",
+    "ambiguous": false,
+    "cleanExplanation": "The two peaks are the singly charged isotopes at mass 62.93 and 64.93, with total intensity 100.0 + 44.7 = 144.7. Their fractional abundances are 0.691 and 0.309, so the weighted average mass is 0.691(62.93) + 0.309(64.93) = 63.55 amu. This matches the accepted atomic weight of copper."
+  },
+  {
+    "id": "ch1-3-lab-22",
+    "answer": "B",
+    "confidence": "high",
+    "work": "In electron-impact ionization a beam of energetic electrons (typically ~70 eV) collides with neutral sample molecules, ejecting an electron and producing radical cations [M]+. Acceleration is done by electric fields elsewhere, separation by the analyzer, and detection by the detector.",
+    "ambiguous": false,
+    "cleanExplanation": "The ionization chamber fires a beam of high-energy electrons at the vaporized sample. Collisions knock electrons out of the molecules, producing positively charged radical cations such as [M]+ (and fragment ions). These ions are then accelerated, mass-separated and detected in the later parts of the instrument."
+  },
+  {
+    "id": "ch1-3-lab-23",
+    "answer": "A",
+    "confidence": "high",
+    "work": "For a singly charged molecular ion, m/z equals the molar mass. C6H12O6 = 6(12.01) + 12(1.008) + 6(16.00) = 72.06 + 12.10 + 96.00 = 180.16, which matches m/z 180; benzene 78, ethanol 46 and sucrose 342 do not.",
+    "ambiguous": false,
+    "cleanExplanation": "A molecular ion at m/z 180 with z = +1 corresponds to a molar mass of about 180 g/mol. Glucose has the formula C6H12O6, giving 72.1 + 12.1 + 96.0 = 180.2 g/mol. Benzene (78), ethanol (46) and sucrose (342) are far from this value, so glucose is the match."
+  },
+  {
+    "id": "ch1-3-lab-24",
+    "answer": "C",
+    "confidence": "high",
+    "work": "For a hydrocarbon molecular ion, m/z = molar mass. CH4 = 16, C2H6 = 30, C3H8 = 44, C4H10 = 58. Only propane gives 44, so m/z 44 identifies propane (the m/z 44 signal often seen in spectra is the C3H8+ ion here, not CO2).",
+    "ambiguous": false,
+    "cleanExplanation": "Since the ion is singly charged, m/z 44 means a molecular mass of 44 g/mol. Of the choices, methane is 16, ethane 30, propane 44 and butane 58 g/mol. Propane (C3H8) is therefore the hydrocarbon responsible for the molecular ion peak at m/z 44."
+  },
+  {
+    "id": "ch1-3-lab-25",
+    "answer": "B",
+    "confidence": "high",
+    "work": "Isotopic notation is ^A_Z X, where A = protons + neutrons and Z = protons. With 8 protons and 10 neutrons, Z = 8 and A = 18, giving $_{8}^{18}\\text{O}$, not $_{8}^{16}\\text{O}$.",
+    "ambiguous": false,
+    "cleanExplanation": "The atomic number Z equals the number of protons (8) and the mass number A equals protons plus neutrons (8 + 10 = 18). Writing the symbol as $_{Z}^{A}\\text{X}$ gives $_{8}^{18}\\text{O}$. This is the heavy oxygen isotope $^{18}$O used in isotope-ratio measurements."
+  },
+  {
+    "id": "ch1-3-lab-26",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The given relation r = (1/B)√(2mV/q) shows r is inversely proportional to B when V is constant. Increasing B therefore decreases r, which is the basis of magnetic scanning of a fixed-radius instrument.",
+    "ambiguous": false,
+    "cleanExplanation": "In the expression r = (1/B)√(2mV/q), all quantities except B are held constant, so the radius is inversely proportional to the magnetic field. Raising B therefore tightens the ion path and the radius of curvature decreases. This is why increasing the field strength brings heavier ions onto the detector in a magnetic sector instrument."
+  },
+  {
+    "id": "ch1-3-lab-27",
+    "answer": "A",
+    "confidence": "high",
+    "work": "The diagnostic difference is colour: anhydrous CuSO4 is a white powder while the pentahydrate is blue, because the water ligands produce the d–d absorption responsible for the blue colour. Helium inertness, sublimation and insolubility claims are false.",
+    "ambiguous": false,
+    "cleanExplanation": "Anhydrous copper(II) sulfate is a white solid because the Cu2+ ion lacks water ligands in its coordination sphere. The pentahydrate contains [Cu(H2O)6]2+ type aquo complexes that absorb red-orange light, so it appears blue. Observing the colour therefore immediately distinguishes the anhydrous from the hydrated salt."
+  },
+  {
+    "id": "ch1-3-lab-28",
+    "answer": "B",
+    "confidence": "high",
+    "work": "An excited gas emits only photons of energies matching its quantized electronic transitions, so the prism disperses a set of discrete wavelengths into bright lines on a dark background — a line emission spectrum. An absorption spectrum would require a continuum source behind the gas.",
+    "ambiguous": false,
+    "cleanExplanation": "In a discharge tube, atoms are excited and then emit photons whose energies correspond exactly to differences between quantized energy levels. Passing this emitted light through a prism separates it into a few sharp, bright lines of definite wavelength on a dark background. This is a line emission spectrum, characteristic of the element."
+  },
+  {
+    "id": "ch1-3-lab-29",
+    "answer": "A",
+    "confidence": "high",
+    "work": "Combustion (elemental) analysis burns the sample and measures the masses of CO2, H2O and N2 produced, from which the mass percentages and hence mole ratios of C, H and N are obtained. Decantation, distillation and TLC separate or visualize components but do not give elemental mass ratios.",
+    "ambiguous": false,
+    "cleanExplanation": "Elemental combustion analysis completely oxidizes the sample and weighs the CO2, H2O and N2 formed. Converting these masses into the masses of C, H and N present gives the quantitative mass ratios of the elements in the compound. The other techniques listed are separation methods and give no elemental composition data."
+  },
+  {
+    "id": "ch1-3-lab-30",
+    "answer": "B",
+    "confidence": "high",
+    "work": "The characteristic flame colours are: Li crimson/red, Na intense persistent yellow (Na D lines, 589 nm), K lilac/violet, Ca brick-red/orange. A persistent bright yellow flame therefore indicates sodium ions.",
+    "ambiguous": false,
+    "cleanExplanation": "In a flame test the heat excites metal electrons, which emit characteristic wavelengths on relaxation. Sodium gives a very intense, persistent yellow (the 589 nm doublet) that dominates the flame. Lithium is crimson, potassium lilac and calcium brick-red, so the yellow flame identifies Na+."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id": "ch1-3-theory-40",
+  "answer": "C",
+  "confidence": "medium",
+  "work": "Let x = mass of NaCl in grams, so KCl = 2.000 - x. Total chloride: x/58.44 + (2.000 - x)/74.55 = 0.0300 mol. Using 1/58.44 = 0.017112 and 1/74.55 = 0.013414, this gives 0.003698x + 0.026828 = 0.0300, so x = 0.003172/0.003698 = 0.858 g NaCl (and 1.142 g KCl). Checking: 0.858/58.44 + 1.142/74.55 = 0.01468 + 0.01532 = 0.0300 mol. The exact result is 0.858 g, which is not listed; 0.868 g (choice C) is the only near match, 0.010 g (about 1%) high, while the other choices are off by 0.026 g or more.",
+  "ambiguous": true,
+  "status": "flagged",
+  "resolution": "blind",
+  "rationale": "The stoichiometry gives 0.858 g of NaCl unambiguously, but no choice equals that value: choice C (0.868 g) is the closest at +0.010 g, consistent with a one-digit typographical slip, whereas B (0.832 g) is 0.026 g low and A (1.168 g, the complement of B) is 0.31 g high. C is therefore the single best choice, so the blind answer C is right and the keyed answer A is wrong; the item is still flagged because the exact value is absent from the choice list, and the source explanation itself derives 0.858 g while incorrectly asserting it rounds to 0.868 g.",
+  "cleanExplanation": "Let x be the mass of NaCl, so the mass of KCl is 2.000 - x. Total chloride gives x/58.44 + (2.000 - x)/74.55 = 0.0300 mol, which simplifies to 0.003698x = 0.003172, so x = 0.858 g of NaCl (with 1.142 g KCl). Check: 0.858/58.44 + 1.142/74.55 = 0.0147 + 0.0153 = 0.0300 mol, as required. The nearest listed value is 0.868 g."
+}

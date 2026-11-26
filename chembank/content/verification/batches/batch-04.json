@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch1-3-lab-11",
+    "stem": "A mixture containing fine sand ($\\text{SiO}_{2}$), sodium chloride ($\\text{NaCl}$), and ammonium chloride ($\\text{NH}_{4}\\text{Cl}$) needs to be separated into its pure components. Which sequence of physical operations will successfully isolate all three components in sequence?",
+    "choices": [
+      "Sublimation $\\rightarrow$ Dissolution in water $\\rightarrow$ Filtration $\\rightarrow$ Evaporation",
+      "Dissolution in water $\\rightarrow$ Sublimation $\\rightarrow$ Filtration $\\rightarrow$ Distillation",
+      "Filtration $\\rightarrow$ Sublimation $\\rightarrow$ Decantation $\\rightarrow$ Evaporation",
+      "Centrifugation $\\rightarrow$ Crystallization $\\rightarrow$ Extraction $\\rightarrow$ Sublimation"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-12",
+    "stem": "Paper chromatography is performed to separate a mixture of organic dyes. If Dye A travels $2.4\\text{~cm}$ while the solvent front travels $8.0\\text{~cm}$, what is the retention factor ($R_{f}$) for Dye A?",
+    "choices": [
+      "0.30",
+      "3.33",
+      "0.24",
+      "0.76"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-13",
+    "stem": "In a distillation experiment, why is cooling water fed into the bottom inlet of the Liebig condenser rather than the top inlet?",
+    "choices": [
+      "To ensure the condenser remains completely filled with water for efficient thermal exchange.",
+      "To prevent the glass inner tube from thermal shock and cracking.",
+      "To force the vapor to move upwards against gravity.",
+      "To increase the boiling point of the distillate inside the tube."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-14",
+    "stem": "Which of the following observations provides clear visual evidence that a chemical change (rather than a physical change) has occurred in a laboratory experiment?",
+    "choices": [
+      "Formation of a yellow precipitate upon mixing two clear, colorless solutions.",
+      "Condensation of water drops on the cool glass wall of an evaporating dish.",
+      "Dissolution of white sugar crystals in warm water.",
+      "Melting of a solid paraffin wax candle."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-15",
+    "stem": "A lab technician needs to purify benzoic acid containing soluble inorganic impurities. Which lab procedure is most appropriate?",
+    "choices": [
+      "Fractional distillation",
+      "Recrystallization using hot water as solvent",
+      "Paper chromatography",
+      "Paper filtration without solvent"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-16",
+    "stem": "What is the primary purpose of adding \"boiling chips\" (porous silicon carbide or ceramic pieces) to a liquid mixture before heating it to boiling in a distillation flask?",
+    "choices": [
+      "To catalyze the breakdown of complex organic impurities.",
+      "To promote smooth, even boiling and prevent violent \"bumping.\"",
+      "To absorb volatile impurities from the liquid phase.",
+      "To lower the standard boiling point of the liquid mixture."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-17",
+    "stem": "A mixture of two miscible liquids, Liquid A (boiling point $56^{\\circ}\\text{C}$) and Liquid B (boiling point $110^{\\circ}\\text{C}$), is subjected to fractional distillation. Which component will be collected first as the distillate?",
+    "choices": [
+      "Liquid A",
+      "Liquid B",
+      "An equimolar mixture of A and B",
+      "Neither; they distill simultaneously at $83^{\\circ}\\text{C}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-18",
+    "stem": "During gravimetric filtration using filter paper, why should the filter paper cone be wet with a small amount of pure solvent before pouring the suspension?",
+    "choices": [
+      "To dissolve any loose fibers on the paper surface.",
+      "To seal the edges of the filter paper against the funnel wall to prevent bypass.",
+      "To accelerate the rate of chemical reaction in the filtrate.",
+      "To dilute the precipitate and make it pass through faster."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-19",
+    "stem": "In a centrifugation experiment, what forces dense suspended particles to gather at the bottom of the centrifuge tube?",
+    "choices": [
+      "Capillary force",
+      "Centripetal acceleration / apparent centrifugal force",
+      "Electrostatic repulsion",
+      "Surface tension"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-20",
+    "stem": "Which property of a substance must be different for its components to be separated by fractional crystallization?",
+    "choices": [
+      "Boiling point",
+      "Temperature dependence of solubility",
+      "Density",
+      "Vapor pressure at room temperature"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-21",
+    "stem": "In a high-resolution mass spectrometer, a pure element sample produces two sharp signals at $m/z = 62.93\\text{~amu}$ (relative intensity $100.0$) and $m/z = 64.93\\text{~amu}$ (relative intensity $44.7$). Assuming singly charged ions ($z = + 1$), what is the atomic weight of the element?",
+    "choices": [
+      "$63.55\\text{~amu}$",
+      "$63.85\\text{~amu}$",
+      "$64.00\\text{~amu}$",
+      "$63.22\\text{~amu}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-22",
+    "stem": "What is the main function of the ionization chamber in an electron-impact mass spectrometer?",
+    "choices": [
+      "To accelerate neutral molecules using high-voltage electric fields.",
+      "To knock off electrons from sample molecules/atoms using high-energy electron beams to form positive ions.",
+      "To separate isotopes according to their physical kinetic energies.",
+      "To detect the number of hit particles using a Faraday cup."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-23",
+    "stem": "A sample containing synthetic polymer chains is analyzed in a mass spectrometer. If a molecular ion peak $\\lbrack M\\rbrack^{+}$ appears at $m/z = 180$, which organic molecule could this correspond to?",
+    "choices": [
+      "Glucose ($\\text{C}_{6}\\text{H}_{12}\\text{O}_{6}$)",
+      "Benzene ($\\text{C}_{6}\\text{H}_{6}$)",
+      "Ethanol ($\\text{C}_{2}\\text{H}_{6}\\text{O}$)",
+      "Sucrose ($\\text{C}_{12}\\text{H}_{22}\\text{O}_{11}$)"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-24",
+    "stem": "Mass spectrometry data for an unknown hydrocarbon sample reveals an intense molecular ion peak at $m/z = 44$. What is the identity of this hydrocarbon?",
+    "choices": [
+      "Methane ($\\text{CH}_{4}$)",
+      "Ethane ($\\text{C}_{2}\\text{H}_{6}$)",
+      "Propane ($\\text{C}_{3}\\text{H}_{8}$)",
+      "Butane ($\\text{C}_{4}\\text{H}_{10}$)"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-25",
+    "stem": "An isotope ratio mass spectrometer measures the ratio of $_{}^{18}\\text{O}$ to $_{}^{16}\\text{O}$ in water samples. If an oxygen atom has 8 protons and 10 neutrons, what is its correct isotopic symbol?",
+    "choices": [
+      "$_{10}^{18}\\text{O}$",
+      "$_{8}^{18}\\text{O}$",
+      "$_{8}^{10}\\text{O}$",
+      "$_{8}^{16}\\text{O}$"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-26",
+    "stem": "In mass spectrometry, if the magnetic field strength $B$ is increased while keeping the accelerating voltage $V$ constant, what happens to the radius of curvature $r$ of a charged particle path? ($r = \\frac{1}{B}\\sqrt{\\frac{2mV}{q}}$)",
+    "choices": [
+      "The radius increases.",
+      "The radius decreases.",
+      "The radius remains unchanged.",
+      "The radius drops to zero instantly."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-27",
+    "stem": "A synthetic chemist synthesizes a sample of copper(II) sulfate. To confirm whether the product is anhydrous ($\\text{CuSO}_{4}$) or hydrated ($\\text{CuSO}_{4} \\cdot 5\\text{H}_{2}\\text{O}$), which laboratory observation is most conclusive?",
+    "choices": [
+      "Anhydrous $\\text{CuSO}_{4}$ is white powder, while $\\text{CuSO}_{4} \\cdot 5\\text{H}_{2}\\text{O}$ is blue crystals.",
+      "Anhydrous $\\text{CuSO}_{4}$ reacts violently with helium gas.",
+      "Hydrated $\\text{CuSO}_{4} \\cdot 5\\text{H}_{2}\\text{O}$ sublimes at room temperature.",
+      "Anhydrous $\\text{CuSO}_{4}$ is insoluble in water."
+    ]
+  },
+  {
+    "id": "ch1-3-lab-28",
+    "stem": "What type of spectrum is produced when light from a heated gas discharge tube containing hydrogen is passed through a glass prism in an optical spectrometer?",
+    "choices": [
+      "Continuous spectrum",
+      "Line emission spectrum",
+      "Absorption spectrum",
+      "X-ray diffraction pattern"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-29",
+    "stem": "An experimental analysis of an ionic salt shows it contains a polyatomic cation and a monoatomic anion. Which technique provides direct elemental quantitative mass ratios of the elements present?",
+    "choices": [
+      "Elemental Combustion Analysis",
+      "Decantation",
+      "Simple Distillation",
+      "Thin-Layer Chromatography"
+    ]
+  },
+  {
+    "id": "ch1-3-lab-30",
+    "stem": "When performing a flame test in the laboratory, a laboratory student observes a persistent bright yellow flame. Which alkali metal ion is present in the sample?",
+    "choices": [
+      "Lithium ($\\text{Li}^{+}$)",
+      "Sodium ($\\text{Na}^{+}$)",
+      "Potassium ($\\text{K}^{+}$)",
+      "Calcium ($\\text{Ca}^{2 +}$)"
+    ]
+  }
+]

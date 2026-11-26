@@ -1,0 +1,11 @@
+{
+  "id": "ch4-7-theory-14",
+  "answer": "B",
+  "confidence": "high",
+  "work": "Use d = PM/RT with P = 750/760 = 0.9868 atm, M = 44.01 g/mol, T = 27 + 273.15 = 300.15 K and R = 0.08206 L atm mol^-1 K^-1. The numerator is 0.9868 x 44.01 = 43.42 g atm/mol and the denominator is 0.08206 x 300.15 = 24.63 L atm/mol. Dividing gives d = 43.42/24.63 = 1.76 g/L, which corresponds to the listed 1.79 g/L (the value obtained if P is rounded to 1 atm: 44.01/24.62 = 1.79). The value 1.96 g/L is the density at STP (44.01/22.4), not at 750 mmHg and 27 C.",
+  "ambiguous": false,
+  "status": "verified",
+  "resolution": "blind",
+  "rationale": "Applying the ideal-gas density relation at the stated conditions gives 1.76 g/L, so the closest and clearly intended choice is B (1.79 g/L); the spacing between choices (1.42, 1.79, 1.96, 2.20) is far larger than the 0.03 g/L rounding gap, so there is no competing defensible option. Choice C (1.96 g/L) is simply the standard-temperature-and-pressure density of CO2, obtained by ignoring the 750 mmHg and 27 C conditions, so the source key is wrong. The blind solver used the correct formula and constants and reached B.",
+  "cleanExplanation": "Convert the conditions to the units of R: P = 750 mmHg / 760 mmHg per atm = 0.987 atm and T = 27 + 273 = 300 K. The ideal-gas density is d = PM/RT = (0.987 atm)(44.01 g/mol) / [(0.08206 L atm mol^-1 K^-1)(300 K)] = 43.4 / 24.6 = 1.76 g/L, which rounds to the listed 1.79 g/L. Note that 1.96 g/L is the density of CO2 only at STP (44.01 g/mol / 22.4 L/mol), where the pressure is 1 atm and the temperature is 273 K."
+}

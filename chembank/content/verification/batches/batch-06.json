@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ch4-7-theory-01",
+    "stem": "Precipitation / Stoichiometry: What volume of $0.150\\text{~M}\\text{~BaCl}_{2}$ is required to completely precipitate all the sulfate ions from $25.0\\text{~mL}$ of $0.200\\text{~M}\\text{~Al}_{2}\\left( \\text{SO}_{4} \\right)_{3}$ solution?",
+    "choices": [
+      "$33.3\\text{~mL}$",
+      "$50.0\\text{~mL}$",
+      "$66.7\\text{~mL}$",
+      "$100.0\\text{~mL}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-02",
+    "stem": "Oxidation-Reduction: In the balanced redox reaction in acidic solution:\n\n$$\\text{MnO}_{4}^{-} + \\text{Fe}^{2 +} + \\text{H}^{+} \\rightarrow \\text{Mn}^{2 +} + \\text{Fe}^{3 +} + \\text{H}_{2}\\text{O}$$\n\nWhat is the stoichiometric coefficient for $\\text{H}^{+}$ when the equation is balanced with smallest whole-number coefficients",
+    "choices": [
+      "4",
+      "8",
+      "16",
+      "5"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-03",
+    "stem": "Gravimetric Analysis: A $1.200\\text{-g}$ sample containing chloride is dissolved in water and treated with excess $\\text{AgNO}_{3}$, yielding $1.875\\text{~g}$ of $\\text{AgCl}$ precipitate. What is the mass percentage of chlorine in the original sample? (Atomic masses: $\\text{Ag} = 107.87$, $\\text{Cl} = 35.45$)",
+    "choices": [
+      "$38.6\\%$",
+      "$48.6\\%$",
+      "$55.2\\%$",
+      "$61.3\\%$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-04",
+    "stem": "Acid-Base Titration (Back Titration): A $0.500\\text{-g}$ antacid tablet containing $\\text{CaCO}_{3}$ was treated with $50.0\\text{~mL}$ of $0.100\\text{~M~HCl}$. The excess acid required $6.2\\text{~mL}$ of $0.150\\text{~M~NaOH}$ for complete neutralization. What percentage by mass of the tablet is $\\text{CaCO}_{3}$? ($\\text{CaCO}_{3} = 100.09\\text{~g/mol}$)",
+    "choices": [
+      "$41.2\\%$",
+      "$55.5\\%$",
+      "$81.7\\%$",
+      "$92.4\\%$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-05",
+    "stem": "Conceptual Redox: Which of the following species can act both as an oxidizing agent and a reducing agent?",
+    "choices": [
+      "$\\text{MnO}_{4}^{-}$",
+      "$\\text{H}_{2}\\text{O}_{2}$",
+      "$\\text{F}_{2}$",
+      "$\\text{Na}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-06",
+    "stem": "Concentration / Molarity: If $15.0\\text{~mL}$ of $0.500\\text{~M}\\text{~HNO}_{3}$ is mixed with $35.0\\text{~mL}$ of $0.200\\text{~M}\\text{~Ba(OH)}_{2}$, what is the resulting $\\left\\lbrack \\text{OH}^{-} \\right\\rbrack$ in the final solution?",
+    "choices": [
+      "$0.000\\text{~M}$",
+      "$0.140\\text{~M}$",
+      "$0.210\\text{~M}$",
+      "$0.280\\text{~M}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-07",
+    "stem": "Solubility Rules: Which of the following pairs of aqueous solutions, when mixed, will not produce a precipitate?",
+    "choices": [
+      "$\\text{KOH} + \\text{CuSO}_{4}$",
+      "$\\text{Ba(NO}_{3})_{2} + \\text{Na}_{2}\\text{SO}_{4}$",
+      "$\\text{NH}_{4}\\text{Cl} + \\text{AgNO}_{3}$",
+      "$\\text{NaNO}_{3} + \\text{CuSO}_{4}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-08",
+    "stem": "Oxidation Numbers: What is the oxidation state of sulfur in sodium tetrathionate, $\\text{Na}_{2}\\text{S}_{4}\\text{O}_{6}$, according to average oxidation state and structural bonding considerations?",
+    "choices": [
+      "$+ 2$",
+      "$+ 2.5$",
+      "$+ 4$",
+      "$+ 6$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-09",
+    "stem": "Stoichiometry in Solutions: A $25.0\\text{-mL}$ sample of an unknown monoprotic acid is neutralized by $32.4\\text{~mL}$ of $0.128\\text{~M~NaOH}$. What is the molar concentration of the acid?",
+    "choices": [
+      "$0.0988\\text{~M}$",
+      "$0.166\\text{~M}$",
+      "$0.324\\text{~M}$",
+      "$0.625\\text{~M}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-10",
+    "stem": "Ionic Equations: When aqueous solutions of lead(II) nitrate and potassium iodide are mixed, the net ionic equation for the reaction is:",
+    "choices": [
+      "$\\text{Pb}^{2 +}(aq) + 2\\text{I}^{-}(aq) \\rightarrow \\text{PbI}_{2}(s)$",
+      "$\\text{K}^{+}(aq) + \\text{NO}_{3}^{-}(aq) \\rightarrow \\text{KNO}_{3}(s)$",
+      "$\\text{Pb}^{2 +}(aq) + 2\\text{NO}_{3}^{-}(aq) + 2\\text{K}^{+}(aq) + 2\\text{I}^{-}(aq) \\rightarrow \\text{PbI}_{2}(s) + 2\\text{K}^{+}(aq) + 2\\text{NO}_{3}^{-}(aq)$",
+      "$\\text{Pb}^{2 +}(aq) + \\text{I}^{-}(aq) \\rightarrow \\text{PbI}(s)$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-11",
+    "stem": "Disproportionation Reactions: In the reaction: $\\text{Cl}_{2} + 2\\text{OH}^{-} \\rightarrow \\text{ClO}^{-} + \\text{Cl}^{-} + \\text{H}_{2}\\text{O}$, chlorine undergoes:",
+    "choices": [
+      "Oxidation only",
+      "Reduction only",
+      "Disproportionation (both oxidation and reduction)",
+      "Neither oxidation nor reduction"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-12",
+    "stem": "Solution Preparation: How many grams of $\\text{Na}_{2}\\text{CO}_{3}$ ($105.99\\text{~g/mol}$) are required to prepare $250.0\\text{~mL}$ of a solution with a sodium ion concentration of $0.200\\text{~M}$?",
+    "choices": [
+      "$1.32\\text{~g}$",
+      "$2.65\\text{~g}$",
+      "$5.30\\text{~g}$",
+      "$10.60\\text{~g}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-13",
+    "stem": "Titration Stoichiometry (Redox): A $0.300\\text{-g}$ sample of iron ore is dissolved in acid, reducing all iron to $\\text{Fe}^{2 +}$. Titrating the solution requires $25.0\\text{~mL}$ of $0.0200\\text{~M}\\text{~KMnO}_{4}$ in acidic medium. What is the percentage of Fe ($55.85\\text{~g/mol}$) in the ore?",
+    "choices": [
+      "$14.0\\%$",
+      "$23.3\\%$",
+      "$46.5\\%$",
+      "$69.8\\%$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-14",
+    "stem": "Ideal Gas Law / Density: What is the density of carbon dioxide gas ($\\text{CO}_{2}$) at $750\\text{~mmHg}$ and $27^{\\circ}\\text{C}$?",
+    "choices": [
+      "$1.42\\text{~g/L}$",
+      "$1.79\\text{~g/L}$",
+      "$1.96\\text{~g/L}$",
+      "$2.20\\text{~g/L}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-15",
+    "stem": "Graham’s Law of Effusion: An unknown gas effuses through a pinhole $1.66$ times slower than $\\text{CH}_{4}$ gas under identical conditions. What is the molar mass of the unknown gas?",
+    "choices": [
+      "$16.0\\text{~g/mol}$",
+      "$28.0\\text{~g/mol}$",
+      "$44.0\\text{~g/mol}$",
+      "$72.0\\text{~g/mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-16",
+    "stem": "Dalton’s Law of Partial Pressures: A mixture of $2.00\\text{~g}$ of $\\text{He}$ and $8.00\\text{~g}$ of $\\text{Ar}$ is placed in a rigid $5.00\\text{-L}$ container at $25^{\\circ}\\text{C}$. What is the total pressure of the gas mixture?",
+    "choices": [
+      "$0.98\\text{~atm}$",
+      "$1.43\\text{~atm}$",
+      "$2.44\\text{~atm}$",
+      "$3.42\\text{~atm}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-17",
+    "stem": "Gas Stoichiometry over Water: Zinc metal reacts with hydrochloric acid to produce hydrogen gas:\n\n$$\\text{Zn}(s) + 2\\text{HCl}(aq) \\rightarrow \\text{ZnCl}_{2}(aq) + \\text{H}_{2}(g)$$\n\nIf $250\\text{~mL}$ of $\\text{H}_{2}$ is collected over water at $22^{\\circ}\\text{C}$ and a total pressure of $760\\text{~mmHg}$ (vapor pressure of water at $22^{\\circ}\\text{C} = 19.8\\text{~mmHg}$), how many moles of Zn were consumed?",
+    "choices": [
+      "$9.82 \\times 10^{- 3}\\text{~mol}$",
+      "$1.01 \\times 10^{- 2}\\text{~mol}$",
+      "$2.02 \\times 10^{- 2}\\text{~mol}$",
+      "$4.05 \\times 10^{- 2}\\text{~mol}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-18",
+    "stem": "Kinetic Molecular Theory: What is the root-mean-square speed ($u_{rms}$) of $\\text{N}_{2}$ molecules at $27^{\\circ}\\text{C}$? ($R = 8.314\\text{~J/(mol} \\cdot \\text{K)}$, molar mass of $\\text{N}_{2} = 0.0280\\text{~kg/mol}$)",
+    "choices": [
+      "$317\\text{~m/s}$",
+      "$517\\text{~m/s}$",
+      "$775\\text{~m/s}$",
+      "$1004\\text{~m/s}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-19",
+    "stem": "Real Gases & Van der Waals Equation: For which of the following gases would you expect the Van der Waals constant '$a$' (representing intermolecular attractive forces) to be the largest?",
+    "choices": [
+      "$\\text{He}$",
+      "$\\text{Ne}$",
+      "$\\text{H}_{2}$",
+      "$\\text{Cl}_{2}$"
+    ]
+  },
+  {
+    "id": "ch4-7-theory-20",
+    "stem": "Compressibility Factor ($Z$): Under what conditions do real gases deviate most significantly from ideal gas behavior?",
+    "choices": [
+      "High temperature and low pressure",
+      "High temperature and high pressure",
+      "Low temperature and high pressure",
+      "Low temperature and low pressure"
+    ]
+  }
+]
