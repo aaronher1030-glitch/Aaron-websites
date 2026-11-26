@@ -1,0 +1,6 @@
+# Non-website working files
+.playwright-mcp/
+content/
+tools/
+extract.js
+lemma-extracted.json
